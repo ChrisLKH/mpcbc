@@ -10,14 +10,49 @@ and the automation, not the final design.
 
 ```bash
 npm install
+```
+
+**Two editors are installed, each against its own copy of the same content.**
+They can't share files: Keystatic stores a page section as
+`{discriminant, value:{…}}` and Tina requires a flat `{_template, …}`, and
+Keystatic writes `.mdoc` where Tina reads `.mdx`. Bending either editor to
+the other's storage format would cost it the features you're judging it on,
+so each gets its native shape and `Blocks.astro` renders either. Sermons are
+genuinely shared — flat JSON, no blocks, and `sync-sermons.mjs` writes there.
+
+`npm run build` publishes from the Keystatic tree. Tina edits land in
+`src/content/tina/` and show in its preview, but don't reach the built site
+until you pick a winner and point the site at that tree.
+
+### Keystatic — form-based editing
+
+```bash
 npm run dev
 ```
 
 - Website: http://localhost:4321
-- **Editor: http://localhost:4321/keystatic**
+- Editor: http://localhost:4321/keystatic
 
-The editor needs no login in local mode. Open it, change something, save, and
-watch the page update. That's the whole editing experience — no code, no git.
+No login in local mode. Clean, fast, free for unlimited editors.
+You edit fields in a form and check the result on the site.
+
+### TinaCMS — visual editing
+
+```bash
+npm run dev:tina
+```
+
+- Website: http://localhost:4321
+- Editor: http://localhost:4321/admin/index.html
+
+Slower to start (it spins up a local GraphQL server on port 4001).
+You see the actual page and click into it to edit, with changes appearing
+as you type. This is the closest thing to an Elementor-style experience
+that still keeps content in the repo.
+
+**The catch:** Tina Cloud's free tier covers 2 editors. Beyond that it is
+$29/month, which is more than the current HostGator bill. Local mode is
+free and unlimited but only runs on a developer's machine.
 
 ## What's worth looking at
 
@@ -40,8 +75,10 @@ content with their own titles and descriptions, not translations of each other.
 ```
 src/
   components/ServiceBoard.astro   live status board
-  content/                        what the CMS edits
+  content/                        what Keystatic edits + what the site builds from
     announcements/  events/  sermons/  pages/  settings/
+    tina/                         Tina's copy, in Tina's shape
+      announcements/  events/  pages/  settings/
   data/services.json              sample of what the Worker writes
   layouts/Base.astro              nav, footer, structured data
   pages/                          routes

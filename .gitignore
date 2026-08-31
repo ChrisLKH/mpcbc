@@ -4,3 +4,6 @@ dist/
 .env
 .DS_Store
 .wrangler/
+
+admin/
+tina/__generated__/

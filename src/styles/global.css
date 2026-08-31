@@ -87,6 +87,63 @@ a:hover { color: var(--ink); }
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* ---------------------------------------------------------------
+   Language-aware typography
+
+   Chinese and English genuinely need different settings — this is
+   typography, not preference:
+
+   · CJK glyphs are denser and squarer, so they need more leading
+     or the lines visually collide
+   · At the same px size CJK reads smaller, so it wants a nudge up
+   · CJK justifies cleanly because every character is the same
+     width; Latin text justified without hyphenation looks bad
+   · Chinese has no italic tradition — emphasis is conveyed by
+     other means, so faux-italic should be suppressed
+   · CJK can break between any two characters; Latin breaks at
+     spaces, so they need different line-break rules
+
+   Using :lang() means this follows the content automatically. A
+   Chinese page gets Chinese typography without anyone choosing it,
+   and a bilingual line gets both treatments in the same paragraph.
+   --------------------------------------------------------------- */
+
+:lang(zh-Hant), :lang(zh-Hans), :lang(zh) {
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  font-size: 1.05em;
+  text-align: justify;
+  text-justify: inter-character;
+  word-break: normal;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
+:lang(zh-Hant) h1, :lang(zh-Hans) h1,
+:lang(zh-Hant) h2, :lang(zh-Hans) h2,
+:lang(zh-Hant) h3, :lang(zh-Hans) h3 {
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-align: start;
+  font-variation-settings: normal;
+}
+
+/* No italic tradition in Chinese — browsers synthesise a slant
+   that looks wrong. Use weight or colour for emphasis instead. */
+:lang(zh-Hant) em, :lang(zh-Hans) em,
+:lang(zh-Hant) i, :lang(zh-Hans) i {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* English inside a Chinese page keeps Latin settings. */
+:lang(zh-Hant) :lang(en), :lang(zh-Hans) :lang(en) {
+  line-height: 1.6;
+  letter-spacing: normal;
+  font-size: 1em;
+  text-align: start;
+}
+
 .wrap {
   width: min(72rem, 100% - var(--gutter) * 2);
   margin-inline: auto;

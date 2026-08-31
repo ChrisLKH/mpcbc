@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "dev:tina": "node scripts/toggle-island.mjs on && tinacms dev -c \"astro dev\"",
+    "build": "node scripts/toggle-island.mjs off && astro build",
+    "build:tina": "tinacms build --local --skip-cloud-checks && astro build",
     "preview": "astro preview",
+    "sync:sermons": "node scripts/sync-sermons.mjs",
     "astro": "astro"
   },
   "author": "",
@@ -14,9 +17,12 @@
     "@astrojs/react": "^6.0.4",
     "@keystatic/astro": "^6.0.0",
     "@keystatic/core": "^0.6.9",
+    "@tinacms/astro": "^0.6.1",
+    "@tinacms/cli": "^2.6.1",
     "astro": "^7.2.9",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "tinacms": "^3.12.1"
   },
   "type": "module"
 }

@@ -39,4 +39,18 @@ const events = defineCollection({
   }),
 });
 
-export const collections = { sermons, announcements, events };
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/pages' }),
+  schema: z.object({
+    congregation: congregation,
+    language: z.string().optional().default('en'),
+    description: z.string().optional().default(''),
+    showInMenu: z.boolean().optional().default(false),
+    sections: z.array(z.object({
+      discriminant: z.string(),
+      value: z.any(),
+    })).optional().default([]),
+  }),
+});
+
+export const collections = { sermons, announcements, events, pages };

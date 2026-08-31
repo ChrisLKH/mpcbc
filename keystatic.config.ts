@@ -7,18 +7,149 @@ const CONGREGATIONS = [
   { label: 'Mandarin 國語', value: 'mandarin' },
 ];
 
+/**
+ * The section library. Any page — the homepage or one someone creates
+ * in the editor — is built by stacking these in whatever order they like.
+ * Adding a new type here makes it available on every page at once.
+ */
+const pageBlocks = () =>
+  fields.blocks(
+    {
+      textBlock: {
+        label: 'Text',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading' }),
+          body: fields.text({ label: 'Text', multiline: true }),
+          tinted: fields.checkbox({ label: 'Shaded background', defaultValue: false }),
+        }),
+      },
+      imageText: {
+        label: 'Image with text',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading' }),
+          body: fields.text({ label: 'Text', multiline: true }),
+          image: fields.image({
+            label: 'Image',
+            directory: 'public/images/blocks',
+            publicPath: '/images/blocks/',
+          }),
+          alt: fields.text({ label: 'Describe the image' }),
+          imageSide: fields.select({
+            label: 'Image on',
+            options: [
+              { label: 'Left', value: 'left' },
+              { label: 'Right', value: 'right' },
+            ],
+            defaultValue: 'left',
+          }),
+        }),
+      },
+      gallery: {
+        label: 'Photo gallery',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading' }),
+          layout: fields.select({
+            label: 'Layout',
+            options: [
+              { label: 'Grid', value: 'grid' },
+              { label: 'Wide strip', value: 'strip' },
+            ],
+            defaultValue: 'grid',
+          }),
+          photos: fields.array(
+            fields.object({
+              image: fields.image({
+                label: 'Photo',
+                directory: 'public/images/gallery',
+                publicPath: '/images/gallery/',
+                validation: { isRequired: true },
+              }),
+              alt: fields.text({
+                label: 'Describe the photo',
+                description: 'For people using a screen reader.',
+                validation: { isRequired: true },
+              }),
+              caption: fields.text({ label: 'Caption' }),
+            }),
+            { label: 'Photos', itemLabel: (props) => props.fields.alt.value || 'Photo' }
+          ),
+        }),
+      },
+      videoEmbed: {
+        label: 'Video',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading' }),
+          youtubeId: fields.text({
+            label: 'YouTube video ID',
+            description: 'The part after v= in the URL.',
+            validation: { isRequired: true },
+          }),
+          caption: fields.text({ label: 'Caption', multiline: true }),
+        }),
+      },
+      buttons: {
+        label: 'Buttons',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading' }),
+          links: fields.array(
+            fields.object({
+              text: fields.text({ label: 'Button text' }),
+              url: fields.text({ label: 'Link' }),
+            }),
+            { label: 'Buttons', itemLabel: (props) => props.fields.text.value || 'Button' }
+          ),
+        }),
+      },
+      serviceBoard: {
+        label: 'Service times board',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading', defaultValue: 'Join us this Sunday' }),
+          intro: fields.text({ label: 'Intro line', multiline: true }),
+        }),
+      },
+      announcements: {
+        label: 'This week',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading', defaultValue: 'This week' }),
+          limit: fields.integer({ label: 'How many to show', defaultValue: 3 }),
+        }),
+      },
+      recentSermons: {
+        label: 'Recent sermons',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading', defaultValue: 'Recent sermons' }),
+          limit: fields.integer({ label: 'How many to show', defaultValue: 3 }),
+        }),
+      },
+      facebookAlbum: {
+        label: 'Facebook album link',
+        schema: fields.object({
+          heading: fields.text({ label: 'Heading', defaultValue: 'More photos' }),
+          body: fields.text({ label: 'Text', multiline: true }),
+          url: fields.text({ label: 'Facebook album URL' }),
+          linkText: fields.text({ label: 'Link text', defaultValue: 'See the album on Facebook' }),
+        }),
+      },
+    },
+    {
+      label: 'Page sections',
+      description: 'Add, remove, and drag to reorder the sections on this page.',
+    }
+  );
+
 export default config({
-  // 'local' = edit without any login, for development.
+  // 'local' = edit with no login, for development.
   // Switch to { kind: 'github', repo: 'org/repo' } once the repo exists.
   storage: { kind: 'local' },
 
   ui: {
     brand: { name: 'MPCBC Website' },
     navigation: {
+      Homepage: ['homepage'],
       'Weekly updates': ['announcements', 'events'],
-      'Sermons': ['sermons'],
-      'Pages': ['pages'],
-      'Settings': ['services'],
+      Sermons: ['sermons'],
+      Pages: ['pages'],
+      Settings: ['services'],
     },
   },
 
@@ -38,13 +169,10 @@ export default config({
         }),
         removeAfter: fields.date({
           label: 'Remove after',
-          description: 'The announcement disappears from the site on this date. Required.',
+          description: 'Disappears from the site on this date. Required.',
           validation: { isRequired: true },
         }),
-        pinned: fields.checkbox({
-          label: 'Pin to top',
-          defaultValue: false,
-        }),
+        pinned: fields.checkbox({ label: 'Pin to top', defaultValue: false }),
         body: fields.markdoc({ label: 'Details' }),
       },
     }),
@@ -76,33 +204,31 @@ export default config({
 
     sermons: collection({
       label: 'Sermons',
-      slugField: 'videoId',
+      slugField: 'title',
       path: 'src/content/sermons/*',
+      format: { data: 'json' },
       columns: ['title', 'date', 'speaker'],
       schema: {
-        videoId: fields.slug({
-          name: { label: 'YouTube video ID', description: 'Filled in automatically by the daily sync.' },
+        title: fields.slug({
+          name: { label: 'Title' },
+          slug: {
+            label: 'YouTube video ID',
+            description: 'Filled in by the daily sync. Do not change it.',
+          },
         }),
-        title: fields.text({ label: 'Title' }),
         congregation: fields.select({
           label: 'Congregation',
           options: CONGREGATIONS.filter((c) => c.value !== 'all'),
           defaultValue: 'english',
         }),
         date: fields.date({ label: 'Date' }),
-        speaker: fields.text({
-          label: 'Speaker',
-          description: 'Optional — leave blank if unknown.',
-        }),
-        scripture: fields.text({
-          label: 'Scripture',
-          description: 'Optional. e.g. Romans 8:1-11',
-        }),
+        speaker: fields.text({ label: 'Speaker', description: 'Optional.' }),
+        scripture: fields.text({ label: 'Scripture', description: 'Optional.' }),
         series: fields.text({ label: 'Series', description: 'Optional.' }),
         notes: fields.text({ label: 'Notes', multiline: true, description: 'Optional.' }),
         hide: fields.checkbox({
           label: 'Hide from website',
-          description: 'Keeps the video on YouTube but removes it from the archive.',
+          description: 'Stays on YouTube, removed from the archive.',
           defaultValue: false,
         }),
       },
@@ -112,10 +238,17 @@ export default config({
       label: 'Pages',
       slugField: 'title',
       path: 'src/content/pages/*',
-      format: { contentField: 'body' },
+      format: { data: 'json' },
       columns: ['title', 'congregation'],
+      // Adds a "view page" link in the editor. Not live preview, but it
+      // opens the real styled page — which matters most for Chinese
+      // content, where the typography differs from English.
+      previewUrl: '/{slug}',
       schema: {
-        title: fields.slug({ name: { label: 'Page title' } }),
+        title: fields.slug({
+          name: { label: 'Page title' },
+          slug: { label: 'Web address', description: 'e.g. childrens-ministry' },
+        }),
         congregation: fields.select({
           label: 'Section',
           options: CONGREGATIONS,
@@ -135,7 +268,8 @@ export default config({
           description: 'Shown in Google results. Around 150 characters.',
           multiline: true,
         }),
-        body: fields.markdoc({ label: 'Content' }),
+        showInMenu: fields.checkbox({ label: 'Show in the menu', defaultValue: false }),
+        sections: pageBlocks(),
       },
     }),
   },
@@ -144,6 +278,8 @@ export default config({
     homepage: singleton({
       label: 'Homepage',
       path: 'src/content/settings/homepage',
+      format: { data: 'json' },
+      previewUrl: '/',
       schema: {
         heroHeadline: fields.text({
           label: 'Headline',
@@ -151,144 +287,32 @@ export default config({
           validation: { isRequired: true },
         }),
         heroLede: fields.text({ label: 'Opening paragraph', multiline: true }),
-        heroCtaText: fields.text({ label: 'Button text', defaultValue: 'What to expect on Sunday' }),
-        heroCtaLink: fields.text({ label: 'Button link', defaultValue: '/visit' }),
+        heroCtaText: fields.text({ label: 'Button text' }),
+        heroCtaLink: fields.text({ label: 'Button link' }),
         heroVideo: fields.text({
           label: 'Hero video URL',
           description: 'Leave blank to show a still image instead.',
         }),
         heroImage: fields.image({
           label: 'Hero image',
-          description: 'Shown before the video loads, and on slow connections.',
           directory: 'public/images/hero',
           publicPath: '/images/hero/',
         }),
-
-        sections: fields.blocks(
-          {
-            serviceBoard: {
-              label: 'Service times board',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading', defaultValue: 'Join us this Sunday' }),
-                intro: fields.text({ label: 'Intro line', multiline: true }),
-              }),
-            },
-            announcements: {
-              label: 'This week',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading', defaultValue: 'This week' }),
-                limit: fields.integer({ label: 'How many to show', defaultValue: 3 }),
-              }),
-            },
-            recentSermons: {
-              label: 'Recent sermons',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading', defaultValue: 'Recent sermons' }),
-                limit: fields.integer({ label: 'How many to show', defaultValue: 3 }),
-              }),
-            },
-            gallery: {
-              label: 'Photo gallery',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading' }),
-                layout: fields.select({
-                  label: 'Layout',
-                  options: [
-                    { label: 'Grid', value: 'grid' },
-                    { label: 'Wide strip', value: 'strip' },
-                  ],
-                  defaultValue: 'grid',
-                }),
-                photos: fields.array(
-                  fields.object({
-                    image: fields.image({
-                      label: 'Photo',
-                      directory: 'public/images/gallery',
-                      publicPath: '/images/gallery/',
-                      validation: { isRequired: true },
-                    }),
-                    alt: fields.text({
-                      label: 'Describe the photo',
-                      description: 'For people using a screen reader. Required.',
-                      validation: { isRequired: true },
-                    }),
-                    caption: fields.text({ label: 'Caption', description: 'Optional.' }),
-                  }),
-                  {
-                    label: 'Photos',
-                    itemLabel: (props) => props.fields.alt.value || 'Photo',
-                  }
-                ),
-              }),
-            },
-            videoEmbed: {
-              label: 'Video',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading' }),
-                youtubeId: fields.text({
-                  label: 'YouTube video ID',
-                  description: 'The part after v= in the URL. Videos live on YouTube, not on the website.',
-                  validation: { isRequired: true },
-                }),
-                caption: fields.text({ label: 'Caption', multiline: true }),
-              }),
-            },
-            facebookAlbum: {
-              label: 'Facebook album link',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading', defaultValue: 'More photos' }),
-                body: fields.text({ label: 'Text', multiline: true }),
-                url: fields.text({ label: 'Facebook album URL' }),
-                linkText: fields.text({ label: 'Link text', defaultValue: 'See the full album on Facebook' }),
-              }),
-            },
-            textBlock: {
-              label: 'Text section',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading' }),
-                body: fields.text({ label: 'Text', multiline: true }),
-                tinted: fields.checkbox({ label: 'Shaded background', defaultValue: false }),
-              }),
-            },
-            imageText: {
-              label: 'Image with text',
-              schema: fields.object({
-                heading: fields.text({ label: 'Heading' }),
-                body: fields.text({ label: 'Text', multiline: true }),
-                image: fields.image({
-                  label: 'Image',
-                  directory: 'public/images/blocks',
-                  publicPath: '/images/blocks/',
-                }),
-                imageSide: fields.select({
-                  label: 'Image on',
-                  options: [
-                    { label: 'Left', value: 'left' },
-                    { label: 'Right', value: 'right' },
-                  ],
-                  defaultValue: 'left',
-                }),
-              }),
-            },
-          },
-          {
-            label: 'Page sections',
-            description: 'Add, remove, and reorder the sections below the hero.',
-          }
-        ),
+        sections: pageBlocks(),
       },
     }),
 
     services: singleton({
       label: 'Service times',
       path: 'src/content/settings/services',
+      format: { data: 'json' },
       schema: {
         intro: fields.text({ label: 'Intro line', multiline: true }),
         services: fields.array(
           fields.object({
             name: fields.text({ label: 'Service name' }),
             nameLocal: fields.text({ label: 'Name in its own language' }),
-            time: fields.text({ label: 'Time', description: 'e.g. 9:30 AM' }),
+            time: fields.text({ label: 'Time' }),
             channelId: fields.text({ label: 'YouTube channel ID' }),
           }),
           { label: 'Services', itemLabel: (props) => props.fields.name.value || 'Service' }

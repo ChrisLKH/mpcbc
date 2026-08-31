@@ -1,0 +1,277 @@
+---
+/**
+ * Renders a list of CMS blocks. Used by the homepage and by every page
+ * created through the editor, so a section built once is available
+ * everywhere.
+ */
+import ServiceBoard from './ServiceBoard.astro';
+import { tinaField } from '@tinacms/astro/tina-field';
+import { getCollection } from 'astro:content';
+
+const { sections = [] } = Astro.props;
+
+/**
+ * Click-to-edit marker. Tina stamps every object it returns with
+ * `_content_source`; tinaField() reads that to name the field. Keystatic
+ * data has no stamp, so this returns '' — mapped to undefined so the
+ * attribute is omitted entirely rather than rendering empty.
+ */
+const field = (obj, prop) => tinaField(obj, prop) || undefined;
+
+/**
+ * Keystatic and Tina describe a block differently:
+ *
+ *   Keystatic  { discriminant: 'textBlock', value: { heading, body } }
+ *   Tina       { __typename: 'PagesSectionsTextBlock', heading, body }
+ *
+ * Normalise both to the Keystatic shape so one renderer serves either
+ * editor. Without this, Tina's data matches nothing and the page renders
+ * empty with no error — which is exactly what it looks like.
+ */
+const BLOCK_NAMES = [
+  'textBlock', 'imageText', 'gallery', 'videoEmbed', 'buttons',
+  'serviceBoard', 'announcements', 'recentSermons', 'facebookAlbum',
+];
+
+function normalise(block) {
+  if (!block) return null;
+  if (block.discriminant) return block;
+
+  const typename = String(block.__typename || '');
+  const match = BLOCK_NAMES.find((name) =>
+    typename.toLowerCase().endsWith(name.toLowerCase())
+  );
+  return match ? { discriminant: match, value: block } : null;
+}
+
+const blocks = (sections || []).map(normalise).filter(Boolean);
+
+const today = new Date();
+
+const announcements = (await getCollection('announcements'))
+  .filter((a) => a.data.removeAfter >= today)
+  .sort((a, b) => Number(b.data.pinned) - Number(a.data.pinned));
+
+const allSermons = (await getCollection('sermons'))
+  .filter((s) => !s.data.hide)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all: 'All' };
+---
+
+{blocks.map((block) => {
+  const v = block.value;
+
+  if (block.discriminant === 'serviceBoard') {
+    return (
+      <ServiceBoard
+        heading={v.heading}
+        intro={v.intro}
+        tinaField={field(v)}
+        headingField={field(v, 'heading')}
+        introField={field(v, 'intro')}
+      />
+    );
+  }
+
+  if (block.discriminant === 'announcements') {
+    const items = announcements.slice(0, v.limit);
+    if (!items.length) return null;
+    return (
+      <section class="section" data-tina-field={field(v)}>
+        <div class="wrap">
+          <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>
+          <ul class="cards" role="list">
+            {items.map((a) => (
+              <li class="card">
+                <p class="eyebrow">{label[a.data.congregation]}</p>
+                <h3>{a.data.title}</h3>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'recentSermons') {
+    const items = allSermons.slice(0, v.limit);
+    return (
+      <section class="section section--tint" data-tina-field={field(v)}>
+        <div class="wrap">
+          <div class="head">
+            <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>
+            <a href="/sermons">All sermons</a>
+          </div>
+          <ul class="cards" role="list">
+            {items.map((s) => (
+              <li class="card">
+                <p class="eyebrow">{label[s.data.congregation]} &middot; {s.data.date}</p>
+                <h3>{s.data.title}</h3>
+                {(s.data.speaker || s.data.scripture) && (
+                  <p class="card__meta">
+                    {[s.data.speaker, s.data.scripture].filter(Boolean).join(' · ')}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'gallery') {
+    const photos = v.photos || [];
+    if (!photos.length) return null;
+    return (
+      <section class="section" data-tina-field={field(v)}>
+        <div class="wrap">
+          {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
+          <ul class={`gal gal--${v.layout}`} role="list" data-tina-field={field(v, 'photos')}>
+            {photos.map((p) => (
+              <li class="gal__item" data-tina-field={field(p)}>
+                <img src={p.image} alt={p.alt} loading="lazy" decoding="async" />
+                {p.caption && <p class="gal__cap" data-tina-field={field(p, 'caption')}>{p.caption}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'videoEmbed') {
+    return (
+      <section class="section section--tint" data-tina-field={field(v)}>
+        <div class="wrap wrap--narrow">
+          {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
+          <div class="embed" data-tina-field={field(v, 'youtubeId')}>
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${v.youtubeId}`}
+              title={v.heading || 'Video'}
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          {v.caption && <p class="embed__cap" data-tina-field={field(v, 'caption')}>{v.caption}</p>}
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'facebookAlbum') {
+    return (
+      <section class="section" data-tina-field={field(v)}>
+        <div class="wrap wrap--narrow">
+          {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
+          {v.body && <p data-tina-field={field(v, 'body')}>{v.body}</p>}
+          {v.url && (
+            <p>
+              <a class="btn btn--ghost" href={v.url} data-tina-field={field(v, 'linkText')}>
+                {v.linkText}
+              </a>
+            </p>
+          )}
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'textBlock') {
+    return (
+      <section class={`section ${v.tinted ? 'section--tint' : ''}`} data-tina-field={field(v)}>
+        <div class="wrap wrap--narrow">
+          {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
+          <p data-tina-field={field(v, 'body')}>{v.body}</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'imageText') {
+    return (
+      <section class="section" data-tina-field={field(v)}>
+        <div class={`wrap split ${v.imageSide === 'right' ? 'split--flip' : ''}`}>
+          {v.image && (
+            <img class="split__img" src={v.image} alt={v.alt || ''} data-tina-field={field(v, 'image')} />
+          )}
+          <div>
+            {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
+            <p data-tina-field={field(v, 'body')}>{v.body}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (block.discriminant === 'buttons') {
+    const links = v.links || [];
+    if (!links.length) return null;
+    return (
+      <section class="section" data-tina-field={field(v)}>
+        <div class="wrap wrap--narrow">
+          {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
+          <p class="btnrow" data-tina-field={field(v, 'links')}>
+            {links.map((l, i) => (
+              <a
+                class={`btn ${i > 0 ? 'btn--ghost' : ''}`}
+                href={l.url}
+                data-tina-field={field(l)}
+              >{l.text}</a>
+            ))}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  return null;
+})}
+
+<style is:global>
+  .section--tint { background: var(--stucco-dim); }
+
+  .head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap;
+  }
+  .head h2 { margin-bottom: 0.6em; }
+  .head a { font-size: var(--step--1); }
+
+  .cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; }
+  @media (min-width: 44rem) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card { border-top: 2px solid var(--sky); padding-top: 0.9rem; }
+  .card h3 { margin-bottom: 0.25em; }
+  .card__meta { font-size: var(--step--1); color: var(--ink-soft); margin: 0; }
+
+  .split { display: grid; gap: 2rem; align-items: center; }
+  @media (min-width: 44rem) {
+    .split { grid-template-columns: 1fr 1fr; }
+    .split--flip .split__img { order: 2; }
+  }
+  .split__img { border-radius: var(--radius); }
+
+  .gal { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .gal--grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+  .gal--strip {
+    grid-auto-flow: column; grid-auto-columns: minmax(220px, 1fr);
+    overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.5rem;
+  }
+  .gal--strip .gal__item { scroll-snap-align: start; }
+  .gal__item img {
+    width: 100%; aspect-ratio: 4/3; object-fit: cover;
+    border-radius: var(--radius); background: var(--stucco);
+  }
+  .gal__cap { font-size: var(--step--1); color: var(--ink-soft); margin: 0.4rem 0 0; }
+
+  .embed {
+    position: relative; aspect-ratio: 16/9;
+    border-radius: var(--radius); overflow: hidden; background: var(--ink);
+  }
+  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .embed__cap { font-size: var(--step--1); color: var(--ink-soft); margin-top: 0.75rem; }
+
+  .btnrow { display: flex; flex-wrap: wrap; gap: 0.75rem; max-width: none; }
+</style>

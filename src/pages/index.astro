@@ -1,8 +1,27 @@
 ---
 import Base from '../layouts/Base.astro';
-import ServiceBoard from '../components/ServiceBoard.astro';
+import Blocks from '../components/Blocks.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import { requestWithMetadata } from '@tinacms/astro/data';
 import { getCollection } from 'astro:content';
-import home from '../content/settings/homepage.json';
+import fileHome from '../content/settings/homepage.json';
+import { client } from '../../tina/__generated__/client';
+
+// Same handshake as [...slug].astro: query through Tina so the editor
+// knows which document this page shows, but only take its copy if it
+// actually came back with sections — otherwise the page would render
+// blank with no error.
+let home = fileHome;
+try {
+  const res = await requestWithMetadata(
+    client.queries.homepage({ relativePath: 'homepage.json' }),
+    { priority: 'primary' }
+  );
+  const fromTina = res?.data?.homepage;
+  if (fromTina?.sections?.length) home = fromTina;
+} catch {
+  // Tina not running — use the file data.
+}
 
 const today = new Date();
 
@@ -40,139 +59,10 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
     </div>
   </section>
 
-  {home.sections.map((block) => {
-    const v = block.value;
+  <TinaIsland name="homepage" wrapper={{ tag: 'div' }} primary>
+    <Blocks sections={home.sections} />
+  </TinaIsland>
 
-    if (block.discriminant === 'serviceBoard') {
-      return <ServiceBoard heading={v.heading} intro={v.intro} />;
-    }
-
-    if (block.discriminant === 'announcements') {
-      const items = announcements.slice(0, v.limit);
-      if (!items.length) return null;
-      return (
-        <section class="section">
-          <div class="wrap">
-            <h2>{v.heading}</h2>
-            <ul class="cards" role="list">
-              {items.map((a) => (
-                <li class="card">
-                  <p class="eyebrow">{label[a.data.congregation]}</p>
-                  <h3>{a.data.title}</h3>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      );
-    }
-
-    if (block.discriminant === 'recentSermons') {
-      const items = allSermons.slice(0, v.limit);
-      return (
-        <section class="section section--tint">
-          <div class="wrap">
-            <div class="head">
-              <h2>{v.heading}</h2>
-              <a href="/sermons">All sermons</a>
-            </div>
-            <ul class="cards" role="list">
-              {items.map((s) => (
-                <li class="card">
-                  <p class="eyebrow">{label[s.data.congregation]} &middot; {s.data.date}</p>
-                  <h3>{s.data.title}</h3>
-                  {(s.data.speaker || s.data.scripture) && (
-                    <p class="card__meta">
-                      {[s.data.speaker, s.data.scripture].filter(Boolean).join(' · ')}
-                    </p>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      );
-    }
-
-    if (block.discriminant === 'gallery') {
-      const photos = v.photos || [];
-      if (!photos.length) return null;
-      return (
-        <section class="section">
-          <div class="wrap">
-            {v.heading && <h2>{v.heading}</h2>}
-            <ul class={`gal gal--${v.layout}`} role="list">
-              {photos.map((p) => (
-                <li class="gal__item">
-                  <img src={p.image} alt={p.alt} loading="lazy" decoding="async" />
-                  {p.caption && <p class="gal__cap">{p.caption}</p>}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      );
-    }
-
-    if (block.discriminant === 'videoEmbed') {
-      return (
-        <section class="section section--tint">
-          <div class="wrap wrap--narrow">
-            {v.heading && <h2>{v.heading}</h2>}
-            <div class="embed">
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${v.youtubeId}`}
-                title={v.heading || 'Video'}
-                loading="lazy"
-                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            {v.caption && <p class="embed__cap">{v.caption}</p>}
-          </div>
-        </section>
-      );
-    }
-
-    if (block.discriminant === 'facebookAlbum') {
-      return (
-        <section class="section">
-          <div class="wrap wrap--narrow">
-            {v.heading && <h2>{v.heading}</h2>}
-            {v.body && <p>{v.body}</p>}
-            {v.url && <p><a class="btn btn--ghost" href={v.url}>{v.linkText}</a></p>}
-          </div>
-        </section>
-      );
-    }
-
-    if (block.discriminant === 'textBlock') {
-      return (
-        <section class={`section ${v.tinted ? 'section--tint' : ''}`}>
-          <div class="wrap wrap--narrow">
-            {v.heading && <h2>{v.heading}</h2>}
-            <p>{v.body}</p>
-          </div>
-        </section>
-      );
-    }
-
-    if (block.discriminant === 'imageText') {
-      return (
-        <section class="section">
-          <div class={`wrap split ${v.imageSide === 'right' ? 'split--flip' : ''}`}>
-            {v.image && <img class="split__img" src={v.image} alt="" />}
-            <div>
-              {v.heading && <h2>{v.heading}</h2>}
-              <p>{v.body}</p>
-            </div>
-          </div>
-        </section>
-      );
-    }
-
-    return null;
-  })}
 </Base>
 
 <style>

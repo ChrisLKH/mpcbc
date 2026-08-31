@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getCollection } from 'astro:content';
 
 const {
   title = 'Monterey Park Chinese Baptist Church',
@@ -7,8 +8,18 @@ const {
   lang = 'en',
 } = Astro.props;
 
+// Pages created in the editor appear here automatically when
+// "Show in the menu" is ticked. No code change needed.
+const cmsPages = (await getCollection('pages'))
+  .filter((p) => p.data.showInMenu)
+  .map((p) => ({
+    href: `/${p.id}`,
+    label: p.id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+  }));
+
 const nav = [
   { href: '/visit', label: 'Plan your visit' },
+  ...cmsPages,
   { href: '/sermons', label: 'Sermons' },
   { href: '/events', label: 'Events' },
   { href: '/english', label: 'English' },

@@ -1,0 +1,43 @@
+{
+  "heroHeadline": "A church for three generations, in three languages.",
+  "heroLede": "We have gathered in Monterey Park for fifty years. Grandparents worship in Cantonese, parents in Mandarin, children in English — in the same building, on the same morning.",
+  "heroCtaText": "What to expect on Sunday",
+  "heroCtaLink": "/visit",
+  "heroVideo": "",
+  "sections": [
+    {
+      "_template": "serviceBoard",
+      "heading": "Join us this Sunday",
+      "intro": "Three congregations, one church. Everyone is welcome at any service."
+    },
+    {
+      "_template": "announcements",
+      "heading": "This week",
+      "limit": 3
+    },
+    {
+      "_template": "recentSermons",
+      "heading": "Recent sermons",
+      "limit": 3
+    },
+    {
+      "_template": "videoEmbed",
+      "heading": "A look at our 50th anniversary",
+      "youtubeId": "aBcDeFgHiJk",
+      "caption": "Videos are embedded from YouTube, never stored on the website."
+    },
+    {
+      "_template": "textBlock",
+      "heading": "Fifty years in Monterey Park",
+      "body": "We began in 1976 with a handful of families. Today three congregations share this building, and many of our members are the children and grandchildren of the people who started it.",
+      "tinted": false
+    },
+    {
+      "_template": "facebookAlbum",
+      "heading": "More photos",
+      "body": "We post photos from events to Facebook, where our members already are.",
+      "url": "https://facebook.com/",
+      "linkText": "See the full album on Facebook"
+    }
+  ]
+}

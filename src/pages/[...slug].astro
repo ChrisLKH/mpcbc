@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import { requestWithMetadata } from '@tinacms/astro/data';
+import { getCollection } from 'astro:content';
+import { client } from '../../tina/__generated__/client';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((p) => ({ params: { slug: p.id }, props: { page: p } }));
+}
+
+const { page } = Astro.props;
+
+// Query through Tina so the editor knows which document this page shows.
+// Only take Tina's copy if it actually came back with sections — otherwise
+// the page would render blank with no error, which is hard to diagnose.
+let data = page.data;
+try {
+  const res = await requestWithMetadata(
+    client.queries.pages({ relativePath: `${page.id}.json` }),
+    { priority: 'primary' }
+  );
+  const fromTina = res?.data?.pages;
+  if (fromTina?.sections?.length) data = fromTina;
+} catch {
+  // Tina not running — use the file data.
+}
+
+const langMap = { en: 'en', 'zh-Hant': 'zh-Hant', 'zh-Hans': 'zh-Hans' };
+---
+<Base
+  title={`${page.id.replace(/-/g, ' ')} — MPCBC`}
+  description={data.description}
+  lang={langMap[data.language] || 'en'}
+>
+  <TinaIsland name="page" wrapper={{ tag: 'div' }} params={{ slug: page.id }} primary>
+    <Blocks sections={data.sections} />
+  </TinaIsland>
+</Base>

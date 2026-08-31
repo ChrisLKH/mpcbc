@@ -4,7 +4,16 @@ import servicesData from '../data/services.json';
 const { services } = servicesData;
 
 // Heading and intro come from the CMS (Homepage -> Service times board).
-const { heading = 'Join us this Sunday', intro = '' } = Astro.props;
+// `tinaField` markers are passed in rather than computed here: a component
+// can't take a bare data-tina-field attribute, so the caller hands down the
+// strings and we stamp them onto real elements.
+const {
+  heading = 'Join us this Sunday',
+  intro = '',
+  tinaField,
+  headingField,
+  introField,
+} = Astro.props;
 
 const stateCopy = {
   live:        { label: 'Live now',    action: 'Watch now' },
@@ -22,10 +31,10 @@ function href(s) {
 }
 ---
 
-<section class="board" aria-labelledby="board-heading">
+<section class="board" aria-labelledby="board-heading" data-tina-field={tinaField}>
   <div class="wrap">
-    <h2 id="board-heading" class="board__heading">{heading}</h2>
-    {intro && <p class="board__intro">{intro}</p>}
+    <h2 id="board-heading" class="board__heading" data-tina-field={headingField}>{heading}</h2>
+    {intro && <p class="board__intro" data-tina-field={introField}>{intro}</p>}
 
     <ul class="board__list" role="list">
       {services.map((s) => (
