@@ -1,0 +1,24 @@
+# The livestream sync Worker — cron only, no public traffic.
+#
+# Separate from the site Worker (../wrangler.toml) because it runs on a
+# schedule and owns the KV namespace. The site binds the same namespace
+# read-only.
+#
+#   npx wrangler deploy -c worker/wrangler.toml    (or: npm run deploy:sync)
+
+name = "mpcbc-livestream-sync"
+main = "livestream-sync.js"
+compatibility_date = "2026-08-01"
+
+# Every 15 minutes, and every 2 minutes on Sunday morning (Pacific).
+[triggers]
+crons = ["*/15 * * * *", "*/2 15-21 * * 0"]
+
+[vars]
+CHANNEL_CHINESE = "UC_replace_with_real_channel_id"
+CHANNEL_ENGLISH = "UC_replace_with_real_channel_id"
+
+# npm run kv:create   -> paste the id here AND into ../wrangler.toml
+[[kv_namespaces]]
+binding = "MPCBC"
+id = "replace_after_creating_namespace"

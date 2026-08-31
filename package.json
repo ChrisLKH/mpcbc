@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "dev:tina": "node scripts/toggle-island.mjs on && tinacms dev -c \"astro dev\"",
-    "build": "node scripts/toggle-island.mjs off && astro build",
-    "build:tina": "tinacms build --local --skip-cloud-checks && astro build",
-    "preview": "astro preview",
+    "dev:tina": "tinacms dev -c \"astro dev\"",
+    "build": "node scripts/clean-admin.mjs && astro build",
+    "build:tina": "node scripts/clean-admin.mjs && tinacms build --skip-cloud-checks && astro build",
+    "preview": "npm run build && wrangler dev -c dist/server/wrangler.json",
+    "deploy": "npm run build && wrangler deploy -c dist/server/wrangler.json",
+    "deploy:sync": "wrangler deploy -c worker/wrangler.toml",
+    "kv:create": "wrangler kv namespace create MPCBC",
     "sync:sermons": "node scripts/sync-sermons.mjs",
     "astro": "astro"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@astrojs/cloudflare": "^14.2.5",
     "@astrojs/markdoc": "^2.0.8",
     "@astrojs/react": "^6.0.4",
     "@keystatic/astro": "^6.0.0",
@@ -24,5 +28,8 @@
     "react-dom": "^19.2.8",
     "tinacms": "^3.12.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "wrangler": "^4.127.1"
+  }
 }

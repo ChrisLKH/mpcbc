@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      created: ${{ steps.sync.outputs.created }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,3 +41,12 @@ jobs:
           else
             echo "Nothing new."
           fi
+
+  # The commit above is pushed with GITHUB_TOKEN, which deliberately does
+  # not trigger the `push` event. Without this the new sermons would sit in
+  # the repo and never reach the site.
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.created != '0' && needs.sync.outputs.created != ''
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

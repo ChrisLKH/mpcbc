@@ -3,10 +3,18 @@
  *
  * Runs on a Cloudflare cron trigger. Polls the YouTube channels, works out
  * which broadcast belongs to which service, and writes the result to KV.
- * The website reads that KV value. Nothing here needs a server.
+ * The site Worker reads that KV value through /api/services.json.
  *
- * Deploy:  npx wrangler deploy
- * Secrets: npx wrangler secret put YOUTUBE_API_KEY
+ * Cron only — there is deliberately no `fetch` handler. An earlier version
+ * exposed /sync so you could trigger a poll from a browser, but that is an
+ * unauthenticated endpoint that spends YouTube quota, and once the site
+ * reads KV directly nothing needs it. To run a poll by hand:
+ *
+ *   npx wrangler dev -c worker/wrangler.toml --test-scheduled
+ *   curl "http://localhost:8787/__scheduled"
+ *
+ * Deploy:  npm run deploy:sync
+ * Secrets: npx wrangler secret put YOUTUBE_API_KEY -c worker/wrangler.toml
  */
 
 const SERVICES = [
@@ -156,22 +164,6 @@ function match(videos, services) {
 export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(sync(env));
-  },
-
-  // Same logic on demand, for testing.
-  async fetch(request, env) {
-    const url = new URL(request.url);
-    if (url.pathname === '/api/services') {
-      const cached = await env.MPCBC.get('services', 'text');
-      return new Response(cached || '{"services":[]}', {
-        headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' },
-      });
-    }
-    if (url.pathname === '/sync') {
-      const out = await sync(env);
-      return Response.json(out);
-    }
-    return new Response('Not found', { status: 404 });
   },
 };
 

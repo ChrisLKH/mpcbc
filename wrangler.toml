@@ -1,17 +1,36 @@
-name = "mpcbc-livestream-sync"
-main = "worker/livestream-sync.js"
+# The website Worker.
+#
+# Almost every route is prerendered and served straight off the assets
+# layer — the Worker itself only runs for the two on-demand routes
+# (/api/services.json and /tina-island/[name]). See astro.config.mjs.
+#
+#   npm run deploy
+#
+# `main` and the assets binding are deliberately absent: @astrojs/cloudflare
+# supplies both through the Cloudflare Vite plugin. Setting `main` here
+# breaks the build, because it is checked before the output exists.
+#
+# The livestream cron Worker is a separate deploy — see worker/wrangler.toml.
+
+name = "mpcbc-site"
 compatibility_date = "2026-08-01"
+compatibility_flags = ["nodejs_compat"]
 
-# Every 15 minutes, and every 2 minutes on Sunday morning (Pacific).
-[triggers]
-crons = ["*/15 * * * *", "*/2 15-21 * * 0"]
+# Until this is set the site deploys to mpcbc-site.<subdomain>.workers.dev.
+# Note that astro.config.mjs sets `site: 'https://mpcbc.org'`, so canonical
+# URLs and the sitemap already claim that domain — point the domain here
+# before announcing the site anywhere.
+#
+# routes = [
+#   { pattern = "mpcbc.org", custom_domain = true },
+#   { pattern = "www.mpcbc.org", custom_domain = true },
+# ]
 
-[vars]
-CHANNEL_CHINESE = "UC_replace_with_real_channel_id"
-CHANNEL_ENGLISH = "UC_replace_with_real_channel_id"
+[observability]
+enabled = true
 
-# npx wrangler kv namespace create MPCBC
-# then paste the id below
+# The namespace the cron Worker writes to; the site only ever reads it.
+# npm run kv:create -> paste the id here AND into worker/wrangler.toml
 [[kv_namespaces]]
 binding = "MPCBC"
 id = "replace_after_creating_namespace"

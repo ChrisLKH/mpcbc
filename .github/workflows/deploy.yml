@@ -1,0 +1,45 @@
+name: Deploy site
+
+# Without this the sermon archive is only half automated: sync-sermons.yml
+# commits new sermons to the repo every night, but nothing rebuilds the
+# site, so they never appear. This closes that loop — the sync pushes,
+# this deploys.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Called by sync-sermons.yml. A push made with GITHUB_TOKEN does not
+  # trigger other workflows — GitHub's loop prevention — so the nightly
+  # sermon commit would never reach the `push` trigger above. Calling this
+  # workflow directly sidesteps that without needing a personal token.
+  workflow_call:
+
+# A push landing mid-deploy should supersede it, not race it.
+concurrency:
+  group: deploy-site
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # The adapter writes a merged config here at build time; the
+          # root wrangler.toml has no `main` and can't be deployed directly.
+          command: deploy -c dist/server/wrangler.json

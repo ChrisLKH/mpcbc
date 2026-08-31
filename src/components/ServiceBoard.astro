@@ -38,13 +38,13 @@ function href(s) {
 
     <ul class="board__list" role="list">
       {services.map((s) => (
-        <li class={`svc svc--${s.state}`}>
+        <li class={`svc svc--${s.state}`} data-svc={s.id}>
           <div class="svc__top">
             <p class="svc__local" lang={s.lang}>{s.nameLocal}</p>
             {s.lang !== 'en' && <p class="svc__en">{s.name}</p>}
-            {s.state === 'live' && (
-              <span class="svc__live"><span class="svc__dot" aria-hidden="true"></span>Live now</span>
-            )}
+            <span class="svc__live" data-svc-live hidden={s.state !== 'live'}>
+              <span class="svc__dot" aria-hidden="true"></span>Live now
+            </span>
           </div>
 
           <p class="svc__time">
@@ -52,7 +52,11 @@ function href(s) {
             <span class="svc__clock">{s.time}</span>
           </p>
 
-          <a class={`svc__cta ${s.state === 'live' ? 'btn' : 'btn btn--ghost'}`} href={href(s)}>
+          <a
+            class={`svc__cta ${s.state === 'live' ? 'btn' : 'btn btn--ghost'}`}
+            href={href(s)}
+            data-svc-cta
+          >
             {stateCopy[s.state].action}
           </a>
         </li>
@@ -64,6 +68,64 @@ function href(s) {
     </p>
   </div>
 </section>
+
+<script is:inline>
+  /**
+   * The board above is prerendered, so its state is only as fresh as the last
+   * build. /api/services.json runs on demand and reads what the cron Worker
+   * put in KV — this swaps the three things that actually change.
+   *
+   * Deliberately silent on failure: the served markup is already a usable
+   * board with real times and channel links, so a fetch error degrades to
+   * "slightly stale" rather than "broken". Nothing here is required for the
+   * page to work, which is why it's plain inline JS and not an island.
+   *
+   * The state->label and state->href rules are mirrored from the frontmatter
+   * above. Two small copies beat shipping a framework runtime to patch
+   * three anchors.
+   */
+  (async () => {
+    const ACTION = {
+      live: 'Watch now',
+      scheduled: 'Set a reminder',
+      unscheduled: 'Go to channel',
+      ended: 'Watch the recording',
+    };
+
+    const target = (s) =>
+      (s.state === 'live' || s.state === 'scheduled') &&
+      s.confidence === 'high' &&
+      s.videoId
+        ? `https://youtube.com/watch?v=${s.videoId}`
+        : s.channelUrl;
+
+    try {
+      const res = await fetch('/api/services.json');
+      if (!res.ok) return;
+      const { services } = await res.json();
+
+      for (const s of services || []) {
+        const card = document.querySelector(`[data-svc="${s.id}"]`);
+        if (!card) continue;
+
+        card.className = `svc svc--${s.state}`;
+
+        const badge = card.querySelector('[data-svc-live]');
+        if (badge) badge.hidden = s.state !== 'live';
+
+        const cta = card.querySelector('[data-svc-cta]');
+        if (cta) {
+          cta.textContent = ACTION[s.state] || ACTION.unscheduled;
+          cta.href = target(s);
+          cta.className =
+            s.state === 'live' ? 'svc__cta btn' : 'svc__cta btn btn--ghost';
+        }
+      }
+    } catch {
+      // Offline or endpoint down — keep the prerendered board.
+    }
+  })();
+</script>
 
 <style>
   .board {
