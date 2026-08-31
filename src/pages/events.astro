@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+const today = new Date(); today.setHours(0,0,0,0);
+const events = (await getCollection('events'))
+  .filter((e) => e.data.startDate >= today)
+  .sort((a, b) => a.data.startDate - b.data.startDate);
+
+const fmt = (d) => d.toLocaleDateString('en-US', { weekday:'short', month:'long', day:'numeric' });
+---
+<Base title="Events — MPCBC" description="Upcoming fellowship gatherings and church events.">
+  <div class="wrap section">
+    <h1>Events</h1>
+    <p class="lede">Add these to your own calendar and your phone will remind you.</p>
+    <p><a class="btn btn--ghost" href="#">Add our calendar to your phone</a></p>
+
+    <ul class="list" role="list">
+      {events.map((e) => (
+        <li class="ev">
+          <p class="eyebrow">{fmt(e.data.startDate)}{e.data.startTime && ` · ${e.data.startTime}`}</p>
+          <h2>{e.data.title}</h2>
+          {e.data.location && <p class="ev__loc">{e.data.location}</p>}
+        </li>
+      ))}
+    </ul>
+    {events.length === 0 && <p>No upcoming events listed right now.</p>}
+  </div>
+</Base>
+<style>
+  .lede { font-size: var(--step-1); color: var(--ink-soft); }
+  .list { list-style:none; margin:2rem 0 0; padding:0; display:grid; gap:1.75rem; }
+  .ev { border-left: 3px solid var(--sky); padding-left: 1.1rem; }
+  .ev h2 { font-size: var(--step-2); margin: 0 0 0.15em; }
+  .ev__loc { font-size: var(--step--1); color: var(--ink-soft); margin:0; }
+</style>

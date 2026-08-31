@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const sermons = (await getCollection('sermons'))
+  .filter((s) => !s.data.hide && s.data.congregation === 'cantonese')
+  .sort((a, b) => b.data.date.localeCompare(a.data.date))
+  .slice(0, 4);
+---
+<Base title="Cantonese Congregation — MPCBC" lang="zh-Hant" description="The Cantonese Congregation at Monterey Park Chinese Baptist Church meets Sundays at 9:30 AM.">
+  <div class="wrap section">
+    <p class=eyebrow>粵語堂</p>
+    <h1>Cantonese Congregation</h1>
+    <p class="lede">Sundays at 9:30 AM</p>
+    <p>This section is edited independently of the other congregations. It is not a
+    translation of the English pages, which is why each one has its own address and
+    its own description for search engines.</p>
+
+    <h2>Recent sermons</h2>
+    <ul class="list" role="list">
+      {sermons.map((s) => (
+        <li>
+          <p class="eyebrow">{s.data.date}</p>
+          <h3>{s.data.title}</h3>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+<style>
+  .lede { font-size: var(--step-1); color: var(--ink-soft); }
+  .list { list-style:none; margin:1.5rem 0 0; padding:0; display:grid; gap:1.25rem; }
+  .list li { border-top: 2px solid var(--sky); padding-top: 0.75rem; }
+  .list h3 { margin: 0; font-size: var(--step-1); }
+</style>

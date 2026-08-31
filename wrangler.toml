@@ -1,0 +1,17 @@
+name = "mpcbc-livestream-sync"
+main = "worker/livestream-sync.js"
+compatibility_date = "2026-08-01"
+
+# Every 15 minutes, and every 2 minutes on Sunday morning (Pacific).
+[triggers]
+crons = ["*/15 * * * *", "*/2 15-21 * * 0"]
+
+[vars]
+CHANNEL_CHINESE = "UC_replace_with_real_channel_id"
+CHANNEL_ENGLISH = "UC_replace_with_real_channel_id"
+
+# npx wrangler kv namespace create MPCBC
+# then paste the id below
+[[kv_namespaces]]
+binding = "MPCBC"
+id = "replace_after_creating_namespace"

@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-08-29T15:02:00Z",
+  "note": "In production this file is written by the scheduled YouTube sync. Nobody edits it by hand.",
+  "services": [
+    {
+      "id": "cantonese",
+      "name": "Cantonese Service",
+      "nameLocal": "粵語主日崇拜",
+      "lang": "zh-Hant",
+      "time": "9:30 AM",
+      "day": "Sunday",
+      "state": "scheduled",
+      "videoId": "aBcDeFgHiJk",
+      "startsAt": "2026-08-30T16:30:00Z",
+      "channelUrl": "https://youtube.com/@mpcbc-chinese",
+      "confidence": "high"
+    },
+    {
+      "id": "mandarin",
+      "name": "Mandarin Service",
+      "nameLocal": "國語主日崇拜",
+      "lang": "zh-Hant",
+      "time": "11:30 AM",
+      "day": "Sunday",
+      "state": "unscheduled",
+      "videoId": null,
+      "startsAt": "2026-08-30T18:30:00Z",
+      "channelUrl": "https://youtube.com/@mpcbc-chinese",
+      "confidence": null
+    },
+    {
+      "id": "english",
+      "name": "English Service",
+      "nameLocal": "English Worship",
+      "lang": "en",
+      "time": "11:00 AM",
+      "day": "Sunday",
+      "state": "live",
+      "videoId": "xYzAbCdEfGh",
+      "startsAt": "2026-08-30T18:00:00Z",
+      "channelUrl": "https://youtube.com/@mpcbc-english",
+      "confidence": "high"
+    }
+  ]
+}

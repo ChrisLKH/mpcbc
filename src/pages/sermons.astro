@@ -1,0 +1,125 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const sermons = (await getCollection('sermons'))
+  .filter((s) => !s.data.hide)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+const label = { english: 'English', cantonese: '粵語 Cantonese', mandarin: '國語 Mandarin' };
+
+// Filters only appear for fields that actually have data.
+const speakers = [...new Set(sermons.map((s) => s.data.speaker).filter(Boolean))];
+---
+
+<Base title="Sermons — MPCBC" description="Watch past sermons from our Cantonese, Mandarin, and English services.">
+  <div class="wrap section">
+    <h1>Sermons</h1>
+    <p class="lede">
+      Every service is recorded and added here automatically.
+    </p>
+
+    <div class="filters">
+      <button class="chip chip--on" data-filter="all">All</button>
+      {Object.entries(label).map(([value, text]) => (
+        <button class="chip" data-filter={value}>{text}</button>
+      ))}
+    </div>
+
+    {speakers.length > 0 && (
+      <p class="hint">
+        Speaker listed for {sermons.filter((s) => s.data.speaker).length} of {sermons.length} sermons.
+        The archive works whether or not this is filled in.
+      </p>
+    )}
+
+    <ul class="list" role="list">
+      {sermons.map((s) => (
+        <li class="item" data-congregation={s.data.congregation}>
+          <div class="item__thumb" aria-hidden="true"></div>
+          <div class="item__body">
+            <p class="eyebrow">{label[s.data.congregation]} &middot; {s.data.date}</p>
+            <h2 class="item__title">{s.data.title}</h2>
+            {(s.data.speaker || s.data.scripture) && (
+              <p class="item__meta">
+                {[s.data.speaker, s.data.scripture].filter(Boolean).join(' · ')}
+              </p>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+
+<script>
+  const chips = document.querySelectorAll('.chip');
+  const items = document.querySelectorAll('.item');
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const f = chip.getAttribute('data-filter');
+      chips.forEach((c) => c.classList.toggle('chip--on', c === chip));
+      items.forEach((it) => {
+        const match = f === 'all' || it.getAttribute('data-congregation') === f;
+        it.style.display = match ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+<style>
+  .lede { font-size: var(--step-1); color: var(--ink-soft); }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0 1rem;
+  }
+  .chip {
+    font: inherit;
+    font-size: var(--step--1);
+    padding: 0.45em 1em;
+    border: 1px solid rgba(42,29,22,0.22);
+    background: transparent;
+    color: var(--ink-soft);
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .chip:hover { background: var(--stucco); }
+  .chip--on {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  .hint {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  .list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: rgba(42,29,22,0.12); }
+  .item {
+    background: var(--paper);
+    display: flex;
+    gap: 1.1rem;
+    padding: 1.1rem 0.25rem;
+    align-items: flex-start;
+  }
+  .item__thumb {
+    flex: 0 0 auto;
+    width: 96px;
+    aspect-ratio: 16/9;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--stucco), var(--sage));
+    opacity: 0.5;
+  }
+  .item__body { min-width: 0; }
+  .item__title {
+    font-size: var(--step-1);
+    margin: 0 0 0.2em;
+  }
+  .item__meta { font-size: var(--step--1); color: var(--ink-soft); margin: 0; }
+</style>
