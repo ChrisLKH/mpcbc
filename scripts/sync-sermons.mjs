@@ -3,9 +3,9 @@
  * Sermon archive sync
  *
  * Reads the YouTube playlists and writes one JSON file per sermon into
- * src/content/sermons/. Those are the exact files Keystatic reads and
- * writes, so a synced sermon appears in the editor immediately, ready
- * for someone to add a speaker or scripture if they want to.
+ * src/content/sermons/. Those are the exact files Tina reads and writes,
+ * so a synced sermon appears in the editor immediately, ready for
+ * someone to add a speaker or scripture if they want to.
  *
  * The filename is the YouTube video ID. That is the join key between
  * the automatic half and the manual half.

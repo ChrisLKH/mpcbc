@@ -1,8 +1,0 @@
-{
-  "intro": "Three congregations, one church.",
-  "services": [
-    { "name": "Cantonese Service", "nameLocal": "粵語主日崇拜", "time": "9:30 AM", "channelId": "UC_chinese_placeholder" },
-    { "name": "English Service", "nameLocal": "English Worship", "time": "11:00 AM", "channelId": "UC_english_placeholder" },
-    { "name": "Mandarin Service", "nameLocal": "國語主日崇拜", "time": "11:30 AM", "channelId": "UC_chinese_placeholder" }
-  ]
-}

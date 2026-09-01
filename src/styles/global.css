@@ -1,43 +1,65 @@
 /* ---------------------------------------------------------------
-   MPCBC design tokens
+   MPCBC design tokens — logo palette
 
-   Palette is taken from the building itself: the dark brown roof
-   tile, the tan stucco, white trim, palm and lawn green, and the
-   Southern California sky that dominates both reference photos.
-   The sky blue is the accent — it's the most distinctive colour
-   on the site and avoids the warm-clay default.
+   The palette is taken from the church logo: the maroon banner, its
+   white cross and figures, and the near-black plum it sits on. It
+   replaces the earlier building-derived scheme (brown tile, tan
+   stucco, sky blue). Maroon is the church's own colour and the one
+   thing already printed on the sign, the bulletin and the banner.
 
-   Type pairs Fraunces (display) with Source Sans 3 (body).
-   Both have Noto CJK counterparts designed on compatible metrics,
-   so Chinese and English sit together without the size and weight
-   mismatch you normally get when CJK falls back.
+   Type pairs Geist (display and body) with Inter, which is used only
+   for the small uppercase meta labels — tabular, tight, and legible
+   at 13px where Geist's wider forms get loose. Both have Noto CJK
+   counterparts on compatible metrics, so Chinese and English sit on
+   the same line without the size and weight mismatch you normally
+   get when CJK falls back. Nanum Pen Script is the handwritten
+   aside, used sparingly and never for anything load-bearing.
+
+   Legacy aliases (--sky, --stucco, --sage) are kept at the bottom so
+   pages not yet migrated pick up the new palette rather than
+   dangling. They are deprecated — use the role names.
    --------------------------------------------------------------- */
 
 :root {
-  --ink:        #2A1D16;
-  --ink-soft:   #5C4A3D;
-  --paper:      #F8F5EE;
-  --stucco:     #E5D9C5;
-  --stucco-dim: #EFE8DA;
-  --sky:        #2C6E9B;
-  --sky-deep:   #1F5375;
-  --sage:       #78896D;
-  --white:      #FFFFFF;
-  --live:       #C4402F;
+  --ink:         #221419;  /* body text */
+  --ink-soft:    #6B5560;  /* secondary text, meta, lede */
+  --paper:       #FFFFFF;  /* page ground */
+  --tint:        #F8F3F4;  /* alternating section tint, ghost hover */
+  --line:        #E3D3D8;  /* hairlines, card borders */
+  --shell:       #1B1014;  /* hero ground, footer band, media wells */
 
-  --font-display: 'Fraunces', 'Noto Serif TC', Georgia, serif;
-  --font-body: 'Source Sans 3', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --accent:      #943759;  /* primary button, eyebrow rules, focus ring */
+  --accent-deep: #6F2841;  /* link text, button hover */
+  --accent-pale: #F0DFE4;  /* light button hover on dark grounds */
 
-  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
-  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.11rem);
-  --step-1:  clamp(1.2rem, 1.12rem + 0.4vw, 1.5rem);
-  --step-2:  clamp(1.44rem, 1.3rem + 0.7vw, 2rem);
-  --step-3:  clamp(1.73rem, 1.5rem + 1.15vw, 2.7rem);
-  --step-4:  clamp(2.07rem, 1.7rem + 1.9vw, 3.6rem);
+  --live:        #C2410C;  /* live-broadcast dot and label ONLY */
+  --live-soft:   #E8836B;  /* the same label on a --shell ground */
 
-  --gutter: clamp(1.15rem, 4vw, 2.5rem);
-  --measure: 34rem;
-  --radius: 3px;
+  --white:       #FFFFFF;
+
+  --font-display: 'Geist', 'Noto Sans TC', system-ui, sans-serif;
+  --font-body:    'Geist', 'Noto Sans TC', system-ui, sans-serif;
+  --font-meta:    'Inter', system-ui, sans-serif;
+  --font-zh:      'Noto Serif TC', Georgia, serif;
+  --font-hand:    'Nanum Pen Script', cursive;
+  --font-mono:    ui-monospace, Menlo, Consolas, monospace;
+
+  --step--2: 0.8125rem;                                  /* 13px meta   */
+  --step--1: 0.875rem;                                   /* 14px small  */
+  --step-0:  1rem;                                       /* 16px body   */
+  --step-1:  1.25rem;                                    /* 20px h3     */
+  --step-2:  clamp(1.5rem, 1.3rem + 0.9vw, 1.9rem);
+  --step-3:  clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem);    /* h2          */
+  --step-4:  clamp(2.2rem, 1.7rem + 2.2vw, 3.4rem);      /* page h1     */
+  --step-hero: clamp(2.9rem, 1.2rem + 6.5vw, 5.5rem);    /* hero h1     */
+
+  --gutter: 1.25rem;
+  --measure: 56ch;
+
+  --radius:      16px;   /* media wells, images */
+  --radius-lg:   24px;   /* cards, panels */
+  --radius-sm:   8px;    /* inputs */
+  --radius-pill: 999px;  /* every button */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -58,30 +80,29 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--step-0);
-  line-height: 1.6;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -0.015em;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
   margin: 0 0 0.5em;
-  font-variation-settings: 'SOFT' 0, 'WONK' 1;
 }
 
-h1 { font-size: var(--step-4); }
-h2 { font-size: var(--step-3); }
-h3 { font-size: var(--step-1); }
+h1 { font-size: var(--step-4); font-weight: 700; line-height: 1.08; letter-spacing: -0.035em; }
+h2 { font-size: var(--step-3); line-height: 1.25; }
+h3 { font-size: var(--step-1); line-height: 1.4; }
 
 p { margin: 0 0 1em; max-width: var(--measure); }
 
-a { color: var(--sky-deep); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a { color: var(--accent-deep); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: var(--ink); }
 
 :focus-visible {
-  outline: 2px solid var(--sky);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 
@@ -122,10 +143,10 @@ img { max-width: 100%; height: auto; display: block; }
 :lang(zh-Hant) h1, :lang(zh-Hans) h1,
 :lang(zh-Hant) h2, :lang(zh-Hans) h2,
 :lang(zh-Hant) h3, :lang(zh-Hans) h3 {
+  font-family: var(--font-zh);
   line-height: 1.4;
   letter-spacing: 0.04em;
   text-align: start;
-  font-variation-settings: normal;
 }
 
 /* No italic tradition in Chinese — browsers synthesise a slant
@@ -138,14 +159,22 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* English inside a Chinese page keeps Latin settings. */
 :lang(zh-Hant) :lang(en), :lang(zh-Hans) :lang(en) {
-  line-height: 1.6;
+  line-height: 1.55;
   letter-spacing: normal;
   font-size: 1em;
   text-align: start;
 }
 
+/* A short bilingual label — a nav item, a badge — is one line and
+   must not be stretched to the full column width by the justify
+   rule above. */
+.zh-inline:lang(zh-Hant), .zh-inline:lang(zh-Hans) {
+  text-align: start;
+  text-justify: auto;
+}
+
 .wrap {
-  width: min(72rem, 100% - var(--gutter) * 2);
+  width: min(1080px, 100% - var(--gutter) * 2);
   margin-inline: auto;
 }
 
@@ -153,37 +182,93 @@ img { max-width: 100%; height: auto; display: block; }
 
 .section { padding-block: clamp(3rem, 8vw, 5.5rem); }
 
-/* Eyebrow labels — used only where they encode something real,
-   like which congregation a block belongs to. */
+/* Small uppercase meta label. Inter, because at 13px Geist's wider
+   forms go loose once you add the tracking. */
 .eyebrow {
-  font-size: var(--step--1);
-  font-weight: 600;
+  font-family: var(--font-meta);
+  font-size: var(--step--2);
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
   margin: 0 0 0.75rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  background: var(--sky);
-  color: var(--white);
-  font-weight: 600;
-  font-size: var(--step--1);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  border-radius: var(--radius);
-  transition: background 0.15s ease;
+/* The section label from the design: a 26px accent rule, then the
+   label in accent, English and Chinese on one line. */
+.rule-label {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-meta);
+  font-size: var(--step--2);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.7rem;
+  max-width: none;
 }
-.btn:hover { background: var(--sky-deep); color: var(--white); }
+.rule-label::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 26px;
+  height: 2px;
+  background: var(--accent);
+}
+.rule-label :lang(zh-Hant) { letter-spacing: 0.06em; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 44px;
+  padding: 0 1.5em;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--white);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover { background: var(--accent-deep); color: var(--white); }
 
 .btn--ghost {
   background: transparent;
   color: var(--ink);
-  border: 1px solid rgba(42, 29, 22, 0.25);
+  border-color: var(--line);
 }
-.btn--ghost:hover { background: var(--stucco); color: var(--ink); }
+.btn--ghost:hover { background: var(--tint); color: var(--ink); }
+
+/* Ghost button sitting on an already-tinted panel — keep the white
+   ground so it still reads as a control. */
+.btn--ghost-on-tint { background: var(--paper); }
+.btn--ghost-on-tint:hover { background: var(--paper); border-color: var(--accent); }
+
+/* Solid white, for the dark hero. */
+.btn--light { background: var(--white); color: var(--ink); }
+.btn--light:hover { background: var(--accent-pale); color: var(--ink); }
+
+/* Outlined, for the dark footer. */
+.btn--onshell {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.3);
+  font-family: var(--font-meta);
+  font-weight: 700;
+}
+.btn--onshell:hover { background: rgba(255, 255, 255, 0.12); color: var(--white); }
+
+.btn--sm { height: 36px; font-size: var(--step--1); padding: 0 1.1em; }
+.btn--lg { height: 52px; font-size: 1.0625rem; padding: 0 1.8em; }
+
+.btn__arrow { font-family: var(--font-meta); font-size: var(--step--2); }
 
 .skip-link {
   position: absolute;
@@ -196,8 +281,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .skip-link:focus { left: 0; }
 
-.sr-only {
-  position: absolute; width: 1px; height: 1px;
-  padding: 0; margin: -1px; overflow: hidden;
-  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+/* ---------------------------------------------------------------
+   Deprecated aliases
+
+   The pages under /sermons, /events and the three congregation
+   pages still reference the old building palette. Mapping the names
+   onto the new roles means they retheme with everything else
+   instead of falling back to an invalid custom property. Migrate
+   them to the role names above and delete this block.
+
+   Only the three still referenced are kept:
+     --sky     /english, /cantonese, /mandarin, /events
+     --stucco  /sermons
+     --sage    /sermons (thumbnail gradient)
+   --------------------------------------------------------------- */
+:root {
+  --sky:    var(--accent);
+  --stucco: var(--line);
+  --sage:   #B98FA0;
 }

@@ -1,11 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import Blocks from '../components/Blocks.astro';
+import ServiceBoard from '../components/ServiceBoard.astro';
+import Hero from '../components/home/Hero.astro';
+import AnnouncementCarousel from '../components/home/AnnouncementCarousel.astro';
+import PastorNote from '../components/home/PastorNote.astro';
+import Children from '../components/home/Children.astro';
+import UpcomingEvents from '../components/home/UpcomingEvents.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import { requestWithMetadata } from '@tinacms/astro/data';
 import { getCollection } from 'astro:content';
 import fileHome from '../content/settings/homepage.json';
 import { client } from '../../tina/__generated__/client';
+import servicesData from '../data/services.json';
 
 // Same handshake as [...slug].astro: query through Tina so the editor
 // knows which document this page shows, but only take its copy if it
@@ -24,128 +31,45 @@ try {
 }
 
 const today = new Date();
+today.setHours(0, 0, 0, 0);
 
 const announcements = (await getCollection('announcements'))
   .filter((a) => a.data.removeAfter >= today)
   .sort((a, b) => Number(b.data.pinned) - Number(a.data.pinned));
 
-const allSermons = (await getCollection('sermons'))
-  .filter((s) => !s.data.hide)
-  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+const events = (await getCollection('events'))
+  .filter((e) => e.data.startDate >= today)
+  .sort((a, b) => a.data.startDate - b.data.startDate);
 
-const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all: 'All' };
 ---
 
 <Base>
-  <section class="hero">
-    <div class="hero__media" role="img" aria-label="Monterey Park Chinese Baptist Church">
-      {home.heroVideo ? (
-        <video src={home.heroVideo} poster={home.heroImage} autoplay muted loop playsinline></video>
-      ) : home.heroImage ? (
-        <img src={home.heroImage} alt="" />
-      ) : (
-        <div class="hero__placeholder">
-          <p>Hero video</p>
-          <p class="hero__note">Set in the editor &middot; Homepage &rarr; Hero video</p>
-        </div>
-      )}
-    </div>
-    <div class="hero__body wrap">
-      <h1>{home.heroHeadline}</h1>
-      {home.heroLede && <p class="hero__lede">{home.heroLede}</p>}
-      {home.heroCtaText && (
-        <p><a class="btn" href={home.heroCtaLink}>{home.heroCtaText}</a></p>
-      )}
-    </div>
-  </section>
+  <Hero
+    headline={home.heroHeadline}
+    lede={home.heroLede}
+    ctaText={home.heroCtaText}
+    ctaLink={home.heroCtaLink}
+    video={home.heroVideo}
+    image={home.heroImage}
+    services={servicesData.services}
+  />
 
+  <ServiceBoard />
+
+  <AnnouncementCarousel announcements={announcements} />
+
+  <PastorNote />
+
+  <Children />
+
+  <UpcomingEvents events={events} />
+
+  {/*
+    Anything the editor adds to the homepage renders below the designed
+    sections, so the fixed composition above and the block system can
+    coexist — no page has to choose one or the other.
+  */}
   <TinaIsland name="homepage" wrapper={{ tag: 'div' }} primary>
     <Blocks sections={home.sections} />
   </TinaIsland>
-
 </Base>
-
-<style>
-  .hero__media {
-    aspect-ratio: 16 / 7;
-    min-height: 240px;
-    background:
-      linear-gradient(180deg, rgba(42,29,22,0.05), rgba(42,29,22,0.3)),
-      linear-gradient(140deg, #3E7CA6 0%, #7FA8C4 42%, #D9C9AC 74%, #B99C78 100%);
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  .hero__media video,
-  .hero__media img { width: 100%; height: 100%; object-fit: cover; }
-
-  .hero__placeholder {
-    text-align: center;
-    color: var(--white);
-    font-family: var(--font-display);
-    font-size: var(--step-2);
-    text-shadow: 0 1px 12px rgba(42,29,22,0.35);
-  }
-  .hero__placeholder p { margin: 0; max-width: none; }
-  .hero__note {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    opacity: 0.85;
-    margin-top: 0.5rem !important;
-  }
-
-  .hero__body { padding-block: clamp(2rem, 5vw, 3.25rem); }
-  .hero__lede { font-size: var(--step-1); color: var(--ink-soft); }
-
-  .section--tint { background: var(--stucco-dim); }
-
-  .head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .head h2 { margin-bottom: 0.6em; }
-  .head a { font-size: var(--step--1); }
-
-  .cards {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 1.5rem;
-  }
-  @media (min-width: 44rem) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
-  }
-  .card { border-top: 2px solid var(--sky); padding-top: 0.9rem; }
-  .card h3 { margin-bottom: 0.25em; }
-  .card__meta { font-size: var(--step--1); color: var(--ink-soft); margin: 0; }
-
-  .split { display: grid; gap: 2rem; align-items: center; }  @media (min-width: 44rem) {
-    .split { grid-template-columns: 1fr 1fr; }
-    .split--flip .split__img { order: 2; }
-  }
-  .split__img { border-radius: var(--radius); }
-
-  .gal { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
-  .gal--grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
-  .gal--strip { grid-auto-flow: column; grid-auto-columns: minmax(220px, 1fr);
-                overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
-  .gal--strip .gal__item { scroll-snap-align: start; }
-  .gal__item img {
-    width: 100%; aspect-ratio: 4/3; object-fit: cover;
-    border-radius: var(--radius); background: var(--stucco);
-  }
-  .gal__cap { font-size: var(--step--1); color: var(--ink-soft); margin: 0.4rem 0 0; }
-
-  .embed {
-    position: relative; aspect-ratio: 16/9;
-    border-radius: var(--radius); overflow: hidden; background: var(--ink);
-  }
-  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  .embed__cap { font-size: var(--step--1); color: var(--ink-soft); margin-top: 0.75rem; }
-</style>

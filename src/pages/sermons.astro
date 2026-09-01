@@ -55,16 +55,27 @@ const speakers = [...new Set(sermons.map((s) => s.data.speaker).filter(Boolean))
 <script>
   const chips = document.querySelectorAll('.chip');
   const items = document.querySelectorAll('.item');
-  chips.forEach((chip) => {
-    chip.addEventListener('click', () => {
-      const f = chip.getAttribute('data-filter');
-      chips.forEach((c) => c.classList.toggle('chip--on', c === chip));
-      items.forEach((it) => {
-        const match = f === 'all' || it.getAttribute('data-congregation') === f;
-        it.style.display = match ? '' : 'none';
-      });
+
+  function apply(f) {
+    chips.forEach((c) => c.classList.toggle('chip--on', c.getAttribute('data-filter') === f));
+    items.forEach((it) => {
+      const match = f === 'all' || it.getAttribute('data-congregation') === f;
+      it.style.display = match ? '' : 'none';
     });
+  }
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => apply(chip.getAttribute('data-filter')));
   });
+
+  // The service board links straight to one congregation's archive
+  // (/sermons#cantonese). Honour that on load and on back/forward.
+  const fromHash = () => {
+    const f = location.hash.slice(1);
+    if (f && [...chips].some((c) => c.getAttribute('data-filter') === f)) apply(f);
+  };
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
 </script>
 
 <style>

@@ -2,7 +2,7 @@
 
 Astro site for Monterey Park Chinese Baptist Church, deployed to Cloudflare
 Workers. Two things run themselves: the Sunday livestream links and the sermon
-archive. Two CMSes are installed side by side so we can pick one.
+archive. TinaCMS is the editor, with visual click-on-the-page editing.
 
 Everything in `src/content/` is sample content. The point is the editing
 experience and the automation, not the final copy.
@@ -11,24 +11,23 @@ experience and the automation, not the final copy.
 
 ## Run it
 
+Two terminals, in this order.
+
 ```bash
 npm install
-npm run dev          # http://localhost:4321
+
+npx tinacms dev      # terminal 1 — Tina's GraphQL server on :4001, builds /admin
+npm run dev          # terminal 2 — http://localhost:4321
 ```
 
-That gives you the site plus Keystatic at `/keystatic`. For Tina instead:
+Wait for Tina to finish *"Indexing local files"* before starting Astro.
 
-```bash
-npm run dev:tina     # site + Tina admin at /admin
-```
-
-`dev:tina` is slower to start — it spins up a local GraphQL server on port 4001
-and indexes the content first.
+**Use `http://localhost:4321`, not `127.0.0.1`** — the dev server binds IPv6.
 
 | Command | What it does |
 |---|---|
-| `npm run dev` | Site + Keystatic |
-| `npm run dev:tina` | Site + Tina |
+| `npm run cms` | Tina's GraphQL server + builds the `/admin` SPA |
+| `npm run dev` | The site |
 | `npm run build` | Production build into `dist/` |
 | `npm run preview` | Build, then serve it through the real Worker runtime |
 | `npm run deploy` | Build and deploy the site Worker |
@@ -40,6 +39,40 @@ and indexes the content first.
 runs the actual built Worker with real KV bindings. It's the only local check
 that catches Worker-specific breakage before deploying.
 
+### When the dev server breaks
+
+Two failures are common enough to name, and neither means your code is wrong.
+
+**"Dev server failed to start within 30s."** Astro 7 runs `astro dev` as a
+detached child and gives it a hardcoded 30 seconds to claim a lock file. A cold
+Vite cache here takes longer. The server was fine; the watchdog killed it. Run
+it inline instead:
+
+```bash
+ASTRO_DEV_BACKGROUND=1 npm run dev          # PowerShell: $env:ASTRO_DEV_BACKGROUND = "1"; npm run dev
+```
+
+The real log goes to `.astro/dev.log`, not the console — that's why the error
+looks contentless.
+
+**"The file does not exist at .../deps_ssr/… which is in the optimize deps
+directory."** Vite re-ran its dependency optimizer and rewrote `deps_ssr` under
+a new hash while the workerd runtime was still holding the old one. Every
+rendered route then 500s while static assets and 404s still work.
+
+```bash
+rm -rf node_modules/.vite     # PowerShell: Remove-Item -Recurse -Force node_modules\.vite
+```
+
+then restart Astro. **Editing any config file while dev is running is the usual
+trigger**, so stop the server first when changing `astro.config.mjs`,
+`tina/config.ts` or `src/content.config.ts`. Builds are never affected, which is
+why `npm run build` can pass while `npm run dev` won't boot.
+
+Do **not** use `tinacms dev -c "astro dev"`. Tina's wrapper enforces its own
+30-second timeout on the command it spawns and kills Astro before it finishes
+bundling.
+
 ---
 
 ## Layout
@@ -47,34 +80,84 @@ that catches Worker-specific breakage before deploying.
 ```
 src/
   components/
-    Blocks.astro              renders CMS page sections; understands both CMS shapes
+    Blocks.astro              renders CMS page sections
     ServiceBoard.astro        the live Sunday board
-  content/                    what Keystatic edits, and what the site builds from
-    announcements/  events/   .mdoc, markdoc body
+    home/                     the fixed homepage sections
+      Hero.astro  AnnouncementCarousel.astro  PastorNote.astro
+      Children.astro  UpcomingEvents.astro
+  content/                    what Tina edits, and what the site builds from
+    announcements/  events/   .md, frontmatter + body
     sermons/                  one JSON per sermon, filename = YouTube video ID
     pages/  settings/         JSON
-    tina/                     Tina's parallel copy, in Tina's shape
-      announcements/  events/  pages/  settings/
   data/services.json          fallback board data when KV is empty
-  layouts/Base.astro          nav, footer, structured data
+  layouts/Base.astro          masthead, menu, footer, structured data
   pages/
     api/services.json.ts      on-demand — reads live board state from KV
     tina-island/[name].ts     on-demand — re-renders a region while editing in Tina
     [...slug].astro           CMS-created pages
   styles/global.css           design tokens
 
-keystatic.config.ts           Keystatic schema
-tina/config.ts                Tina schema
+tina/config.ts                the CMS schema
 worker/
   livestream-sync.js          YouTube polling + service matching (cron only)
   wrangler.toml               the cron Worker
 wrangler.toml                 the site Worker
 scripts/sync-sermons.mjs      nightly sermon import
-.github/workflows/            runs the sermon import
+.github/workflows/            sermon import + deploy
 ```
 
 Every route prerenders except the two marked on-demand. That is why the site
 needs an adapter at all — see [Deployment](#deployment).
+
+---
+
+## The CMS
+
+TinaCMS, in local mode, at `/admin`. Every collection points at the same files
+Astro renders under `src/content/` — there is no second copy. What you edit is
+what `getCollection()` reads and what the build publishes.
+
+> This replaced a Keystatic/Tina pair that each kept their own tree. The split
+> was a steady source of "I changed it and nothing happened", because routing
+> and the menu only ever read one of the two. Keystatic and `@astrojs/markdoc`
+> were removed and the prose collections moved from `.mdoc` to `.md`.
+
+`Blocks.astro` normalises three block shapes: Tina's file `_template`, Tina's
+GraphQL `__typename`, and the legacy Keystatic `{ discriminant, value }`. The
+**file `_template` path is the one every production build takes**, because the
+Tina server isn't running then — that fallback is what makes an editor-made
+page render in CI at all.
+
+### The menu
+
+The four top-level items — About 關於我們, Services 崇拜, Newsletter 通訊,
+Offering 奉獻 — are fixed in `NAV_PARENTS` in `Base.astro`, so the menu can't be
+emptied from the editor. Everything else is editor-controlled. Each page has:
+
+| Field | Does |
+|---|---|
+| **Where in the menu** | `Not in the menu` / `Top level` / under one of the four |
+| **Menu label** | falls back to a title-cased slug |
+| **Menu label 中文** | shown beside the English, as every other item is |
+| **Menu order** | lower first, among pages in the same place |
+
+Assigning a page to a parent **turns that parent into a dropdown**, styled like
+Services; the parent's own destination moves to the foot of the panel so it is
+never lost. A parent with no pages under it stays a plain link.
+
+### Publishing
+
+Local mode only, so editing happens on a developer's machine and `npm run build`
+publishes from the repo. To put an editor on the live site, set `TINA_CLIENT_ID`
+and `TINA_TOKEN` and build with `npm run build:tina`. The `/tina-island/[name]`
+route already deploys, so visual editing works against the live site.
+
+**Note:** `.github/workflows/deploy.yml` runs `npm run build`, which strips
+`public/admin`. Switch it to `build:tina` or CI will keep shipping a site with
+no editor even after the tokens are set.
+
+Tina Cloud's free tier covers 2 editors, then $29/month. Local mode is free and
+unlimited.
 
 ---
 
@@ -110,8 +193,6 @@ rather than publishing an empty board. Broadcasts that match nothing are written
 to an `unmatched` key with a 7-day TTL, so a drifting title convention surfaces
 instead of silently losing a sermon.
 
-**Getting to the page.** The Worker writes to KV; nothing else does.
-
 ```
 cron (every 15 min; every 2 min Sun morning)
   └─ worker/livestream-sync.js  ──writes──▶  KV: services
@@ -122,8 +203,8 @@ cron (every 15 min; every 2 min Sun morning)
 ```
 
 The board is prerendered with build-time data so it paints instantly and is
-correct for search engines, then a small inline script refreshes the three
-things that actually change — state, button label, button link. If the fetch
+correct for search engines, then a small inline script refreshes what actually
+changes — card state, the well label, the meta line, the button. If the fetch
 fails the prerendered board stays, which is still usable: real times, real
 channel links, just possibly a stale "live" badge.
 
@@ -131,7 +212,10 @@ When KV is empty — before the first cron run, or in local dev — the endpoint
 serves [`src/data/services.json`](src/data/services.json) instead. The
 `x-services-source` response header says which you got, `kv` or `sample`.
 
-$29/month, which is more than the current HostGator bill. Local mode is
+Per-congregation prose lives in `ServiceBoard.astro`, deliberately **not** in
+`services.json`: that file is overwritten by the sync, so anything written there
+is lost on the next run.
+
 ---
 
 ## The sermon archive
@@ -165,64 +249,6 @@ flipping the channel ID's second character from `C` to `U`, which avoids a
 
 ---
 
-## The two CMSes
-
-Both are installed and both work. They edit **separate copies** of the content.
-
-They can't share files. Keystatic stores a page section as
-`{discriminant, value:{…}}`; Tina requires a flat `{_template, …}` and its
-discriminator is hardwired. Keystatic writes `.mdoc`; Tina reads `.mdx`. Bending
-either one to the other's storage format costs it the features you'd be judging
-it on, so each gets its native shape and `Blocks.astro` renders whichever it's
-handed.
-
-Sermons **are** shared — flat JSON, no blocks, and the sync script writes there.
-The one cost of sharing: Tina shows a plain text box for the sermon date where
-Keystatic gives a date picker, because Tina's date field would rewrite
-`2026-08-23` as a full ISO timestamp and break the other two readers.
-
-### Keystatic — form-based
-
-```bash
-npm run dev     # /keystatic
-```
-
-No login in local mode. Fast, free for unlimited editors. You fill in a form and
-check the result on the site.
-
-### Tina — visual
-
-```bash
-npm run dev:tina    # /admin
-```
-
-You see the real page and click into it. Changes appear as you type, and
-clicking any heading, paragraph, button or photo jumps the sidebar to that
-field. Closest thing to an Elementor-style experience that still keeps content
-in the repo.
-
-**The catch:** Tina Cloud's free tier covers 2 editors, then $29/month. Local
-mode is free and unlimited but only runs on a developer's machine.
-
-### Which one publishes?
-
-Right now, neither — both are local-mode only, so editing happens on a
-developer's machine and `npm run build` publishes from the Keystatic tree. To
-put an editor on the live site:
-
-- **Keystatic** — set `storage: { kind: 'github', repo: 'ORG/REPO' }` in
-  `keystatic.config.ts`, install the Keystatic GitHub App, and remove the
-  `isDev` guard in `astro.config.mjs`. Editors sign in with GitHub; saving
-  commits and triggers a rebuild.
-- **Tina** — add `TINA_CLIENT_ID` and `TINA_TOKEN`, then build with
-  `npm run build:tina`. The `/tina-island/[name]` route already deploys, so
-  visual editing works against the live site.
-
-Known friction worth naming for either: editors need an account, and publishing
-isn't instant.
-
----
-
 ## Deployment
 
 Two Workers, one KV namespace.
@@ -231,8 +257,6 @@ Two Workers, one KV namespace.
 |---|---|---|
 | `mpcbc-site` | `wrangler.toml` | the website; reads KV |
 | `mpcbc-livestream-sync` | `worker/wrangler.toml` | cron; writes KV |
-
-### The site
 
 `output: 'static'` plus an adapter is Astro's hybrid mode: **every route
 prerenders unless it opts out.** Only two do, so this is a static site with two
@@ -244,27 +268,52 @@ config to `dist/server/wrangler.json` at build time — which is why the deploy
 scripts point there, and why `wrangler.toml` deliberately has no `main` field.
 Setting one breaks the build, because it's validated before the output exists.
 
+`session: false` is set in `astro.config.mjs`. Nothing uses `Astro.session`, and
+left on, the adapter injects a `SESSION` KV binding with no namespace id.
+
 ### First deploy
 
 ```bash
+wrangler login
 npm run kv:create                    # paste the id into BOTH wrangler.toml files
 npx wrangler secret put YOUTUBE_API_KEY -c worker/wrangler.toml
 ```
 
-Set the two channel IDs in `worker/wrangler.toml`, then:
+Then fill in the placeholders:
+
+| Placeholder | Where |
+|---|---|
+| `replace_after_creating_namespace` | `wrangler.toml` **and** `worker/wrangler.toml` |
+| `UC_replace_with_real_channel_id` | `worker/wrangler.toml`, both channels |
 
 ```bash
 npm run deploy          # the site
 npm run deploy:sync     # the cron Worker
 ```
 
-The first site deploy provisions a `SESSION` KV namespace automatically —
-Astro asks for it and the adapter declares it with no id on purpose.
+Check the config before you spend a deploy on it:
+
+```bash
+npx wrangler deploy --dry-run -c dist/server/wrangler.json
+```
 
 Until you set `routes` in `wrangler.toml`, the site lands on
 `mpcbc-site.<subdomain>.workers.dev`. `astro.config.mjs` already declares
 `site: 'https://mpcbc.org'`, so canonical URLs claim the real domain — point
 the domain at the Worker before sending the link anywhere that matters.
+
+### Before a real launch
+
+The design carries placeholder content that must not go live on the real
+domain:
+
+- Pastor name, role and portrait
+- `(626) 555-0100` and `office@mpcbc.org` in the footer
+- Facebook / YouTube / Instagram links
+- The **Offering 奉獻** menu item has no destination (`href="#"`)
+- The newsletter form has no endpoint — it acknowledges locally and discards
+  the address
+- The hero background video, and the three children's-ministry photos
 
 ### Automatic deploys
 
@@ -276,7 +325,11 @@ deploys on every push to `main`. It needs two repository secrets:
 | `CLOUDFLARE_API_TOKEN` | Cloudflare dashboard → API Tokens → *Edit Cloudflare Workers* |
 | `CLOUDFLARE_ACCOUNT_ID` | Workers dashboard sidebar |
 
-The sermon sync calls that workflow directly rather than relying on its own
+The sermon sync additionally needs `YOUTUBE_API_KEY` as a secret and
+`PLAYLIST_CANTONESE`, `PLAYLIST_MANDARIN`, `PLAYLIST_ENGLISH` as repository
+variables.
+
+The sync calls the deploy workflow directly rather than relying on its own
 commit to trigger it. A push made with `GITHUB_TOKEN` deliberately does not
 fire other workflows, so without that call the nightly sermons would land in
 the repo and never reach the site.
@@ -309,7 +362,6 @@ npx wrangler kv key get services --binding MPCBC --remote -c worker/wrangler.tom
 |---|---|
 | Cloudflare Workers + assets | $0 |
 | Cron + KV | $0 (well inside free tier) |
-| Keystatic | $0, open source |
 | Tina | $0 local, $29/mo beyond 2 cloud editors |
 | YouTube API | $0 (~4 quota units per poll against 10,000/day) |
 | Domain | ~$40/year |
@@ -318,18 +370,22 @@ npx wrangler kv key get services --binding MPCBC --remote -c worker/wrangler.tom
 
 ## Design notes
 
-Full extracted brief — tokens, component inventory, the CJK typography
-rules and what's open to change — is in
-[DESIGN-BRIEF.md](DESIGN-BRIEF.md). It's written to be handed to a designer
-or pasted into a design tool as context. Short version:
+Full extracted brief — tokens, component inventory, the CJK typography rules
+and what's open to change — is in [DESIGN-BRIEF.md](DESIGN-BRIEF.md). It's
+written to be handed to a designer or pasted into a design tool as context.
+Short version:
 
-Palette comes from the building — the brown roof tile, tan stucco, white trim,
-and the Southern California sky that dominates both reference photos. The sky
-blue is the accent rather than the warmer clay tone church sites default to.
+Palette comes from the church logo — the maroon banner, its white cross and
+figures, and the near-black plum it sits on. `--accent` `#943759` is the brand;
+`--live` `#C2410C` is reserved for one thing only, a stream that is live right
+now.
 
-Type is Fraunces with Source Sans 3, both of which have Noto CJK counterparts on
-compatible metrics, so Chinese and English sit together without the size
-mismatch you normally get when CJK falls back to a system font.
+Type is Geist for display and body, with Inter for the small uppercase meta
+labels and Noto Serif TC / Noto Sans TC for Chinese — all on compatible
+metrics, so Chinese and English sit on the same line without the size mismatch
+you normally get when CJK falls back to a system font. The `:lang()` rules in
+`global.css` are typography, not preference, and are meant to survive a
+redesign.
 
 The congregation pages (`/english`, `/cantonese`, `/mandarin`) are separate
 content with their own titles and descriptions, not translations of each other.

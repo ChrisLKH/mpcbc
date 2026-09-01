@@ -1,26 +1,22 @@
 import { defineConfig } from 'tinacms';
 
 /**
- * TinaCMS config — visual, click-on-the-page editing.
+ * TinaCMS config — the site's only CMS, with visual click-on-the-page
+ * editing.
  *
- * Tina reads its own copy of the content under src/content/tina/, because
- * the two editors store block lists in shapes neither can read:
+ * Every collection points at the same files Astro renders, under
+ * src/content/. There is no second tree: what you edit here is what
+ * `getCollection()` reads and what the build publishes.
  *
- *   Keystatic  { discriminant: 'textBlock', value: { heading, body } }
- *   Tina       { _template: 'textBlock', heading, body }
+ * This replaced a Keystatic/Tina pair that each kept their own copy of
+ * the content. The split was a constant source of "I changed it and
+ * nothing happened", because routing and the menu only ever read one of
+ * the two. Formats are chosen so a single tree serves both Tina and
+ * Astro: markdown for prose collections, JSON for pages and settings.
  *
- * Tina's `templates` discriminator is hardwired to a flat `_template` key,
- * so pointing it at Keystatic's files makes every block resolve to the
- * first template with all fields null — the page renders empty with no
- * error. Same story for announcements/events: Keystatic writes .mdoc,
- * which Tina doesn't index at all.
- *
- * A shared tree would mean crippling one editor to match the other's
- * storage format, which would skew the comparison. Each gets its native
- * shape instead; Blocks.astro renders either. `npm run build` publishes
- * from the Keystatic tree — see README.
- *
- * Local mode needs no account:  npm run dev:tina  ->  /admin
+ * Local mode needs no account. Run the two servers separately —
+ * `npx tinacms dev` then `npm run dev` — because `tinacms dev -c` kills
+ * Astro after 30s, which is less time than a cold start takes here.
  * Tina Cloud (2 free seats) needs clientId + token in .env.
  */
 
@@ -31,8 +27,9 @@ const CONGREGATIONS = [
   { label: 'Mandarin 國語', value: 'mandarin' },
 ];
 
-// The same section library as Keystatic. Adding a template here makes
-// it available on every page at once.
+// The section library. Adding a template here makes it available on
+// every page at once, and Blocks.astro is where it gets rendered — the
+// two lists have to stay in step.
 const pageBlocks = [
   {
     name: 'textBlock',
@@ -170,7 +167,7 @@ export default defineConfig({
       {
         name: 'pages',
         label: 'Pages',
-        path: 'src/content/tina/pages',
+        path: 'src/content/pages',
         format: 'json',
         ui: {
           // Click-to-edit needs to know where the page lives on the site.
@@ -194,7 +191,33 @@ export default defineConfig({
             ui: { component: 'textarea' },
             description: 'Shown in Google results. Around 150 characters.',
           },
-          { type: 'boolean', name: 'showInMenu', label: 'Show in the menu' },
+          {
+            type: 'string', name: 'menuParent', label: 'Where in the menu',
+            description:
+              'Choose "Not in the menu" to keep the page reachable by link only. ' +
+              'Picking one of the menu items nests this page under it, which turns ' +
+              'that item into a dropdown.',
+            options: [
+              { label: 'Not in the menu', value: 'none' },
+              { label: 'Top level', value: 'top' },
+              { label: 'Under "About 關於我們"', value: 'about' },
+              { label: 'Under "Services 崇拜"', value: 'services' },
+              { label: 'Under "Newsletter 通訊"', value: 'newsletter' },
+              { label: 'Under "Offering 奉獻"', value: 'offering' },
+            ],
+          },
+          {
+            type: 'string', name: 'menuLabel', label: 'Menu label',
+            description: 'Leave blank to use the page name.',
+          },
+          {
+            type: 'string', name: 'menuLabelZh', label: 'Menu label 中文',
+            description: 'Shown beside the English label, the way the other menu items are.',
+          },
+          {
+            type: 'number', name: 'menuOrder', label: 'Menu order',
+            description: 'Lower numbers come first among pages in the same place.',
+          },
           {
             type: 'object', name: 'sections', label: 'Page sections',
             list: true,
@@ -206,7 +229,7 @@ export default defineConfig({
       {
         name: 'homepage',
         label: 'Homepage',
-        path: 'src/content/tina/settings',
+        path: 'src/content/settings',
         format: 'json',
         match: { include: 'homepage' },
         ui: {
@@ -231,8 +254,9 @@ export default defineConfig({
       {
         name: 'sermons',
         label: 'Sermons',
-        // Flat JSON with no blocks, so both editors read it as-is. Shared
-        // on purpose: sync-sermons.mjs writes here.
+        // Written by scripts/sync-sermons.mjs from YouTube. Editing here
+        // is for corrections and for hiding a video — creating one by
+        // hand would just be overwritten by the next sync.
         path: 'src/content/sermons',
         format: 'json',
         ui: { allowedActions: { create: false } },
@@ -251,25 +275,56 @@ export default defineConfig({
       {
         name: 'announcements',
         label: 'Announcements',
-        path: 'src/content/tina/announcements',
-        format: 'mdx',
+        path: 'src/content/announcements',
+        format: 'md',
         fields: [
           { type: 'string', name: 'title', label: 'Title', isTitle: true, required: true },
+          {
+            type: 'string', name: 'titleZh', label: 'Title in Chinese',
+            description: 'Shown under the English title. Leave blank to omit it.',
+          },
+          {
+            type: 'string', name: 'kicker', label: 'Kicker',
+            description: 'Small label above the title, e.g. "Save the date · October 2026".',
+          },
           { type: 'string', name: 'congregation', label: 'Who is this for?', options: CONGREGATIONS },
           {
             type: 'datetime', name: 'removeAfter', label: 'Remove after', required: true,
             description: 'Disappears from the site on this date.',
           },
           { type: 'boolean', name: 'pinned', label: 'Pin to top' },
-          { type: 'rich-text', name: 'body', label: 'Details', isBody: true },
+          {
+            type: 'string', name: 'summary', label: 'Summary',
+            description: 'The paragraph shown on the homepage. Two or three sentences.',
+            ui: { component: 'textarea' },
+          },
+          {
+            type: 'string', name: 'ctaText', label: 'Button text',
+            description: 'Leave blank and no button appears.',
+          },
+          { type: 'string', name: 'ctaLink', label: 'Button link' },
+          {
+            type: 'object', name: 'meta', label: 'Details', list: true,
+            description: 'Up to three short rows listed beside the announcement.',
+            ui: { itemProps: (item) => ({ label: item?.label }) },
+            fields: [
+              { type: 'string', name: 'label', label: 'Label' },
+              { type: 'string', name: 'value', label: 'Value' },
+            ],
+          },
+          {
+            type: 'string', name: 'note', label: 'Handwritten note',
+            description: 'A short aside in the handwritten face. Optional.',
+          },
+          { type: 'rich-text', name: 'body', label: 'Full details', isBody: true },
         ],
       },
 
       {
         name: 'events',
         label: 'Events',
-        path: 'src/content/tina/events',
-        format: 'mdx',
+        path: 'src/content/events',
+        format: 'md',
         fields: [
           { type: 'string', name: 'title', label: 'Event name', isTitle: true, required: true },
           { type: 'string', name: 'congregation', label: 'Who is this for?', options: CONGREGATIONS },

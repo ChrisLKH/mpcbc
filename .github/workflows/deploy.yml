@@ -32,8 +32,19 @@ jobs:
 
       - run: npm ci
 
+      # Must be build:tina, not build. `tina/__generated__/` is gitignored
+      # and three routes import it statically, so a fresh checkout has no
+      # client to compile against — plain `astro build` fails outright.
+      # `tinacms build` regenerates it first, and bakes the content API URL
+      # into it: with the Tina Cloud env below it points at content.tinajs.io,
+      # without them it falls back to localhost and only the live-editing
+      # route is inert (prerendered pages still build from the files).
       - name: Build
-        run: npm run build
+        env:
+          TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          TINA_BRANCH: ${{ github.ref_name }}
+        run: npm run build:tina
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3

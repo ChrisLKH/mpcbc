@@ -1,0 +1,132 @@
+---
+/**
+ * The welcome note. The portrait is a placeholder well until a real
+ * photograph is supplied — drop one in and pass `portrait`.
+ */
+const {
+  portrait = '',
+  name = 'Rev. Chan',
+  nameZh = '陳牧師',
+  role = 'Senior Pastor',
+  heading = 'You are welcome here, whichever language you pray in.',
+  body = 'We began in 1976 with a handful of families. Today three congregations share this building, and many of our members are the children and grandchildren of the people who started it.',
+  bodyZh = '若您初次來訪，請放心前來，隨意入座。我們不會請您站起來自我介紹。門口的同工會為您指引兒童教室與後方停車場。',
+  ctaText = 'Read our welcome page',
+  ctaLink = '/visit',
+} = Astro.props;
+---
+
+<section class="welcome" id="welcome" aria-labelledby="welcome-heading">
+  <div class="wrap welcome__inner">
+    <div class="welcome__aside">
+      {portrait ? (
+        <img class="welcome__portrait" src={portrait} alt={`${name}, ${role}`} loading="lazy" />
+      ) : (
+        <div class="welcome__portrait welcome__portrait--empty">
+          <span>pastor portrait<br />square crop</span>
+        </div>
+      )}
+      <div class="welcome__id">
+        <p class="welcome__name">
+          {name} <span class="zh-inline" lang="zh-Hant">{nameZh}</span>
+        </p>
+        <p class="welcome__role">{role}</p>
+      </div>
+    </div>
+
+    <div class="welcome__body">
+      <p class="welcome__label">
+        <span class="welcome__rule" aria-hidden="true"></span>
+        A note from our pastor
+        <span class="zh-inline welcome__labelZh" lang="zh-Hant">牧者的話</span>
+      </p>
+      <h2 id="welcome-heading" class="welcome__heading">{heading}</h2>
+      {body && <p class="welcome__text">{body}</p>}
+      {bodyZh && <p class="welcome__textZh" lang="zh-Hant">{bodyZh}</p>}
+      {ctaText && (
+        <a class="btn btn--ghost" href={ctaLink}>
+          {ctaText} <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .welcome { padding-block: clamp(3.5rem, 9vw, 6.5rem); }
+
+  .welcome__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.8rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  .welcome__aside {
+    flex: 0 1 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: auto;
+  }
+
+  .welcome__portrait {
+    width: min(14rem, 60vw);
+    aspect-ratio: 1;
+    border-radius: var(--radius-pill);
+    object-fit: cover;
+  }
+  .welcome__portrait--empty {
+    background: var(--tint);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.4rem;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+
+  .welcome__id { text-align: center; }
+  .welcome__name { margin: 0; font-weight: 600; max-width: none; }
+  .welcome__role {
+    margin: 0.15rem 0 0;
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 700;
+    color: var(--ink-soft);
+    max-width: none;
+  }
+
+  .welcome__body { flex: 1 1 26rem; min-width: 0; }
+
+  /* Not .rule-label — this one is larger and set in the body face, the
+     way the design distinguishes a personal note from a section label. */
+  .welcome__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 0 0 0.9rem;
+    max-width: none;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+  }
+  .welcome__rule { width: 34px; height: 2px; background: var(--accent); }
+  .welcome__labelZh { font-family: var(--font-zh); }
+
+  .welcome__heading { margin: 0 0 1.2rem; max-width: 26ch; }
+  .welcome__text { margin: 0 0 1rem; max-width: 56ch; }
+  .welcome__textZh {
+    margin: 0 0 1.5rem;
+    max-width: 44ch;
+    color: var(--ink-soft);
+    font-family: var(--font-zh);
+  }
+</style>

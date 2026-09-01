@@ -1,0 +1,133 @@
+---
+import { render } from 'astro:content';
+
+/**
+ * Upcoming events. The design framed this as a Google Calendar feed; no
+ * such feed exists, so the list comes from the events collection the
+ * editor already writes to and the copy says so rather than promising an
+ * integration that isn't there.
+ */
+const { events = [] } = Astro.props;
+
+const rows = await Promise.all(
+  events.map(async (e) => ({
+    data: e.data,
+    Content: (await render(e)).Content,
+  }))
+);
+
+const shortDate = (d) =>
+  d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+---
+
+<section class="up" id="events" aria-labelledby="up-heading">
+  <div class="wrap">
+    <div class="up__head">
+      <div>
+        <p class="rule-label">
+          Coming up <span class="zh-inline" lang="zh-Hant">近期活動</span>
+        </p>
+        <h2 id="up-heading" class="up__heading">Gatherings and small groups</h2>
+      </div>
+      <div class="up__actions">
+        <a class="btn btn--sm btn--ghost" href="/events">Open the church calendar</a>
+      </div>
+    </div>
+
+    <p class="up__note">
+      Added through the editor. Anything dated in the future appears here automatically.
+    </p>
+
+    {rows.length > 0 ? (
+      <ul class="up__list" role="list">
+        {rows.map(({ data, Content }) => (
+          <li class="up__row">
+            <span class="up__date">{shortDate(data.startDate)}</span>
+            <span class="up__main">
+              <span class="up__title">{data.title}</span>
+              <span class="up__body"><Content /></span>
+            </span>
+            {(data.startTime || data.location) && (
+              <span class="up__meta">
+                {[data.startTime, data.location].filter(Boolean).join(' · ')}
+              </span>
+            )}
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="up__empty">No upcoming events listed right now.</p>
+    )}
+  </div>
+</section>
+
+<style>
+  .up { padding-bottom: clamp(3.5rem, 9vw, 6.5rem); }
+
+  .up__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .up__heading { margin: 0; }
+  .up__actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+  .up__note {
+    margin: 0.9rem 0 1.8rem;
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 600;
+    color: var(--ink-soft);
+    max-width: none;
+  }
+
+  .up__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .up__row {
+    display: grid;
+    gap: 0.3rem 1.5rem;
+    grid-template-columns: 6rem 1fr auto;
+    align-items: baseline;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Below the fold of a phone the three-column row stops working — the
+     meta column wraps into a sliver. Stack it instead. */
+  @media (max-width: 34rem) {
+    .up__row { grid-template-columns: 1fr; gap: 0.35rem; }
+    .up__meta { text-align: left; }
+  }
+
+  .up__date {
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .up__main { min-width: 0; }
+  .up__title { display: block; font-size: 1.125rem; line-height: 1.4; font-weight: 600; }
+  .up__body { display: block; color: var(--ink-soft); font-size: var(--step--1); margin-top: 0.2rem; }
+  .up__body :global(p) { margin: 0; max-width: 60ch; }
+
+  .up__meta {
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 700;
+    color: var(--ink-soft);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .up__empty { color: var(--ink-soft); }
+</style>

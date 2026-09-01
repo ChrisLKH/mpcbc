@@ -8,64 +8,138 @@ const { services } = servicesData;
 // can't take a bare data-tina-field attribute, so the caller hands down the
 // strings and we stamp them onto real elements.
 const {
-  heading = 'Join us this Sunday',
-  intro = '',
+  // The homepage board is the #sunday anchor. A second board dropped onto
+  // a page as a block needs its own id, or aria-labelledby resolves to
+  // whichever heading came first.
+  anchor = 'sunday',
+  label = 'This Sunday',
+  labelZh = '本主日',
+  heading = 'Three congregations, one morning.',
+  intro = 'Each congregation streams on its own channel. Live links update automatically from YouTube — nobody edits this weekly.',
+  showFooter = true,
   tinaField,
   headingField,
   introField,
 } = Astro.props;
 
-const stateCopy = {
-  live:        { label: 'Live now',    action: 'Watch now' },
-  scheduled:   { label: 'Starts soon', action: 'Set a reminder' },
-  unscheduled: { label: null,          action: 'Go to channel' },
-  ended:       { label: null,          action: 'Watch the recording' },
+/**
+ * Editorial copy about each congregation. Deliberately not in
+ * services.json — that file is overwritten by the scheduled YouTube sync
+ * and nobody edits it by hand, so prose would be lost on the next run.
+ */
+const COPY = {
+  cantonese: {
+    channel: '粵語頻道',
+    channelLang: 'zh-Hant',
+    blurb: 'Our founding congregation. Preaching in Cantonese, tea afterwards in the courtyard.',
+  },
+  english: {
+    channel: 'English channel',
+    channelLang: null,
+    blurb: 'Mostly the children and grandchildren of the founding families. Sunday school runs at the same hour.',
+  },
+  mandarin: {
+    channel: '國語頻道',
+    channelLang: 'zh-Hant',
+    blurb: 'Our newest congregation, with traditional-character subtitles. Sunday school at the same hour.',
+  },
 };
 
+/**
+ * Every state has to look deliberate. The board cannot promise which one
+ * it will be in on a given Sunday and nobody edits it weekly, so there is
+ * no "empty" variant — only a different label and a different first action.
+ */
+const STATE = {
+  live:        { well: 'youtube · live now',       action: 'Watch now' },
+  scheduled:   { well: 'youtube · scheduled',      action: 'Set a reminder' },
+  unscheduled: { well: 'youtube · last recording', action: 'Go to channel' },
+  ended:       { well: 'youtube · last recording', action: 'Watch the recording' },
+};
+
+const shortName = (s) => s.name.replace(/\s*Service$/, '');
+
 function href(s) {
-  if (s.state === 'live' || s.state === 'scheduled') {
-    if (s.confidence === 'high' && s.videoId) return `https://youtube.com/watch?v=${s.videoId}`;
-    return s.channelUrl;
+  if (
+    (s.state === 'live' || s.state === 'scheduled') &&
+    s.confidence === 'high' &&
+    s.videoId
+  ) {
+    return `https://youtube.com/watch?v=${s.videoId}`;
   }
   return s.channelUrl;
 }
 ---
 
-<section class="board" aria-labelledby="board-heading" data-tina-field={tinaField}>
+<section class="board" id={anchor} aria-labelledby={`${anchor}-heading`} data-tina-field={tinaField}>
   <div class="wrap">
-    <h2 id="board-heading" class="board__heading" data-tina-field={headingField}>{heading}</h2>
-    {intro && <p class="board__intro" data-tina-field={introField}>{intro}</p>}
+    <div class="board__head">
+      <div>
+        <p class="rule-label">
+          {label} <span class="zh-inline" lang="zh-Hant">{labelZh}</span>
+        </p>
+        <h2 id={`${anchor}-heading`} class="board__heading" data-tina-field={headingField}>{heading}</h2>
+      </div>
+      {intro && <p class="board__intro" data-tina-field={introField}>{intro}</p>}
+    </div>
 
     <ul class="board__list" role="list">
-      {services.map((s) => (
-        <li class={`svc svc--${s.state}`} data-svc={s.id}>
-          <div class="svc__top">
-            <p class="svc__local" lang={s.lang}>{s.nameLocal}</p>
-            {s.lang !== 'en' && <p class="svc__en">{s.name}</p>}
-            <span class="svc__live" data-svc-live hidden={s.state !== 'live'}>
-              <span class="svc__dot" aria-hidden="true"></span>Live now
-            </span>
-          </div>
+      {services.map((s) => {
+        const copy = COPY[s.id] || { channel: s.name, channelLang: null, blurb: '' };
+        const state = STATE[s.state] || STATE.unscheduled;
+        const live = s.state === 'live';
 
-          <p class="svc__time">
-            <span class="svc__day">{s.day}</span>
-            <span class="svc__clock">{s.time}</span>
-          </p>
+        return (
+          <li class:list={['svc', { 'svc--live': live }]} data-svc={s.id}>
+            <div class="svc__well">
+              <span class="svc__wellLabel" data-svc-well>
+                <span class="svc__dot" data-svc-dot aria-hidden="true" hidden={!live}></span>
+                {state.well}
+              </span>
+              <span class="svc__channel" lang={copy.channelLang || undefined}>{copy.channel}</span>
+            </div>
 
-          <a
-            class={`svc__cta ${s.state === 'live' ? 'btn' : 'btn btn--ghost'}`}
-            href={href(s)}
-            data-svc-cta
-          >
-            {stateCopy[s.state].action}
-          </a>
-        </li>
-      ))}
+            <div>
+              <h3
+                class:list={['svc__name', { 'svc__name--zh': s.lang !== 'en' }]}
+                lang={s.lang !== 'en' ? s.lang : undefined}
+              >{s.nameLocal}</h3>
+              <p class="svc__meta" data-svc-meta>
+                {live ? 'Live now' : shortName(s)} &middot; {s.time}
+              </p>
+            </div>
+
+            {copy.blurb && <p class="svc__blurb">{copy.blurb}</p>}
+
+            <div class="svc__actions">
+              <a
+                class:list={['btn', 'btn--sm', { 'btn--ghost': !live }]}
+                href={href(s)}
+                data-svc-cta
+              >{state.action}</a>
+              <a
+                class:list={['btn', 'btn--sm', 'btn--ghost', { 'btn--ghost-on-tint': live }]}
+                href={`/sermons#${s.id}`}
+                data-svc-archive
+              >Archive <span class="zh-inline" lang="zh-Hant">存檔</span></a>
+            </div>
+          </li>
+        );
+      })}
     </ul>
 
-    <p class="board__auto">
-      Live links update automatically from YouTube. Nobody edits this weekly.
-    </p>
+    {showFooter && (
+      <div class="board__foot">
+        <p class="board__note">
+          Watching from home? Open the player for your congregation. Every service
+          is posted to the sermon archive within a day or two.
+        </p>
+        <div class="board__footActions">
+          <a class="btn btn--sm btn--ghost" href="/sermons">All sermons</a>
+          <a class="btn btn--sm btn--ghost" href="https://youtube.com/@mpcbc-english">Our YouTube channels</a>
+        </div>
+      </div>
+    )}
   </div>
 </section>
 
@@ -73,23 +147,23 @@ function href(s) {
   /**
    * The board above is prerendered, so its state is only as fresh as the last
    * build. /api/services.json runs on demand and reads what the cron Worker
-   * put in KV — this swaps the three things that actually change.
+   * put in KV — this swaps the four things that actually change: the card
+   * treatment, the well label and its dot, the meta line, and the first CTA.
    *
    * Deliberately silent on failure: the served markup is already a usable
    * board with real times and channel links, so a fetch error degrades to
    * "slightly stale" rather than "broken". Nothing here is required for the
    * page to work, which is why it's plain inline JS and not an island.
    *
-   * The state->label and state->href rules are mirrored from the frontmatter
-   * above. Two small copies beat shipping a framework runtime to patch
-   * three anchors.
+   * The state tables are mirrored from the frontmatter above. Two small
+   * copies beat shipping a framework runtime to patch three cards.
    */
   (async () => {
-    const ACTION = {
-      live: 'Watch now',
-      scheduled: 'Set a reminder',
-      unscheduled: 'Go to channel',
-      ended: 'Watch the recording',
+    const STATE = {
+      live:        { well: 'youtube · live now',       action: 'Watch now' },
+      scheduled:   { well: 'youtube · scheduled',      action: 'Set a reminder' },
+      unscheduled: { well: 'youtube · last recording', action: 'Go to channel' },
+      ended:       { well: 'youtube · last recording', action: 'Watch the recording' },
     };
 
     const target = (s) =>
@@ -108,18 +182,41 @@ function href(s) {
         const card = document.querySelector(`[data-svc="${s.id}"]`);
         if (!card) continue;
 
-        card.className = `svc svc--${s.state}`;
+        const state = STATE[s.state] || STATE.unscheduled;
+        const live = s.state === 'live';
 
-        const badge = card.querySelector('[data-svc-live]');
-        if (badge) badge.hidden = s.state !== 'live';
+        card.classList.toggle('svc--live', live);
+
+        const dot = card.querySelector('[data-svc-dot]');
+        const well = card.querySelector('[data-svc-well]');
+        if (well) {
+          // Rewrite only the label text, leaving the dot element in place.
+          const text = well.lastChild;
+          if (text) text.textContent = state.well;
+        }
+        if (dot) dot.hidden = !live;
+
+        const meta = card.querySelector('[data-svc-meta]');
+        if (meta) {
+          const name = live
+            ? 'Live now'
+            : (s.name || '').replace(/\s*Service$/, '');
+          meta.textContent = `${name} · ${s.time}`;
+        }
 
         const cta = card.querySelector('[data-svc-cta]');
         if (cta) {
-          cta.textContent = ACTION[s.state] || ACTION.unscheduled;
+          cta.textContent = state.action;
           cta.href = target(s);
-          cta.className =
-            s.state === 'live' ? 'svc__cta btn' : 'svc__cta btn btn--ghost';
+          cta.className = live
+            ? 'btn btn--sm'
+            : 'btn btn--sm btn--ghost';
         }
+
+        // The archive button sits on a tinted ground only while the card
+        // is the live one, so it has to follow the state too.
+        const archive = card.querySelector('[data-svc-archive]');
+        if (archive) archive.classList.toggle('btn--ghost-on-tint', live);
       }
     } catch {
       // Offline or endpoint down — keep the prerendered board.
@@ -128,17 +225,25 @@ function href(s) {
 </script>
 
 <style>
-  .board {
-    background: var(--stucco-dim);
-    padding-block: clamp(2.5rem, 7vw, 4.5rem);
-    border-block: 1px solid rgba(42, 29, 22, 0.1);
+  .board { padding-block: clamp(3rem, 8vw, 6rem); }
+
+  .board__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2.2rem;
   }
-
-  .board__heading { margin-bottom: 0.25em; }
-
+  .board__heading { margin: 0; }
   .board__intro {
+    margin: 0;
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 600;
+    line-height: 1.7;
     color: var(--ink-soft);
-    margin-bottom: 2rem;
+    max-width: 40ch;
   }
 
   .board__list {
@@ -146,99 +251,95 @@ function href(s) {
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 1px;
-    background: rgba(42, 29, 22, 0.13);
-    border: 1px solid rgba(42, 29, 22, 0.13);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-
-  @media (min-width: 46rem) {
-    .board__list { grid-template-columns: repeat(3, 1fr); }
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
   .svc {
-    background: var(--paper);
-    padding: 1.5rem 1.35rem 1.6rem;
     display: flex;
     flex-direction: column;
+    gap: 0.9rem;
+    padding: 1rem 1rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
   }
+  .svc--live { border-color: var(--accent); background: var(--tint); }
 
-  .svc--live { background: var(--white); }
-
-  .svc__top { margin-bottom: 1.1rem; }
-
-  .svc__local {
-    font-family: var(--font-display);
-    font-size: var(--step-1);
-    font-weight: 600;
-    line-height: 1.2;
-    margin: 0;
+  .svc__well {
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    background: var(--shell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    text-align: center;
+    padding: 1rem;
   }
-
-  .svc__en {
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    margin: 0.15rem 0 0;
-    letter-spacing: 0.02em;
-  }
-
-  .svc__live {
+  .svc__wellLabel {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    margin-top: 0.6rem;
-    font-size: var(--step--1);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .svc--live .svc__wellLabel { color: var(--live-soft); }
+  .svc__channel { font-size: var(--step-0); color: var(--white); }
+
+  .svc__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--live);
+    display: block;
+    animation: svcPulse 1.8s ease-in-out infinite;
+  }
+  .svc__dot[hidden] { display: none; }
+
+  @keyframes svcPulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.3; }
+  }
+
+  .svc__name { margin: 0 0 0.2rem; }
+  .svc__name--zh { font-family: var(--font-zh); }
+
+  .svc__meta {
+    margin: 0;
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--live);
-  }
-
-  .svc__dot {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: var(--live);
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50%      { opacity: 0.35; }
-  }
-
-  .svc__time {
-    margin: 0 0 1.4rem;
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .svc__day {
-    font-size: var(--step--1);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--ink-soft);
-  }
-
-  .svc__clock {
-    font-family: var(--font-display);
-    font-size: var(--step-2);
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .svc__cta {
-    margin-top: auto;
-    align-self: flex-start;
-  }
-
-  .board__auto {
-    margin: 1.5rem 0 0;
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    font-style: italic;
+    color: var(--accent);
     max-width: none;
   }
+  .svc--live .svc__meta { color: var(--live); }
+
+  .svc__blurb { margin: 0; color: var(--ink-soft); font-size: var(--step--1); }
+
+  .svc__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.4rem;
+  }
+
+  .board__foot {
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2.5rem;
+  }
+  .board__note { margin: 0; max-width: 52ch; color: var(--ink-soft); font-size: var(--step--1); }
+  .board__footActions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 </style>

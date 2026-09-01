@@ -8,26 +8,76 @@ const {
   lang = 'en',
 } = Astro.props;
 
-// Pages created in the editor appear here automatically when
-// "Show in the menu" is ticked. No code change needed.
-const cmsPages = (await getCollection('pages'))
-  .filter((p) => p.data.showInMenu)
-  .map((p) => ({
-    href: `/${p.id}`,
-    label: p.id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
-  }));
-
-const nav = [
-  { href: '/visit', label: 'Plan your visit' },
-  ...cmsPages,
-  { href: '/sermons', label: 'Sermons' },
-  { href: '/events', label: 'Events' },
-  { href: '/english', label: 'English' },
-  { href: '/cantonese', label: '粵語' },
-  { href: '/mandarin', label: '國語' },
+/**
+ * The menu is assembled from two sources.
+ *
+ * The top-level items below are fixed in code, so the navigation cannot
+ * be emptied or broken from the editor. Each one is a parent an editor
+ * can assign pages to.
+ *
+ * Pages choose their own place via the "Where in the menu" dropdown
+ * (`menuParent`). A page set to `top` becomes a top-level item; a page
+ * set to a parent's key nests under it, which turns that parent into a
+ * dropdown. No code change is needed to add, move or remove one.
+ *
+ * The three congregations are built-in children of Services. Their times
+ * are duplicated from src/data/services.json rather than imported,
+ * because this is chrome on every page and the board is the thing that
+ * has to be live-accurate.
+ */
+const NAV_PARENTS = [
+  { key: 'about', label: 'About', zh: '關於我們', href: '/#welcome' },
+  {
+    key: 'services',
+    label: 'Services',
+    zh: '崇拜',
+    items: [
+      { href: '/english',   label: 'English Worship', zh: false, meta: '11:00 AM · page & sermon archive' },
+      { href: '/cantonese', label: '粵語堂 Cantonese', zh: true,  meta: '9:30 AM · page & sermon archive' },
+      { href: '/mandarin',  label: '國語堂 Mandarin',  zh: true,  meta: '11:30 AM · page & sermon archive' },
+    ],
+    footLabel: 'All services this Sunday',
+    footHref: '/sermons',
+  },
+  { key: 'newsletter', label: 'Newsletter', zh: '通訊', href: '/#news' },
+  // No giving page exists yet — this needs a real destination before launch.
+  { key: 'offering', label: 'Offering', zh: '奉獻', href: '#' },
 ];
 
+const menuPages = (await getCollection('pages'))
+  .filter((p) => p.data.menuParent && p.data.menuParent !== 'none')
+  .sort((a, b) => a.data.menuOrder - b.data.menuOrder)
+  .map((p) => ({
+    parent: p.data.menuParent,
+    href: `/${p.id}`,
+    // Falls back to a title-cased slug so a page is never unlabelled.
+    label: p.data.menuLabel || p.id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+    zh: p.data.menuLabelZh || null,
+  }));
+
+const childrenOf = (key) => menuPages.filter((p) => p.parent === key);
+
+// A parent with children renders as a dropdown; on its own it stays a
+// plain link. Its own destination moves to the foot of the panel so it
+// is never lost when it gains children.
+const nav = [
+  ...NAV_PARENTS.slice(0, 2).map((p) => ({ ...p, items: [...(p.items || []), ...childrenOf(p.key)] })),
+  ...childrenOf('top'),
+  ...NAV_PARENTS.slice(2).map((p) => ({ ...p, items: [...(p.items || []), ...childrenOf(p.key)] })),
+].map((item) => ({
+  ...item,
+  items: item.items || [],
+  // Services supplies its own foot label ("All services this Sunday");
+  // a parent falling back to its own name keeps its Chinese with it,
+  // so the link stays bilingual like every other item.
+  footZh: item.footLabel ? null : item.zh || null,
+  footLabel: item.footLabel || item.label,
+  footHref: item.footHref || item.href,
+}));
+
 const path = Astro.url.pathname;
+const isCurrent = (href) =>
+  !!href && href.startsWith('/') && !href.includes('#') && path.startsWith(href);
 ---
 
 <!doctype html>
@@ -38,11 +88,12 @@ const path = Astro.url.pathname;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="icon" href="/images/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+TC:wght@400;600&family=Noto+Serif+TC:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;600;700&family=Nanum+Pen+Script&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -57,6 +108,7 @@ const path = Astro.url.pathname;
         '@type': 'PostalAddress',
         addressLocality: 'Monterey Park',
         addressRegion: 'CA',
+        postalCode: '91754',
         addressCountry: 'US',
       },
       openingHoursSpecification: [
@@ -73,19 +125,66 @@ const path = Astro.url.pathname;
     <header class="masthead">
       <div class="wrap masthead__inner">
         <a class="brand" href="/">
-          <span class="brand__zh" lang="zh-Hant">蒙特利公園華人浸信會</span>
-          <span class="brand__en">Monterey Park Chinese Baptist Church</span>
+          <img
+            src="/images/logo.png"
+            alt="Monterey Park Chinese Baptist Church 蒙特利公園華人浸信會"
+            width="524"
+            height="98"
+          />
         </a>
-        <nav aria-label="Main">
-          <ul role="list" class="nav">
-            {nav.map((item) => (
-              <li>
-                <a href={item.href} aria-current={path.startsWith(item.href) ? 'page' : undefined}>
+
+        <nav class="nav" aria-label="Main">
+          {nav.map((item) =>
+            item.items.length > 0 ? (
+              <div class="menu" data-menu>
+                <button
+                  class="nav__link menu__button"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls={`menu-${item.key}`}
+                  data-menu-button
+                >
                   {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+                  {item.zh && <span class="zh-inline nav__zh" lang="zh-Hant">{item.zh}</span>}
+                  <span class="menu__caret" aria-hidden="true">▾</span>
+                </button>
+
+                <div class="menu__panel" id={`menu-${item.key}`} data-menu-panel hidden>
+                  {item.items.map((c) => (
+                    <a class="menu__item" href={c.href}>
+                      <span
+                        lang={c.zh ? 'zh-Hant' : undefined}
+                        class:list={['menu__name', 'zh-inline', { 'menu__name--zh': c.zh === true }]}
+                      >{c.label}</span>
+                      {c.meta && <span class="menu__meta">{c.meta}</span>}
+                      {typeof c.zh === 'string' && (
+                        <span class="menu__meta zh-inline" lang="zh-Hant">{c.zh}</span>
+                      )}
+                    </a>
+                  ))}
+                  {item.footHref && (
+                    <a class="menu__all" href={item.footHref}>
+                      {item.footLabel}
+                      {item.footZh && (
+                        <span class="zh-inline" lang="zh-Hant"> {item.footZh}</span>
+                      )}
+                    </a>
+                  )}
+                </div>
+              </div>
+            ) : (
+              <a
+                class="nav__link"
+                href={item.href}
+                aria-current={isCurrent(item.href) ? 'page' : undefined}
+              >
+                {item.label}
+                {item.zh && <span class="zh-inline nav__zh" lang="zh-Hant">{item.zh}</span>}
+              </a>
+            )
+          )}
+
+          <a class="btn btn--sm nav__cta" href="/visit">Plan a visit</a>
         </nav>
       </div>
     </header>
@@ -95,93 +194,355 @@ const path = Astro.url.pathname;
     </main>
 
     <footer class="foot">
-      <div class="wrap foot__inner">
-        <div>
-          <p class="foot__name" lang="zh-Hant">蒙特利公園華人浸信會</p>
-          <p class="foot__name">Monterey Park Chinese Baptist Church</p>
-          <p class="foot__meta">Serving the San Gabriel Valley since 1976</p>
+      <div class="wrap foot__cols">
+        <div class="foot__col">
+          <img
+            class="foot__logo"
+            src="/images/logo.png"
+            alt="Monterey Park Chinese Baptist Church 蒙特利公園華人浸信會"
+            width="524"
+            height="98"
+            loading="lazy"
+          />
+          <p class="foot__muted">Monterey Park, CA 91754<br />San Gabriel Valley</p>
+          <p class="foot__contact">
+            <a href="tel:+16265550100">(626) 555-0100</a><br />
+            <a href="mailto:office@mpcbc.org">office@mpcbc.org</a>
+          </p>
+          <div class="foot__social">
+            <a class="btn btn--sm btn--onshell" href="https://facebook.com/">Facebook</a>
+            <a class="btn btn--sm btn--onshell" href="https://youtube.com/@mpcbc-english">YouTube</a>
+            <a class="btn btn--sm btn--onshell" href="https://instagram.com/">Instagram</a>
+          </div>
         </div>
-        <div>
-          <p class="eyebrow">Sundays</p>
-          <p class="foot__meta">9:30 AM &middot; Cantonese 粵語</p>
-          <p class="foot__meta">11:00 AM &middot; English</p>
-          <p class="foot__meta">11:30 AM &middot; Mandarin 國語</p>
+
+        <div class="foot__col">
+          <p class="foot__label">Sunday services</p>
+          <ul class="foot__list" role="list">
+            <li>9:30 AM — <span class="zh-inline" lang="zh-Hant">粵語</span> Cantonese</li>
+            <li>11:00 AM — English</li>
+            <li>11:30 AM — <span class="zh-inline" lang="zh-Hant">國語</span> Mandarin</li>
+          </ul>
+          <p class="foot__label foot__label--spaced">Office hours</p>
+          <p class="foot__muted">Tue – Fri, 9:00 AM – 4:00 PM<br />Closed Monday</p>
         </div>
+
+        <div class="foot__col">
+          <p class="foot__label">
+            Weekly email <span class="zh-inline" lang="zh-Hant">每週通訊</span>
+          </p>
+          <p class="foot__muted">
+            Announcements, service notes, and prayer requests. One email, Thursday mornings.
+          </p>
+          <!--
+            Placeholder only. There is no subscribe endpoint yet, so this
+            form acknowledges locally and sends nothing. Wire it to a real
+            list provider before launch, or remove it.
+          -->
+          <form class="signup" data-signup novalidate>
+            <label class="foot__label foot__label--field" for="signup-email">Email address</label>
+            <input
+              class="signup__input"
+              id="signup-email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            <button class="btn signup__btn" type="submit">Sign up</button>
+            <p class="signup__done" data-signup-done hidden>thank you — you're on the list</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="wrap foot__base">
+        <span>
+          © {new Date().getFullYear()} Monterey Park Chinese Baptist Church
+          <span class="zh-inline" lang="zh-Hant">蒙特利公園華人浸信會</span>
+        </span>
+        <span>Live links update automatically from YouTube. Nobody edits this weekly.</span>
       </div>
     </footer>
 
+    <script is:inline>
+      /**
+       * Nav dropdowns. Any top-level item that has pages assigned to it
+       * renders one, so this drives however many exist rather than the
+       * single Services menu it started as.
+       *
+       * Opens on hover for pointer users and on click for everyone,
+       * which is what makes it usable on touch and by keyboard. Escape
+       * returns focus to the button; a click anywhere else, or opening
+       * another menu, closes it. Plain JS on purpose — this is chrome on
+       * every page and does not justify shipping a framework.
+       */
+      (() => {
+        const menus = [...document.querySelectorAll('[data-menu]')].map((root) => {
+          const button = root.querySelector('[data-menu-button]');
+          const panel = root.querySelector('[data-menu-panel]');
+          if (!button || !panel) return null;
+
+          const set = (open) => {
+            panel.hidden = !open;
+            button.setAttribute('aria-expanded', String(open));
+          };
+          return { root, button, panel, set };
+        }).filter(Boolean);
+
+        if (!menus.length) return;
+
+        const hoverable = window.matchMedia('(hover: hover) and (pointer: fine)');
+        const closeAll = (except) =>
+          menus.forEach((m) => { if (m !== except) m.set(false); });
+
+        for (const m of menus) {
+          let hoverTimer;
+
+          m.button.addEventListener('click', () => {
+            const open = m.panel.hidden;
+            closeAll(m);
+            m.set(open);
+          });
+
+          m.root.addEventListener('mouseenter', () => {
+            if (!hoverable.matches) return;
+            clearTimeout(hoverTimer);
+            closeAll(m);
+            m.set(true);
+          });
+
+          m.root.addEventListener('mouseleave', () => {
+            if (!hoverable.matches) return;
+            // A short grace period so the pointer can cross the gap
+            // between the button and the panel without it snapping shut.
+            hoverTimer = setTimeout(() => m.set(false), 120);
+          });
+
+          // Tabbing out of this menu entirely should close it.
+          m.root.addEventListener('focusout', (e) => {
+            if (!m.root.contains(e.relatedTarget)) m.set(false);
+          });
+        }
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key !== 'Escape') return;
+          const open = menus.find((m) => !m.panel.hidden);
+          if (!open) return;
+          open.set(false);
+          open.button.focus();
+        });
+
+        document.addEventListener('click', (e) => {
+          for (const m of menus) {
+            if (!m.panel.hidden && !m.root.contains(e.target)) m.set(false);
+          }
+        });
+      })();
+
+      /**
+       * Newsletter signup — placeholder. Acknowledges in the UI so the
+       * section demonstrates, but there is no endpoint behind it.
+       */
+      (() => {
+        const form = document.querySelector('[data-signup]');
+        if (!form) return;
+        const done = form.querySelector('[data-signup-done]');
+        const input = form.querySelector('input[type="email"]');
+
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (!input || !input.value.includes('@')) return;
+          if (done) done.hidden = false;
+        });
+
+        input?.addEventListener('input', () => {
+          if (done) done.hidden = true;
+        });
+      })();
+    </script>
+
     <style>
+      /* --- masthead ------------------------------------------------ */
       .masthead {
-        border-bottom: 1px solid rgba(42, 29, 22, 0.12);
-        background: var(--paper);
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
       }
       .masthead__inner {
+        min-height: 64px;
+        padding-block: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem 1.5rem;
+        flex-wrap: wrap;
+      }
+      .brand { display: flex; align-items: center; flex: 0 0 auto; }
+      .brand img { height: 38px; width: auto; border-radius: 4px; }
+
+      .nav {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-        gap: 0.9rem 1.5rem;
-        padding-block: 1.1rem;
-      }
-      .brand { text-decoration: none; color: var(--ink); display: block; }
-      .brand__zh {
-        display: block;
-        font-family: var(--font-display);
-        font-size: var(--step-1);
-        font-weight: 600;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
-      }
-      .brand__en {
-        display: block;
+        gap: 0.6rem 1.15rem;
         font-size: var(--step--1);
-        color: var(--ink-soft);
-        letter-spacing: 0.04em;
-        margin-top: 0.15rem;
+        font-weight: 500;
       }
-      .nav {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.35rem 1.15rem;
-        margin: 0;
+      .nav__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
         padding: 0;
-        font-size: var(--step--1);
-      }
-      .nav a {
-        color: var(--ink-soft);
+        border: 0;
+        background: transparent;
+        font: inherit;
+        color: var(--ink);
         text-decoration: none;
-        padding-block: 0.2rem;
-        border-bottom: 2px solid transparent;
+        cursor: pointer;
       }
-      .nav a:hover { color: var(--ink); border-bottom-color: var(--stucco); }
-      .nav a[aria-current='page'] { color: var(--ink); border-bottom-color: var(--sky); }
+      .nav__link:hover { color: var(--accent-deep); }
+      .nav__link[aria-current='page'] { color: var(--accent); }
+      /* No font-size override here on purpose: the global :lang() rule
+         nudges CJK up 5% to optically match Latin at the same px, and
+         that correction is meant to apply in the nav too. */
+      .nav__zh { color: var(--ink-soft); }
+      .nav__cta { color: var(--white); }
+      .nav__cta:hover { color: var(--white); }
 
+      /* --- services dropdown --------------------------------------- */
+      .menu { position: relative; display: inline-flex; }
+      .menu__caret { font-family: var(--font-meta); font-size: 10px; color: var(--ink-soft); }
+      .menu__panel {
+        position: absolute;
+        top: 100%;
+        left: -0.75rem;
+        margin-top: 0.6rem;
+        width: 17rem;
+        padding: 0.5rem;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: 0 18px 40px rgba(34, 20, 25, 0.12);
+        display: flex;
+        flex-direction: column;
+        z-index: 40;
+      }
+      .menu__panel[hidden] { display: none; }
+      .menu__item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 0.6rem 0.75rem;
+        border-radius: 12px;
+        color: var(--ink);
+        text-decoration: none;
+      }
+      .menu__item:hover { background: var(--tint); color: var(--ink); }
+      .menu__name { font-weight: 600; }
+      .menu__name--zh { font-family: var(--font-zh); }
+      .menu__meta {
+        font-family: var(--font-meta);
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--ink-soft);
+      }
+      .menu__all {
+        display: block;
+        margin-top: 0.3rem;
+        padding: 0.6rem 0.75rem;
+        border-top: 1px solid var(--line);
+        font-family: var(--font-meta);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .menu__all:hover { color: var(--accent-deep); }
+
+      /* --- footer -------------------------------------------------- */
       .foot {
-        background: var(--ink);
-        color: var(--stucco);
+        background: var(--shell);
+        color: var(--white);
         padding-block: clamp(2.5rem, 6vw, 4rem);
         margin-top: 2rem;
       }
-      .foot__inner {
-        display: grid;
-        gap: 2rem;
+      .foot__cols {
+        display: flex;
+        flex-wrap: wrap;
+        gap: clamp(1.8rem, 5vw, 3.5rem);
       }
-      @media (min-width: 40rem) {
-        .foot__inner { grid-template-columns: 1fr auto; }
+      .foot__col { flex: 1 1 15rem; min-width: 0; }
+      .foot__col:nth-child(2) { flex-basis: 13rem; }
+      .foot__col:nth-child(3) { flex-basis: 17rem; }
+      .foot__logo { height: 40px; width: auto; border-radius: 4px; margin-bottom: 1rem; }
+      .foot__muted { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: var(--step--1); }
+      .foot__contact { margin: 0.8rem 0 0; font-size: var(--step--1); }
+      .foot__contact a { color: var(--white); }
+      .foot__contact a:hover { color: var(--accent-pale); }
+      .foot__social { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+      .foot__social .btn { height: 34px; font-size: var(--step--2); padding: 0 1em; }
+
+      .foot__label {
+        margin: 0 0 0.8rem;
+        font-family: var(--font-meta);
+        font-size: var(--step--2);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
       }
-      .foot__name {
-        font-family: var(--font-display);
-        font-size: var(--step-1);
+      .foot__label--spaced { margin-top: 1.5rem; }
+      .foot__label--field { margin-bottom: 0; }
+
+      .foot__list {
+        list-style: none;
         margin: 0;
-        color: var(--paper);
-      }
-      .foot__meta {
-        margin: 0.2rem 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
         font-size: var(--step--1);
-        color: rgba(229, 217, 197, 0.75);
       }
-      .foot .eyebrow { color: rgba(229, 217, 197, 0.6); }
+
+      .signup { display: flex; flex-direction: column; gap: 0.6rem; max-width: 20rem; }
+      .signup__input {
+        height: 42px;
+        padding: 0 0.9em;
+        font: inherit;
+        font-size: var(--step--1);
+        color: var(--ink);
+        background: var(--white);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: var(--radius-sm);
+      }
+      .signup__btn { height: 42px; align-self: start; font-size: var(--step--1); }
+      .signup__done {
+        margin: 0.2rem 0 0;
+        font-family: var(--font-hand);
+        font-size: 1.5rem;
+        color: var(--white);
+        max-width: none;
+      }
+
+      .foot__base {
+        margin-top: clamp(2rem, 5vw, 3rem);
+        padding-top: 1.2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem 1.5rem;
+        justify-content: space-between;
+        font-family: var(--font-meta);
+        font-size: var(--step--2);
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.6);
+      }
     </style>
   </body>
 </html>

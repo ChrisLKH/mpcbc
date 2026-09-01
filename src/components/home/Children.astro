@@ -1,0 +1,145 @@
+---
+/**
+ * Children & families. The three photo wells are placeholders until real
+ * photographs are supplied; pass `photos` as [{ src, alt }] to fill them,
+ * and any that are missing keep the empty treatment rather than
+ * collapsing the grid.
+ */
+const {
+  heading = 'Children & families',
+  headingZh = '兒童及家庭事工',
+  ctaLink = '/childrens-ministry',
+  photos = [],
+} = Astro.props;
+
+const wells = [
+  { key: 'wide', hint: 'Sunday school room, wide shot\nchildren and teacher' },
+  { key: 'craft', hint: 'craft table' },
+  { key: 'nursery', hint: 'nursery corner' },
+].map((w, i) => ({ ...w, photo: photos[i] }));
+
+const groups = [
+  { title: 'Nursery · 0–3', body: 'Open 9:15 AM – 12:45 PM, hallway by the courtyard.' },
+  { title: 'Sunday school · 4–11', body: 'During the 11:00 and 11:30 services, two rooms upstairs.' },
+  { title: 'Youth · 12–18', body: 'Friday evenings in the Fellowship Hall, with supper.' },
+];
+---
+
+<section class="kids" id="children" aria-labelledby="kids-heading">
+  <div class="wrap">
+    <div class="kids__panel">
+      <div class="kids__top">
+        <div class="kids__copy">
+          <h2 id="kids-heading" class="kids__heading">{heading}</h2>
+          <p class="kids__headingZh" lang="zh-Hant">{headingZh}</p>
+          <p>
+            Children are welcome in every service. Sunday school runs during the
+            11:00 hour in English and the 11:30 hour in Mandarin, and a staffed
+            nursery is open all morning for the youngest.
+          </p>
+          <p class="kids__muted">
+            Every volunteer who works with children has completed a background
+            check and our safeguarding training.
+          </p>
+          <a class="btn" href={ctaLink}>
+            Children's ministry <span class="zh-inline" lang="zh-Hant">兒童事工</span>
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="kids__grid">
+          {wells.map((w) => (
+            <div class:list={['kids__well', `kids__well--${w.key}`]}>
+              {w.photo ? (
+                <img src={w.photo.src} alt={w.photo.alt} loading="lazy" />
+              ) : (
+                <span class="kids__hint">{w.hint}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="kids__groups">
+        {groups.map((g) => (
+          <div class="kids__group">
+            <p class="kids__groupTitle">{g.title}</p>
+            <p class="kids__groupBody">{g.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .kids { padding-bottom: clamp(3.5rem, 9vw, 6.5rem); }
+
+  .kids__panel {
+    background: var(--tint);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .kids__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+  }
+
+  .kids__copy { flex: 1 1 22rem; min-width: 0; }
+  .kids__heading { margin: 0 0 0.3rem; }
+  .kids__headingZh {
+    margin: 0 0 1rem;
+    font-family: var(--font-zh);
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+  }
+  .kids__copy p { max-width: 52ch; }
+  .kids__muted { color: var(--ink-soft); margin-bottom: 1.5rem; }
+
+  .kids__grid {
+    flex: 1 1 18rem;
+    min-width: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kids__well {
+    border-radius: var(--radius);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.9rem;
+    overflow: hidden;
+  }
+  .kids__well--wide { grid-column: span 2; aspect-ratio: 16 / 9; padding: 1rem; }
+  .kids__well--craft, .kids__well--nursery { aspect-ratio: 1; }
+  .kids__well img { width: 100%; height: 100%; object-fit: cover; }
+
+  .kids__hint {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    white-space: pre-line;
+  }
+
+  .kids__groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .kids__group { flex: 1 1 14rem; min-width: 0; }
+  .kids__groupTitle { margin: 0 0 0.25rem; font-size: 1.125rem; font-weight: 600; max-width: none; }
+  .kids__groupBody { margin: 0; color: var(--ink-soft); font-size: var(--step--1); }
+</style>

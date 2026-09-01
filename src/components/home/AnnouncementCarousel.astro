@@ -1,0 +1,270 @@
+---
+/**
+ * The announcements carousel from Homepage v3.
+ *
+ * Every announcement is rendered into the DOM and one is shown at a time,
+ * so the section is complete without JavaScript — the first announcement
+ * is simply the one you get. Controls only appear when there is more than
+ * one, and auto-advance is skipped for anyone who asked for reduced
+ * motion.
+ *
+ * Each optional field is dropped cleanly when blank: an announcement with
+ * only a title and summary still renders as a deliberate-looking panel.
+ */
+const { announcements = [] } = Astro.props;
+
+const items = announcements.map((a) => a.data ?? a);
+const many = items.length > 1;
+---
+
+{items.length > 0 && (
+  <section class="news" id="news" aria-labelledby="news-label">
+    <div class="wrap">
+      <p class="rule-label" id="news-label">
+        Announcements <span class="zh-inline" lang="zh-Hant">最新消息</span>
+      </p>
+
+      <div class="news__panel" data-carousel>
+        <div class="news__bar">
+          <span class="news__kicker" data-carousel-kicker>{items[0].kicker}</span>
+
+          {many && (
+            <div class="news__controls">
+              <div class="news__dots" role="tablist" aria-label="Choose an announcement">
+                {items.map((a, i) => (
+                  <button
+                    class:list={['news__dot', { 'news__dot--on': i === 0 }]}
+                    type="button"
+                    role="tab"
+                    aria-selected={i === 0 ? 'true' : 'false'}
+                    aria-label={`Show: ${a.title}`}
+                    data-carousel-dot={i}
+                  ></button>
+                ))}
+              </div>
+              <button class="news__arrow" type="button" aria-label="Previous announcement" data-carousel-prev>←</button>
+              <button class="news__arrow" type="button" aria-label="Next announcement" data-carousel-next>→</button>
+            </div>
+          )}
+        </div>
+
+        <div class="news__slides" aria-live="polite">
+          {items.map((a, i) => (
+            <article
+              class="news__slide"
+              data-carousel-slide={i}
+              data-kicker={a.kicker || ''}
+              hidden={i !== 0}
+            >
+              <div class="news__main">
+                <h2 class="news__title">{a.title}</h2>
+                {a.titleZh && (
+                  <p class="news__titleZh" lang="zh-Hant">{a.titleZh}</p>
+                )}
+                {a.summary && <p class="news__summary">{a.summary}</p>}
+                {a.ctaText && a.ctaLink && (
+                  <a class="btn news__cta" href={a.ctaLink}>
+                    {a.ctaText} <span class="btn__arrow" aria-hidden="true">→</span>
+                  </a>
+                )}
+              </div>
+
+              {(a.meta?.length > 0 || a.note) && (
+                <div class="news__aside">
+                  {a.meta?.length > 0 && (
+                    <dl class="news__rows">
+                      {a.meta.map((row) => (
+                        <div class="news__row">
+                          <dt class="news__rowLabel">{row.label}</dt>
+                          <dd class="news__rowValue">{row.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  )}
+                  {a.note && <p class="news__note">{a.note}</p>}
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+<script is:inline>
+  /**
+   * Carousel behaviour. Advances every 7 seconds; touching any control
+   * slows it to 12 so it doesn't move out from under someone who is
+   * reading. Hovering or focusing the panel pauses it outright, and
+   * prefers-reduced-motion turns the timer off for good.
+   */
+  (() => {
+    const root = document.querySelector('[data-carousel]');
+    if (!root) return;
+
+    const slides = [...root.querySelectorAll('[data-carousel-slide]')];
+    const dots = [...root.querySelectorAll('[data-carousel-dot]')];
+    const kicker = root.querySelector('[data-carousel-kicker]');
+    if (slides.length < 2) return;
+
+    const kickers = slides.map((s) => s.dataset.kicker || '');
+    let index = 0;
+    let timer = null;
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const show = (next) => {
+      index = (next + slides.length) % slides.length;
+      slides.forEach((s, i) => { s.hidden = i !== index; });
+      dots.forEach((d, i) => {
+        d.classList.toggle('news__dot--on', i === index);
+        d.setAttribute('aria-selected', String(i === index));
+      });
+      if (kicker) kicker.textContent = kickers[index];
+    };
+
+    const start = (ms) => {
+      stop();
+      if (reduced.matches) return;
+      timer = setInterval(() => show(index + 1), ms);
+    };
+    const stop = () => { if (timer) clearInterval(timer); timer = null; };
+
+    // A control was used — keep advancing, but give the reader longer.
+    const nudge = (next) => { show(next); start(12000); };
+
+    root.querySelector('[data-carousel-prev]')
+      ?.addEventListener('click', () => nudge(index - 1));
+    root.querySelector('[data-carousel-next]')
+      ?.addEventListener('click', () => nudge(index + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => nudge(i)));
+
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', () => start(7000));
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', (e) => {
+      if (!root.contains(e.relatedTarget)) start(7000);
+    });
+
+    reduced.addEventListener('change', () => (reduced.matches ? stop() : start(7000)));
+
+    start(7000);
+  })();
+</script>
+
+<style>
+  .news {
+    background: var(--tint);
+    border-block: 1px solid var(--line);
+    padding-block: clamp(3rem, 8vw, 5.5rem);
+  }
+
+  .rule-label { margin-bottom: 1.2rem; }
+
+  .news__panel {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .news__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
+  }
+  .news__kicker {
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .news__controls { display: flex; align-items: center; gap: 0.75rem; }
+  .news__dots { display: flex; align-items: center; gap: 0.4rem; }
+  .news__dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--line);
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .news__dot--on { background: var(--accent); }
+
+  .news__arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    cursor: pointer;
+  }
+  .news__arrow:hover { background: var(--tint); }
+
+  .news__slide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-items: start;
+  }
+  .news__slide[hidden] { display: none; }
+
+  .news__main { flex: 1 1 26rem; min-width: 0; }
+
+  .news__title {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.8rem, 1.4rem + 1.8vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+    max-width: 26ch;
+    text-wrap: balance;
+  }
+  .news__titleZh {
+    margin: 0 0 1.2rem;
+    font-family: var(--font-zh);
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+  }
+  .news__summary { margin: 0 0 1.8rem; max-width: 56ch; color: var(--ink-soft); }
+  .news__cta { height: 48px; padding: 0 1.6em; font-size: var(--step-0); }
+
+  .news__aside { flex: 0 1 17rem; min-width: 0; }
+  .news__rows { margin: 0; border-top: 1px solid var(--line); }
+  .news__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .news__rowLabel {
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .news__rowValue { margin: 0; font-size: var(--step--1); text-align: right; }
+
+  .news__note {
+    margin: 1.1rem 0 0;
+    font-family: var(--font-hand);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: var(--accent);
+    max-width: none;
+  }
+</style>

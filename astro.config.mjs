@@ -1,15 +1,8 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import markdoc from '@astrojs/markdoc';
-import keystatic from '@keystatic/astro';
 import tina from '@tinacms/astro/integration';
 import { tinaAdminDevRedirect } from '@tinacms/astro/vite';
 import cloudflare from '@astrojs/cloudflare';
-
-// Keystatic's admin needs server routes. In local storage mode it only runs
-// during `npm run dev`. To let editors log in on the live site, switch
-// keystatic.config.ts to GitHub storage and drop this guard.
-const isDev = process.env.NODE_ENV !== 'production';
 
 // `output: 'static'` + an adapter is Astro's hybrid mode: every route
 // prerenders unless it opts out with `export const prerender = false`.
@@ -23,8 +16,19 @@ const isDev = process.env.NODE_ENV !== 'production';
 // scripts/toggle-island.mjs was working around.
 export default defineConfig({
   site: 'https://mpcbc.org',
-  integrations: [react(), markdoc(), tina(), ...(isDev ? [keystatic()] : [])],
+  // Tina is the only CMS. Keystatic used to be added here for dev only,
+  // which meant the dev dependency graph differed from the build's — the
+  // main reason `npm run build` could pass while `npm run dev` fell over
+  // in the Vite dep optimizer.
+  integrations: [react(), tina()],
   output: 'static',
+
+  // Nothing on the site uses Astro.session. Left enabled, the adapter
+  // injects a `SESSION` KV binding into dist/server/wrangler.json with no
+  // namespace id, and `wrangler deploy` rejects the config. Turning it
+  // off is better than provisioning a KV namespace nobody reads.
+  session: false,
+
   adapter: cloudflare({
     // Every image on the site is a plain <img src>, so there is nothing to
     // transform at runtime and no reason to provision a Cloudflare Images

@@ -30,7 +30,20 @@ compatibility_flags = ["nodejs_compat"]
 enabled = true
 
 # The namespace the cron Worker writes to; the site only ever reads it.
-# npm run kv:create -> paste the id here AND into worker/wrangler.toml
-[[kv_namespaces]]
-binding = "MPCBC"
-id = "replace_after_creating_namespace"
+#
+# Commented out for the demo phase: the cron Worker isn't deployed yet, so
+# there is nothing writing to KV. /api/services.json handles a missing
+# binding on purpose — it logs "no MPCBC binding" and serves
+# src/data/services.json, so the board shows real times and channel links
+# with a sample live-state.
+#
+# Leaving the block in with the placeholder id would fail the deploy: the
+# id has to be a real namespace.
+#
+# To turn the live board on:
+#   npm run kv:create   -> paste the id here AND into worker/wrangler.toml
+#   npm run deploy:sync -> deploy the cron Worker
+#
+# [[kv_namespaces]]
+# binding = "MPCBC"
+# id = "replace_after_creating_namespace"

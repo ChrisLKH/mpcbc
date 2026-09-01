@@ -2,37 +2,44 @@
   "congregation": "all",
   "language": "en",
   "description": "Sunday school, nursery care, and children's programs at Monterey Park Chinese Baptist Church.",
-  "showInMenu": true,
+  "menuParent": "top",
+  "menuLabel": "Children",
+  "menuLabelZh": "兒童",
+  "menuOrder": 0,
   "sections": [
     {
-      "discriminant": "textBlock",
-      "value": {
-        "heading": "Children & Families",
-        "body": "Children are welcome in every service. Sunday school runs during the 11:00 hour, and a staffed nursery is available for the youngest.",
-        "tinted": false
-      }
+      "heading": "Children & Families",
+      "body": "Children are welcome in every service. Sunday school runs during the 11:00 hour, and a staffed nursery is available for the youngest.",
+      "tinted": false,
+      "_template": "textBlock"
     },
     {
-      "discriminant": "gallery",
-      "value": { "heading": "A look at Sunday school", "layout": "grid", "photos": [] }
+      "heading": "A look at Sunday school",
+      "layout": "grid",
+      "photos": [],
+      "_template": "gallery"
     },
     {
-      "discriminant": "imageText",
-      "value": {
-        "heading": "Our teachers",
-        "body": "Every volunteer who works with children has completed a background check and our safeguarding training.",
-        "image": null, "alt": "", "imageSide": "left"
-      }
+      "heading": "Our teachers",
+      "body": "Every volunteer who works with children has completed a background check and our safeguarding training.",
+      "image": "/images/611012e1da983a8cd31466dc5f5b14ba-Copy.jpg",
+      "alt": "",
+      "imageSide": "left",
+      "_template": "imageText"
     },
     {
-      "discriminant": "buttons",
-      "value": {
-        "heading": "Next steps",
-        "links": [
-          { "text": "Plan your visit", "url": "/visit" },
-          { "text": "Contact the children's team", "url": "/contact" }
-        ]
-      }
+      "heading": "Next steps",
+      "links": [
+        {
+          "text": "Plan your visit",
+          "url": "/visit"
+        },
+        {
+          "text": "Contact the children's team",
+          "url": "/contact"
+        }
+      ],
+      "_template": "buttons"
     }
   ]
 }

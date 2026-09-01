@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "dev:tina": "tinacms dev -c \"astro dev\"",
+    "cms": "tinacms dev",
     "build": "node scripts/clean-admin.mjs && astro build",
     "build:tina": "node scripts/clean-admin.mjs && tinacms build --skip-cloud-checks && astro build",
     "preview": "npm run build && wrangler dev -c dist/server/wrangler.json",
@@ -17,10 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "@astrojs/cloudflare": "^14.2.5",
-    "@astrojs/markdoc": "^2.0.8",
     "@astrojs/react": "^6.0.4",
-    "@keystatic/astro": "^6.0.0",
-    "@keystatic/core": "^0.6.9",
     "@tinacms/astro": "^0.6.1",
     "@tinacms/cli": "^2.6.1",
     "astro": "^7.2.9",

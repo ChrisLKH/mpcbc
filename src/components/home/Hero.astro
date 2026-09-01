@@ -1,0 +1,158 @@
+---
+/**
+ * Full-bleed hero. Takes a video or a still from the CMS; with neither it
+ * falls back to the dotted plum ground, which is a deliberate treatment
+ * rather than a broken image — the page looks finished either way.
+ */
+const {
+  headline = 'One church, three languages.',
+  headlineZh = '一間教會，三種語言',
+  lede = '',
+  ctaText = 'Join us this Sunday',
+  ctaLink = '#sunday',
+  video = '',
+  image = '',
+  services = [],
+} = Astro.props;
+
+// Chronological, so the line reads the way the morning runs.
+const times = [...services]
+  .sort((a, b) => String(a.startsAt).localeCompare(String(b.startsAt)))
+  .map((s) => ({
+    label: s.id === 'cantonese' ? '粵語' : s.id === 'mandarin' ? '國語' : 'ENGLISH',
+    zh: s.id !== 'english',
+    time: s.time.replace(/\s*(AM|PM)$/, ''),
+  }));
+---
+
+<section class="hero" id="top">
+  {video ? (
+    <video class="hero__media" src={video} poster={image || undefined} autoplay muted loop playsinline></video>
+  ) : image ? (
+    <img class="hero__media" src={image} alt="" />
+  ) : (
+    <span class="hero__placeholder">background video placeholder — church and people, muted loop</span>
+  )}
+
+  <div class="hero__scrim"></div>
+
+  <div class="wrap hero__body">
+    <h1 class="hero__title" set:html={headline.replace(/\n/g, '<br />')}></h1>
+    {headlineZh && <p class="hero__zh" lang="zh-Hant">{headlineZh}</p>}
+    {lede && <p class="hero__lede">{lede}</p>}
+
+    <div class="hero__actions">
+      {ctaText && (
+        <a class="btn btn--lg btn--light" href={ctaLink}>
+          {ctaText} <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      )}
+      {times.length > 0 && (
+        <p class="hero__times">
+          {times.map((t, i) => (
+            <>
+              {i > 0 && <span aria-hidden="true"> · </span>}
+              {t.zh ? <span class="zh-inline" lang="zh-Hant">{t.label}</span> : <span>{t.label}</span>}
+              {' '}{t.time}
+            </>
+          ))}
+        </p>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: min(84vh, 760px);
+    display: flex;
+    align-items: end;
+    background-color: var(--shell);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.18) 0.6px, rgba(0, 0, 0, 0) 1.4px);
+    background-size: 16px 16px;
+    overflow: hidden;
+  }
+
+  .hero__media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero__placeholder {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 2;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .hero__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(27, 16, 20, 0.86) 0%,
+      rgba(27, 16, 20, 0.2) 62%,
+      rgba(27, 16, 20, 0.4) 100%
+    );
+  }
+
+  .hero__body {
+    position: relative;
+    padding: clamp(3rem, 8vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero__title {
+    margin: 0;
+    font-size: var(--step-hero);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    color: var(--white);
+    max-width: 16ch;
+  }
+
+  .hero__zh {
+    margin: 0;
+    font-family: var(--font-zh);
+    font-weight: 600;
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.8rem);
+    color: var(--white);
+    max-width: none;
+  }
+
+  .hero__lede {
+    margin: 0;
+    max-width: 46ch;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero__times {
+    margin: 0;
+    max-width: none;
+    font-family: var(--font-meta);
+    font-size: var(--step--2);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.88);
+  }
+</style>
