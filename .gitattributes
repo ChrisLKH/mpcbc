@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Line endings that matter to the launcher scripts.
+#
+# Shell scripts must stay LF even when checked out on Windows: with CRLF
+# the shebang reads as "/bin/sh\r" and Git Bash or WSL answers with a
+# "bad interpreter" error that says nothing useful.
+#
+# Batch files are the opposite case - cmd.exe reads them incrementally and
+# is happiest with CRLF, so pin it rather than leave it to the platform.
+*.sh  text eol=lf
+*.bat text eol=crlf

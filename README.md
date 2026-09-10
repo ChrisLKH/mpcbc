@@ -9,6 +9,45 @@ experience and the automation, not the final copy.
 
 ---
 
+## For non-technical editors
+
+Volunteers don't use any of this. They get one desktop icon —
+**`MPCBC Website.bat`** — which opens a control panel that starts the site,
+opens the CMS, launches an AI helper, publishes, and undoes. **[GUIDE.md](GUIDE.md)**
+is written for them; this README is not. The same guide is published as a web
+page at <https://claude.ai/code/artifact/783b33cb-dcdb-48b3-a99d-8c7f77aca36c>,
+which is the link to send a new editor — it works before they have the repo.
+
+Setup is `scripts/bootstrap/` zipped and sent to them. Everything underneath is
+the same scripts documented below, so there is one code path rather than two.
+
+| Script | What it does |
+|---|---|
+| `scripts/control-panel.ps1` | The whole editor-facing UI (WinForms) |
+| `scripts/bootstrap/install.ps1` | First run on a blank machine: installs Git + Node, clones to `C:\mpcbc` |
+| `scripts/setup.ps1` | Pull, `npm install`, `.env`, git identity, desktop shortcut |
+| `scripts/start.ps1` | Both dev servers, **hidden**, logging to `logs/` |
+| `scripts/stop.ps1` | Kills both process trees and clears the ports |
+| `scripts/publish.ps1` | Summary → confirm → pull/commit/push |
+| `scripts/undo.ps1` | Restore tracked files; clean untracked **content only** |
+| `scripts/open-tools.ps1` | VS Code / Claude Code / Codex / Antigravity |
+| `scripts/lib/common.ps1` | Shared helpers — ports, PIDs, git, dialogs, logging |
+
+Two constraints in there are load-bearing and easy to undo by accident:
+
+- **The dev servers run hidden.** Console QuickEdit suspends a process when
+  someone clicks in the window, which presents as an unexplained freeze. Output
+  goes to `logs/tina.log` and `logs/astro.log` instead.
+- **Nothing writes to the registry or a persistent PATH.**
+  `Update-PathFromRegistry` reads `HKLM`/`HKCU` and applies the value to the
+  current process only. Never swap it for
+  `[Environment]::SetEnvironmentVariable('Path', ..., 'Machine')`.
+
+`AGENTS.md` (imported by `CLAUDE.md`) is the brief handed to AI assistants
+working on this repo.
+
+---
+
 ## Run it
 
 Two terminals, in this order.
@@ -152,9 +191,10 @@ publishes from the repo. To put an editor on the live site, set `TINA_CLIENT_ID`
 and `TINA_TOKEN` and build with `npm run build:tina`. The `/tina-island/[name]`
 route already deploys, so visual editing works against the live site.
 
-**Note:** `.github/workflows/deploy.yml` runs `npm run build`, which strips
-`public/admin`. Switch it to `build:tina` or CI will keep shipping a site with
-no editor even after the tokens are set.
+`.github/workflows/deploy.yml` already runs `build:tina`, so CI ships the editor
+once `TINA_CLIENT_ID` and `TINA_TOKEN` are set as repository secrets. Leave it
+on `build:tina` — plain `npm run build` strips `public/admin` and would ship a
+site with no editor.
 
 Tina Cloud's free tier covers 2 editors, then $29/month. Local mode is free and
 unlimited.

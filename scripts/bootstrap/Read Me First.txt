@@ -1,0 +1,68 @@
+MPCBC WEBSITE - SETTING UP YOUR COMPUTER
+========================================
+
+You only do this once, and it takes about five minutes.
+
+
+BEFORE YOU START
+----------------
+
+Make sure you have EXTRACTED this folder from the ZIP file.
+
+If you are looking at these files inside a window that says "Compressed"
+or "Extract", then you haven't yet. To extract:
+
+   1. Close this window
+   2. Right-click the ZIP file you downloaded
+   3. Choose "Extract All..."
+   4. Click Extract
+   5. Open the folder that appears
+
+(If you skip this, nothing will work, and the setup will tell you so.)
+
+
+WHAT TO DO
+----------
+
+Double-click:  Install MPCBC Website
+
+Then just wait. It will:
+
+   * install two programs the website needs, if they aren't there already
+   * download the website onto this computer
+   * put an icon on your desktop called "MPCBC Website"
+
+
+THINGS YOU MIGHT SEE ALONG THE WAY
+----------------------------------
+
+"Windows protected your PC"
+   This appears because the file came from the internet. Click
+   "More info", then "Run anyway".
+
+"Do you want to allow this app to make changes?"
+   Click Yes. This is Windows asking permission to install the two
+   programs. It may appear twice.
+
+A window with scrolling text
+   That is normal. It is doing the work. Leave it alone until it
+   finishes.
+
+
+WHEN IT IS DONE
+---------------
+
+A message appears saying "All set", and the website app opens by itself.
+
+From then on, the ONLY thing you need is the desktop icon:
+
+   MPCBC Website
+
+You can delete this ZIP file and this folder.
+
+
+IF SOMETHING GOES WRONG
+-----------------------
+
+Take a photo of the screen and send it to Chris. Don't worry about
+breaking anything - nothing here can damage the real website.

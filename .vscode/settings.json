@@ -1,0 +1,26 @@
+{
+  // Hide everything an editor should never open. Without this the sidebar
+  // opens on roughly 40,000 files and the folder they actually want -
+  // src/content - is somewhere below the fold.
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.astro": true,
+    "**/.wrangler": true,
+    "**/logs": true,
+    "**/tina/__generated__": true,
+    "**/public/admin": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/package-lock.json": true
+  },
+  "files.associations": {
+    "*.astro": "astro"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "explorer.compactFolders": false
+}
