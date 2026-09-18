@@ -1,27 +1,27 @@
 {
-  "heroHeadline": "A church for three generations, in three languages.",
+  "heroHeadline": "A church for three languages.",
   "heroLede": "We have gathered in Monterey Park for fifty years. Grandparents worship in Cantonese, parents in Mandarin, children in English — in the same building, on the same morning.",
   "heroCtaText": "What to expect on Sunday",
   "heroCtaLink": "/visit",
   "heroVideo": "",
   "sections": [
     {
-      "_template": "recentSermons",
       "heading": "Recent sermons",
-      "limit": 3
+      "limit": 3,
+      "_template": "recentSermons"
     },
     {
-      "_template": "videoEmbed",
       "heading": "A look at our 50th anniversary",
       "youtubeId": "aBcDeFgHiJk",
-      "caption": "Videos are embedded from YouTube, never stored on the website."
+      "caption": "Videos are embedded from YouTube, never stored on the website.",
+      "_template": "videoEmbed"
     },
     {
-      "_template": "facebookAlbum",
       "heading": "More photos",
       "body": "We post photos from events to Facebook, where our members already are.",
       "url": "https://facebook.com/",
-      "linkText": "See the full album on Facebook"
+      "linkText": "See the full album on Facebook",
+      "_template": "facebookAlbum"
     }
   ]
 }
