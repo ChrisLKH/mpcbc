@@ -196,9 +196,68 @@ edit — you don't need to refresh.
 
 ---
 
+## How the website is put together
+
+Useful when you want to change something and aren't sure where to look.
+
+### The pages, and where their words come from
+
+| Page | Where the words live |
+|---|---|
+| Home `/` | **Homepage** in the editor, plus some fixed sections |
+| English / Cantonese / Mandarin | **Fixed text.** Each page lists sermons automatically |
+| Events `/events` | **Fixed heading.** The events themselves come from **Events** |
+| Sermons `/sermons` | **Fixed heading.** The list comes from **Sermons** |
+| Plan your visit `/visit` | **Fixed text — not editable in the editor** |
+| Anything you created | **Pages** in the editor |
+
+> **"Fixed text" means ask Chris.** Those words live in the website's code
+> rather than the editor. It isn't that you're looking in the wrong place —
+> they genuinely can't be changed from `Edit Content`, and that's worth
+> knowing before you spend twenty minutes hunting.
+
+### Adding a new page to the menu
+
+You can do this yourself, entirely in the editor:
+
+1. **Edit Content** → **Pages** → create a page
+2. Fill in **Where in the menu** — *Not in the menu*, *Top level*, or under one
+   of the four headings
+3. Optionally set **Menu label**, **Menu label 中文**, and **Menu order**
+   (lower numbers come first)
+
+The four top-level headings — **About 關於我們**, **Services 崇拜**,
+**Newsletter 通訊**, **Offering 奉獻** — are fixed, so the menu can't
+accidentally be emptied. Putting a page under one turns it into a dropdown.
+
+### Adding content by hand
+
+If you're editing files rather than using the editor, everything you can
+safely change is under **`src/content`**:
+
+```
+src/content/
+  settings/homepage.json     the homepage
+  pages/                     pages you created
+  announcements/             one file per announcement
+  events/                    one file per event
+  sermons/                   one file per sermon  ← don't create these
+```
+
+Everything outside `src/content` is the machinery that makes the site work.
+Changing it is a job for Chris or an AI helper, not a quick manual edit.
+
+---
+
 ## Part 4 — Editing with a helper
 
-Click **Code** for two other ways to work.
+Click **Code** for other ways to work.
+
+### Open the folder — just look
+
+Opens the website's folder in File Explorer. Nothing to install, and it works
+with whatever you already use. If you only want to see what's there, or to
+open a file in an editor of your own, start here.
 
 ### VS Code — editing the files yourself
 

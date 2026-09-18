@@ -1,31 +1,66 @@
 # MPCBC Website
 
-Astro site for Monterey Park Chinese Baptist Church, deployed to Cloudflare
-Workers. Two things run themselves: the Sunday livestream links and the sermon
-archive. TinaCMS is the editor, with visual click-on-the-page editing.
+Astro 7 site for Monterey Park Chinese Baptist Church — 基督教蒙特利公園華人浸信會 —
+deployed to Cloudflare Workers. TinaCMS is the editor. Two things run
+themselves: the Sunday livestream links and the sermon archive.
 
-Everything in `src/content/` is sample content. The point is the editing
-experience and the automation, not the final copy.
+**This repository has two audiences. Pick yours:**
+
+| You are | Start here |
+|---|---|
+| Looking after the website's words and pictures | **[GUIDE.md](GUIDE.md)**, or the [same guide as a web page](https://claude.ai/artifact/Fr7CB6RGp97HNAwfmWrcJo). You never need the rest of this README. |
+| Working on the code | [Run it](#run-it), below. |
+
+> Much of `src/content/` is still sample content, and the footer, pastor and
+> social links are placeholders. See [Before a real launch](#before-a-real-launch).
 
 ---
 
-## For non-technical editors
+## For volunteers
 
-Volunteers don't use any of this. They get one desktop icon —
-**`MPCBC Website.bat`** — which opens a control panel that starts the site,
-opens the CMS, launches an AI helper, publishes, and undoes. **[GUIDE.md](GUIDE.md)**
-is written for them; this README is not. The same guide is published as a web
-page at <https://claude.ai/code/artifact/783b33cb-dcdb-48b3-a99d-8c7f77aca36c>,
-which is the link to send a new editor — it works before they have the repo.
+Nobody editing the site uses git, a terminal, or npm. They get **one desktop
+icon** that opens a small app:
+
+```
+┌─ MPCBC Website ────────────────────────────────┐
+│  ● Ready to start                              │
+│    2 updates to collect, then the site opens.  │
+│  ────────────────────────────────────────────  │
+│  [                 Install                  ]  │   greyed unless needed
+│  [              Update & Start              ]  │   → Stop, once running
+│  [    Preview     ] [   Edit Content   ]       │
+│  ────────────────────────────────────────────  │
+│  [                   Code                   ]  │   folder / VS Code / AI
+│  [           Publish to Live Site           ]  │   lights up when changed
+│  [             Undo All Changes             ]  │
+│  ────────────────────────────────────────────  │
+│  [ Help ]                    [ Show Details ]  │
+└────────────────────────────────────────────────┘
+```
+
+**Getting it onto a new machine:** build `MPCBC-Website-Setup.zip` with
+`app/make-setup-zip.ps1` and send it. They extract it, double-click
+**Install MPCBC Website**, and five minutes later there is a desktop icon.
+It installs Git and Node if missing — via winget, or portable copies needing
+no administrator rights — and clones to `C:\mpcbc`.
+
+The install location is **told, never asked**. A folder picker is a decision a
+non-technical editor cannot evaluate, and the wrong answer breaks things:
+`Documents` is routinely redirected into OneDrive, which then tries to sync
+`node_modules`. `-Path` overrides it where that is genuinely needed.
+
+---
+
+## How the editor app is built
 
 ### Folder layout
 
-The editor-facing app is kept separate from the website it edits, so that
-someone opening the folder can tell where to start:
+The app is kept separate from the website it edits, so opening the folder
+tells you where to start:
 
 ```
 START HERE.txt        what to run, for a volunteer who opens the folder
-MPCBC Website.bat     the everyday launcher (and the desktop shortcut's target)
+MPCBC Website.bat     the everyday launcher (and the shortcut's target)
 Install/              the first-time installer — this is what gets zipped
 app/                  the control panel and its scripts
 scripts/              build automation only: sync-sermons.mjs, clean-admin.mjs
@@ -35,39 +70,28 @@ src/ public/ tina/    the Astro website itself
 `scripts/` keeps its name because `package.json` and the workflows reference
 `scripts/sync-sermons.mjs` and `scripts/clean-admin.mjs`. The Astro site stays
 at the repository root because Astro, Tina, the Cloudflare adapter and CI all
-expect it there — it is not movable without changing every one of them.
-
-### The two things a person launches
-
-| They have | They run | Which is |
-|---|---|---|
-| Nothing yet | `Install MPCBC Website` (from the ZIP, or `Install/`) | `Install/install.ps1` |
-| The desktop icon | `MPCBC Website` | `app/control-panel.ps1` |
-
-Everything else is called by those two. Build the ZIP with
-`app/make-setup-zip.ps1` — it is a build artifact and is gitignored.
+expect it there.
 
 ### One button
 
-The panel's primary button is **Update & Start**, which runs
-`app/start-working.ps1`: install what is missing → collect updates → install
-building blocks → start the site. Every step decides for itself whether there
-is anything to do, so the same button is a first-time install and a
-two-second routine launch. It becomes **Stop** once the site is up.
+**Update & Start** runs `app/start-working.ps1`: install what is missing →
+collect updates → install building blocks → start the site. Every step decides
+for itself whether there is anything to do, so the same button is a first-time
+install and a two-second routine launch.
+
+**Install** runs the same chain. It exists so its greyed-out state can answer
+"does this computer need anything?" without anyone reading a word — and it
+stays honest as the project grows, because `Get-Prerequisites` compares
+`package-lock.json` against the hash stamped by the last successful install,
+rather than merely checking that `node_modules` exists.
 
 On launch the panel only **fetches** — that updates our record of what is on
-GitHub and touches no file — so it can report "3 updates to collect" without
-having collected them. Nothing in the working folder changes before the click.
+GitHub and touches no file — so it can report updates waiting without having
+taken them. Nothing in the working folder changes before the click.
 
-Publishing is deliberately *not* part of that chain and is never a forced
-end-of-wizard prompt: Publish and Undo are ordinary buttons that light up when
-there is something to publish, so closing the window and returning tomorrow is
-always a safe answer.
-
-While `Get-Prerequisites` reports anything missing, the panel shows a **setup
-checklist** and gates every other button on it. Once ready the checklist
-disappears. A machine can therefore repair itself from the panel; nobody has
-to find the ZIP again.
+Publishing is deliberately outside that chain and is never a forced
+end-of-wizard prompt. Publish and Undo light up when there is something to
+publish, so closing the window and returning tomorrow is always a safe answer.
 
 | Script | What it does |
 |---|---|
@@ -75,25 +99,36 @@ to find the ZIP again.
 | `app/start-working.ps1` | The one-button chain: setup, then start |
 | `Install/install.ps1` | First run on a blank machine: installs Git + Node, clones to `C:\mpcbc` |
 | `app/lib/prereqs.ps1` | `Install-Prerequisites` — winget, then portable, then manual. Shared by the installer and the panel |
-| `app/make-setup-zip.ps1` | Builds `MPCBC-Website-Setup.zip` from `Install/` + `prereqs.ps1` |
+| `app/lib/common.ps1` | Shared helpers — ports, PIDs, git, dialogs, logging |
 | `app/setup.ps1` | Installs missing tools, pull, `npm install`, `.env`, git identity, desktop shortcut |
-| `app/start.ps1` | Both dev servers, **hidden**, logging to `logs/` |
-| `app/stop.ps1` | Kills both process trees and clears the ports |
+| `app/start.ps1` / `app/stop.ps1` | Both dev servers, **hidden**, logging to `logs/` — and killing their process trees |
 | `app/publish.ps1` | Summary → confirm → pull/commit/push |
 | `app/undo.ps1` | Restore tracked files; clean untracked **content only** |
-| `app/open-tools.ps1` | VS Code / Claude Code / Codex / Antigravity |
-| `app/lib/common.ps1` | Shared helpers — ports, PIDs, git, dialogs, logging |
-| `app/mac/` | Old, **unmaintained** shell equivalents. They predate the control panel and do not know about it |
+| `app/open-tools.ps1` | Explorer / VS Code / Claude Code / Codex / Antigravity |
+| `app/make-setup-zip.ps1` | Builds `MPCBC-Website-Setup.zip` |
+| `app/make-icon.ps1` | Builds `app/mpcbc.ico` from `public/images/logo-square.png` |
+| `app/mac/` | Old, **unmaintained** shell equivalents. They predate the control panel |
 
-Two constraints in there are load-bearing and easy to undo by accident:
+### Five things that look arbitrary and are not
+
+Each of these was a real failure before it was a line of code:
 
 - **The dev servers run hidden.** Console QuickEdit suspends a process when
-  someone clicks in the window, which presents as an unexplained freeze. Output
-  goes to `logs/tina.log` and `logs/astro.log` instead.
+  someone clicks in the window, which presents as an unexplained freeze.
+  Output goes to `logs/tina.log` and `logs/astro.log` instead.
+- **The launcher does not pass `-WindowStyle Hidden`.** That sets the process
+  `STARTUPINFO` to `SW_HIDE`, which Windows applies to the first top-level
+  window — the control panel itself. The app would start and display nothing.
+  `control-panel.ps1` hides its own console once it owns it.
+- **`Test-PortOpen` probes both `::1` and `127.0.0.1`.** Astro and Tina bind
+  IPv6 only, and `localhost` does not always resolve there first. Get this
+  wrong and the panel waits forever, then kills a healthy server.
 - **Nothing writes to the registry or a persistent PATH.**
   `Update-PathFromRegistry` reads `HKLM`/`HKCU` and applies the value to the
   current process only. Never swap it for
   `[Environment]::SetEnvironmentVariable('Path', ..., 'Machine')`.
+- **`app/mpcbc.ico` stores sizes ≤ 128 as BMP, not PNG.** `System.Drawing`
+  draws the window icon and cannot decode PNG-compressed ICO entries.
 
 `AGENTS.md` (imported by `CLAUDE.md`) is the brief handed to AI assistants
 working on this repo.

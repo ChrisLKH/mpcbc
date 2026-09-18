@@ -20,7 +20,7 @@
 [CmdletBinding()]
 param(
   [Parameter(Mandatory = $true)]
-  [ValidateSet('vscode', 'claude', 'codex', 'antigravity')]
+  [ValidateSet('folder', 'vscode', 'claude', 'codex', 'antigravity')]
   [string]$Tool
 )
 
@@ -28,6 +28,19 @@ $ErrorActionPreference = 'Stop'
 . "$PSScriptRoot\lib\common.ps1"
 
 $root = Get-RepoRoot
+
+# The folder itself, in File Explorer.
+#
+# This is the honest answer to "we cannot know how someone will want to
+# work". It needs no tool, installs nothing, and covers every case the list
+# below does not: an editor we do not ship, a text editor someone already
+# likes, or simply wanting to see what is in there. Everything else in this
+# script is a convenience on top of it.
+if ($Tool -eq 'folder') {
+  Write-Log 'Opening the website folder in File Explorer.'
+  Start-Process -FilePath 'explorer.exe' -ArgumentList $root
+  exit 0
+}
 
 # Command to look for, friendly name, how to install, and where to send
 # someone when there is no dependable installer.

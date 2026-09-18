@@ -282,9 +282,20 @@ $proc = Start-Process -FilePath 'powershell.exe' -ArgumentList @(
 ) -Wait -PassThru -NoNewWindow
 if ($proc.ExitCode -ne 0) { exit $proc.ExitCode }
 
+# Tell, never ask, where it went.
+#
+# A folder picker here would be a decision a non-technical editor has no way
+# to evaluate, and the wrong answer actively breaks things: Documents is
+# routinely redirected into OneDrive, which then tries to sync node_modules.
+# So the location is chosen for them - but it is stated plainly, twice, so
+# nobody ever has to hunt for it and "it's at C:\mpcbc" settles most support
+# questions in one line. -Path overrides it for the rare case that needs it.
 Show-Box ("All set." + [Environment]::NewLine + [Environment]::NewLine +
           "There is now an icon on your desktop called 'MPCBC Website'." + [Environment]::NewLine +
           "That is the only thing you need from now on - double-click it whenever you want to work on the site." + [Environment]::NewLine + [Environment]::NewLine +
+          "The website files are in:" + [Environment]::NewLine +
+          "    $chosen" + [Environment]::NewLine + [Environment]::NewLine +
+          "You do not need to go in there, but that is where it lives if you ever want to look." + [Environment]::NewLine + [Environment]::NewLine +
           "It is opening now.")
 
 Start-Process -FilePath (Join-Path $chosen 'MPCBC Website.bat') -WorkingDirectory $chosen

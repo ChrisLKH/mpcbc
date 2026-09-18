@@ -452,6 +452,10 @@ $btnHelp.Add_Click({
 
 $menu = New-Object System.Windows.Forms.ContextMenuStrip
 foreach ($entry in @(
+  # Folder first, deliberately: it needs nothing installed and covers every
+  # way of working this list does not anticipate. The rest escalate from
+  # "edit it yourself" to "ask for it in words".
+  @{ Text = 'Open the folder  -  see the files'; Tool = 'folder' },
   @{ Text = 'VS Code  -  edit the files myself'; Tool = 'vscode' },
   @{ Text = 'Claude Code  -  ask in plain English'; Tool = 'claude' },
   @{ Text = 'Codex  -  ask in plain English'; Tool = 'codex' },
