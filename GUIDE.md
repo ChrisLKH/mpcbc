@@ -380,6 +380,42 @@ safe. This happens when two people edit at the same time, which is why
 
 ---
 
+## If you're comfortable with code
+
+Everything above works without knowing any of this. If you'd rather work from
+the files, or point an AI assistant at the site, here's the onward path.
+
+**The two documents that matter:**
+
+| Document | What it covers |
+|---|---|
+| [README.md](README.md) | How the site is built — Astro, Cloudflare, the livestream board, the sermon sync, deployment |
+| [AGENTS.md](AGENTS.md) | The brief for AI assistants. Imported by `CLAUDE.md`, and read automatically by Claude Code, Codex and Antigravity |
+
+**Running it by hand**, if you'd rather not use the app:
+
+```bash
+npx tinacms dev      # terminal 1 — Tina's content server on :4001
+npm run dev          # terminal 2 — the site on :4321
+```
+
+Order matters, and so do a few other things that look arbitrary and aren't —
+Tina must finish indexing before Astro starts, `ASTRO_DEV_BACKGROUND=1` avoids
+a 30-second watchdog, and you want `localhost` rather than `127.0.0.1` because
+the dev server binds IPv6. `app/start.ps1` handles all of that, which is why
+the app is usually the easier route even if you're technical.
+
+**The editor is TinaCMS in local mode** — no account, no login, no seat limit.
+The blank `.env` is deliberate: local mode needs no credentials, and editors
+never touch Tina Cloud.
+
+**The one rule:** `src/content/` is content and safe to change. Everything else
+is the machinery. In particular, don't hand-write files in
+`src/content/sermons/` (the nightly YouTube sync owns them) or edit
+`src/data/services.json` (the livestream Worker overwrites it).
+
+---
+
 ## Who to ask
 
 Chris — for anything at all. There is no such thing as a silly question here,
