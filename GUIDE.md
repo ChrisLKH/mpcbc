@@ -62,6 +62,27 @@ You'll see **"All set"**, and an icon appears on your desktop:
 
 That icon is the only thing you need from now on. You can delete the ZIP file.
 
+### If the app says this computer still needs setting up
+
+Open the icon anyway. The window shows a short checklist:
+
+```
+FIRST, SET THIS COMPUTER UP
+  ✓  Install the programs it needs (Git and Node.js)
+  ✓  Get the website files
+  ○  Install the building blocks
+  ○  Create the settings file
+
+[        Set Up This Computer        ]
+```
+
+A tick means that part is done. Click **Set Up This Computer** and wait — it
+finishes whatever is still missing, which takes two or three minutes. The
+checklist then disappears and doesn't come back.
+
+Until it's finished, the other buttons stay greyed out on purpose. Nothing is
+broken; they simply can't work yet.
+
 **You don't need a GitHub account yet.** You only need one the first time you
 publish something — see [Part 5](#part-5--before-your-first-publish-once).
 

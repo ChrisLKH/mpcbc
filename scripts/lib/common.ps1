@@ -651,3 +651,53 @@ function Open-Url {
   param([string]$Url)
   try { Start-Process $Url } catch { Write-Log "Could not open $Url : $($_.Exception.Message)" 'warn' }
 }
+
+# --- Prerequisites -------------------------------------------------------
+
+function Get-Prerequisites {
+  <#
+    What this computer has, and what it still needs, as one object.
+
+    The control panel gates every button on this: nothing that cannot
+    possibly work is ever clickable. An editor should meet a greyed-out
+    button and a checklist, never an error dialog explaining that a thing
+    they have never heard of is missing.
+
+    Each check is the cheapest question that is actually conclusive - no
+    version shelling out unless the executable is there to shell out to.
+  #>
+  $root = Get-RepoRoot
+
+  $gitExe  = Get-GitExe
+  $nodeExe = Get-NodeExe
+
+  $nodeMajor = 0
+  if ($nodeExe) {
+    try { $nodeMajor = [int]((((& $nodeExe --version) -replace '^v', '') -split '\.')[0]) } catch { $nodeMajor = 0 }
+  }
+
+  # "The files are here" means a real clone, not just a folder: the
+  # publish and update buttons are meaningless without git history.
+  $repoOk = (Test-Path (Join-Path $root '.git')) -and (Test-Path (Join-Path $root 'package.json'))
+
+  # node_modules can exist and still be useless - a half-finished or
+  # interrupted npm install leaves the folder behind. Check for something
+  # the site actually starts with.
+  $depsOk = (Test-Path (Join-Path $root 'node_modules\astro')) -and
+            (Test-Path (Join-Path $root 'node_modules\.bin'))
+
+  $envOk = Test-Path (Join-Path $root '.env')
+
+  $nodeOk = ($nodeExe -and $nodeMajor -ge 20)
+
+  return [pscustomobject]@{
+    GitOk     = [bool]$gitExe
+    NodeOk    = [bool]$nodeOk
+    NodeMajor = $nodeMajor
+    RepoOk    = [bool]$repoOk
+    DepsOk    = [bool]$depsOk
+    EnvOk     = [bool]$envOk
+    ToolsOk   = ([bool]$gitExe -and [bool]$nodeOk)
+    Ready     = ([bool]$gitExe -and [bool]$nodeOk -and [bool]$repoOk -and [bool]$depsOk -and [bool]$envOk)
+  }
+}

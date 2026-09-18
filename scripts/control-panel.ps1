@@ -11,12 +11,15 @@
 
     * No console. The dev servers run hidden (see start.ps1 for why), and
       every question is a dialog.
-    * Buttons enable and disable by state, so a wrong click is usually
-      impossible rather than merely discouraged.
+    * Nothing that cannot possibly work is clickable. Get-Prerequisites
+      decides; an editor meets a greyed-out button and a checklist saying
+      what is still missing, never an error dialog about a thing they have
+      never heard of.
+    * The setup checklist is only on screen while setup is unfinished.
+      Once the computer is ready it disappears, so the everyday window
+      stays small.
     * The main screen only ever shows plain sentences. Technical detail
-      lives behind "Show Details", with "Copy for Chris" beside it -
-      because "scroll up and find the red line" is not something a
-      non-technical user can do.
+      lives behind "Show Details", with "Copy for Chris" beside it.
 
   Launched by "MPCBC Website.bat" in the repository root.
 #>
@@ -63,9 +66,15 @@ $script:BusyLabel   = ''
 $script:DetailsOpen = $false
 $script:HasChanges  = $false
 $script:LastChangeCheck = [datetime]::MinValue
+$script:Prereqs     = $null
+$script:LastPrereqCheck = [datetime]::MinValue
+$script:SetupVisible = $true
 
-$COLLAPSED_HEIGHT = 470
-$EXPANDED_HEIGHT  = 700
+# Vertical space the setup block occupies. Everything below it shifts by
+# this much while it is on screen, and back again once setup is finished.
+$SETUP_OFFSET     = 200
+$COLLAPSED_HEIGHT = 468
+$DETAILS_EXTRA    = 232
 
 # --- Window --------------------------------------------------------------
 
@@ -96,6 +105,7 @@ function New-Separator {
   $p.SetBounds(18, $Y, 416, 1)
   $p.BorderStyle = 'Fixed3D'
   $form.Controls.Add($p)
+  return $p
 }
 
 # --- Status block --------------------------------------------------------
@@ -117,25 +127,69 @@ $statusSub.ForeColor = [System.Drawing.Color]::DimGray
 $statusSub.SetBounds(56, 44, 384, 22)
 $form.Controls.Add($statusSub)
 
-New-Separator -Y 78
+$sepTop = New-Separator -Y 78
 
-# --- Buttons -------------------------------------------------------------
+# --- Setup block (only while setup is unfinished) ------------------------
 
-$btnOpenSite   = New-Button 'Look at the Website' 18 92 203 46 $true
-$btnOpenEditor = New-Button 'Edit the Words'      231 92 203 46 $true
-$btnStartStop  = New-Button 'Start the Website'   18 146 416 46 $true
+$setupTitle = New-Object System.Windows.Forms.Label
+$setupTitle.Text = 'FIRST, SET THIS COMPUTER UP'
+$setupTitle.Font = New-Object System.Drawing.Font('Segoe UI', 8, [System.Drawing.FontStyle]::Bold)
+$setupTitle.ForeColor = [System.Drawing.Color]::FromArgb(148, 55, 89)   # church maroon
+$setupTitle.SetBounds(20, 90, 416, 18)
+$form.Controls.Add($setupTitle)
 
-New-Separator -Y 208
+# Four checks, in the order they have to happen. The wording names what an
+# editor would recognise, with the real tool in brackets so Chris can still
+# tell which one failed from a photo of the screen.
+$stepDefs = @(
+  @{ Key = 'ToolsOk'; Text = 'Install the programs it needs (Git and Node.js)' },
+  @{ Key = 'RepoOk';  Text = 'Get the website files' },
+  @{ Key = 'DepsOk';  Text = 'Install the building blocks' },
+  @{ Key = 'EnvOk';   Text = 'Create the settings file' }
+)
 
-$btnUpdate  = New-Button 'Get the Latest Version' 18 220 416 40
-$btnHelper  = New-Button 'Edit with a Helper'     18 266 416 40
-$btnPublish = New-Button 'Publish My Changes'     18 312 416 40
-$btnUndo    = New-Button 'Undo My Changes'        18 358 416 40
+$stepControls = @()
+for ($i = 0; $i -lt $stepDefs.Count; $i++) {
+  $y = 112 + ($i * 26)
 
-New-Separator -Y 410
+  $mark = New-Object System.Windows.Forms.Label
+  $mark.Font = New-Object System.Drawing.Font('Segoe UI', 11, [System.Drawing.FontStyle]::Bold)
+  $mark.SetBounds(22, $y, 24, 22)
+  $form.Controls.Add($mark)
 
-$btnHelp    = New-Button 'Help'         18 422 130 34
-$btnDetails = New-Button 'Show Details' 304 422 130 34
+  $text = New-Object System.Windows.Forms.Label
+  $text.SetBounds(48, ($y + 2), 388, 22)
+  $text.Text = $stepDefs[$i].Text
+  $form.Controls.Add($text)
+
+  $stepControls += [pscustomobject]@{ Key = $stepDefs[$i].Key; Mark = $mark; Text = $text }
+}
+
+$btnSetup = New-Button 'Set Up This Computer' 18 220 416 44 $true
+$sepSetup = New-Separator -Y 278
+
+$setupControls = @($setupTitle, $btnSetup, $sepSetup)
+foreach ($s in $stepControls) { $setupControls += $s.Mark; $setupControls += $s.Text }
+
+# --- Main controls -------------------------------------------------------
+# Base Y positions assume the setup block is hidden; Set-Layout shifts them
+# down by $SETUP_OFFSET while it is showing.
+
+$btnOpenSite   = New-Button 'Look at the Website' 18 90 203 46 $true
+$btnOpenEditor = New-Button 'Edit the Words'      231 90 203 46 $true
+$btnStartStop  = New-Button 'Start the Website'   18 144 416 46 $true
+
+$sepMid = New-Separator -Y 206
+
+$btnUpdate  = New-Button 'Get the Latest Version' 18 218 416 40
+$btnHelper  = New-Button 'Edit with a Helper'     18 264 416 40
+$btnPublish = New-Button 'Publish My Changes'     18 310 416 40
+$btnUndo    = New-Button 'Undo My Changes'        18 356 416 40
+
+$sepBottom = New-Separator -Y 408
+
+$btnHelp    = New-Button 'Help'         18 420 130 34
+$btnDetails = New-Button 'Show Details' 304 420 130 34
 
 # --- Details pane --------------------------------------------------------
 
@@ -159,6 +213,39 @@ $copyHint.SetBounds(226, 664, 216, 22)
 $copyHint.Visible = $false
 $form.Controls.Add($copyHint)
 
+# Every control below the setup block, with the Y it sits at when the setup
+# block is hidden. One list, so a layout change cannot miss one.
+$mainLayout = @(
+  @{ C = $btnOpenSite; Y = 90 },  @{ C = $btnOpenEditor; Y = 90 },  @{ C = $btnStartStop; Y = 144 },
+  @{ C = $sepMid;      Y = 206 }, @{ C = $btnUpdate;     Y = 218 }, @{ C = $btnHelper;    Y = 264 },
+  @{ C = $btnPublish;  Y = 310 }, @{ C = $btnUndo;       Y = 356 }, @{ C = $sepBottom;    Y = 408 },
+  @{ C = $btnHelp;     Y = 420 }, @{ C = $btnDetails;    Y = 420 }, @{ C = $logBox;       Y = 466 },
+  @{ C = $btnCopy;     Y = 656 }, @{ C = $copyHint;      Y = 664 }
+)
+
+function Set-Layout {
+  <#
+    Position everything below the status block, and size the window to fit
+    exactly what is on screen. Driven by two booleans, so the window height
+    and the visible controls cannot disagree.
+  #>
+  param([bool]$ShowSetup, [bool]$ShowDetails)
+
+  $offset = 0
+  if ($ShowSetup) { $offset = $SETUP_OFFSET }
+
+  foreach ($c in $setupControls) { $c.Visible = $ShowSetup }
+  foreach ($item in $mainLayout) { $item.C.Top = $item.Y + $offset }
+
+  $logBox.Visible   = $ShowDetails
+  $btnCopy.Visible  = $ShowDetails
+  $copyHint.Visible = $ShowDetails
+
+  $height = $COLLAPSED_HEIGHT + $offset
+  if ($ShowDetails) { $height += $DETAILS_EXTRA }
+  $form.ClientSize = New-Object System.Drawing.Size(452, $height)
+}
+
 # --- Rendering -----------------------------------------------------------
 
 function Set-Status {
@@ -174,39 +261,69 @@ function Update-Ui {
     across handlers is how you end up with a "Publish" button that works
     while a publish is already running.
 
-    -Force re-reads the expensive things (git) immediately instead of
-    waiting for the cache to age.
+    -Force re-reads the expensive things (git, node versions) immediately
+    instead of waiting for their caches to age.
   #>
   param([switch]$Force)
 
   $busy = ($null -ne $script:BusyProcess)
+
+  # Prerequisites shell out to node, so they are cached. They only really
+  # change when setup runs, and that always ends with a forced refresh.
+  if ($Force -or $null -eq $script:Prereqs -or ((Get-Date) - $script:LastPrereqCheck).TotalSeconds -ge 30) {
+    try { $script:Prereqs = Get-Prerequisites } catch { }
+    $script:LastPrereqCheck = Get-Date
+  }
+  $pre = $script:Prereqs
+  $ready = ($null -ne $pre -and $pre.Ready)
+
+  # Setup block: on screen until the computer is ready, then gone.
+  $wantSetup = (-not $ready)
+  if ($wantSetup -ne $script:SetupVisible) {
+    $script:SetupVisible = $wantSetup
+    Set-Layout -ShowSetup $wantSetup -ShowDetails $script:DetailsOpen
+  }
+
+  if ($wantSetup -and $null -ne $pre) {
+    foreach ($s in $stepControls) {
+      $done = [bool]$pre.($s.Key)
+      if ($done) {
+        $s.Mark.Text = [string][char]0x2713                     # check mark
+        $s.Mark.ForeColor = [System.Drawing.Color]::ForestGreen
+        $s.Text.ForeColor = [System.Drawing.Color]::DimGray
+      } else {
+        $s.Mark.Text = [string][char]0x25CB                     # hollow circle
+        $s.Mark.ForeColor = [System.Drawing.Color]::Silver
+        $s.Text.ForeColor = [System.Drawing.Color]::Black
+      }
+    }
+  }
+
   $status = Get-SiteStatus
 
   if ($busy) {
     Set-Status 'Goldenrod' $script:BusyLabel 'Please wait - this can take a few minutes.'
+  } elseif (-not $ready) {
+    Set-Status 'Goldenrod' 'This computer needs setting up' 'It only has to be done once. Start below.'
   } else {
     switch ($status.State) {
-      'running' {
-        Set-Status 'ForestGreen' 'The website is running' "Ready at $script:SiteUrl"
-      }
-      'starting' {
-        Set-Status 'Goldenrod' 'Starting up...' 'This takes up to a minute the first time.'
-      }
-      'crashed' {
-        Set-Status 'Firebrick' 'The website stopped unexpectedly' 'Click "Show Details", then "Copy for Chris".'
-      }
-      default {
-        Set-Status 'Silver' 'The website is not running' 'Click "Start the Website" to begin.'
-      }
+      'running'  { Set-Status 'ForestGreen' 'The website is running' "Ready at $script:SiteUrl" }
+      'starting' { Set-Status 'Goldenrod' 'Starting up...' 'This takes up to a minute the first time.' }
+      'crashed'  { Set-Status 'Firebrick' 'The website stopped unexpectedly' 'Click "Show Details", then "Copy for Chris".' }
+      default    { Set-Status 'Silver' 'The website is not running' 'Click "Start the Website" to begin.' }
     }
   }
 
   $running = ($status.State -eq 'running')
 
-  $btnOpenSite.Enabled   = ($running -and -not $busy)
-  $btnOpenEditor.Enabled = ($running -and -not $busy)
+  $btnSetup.Enabled = (-not $busy)
 
-  $btnStartStop.Enabled = (-not $busy -and $status.State -ne 'starting')
+  # Nothing below the setup block can work until the computer is ready, so
+  # none of it is clickable until then.
+  $btnOpenSite.Enabled   = ($ready -and $running -and -not $busy)
+  $btnOpenEditor.Enabled = ($ready -and $running -and -not $busy)
+  $btnStartStop.Enabled  = ($ready -and -not $busy -and $status.State -ne 'starting')
+
   if ($running -or $status.State -eq 'starting') {
     $btnStartStop.Text = 'Stop the Website'
   } else {
@@ -215,8 +332,8 @@ function Update-Ui {
 
   # Updating while the servers are running would pull files out from under
   # them, so it is offered only when the site is stopped.
-  $btnUpdate.Enabled  = (-not $busy -and $status.State -ne 'running' -and $status.State -ne 'starting')
-  $btnHelper.Enabled  = (-not $busy)
+  $btnUpdate.Enabled  = ($ready -and -not $busy -and $status.State -ne 'running' -and $status.State -ne 'starting')
+  $btnHelper.Enabled  = ($ready -and -not $busy)
   $btnHelp.Enabled    = $true
   $btnDetails.Enabled = $true
 
@@ -227,7 +344,7 @@ function Update-Ui {
   # timer - it would spawn a process 30 times a minute for the life of the
   # window. Cache it, refresh every ~10 seconds, and refresh immediately
   # whenever a job finishes (that is when it can actually have changed).
-  if ($busy) {
+  if ($busy -or -not $ready) {
     $btnPublish.Enabled = $false
     $btnUndo.Enabled = $false
   } else {
@@ -239,7 +356,11 @@ function Update-Ui {
     $btnUndo.Enabled = $script:HasChanges
   }
 
-  if ($script:DetailsOpen) { $logBox.Text = Get-RecentLog -Lines 60; $logBox.SelectionStart = $logBox.TextLength; $logBox.ScrollToCaret() }
+  if ($script:DetailsOpen) {
+    $logBox.Text = Get-RecentLog -Lines 60
+    $logBox.SelectionStart = $logBox.TextLength
+    $logBox.ScrollToCaret()
+  }
 }
 
 # --- Running the scripts -------------------------------------------------
@@ -263,6 +384,20 @@ function Start-Job-Script {
 
 # --- Handlers ------------------------------------------------------------
 
+$btnSetup.Add_Click({
+  $pre = $script:Prereqs
+  # setup.ps1 can install tools, dependencies and the settings file, but it
+  # cannot turn a plain folder into a clone. A ZIP downloaded from GitHub
+  # has no history, and silently cloning a second copy elsewhere would
+  # leave an editor with two folders and no idea which one is live.
+  if ($null -ne $pre -and -not $pre.RepoOk) {
+    Show-Problem ("This copy of the website is missing its history, so it can never update or publish." + [Environment]::NewLine + [Environment]::NewLine +
+                  'It was probably unpacked from a plain ZIP. Ask Chris to reinstall it using "Install MPCBC Website".')
+    return
+  }
+  Start-Job-Script -Script 'setup.ps1' -ScriptArgs @('-Quiet') -Label 'Setting up this computer...'
+})
+
 $btnOpenSite.Add_Click({ Open-Url $script:SiteUrl })
 $btnOpenEditor.Add_Click({ Open-Url $script:AdminUrl })
 
@@ -279,13 +414,8 @@ $btnUpdate.Add_Click({
   Start-Job-Script -Script 'setup.ps1' -ScriptArgs @('-Quiet') -Label 'Getting the latest version...'
 })
 
-$btnPublish.Add_Click({
-  Start-Job-Script -Script 'publish.ps1' -Label 'Publishing...'
-})
-
-$btnUndo.Add_Click({
-  Start-Job-Script -Script 'undo.ps1' -Label 'Undoing...'
-})
+$btnPublish.Add_Click({ Start-Job-Script -Script 'publish.ps1' -Label 'Publishing...' })
+$btnUndo.Add_Click({ Start-Job-Script -Script 'undo.ps1' -Label 'Undoing...' })
 
 $btnHelp.Add_Click({
   $local = Join-Path $root 'GUIDE.md'
@@ -312,31 +442,32 @@ $btnHelper.Add_Click({ $menu.Show($btnHelper, 0, $btnHelper.Height) })
 
 $btnDetails.Add_Click({
   $script:DetailsOpen = -not $script:DetailsOpen
-  $logBox.Visible = $script:DetailsOpen
-  $btnCopy.Visible = $script:DetailsOpen
-  $copyHint.Visible = $script:DetailsOpen
-  if ($script:DetailsOpen) {
-    $btnDetails.Text = 'Hide Details'
-    $form.ClientSize = New-Object System.Drawing.Size(452, $EXPANDED_HEIGHT)
-  } else {
-    $btnDetails.Text = 'Show Details'
-    $form.ClientSize = New-Object System.Drawing.Size(452, $COLLAPSED_HEIGHT)
-  }
+  if ($script:DetailsOpen) { $btnDetails.Text = 'Hide Details' } else { $btnDetails.Text = 'Show Details' }
+  Set-Layout -ShowSetup $script:SetupVisible -ShowDetails $script:DetailsOpen
   Update-Ui
 })
 
 $btnCopy.Add_Click({
+  # The setup line is worth its space: nearly every "it does not work"
+  # message turns out to be one of these five being false.
+  $pre = $script:Prereqs
+  $preLine = 'unknown'
+  if ($null -ne $pre) {
+    $preLine = "git=$($pre.GitOk) node=$($pre.NodeOk)(v$($pre.NodeMajor)) files=$($pre.RepoOk) deps=$($pre.DepsOk) env=$($pre.EnvOk)"
+  }
   $report = @(
-    "MPCBC website problem report",
+    'MPCBC website problem report',
     "When:     $(Get-Date -Format 'yyyy-MM-dd HH:mm')",
     "Computer: $env:COMPUTERNAME",
     "Folder:   $root",
-    "",
+    "Setup:    $preLine",
+    '',
     (Get-RecentLog -Lines 50)
   ) -join "`r`n"
   try {
     Set-Clipboard -Value $report
-    Show-Info "Copied.`r`n`r`nPaste it into a message to Chris - that is everything he needs."
+    Show-Info ("Copied." + [Environment]::NewLine + [Environment]::NewLine +
+               'Paste it into a message to Chris - that is everything he needs.')
   } catch {
     Show-Problem 'The details could not be copied. Please take a photo of this window instead.'
   }
@@ -352,8 +483,8 @@ $timer.Add_Tick({
       Write-Log "Job '$script:BusyLabel' finished with exit code $($script:BusyProcess.ExitCode)."
       $script:BusyProcess = $null
       $script:BusyLabel = ''
-      # A job just ended: this is exactly when Publish/Undo may have
-      # become relevant, so don't wait for the cache to age out.
+      # A job just ended: this is exactly when the prerequisites and the
+      # Publish/Undo state may have changed, so don't wait for the caches.
       Update-Ui -Force
       return
     }
@@ -368,7 +499,7 @@ $form.Add_FormClosing({
 
   if ($script:BusyProcess) {
     if (-not (Confirm-Action -DefaultYes $false -Title 'Still working' -Message (
-        "Something is still running.`r`n`r`nClose anyway?"))) {
+        "Something is still running." + [Environment]::NewLine + [Environment]::NewLine + 'Close anyway?'))) {
       $e.Cancel = $true
       return
     }
@@ -380,8 +511,8 @@ $form.Add_FormClosing({
   $status = Get-SiteStatus
   if ($status.State -eq 'running' -or $status.State -eq 'starting') {
     if (Confirm-Action -DefaultYes $true -Title 'Stop the website?' -Message (
-        "The website is still running on this computer.`r`n`r`n" +
-        "Stop it as well? (The published website is not affected.)")) {
+        "The website is still running on this computer." + [Environment]::NewLine + [Environment]::NewLine +
+        'Stop it as well? (The published website is not affected.)')) {
       & (Join-Path $PSScriptRoot 'stop.ps1') | Out-Null
     }
   }
@@ -390,6 +521,7 @@ $form.Add_FormClosing({
 
 # --- Go ------------------------------------------------------------------
 
+Set-Layout -ShowSetup $true -ShowDetails $false
 Update-Ui -Force
 $timer.Start()
 [void]$form.ShowDialog()

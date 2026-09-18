@@ -40,6 +40,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 . "$PSScriptRoot\lib\common.ps1"
+. "$PSScriptRoot\lib\prereqs.ps1"
 
 function Write-Step { param($m) if (-not $Quiet) { Write-Host "`n==> $m" -ForegroundColor Magenta }; Write-Log $m }
 function Write-Ok   { param($m) if (-not $Quiet) { Write-Host "    $m" -ForegroundColor DarkGray } }
@@ -56,30 +57,45 @@ function Stop-Setup {
 }
 
 # --- 1. Prerequisites ---------------------------------------------------
-# PATH may still be stale from an install that happened moments ago, so
-# look properly before concluding something is missing.
+# This script is the single "set this computer up" path, so a missing tool
+# is something to FIX rather than something to complain about. It used to
+# stop here and send people back to an installer they had long since
+# deleted; now it installs what is missing, by whichever route the machine
+# allows (see lib\prereqs.ps1 - winget first, portable copies when there
+# are no administrator rights).
+#
+# PATH may also be stale from an install that finished moments ago, which
+# Get-GitExe / Get-NodeExe already handle by re-reading it.
 
 Write-Step 'Checking Git and Node'
 
 $git = Get-GitExe
-if (-not $git) {
-  Stop-Setup 'Git is not installed on this computer.' `
-             'Run "Install MPCBC Website" again, or ask Chris to set this computer up.'
-}
-
 $node = Get-NodeExe
-if (-not $node) {
-  Stop-Setup 'Node.js is not installed on this computer.' `
-             'Run "Install MPCBC Website" again, or ask Chris to set this computer up.'
+$nodeMajor = 0
+if ($node) {
+  try { $nodeMajor = [int]((((& $node --version) -replace '^v', '') -split '\.')[0]) } catch { $nodeMajor = 0 }
 }
 
-$nodeRaw = (& $node --version) -replace '^v', ''
-$nodeMajor = [int]($nodeRaw -split '\.')[0]
-if ($nodeMajor -lt 20) {
-  Stop-Setup "This computer has Node $nodeRaw, and the website needs 20 or newer." `
-             'Ask Chris to update it.'
+if (-not $git -or -not $node -or $nodeMajor -lt 20) {
+  Write-Step 'Installing the programs the website needs (a few minutes)'
+  $installed = Install-Prerequisites -Progress { param($m) Write-Ok $m; Write-Log $m }
+  $git = $installed.GitExe
+  $node = $installed.NodeExe
+  $nodeMajor = 0
+  if ($node) {
+    try { $nodeMajor = [int]((((& $node --version) -replace '^v', '') -split '\.')[0]) } catch { $nodeMajor = 0 }
+  }
 }
-Write-Ok "node v$nodeRaw"
+
+if (-not $git) {
+  Stop-Setup 'Git could not be installed on this computer.' `
+             'Please tell Chris - this computer needs Git installed by hand from https://git-scm.com/downloads.'
+}
+if (-not $node -or $nodeMajor -lt 20) {
+  Stop-Setup 'Node.js could not be installed on this computer, or the version is too old.' `
+             'Please tell Chris - this computer needs Node.js 20 or newer from https://nodejs.org.'
+}
+Write-Ok "git and node v$nodeMajor ready"
 
 # --- 2. Find or fetch the code ------------------------------------------
 # Running from inside a clone always wins over -Path: updating the copy you

@@ -114,100 +114,65 @@ Write-Host '  This takes about five minutes. You can leave it running.' -Foregro
 
 # --- 1. Git and Node ----------------------------------------------------
 
-function Install-WithWinget {
-  param($PackageId, $Label)
-  if (-not (Get-Command winget -ErrorAction SilentlyContinue)) { return $false }
-  Detail "Installing $Label (a permission box may appear - please click Yes)"
-  try {
-    $proc = Start-Process -FilePath 'winget' -ArgumentList @(
-      'install', '--id', $PackageId, '-e',
-      '--accept-source-agreements', '--accept-package-agreements'
-    ) -Wait -PassThru -WindowStyle Hidden
-    return ($proc.ExitCode -eq 0)
-  } catch {
-    return $false
+# The installer logic lives in prereqs.ps1, which the setup ZIP places next
+# to this file (see scripts\make-setup-zip.ps1). Sharing it with the control
+# panel matters: two copies of "install Git and Node, by winget or portably"
+# would drift, and the copy that drifts is the one nobody tests, because it
+# only ever runs on machines that do not have the tools yet.
+#
+# prereqs.ps1 expects a few helpers that common.ps1 normally supplies. There
+# is no common.ps1 here - this script runs before the repository exists - so
+# the small ones it needs are defined below.
+
+function Get-GitExe {
+  $cmd = Get-Command git -ErrorAction SilentlyContinue
+  if ($cmd) { return $cmd.Source }
+  Update-PathFromRegistry
+  $cmd = Get-Command git -ErrorAction SilentlyContinue
+  if ($cmd) { return $cmd.Source }
+  foreach ($candidate in @(
+    (Join-Path $PortableDir 'git\cmd\git.exe'),
+    "$env:ProgramFiles\Git\cmd\git.exe",
+    "$env:LOCALAPPDATA\Programs\Git\cmd\git.exe"
+  )) {
+    if (Test-Path $candidate) { return $candidate }
   }
+  return $null
 }
 
-function Get-GitHubAsset {
-  <#
-    Newest release asset matching a pattern. Used for PortableGit, whose
-    filename carries a version that changes every few weeks - hardcoding a
-    URL here would rot.
-  #>
-  param($RepoPath, $Pattern)
-  $release = Invoke-RestMethod -Uri "https://api.github.com/repos/$RepoPath/releases/latest" `
-    -Headers @{ 'User-Agent' = 'mpcbc-setup' }
-  return ($release.assets | Where-Object { $_.name -match $Pattern } | Select-Object -First 1)
-}
-
-function Install-PortableGit {
-  <#
-    PortableGit is a self-extracting archive, not an installer: it needs no
-    administrator rights, and unlike MinGit it still includes Git
-    Credential Manager - which is what makes the browser sign-in work when
-    the editor first publishes.
-  #>
-  Detail 'Setting up Git without needing administrator rights...'
-  $asset = Get-GitHubAsset -RepoPath 'git-for-windows/git' -Pattern 'PortableGit-.*-64-bit\.7z\.exe$'
-  if (-not $asset) { return $false }
-
-  $target = Join-Path $PortableDir 'git'
-  $tmp = Join-Path $env:TEMP $asset.name
-  Detail "Downloading $($asset.name) ..."
-  Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $tmp -UseBasicParsing
-
-  New-Item -ItemType Directory -Path $target -Force | Out-Null
-  Detail 'Unpacking...'
-  $proc = Start-Process -FilePath $tmp -ArgumentList @('-o', $target, '-y') -Wait -PassThru
-  Remove-Item $tmp -Force -ErrorAction SilentlyContinue
-
+function Get-NodeExe {
+  $cmd = Get-Command node -ErrorAction SilentlyContinue
+  if ($cmd) { return $cmd.Source }
   Update-PathFromRegistry
-  return (Test-Path (Join-Path $target 'cmd\git.exe'))
+  $cmd = Get-Command node -ErrorAction SilentlyContinue
+  if ($cmd) { return $cmd.Source }
+  foreach ($candidate in @(
+    (Join-Path $PortableDir 'node\node.exe'),
+    "$env:ProgramFiles\nodejs\node.exe",
+    "$env:LOCALAPPDATA\Programs\nodejs\node.exe"
+  )) {
+    if (Test-Path $candidate) { return $candidate }
+  }
+  return $null
 }
 
-function Install-PortableNode {
-  Detail 'Setting up Node.js without needing administrator rights...'
-  $index = Invoke-RestMethod -Uri 'https://nodejs.org/dist/index.json' -UseBasicParsing
-  $lts = $index | Where-Object { $_.lts } | Select-Object -First 1
-  if (-not $lts) { return $false }
-
-  $name = "node-$($lts.version)-win-x64"
-  $url  = "https://nodejs.org/dist/$($lts.version)/$name.zip"
-  $tmp  = Join-Path $env:TEMP "$name.zip"
-
-  Detail "Downloading Node.js $($lts.version) ..."
-  Invoke-WebRequest -Uri $url -OutFile $tmp -UseBasicParsing
-
-  Detail 'Unpacking...'
-  $staging = Join-Path $env:TEMP 'mpcbc-node'
-  if (Test-Path $staging) { Remove-Item $staging -Recurse -Force }
-  Expand-Archive -Path $tmp -DestinationPath $staging -Force
-  Remove-Item $tmp -Force -ErrorAction SilentlyContinue
-
-  $target = Join-Path $PortableDir 'node'
-  if (Test-Path $target) { Remove-Item $target -Recurse -Force }
-  New-Item -ItemType Directory -Path $PortableDir -Force | Out-Null
-  Move-Item -Path (Join-Path $staging $name) -Destination $target
-
-  Update-PathFromRegistry
-  return (Test-Path (Join-Path $target 'node.exe'))
+$prereqScript = Join-Path $PSScriptRoot 'prereqs.ps1'
+if (-not (Test-Path $prereqScript)) {
+  Stop-Install ("This setup folder is incomplete - a file called prereqs.ps1 is missing." + [Environment]::NewLine + [Environment]::NewLine +
+                "Please ask Chris for a fresh copy of MPCBC-Website-Setup.zip.")
 }
+$script:PortableToolsDir = $PortableDir
+. $prereqScript
 
 Say 'Checking what this computer already has'
 
 if (Test-Tool 'git')  { Detail 'Git is already installed.' }
 if (Test-Tool 'node') { Detail 'Node.js is already installed.' }
 
-if (-not (Test-Tool 'git')) {
-  Say 'Installing Git'
-  if (-not (Install-WithWinget -PackageId 'Git.Git' -Label 'Git')) { $null = Install-PortableGit }
-  Update-PathFromRegistry
-}
-
-if (-not (Test-Tool 'node')) {
-  Say 'Installing Node.js'
-  if (-not (Install-WithWinget -PackageId 'OpenJS.NodeJS.LTS' -Label 'Node.js')) { $null = Install-PortableNode }
+if (-not (Test-Tool 'git') -or -not (Test-Tool 'node')) {
+  Say 'Installing the programs the website needs'
+  Detail 'A permission box may appear - please click Yes.'
+  [void](Install-Prerequisites -Progress { param($m) Detail $m })
   Update-PathFromRegistry
 }
 

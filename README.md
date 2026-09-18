@@ -21,11 +21,28 @@ which is the link to send a new editor — it works before they have the repo.
 Setup is `scripts/bootstrap/` zipped and sent to them. Everything underneath is
 the same scripts documented below, so there is one code path rather than two.
 
+There are exactly **two** things a person ever launches:
+
+| They have | They run | Which is |
+|---|---|---|
+| Nothing yet | `Install MPCBC Website` (from the ZIP) | `scripts/bootstrap/install.ps1` |
+| The desktop icon | `MPCBC Website` | `scripts/control-panel.ps1` |
+
+Everything else is called by those two. Build the ZIP with
+`scripts/make-setup-zip.ps1` — it is a build artifact and is gitignored.
+
+The control panel shows a **setup checklist** (programs, files, building
+blocks, settings file) until `Get-Prerequisites` reports `Ready`, gates every
+other button on it, and then hides the checklist for good. So a machine can
+repair itself from the panel; nobody has to find the ZIP again.
+
 | Script | What it does |
 |---|---|
 | `scripts/control-panel.ps1` | The whole editor-facing UI (WinForms) |
 | `scripts/bootstrap/install.ps1` | First run on a blank machine: installs Git + Node, clones to `C:\mpcbc` |
-| `scripts/setup.ps1` | Pull, `npm install`, `.env`, git identity, desktop shortcut |
+| `scripts/lib/prereqs.ps1` | `Install-Prerequisites` — winget, then portable, then manual. Shared by the bootstrap and the panel |
+| `scripts/make-setup-zip.ps1` | Builds `MPCBC-Website-Setup.zip` from the bootstrap + `prereqs.ps1` |
+| `scripts/setup.ps1` | Installs missing tools, pull, `npm install`, `.env`, git identity, desktop shortcut |
 | `scripts/start.ps1` | Both dev servers, **hidden**, logging to `logs/` |
 | `scripts/stop.ps1` | Kills both process trees and clears the ports |
 | `scripts/publish.ps1` | Summary → confirm → pull/commit/push |
