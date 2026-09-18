@@ -175,7 +175,14 @@ export default defineConfig({
         },
         fields: [
           {
-            type: 'string', name: 'congregation', label: 'Section',
+            // Labelled "Section" until it was pointed out that the word
+            // reads as "which part of the menu is this under?" - which is
+            // the next field down, not this one. Same wording as
+            // announcements and events now, since it is the same field.
+            type: 'string', name: 'congregation', label: 'Who is this for?',
+            description:
+              'Which congregation this page is aimed at. This does NOT affect ' +
+              'the menu - use "Where in the menu" below for that.',
             options: CONGREGATIONS,
           },
           {

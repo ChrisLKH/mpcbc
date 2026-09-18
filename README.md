@@ -4,18 +4,15 @@ Astro 7 site for Monterey Park Chinese Baptist Church, deployed to Cloudflare
 Workers. TinaCMS is the editor. Two things run themselves: the Sunday
 livestream links and the sermon archive.
 
-**Three audiences. Pick yours:**
+**Two audiences. Pick yours:**
 
 | You are | Start here |
 |---|---|
 | Looking after the website's words and pictures | **[GUIDE.md](GUIDE.md)**, or the [same guide as a web page](https://claude.ai/artifact/Fr7CB6RGp97HNAwfmWrcJo). You need nothing else. |
-| Curious how the app and the site work | This README |
-| Setting up a new environment, or debugging one | **[DEVELOPMENT.md](DEVELOPMENT.md)** |
+| Comfortable with code, and want to know how it fits together | This README |
 
-Everyone — volunteers and developers alike — installs and runs this through
-the app. There are no manual steps in normal use: no terminal, no `npm`, no
-deploy command. If you find yourself reaching for one, that is what
-DEVELOPMENT.md is for.
+Both install and run the site through the app. There are no manual steps in
+normal use: no terminal, no `npm`, no deploy command.
 
 ---
 
@@ -273,15 +270,93 @@ flipping the channel ID's second character from `C` to `U`, which avoids a
 
 ---
 
+## Inside the website — what is in `src/`
+
+```
+src/
+  components/
+    Blocks.astro              renders CMS page sections
+    ServiceBoard.astro        the live Sunday board
+    home/                     the fixed homepage sections
+      Hero.astro  AnnouncementCarousel.astro  PastorNote.astro
+      Children.astro  UpcomingEvents.astro
+  content/                    what Tina edits, and what the site builds from
+    announcements/  events/   .md, frontmatter + body
+    sermons/                  one JSON per sermon, filename = YouTube video ID
+    pages/  settings/         JSON
+  data/services.json          fallback board data when KV is empty
+  layouts/Base.astro          masthead, menu, footer, structured data
+  pages/
+    api/services.json.ts      on-demand — reads live board state from KV
+    tina-island/[name].ts     on-demand — re-renders a region while editing in Tina
+    [...slug].astro           CMS-created pages
+  styles/global.css           design tokens
+
+tina/config.ts                the CMS schema
+worker/
+  livestream-sync.js          YouTube polling + service matching (cron only)
+  wrangler.toml               the cron Worker
+wrangler.toml                 the site Worker
+scripts/sync-sermons.mjs      nightly sermon import
+.github/workflows/            sermon import + deploy
+```
+
+Every route prerenders except the two marked on-demand. That is why the site
+needs an adapter at all — see [Deployment](#deployment).
+
+---
+
+---
+
+## If the site will not start
+
+Two failures are common enough to name, and neither means your code is wrong.
+
+**"Dev server failed to start within 30s."** Astro 7 runs `astro dev` as a
+detached child and gives it a hardcoded 30 seconds to claim a lock file. A cold
+Vite cache here takes longer. The server was fine; the watchdog killed it. Run
+it inline instead:
+
+```bash
+ASTRO_DEV_BACKGROUND=1 npm run dev          # PowerShell: $env:ASTRO_DEV_BACKGROUND = "1"; npm run dev
+```
+
+The real log goes to `.astro/dev.log`, not the console — that's why the error
+looks contentless.
+
+**"The file does not exist at .../deps_ssr/… which is in the optimize deps
+directory."** Vite re-ran its dependency optimizer and rewrote `deps_ssr` under
+a new hash while the workerd runtime was still holding the old one. Every
+rendered route then 500s while static assets and 404s still work.
+
+```bash
+rm -rf node_modules/.vite     # PowerShell: Remove-Item -Recurse -Force node_modules\.vite
+```
+
+then restart Astro. **Editing any config file while dev is running is the usual
+trigger**, so stop the server first when changing `astro.config.mjs`,
+`tina/config.ts` or `src/content.config.ts`. Builds are never affected, which is
+why `npm run build` can pass while `npm run dev` won't boot.
+
+Do **not** use `tinacms dev -c "astro dev"`. Tina's wrapper enforces its own
+30-second timeout on the command it spawns and kills Astro before it finishes
+bundling.
+
+---
+
+---
+
 ## Deploying
 
 **Publishing from the app is the whole story.** An editor clicks *Publish to
 Live Site*; that pushes to `main`; GitHub Actions builds and deploys; the site
 updates in two to four minutes.
 
-Nothing needs running by hand. The one-time Cloudflare setup — KV namespace,
-secrets, first deploy — and the commands for testing the cron are in
-[DEVELOPMENT.md](DEVELOPMENT.md).
+Nothing needs running by hand.
+
+`deploy.yml` must stay on `build:tina` rather than plain `npm run build`:
+`tina/__generated__/` is gitignored and Astro imports the generated client, so
+`astro build` fails outright — and plain `build` also strips `public/admin`.
 
 ---
 
