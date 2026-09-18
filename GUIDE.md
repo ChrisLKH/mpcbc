@@ -394,7 +394,8 @@ the files, or point an AI assistant at the site, here's the onward path.
 
 | Document | What it covers |
 |---|---|
-| [README.md](README.md) | How the site is built — Astro, Cloudflare, the livestream board, the sermon sync, deployment |
+| [README.md](README.md) | The same ground as this guide, told shorter and assuming you can read code |
+| [DEVELOPMENT.md](DEVELOPMENT.md) | How it is all built — Astro, Cloudflare, the livestream board, the sermon sync, deployment |
 | [AGENTS.md](AGENTS.md) | The brief for AI assistants. Imported by `CLAUDE.md`, and read automatically by Claude Code, Codex and Antigravity |
 
 **Running it by hand**, if you'd rather not use the app:
