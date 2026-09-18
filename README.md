@@ -1,6 +1,6 @@
 # MPCBC Website
 
-Astro 7 site for Monterey Park Chinese Baptist Church — 基督教蒙特利公園華人浸信會 —
+Astro 7 site for Monterey Park Chinese Baptist Church 
 deployed to Cloudflare Workers. TinaCMS is the editor. Two things run
 themselves: the Sunday livestream links and the sermon archive.
 
