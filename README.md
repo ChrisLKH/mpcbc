@@ -38,9 +38,20 @@ icon** that opens a small app:
 └────────────────────────────────────────────────┘
 ```
 
-**Getting it onto a new machine:** build `MPCBC-Website-Setup.zip` with
-`app/make-setup-zip.ps1` and send it. They extract it, double-click
-**Install MPCBC Website**, and five minutes later there is a desktop icon.
+**Getting it onto a new machine — one permanent link:**
+
+```
+https://github.com/ChrisLKH/mpcbc/raw/main/MPCBC-Website-Setup.zip
+```
+
+`MPCBC-Website-Setup.zip` is committed, and
+[`build-setup-zip.yml`](.github/workflows/build-setup-zip.yml) rebuilds and
+re-commits it whenever `Install/` or `app/lib/prereqs.ps1` changes — so that
+link never serves a stale installer. Send it to anyone; it works once the
+repository is public. (`app/make-setup-zip.ps1` builds it by hand.)
+
+They extract it, double-click **Install MPCBC Website**, and five minutes
+later there is a desktop icon.
 It installs Git and Node if missing — via winget, or portable copies needing
 no administrator rights — and clones to `C:\mpcbc`.
 

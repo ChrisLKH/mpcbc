@@ -9,5 +9,3 @@ logs/
 admin/
 tina/__generated__/
 
-# Built by scripts/make-setup-zip.ps1 - rebuild it, do not commit it.
-MPCBC-Website-Setup.zip

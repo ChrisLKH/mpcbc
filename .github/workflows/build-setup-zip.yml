@@ -1,0 +1,55 @@
+name: Rebuild setup ZIP
+
+# MPCBC-Website-Setup.zip is committed to the repository so that one
+# permanent link can be handed to every new editor:
+#
+#   https://github.com/ChrisLKH/mpcbc/raw/main/MPCBC-Website-Setup.zip
+#
+# It is a snapshot of Install/ plus app/lib/prereqs.ps1, which means it goes
+# stale the moment any of those change - and a stale installer is the worst
+# kind, because it only ever runs on a machine nobody has set up yet. This
+# rebuilds it automatically so the link is never wrong.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Install/**'
+      - 'app/lib/prereqs.ps1'
+      - 'app/make-setup-zip.ps1'
+      - '.github/workflows/build-setup-zip.yml'
+  workflow_dispatch:
+
+# Needed to push the rebuilt ZIP back. Nothing else is granted.
+permissions:
+  contents: write
+
+concurrency:
+  group: build-setup-zip
+  cancel-in-progress: true
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # .gitattributes pins *.bat to eol=crlf, and git honours that on every
+      # platform - so the batch file inside the ZIP gets CRLF even though it
+      # was checked out on Linux.
+      - name: Build the ZIP
+        shell: pwsh
+        run: ./app/make-setup-zip.ps1
+
+      - name: Commit it if it changed
+        run: |
+          if [ -z "$(git status --porcelain MPCBC-Website-Setup.zip)" ]; then
+            echo "ZIP unchanged - nothing to commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add MPCBC-Website-Setup.zip
+          git commit -m 'Rebuild setup ZIP'
+          git push
+          echo "Rebuilt and pushed."

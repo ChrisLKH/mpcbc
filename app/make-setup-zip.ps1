@@ -29,11 +29,14 @@ $root = Split-Path -Parent $PSScriptRoot
 if (-not $OutputPath) { $OutputPath = Join-Path $root 'MPCBC-Website-Setup.zip' }
 
 # published name in the ZIP  ->  source file in the repo
+# Forward slashes on purpose: PowerShell accepts them on Windows, and this
+# script also runs under pwsh on the Linux CI runner that keeps the
+# committed ZIP up to date (.github/workflows/build-setup-zip.yml).
 $contents = [ordered]@{
-  'Install MPCBC Website.bat' = 'Install\Install MPCBC Website.bat'
-  'Read Me First.txt'         = 'Install\Read Me First.txt'
-  'install.ps1'               = 'Install\install.ps1'
-  'prereqs.ps1'               = 'app\lib\prereqs.ps1'
+  'Install MPCBC Website.bat' = 'Install/Install MPCBC Website.bat'
+  'Read Me First.txt'         = 'Install/Read Me First.txt'
+  'install.ps1'               = 'Install/install.ps1'
+  'prereqs.ps1'               = 'app/lib/prereqs.ps1'
 }
 
 $staging = Join-Path ([System.IO.Path]::GetTempPath()) ('mpcbc-setup-' + [Guid]::NewGuid().ToString('N'))
@@ -55,7 +58,9 @@ try {
   $size = [math]::Round((Get-Item $OutputPath).Length / 1KB, 1)
   Write-Host ""
   Write-Host "Built $OutputPath ($size KB)" -ForegroundColor Green
-  Write-Host "Send this to a new editor, or attach it to a GitHub release."
+  Write-Host "Commit it - the permanent link editors are given points at the copy in the repo:"
+  Write-Host "  https://github.com/ChrisLKH/mpcbc/raw/main/MPCBC-Website-Setup.zip"
+  Write-Host "(.github/workflows/build-setup-zip.yml rebuilds it automatically when the installer changes.)"
 } finally {
   Remove-Item $staging -Recurse -Force -ErrorAction SilentlyContinue
 }

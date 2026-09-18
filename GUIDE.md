@@ -31,7 +31,12 @@ your mind, you undo things. Only step 4 touches the website the public sees.
 
 ## Part 1 — Setting up your computer (once)
 
-Chris will send you a file called **MPCBC-Website-Setup.zip**.
+Download **MPCBC-Website-Setup.zip** from this link — it is always the current
+version, so it is safe to bookmark:
+
+<https://github.com/ChrisLKH/mpcbc/raw/main/MPCBC-Website-Setup.zip>
+
+(Chris can also just send you the file.)
 
 ### 1. Extract it
 
