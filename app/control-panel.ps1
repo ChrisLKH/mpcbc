@@ -76,7 +76,7 @@ $script:SetupVisible = $true
 $script:Updates     = 0
 
 $SETUP_OFFSET     = 144
-$COLLAPSED_HEIGHT = 420
+$COLLAPSED_HEIGHT = 470
 $DETAILS_EXTRA    = 240
 
 # --- Window --------------------------------------------------------------
@@ -89,6 +89,16 @@ $form.FormBorderStyle = 'FixedSingle'
 $form.MaximizeBox = $false
 $form.Font = New-Object System.Drawing.Font('Segoe UI', 10)
 $form.BackColor = [System.Drawing.Color]::White
+
+# The church logo, in the title bar, the taskbar and Alt-Tab. Built by
+# app\make-icon.ps1; missing is not fatal, it just falls back to the
+# default PowerShell icon.
+try {
+  $iconPath = Join-Path $PSScriptRoot 'mpcbc.ico'
+  if (Test-Path $iconPath) { $form.Icon = New-Object System.Drawing.Icon($iconPath) }
+} catch {
+  Write-Log "Could not load the window icon: $($_.Exception.Message)" 'warn'
+}
 
 function New-Button {
   param([string]$Text, [int]$X, [int]$Y, [int]$W, [int]$H, [bool]$Primary = $false)
@@ -177,20 +187,26 @@ foreach ($s in $stepControls) { $setupControls += $s.Mark; $setupControls += $s.
 # Base Y positions assume the checklist is hidden; Set-Layout shifts them
 # down by $SETUP_OFFSET while it is showing.
 
-$btnPrimary    = New-Button 'Start Working'      18 90 416 50 $true
-$btnOpenSite   = New-Button 'Look at the Website' 18 150 203 42 $true
-$btnOpenEditor = New-Button 'Edit the Words'      231 150 203 42 $true
+# Install is its own button, and its greyed-out state is the message: if it
+# is clickable, this computer needs something; if it is grey, it does not.
+# That stays true as the project grows, because Get-Prerequisites compares
+# the lockfile against the last install rather than merely checking that
+# node_modules exists.
+$btnInstall    = New-Button 'Install What''s Needed' 18 90 416 44 $true
+$btnPrimary    = New-Button 'Start Working'          18 142 416 50 $true
+$btnOpenSite   = New-Button 'Look at the Website'    18 200 203 42 $true
+$btnOpenEditor = New-Button 'Edit the Words'         231 200 203 42 $true
 
-$sepMid = New-Separator -Y 204
+$sepMid = New-Separator -Y 254
 
-$btnHelper  = New-Button 'Edit with a Helper' 18 216 416 40
-$btnPublish = New-Button 'Publish My Changes' 18 262 416 40
-$btnUndo    = New-Button 'Undo My Changes'    18 308 416 40
+$btnHelper  = New-Button 'Edit with a Helper' 18 266 416 40
+$btnPublish = New-Button 'Publish My Changes' 18 312 416 40
+$btnUndo    = New-Button 'Undo My Changes'    18 358 416 40
 
-$sepBottom = New-Separator -Y 360
+$sepBottom = New-Separator -Y 410
 
-$btnHelp    = New-Button 'Help'         18 372 130 34
-$btnDetails = New-Button 'Show Details' 304 372 130 34
+$btnHelp    = New-Button 'Help'         18 422 130 34
+$btnDetails = New-Button 'Show Details' 304 422 130 34
 
 # --- Details pane --------------------------------------------------------
 
@@ -216,11 +232,12 @@ $form.Controls.Add($copyHint)
 
 # One list, so a layout change cannot miss a control.
 $mainLayout = @(
-  @{ C = $btnPrimary; Y = 90 },   @{ C = $btnOpenSite; Y = 150 }, @{ C = $btnOpenEditor; Y = 150 },
-  @{ C = $sepMid;     Y = 204 },  @{ C = $btnHelper;   Y = 216 }, @{ C = $btnPublish;    Y = 262 },
-  @{ C = $btnUndo;    Y = 308 },  @{ C = $sepBottom;   Y = 360 }, @{ C = $btnHelp;       Y = 372 },
-  @{ C = $btnDetails; Y = 372 },  @{ C = $logBox;      Y = 418 }, @{ C = $btnCopy;       Y = 608 },
-  @{ C = $copyHint;   Y = 616 }
+  @{ C = $btnInstall; Y = 90 },   @{ C = $btnPrimary;  Y = 142 }, @{ C = $btnOpenSite;   Y = 200 },
+  @{ C = $btnOpenEditor; Y = 200 },
+  @{ C = $sepMid;     Y = 254 },  @{ C = $btnHelper;   Y = 266 }, @{ C = $btnPublish;    Y = 312 },
+  @{ C = $btnUndo;    Y = 358 },  @{ C = $sepBottom;   Y = 410 }, @{ C = $btnHelp;       Y = 422 },
+  @{ C = $btnDetails; Y = 422 },  @{ C = $logBox;      Y = 468 }, @{ C = $btnCopy;       Y = 658 },
+  @{ C = $copyHint;   Y = 666 }
 )
 
 function Set-Layout {
@@ -317,16 +334,20 @@ function Update-Ui {
     }
   }
 
-  # The one button. Start Working covers install, update and start; once
-  # the site is up the same button stops it.
+  # Install is clickable only when something actually needs installing, so
+  # its state answers "does this computer need anything?" without anybody
+  # reading a word. While it is lit, Start Working is greyed: there is one
+  # obvious thing to do, and doing it also collects updates and opens the
+  # site, so nothing is lost by making it the only door.
+  $btnInstall.Enabled = ((-not $ready) -and (-not $busy))
+
   if ($running -or $status.State -eq 'starting') {
     $btnPrimary.Text = 'Stop the Website'
-  } elseif (-not $ready) {
-    $btnPrimary.Text = 'Start Working  (first-time setup)'
   } else {
     $btnPrimary.Text = 'Start Working'
   }
-  $btnPrimary.Enabled = (-not $busy -and $status.State -ne 'starting')
+  $btnPrimary.Enabled = ($ready -and -not $busy -and $status.State -ne 'starting') -or
+                        (($running -or $status.State -eq 'running') -and -not $busy)
 
   $btnOpenSite.Enabled   = ($running -and -not $busy)
   $btnOpenEditor.Enabled = ($running -and -not $busy)
@@ -375,28 +396,40 @@ function Start-Job-Script {
 
 # --- Handlers ------------------------------------------------------------
 
+function Test-RepoUsable {
+  <#
+    start-working.ps1 can install tools, collect updates and build, but it
+    cannot turn a plain folder into a clone. A ZIP downloaded from GitHub
+    has no history, and silently cloning a second copy elsewhere would
+    leave an editor with two folders and no idea which one is live.
+  #>
+  $pre = $script:Prereqs
+  if ($null -ne $pre -and -not $pre.RepoOk) {
+    Show-Problem ('This copy of the website is missing its history, so it can never update or publish.' +
+                  [Environment]::NewLine + [Environment]::NewLine +
+                  'It was probably unpacked from a plain ZIP. Ask Chris to reinstall it using "Install MPCBC Website".')
+    return $false
+  }
+  return $true
+}
+
+# Install runs exactly the same chain as Start Working. Installing, then
+# collecting updates, then opening the site is what somebody wants in one
+# go - being returned to the window to press a second button would just be
+# a chore with no decision in it.
+$btnInstall.Add_Click({
+  if (-not (Test-RepoUsable)) { return }
+  Start-Job-Script -Script 'start-working.ps1' -Label 'Installing what is needed...'
+})
+
 $btnPrimary.Add_Click({
   $status = Get-SiteStatus
   if ($status.State -eq 'running' -or $status.State -eq 'starting') {
     Start-Job-Script -Script 'stop.ps1' -Label 'Stopping...'
     return
   }
-
-  $pre = $script:Prereqs
-  # start-working.ps1 can install tools, collect updates and build, but it
-  # cannot turn a plain folder into a clone. A ZIP downloaded from GitHub
-  # has no history, and silently cloning a second copy elsewhere would
-  # leave an editor with two folders and no idea which one is live.
-  if ($null -ne $pre -and -not $pre.RepoOk) {
-    Show-Problem ('This copy of the website is missing its history, so it can never update or publish.' +
-                  [Environment]::NewLine + [Environment]::NewLine +
-                  'It was probably unpacked from a plain ZIP. Ask Chris to reinstall it using "Install MPCBC Website".')
-    return
-  }
-
-  $label = 'Starting the website...'
-  if ($null -ne $pre -and -not $pre.Ready) { $label = 'Setting up this computer...' }
-  Start-Job-Script -Script 'start-working.ps1' -Label $label
+  if (-not (Test-RepoUsable)) { return }
+  Start-Job-Script -Script 'start-working.ps1' -Label 'Starting the website...'
 })
 
 $btnOpenSite.Add_Click({ Open-Url $script:SiteUrl })
@@ -489,15 +522,18 @@ $form.Add_FormClosing({
     }
   }
 
-  # A leaked Tina server on port 4001 is exactly what makes tomorrow's
-  # launch fail, so never close over a running site without asking.
+  # Closing the window stops the site. No prompt: the servers exist only to
+  # serve this window, an editor has no reason to want them left behind,
+  # and a leaked Tina server holding port 4001 is exactly what makes
+  # tomorrow's launch fail. Asking only offered a way to get that wrong.
+  #
+  # Nothing is lost by stopping - the published website is untouched, and
+  # unpublished edits are files on disk, not something the server holds.
   $status = Get-SiteStatus
   if ($status.State -eq 'running' -or $status.State -eq 'starting') {
-    if (Confirm-Action -DefaultYes $true -Title 'Stop the website?' -Message (
-        'The website is still running on this computer.' + [Environment]::NewLine + [Environment]::NewLine +
-        'Stop it as well? (The published website is not affected.)')) {
-      & (Join-Path $PSScriptRoot 'stop.ps1') | Out-Null
-    }
+    Write-Log 'Window closing - stopping the website.'
+    $form.Cursor = [System.Windows.Forms.Cursors]::WaitCursor
+    & (Join-Path $PSScriptRoot 'stop.ps1') | Out-Null
   }
   Write-Log '--- Control panel closed ---'
 })

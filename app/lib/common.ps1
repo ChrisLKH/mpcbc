@@ -683,8 +683,37 @@ function Get-Prerequisites {
   # node_modules can exist and still be useless - a half-finished or
   # interrupted npm install leaves the folder behind. Check for something
   # the site actually starts with.
-  $depsOk = (Test-Path (Join-Path $root 'node_modules\astro')) -and
-            (Test-Path (Join-Path $root 'node_modules\.bin'))
+  $depsPresent = (Test-Path (Join-Path $root 'node_modules\astro')) -and
+                 (Test-Path (Join-Path $root 'node_modules\.bin'))
+
+  # Present is not the same as current. When the project gains a package,
+  # node_modules\astro still exists, so a presence check alone would report
+  # "nothing to install" for a site that can no longer build.
+  #
+  # setup.ps1 records the lockfile's hash after each successful install, so
+  # a hash that no longer matches means new packages are waiting. That is
+  # what keeps the Install button honest as the project grows.
+  #
+  # A missing stamp is treated as fine when the folder looks healthy: it
+  # only means this copy was installed before stamping existed, and the
+  # next install will write one. Flagging that would nag every existing
+  # machine for no reason.
+  $depsCurrent = $true
+  if ($depsPresent) {
+    $lockPath  = Join-Path $root 'package-lock.json'
+    $stampPath = Join-Path $root 'logs\deps.stamp'
+    if ((Test-Path $lockPath) -and (Test-Path $stampPath)) {
+      try {
+        $lockHash = (Get-FileHash -Path $lockPath -Algorithm SHA256).Hash
+        $stamp = (Get-Content -Path $stampPath -Raw -Encoding UTF8).Trim()
+        $depsCurrent = ($lockHash -eq $stamp)
+      } catch {
+        $depsCurrent = $true
+      }
+    }
+  }
+
+  $depsOk = ($depsPresent -and $depsCurrent)
 
   $envOk = Test-Path (Join-Path $root '.env')
 

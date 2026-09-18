@@ -257,17 +257,19 @@ Write-Step 'Putting a shortcut on the desktop'
 try {
   $desktop = [Environment]::GetFolderPath('Desktop')
   $link = Join-Path $desktop 'MPCBC Website.lnk'
-  if (-not (Test-Path $link)) {
-    $shell = New-Object -ComObject WScript.Shell
-    $shortcut = $shell.CreateShortcut($link)
-    $shortcut.TargetPath = (Join-Path $Path 'MPCBC Website.bat')
-    $shortcut.WorkingDirectory = $Path
-    $shortcut.Description = 'Open the MPCBC website editor'
-    $shortcut.Save()
-    Write-Ok 'Shortcut created.'
-  } else {
-    Write-Ok 'Shortcut already there.'
-  }
+  $icon = Join-Path $Path 'app\mpcbc.ico'
+
+  # Rewritten every run rather than only when absent, so an existing
+  # shortcut picks up a new icon or a moved folder instead of quietly
+  # pointing at the old one forever.
+  $shell = New-Object -ComObject WScript.Shell
+  $shortcut = $shell.CreateShortcut($link)
+  $shortcut.TargetPath = (Join-Path $Path 'MPCBC Website.bat')
+  $shortcut.WorkingDirectory = $Path
+  $shortcut.Description = 'Open the MPCBC website editor'
+  if (Test-Path $icon) { $shortcut.IconLocation = "$icon,0" }
+  $shortcut.Save()
+  Write-Ok 'Desktop shortcut is up to date.'
 } catch {
   # A missing shortcut is a small inconvenience, not a reason to fail setup.
   Write-Log "Could not create the desktop shortcut: $($_.Exception.Message)" 'warn'
