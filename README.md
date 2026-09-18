@@ -99,6 +99,60 @@ can sit under one of them, at top level, or nowhere:
 
 Putting a page under a heading turns that heading into a dropdown.
 
+### Building a page out of sections
+
+Pages and the homepage are both stacks of **sections**. Add one, fill it in,
+and drag the handle on the left to reorder — the list is drag-and-drop.
+
+| Section | What it gives you |
+|---|---|
+| **Text** | A heading and a paragraph |
+| **Image with text** | Picture beside words, image on the left or right, optional button |
+| **Gallery** | A row of photos |
+| **Video** | An embedded video |
+| **Buttons** | A heading and a row of links |
+| **Service board** | The live Sunday times and links |
+| **Announcements** / **Recent sermons** | Pulls the latest in automatically |
+| **Facebook album** | An embedded album |
+
+Sections are a flat list — one cannot be dropped inside another. So if you
+want a button beneath a picture-and-text, use the **Button text** field on
+that section rather than looking for a way to nest a Buttons section in it.
+
+### Common edits
+
+| You want to | Where |
+|---|---|
+| Change the big headline | **Homepage** → Headline |
+| Change the opening paragraph | **Homepage** → Opening paragraph |
+| Change the hero button or video | **Homepage** → Button text / Hero video URL |
+| Put a notice on the site | **Announcements** → new — *Remove after* is required |
+| Keep a notice at the top | **Announcements** → Pin to top |
+| Add an event | **Events** → new |
+| Add a page | **Pages** → new, then *Where in the menu* |
+| Reorder menu items | **Pages** → Menu order — lower numbers first |
+| Move a section up or down | Drag its handle in the sections list |
+| Flip a picture to the other side | That section → *Image on* → Left / Right |
+| Add a button | *Button text* on an Image-with-text, or a **Buttons** section |
+| Replace a photo | Any image field → upload |
+| Hide a sermon | **Sermons** → that one → *Hide from website* |
+
+### What you cannot change from the editor
+
+Some things live in the code. They are not hidden from you by accident —
+there is simply no field for them:
+
+| | Lives in |
+|---|---|
+| Colours, fonts, spacing | `src/styles/global.css` |
+| Phone number, email, footer, social links | `src/layouts/Base.astro` |
+| The four fixed menu headings | `src/layouts/Base.astro` |
+| The "Plan your visit" page | `src/pages/visit.astro` |
+| Congregation page headings and intros | `src/pages/english.astro` and siblings |
+
+Editing those is a code change — see the next section, or ask an AI assistant
+through the **Code** button.
+
 ---
 
 ## 4. Change content — in the files

@@ -55,6 +55,14 @@ const pageBlocks = [
           { label: 'Right', value: 'right' },
         ],
       },
+      // Sections are a flat list - one cannot be dropped inside another -
+      // so a button next to the text had to be a field here rather than a
+      // Buttons section nested in this one. Optional: no text, no button.
+      {
+        type: 'string', name: 'ctaText', label: 'Button text',
+        description: 'Leave blank and no button appears.',
+      },
+      { type: 'string', name: 'ctaLink', label: 'Button link' },
     ],
   },
   {

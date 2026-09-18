@@ -213,6 +213,13 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
           <div>
             {v.heading && <h2 data-tina-field={field(v, 'heading')}>{v.heading}</h2>}
             <p data-tina-field={field(v, 'body')}>{v.body}</p>
+            {v.ctaText && (
+              <p class="btnrow">
+                <a class="btn" href={v.ctaLink || '#'} data-tina-field={field(v, 'ctaText')}>
+                  {v.ctaText}
+                </a>
+              </p>
+            )}
           </div>
         </div>
       </section>
