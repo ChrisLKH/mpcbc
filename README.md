@@ -49,11 +49,11 @@ Everything else is called by those two. Build the ZIP with
 
 ### One button
 
-The panel's primary button is **Start Working**, which runs
+The panel's primary button is **Update & Start**, which runs
 `app/start-working.ps1`: install what is missing → collect updates → install
 building blocks → start the site. Every step decides for itself whether there
 is anything to do, so the same button is a first-time install and a
-two-second routine launch. It becomes **Stop the Website** once the site is up.
+two-second routine launch. It becomes **Stop** once the site is up.
 
 On launch the panel only **fetches** — that updates our record of what is on
 GitHub and touches no file — so it can report "3 updates to collect" without

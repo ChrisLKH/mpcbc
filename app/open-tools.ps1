@@ -3,7 +3,7 @@
   Opens the website folder in an editor or an AI helper. Windows.
 
 .DESCRIPTION
-  Called by the control panel's "Edit with a Helper" menu.
+  Called by the control panel's "Code" menu.
 
   A missing tool is never an error. It is a question: "Install it now?" -
   and if the answer is no, or there is no reliable installer, the tool's

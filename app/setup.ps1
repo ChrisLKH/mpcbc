@@ -121,7 +121,7 @@ if (Test-Path (Join-Path $Path '.git')) {
   $after = $before
 
   # Unpublished work wins over collecting updates. This runs as part of one
-  # "Start Working" click, so stopping the whole chain here - as it used to -
+  # "Update & Start" click, so stopping the whole chain here - as it used to -
   # would mean an editor with a half-finished announcement could not start
   # the site at all. Skip the pull, say so, and carry on; publish.ps1 does
   # its own pull --rebase --autostash when they are actually ready to send.
@@ -174,7 +174,7 @@ Write-Ok "Now at: $Path"
 # --- 3. Dependencies ----------------------------------------------------
 
 # npm install takes two to three minutes, and this script now runs on every
-# "Start Working" click - so doing it unconditionally would put that wait in
+# "Update & Start" click - so doing it unconditionally would put that wait in
 # front of every session. Stamp the lockfile hash after a successful install
 # and skip when nothing has changed since.
 #

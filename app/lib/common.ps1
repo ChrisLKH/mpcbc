@@ -27,7 +27,7 @@ $script:ActionsUrl = "$script:RepoUrl/actions"
 $script:GuideUrl  = "$script:RepoUrl/blob/main/GUIDE.md"
 
 # Portable Git/Node land here when the machine has no admin rights. Kept
-# outside the repo so "Undo My Changes" can never remove the toolchain.
+# outside the repo so "Undo All Changes" can never remove the toolchain.
 $script:PortableToolsDir = 'C:\mpcbc-tools'
 
 # --- Where things are ---------------------------------------------------

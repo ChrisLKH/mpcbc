@@ -3,14 +3,17 @@
   The MPCBC website control panel. Windows.
 
 .DESCRIPTION
-  One window, and as far as an editor is concerned, one button.
+  One window, and on any given day one button.
 
-  "Start Working" runs the whole chain in start-working.ps1: install
-  anything missing, collect updates from GitHub, install the building
-  blocks, start the site. Each step decides for itself whether there is
-  work to do, so the same button is both a first-time install and a
-  two-second routine launch. It becomes "Stop the Website" once the site
-  is up.
+  "Update & Start" runs the whole chain in start-working.ps1:
+  install anything missing, collect updates from GitHub, install the
+  building blocks, start the site. Each step decides for itself whether
+  there is work to do, so it is both a first-time install and a two-second
+  routine launch. It becomes "Stop" once the site is up.
+
+  "Install" runs the same chain, and exists so that its
+  greyed-out state can answer "does this computer need anything?" without
+  anyone reading a word.
 
   Design rules, all of them load-bearing:
 
@@ -143,12 +146,13 @@ $form.Controls.Add($statusSub)
 $sepTop = New-Separator -Y 78
 
 # --- Setup checklist (only while setup is unfinished) --------------------
-# Not a to-do list for the editor: every one of these is done by the single
-# button below. It is here so that a five-minute first run looks like
-# progress rather than a hang.
+# Not a to-do list for the editor: every one of these is done by the Install
+# button. It is here so that a five-minute first run looks like
+# progress rather than a hang, and so a photo of the screen tells Chris
+# exactly which part failed.
 
 $setupTitle = New-Object System.Windows.Forms.Label
-$setupTitle.Text = 'FIRST RUN - THE BUTTON BELOW DOES ALL OF THIS'
+$setupTitle.Text = 'THIS COMPUTER STILL NEEDS'
 $setupTitle.Font = New-Object System.Drawing.Font('Segoe UI', 8, [System.Drawing.FontStyle]::Bold)
 $setupTitle.ForeColor = [System.Drawing.Color]::FromArgb(148, 55, 89)   # church maroon
 $setupTitle.SetBounds(20, 90, 416, 18)
@@ -192,16 +196,20 @@ foreach ($s in $stepControls) { $setupControls += $s.Mark; $setupControls += $s.
 # That stays true as the project grows, because Get-Prerequisites compares
 # the lockfile against the last install rather than merely checking that
 # node_modules exists.
-$btnInstall    = New-Button 'Install What''s Needed' 18 90 416 44 $true
-$btnPrimary    = New-Button 'Start Working'          18 142 416 50 $true
-$btnOpenSite   = New-Button 'Look at the Website'    18 200 203 42 $true
-$btnOpenEditor = New-Button 'Edit the Words'         231 200 203 42 $true
+#
+# The doubled && is not a typo. A Button treats a single & as the marker for
+# a keyboard accelerator and eats it, so 'Update & Start' would render as
+# "Update _Start". && is how you ask for a literal ampersand.
+$btnInstall    = New-Button 'Install'          18 90 416 44 $true
+$btnPrimary    = New-Button 'Update && Start'  18 142 416 50 $true
+$btnOpenSite   = New-Button 'Preview'          18 200 203 42 $true
+$btnOpenEditor = New-Button 'Edit Content'     231 200 203 42 $true
 
 $sepMid = New-Separator -Y 254
 
-$btnHelper  = New-Button 'Edit with a Helper' 18 266 416 40
-$btnPublish = New-Button 'Publish My Changes' 18 312 416 40
-$btnUndo    = New-Button 'Undo My Changes'    18 358 416 40
+$btnHelper  = New-Button 'Code'                 18 266 416 40
+$btnPublish = New-Button 'Publish to Live Site' 18 312 416 40
+$btnUndo    = New-Button 'Undo All Changes'     18 358 416 40
 
 $sepBottom = New-Separator -Y 410
 
@@ -313,7 +321,7 @@ function Update-Ui {
   if ($busy) {
     Set-Status 'Goldenrod' $script:BusyLabel 'Please wait - this can take a few minutes.'
   } elseif (-not $ready) {
-    Set-Status 'Goldenrod' 'This computer needs setting up' 'One click below does all of it. It takes a few minutes.'
+    Set-Status 'Goldenrod' 'This computer needs setting up' 'Click Install below. It takes a few minutes.'
   } else {
     switch ($status.State) {
       'running'  { Set-Status 'ForestGreen' 'The website is running' "Ready at $script:SiteUrl" }
@@ -336,15 +344,15 @@ function Update-Ui {
 
   # Install is clickable only when something actually needs installing, so
   # its state answers "does this computer need anything?" without anybody
-  # reading a word. While it is lit, Start Working is greyed: there is one
+  # reading a word. While it is lit, Update & Start is greyed: there is one
   # obvious thing to do, and doing it also collects updates and opens the
   # site, so nothing is lost by making it the only door.
   $btnInstall.Enabled = ((-not $ready) -and (-not $busy))
 
   if ($running -or $status.State -eq 'starting') {
-    $btnPrimary.Text = 'Stop the Website'
+    $btnPrimary.Text = 'Stop'
   } else {
-    $btnPrimary.Text = 'Start Working'
+    $btnPrimary.Text = 'Update && Start'
   }
   $btnPrimary.Enabled = ($ready -and -not $busy -and $status.State -ne 'starting') -or
                         (($running -or $status.State -eq 'running') -and -not $busy)
@@ -413,7 +421,7 @@ function Test-RepoUsable {
   return $true
 }
 
-# Install runs exactly the same chain as Start Working. Installing, then
+# Install runs exactly the same chain as Update & Start. Installing, then
 # collecting updates, then opening the site is what somebody wants in one
 # go - being returned to the window to press a second button would just be
 # a chore with no decision in it.

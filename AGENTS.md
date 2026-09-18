@@ -74,7 +74,7 @@ is the usual trigger**, so stop the server before changing `astro.config.mjs`,
 
 Pushing to `main` deploys the live site via GitHub Actions. Do not push on a
 volunteer's behalf unless they asked for it in as many words — the control
-panel's "Publish My Changes" button is the intended route, and it shows them a
+panel's "Publish to Live Site" button is the intended route, and it shows them a
 summary first.
 
 ## Style

@@ -18,15 +18,14 @@ know anything technical.** If you can use email, you can do this.
    Your computer                         The real website
    ─────────────                         ────────────────
 
-   1. Get the latest version   ◀──────── everyone else's changes
-   2. Start the website
-   3. Make your changes
-   4. Look at them
-   5. Publish  ─────────────────────────▶ live in 2-4 minutes
+   1. Update & Start           ◀──────── everyone else's changes
+   2. Make your changes
+   3. Preview them
+   4. Publish to Live Site  ────────────▶ live in 2-4 minutes
 ```
 
 You always work on a **copy** on your own computer. You look at it, you change
-your mind, you undo things. Only step 5 touches the website the public sees.
+your mind, you undo things. Only step 4 touches the website the public sees.
 
 ---
 
@@ -65,21 +64,24 @@ That icon is the only thing you need from now on. You can delete the ZIP file.
 ### If the app says this computer still needs setting up
 
 Open the icon anyway. The window shows a short checklist — this is a progress
-list, not a to-do list, because the single button underneath does all of it:
+list, not a to-do list, because the **Install** button underneath does all of it:
 
 ```
-FIRST RUN - THE BUTTON BELOW DOES ALL OF THIS
+THIS COMPUTER STILL NEEDS
   ✓  Install the programs it needs (Git and Node.js)
   ✓  Get the website files
   ○  Install the building blocks
   ○  Create the settings file
 
-[     Start Working  (first-time setup)     ]
+[                  Install                   ]
 ```
 
-A tick means that part is already done. Click the button and wait — it
+A tick means that part is already done. Click **Install** and wait — it
 finishes whatever is missing, which takes a few minutes, then opens the site.
 The checklist disappears and doesn't come back.
+
+**Install is greyed out whenever there's nothing to install**, so you can tell
+at a glance whether this computer needs anything.
 
 Until it's finished, the other buttons stay greyed out on purpose. Nothing is
 broken; they simply can't work yet.
@@ -98,12 +100,12 @@ Double-click the **MPCBC Website** icon. You get one small window:
 │  ● Ready to start                              │
 │    2 updates to collect, then the site opens.  │
 │  ────────────────────────────────────────────  │
-│  [            Start Working                 ]  │
-│  [ Look at the Website ] [  Edit the Words   ] │
+│  [              Update & Start              ]  │
+│  [    Preview     ] [   Edit Content   ]       │
 │  ────────────────────────────────────────────  │
-│  [         Edit with a Helper               ]  │
-│  [         Publish My Changes               ]  │
-│  [          Undo My Changes                 ]  │
+│  [                   Code                   ]  │
+│  [           Publish to Live Site           ]  │
+│  [             Undo All Changes             ]  │
 │  ────────────────────────────────────────────  │
 │  [ Help ]                    [ Show Details ]  │
 └────────────────────────────────────────────────┘
@@ -111,13 +113,13 @@ Double-click the **MPCBC Website** icon. You get one small window:
 
 <!-- SCREENSHOT: the control panel, stopped state -->
 
-**Click one button: `Start Working`.**
+**Click one button: `Update & Start`.**
 
 That one button does everything needed to get going — collects anything other
 people changed, installs anything missing, and starts the website. It takes a
 few seconds most days, or a few minutes the very first time.
 
-When the website is running, the same button turns into **Stop the Website**.
+When the website is running, the same button turns into **Stop**.
 
 The dot at the top tells you where you are:
 
@@ -135,7 +137,7 @@ broken — it just isn't the right moment for it.
 
 ## Part 3 — Changing the words and pictures
 
-Once the dot is green, click **Edit the Words**.
+Once the dot is green, click **Edit Content**.
 
 Your browser opens the editor. On the left is a list of everything you can
 change:
@@ -187,7 +189,7 @@ the website automatically.
 
 ### Seeing your changes
 
-Click **Look at the Website** at any time. The page updates by itself as you
+Click **Preview** at any time. The page updates by itself as you
 edit — you don't need to refresh.
 
 <!-- SCREENSHOT: the Tina editor at /admin with the collection list -->
@@ -196,7 +198,7 @@ edit — you don't need to refresh.
 
 ## Part 4 — Editing with a helper
 
-Click **Edit with a Helper** for two other ways to work.
+Click **Code** for two other ways to work.
 
 ### VS Code — editing the files yourself
 
@@ -223,8 +225,8 @@ yes; it takes a minute and only happens once.
 
 The website already carries a set of notes for these assistants explaining how
 it's built and what not to touch, so they generally get it right. **Always look
-at the result** with **Look at the Website** before publishing — and if you
-don't like it, **Undo My Changes** puts everything back.
+at the result** with **Preview** before publishing — and if you
+don't like it, **Undo All Changes** puts everything back.
 
 ---
 
@@ -245,7 +247,7 @@ computer remembers it from then on.
 
 ## Part 6 — Publishing
 
-When you're happy with your changes, click **Publish My Changes**.
+When you're happy with your changes, click **Publish to Live Site**.
 
 **First you'll see a summary in plain English:**
 
@@ -281,7 +283,7 @@ him. That's everything he needs — you don't have to explain what happened.
 
 ### 2. You've made a mess and want to start over
 
-Click **Undo My Changes**. It shows you exactly what it's about to throw away,
+Click **Undo All Changes**. It shows you exactly what it's about to throw away,
 in plain words, and asks you to confirm.
 
 This puts your computer back to the published version. **Anything already
@@ -291,7 +293,7 @@ published is completely safe** — undo only affects your own unfinished work.
 
 Stop, and send Chris the message. Nothing has been published and your work is
 safe. This happens when two people edit at the same time, which is why
-**Start Working** collects everyone else's changes before it opens the site.
+**Update & Start** collects everyone else's changes before it opens the site.
 
 ### Other things you might hit
 
@@ -306,7 +308,7 @@ safe. This happens when two people edit at the same time, which is why
 
 ## The short list of rules
 
-1. **Start with `Start Working`**, every time you sit down. It collects
+1. **Start with `Update & Start`**, every time you sit down. It collects
    everyone else's changes before you begin.
 2. **One person at a time**, where you can manage it. If two of you must work
    the same day, tell each other.

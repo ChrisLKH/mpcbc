@@ -3,7 +3,7 @@
   Everything needed to sit down and work on the website, in one go. Windows.
 
 .DESCRIPTION
-  This is what the control panel's single "Start Working" button runs, and
+  This is what the control panel's single "Update & Start Website" button runs, and
   it is the whole reason an editor only ever meets one button:
 
     1. setup.ps1  - installs Git and Node if they are missing, collects
@@ -27,7 +27,7 @@ $ErrorActionPreference = 'Stop'
 . "$PSScriptRoot\lib\common.ps1"
 
 Set-Location (Get-RepoRoot)
-Write-Log '=== Start Working ==='
+Write-Log '=== Update & Start Website ==='
 
 function Invoke-Step {
   param([string]$Script, [string[]]$ScriptArgs = @())
@@ -55,5 +55,5 @@ if ($code -ne 0) {
   exit $code
 }
 
-Write-Log 'Start Working finished; site is up.'
+Write-Log 'Update & Start finished; site is up.'
 exit 0
