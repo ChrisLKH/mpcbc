@@ -1,0 +1,44 @@
+MPCBC WEBSITE
+=============
+
+Looking after the website? You only ever need one of these two.
+
+
+FIRST TIME ON THIS COMPUTER
+---------------------------
+
+   Open the  Install  folder and double-click:
+
+        Install MPCBC Website
+
+   It sets everything up and puts an icon on your desktop.
+   Takes about five minutes. Read Me First.txt in there explains
+   what you'll see along the way.
+
+
+EVERY TIME AFTER THAT
+---------------------
+
+   Double-click:
+
+        MPCBC Website
+
+   ...either the desktop icon, or the file of that name right here.
+
+
+WHAT ELSE IS IN THIS FOLDER
+---------------------------
+
+Everything else is the website itself and the machinery that runs it.
+You never need to open any of it.
+
+   Install/    the first-time installer (above)
+   app/        the buttons and windows you see
+   src/        the website's pages, words and pictures
+   public/     images and files the website serves
+   scripts/    automatic jobs (nightly sermon import, build steps)
+
+The full instructions are in GUIDE.md, and the Help button inside the
+app opens them too.
+
+Stuck? Ask Chris. You cannot break the real website from the app.

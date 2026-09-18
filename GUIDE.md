@@ -64,21 +64,22 @@ That icon is the only thing you need from now on. You can delete the ZIP file.
 
 ### If the app says this computer still needs setting up
 
-Open the icon anyway. The window shows a short checklist:
+Open the icon anyway. The window shows a short checklist — this is a progress
+list, not a to-do list, because the single button underneath does all of it:
 
 ```
-FIRST, SET THIS COMPUTER UP
+FIRST RUN - THE BUTTON BELOW DOES ALL OF THIS
   ✓  Install the programs it needs (Git and Node.js)
   ✓  Get the website files
   ○  Install the building blocks
   ○  Create the settings file
 
-[        Set Up This Computer        ]
+[     Start Working  (first-time setup)     ]
 ```
 
-A tick means that part is done. Click **Set Up This Computer** and wait — it
-finishes whatever is still missing, which takes two or three minutes. The
-checklist then disappears and doesn't come back.
+A tick means that part is already done. Click the button and wait — it
+finishes whatever is missing, which takes a few minutes, then opens the site.
+The checklist disappears and doesn't come back.
 
 Until it's finished, the other buttons stay greyed out on purpose. Nothing is
 broken; they simply can't work yet.
@@ -94,13 +95,12 @@ Double-click the **MPCBC Website** icon. You get one small window:
 
 ```
 ┌─ MPCBC Website ────────────────────────────────┐
-│  ● The website is not running                  │
-│    Click "Start the Website" to begin.         │
+│  ● Ready to start                              │
+│    2 updates to collect, then the site opens.  │
 │  ────────────────────────────────────────────  │
+│  [            Start Working                 ]  │
 │  [ Look at the Website ] [  Edit the Words   ] │
-│  [          Start the Website               ]  │
 │  ────────────────────────────────────────────  │
-│  [        Get the Latest Version            ]  │
 │  [         Edit with a Helper               ]  │
 │  [         Publish My Changes               ]  │
 │  [          Undo My Changes                 ]  │
@@ -111,11 +111,13 @@ Double-click the **MPCBC Website** icon. You get one small window:
 
 <!-- SCREENSHOT: the control panel, stopped state -->
 
-**Do these two things, in order:**
+**Click one button: `Start Working`.**
 
-1. **Get the Latest Version** — collects anything other people changed since
-   last time. Always do this first. It saves untangling two people's work later.
-2. **Start the Website** — takes up to a minute the first time.
+That one button does everything needed to get going — collects anything other
+people changed, installs anything missing, and starts the website. It takes a
+few seconds most days, or a few minutes the very first time.
+
+When the website is running, the same button turns into **Stop the Website**.
 
 The dot at the top tells you where you are:
 
@@ -289,7 +291,7 @@ published is completely safe** — undo only affects your own unfinished work.
 
 Stop, and send Chris the message. Nothing has been published and your work is
 safe. This happens when two people edit at the same time, which is why
-**Get the Latest Version** comes first.
+**Start Working** collects everyone else's changes before it opens the site.
 
 ### Other things you might hit
 
@@ -304,7 +306,8 @@ safe. This happens when two people edit at the same time, which is why
 
 ## The short list of rules
 
-1. **Get the Latest Version first**, every time you sit down.
+1. **Start with `Start Working`**, every time you sit down. It collects
+   everyone else's changes before you begin.
 2. **One person at a time**, where you can manage it. If two of you must work
    the same day, tell each other.
 3. **Never share the `.env` file** with anyone, or paste it into a message. It's

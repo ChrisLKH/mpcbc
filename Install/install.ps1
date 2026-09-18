@@ -15,7 +15,7 @@
        computer allows it, and otherwise through portable copies that need
        no administrator rights at all.
     3. Downloads the website into C:\mpcbc.
-    4. Hands over to scripts\setup.ps1, which owns everything from there.
+    4. Hands over to app\setup.ps1, which owns everything from there.
 
   Progress is printed to the window because a silent three-minute install
   looks broken. Every decision and every failure is a dialog.
@@ -156,7 +156,16 @@ function Get-NodeExe {
   return $null
 }
 
+# Two homes, because this file runs in two situations. Inside the setup ZIP
+# prereqs.ps1 sits right beside it; inside a checked-out repository it lives
+# at app\lib\prereqs.ps1, where the control panel also uses it. Checking both
+# means double-clicking Install from a clone works rather than complaining
+# about a missing file.
 $prereqScript = Join-Path $PSScriptRoot 'prereqs.ps1'
+if (-not (Test-Path $prereqScript)) {
+  $inRepo = Join-Path (Split-Path -Parent $PSScriptRoot) 'app\lib\prereqs.ps1'
+  if (Test-Path $inRepo) { $prereqScript = $inRepo }
+}
 if (-not (Test-Path $prereqScript)) {
   Stop-Install ("This setup folder is incomplete - a file called prereqs.ps1 is missing." + [Environment]::NewLine + [Environment]::NewLine +
                 "Please ask Chris for a fresh copy of MPCBC-Website-Setup.zip.")
@@ -209,18 +218,36 @@ Detail 'Git and Node.js are ready.'
 # a file watcher that fights the sync client.
 
 Say 'Choosing a place for the website'
-$chosen = $Path
-try {
-  $parent = Split-Path -Parent $chosen
-  if ($parent -and -not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
-  if (-not (Test-Path $chosen)) { New-Item -ItemType Directory -Path $chosen -Force -ErrorAction Stop | Out-Null }
-} catch {
-  # Some managed machines refuse a new folder at the top of the C: drive.
-  # Still on C:, still outside OneDrive - never fall back to Documents.
-  $chosen = Join-Path $env:USERPROFILE 'mpcbc'
-  New-Item -ItemType Directory -Path $chosen -Force | Out-Null
+
+# Already inside a copy of the website? Use it.
+#
+# The Install folder is visible at the top of the repository, so somebody
+# who already has the files WILL double-click it there. Cloning a second
+# copy into C:\mpcbc at that point is the worst outcome available: two
+# folders, both looking right, and edits landing in whichever one they
+# opened last. Updating the copy you are standing in is always what was
+# meant.
+$parentOfInstall = Split-Path -Parent $PSScriptRoot
+$alreadyHere = (Test-Path (Join-Path $parentOfInstall '.git')) -and
+               (Test-Path (Join-Path $parentOfInstall 'package.json'))
+
+if ($alreadyHere) {
+  $chosen = $parentOfInstall
+  Detail "The website is already here: $chosen"
+} else {
+  $chosen = $Path
+  try {
+    $parent = Split-Path -Parent $chosen
+    if ($parent -and -not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
+    if (-not (Test-Path $chosen)) { New-Item -ItemType Directory -Path $chosen -Force -ErrorAction Stop | Out-Null }
+  } catch {
+    # Some managed machines refuse a new folder at the top of the C: drive.
+    # Still on C:, still outside OneDrive - never fall back to Documents.
+    $chosen = Join-Path $env:USERPROFILE 'mpcbc'
+    New-Item -ItemType Directory -Path $chosen -Force | Out-Null
+  }
+  Detail "The website will live in $chosen"
 }
-Detail "The website will live in $chosen"
 
 # --- 3. Download it -----------------------------------------------------
 
@@ -241,7 +268,7 @@ if (Test-Path (Join-Path $chosen '.git')) {
 # --- 4. Hand over -------------------------------------------------------
 
 Say 'Setting everything up'
-$setup = Join-Path $chosen 'scripts\setup.ps1'
+$setup = Join-Path $chosen 'app\setup.ps1'
 if (-not (Test-Path $setup)) {
   Stop-Install ("The download is incomplete - part of the website is missing." + [Environment]::NewLine + [Environment]::NewLine +
                 "Please tell Chris.")

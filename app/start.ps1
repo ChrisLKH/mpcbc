@@ -29,7 +29,7 @@
   answer. The control panel uses this - it polls the ports itself.
 
 .EXAMPLE
-  powershell -ExecutionPolicy Bypass -File .\scripts\start.ps1
+  powershell -ExecutionPolicy Bypass -File .\app\start.ps1
 #>
 [CmdletBinding()]
 param([switch]$NoWait)

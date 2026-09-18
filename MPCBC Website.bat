@@ -15,4 +15,4 @@ REM    ever rewrites this file while it is running, execution can resume
 REM    mid-line. The fix is to give it no reason to ever change: the real
 REM    work lives in the .ps1 files, which PowerShell reads into memory
 REM    whole before running.
-start "" powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\control-panel.ps1"
+start "" powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0app\control-panel.ps1"

@@ -46,7 +46,7 @@ schemas in `src/content.config.ts` validate the same files. **Both must agree**
 
 ## Running it
 
-Use the control panel — `MPCBC Website.bat`, or `scripts/start.ps1` — rather
+Use the control panel — `MPCBC Website.bat`, or `app/start.ps1` — rather
 than starting servers by hand. It gets the ordering right, and the ordering is
 load-bearing:
 

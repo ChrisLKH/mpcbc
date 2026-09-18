@@ -4,10 +4,10 @@
   This lives in its own file because two different callers need it at two
   different moments:
 
-    * scripts\bootstrap\install.ps1 - on a blank computer, BEFORE the
-      repository exists (it is copied next to that script in the setup ZIP
-      by scripts\make-setup-zip.ps1).
-    * scripts\control-panel.ps1 - afterwards, so the app can repair its own
+    * Install\install.ps1 - on a blank computer, BEFORE the repository
+      exists (it is copied next to that script in the setup ZIP by
+      app\make-setup-zip.ps1).
+    * app\control-panel.ps1 - afterwards, so the app can repair its own
       prerequisites instead of sending someone back to a file they threw
       away weeks ago.
 

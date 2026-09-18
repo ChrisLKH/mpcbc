@@ -117,17 +117,30 @@ if (-not $insideClone -and -not (Test-Path (Join-Path $Path '.git'))) {
 }
 
 if (Test-Path (Join-Path $Path '.git')) {
-  Write-Step "Updating the code in $Path"
-
   $before = (Invoke-Git -Arguments @('rev-parse', 'HEAD') -WorkingDirectory $Path).Output
+  $after = $before
 
-  $pull = Invoke-Git -Arguments @('pull', '--ff-only') -WorkingDirectory $Path
-  if (-not $pull.Ok) {
-    Stop-Setup 'The update could not be applied, usually because of unfinished edits on this computer.' `
-               'Click "Publish My Changes" to send your work first, or "Undo My Changes" to throw it away. Then try again.'
+  # Unpublished work wins over collecting updates. This runs as part of one
+  # "Start Working" click, so stopping the whole chain here - as it used to -
+  # would mean an editor with a half-finished announcement could not start
+  # the site at all. Skip the pull, say so, and carry on; publish.ps1 does
+  # its own pull --rebase --autostash when they are actually ready to send.
+  $dirty = (Invoke-Git -Arguments @('status', '--porcelain') -WorkingDirectory $Path).Output
+
+  if ($dirty) {
+    Write-Step 'Skipping the update - you have unpublished changes'
+    Write-Ok 'Your work is untouched. The update will happen after you publish.'
+  } else {
+    Write-Step "Updating the code in $Path"
+    $pull = Invoke-Git -Arguments @('pull', '--ff-only') -WorkingDirectory $Path
+    if (-not $pull.Ok) {
+      # Not fatal: a network blip or a diverged branch should not stop
+      # someone looking at the site. It is logged for Chris either way.
+      Write-Log "Pull failed: $($pull.Error)" 'warn'
+      Write-Ok 'Could not collect updates just now - carrying on with the version already here.'
+    }
+    $after = (Invoke-Git -Arguments @('rev-parse', 'HEAD') -WorkingDirectory $Path).Output
   }
-
-  $after = (Invoke-Git -Arguments @('rev-parse', 'HEAD') -WorkingDirectory $Path).Output
 
   # --- Self-update guard ---
   # Everything here lives in the repo, so an update can replace the very
@@ -160,17 +173,44 @@ Write-Ok "Now at: $Path"
 
 # --- 3. Dependencies ----------------------------------------------------
 
-Write-Step 'Installing the site''s building blocks (1-3 minutes)'
-$npmLog = Get-LogPath 'npm-install'
-$npm = Start-Process -FilePath $env:ComSpec -ArgumentList @('/c', 'npm install --no-fund --no-audit') `
-  -WorkingDirectory $Path -WindowStyle Hidden -Wait -PassThru `
-  -RedirectStandardOutput $npmLog -RedirectStandardError (Get-LogPath 'npm-install-errors')
+# npm install takes two to three minutes, and this script now runs on every
+# "Start Working" click - so doing it unconditionally would put that wait in
+# front of every session. Stamp the lockfile hash after a successful install
+# and skip when nothing has changed since.
+#
+# The stamp lives in logs\ (gitignored), so it is per-machine and a fresh
+# clone correctly starts with no stamp and installs.
 
-if ($npm.ExitCode -ne 0) {
-  Stop-Setup 'The website''s building blocks could not be installed.' `
-             'Open "Show Details" in the app and use "Copy for Chris", then send him the message.'
+$lockPath  = Join-Path $Path 'package-lock.json'
+$stampPath = Join-Path (Get-LogDir) 'deps.stamp'
+
+$lockHash = ''
+if (Test-Path $lockPath) { $lockHash = (Get-FileHash -Path $lockPath -Algorithm SHA256).Hash }
+
+$stamp = ''
+if (Test-Path $stampPath) { $stamp = (Get-Content -Path $stampPath -Raw -Encoding UTF8).Trim() }
+
+# Check the folder really is usable, not just present: an interrupted
+# install leaves node_modules behind with nothing working inside it.
+$depsPresent = (Test-Path (Join-Path $Path 'node_modules\astro')) -and
+               (Test-Path (Join-Path $Path 'node_modules\.bin'))
+
+if ($depsPresent -and $lockHash -and $lockHash -eq $stamp) {
+  Write-Step 'Building blocks are already up to date'
+} else {
+  Write-Step 'Installing the site''s building blocks (1-3 minutes)'
+  $npmLog = Get-LogPath 'npm-install'
+  $npm = Start-Process -FilePath $env:ComSpec -ArgumentList @('/c', 'npm install --no-fund --no-audit') `
+    -WorkingDirectory $Path -WindowStyle Hidden -Wait -PassThru `
+    -RedirectStandardOutput $npmLog -RedirectStandardError (Get-LogPath 'npm-install-errors')
+
+  if ($npm.ExitCode -ne 0) {
+    Stop-Setup 'The website''s building blocks could not be installed.' `
+               'Open "Show Details" in the app and use "Copy for Chris", then send him the message.'
+  }
+  if ($lockHash) { $lockHash | Out-File -FilePath $stampPath -Encoding utf8 }
+  Write-Ok 'Building blocks are up to date.'
 }
-Write-Ok 'Building blocks are up to date.'
 
 # --- 4. Environment file ------------------------------------------------
 # Local editing runs TinaCMS in local mode, which needs no credentials at
@@ -242,6 +282,6 @@ if (-not $Quiet) {
 }
 
 if ($Start) {
-  & (Join-Path $Path 'scripts\control-panel.ps1')
+  & (Join-Path $Path 'app\control-panel.ps1')
 }
 exit 0

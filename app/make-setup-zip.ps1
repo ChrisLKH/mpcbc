@@ -12,8 +12,8 @@
 
   It is assembled rather than kept checked in as a binary for two reasons:
   the contents must always match the scripts in this repository, and
-  prereqs.ps1 lives in scripts\lib for the control panel's benefit while
-  the bootstrap needs it sitting next to install.ps1.
+  prereqs.ps1 lives in app\lib for the control panel's benefit while the
+  installer needs it sitting next to install.ps1.
 
 .EXAMPLE
   powershell -ExecutionPolicy Bypass -File .\scripts\make-setup-zip.ps1
@@ -30,10 +30,10 @@ if (-not $OutputPath) { $OutputPath = Join-Path $root 'MPCBC-Website-Setup.zip' 
 
 # published name in the ZIP  ->  source file in the repo
 $contents = [ordered]@{
-  'Install MPCBC Website.bat' = 'scripts\bootstrap\Install MPCBC Website.bat'
-  'Read Me First.txt'         = 'scripts\bootstrap\Read Me First.txt'
-  'install.ps1'               = 'scripts\bootstrap\install.ps1'
-  'prereqs.ps1'               = 'scripts\lib\prereqs.ps1'
+  'Install MPCBC Website.bat' = 'Install\Install MPCBC Website.bat'
+  'Read Me First.txt'         = 'Install\Read Me First.txt'
+  'install.ps1'               = 'Install\install.ps1'
+  'prereqs.ps1'               = 'app\lib\prereqs.ps1'
 }
 
 $staging = Join-Path ([System.IO.Path]::GetTempPath()) ('mpcbc-setup-' + [Guid]::NewGuid().ToString('N'))

@@ -701,3 +701,42 @@ function Get-Prerequisites {
     Ready     = ([bool]$gitExe -and [bool]$nodeOk -and [bool]$repoOk -and [bool]$depsOk -and [bool]$envOk)
   }
 }
+
+# --- Remote state --------------------------------------------------------
+
+function Get-UpdateCount {
+  <#
+    How many commits the remote is ahead of us.
+
+    Uses only what git already knows locally - it does NOT fetch - so it is
+    cheap enough to call from the panel's timer. Start-RemoteRefresh is
+    what makes that local knowledge current.
+
+    Returns 0 when there is no upstream, no git, or nothing to collect.
+  #>
+  $result = Invoke-Git -Arguments @('rev-list', '--count', 'HEAD..@{u}')
+  if (-not $result.Ok) { return 0 }
+  $count = 0
+  if ([int]::TryParse($result.Output.Trim(), [ref]$count)) { return $count }
+  return 0
+}
+
+function Start-RemoteRefresh {
+  <#
+    Fire-and-forget fetch, so the update count becomes current without
+    freezing the window for the length of a network round trip.
+
+    A fetch only updates our record of what is on GitHub. It changes no
+    file in the working folder and cannot disturb an editor's work, which
+    is why it is safe to do on launch without asking - unlike a pull,
+    which waits for the one deliberate click.
+  #>
+  $git = Get-GitExe
+  if (-not $git) { return }
+  try {
+    Start-Process -FilePath $git -ArgumentList @('fetch', '--quiet') `
+      -WorkingDirectory (Get-RepoRoot) -WindowStyle Hidden | Out-Null
+  } catch {
+    # Offline is normal and not worth reporting; the count just stays stale.
+  }
+}

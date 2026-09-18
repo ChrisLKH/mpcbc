@@ -18,37 +18,72 @@ is written for them; this README is not. The same guide is published as a web
 page at <https://claude.ai/code/artifact/783b33cb-dcdb-48b3-a99d-8c7f77aca36c>,
 which is the link to send a new editor — it works before they have the repo.
 
-Setup is `scripts/bootstrap/` zipped and sent to them. Everything underneath is
-the same scripts documented below, so there is one code path rather than two.
+### Folder layout
 
-There are exactly **two** things a person ever launches:
+The editor-facing app is kept separate from the website it edits, so that
+someone opening the folder can tell where to start:
+
+```
+START HERE.txt        what to run, for a volunteer who opens the folder
+MPCBC Website.bat     the everyday launcher (and the desktop shortcut's target)
+Install/              the first-time installer — this is what gets zipped
+app/                  the control panel and its scripts
+scripts/              build automation only: sync-sermons.mjs, clean-admin.mjs
+src/ public/ tina/    the Astro website itself
+```
+
+`scripts/` keeps its name because `package.json` and the workflows reference
+`scripts/sync-sermons.mjs` and `scripts/clean-admin.mjs`. The Astro site stays
+at the repository root because Astro, Tina, the Cloudflare adapter and CI all
+expect it there — it is not movable without changing every one of them.
+
+### The two things a person launches
 
 | They have | They run | Which is |
 |---|---|---|
-| Nothing yet | `Install MPCBC Website` (from the ZIP) | `scripts/bootstrap/install.ps1` |
-| The desktop icon | `MPCBC Website` | `scripts/control-panel.ps1` |
+| Nothing yet | `Install MPCBC Website` (from the ZIP, or `Install/`) | `Install/install.ps1` |
+| The desktop icon | `MPCBC Website` | `app/control-panel.ps1` |
 
 Everything else is called by those two. Build the ZIP with
-`scripts/make-setup-zip.ps1` — it is a build artifact and is gitignored.
+`app/make-setup-zip.ps1` — it is a build artifact and is gitignored.
 
-The control panel shows a **setup checklist** (programs, files, building
-blocks, settings file) until `Get-Prerequisites` reports `Ready`, gates every
-other button on it, and then hides the checklist for good. So a machine can
-repair itself from the panel; nobody has to find the ZIP again.
+### One button
+
+The panel's primary button is **Start Working**, which runs
+`app/start-working.ps1`: install what is missing → collect updates → install
+building blocks → start the site. Every step decides for itself whether there
+is anything to do, so the same button is a first-time install and a
+two-second routine launch. It becomes **Stop the Website** once the site is up.
+
+On launch the panel only **fetches** — that updates our record of what is on
+GitHub and touches no file — so it can report "3 updates to collect" without
+having collected them. Nothing in the working folder changes before the click.
+
+Publishing is deliberately *not* part of that chain and is never a forced
+end-of-wizard prompt: Publish and Undo are ordinary buttons that light up when
+there is something to publish, so closing the window and returning tomorrow is
+always a safe answer.
+
+While `Get-Prerequisites` reports anything missing, the panel shows a **setup
+checklist** and gates every other button on it. Once ready the checklist
+disappears. A machine can therefore repair itself from the panel; nobody has
+to find the ZIP again.
 
 | Script | What it does |
 |---|---|
-| `scripts/control-panel.ps1` | The whole editor-facing UI (WinForms) |
-| `scripts/bootstrap/install.ps1` | First run on a blank machine: installs Git + Node, clones to `C:\mpcbc` |
-| `scripts/lib/prereqs.ps1` | `Install-Prerequisites` — winget, then portable, then manual. Shared by the bootstrap and the panel |
-| `scripts/make-setup-zip.ps1` | Builds `MPCBC-Website-Setup.zip` from the bootstrap + `prereqs.ps1` |
-| `scripts/setup.ps1` | Installs missing tools, pull, `npm install`, `.env`, git identity, desktop shortcut |
-| `scripts/start.ps1` | Both dev servers, **hidden**, logging to `logs/` |
-| `scripts/stop.ps1` | Kills both process trees and clears the ports |
-| `scripts/publish.ps1` | Summary → confirm → pull/commit/push |
-| `scripts/undo.ps1` | Restore tracked files; clean untracked **content only** |
-| `scripts/open-tools.ps1` | VS Code / Claude Code / Codex / Antigravity |
-| `scripts/lib/common.ps1` | Shared helpers — ports, PIDs, git, dialogs, logging |
+| `app/control-panel.ps1` | The whole editor-facing UI (WinForms) |
+| `app/start-working.ps1` | The one-button chain: setup, then start |
+| `Install/install.ps1` | First run on a blank machine: installs Git + Node, clones to `C:\mpcbc` |
+| `app/lib/prereqs.ps1` | `Install-Prerequisites` — winget, then portable, then manual. Shared by the installer and the panel |
+| `app/make-setup-zip.ps1` | Builds `MPCBC-Website-Setup.zip` from `Install/` + `prereqs.ps1` |
+| `app/setup.ps1` | Installs missing tools, pull, `npm install`, `.env`, git identity, desktop shortcut |
+| `app/start.ps1` | Both dev servers, **hidden**, logging to `logs/` |
+| `app/stop.ps1` | Kills both process trees and clears the ports |
+| `app/publish.ps1` | Summary → confirm → pull/commit/push |
+| `app/undo.ps1` | Restore tracked files; clean untracked **content only** |
+| `app/open-tools.ps1` | VS Code / Claude Code / Codex / Antigravity |
+| `app/lib/common.ps1` | Shared helpers — ports, PIDs, git, dialogs, logging |
+| `app/mac/` | Old, **unmaintained** shell equivalents. They predate the control panel and do not know about it |
 
 Two constraints in there are load-bearing and easy to undo by accident:
 
