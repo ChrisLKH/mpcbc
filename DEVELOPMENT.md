@@ -453,3 +453,96 @@ redesign.
 
 The congregation pages (`/english`, `/cantonese`, `/mandarin`) are separate
 content with their own titles and descriptions, not translations of each other.
+
+---
+
+## Idea, recorded but NOT built: flexible sections
+
+Status: **design note only.** Nothing below exists in the code yet.
+
+### The problem
+
+`pageBlocks` is a flat list of nine section types, each with a fixed set of
+fields. An editor can reorder sections by dragging, but cannot compose one:
+there is no way to build a section that is "image, then a paragraph, then a
+button, then a video" unless a template already has exactly those fields.
+Adding `ctaText`/`ctaLink` to `imageText` patched one instance of this; the
+general shape of the limitation remains.
+
+### The shape of the fix
+
+Tina supports this. In `@tinacms/schema-tools`, `ObjectField` is either
+`{ fields }` or `{ templates }`, and `Template.fields` accepts `ObjectField`
+again — so block lists nest recursively.
+
+**Keep all nine presets exactly as they are** and add a tenth alongside them.
+Ordinary editing is unchanged; the new one is an escape hatch, not a
+replacement. Replacing the presets with one generic container would cost the
+purpose-built sections (service board, recent sermons) their simplicity and
+make every page a nesting exercise.
+
+```js
+// tina/config.ts — the component library that can appear INSIDE a section
+const flexibleItems = [
+  { name: 'heading',   label: 'Heading',
+    fields: [{ type: 'string', name: 'text', label: 'Text' }] },
+  { name: 'paragraph', label: 'Paragraph',
+    fields: [{ type: 'string', name: 'text', label: 'Text',
+               ui: { component: 'textarea' } }] },
+  { name: 'image',     label: 'Image',
+    fields: [{ type: 'image',  name: 'src', label: 'Image' },
+             { type: 'string', name: 'alt', label: 'Describe the image' }] },
+  { name: 'button',    label: 'Button',
+    fields: [{ type: 'string', name: 'text', label: 'Button text' },
+             { type: 'string', name: 'url',  label: 'Link' }] },
+  { name: 'video',     label: 'Video',
+    fields: [{ type: 'string', name: 'url', label: 'Video URL' }] },
+];
+
+// ...added to pageBlocks alongside the existing nine
+{
+  name: 'flexible',
+  label: 'Flexible section',
+  fields: [
+    { type: 'string', name: 'layout', label: 'Arrangement',
+      options: [{ label: 'Stacked', value: 'stack' },
+                { label: 'Two columns', value: 'columns' }] },
+    { type: 'object', name: 'items', label: 'Contents',
+      list: true,
+      templates: flexibleItems,
+      // Without this the sidebar list reads "Item 1, Item 2, Item 3".
+      ui: { itemProps: (item) => ({ label: item?.text || item?._template }) } },
+  ],
+}
+```
+
+### What else has to change
+
+1. **`src/components/Blocks.astro`** — add `'flexible'` to `BLOCK_NAMES`, then
+   a branch that maps over `v.items`. Each item carries its own `_template`,
+   so the existing `normalise()` logic applies unchanged at the inner level —
+   it just needs a second name list for the component templates.
+2. **CSS** — the presets each have bespoke layout (`split`, `wrap--narrow`).
+   A flexible section needs a generic stack with a sensible gap, plus a
+   two-column variant that collapses on narrow screens, and it has to look
+   right for *any* ordering of components.
+3. **`tinaField` markers** must be threaded to the nested items, or visual
+   editing silently stops working inside flexible sections while continuing
+   to work everywhere else — the confusing failure, not the obvious one.
+4. **No Zod change needed.** `sections` is `z.array(z.any())` in
+   `src/content.config.ts`, so nested content validates as-is.
+
+### What it will still not be
+
+Tina's editor is nested accordions in a sidebar, not a canvas. Items are
+dragged within a list; a button is never dropped *onto* an image. If what is
+actually wanted is Webflow-style direct manipulation, this is the wrong tool
+and no amount of schema work gets there.
+
+### The reason to think twice
+
+Depth is the cost. A flexible section means clicking into a section, then a
+component, then a field. The flat list is a large part of why the current
+editor is legible to someone non-technical, and that legibility is worth more
+than arrangement freedom on most pages. Adding one flexible type keeps the
+easy path easy; making everything composable does not.
