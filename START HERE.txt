@@ -41,4 +41,4 @@ You never need to open any of it.
 The full instructions are in GUIDE.md, and the Help button inside the
 app opens them too.
 
-Stuck? Ask Chris. You cannot break the real website from the app.
+Stuck? Ask the website administrator. You cannot break the real website from the app.

@@ -30,10 +30,27 @@ Set-Location (Get-RepoRoot)
 Write-Log '=== Update & Start ==='
 
 function Invoke-Step {
+  <#
+    Run one step and wait for IT - not for everything it started.
+
+    This deliberately does not use Start-Process -Wait. That switch waits
+    for the process *and all its descendants*, and start.ps1's whole job is
+    to leave two servers running. The wait therefore never returned while
+    the site was up, so the control panel stayed "busy" for the entire
+    session: status stuck on "Starting the website...", and every button
+    greyed out, including Stop.
+
+    The giveaway in the log was "Update & Start finished" appearing
+    immediately after "Stop requested" - the wait only released once the
+    servers it was accidentally waiting on had been killed.
+
+    WaitForExit() on the handle waits for that one process and nothing else.
+  #>
   param([string]$Script, [string[]]$ScriptArgs = @())
   $argList = @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', (Join-Path $PSScriptRoot $Script)) + $ScriptArgs
   $proc = Start-Process -FilePath 'powershell.exe' -ArgumentList $argList `
-    -WorkingDirectory (Get-RepoRoot) -WindowStyle Hidden -Wait -PassThru
+    -WorkingDirectory (Get-RepoRoot) -WindowStyle Hidden -PassThru
+  $proc.WaitForExit()
   return $proc.ExitCode
 }
 

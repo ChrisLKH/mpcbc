@@ -3,7 +3,7 @@
 A guide for everyone who looks after the church website. **You do not need to
 know anything technical.** If you can use email, you can do this.
 
-> **Easier to read online:** <https://claude.ai/code/artifact/783b33cb-dcdb-48b3-a99d-8c7f77aca36c>
+> **Easier to read online:** <https://claude.ai/artifact/Fr7CB6RGp97HNAwfmWrcJo>
 > — the same guide as a web page. Send that link to a new editor; it works
 > before they have any of this on their computer.
 
@@ -36,7 +36,7 @@ version, so it is safe to bookmark:
 
 <https://github.com/ChrisLKH/mpcbc/raw/main/MPCBC-Website-Setup.zip>
 
-(Chris can also just send you the file.)
+(the website administrator can also just send you the file.)
 
 ### 1. Extract it
 
@@ -216,7 +216,7 @@ Useful when you want to change something and aren't sure where to look.
 | Plan your visit `/visit` | **Fixed text — not editable in the editor** |
 | Anything you created | **Pages** in the editor |
 
-> **"Fixed text" means ask Chris.** Those words live in the website's code
+> **"Fixed text" means ask the website administrator.** Those words live in the website's code
 > rather than the editor. It isn't that you're looking in the wrong place —
 > they genuinely can't be changed from `Edit Content`, and that's worth
 > knowing before you spend twenty minutes hunting.
@@ -250,7 +250,7 @@ src/content/
 ```
 
 Everything outside `src/content` is the machinery that makes the site work.
-Changing it is a job for Chris or an AI helper, not a quick manual edit.
+Changing it is a job for the website administrator or an AI helper, not a quick manual edit.
 
 ---
 
@@ -300,7 +300,7 @@ Looking at the website needs nothing. **Publishing** needs a free GitHub
 account, because that's where the website lives.
 
 1. Go to **github.com** and create a free account, if you don't have one.
-2. Tell Chris your username. He'll send you an invitation by email.
+2. Tell the website administrator your username. They'll send you an invitation by email.
 3. Click **Accept** in that email.
 
 The first time you publish, a window will pop up asking you to sign in to
@@ -322,7 +322,7 @@ When you're happy with your changes, click **Publish to Live Site**.
 > This puts them on the real website, where everyone can see them.
 
 Read it. If it mentions something you didn't mean to change, click **No** and
-ask Chris.
+ask the website administrator.
 
 **Then you'll be asked what you changed.** Write it the way you'd tell a person:
 
@@ -342,7 +342,7 @@ means it's live. You can close everything at that point.
 
 ### 1. The dot is red, or something behaves oddly
 
-Click **Show Details**, then **Copy for Chris**. Paste that into a message to
+Click **Show Details**, then **Copy Log**. Paste that into a message to
 him. That's everything he needs — you don't have to explain what happened.
 
 ### 2. You've made a mess and want to start over
@@ -355,7 +355,7 @@ published is completely safe** — undo only affects your own unfinished work.
 
 ### 3. It says your changes collided with someone else's
 
-Stop, and send Chris the message. Nothing has been published and your work is
+Stop, and send the website administrator the message. Nothing has been published and your work is
 safe. This happens when two people edit at the same time, which is why
 **Update & Start** collects everyone else's changes before it opens the site.
 
@@ -363,7 +363,7 @@ safe. This happens when two people edit at the same time, which is why
 
 | What happened | What to do |
 |---|---|
-| The website won't start | Close the app, open it again, press Start. If it still won't, use **Copy for Chris**. |
+| The website won't start | Close the app, open it again, press Start. If it still won't, use **Copy Log**. |
 | Nothing happens when you click a button | It's probably greyed out because it isn't the right moment. Check the dot at the top. |
 | The editor page won't load | Make sure the dot is green first. The editor needs the website running. |
 | It says a program is using the same address | Restart the computer. Something was left running. |
@@ -423,7 +423,7 @@ is the machinery. In particular, don't hand-write files in
 
 ## Who to ask
 
-Chris — for anything at all. There is no such thing as a silly question here,
+The website administrator — for anything at all. There is no such thing as a silly question here,
 and you genuinely cannot break the real website from this app.
 
 <!-- Screenshots still to capture, once tested on a clean machine:

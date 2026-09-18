@@ -168,7 +168,7 @@ if (-not (Test-Path $prereqScript)) {
 }
 if (-not (Test-Path $prereqScript)) {
   Stop-Install ("This setup folder is incomplete - a file called prereqs.ps1 is missing." + [Environment]::NewLine + [Environment]::NewLine +
-                "Please ask Chris for a fresh copy of MPCBC-Website-Setup.zip.")
+                "Please ask the website administrator for a fresh copy of MPCBC-Website-Setup.zip.")
 }
 $script:PortableToolsDir = $PortableDir
 . $prereqScript
@@ -207,7 +207,7 @@ if (-not (Test-Tool 'git') -or -not (Test-Tool 'node')) {
 if (-not (Test-Tool 'git') -or -not (Test-Tool 'node')) {
   Stop-Install ("This computer needs two programs installed before the website can run, " +
                 "and they could not be installed automatically." + [Environment]::NewLine + [Environment]::NewLine +
-                "Please send Chris a message saying: 'the setup needs Git and Node installed'.")
+                "Please send the website administrator a message saying: 'the setup needs Git and Node installed'.")
 }
 
 Detail 'Git and Node.js are ready.'
@@ -261,7 +261,7 @@ if (Test-Path (Join-Path $chosen '.git')) {
   if ($LASTEXITCODE -ne 0) {
     Stop-Install ("The website could not be downloaded." + [Environment]::NewLine + [Environment]::NewLine +
                   "Check that this computer is connected to the internet and try again. " +
-                  "If it still fails, send Chris a message.")
+                  "If it still fails, send the website administrator a message.")
   }
 }
 
@@ -271,15 +271,19 @@ Say 'Setting everything up'
 $setup = Join-Path $chosen 'app\setup.ps1'
 if (-not (Test-Path $setup)) {
   Stop-Install ("The download is incomplete - part of the website is missing." + [Environment]::NewLine + [Environment]::NewLine +
-                "Please tell Chris.")
+                "Please tell the website administrator.")
 }
 
 # Run setup in its own process. Calling it with & would run it in THIS
 # process, where its `exit` would terminate this script too - the check
 # below would never execute and the final message would never appear.
+# WaitForExit(), not -Wait: that switch waits for the process AND all its
+# descendants, which hangs the moment a step leaves something running. It is
+# the bug that used to freeze the control panel for a whole session.
 $proc = Start-Process -FilePath 'powershell.exe' -ArgumentList @(
   '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', $setup, '-Path', $chosen
-) -Wait -PassThru -NoNewWindow
+) -PassThru -NoNewWindow
+$proc.WaitForExit()
 if ($proc.ExitCode -ne 0) { exit $proc.ExitCode }
 
 # Tell, never ask, where it went.

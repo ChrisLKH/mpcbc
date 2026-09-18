@@ -89,11 +89,11 @@ if (-not $git -or -not $node -or $nodeMajor -lt 20) {
 
 if (-not $git) {
   Stop-Setup 'Git could not be installed on this computer.' `
-             'Please tell Chris - this computer needs Git installed by hand from https://git-scm.com/downloads.'
+             'Please tell the website administrator - this computer needs Git installed by hand from https://git-scm.com/downloads.'
 }
 if (-not $node -or $nodeMajor -lt 20) {
   Stop-Setup 'Node.js could not be installed on this computer, or the version is too old.' `
-             'Please tell Chris - this computer needs Node.js 20 or newer from https://nodejs.org.'
+             'Please tell the website administrator - this computer needs Node.js 20 or newer from https://nodejs.org.'
 }
 Write-Ok "git and node v$nodeMajor ready"
 
@@ -135,7 +135,7 @@ if (Test-Path (Join-Path $Path '.git')) {
     $pull = Invoke-Git -Arguments @('pull', '--ff-only') -WorkingDirectory $Path
     if (-not $pull.Ok) {
       # Not fatal: a network blip or a diverged branch should not stop
-      # someone looking at the site. It is logged for Chris either way.
+      # someone looking at the site. It is logged for the website administrator either way.
       Write-Log "Pull failed: $($pull.Error)" 'warn'
       Write-Ok 'Could not collect updates just now - carrying on with the version already here.'
     }
@@ -206,7 +206,7 @@ if ($depsPresent -and $lockHash -and $lockHash -eq $stamp) {
 
   if ($npm.ExitCode -ne 0) {
     Stop-Setup 'The website''s building blocks could not be installed.' `
-               'Open "Show Details" in the app and use "Copy for Chris", then send him the message.'
+               'Open "Show Details" in the app, click "Copy Log", and send that to the website administrator.'
   }
   if ($lockHash) { $lockHash | Out-File -FilePath $stampPath -Encoding utf8 }
   Write-Ok 'Building blocks are up to date.'
@@ -216,7 +216,7 @@ if ($depsPresent -and $lockHash -and $lockHash -eq $stamp) {
 # Local editing runs TinaCMS in local mode, which needs no credentials at
 # all. The file exists so nothing has to guess, and so the real values have
 # an obvious home if the live editor is ever switched on. An existing file
-# is never overwritten - it may hold Chris's real token.
+# is never overwritten - it may hold a real token.
 
 $envPath = Join-Path $Path '.env'
 Write-Step 'Checking the settings file'
@@ -229,7 +229,7 @@ if (Test-Path $envPath) {
 # file exactly as it is.
 #
 # Only fill these in to run the editor against the live site, and get them
-# from Chris. Never commit this file or paste it into a chat or an email.
+# from the website administrator. Never commit this file or paste it into a chat or an email.
 
 TINA_CLIENT_ID=
 TINA_TOKEN=
@@ -241,7 +241,7 @@ TINA_BRANCH=main
 if (-not (Test-EnvIgnored)) {
   Write-Log '.env is NOT covered by .gitignore.' 'error'
   Show-Problem ("Something is wrong with the website's safety settings.`r`n`r`n" +
-                'Tell Chris and mention the ".env" file before you publish anything.')
+                'Tell the website administrator and mention the ".env" file before you publish anything.')
 }
 
 # --- 5. Who is publishing? ----------------------------------------------

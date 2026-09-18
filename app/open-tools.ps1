@@ -142,7 +142,7 @@ switch ($spec.Installer) {
   }
   'npm' {
     if (-not (Get-NodeExe)) {
-      Show-Problem 'Node.js is missing, so this cannot be installed. Tell Chris.'
+      Show-Problem 'Node.js is missing, so this cannot be installed. Tell the website administrator.'
       exit 1
     }
     $cmd = "npm install -g $($spec.Package)"

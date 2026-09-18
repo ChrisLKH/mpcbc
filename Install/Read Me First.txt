@@ -64,5 +64,5 @@ You can delete this ZIP file and this folder.
 IF SOMETHING GOES WRONG
 -----------------------
 
-Take a photo of the screen and send it to Chris. Don't worry about
+Take a photo of the screen and send it to the website administrator. Don't worry about
 breaking anything - nothing here can damage the real website.

@@ -1,18 +1,21 @@
 # MPCBC Website
 
-Astro 7 site for Monterey Park Chinese Baptist Church 
-deployed to Cloudflare Workers. TinaCMS is the editor. Two things run
-themselves: the Sunday livestream links and the sermon archive.
+Astro 7 site for Monterey Park Chinese Baptist Church, deployed to Cloudflare
+Workers. TinaCMS is the editor. Two things run themselves: the Sunday
+livestream links and the sermon archive.
 
-**This repository has two audiences. Pick yours:**
+**Three audiences. Pick yours:**
 
 | You are | Start here |
 |---|---|
-| Looking after the website's words and pictures | **[GUIDE.md](GUIDE.md)**, or the [same guide as a web page](https://claude.ai/artifact/Fr7CB6RGp97HNAwfmWrcJo). You never need the rest of this README. |
-| Working on the code | [Run it](#run-it), below. |
+| Looking after the website's words and pictures | **[GUIDE.md](GUIDE.md)**, or the [same guide as a web page](https://claude.ai/artifact/Fr7CB6RGp97HNAwfmWrcJo). You need nothing else. |
+| Curious how the app and the site work | This README |
+| Setting up a new environment, or debugging one | **[DEVELOPMENT.md](DEVELOPMENT.md)** |
 
-> Much of `src/content/` is still sample content, and the footer, pastor and
-> social links are placeholders. See [Before a real launch](#before-a-real-launch).
+Everyone — volunteers and developers alike — installs and runs this through
+the app. There are no manual steps in normal use: no terminal, no `npm`, no
+deploy command. If you find yourself reaching for one, that is what
+DEVELOPMENT.md is for.
 
 ---
 
@@ -146,108 +149,6 @@ working on this repo.
 
 ---
 
-## Run it
-
-Two terminals, in this order.
-
-```bash
-npm install
-
-npx tinacms dev      # terminal 1 — Tina's GraphQL server on :4001, builds /admin
-npm run dev          # terminal 2 — http://localhost:4321
-```
-
-Wait for Tina to finish *"Indexing local files"* before starting Astro.
-
-**Use `http://localhost:4321`, not `127.0.0.1`** — the dev server binds IPv6.
-
-| Command | What it does |
-|---|---|
-| `npm run cms` | Tina's GraphQL server + builds the `/admin` SPA |
-| `npm run dev` | The site |
-| `npm run build` | Production build into `dist/` |
-| `npm run preview` | Build, then serve it through the real Worker runtime |
-| `npm run deploy` | Build and deploy the site Worker |
-| `npm run deploy:sync` | Deploy the livestream cron Worker |
-| `npm run kv:create` | Create the KV namespace (once) |
-| `npm run sync:sermons` | Pull new sermons by hand |
-
-`npm run preview` is worth knowing about — `npm run dev` is Vite, but `preview`
-runs the actual built Worker with real KV bindings. It's the only local check
-that catches Worker-specific breakage before deploying.
-
-### When the dev server breaks
-
-Two failures are common enough to name, and neither means your code is wrong.
-
-**"Dev server failed to start within 30s."** Astro 7 runs `astro dev` as a
-detached child and gives it a hardcoded 30 seconds to claim a lock file. A cold
-Vite cache here takes longer. The server was fine; the watchdog killed it. Run
-it inline instead:
-
-```bash
-ASTRO_DEV_BACKGROUND=1 npm run dev          # PowerShell: $env:ASTRO_DEV_BACKGROUND = "1"; npm run dev
-```
-
-The real log goes to `.astro/dev.log`, not the console — that's why the error
-looks contentless.
-
-**"The file does not exist at .../deps_ssr/… which is in the optimize deps
-directory."** Vite re-ran its dependency optimizer and rewrote `deps_ssr` under
-a new hash while the workerd runtime was still holding the old one. Every
-rendered route then 500s while static assets and 404s still work.
-
-```bash
-rm -rf node_modules/.vite     # PowerShell: Remove-Item -Recurse -Force node_modules\.vite
-```
-
-then restart Astro. **Editing any config file while dev is running is the usual
-trigger**, so stop the server first when changing `astro.config.mjs`,
-`tina/config.ts` or `src/content.config.ts`. Builds are never affected, which is
-why `npm run build` can pass while `npm run dev` won't boot.
-
-Do **not** use `tinacms dev -c "astro dev"`. Tina's wrapper enforces its own
-30-second timeout on the command it spawns and kills Astro before it finishes
-bundling.
-
----
-
-## Layout
-
-```
-src/
-  components/
-    Blocks.astro              renders CMS page sections
-    ServiceBoard.astro        the live Sunday board
-    home/                     the fixed homepage sections
-      Hero.astro  AnnouncementCarousel.astro  PastorNote.astro
-      Children.astro  UpcomingEvents.astro
-  content/                    what Tina edits, and what the site builds from
-    announcements/  events/   .md, frontmatter + body
-    sermons/                  one JSON per sermon, filename = YouTube video ID
-    pages/  settings/         JSON
-  data/services.json          fallback board data when KV is empty
-  layouts/Base.astro          masthead, menu, footer, structured data
-  pages/
-    api/services.json.ts      on-demand — reads live board state from KV
-    tina-island/[name].ts     on-demand — re-renders a region while editing in Tina
-    [...slug].astro           CMS-created pages
-  styles/global.css           design tokens
-
-tina/config.ts                the CMS schema
-worker/
-  livestream-sync.js          YouTube polling + service matching (cron only)
-  wrangler.toml               the cron Worker
-wrangler.toml                 the site Worker
-scripts/sync-sermons.mjs      nightly sermon import
-.github/workflows/            sermon import + deploy
-```
-
-Every route prerenders except the two marked on-demand. That is why the site
-needs an adapter at all — see [Deployment](#deployment).
-
----
-
 ## The CMS
 
 TinaCMS, in local mode, at `/admin`. Every collection points at the same files
@@ -281,21 +182,6 @@ emptied from the editor. Everything else is editor-controlled. Each page has:
 Assigning a page to a parent **turns that parent into a dropdown**, styled like
 Services; the parent's own destination moves to the foot of the panel so it is
 never lost. A parent with no pages under it stays a plain link.
-
-### Publishing
-
-Local mode only, so editing happens on a developer's machine and `npm run build`
-publishes from the repo. To put an editor on the live site, set `TINA_CLIENT_ID`
-and `TINA_TOKEN` and build with `npm run build:tina`. The `/tina-island/[name]`
-route already deploys, so visual editing works against the live site.
-
-`.github/workflows/deploy.yml` already runs `build:tina`, so CI ships the editor
-once `TINA_CLIENT_ID` and `TINA_TOKEN` are set as repository secrets. Leave it
-on `build:tina` — plain `npm run build` strips `public/admin` and would ship a
-site with no editor.
-
-Tina Cloud's free tier covers 2 editors, then $29/month. Local mode is free and
-unlimited.
 
 ---
 
@@ -387,122 +273,15 @@ flipping the channel ID's second character from `C` to `U`, which avoids a
 
 ---
 
-## Deployment
+## Deploying
 
-Two Workers, one KV namespace.
+**Publishing from the app is the whole story.** An editor clicks *Publish to
+Live Site*; that pushes to `main`; GitHub Actions builds and deploys; the site
+updates in two to four minutes.
 
-| Worker | Config | Job |
-|---|---|---|
-| `mpcbc-site` | `wrangler.toml` | the website; reads KV |
-| `mpcbc-livestream-sync` | `worker/wrangler.toml` | cron; writes KV |
-
-`output: 'static'` plus an adapter is Astro's hybrid mode: **every route
-prerenders unless it opts out.** Only two do, so this is a static site with two
-live endpoints, not a server rendering every page. Prerendered HTML is served
-straight off the assets layer and never wakes the Worker.
-
-The adapter supplies its own `main` and assets binding and writes a merged
-config to `dist/server/wrangler.json` at build time — which is why the deploy
-scripts point there, and why `wrangler.toml` deliberately has no `main` field.
-Setting one breaks the build, because it's validated before the output exists.
-
-`session: false` is set in `astro.config.mjs`. Nothing uses `Astro.session`, and
-left on, the adapter injects a `SESSION` KV binding with no namespace id.
-
-### First deploy
-
-```bash
-wrangler login
-npm run kv:create                    # paste the id into BOTH wrangler.toml files
-npx wrangler secret put YOUTUBE_API_KEY -c worker/wrangler.toml
-```
-
-Then fill in the placeholders:
-
-| Placeholder | Where |
-|---|---|
-| `replace_after_creating_namespace` | `wrangler.toml` **and** `worker/wrangler.toml` |
-| `UC_replace_with_real_channel_id` | `worker/wrangler.toml`, both channels |
-
-```bash
-npm run deploy          # the site
-npm run deploy:sync     # the cron Worker
-```
-
-Check the config before you spend a deploy on it:
-
-```bash
-npx wrangler deploy --dry-run -c dist/server/wrangler.json
-```
-
-Until you set `routes` in `wrangler.toml`, the site lands on
-`mpcbc-site.<subdomain>.workers.dev`. `astro.config.mjs` already declares
-`site: 'https://mpcbc.org'`, so canonical URLs claim the real domain — point
-the domain at the Worker before sending the link anywhere that matters.
-
-### Before a real launch
-
-The design carries placeholder content that must not go live on the real
-domain:
-
-- Pastor name, role and portrait
-- `(626) 555-0100` and `office@mpcbc.org` in the footer
-- Facebook / YouTube / Instagram links
-- The **Offering 奉獻** menu item has no destination (`href="#"`)
-- The newsletter form has no endpoint — it acknowledges locally and discards
-  the address
-- The hero background video, and the three children's-ministry photos
-
-### Automatic deploys
-
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds and
-deploys on every push to `main`. It needs two repository secrets:
-
-| Secret | Where to get it |
-|---|---|
-| `CLOUDFLARE_API_TOKEN` | Cloudflare dashboard → API Tokens → *Edit Cloudflare Workers* |
-| `CLOUDFLARE_ACCOUNT_ID` | Workers dashboard sidebar |
-
-The sermon sync additionally needs `YOUTUBE_API_KEY` as a secret and
-`PLAYLIST_CANTONESE`, `PLAYLIST_MANDARIN`, `PLAYLIST_ENGLISH` as repository
-variables.
-
-The sync calls the deploy workflow directly rather than relying on its own
-commit to trigger it. A push made with `GITHUB_TOKEN` deliberately does not
-fire other workflows, so without that call the nightly sermons would land in
-the repo and never reach the site.
-
-The cron Worker is deployed by hand (`npm run deploy:sync`) — it changes
-about once a year, and it holds the YouTube secret.
-
-### Testing the cron by hand
-
-The sync Worker is cron-only and has no `fetch` handler on purpose — an earlier
-version exposed `/sync`, which is an unauthenticated endpoint that spends
-YouTube quota. To run a poll manually:
-
-```bash
-npx wrangler dev -c worker/wrangler.toml --test-scheduled
-curl "http://localhost:8787/__scheduled"
-```
-
-Then check what it wrote:
-
-```bash
-npx wrangler kv key get services --binding MPCBC --remote -c worker/wrangler.toml
-```
-
----
-
-## Costs
-
-| | |
-|---|---|
-| Cloudflare Workers + assets | $0 |
-| Cron + KV | $0 (well inside free tier) |
-| Tina | $0 local, $29/mo beyond 2 cloud editors |
-| YouTube API | $0 (~4 quota units per poll against 10,000/day) |
-| Domain | ~$40/year |
+Nothing needs running by hand. The one-time Cloudflare setup — KV namespace,
+secrets, first deploy — and the commands for testing the cron are in
+[DEVELOPMENT.md](DEVELOPMENT.md).
 
 ---
 

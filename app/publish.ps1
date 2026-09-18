@@ -44,7 +44,7 @@ Write-Log 'Publish requested.'
 
 if (-not (Get-GitExe)) {
   Show-Problem ("Git is not installed on this computer, so nothing can be published.`r`n`r`n" +
-                'Tell Chris - this needs setting up once.')
+                'Tell the website administrator - this needs setting up once.')
   exit 1
 }
 
@@ -67,14 +67,14 @@ if ($secrets.Count -gt 0) {
   Write-Log "Refusing to publish; secret-like files present: $($secrets -join ', ')" 'error'
   Show-Problem ("This would publish a password file, so nothing has been sent.`r`n`r`n" +
                 "The file is: $($secrets -join ', ')`r`n`r`n" +
-                'Tell Chris. Do not try again until he says so.')
+                'Tell the website administrator. Do not try again until they say so.')
   exit 1
 }
 
 if (-not (Test-EnvIgnored)) {
   Write-Log '.env is no longer covered by .gitignore.' 'error'
   Show-Problem ("Something is wrong with the website's safety settings, so nothing has been sent.`r`n`r`n" +
-                'Tell Chris and mention the ".env" file.')
+                'Tell the website administrator and mention the ".env" file.')
   exit 1
 }
 
@@ -119,7 +119,7 @@ $pull = Invoke-Git -Arguments @('pull', '--rebase', '--autostash')
 if (-not $pull.Ok) {
   Show-Problem ("Your changes and someone else's have collided, and sorting that out needs a person.`r`n`r`n" +
                 "Nothing has been published, and your work is safe.`r`n`r`n" +
-                'Send Chris this message and stop here.')
+                'Send the website administrator this message and stop here.')
   exit 1
 }
 
@@ -127,14 +127,14 @@ Write-Log 'Staging and committing.'
 $add = Invoke-Git -Arguments @('add', '-A')
 if (-not $add.Ok) {
   Show-Problem ("The changes could not be packaged up, so nothing was sent.`r`n`r`n" +
-                'Open "Show Details" and use "Copy for Chris".')
+                'Open "Show Details" and click "Copy Log".')
   exit 1
 }
 
 $commit = Invoke-Git -Arguments @('commit', '-m', $Message)
 if (-not $commit.Ok) {
   Show-Problem ("The changes could not be saved, so nothing was sent.`r`n`r`n" +
-                'Open "Show Details" and use "Copy for Chris".')
+                'Open "Show Details" and click "Copy Log".')
   exit 1
 }
 
@@ -147,11 +147,11 @@ if (-not $push.Ok) {
   if ($push.Error -match 'Authentication|denied|403|could not read Username') {
     Show-Problem ("GitHub did not accept your sign-in, so nothing was published.`r`n`r`n" +
                   "Your work is saved and safe - you can try again.`r`n`r`n" +
-                  'If it keeps happening, ask Chris to check that your GitHub account has been given access.')
+                  'If it keeps happening, ask the website administrator to check that your GitHub account has been given access.')
   } else {
     Show-Problem ("The changes could not be sent, so the website has not been updated.`r`n`r`n" +
                   "Your work is saved and safe.`r`n`r`n" +
-                  'Try again in a moment. If it happens twice, use "Copy for Chris" and send him the message.')
+                  'Try again in a moment. If it happens twice, click "Copy Log" and send that to the website administrator.')
   }
   exit 1
 }

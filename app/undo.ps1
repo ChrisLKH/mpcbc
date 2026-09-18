@@ -38,7 +38,7 @@ Set-Location $root
 Write-Log 'Undo requested.'
 
 if (-not (Get-GitExe)) {
-  Show-Problem 'Git is not installed on this computer, so there is nothing to undo with. Tell Chris.'
+  Show-Problem 'Git is not installed on this computer, so there is nothing to undo with. Tell the website administrator.'
   exit 1
 }
 
@@ -69,7 +69,7 @@ if (-not $Force) {
     $more = ''
     if ($strays.Count -gt 4) { $more = "`r`n    ...and $($strays.Count - 4) more" }
     $extra = "`r`nThese new files are NOT part of the words and pictures, so they will be left exactly as they are:`r`n`r`n    " +
-             $shown + $more + "`r`n`r`nIf you did not expect those, mention them to Chris.`r`n"
+             $shown + $more + "`r`n`r`nIf you did not expect those, mention them to the website administrator.`r`n"
   }
 
   # Default button is No. Enter must not destroy someone's afternoon.
@@ -92,7 +92,7 @@ Write-Log "Undoing: $($changes.Summary)"
 $restore = Invoke-Git -Arguments @('restore', '--source=HEAD', '--staged', '--worktree', '--', '.')
 if (-not $restore.Ok) {
   Show-Problem ("The changes could not be undone.`r`n`r`n" +
-                'Open "Show Details" and use "Copy for Chris".')
+                'Open "Show Details" and click "Copy Log".')
   exit 1
 }
 

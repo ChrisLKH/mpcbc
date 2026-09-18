@@ -60,7 +60,7 @@ foreach ($port in @($script:TinaPort, $script:AstroPort)) {
     $isOurs = $known -and (@($known.tina, $known.astro) -contains $(if ($owner) { $owner.Id } else { -1 }))
     if (-not $isOurs -and $owner -and $owner.ProcessName -notmatch 'node|cmd') {
       Show-Problem ("Another program on this computer is already using the address the website needs (port $port).`r`n`r`n" +
-                    "It is called '$($owner.ProcessName)'. Close it and try again, or tell Chris.")
+                    "It is called '$($owner.ProcessName)'. Close it and try again, or tell the website administrator.")
       exit 1
     }
   }
@@ -70,13 +70,13 @@ foreach ($port in @($script:TinaPort, $script:AstroPort)) {
 
 if (-not (Test-Path (Join-Path $root 'node_modules'))) {
   Show-Problem ("The website's building blocks are missing.`r`n`r`n" +
-                'Click "Get Latest Changes" first - that installs them. It takes a few minutes the first time.')
+                'Click "Install" first - that sets them up. It takes a few minutes the first time.')
   exit 1
 }
 
 if (-not (Get-NodeExe)) {
   Show-Problem ("Node.js is not installed on this computer, and the website needs it.`r`n`r`n" +
-                'Tell Chris - this needs setting up once.')
+                'Tell the website administrator - this needs setting up once.')
   exit 1
 }
 
@@ -113,7 +113,7 @@ if (-not (Wait-ForPort -Port $script:TinaPort -Seconds 180)) {
   Stop-ProcessTree -ProcessId $tina.Id
   Clear-ServerPids
   Show-Problem ("The website's content service did not start.`r`n`r`n" +
-                'Open "Show Details" and use "Copy for Chris", then send him the message.')
+                'Open "Show Details", click "Copy Log", and send that to the website administrator.')
   exit 1
 }
 Write-Log 'Content service ready.'
@@ -130,7 +130,7 @@ if (-not $NoWait) {
   if (-not (Wait-ForPort -Port $script:AstroPort -Seconds 180)) {
     Write-Log 'Astro never came up within 180s.' 'error'
     Show-Problem ("The website did not finish starting.`r`n`r`n" +
-                  'Open "Show Details" and use "Copy for Chris", then send him the message.')
+                  'Open "Show Details", click "Copy Log", and send that to the website administrator.')
     exit 1
   }
   Write-Log "Website ready at $script:SiteUrl"

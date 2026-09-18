@@ -55,7 +55,7 @@ function Get-PidsPath  { return (Join-Path (Get-LogDir) 'pids.json') }
 function Write-Log {
   <#
     Appends one timestamped line to logs\app.log. This is what the control
-    panel's "Show Details" pane reads and what "Copy for Chris" copies, so
+    panel's "Show Details" pane reads and what "Copy Log" copies, so
     it is the only place a diagnostic needs to go.
   #>
   param(
@@ -763,8 +763,19 @@ function Start-RemoteRefresh {
   $git = Get-GitExe
   if (-not $git) { return }
   try {
-    Start-Process -FilePath $git -ArgumentList @('fetch', '--quiet') `
-      -WorkingDirectory (Get-RepoRoot) -WindowStyle Hidden | Out-Null
+    # Never let this ask for anything. It runs hidden on every launch, so a
+    # credential prompt here would either hang invisibly or pop a sign-in
+    # box the editor did not trigger and cannot explain. On a public
+    # repository no credentials are needed at all; these two settings mean
+    # that if that ever stops being true, the fetch fails quietly and the
+    # update count simply goes stale - which is the harmless outcome.
+    #
+    # Publishing is the one place a sign-in belongs, because pushing is the
+    # one thing that genuinely needs an account.
+    $env:GIT_TERMINAL_PROMPT = '0'
+    Start-Process -FilePath $git -ArgumentList @(
+      '-c', 'credential.interactive=false', 'fetch', '--quiet'
+    ) -WorkingDirectory (Get-RepoRoot) -WindowStyle Hidden | Out-Null
   } catch {
     # Offline is normal and not worth reporting; the count just stays stale.
   }

@@ -7,7 +7,7 @@ livestream links and the sermon archive.
 Much of the time you are being asked for a change by a **non-technical church
 volunteer** driving the control panel (`MPCBC Website.bat`). Prefer the smallest
 content-only change that answers the request, explain what you did in plain
-words, and say when something needs Chris.
+words, and say when something needs the website administrator.
 
 ## Where content lives
 

@@ -29,7 +29,7 @@
       every question is a dialog.
     * Nothing that cannot work is clickable. Get-Prerequisites decides.
     * The main screen shows plain sentences only. Technical detail lives
-      behind "Show Details", with "Copy for Chris" beside it.
+      behind "Show Details", with "Copy Log" beside it.
 
   Launched by "MPCBC Website.bat" in the repository root.
 #>
@@ -148,7 +148,7 @@ $sepTop = New-Separator -Y 78
 # --- Setup checklist (only while setup is unfinished) --------------------
 # Not a to-do list for the editor: every one of these is done by the Install
 # button. It is here so that a five-minute first run looks like
-# progress rather than a hang, and so a photo of the screen tells Chris
+# progress rather than a hang, and so a photo of the screen tells the website administrator
 # exactly which part failed.
 
 $setupTitle = New-Object System.Windows.Forms.Label
@@ -228,11 +228,11 @@ $logBox.SetBounds(18, 418, 416, 180)
 $logBox.Visible = $false
 $form.Controls.Add($logBox)
 
-$btnCopy = New-Button 'Copy for Chris' 18 608 200 34
+$btnCopy = New-Button 'Copy Log' 18 608 200 34
 $btnCopy.Visible = $false
 
 $copyHint = New-Object System.Windows.Forms.Label
-$copyHint.Text = 'Then send that to Chris.'
+$copyHint.Text = ''
 $copyHint.ForeColor = [System.Drawing.Color]::DimGray
 $copyHint.SetBounds(226, 616, 216, 22)
 $copyHint.Visible = $false
@@ -326,7 +326,7 @@ function Update-Ui {
     switch ($status.State) {
       'running'  { Set-Status 'ForestGreen' 'The website is running' "Ready at $script:SiteUrl" }
       'starting' { Set-Status 'Goldenrod' 'Starting up...' 'This takes up to a minute the first time.' }
-      'crashed'  { Set-Status 'Firebrick' 'The website stopped unexpectedly' 'Click "Show Details", then "Copy for Chris".' }
+      'crashed'  { Set-Status 'Firebrick' 'The website stopped unexpectedly' 'Click "Show Details", then "Copy Log".' }
       default {
         # The update count comes from the launch fetch. Saying it here is
         # the point of that fetch: the editor learns there is something to
@@ -415,7 +415,7 @@ function Test-RepoUsable {
   if ($null -ne $pre -and -not $pre.RepoOk) {
     Show-Problem ('This copy of the website is missing its history, so it can never update or publish.' +
                   [Environment]::NewLine + [Environment]::NewLine +
-                  'It was probably unpacked from a plain ZIP. Ask Chris to reinstall it using "Install MPCBC Website".')
+                  'It was probably unpacked from a plain ZIP. Ask the website administrator to reinstall it using "Install MPCBC Website".')
     return $false
   }
   return $true
@@ -446,8 +446,12 @@ $btnPublish.Add_Click({ Start-Job-Script -Script 'publish.ps1' -Label 'Publishin
 $btnUndo.Add_Click({ Start-Job-Script -Script 'undo.ps1' -Label 'Undoing...' })
 
 $btnHelp.Add_Click({
-  $local = Join-Path $root 'GUIDE.md'
-  if (Test-Path $local) { Start-Process $local } else { Open-Url $script:GuideUrl }
+  # Always the GitHub-rendered guide, never the local file. Opening
+  # GUIDE.md from disk hands someone raw Markdown in whatever program
+  # claims .md - Notepad, as often as not. GitHub renders the headings,
+  # tables and the window mock-up properly, which is the whole point of
+  # having written them.
+  Open-Url $script:GuideUrl
 })
 
 $menu = New-Object System.Windows.Forms.ContextMenuStrip
@@ -497,8 +501,7 @@ $btnCopy.Add_Click({
   ) -join "`r`n"
   try {
     Set-Clipboard -Value $report
-    Show-Info ('Copied.' + [Environment]::NewLine + [Environment]::NewLine +
-               'Paste it into a message to Chris - that is everything he needs.')
+    Show-Info 'Copied.'
   } catch {
     Show-Problem 'The details could not be copied. Please take a photo of this window instead.'
   }
