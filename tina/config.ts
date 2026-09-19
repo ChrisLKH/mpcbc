@@ -27,6 +27,49 @@ const CONGREGATIONS = [
   { label: 'Mandarin 國語', value: 'mandarin' },
 ];
 
+// The component library for the "Flexible section" escape hatch below —
+// small pieces an editor can stack in any order, instead of choosing one
+// of the nine ready-made shapes. Blocks.astro renders these too, and
+// needs its own name list to tell them apart from the section templates.
+const flexibleItems = [
+  {
+    name: 'heading',
+    label: 'Heading',
+    fields: [{ type: 'string', name: 'text', label: 'Text' }],
+  },
+  {
+    name: 'paragraph',
+    label: 'Paragraph',
+    fields: [{ type: 'string', name: 'text', label: 'Text', ui: { component: 'textarea' } }],
+  },
+  {
+    name: 'image',
+    label: 'Image',
+    fields: [
+      { type: 'image', name: 'src', label: 'Image' },
+      { type: 'string', name: 'alt', label: 'Describe the image' },
+    ],
+  },
+  {
+    name: 'button',
+    label: 'Button',
+    fields: [
+      { type: 'string', name: 'text', label: 'Button text' },
+      { type: 'string', name: 'url', label: 'Link' },
+    ],
+  },
+  {
+    name: 'video',
+    label: 'Video',
+    fields: [
+      {
+        type: 'string', name: 'url', label: 'Video link or ID',
+        description: 'Paste the YouTube web address, or just the part after v= in it.',
+      },
+    ],
+  },
+];
+
 // The section library. Adding a template here makes it available on
 // every page at once, and Blocks.astro is where it gets rendered — the
 // two lists have to stay in step.
@@ -150,6 +193,40 @@ const pageBlocks = [
       { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
       { type: 'string', name: 'url', label: 'Facebook album URL' },
       { type: 'string', name: 'linkText', label: 'Link text' },
+    ],
+  },
+  {
+    // An escape hatch, not a replacement — the nine sections above cover
+    // ordinary editing and are left exactly as they are. This one is for
+    // the rarer case where none of those shapes fit: it lets an editor
+    // stack a heading, a paragraph, an image, a button and a video in
+    // any order and any combination.
+    name: 'flexible',
+    label: 'Flexible section',
+    fields: [
+      {
+        type: 'string', name: 'layout', label: 'Arrangement',
+        options: [
+          { label: 'Stacked', value: 'stack' },
+          { label: 'Two columns', value: 'columns' },
+        ],
+      },
+      {
+        type: 'object', name: 'items', label: 'Contents', list: true,
+        description: 'Add pieces in whatever order you like — heading, paragraph, image, button, or video.',
+        templates: flexibleItems,
+        // Without this the sidebar list reads "Item 1, Item 2, Item 3".
+        // Falls back to the kind of piece if it has no text yet, and
+        // never throws on a blank or half-filled-in row.
+        ui: {
+          itemProps: (item) => {
+            const kind = flexibleItems.find((t) => t.name === item?._template)?.label
+              || item?._template || 'Item';
+            const text = item?.text || item?.alt || item?.url || '';
+            return { label: text ? `${kind}: ${text}` : kind };
+          },
+        },
+      },
     ],
   },
 ];

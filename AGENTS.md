@@ -47,6 +47,12 @@ schemas in `src/content.config.ts` validate the same files. **Both must agree**
   described below.
 - The four top-level menu items are fixed in `NAV_PARENTS` in
   `src/layouts/Base.astro`, so the menu cannot be emptied from the CMS.
+- There is a tenth section, **`flexible`**, alongside the nine ready-made
+  ones — an escape hatch for composing a section from small pieces (heading,
+  paragraph, image, button, video) in any order, rather than choosing a
+  fixed shape. Its component list is `flexibleItems` in `tina/config.ts`,
+  right above `pageBlocks`. See "Flexible sections" in `DEVELOPMENT.md`
+  before touching either it or `pageBlocks`.
 
 ## Running it
 
@@ -91,14 +97,3 @@ without the size mismatch CJK fallback normally causes. Leave them alone.
 
 The congregation pages (`/english`, `/cantonese`, `/mandarin`) are separate
 content with their own titles, **not** translations of each other.
-
-## Planned work
-
-`DEVELOPMENT.md` ends with a section headed **"Idea, recorded but NOT built:
-flexible sections"** — letting an editor compose a section from small
-components (heading, paragraph, image, button, video) rather than choosing a
-fixed shape. It is a full design note: the schema, the four things that also
-have to change, what to reuse, and why depth is the risk.
-
-Read it before touching `pageBlocks`, and treat it as the spec rather than
-designing afresh.

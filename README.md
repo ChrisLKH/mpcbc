@@ -114,10 +114,15 @@ and drag the handle on the left to reorder — the list is drag-and-drop.
 | **Service board** | The live Sunday times and links |
 | **Announcements** / **Recent sermons** | Pulls the latest in automatically |
 | **Facebook album** | An embedded album |
+| **Flexible** | Build your own from small pieces — heading, paragraph, image, button, video — in any order |
 
-Sections are a flat list — one cannot be dropped inside another. So if you
-want a button beneath a picture-and-text, use the **Button text** field on
-that section rather than looking for a way to nest a Buttons section in it.
+The section list itself is flat — one section cannot be dropped inside
+another. So if you want a button beneath a picture-and-text, use the
+**Button text** field on that section rather than looking for a way to nest a
+Buttons section in it. A **Flexible** section is the exception: it holds its
+own small stack of pieces, so if none of the ready-made sections fit, add a
+Flexible one and build it from heading, paragraph, image, button and video
+pieces in whatever order you like.
 
 ### Common edits
 

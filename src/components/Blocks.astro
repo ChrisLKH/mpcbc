@@ -35,28 +35,52 @@ const field = (obj, prop) => tinaField(obj, prop) || undefined;
  */
 const BLOCK_NAMES = [
   'textBlock', 'imageText', 'gallery', 'videoEmbed', 'buttons',
-  'serviceBoard', 'announcements', 'recentSermons', 'facebookAlbum',
+  'serviceBoard', 'announcements', 'recentSermons', 'facebookAlbum', 'flexible',
 ];
 
-function normalise(block) {
+// The component library that can appear INSIDE a 'flexible' section —
+// see flexibleItems in tina/config.ts. Same three shapes, a different
+// name list, so it needs its own pass through the same logic below.
+const ITEM_NAMES = ['heading', 'paragraph', 'image', 'button', 'video'];
+
+function normaliseAgainst(block, names) {
   if (!block) return null;
   if (block.discriminant) return block;
 
   // Tina file data names the template exactly.
   const template = String(block._template || '');
-  if (BLOCK_NAMES.includes(template)) {
+  if (names.includes(template)) {
     return { discriminant: template, value: block };
   }
 
   // Tina GraphQL data prefixes it, e.g. PagesSectionsTextBlock.
   const typename = String(block.__typename || '');
-  const match = BLOCK_NAMES.find((name) =>
+  const match = names.find((name) =>
     typename.toLowerCase().endsWith(name.toLowerCase())
   );
   return match ? { discriminant: match, value: block } : null;
 }
 
+const normalise = (block) => normaliseAgainst(block, BLOCK_NAMES);
+const normaliseItem = (item) => normaliseAgainst(item, ITEM_NAMES);
+
 const blocks = (sections || []).map(normalise).filter(Boolean);
+
+/**
+ * Pulls an 11-character YouTube video ID out of a watch/share/embed URL,
+ * or passes a bare ID straight through. The flexible section's video
+ * component stores whatever an editor pastes; the videoEmbed section
+ * stores a bare ID already, so both need to work.
+ */
+function youtubeId(input) {
+  const value = String(input || '').trim();
+  if (!value) return '';
+  if (/^[\w-]{11}$/.test(value)) return value;
+  const match = value.match(
+    /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|live\/))([\w-]{11})/
+  );
+  return match ? match[1] : '';
+}
 
 const today = new Date();
 
@@ -247,6 +271,89 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
     );
   }
 
+  if (block.discriminant === 'flexible') {
+    const items = (v.items || []).map(normaliseItem).filter(Boolean);
+    if (!items.length) return null;
+    return (
+      <section class="section" data-tina-field={field(v)}>
+        <div class="wrap">
+          <div
+            class={`flexstack ${v.layout === 'columns' ? 'flexstack--columns' : ''}`}
+            data-tina-field={field(v, 'items')}
+          >
+            {items.map((item) => {
+              const iv = item.value;
+
+              if (item.discriminant === 'heading') {
+                if (!iv.text) return null;
+                return (
+                  <div data-tina-field={field(iv)}>
+                    <h2 data-tina-field={field(iv, 'text')}>{iv.text}</h2>
+                  </div>
+                );
+              }
+
+              if (item.discriminant === 'paragraph') {
+                if (!iv.text) return null;
+                return (
+                  <div data-tina-field={field(iv)}>
+                    <p data-tina-field={field(iv, 'text')}>{iv.text}</p>
+                  </div>
+                );
+              }
+
+              if (item.discriminant === 'image') {
+                if (!iv.src) return null;
+                return (
+                  <div data-tina-field={field(iv)}>
+                    <img
+                      data-tina-field={field(iv, 'src')}
+                      src={iv.src}
+                      alt={iv.alt || ''}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                );
+              }
+
+              if (item.discriminant === 'button') {
+                if (!iv.text) return null;
+                return (
+                  <p class="btnrow" data-tina-field={field(iv)}>
+                    <a class="btn" href={iv.url || '#'} data-tina-field={field(iv, 'text')}>
+                      {iv.text}
+                    </a>
+                  </p>
+                );
+              }
+
+              if (item.discriminant === 'video') {
+                const id = youtubeId(iv.url);
+                if (!id) return null;
+                return (
+                  <div data-tina-field={field(iv)}>
+                    <div class="embed" data-tina-field={field(iv, 'url')}>
+                      <iframe
+                        src={`https://www.youtube-nocookie.com/embed/${id}`}
+                        title="Video"
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                );
+              }
+
+              return null;
+            })}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return null;
 })}
 
@@ -302,4 +409,23 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
   .embed__cap { font-size: var(--step--1); color: var(--ink-soft); margin-top: 0.75rem; }
 
   .btnrow { display: flex; flex-wrap: wrap; gap: 0.75rem; max-width: none; }
+
+  /* Flexible section: a generic stack that has to look right whatever
+     components an editor puts in it and in whatever order, so it only
+     sets spacing and never assumes what comes next. */
+  .flexstack { display: grid; gap: 1.25rem; }
+  /* Headings and paragraphs carry their own bottom margin from
+     global.css. Left alone it stacks on top of the grid gap, so the
+     spacing would depend on which components happen to sit next to
+     each other. The grid owns the rhythm; the components contribute
+     none. */
+  .flexstack > * { margin-block: 0; }
+  .flexstack > * > :last-child { margin-bottom: 0; }
+  .flexstack img {
+    max-width: 100%; height: auto; border-radius: var(--radius);
+    background: var(--tint);
+  }
+  @media (min-width: 44rem) {
+    .flexstack--columns { grid-template-columns: 1fr 1fr; align-items: start; gap: 2rem; }
+  }
 </style>

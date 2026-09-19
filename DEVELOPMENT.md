@@ -476,9 +476,7 @@ content with their own titles and descriptions, not translations of each other.
 
 ---
 
-## Idea, recorded but NOT built: flexible sections
-
-Status: **design note only.** Nothing below exists in the code yet.
+## Flexible sections
 
 ### The problem
 
@@ -495,11 +493,11 @@ Tina supports this. In `@tinacms/schema-tools`, `ObjectField` is either
 `{ fields }` or `{ templates }`, and `Template.fields` accepts `ObjectField`
 again — so block lists nest recursively.
 
-**Keep all nine presets exactly as they are** and add a tenth alongside them.
-Ordinary editing is unchanged; the new one is an escape hatch, not a
-replacement. Replacing the presets with one generic container would cost the
-purpose-built sections (service board, recent sermons) their simplicity and
-make every page a nesting exercise.
+**All nine presets are kept exactly as they were**, with a tenth alongside
+them. Ordinary editing is unchanged; the new one is an escape hatch, not a
+replacement. Replacing the presets with one generic container would have cost
+the purpose-built sections (service board, recent sermons) their simplicity
+and made every page a nesting exercise.
 
 ```js
 // tina/config.ts — the component library that can appear INSIDE a section
@@ -516,7 +514,7 @@ const flexibleItems = [
     fields: [{ type: 'string', name: 'text', label: 'Button text' },
              { type: 'string', name: 'url',  label: 'Link' }] },
   { name: 'video',     label: 'Video',
-    fields: [{ type: 'string', name: 'url', label: 'Video URL' }] },
+    fields: [{ type: 'string', name: 'url', label: 'Video link or ID' }] },
 ];
 
 // ...added to pageBlocks alongside the existing nine
@@ -531,32 +529,63 @@ const flexibleItems = [
       list: true,
       templates: flexibleItems,
       // Without this the sidebar list reads "Item 1, Item 2, Item 3".
-      ui: { itemProps: (item) => ({ label: item?.text || item?._template }) } },
+      // Labels each row with its kind and its text, e.g. "Button: Give
+      // now" — falls back to the kind alone, and never throws on a
+      // blank or half-filled-in row.
+      ui: { itemProps: (item) => {
+        const kind = flexibleItems.find((t) => t.name === item?._template)?.label
+          || item?._template || 'Item';
+        const text = item?.text || item?.alt || item?.url || '';
+        return { label: text ? `${kind}: ${text}` : kind };
+      } } },
   ],
 }
 ```
 
-### What else has to change
+Both `pages` and `homepage` point their `sections` field at the same
+`pageBlocks` array, so the flexible section is available in both without any
+extra wiring.
 
-1. **`src/components/Blocks.astro`** — add `'flexible'` to `BLOCK_NAMES`, then
-   a branch that maps over `v.items`. Each item carries its own `_template`,
-   so the existing `normalise()` logic applies unchanged at the inner level —
-   it just needs a second name list for the component templates.
+### What it does
 
-   Reuse rather than invent. The file already defines `.split`, `.btnrow`,
-   `.cards`, `.embed` and friends in its own `<style>` block near the bottom
-   (around line 277); `.section`, `.wrap`, `.wrap--narrow`, `.btn`,
-   `.btn--ghost` and `.eyebrow` come from `src/styles/global.css`. A flexible
-   section should wrap in `<section class="section"><div class="wrap">` like
-   every other block, and its button component should emit exactly the markup
-   the `buttons` block does, or the two will drift apart visually.
-2. **CSS** — the presets each have bespoke layout (`split`, `wrap--narrow`).
-   A flexible section needs a generic stack with a sensible gap, plus a
-   two-column variant that collapses on narrow screens, and it has to look
-   right for *any* ordering of components.
-3. **`tinaField` markers** must be threaded to the nested items, or visual
-   editing silently stops working inside flexible sections while continuing
-   to work everywhere else — the confusing failure, not the obvious one.
+1. **`src/components/Blocks.astro`** — `'flexible'` is in `BLOCK_NAMES`, and a
+   branch maps over `v.items`. Each item carries its own `_template`, so the
+   three-shape normalising logic (Keystatic `discriminant`, Tina file
+   `_template`, Tina GraphQL `__typename`) applies unchanged at the inner
+   level; it was factored into a shared `normaliseAgainst(block, names)` so
+   the outer and inner passes reuse one function against two name lists
+   (`BLOCK_NAMES` and `ITEM_NAMES`) instead of duplicating it.
+
+   It reuses rather than invents: the file's own `<style>` block supplies
+   `.btnrow` and `.embed`, and `.section`, `.wrap`, `.btn` and `.btn--ghost`
+   come from `src/styles/global.css`. A flexible section wraps in
+   `<section class="section"><div class="wrap">` like every other block, its
+   button component emits exactly the markup the `buttons` block does, and
+   its video component emits exactly the markup the `videoEmbed` block does
+   — same `.embed` wrapper, same youtube-nocookie iframe. A small helper,
+   `youtubeId()`, pulls the 11-character ID out of a pasted `watch?v=`,
+   `youtu.be/`, `/embed/` or `/live/` link, or passes a bare ID through
+   unchanged, so the field can take either. Any component with nothing to
+   show — no text, no image, no extractable video ID — renders nothing
+   rather than an empty tag.
+2. **CSS** — `.flexstack` is a generic grid stack, and `.flexstack--columns`
+   adds a two-column variant above the file's usual `44rem` breakpoint,
+   collapsing to one column below it. Images inherit the site-wide
+   `max-width: 100%` and pick up `var(--radius)` to match the other blocks.
+
+   The one non-obvious rule is that the stack **zeroes its children's own
+   margins**. `global.css` gives every `h2` a `0.5em` bottom margin and every
+   `p` a `1em` one, which would add to the grid gap — so the space between
+   two components would depend on which two they happened to be, and an
+   editor reordering items would see the spacing change for no visible
+   reason. The grid owns the rhythm; the components contribute none. This is
+   what "looks right for *any* ordering" actually requires.
+3. **`tinaField` markers** are threaded to the nested items: each item's DOM
+   wrapper carries `field(iv)` and its editable field carries
+   `field(iv, 'text' | 'src' | 'url')`, the same pattern the `gallery` block
+   already used for its photos. Skipping this was the risk called out below
+   — visual editing would have silently stopped working inside flexible
+   sections while continuing to work everywhere else.
 4. **No Zod change needed.** `sections` is `z.array(z.any())` in
    `src/content.config.ts`, so nested content validates as-is.
 
