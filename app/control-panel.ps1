@@ -445,14 +445,21 @@ $btnOpenEditor.Add_Click({ Open-Url $script:AdminUrl })
 $btnPublish.Add_Click({ Start-Job-Script -Script 'publish.ps1' -Label 'Publishing...' })
 $btnUndo.Add_Click({ Start-Job-Script -Script 'undo.ps1' -Label 'Undoing...' })
 
-$btnHelp.Add_Click({
-  # Always the GitHub-rendered guide, never the local file. Opening
-  # GUIDE.md from disk hands someone raw Markdown in whatever program
-  # claims .md - Notepad, as often as not. GitHub renders the headings,
-  # tables and the window mock-up properly, which is the whole point of
-  # having written them.
-  Open-Url $script:GuideUrl
-})
+# Help answers two different questions depending on the day. "How do I pin
+# an announcement?" wants the short reference; "I have never done this
+# before" wants the full walkthrough. One button, two entries - the second
+# is far more common, so it is listed first.
+#
+# Both are the GitHub-rendered pages, never the local .md files: opening
+# those from disk hands someone raw Markdown in whatever claims the
+# extension, usually Notepad.
+$helpMenu = New-Object System.Windows.Forms.ContextMenuStrip
+$helpCommon = $helpMenu.Items.Add('Common questions  -  how do I...?')
+$helpCommon.Add_Click({ Open-Url $script:ReadmeUrl })
+$helpFull = $helpMenu.Items.Add('Full guide  -  start to finish')
+$helpFull.Add_Click({ Open-Url $script:GuideUrl })
+
+$btnHelp.Add_Click({ $helpMenu.Show($btnHelp, 0, $btnHelp.Height) })
 
 $menu = New-Object System.Windows.Forms.ContextMenuStrip
 foreach ($entry in @(

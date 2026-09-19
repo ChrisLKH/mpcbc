@@ -25,6 +25,9 @@ $script:AdminUrl  = "http://localhost:$script:AstroPort/admin"
 $script:RepoUrl   = 'https://github.com/ChrisLKH/mpcbc'
 $script:ActionsUrl = "$script:RepoUrl/actions"
 $script:GuideUrl  = "$script:RepoUrl/blob/main/GUIDE.md"
+# The repository front page. GitHub renders README.md there automatically,
+# so this is the shortest route to the "common edits" tables.
+$script:ReadmeUrl = $script:RepoUrl
 
 # Portable Git/Node land here when the machine has no admin rights. Kept
 # outside the repo so "Undo All Changes" can never remove the toolchain.
