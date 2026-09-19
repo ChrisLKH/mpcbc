@@ -41,6 +41,10 @@ schemas in `src/content.config.ts` validate the same files. **Both must agree**
 - **Never touch `.env`.** It is gitignored and may hold a real Tina token.
 - Adding a new section block means editing **both** `tina/config.ts` and
   `src/components/Blocks.astro`. One without the other renders nothing.
+  `BLOCK_NAMES` in `Blocks.astro` must list it too, or `normalise()` drops it
+  silently. **Stop the dev server before editing `tina/config.ts`** — editing
+  a config while Vite is running is the usual cause of the `deps_ssr` failure
+  described below.
 - The four top-level menu items are fixed in `NAV_PARENTS` in
   `src/layouts/Base.astro`, so the menu cannot be emptied from the CMS.
 
@@ -87,3 +91,14 @@ without the size mismatch CJK fallback normally causes. Leave them alone.
 
 The congregation pages (`/english`, `/cantonese`, `/mandarin`) are separate
 content with their own titles, **not** translations of each other.
+
+## Planned work
+
+`DEVELOPMENT.md` ends with a section headed **"Idea, recorded but NOT built:
+flexible sections"** — letting an editor compose a section from small
+components (heading, paragraph, image, button, video) rather than choosing a
+fixed shape. It is a full design note: the schema, the four things that also
+have to change, what to reuse, and why depth is the risk.
+
+Read it before touching `pageBlocks`, and treat it as the spec rather than
+designing afresh.

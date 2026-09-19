@@ -522,6 +522,14 @@ const flexibleItems = [
    a branch that maps over `v.items`. Each item carries its own `_template`,
    so the existing `normalise()` logic applies unchanged at the inner level —
    it just needs a second name list for the component templates.
+
+   Reuse rather than invent. The file already defines `.split`, `.btnrow`,
+   `.cards`, `.embed` and friends in its own `<style>` block near the bottom
+   (around line 277); `.section`, `.wrap`, `.wrap--narrow`, `.btn`,
+   `.btn--ghost` and `.eyebrow` come from `src/styles/global.css`. A flexible
+   section should wrap in `<section class="section"><div class="wrap">` like
+   every other block, and its button component should emit exactly the markup
+   the `buttons` block does, or the two will drift apart visually.
 2. **CSS** — the presets each have bespoke layout (`split`, `wrap--narrow`).
    A flexible section needs a generic stack with a sensible gap, plus a
    two-column variant that collapses on narrow screens, and it has to look
