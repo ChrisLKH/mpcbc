@@ -114,7 +114,7 @@ and drag the handle on the left to reorder — the list is drag-and-drop.
 | **Service board** | The live Sunday times and links |
 | **Announcements** / **Recent sermons** | Pulls the latest in automatically |
 | **Facebook album** | An embedded album |
-| **Flexible** | Build your own from small pieces — heading, paragraph, image, button, video — in any order |
+| **Flexible** | Build your own from small pieces — heading, paragraph, image, button, video — in any order, each full or half width |
 
 The section list itself is flat — one section cannot be dropped inside
 another. So if you want a button beneath a picture-and-text, use the
@@ -123,6 +123,13 @@ Buttons section in it. A **Flexible** section is the exception: it holds its
 own small stack of pieces, so if none of the ready-made sections fit, add a
 Flexible one and build it from heading, paragraph, image, button and video
 pieces in whatever order you like.
+
+Each piece in a Flexible section has a **Width**. Leave it on *Full width*
+and the piece sits on its own line; set two pieces in a row to *Half width*
+and they sit side by side. So a heading, a paragraph under it, then a
+picture and some words in two columns beneath is: heading full, paragraph
+full, picture half, words half. On a phone everything stacks into one
+column by itself, whatever you choose.
 
 ### Common edits
 

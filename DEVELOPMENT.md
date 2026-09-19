@@ -522,9 +522,8 @@ const flexibleItems = [
   name: 'flexible',
   label: 'Flexible section',
   fields: [
-    { type: 'string', name: 'layout', label: 'Arrangement',
-      options: [{ label: 'Stacked', value: 'stack' },
-                { label: 'Two columns', value: 'columns' }] },
+    // No section-wide "stacked or two columns": each piece carries its
+    // own `width` (full | half) from the shared widthField above.
     { type: 'object', name: 'items', label: 'Contents',
       list: true,
       templates: flexibleItems,
@@ -568,9 +567,19 @@ extra wiring.
    unchanged, so the field can take either. Any component with nothing to
    show — no text, no image, no extractable video ID — renders nothing
    rather than an empty tag.
-2. **CSS** — `.flexstack` is a generic grid stack, and `.flexstack--columns`
-   adds a two-column variant above the file's usual `44rem` breakpoint,
-   collapsing to one column below it. Images inherit the site-wide
+2. **CSS** — `.flexstack` is a two-column grid above the file's usual
+   `44rem` breakpoint, in which **every piece spans both columns unless it
+   is marked half width** (`.flexstack__half`, `grid-column: span 1`).
+
+   This is why there is no section-wide arrangement setting. A single
+   "stacked or two columns" switch cannot express the common case — a
+   heading and a paragraph across the top, then two columns beneath them —
+   because the section would have to be one shape or the other. Per-piece
+   width covers all three: all full is a stack, all half is two columns,
+   and a mix is a mix. It also adds no nesting, which a "row" container
+   would have. An odd half-width piece leaves the other column empty.
+   Below the breakpoint the grid is a single column, so `half` needs no
+   separate mobile handling. Images inherit the site-wide
    `max-width: 100%` and pick up `var(--radius)` to match the other blocks.
 
    The one non-obvious rule is that the stack **zeroes its children's own
@@ -580,10 +589,14 @@ extra wiring.
    editor reordering items would see the spacing change for no visible
    reason. The grid owns the rhythm; the components contribute none. This is
    what "looks right for *any* ordering" actually requires.
-3. **`tinaField` markers** are threaded to the nested items: each item's DOM
-   wrapper carries `field(iv)` and its editable field carries
-   `field(iv, 'text' | 'src' | 'url')`, the same pattern the `gallery` block
-   already used for its photos. Skipping this was the risk called out below
+3. **`tinaField` markers** are threaded to the nested items: every piece
+   renders its own content, then gets one common wrapper that carries both
+   the width class and `field(iv)`, while the content inside carries
+   `field(iv, 'text' | 'src' | 'url')` — the same pattern the `gallery`
+   block already used for its photos. The shared wrapper is also what makes
+   the pieces line up: a button row and an image are the same kind of grid
+   item because they sit in the same box, not because their own markup was
+   made to match. Skipping this was the risk called out below
    — visual editing would have silently stopped working inside flexible
    sections while continuing to work everywhere else.
 4. **No Zod change needed.** `sections` is `z.array(z.any())` in

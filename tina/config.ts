@@ -27,6 +27,24 @@ const CONGREGATIONS = [
   { label: 'Mandarin 國語', value: 'mandarin' },
 ];
 
+// Every piece in a flexible section carries this. A section is a
+// two-column grid: full-width pieces span both columns, so a run of them
+// reads as an ordinary stack, and two half-width pieces in a row sit side
+// by side. That is what lets one section be a heading and a paragraph
+// across the top with two columns underneath, rather than forcing the
+// whole section to be one shape or the other.
+const widthField = {
+  type: 'string',
+  name: 'width',
+  label: 'Width',
+  description:
+    'Full width sits on its own line. Two Half width pieces in a row sit side by side.',
+  options: [
+    { label: 'Full width', value: 'full' },
+    { label: 'Half width', value: 'half' },
+  ],
+};
+
 // The component library for the "Flexible section" escape hatch below —
 // small pieces an editor can stack in any order, instead of choosing one
 // of the nine ready-made shapes. Blocks.astro renders these too, and
@@ -35,12 +53,15 @@ const flexibleItems = [
   {
     name: 'heading',
     label: 'Heading',
-    fields: [{ type: 'string', name: 'text', label: 'Text' }],
+    fields: [{ type: 'string', name: 'text', label: 'Text' }, widthField],
   },
   {
     name: 'paragraph',
     label: 'Paragraph',
-    fields: [{ type: 'string', name: 'text', label: 'Text', ui: { component: 'textarea' } }],
+    fields: [
+      { type: 'string', name: 'text', label: 'Text', ui: { component: 'textarea' } },
+      widthField,
+    ],
   },
   {
     name: 'image',
@@ -48,6 +69,7 @@ const flexibleItems = [
     fields: [
       { type: 'image', name: 'src', label: 'Image' },
       { type: 'string', name: 'alt', label: 'Describe the image' },
+      widthField,
     ],
   },
   {
@@ -56,6 +78,7 @@ const flexibleItems = [
     fields: [
       { type: 'string', name: 'text', label: 'Button text' },
       { type: 'string', name: 'url', label: 'Link' },
+      widthField,
     ],
   },
   {
@@ -66,6 +89,7 @@ const flexibleItems = [
         type: 'string', name: 'url', label: 'Video link or ID',
         description: 'Paste the YouTube web address, or just the part after v= in it.',
       },
+      widthField,
     ],
   },
 ];
@@ -204,26 +228,25 @@ const pageBlocks = [
     name: 'flexible',
     label: 'Flexible section',
     fields: [
-      {
-        type: 'string', name: 'layout', label: 'Arrangement',
-        options: [
-          { label: 'Stacked', value: 'stack' },
-          { label: 'Two columns', value: 'columns' },
-        ],
-      },
+      // No section-wide "stacked or two columns" choice: each piece
+      // carries its own Width instead, so one section can be a heading
+      // and a paragraph across the top with two columns beneath it.
       {
         type: 'object', name: 'items', label: 'Contents', list: true,
         description: 'Add pieces in whatever order you like — heading, paragraph, image, button, or video.',
         templates: flexibleItems,
         // Without this the sidebar list reads "Item 1, Item 2, Item 3".
         // Falls back to the kind of piece if it has no text yet, and
-        // never throws on a blank or half-filled-in row.
+        // never throws on a blank or half-filled-in row. Half-width
+        // pieces are marked, because which ones pair up is otherwise
+        // invisible in a flat list.
         ui: {
           itemProps: (item) => {
             const kind = flexibleItems.find((t) => t.name === item?._template)?.label
               || item?._template || 'Item';
             const text = item?.text || item?.alt || item?.url || '';
-            return { label: text ? `${kind}: ${text}` : kind };
+            const half = item?.width === 'half' ? ' (half)' : '';
+            return { label: (text ? `${kind}: ${text}` : kind) + half };
           },
         },
       },

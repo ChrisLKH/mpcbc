@@ -277,50 +277,43 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
     return (
       <section class="section" data-tina-field={field(v)}>
         <div class="wrap">
-          <div
-            class={`flexstack ${v.layout === 'columns' ? 'flexstack--columns' : ''}`}
-            data-tina-field={field(v, 'items')}
-          >
+          <div class="flexstack" data-tina-field={field(v, 'items')}>
             {items.map((item) => {
               const iv = item.value;
 
-              if (item.discriminant === 'heading') {
-                if (!iv.text) return null;
-                return (
-                  <div data-tina-field={field(iv)}>
-                    <h2 data-tina-field={field(iv, 'text')}>{iv.text}</h2>
-                  </div>
+              /**
+               * Each piece renders its own content, then gets one common
+               * wrapper below. The wrapper is what carries the width and
+               * the item-level edit marker, so every piece is a grid item
+               * of the same kind however it is built — a button row and an
+               * image line up because they are the same box, not because
+               * their own markup was made to match.
+               */
+              let inner = null;
+
+              if (item.discriminant === 'heading' && iv.text) {
+                inner = <h2 data-tina-field={field(iv, 'text')}>{iv.text}</h2>;
+              }
+
+              if (item.discriminant === 'paragraph' && iv.text) {
+                inner = <p data-tina-field={field(iv, 'text')}>{iv.text}</p>;
+              }
+
+              if (item.discriminant === 'image' && iv.src) {
+                inner = (
+                  <img
+                    data-tina-field={field(iv, 'src')}
+                    src={iv.src}
+                    alt={iv.alt || ''}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 );
               }
 
-              if (item.discriminant === 'paragraph') {
-                if (!iv.text) return null;
-                return (
-                  <div data-tina-field={field(iv)}>
-                    <p data-tina-field={field(iv, 'text')}>{iv.text}</p>
-                  </div>
-                );
-              }
-
-              if (item.discriminant === 'image') {
-                if (!iv.src) return null;
-                return (
-                  <div data-tina-field={field(iv)}>
-                    <img
-                      data-tina-field={field(iv, 'src')}
-                      src={iv.src}
-                      alt={iv.alt || ''}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                );
-              }
-
-              if (item.discriminant === 'button') {
-                if (!iv.text) return null;
-                return (
-                  <p class="btnrow" data-tina-field={field(iv)}>
+              if (item.discriminant === 'button' && iv.text) {
+                inner = (
+                  <p class="btnrow">
                     <a class="btn" href={iv.url || '#'} data-tina-field={field(iv, 'text')}>
                       {iv.text}
                     </a>
@@ -330,9 +323,8 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
 
               if (item.discriminant === 'video') {
                 const id = youtubeId(iv.url);
-                if (!id) return null;
-                return (
-                  <div data-tina-field={field(iv)}>
+                if (id) {
+                  inner = (
                     <div class="embed" data-tina-field={field(iv, 'url')}>
                       <iframe
                         src={`https://www.youtube-nocookie.com/embed/${id}`}
@@ -342,11 +334,17 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
                         allowfullscreen
                       ></iframe>
                     </div>
-                  </div>
-                );
+                  );
+                }
               }
 
-              return null;
+              if (!inner) return null;
+              return (
+                <div
+                  class={iv.width === 'half' ? 'flexstack__half' : undefined}
+                  data-tina-field={field(iv)}
+                >{inner}</div>
+              );
             })}
           </div>
         </div>
@@ -425,7 +423,16 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
     max-width: 100%; height: auto; border-radius: var(--radius);
     background: var(--tint);
   }
+  /* Two columns, with every piece spanning both unless it says otherwise.
+     That is what lets one section mix the two: a heading and a paragraph
+     across the top, then two half-width pieces side by side under them.
+     An odd half-width piece simply leaves the other column empty, which
+     is the sane reading of what the editor asked for. Below the
+     breakpoint the grid is a single column and every piece stacks, so
+     `half` needs no separate mobile handling. */
   @media (min-width: 44rem) {
-    .flexstack--columns { grid-template-columns: 1fr 1fr; align-items: start; gap: 2rem; }
+    .flexstack { grid-template-columns: 1fr 1fr; column-gap: 2rem; align-items: start; }
+    .flexstack > * { grid-column: 1 / -1; }
+    .flexstack > .flexstack__half { grid-column: span 1; }
   }
 </style>
