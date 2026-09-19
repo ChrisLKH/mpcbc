@@ -67,7 +67,6 @@ publish, so closing the window and returning tomorrow is always a safe answer.
 | `app/open-tools.ps1` | Explorer / VS Code / Claude Code / Codex / Antigravity |
 | `app/make-setup-zip.ps1` | Builds `MPCBC-Website-Setup.zip` |
 | `app/make-icon.ps1` | Builds `app/mpcbc.ico` from `public/images/logo-square.png` |
-| `app/mac/` | Old, **unmaintained** shell equivalents. They predate the control panel |
 
 ### Five things that look arbitrary and are not
 
@@ -94,6 +93,27 @@ Each of these was a real failure before it was a line of code:
 working on this repo.
 
 ---
+
+### Windows only, deliberately
+
+The app is Windows-only. Three `.sh` equivalents used to live in `app/mac/`
+and were deleted: they predated the control panel, installed to
+`$HOME/Documents` (iCloud-synced, the same `node_modules` problem the Windows
+installer avoids), carried none of the publish-time safety checks, and their
+`ROOT` path broke when the scripts moved from `scripts/` to `app/`. A broken
+script that looks like support is worse than no script.
+
+Porting is a rewrite of the front, not a port. Most of the ~1,950 lines of
+logic survive once nine primitives are swapped — `taskkill` for process
+groups, `Get-NetTCPConnection` for `lsof`, the registry PATH read for a shell
+profile, `winget` for Homebrew, and so on. The blocker is the ~590-line
+WinForms UI, which has no macOS counterpart: PowerShell 7 runs on macOS,
+`System.Windows.Forms` does not. A Mac equivalent means AppleScript or
+Platypus at lower fidelity, or SwiftUI plus Apple notarisation.
+
+Worth knowing before starting: Preview and Edit Content are browser tabs and
+already work anywhere, and Publish is git. The only genuinely Windows-locked
+piece is starting the servers with a friendly face on it.
 
 ## Run it
 
