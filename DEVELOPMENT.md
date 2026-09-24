@@ -524,6 +524,14 @@ make that work:
   build fails with "Could not resolve '../../tina/__generated__/client'".
 - `name` in `wrangler.toml` is `mpcbc`, matching the dashboard Worker.
 
+If pushes to `main` stop reaching the live site, check **Settings → Build** on
+the `mpcbc` Worker for "This project is disconnected from your Git account".
+That happened in September 2026: the build settings were all correct, but
+Cloudflare was no longer told about pushes, so no build ran and nothing
+reported back to GitHub. A working connection shows a Cloudflare check on
+every commit to `main`. Reconnect the repository there and confirm the
+Cloudflare Workers and Pages GitHub App still has access to `mpcbc`.
+
 ### Why the build must be `build:tina`
 
 `tina/__generated__/` is gitignored, and Astro imports the generated client —
