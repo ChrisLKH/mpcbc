@@ -25,7 +25,10 @@ copy. What you change is what the build publishes.
 
 Field names and their meanings are defined in `tina/config.ts`, and the Zod
 schemas in `src/content.config.ts` validate the same files. **Both must agree**
-— add a field to one and the other rejects the content.
+— add a field to one and the other rejects the content. Two trial editors,
+`/admin-decap` and `/admin-sveltia`, edit the same files through
+`public/cms/shared.js`, which has to list the same fields as well. See "Trial
+editors" in `DEVELOPMENT.md`.
 
 ## Rules that will bite you
 

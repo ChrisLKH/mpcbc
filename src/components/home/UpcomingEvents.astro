@@ -9,10 +9,14 @@ import { render } from 'astro:content';
  */
 const { events = [] } = Astro.props;
 
+// The CMS preview (src/pages/cms-preview) passes a draft that is not a
+// collection entry, so there is nothing to render(); its body shows as
+// plain text instead.
 const rows = await Promise.all(
   events.map(async (e) => ({
     data: e.data,
-    Content: (await render(e)).Content,
+    Content: e.preview ? null : (await render(e)).Content,
+    text: e.preview ? e.body : '',
   }))
 );
 
@@ -40,12 +44,12 @@ const shortDate = (d) =>
 
     {rows.length > 0 ? (
       <ul class="up__list" role="list">
-        {rows.map(({ data, Content }) => (
+        {rows.map(({ data, Content, text }) => (
           <li class="up__row">
             <span class="up__date">{shortDate(data.startDate)}</span>
             <span class="up__main">
               <span class="up__title">{data.title}</span>
-              <span class="up__body"><Content /></span>
+              <span class="up__body">{Content ? <Content /> : text}</span>
             </span>
             {(data.startTime || data.location) && (
               <span class="up__meta">

@@ -253,6 +253,42 @@ labelled "Section" on pages until that was mistaken for the menu field;
 removing it outright would mean making it optional in `src/content.config.ts`
 first.
 
+### Trial editors: Decap and Sveltia
+
+Two browser-only editors are on trial beside Tina, because editors should not
+have to install anything and Tina Cloud's free plan has two seats:
+
+| Page | CMS | Login |
+|---|---|---|
+| `/admin-decap` | Decap CMS | DecapBridge: email invite, password, Google or Microsoft. No GitHub account. |
+| `/admin-sveltia` | Sveltia CMS | GitHub account, via "Sign in with token". Email login is planned for Sveltia 1.0. |
+
+Both load **`public/cms/shared.js`**, which holds the collections and the
+preview. Only the `backend` in each `index.html` differs. The collections
+mirror `tina/config.ts` field for field, and blocks keep Tina's `_template`
+key, so a file saved in any of the three editors reads back in the others and
+in `Blocks.astro`. **A field added to Tina must be added there too**, or these
+editors silently drop it on save.
+
+Both save to the **`cms-trial` branch**, not `main`, so nothing an editor does
+in the trial reaches the live site. The branch has to exist on GitHub first.
+
+**Live preview** is the site itself. The preview panel POSTs the unsaved draft
+to `/cms-preview/<kind>` (`src/pages/cms-preview/[kind].astro`, not
+prerendered), which renders it with `Base`, `Blocks`, `Hero`,
+`AnnouncementCarousel` and `UpcomingEvents` and returns HTML shown in a
+script-less iframe. A new section in `Blocks.astro` previews with no change
+here. The route renders whatever it is sent under the church's domain, so it
+answers only a same-origin JSON POST, and returns 404 for anything else. It
+works on the deployed site and under `npm run dev`. The admin page and the
+site have to share an origin.
+
+**Setting up DecapBridge:** sign in at decapbridge.com with GitHub, add the
+site, install its GitHub App on `ChrisLKH/mpcbc`, and register
+`https://mpcbc.org` (plus `http://localhost:4321` for local testing). Put the
+site ID it gives you into `identity_url` in `public/admin-decap/index.html`,
+and invite editors by email from its dashboard.
+
 ---
 
 ## The Sunday livestream board

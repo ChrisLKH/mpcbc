@@ -1,0 +1,132 @@
+---
+/**
+ * Live preview for the trial editors (/admin-decap, /admin-sveltia).
+ *
+ * The editor POSTs the draft it is holding; this renders it with the real
+ * layout and components and returns the page. The editor shows that HTML
+ * in its right-hand panel. Nothing is saved or read back — the draft only
+ * exists for the length of this request.
+ *
+ * Same idea as the Tina island route, without Tina: the preview is the
+ * site itself, so there is no second copy of the design to keep in step.
+ *
+ * Guarding it matters, because it renders whatever it is sent under the
+ * church's domain. It only answers a JSON POST from this same site: a
+ * cross-site form cannot send JSON, and a cross-site fetch would carry a
+ * foreign Origin. The response is never meant to be opened directly, so
+ * it is also marked sandboxed and noindex.
+ */
+import Base from '../../layouts/Base.astro';
+import Blocks from '../../components/Blocks.astro';
+import Hero from '../../components/home/Hero.astro';
+import AnnouncementCarousel from '../../components/home/AnnouncementCarousel.astro';
+import UpcomingEvents from '../../components/home/UpcomingEvents.astro';
+import servicesData from '../../data/services.json';
+
+export const prerender = false;
+
+const KINDS = ['homepage', 'page', 'announcement', 'event', 'sermon'];
+const { kind } = Astro.params;
+const req = Astro.request;
+
+const sameOrigin = req.headers.get('origin') === new URL(req.url).origin;
+const isJson = (req.headers.get('content-type') || '').startsWith('application/json');
+
+if (req.method !== 'POST' || !sameOrigin || !isJson || !KINDS.includes(kind)) {
+  return new Response('Not found', { status: 404 });
+}
+
+let body;
+try {
+  body = await req.json();
+} catch {
+  return new Response('Bad request', { status: 400 });
+}
+
+const data = body?.data && typeof body.data === 'object' ? body.data : {};
+const slug = String(body?.slug || 'new-page');
+
+Astro.response.headers.set('Content-Security-Policy', 'sandbox allow-same-origin');
+Astro.response.headers.set('X-Robots-Tag', 'noindex');
+Astro.response.headers.set('Cache-Control', 'no-store');
+
+// The CMS stores dates as YYYY-MM-DD strings; the components expect the
+// Date objects Astro's content loader would have produced.
+const asDate = (v) => {
+  const d = v ? new Date(v) : new Date();
+  return Number.isNaN(d.getTime()) ? new Date() : d;
+};
+
+const langMap = { en: 'en', 'zh-Hant': 'zh-Hant', 'zh-Hans': 'zh-Hans' };
+const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all: 'All' };
+---
+{kind === 'homepage' && (
+  <Base>
+    <Hero
+      headline={data.heroHeadline || ''}
+      lede={data.heroLede}
+      ctaText={data.heroCtaText}
+      ctaLink={data.heroCtaLink}
+      video={data.heroVideo}
+      image={data.heroImage}
+      services={servicesData.services}
+    />
+    <p class="wrap cmsnote">
+      The designed homepage sections (service board, announcements, pastor's note, children,
+      events) appear here on the live site. Your own sections follow.
+    </p>
+    <Blocks sections={data.sections || []} />
+  </Base>
+)}
+
+{kind === 'page' && (
+  <Base
+    title={`${slug.replace(/-/g, ' ')} — MPCBC`}
+    description={data.description}
+    lang={langMap[data.language] || 'en'}
+  >
+    <Blocks sections={data.sections || []} />
+  </Base>
+)}
+
+{kind === 'announcement' && (
+  <Base>
+    <AnnouncementCarousel announcements={[{ ...data, meta: data.meta || [] }]} />
+  </Base>
+)}
+
+{kind === 'event' && (
+  <Base>
+    <UpcomingEvents
+      events={[{ preview: true, body: data.body || '', data: { ...data, startDate: asDate(data.startDate) } }]}
+    />
+  </Base>
+)}
+
+{kind === 'sermon' && (
+  <Base>
+    <section class="section">
+      <div class="wrap">
+        {data.hide && <p class="cmsnote">Hidden — this sermon does not appear on the website.</p>}
+        <ul class="cards" role="list">
+          <li class="card">
+            <p class="eyebrow">{label[data.congregation] || ''} &middot; {data.date}</p>
+            <h3>{data.title}</h3>
+            {(data.speaker || data.scripture) && (
+              <p class="card__meta">{[data.speaker, data.scripture].filter(Boolean).join(' · ')}</p>
+            )}
+          </li>
+        </ul>
+        {data.notes && <p>{data.notes}</p>}
+      </div>
+    </section>
+  </Base>
+)}
+
+<style is:global>
+  .cmsnote {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    padding-block: 1rem;
+  }
+</style>
