@@ -8,26 +8,29 @@
   "menuOrder": 0,
   "sections": [
     {
+      "_template": "textBlock",
       "heading": "Children & Families",
-      "body": "Children are welcome in every service. Sunday school runs during the 11:00 hour, and a staffed nursery is available for the youngest.",
-      "tinted": false,
-      "_template": "textBlock"
+      "body": "Children are welcome in every service. Sunday school runs during the 11:00 hour, and a staffed nursery is available for the youngest. Test.....",
+      "tinted": false
     },
     {
+      "_template": "gallery",
       "heading": "A look at Sunday school",
       "layout": "grid",
-      "photos": [],
-      "_template": "gallery"
+      "photos": []
     },
     {
+      "_template": "imageText",
       "heading": "Our teachers",
       "body": "Every volunteer who works with children has completed a background check and our safeguarding training.",
       "image": "/images/611012e1da983a8cd31466dc5f5b14ba-Copy.jpg",
       "alt": "",
       "imageSide": "right",
-      "_template": "imageText"
+      "ctaText": "",
+      "ctaLink": ""
     },
     {
+      "_template": "buttons",
       "heading": "Next steps",
       "links": [
         {
@@ -38,8 +41,7 @@
           "text": "Contact the children's team",
           "url": "/contact"
         }
-      ],
-      "_template": "buttons"
+      ]
     }
   ]
 }
