@@ -11,17 +11,22 @@
  * Each optional field is dropped cleanly when blank: an announcement with
  * only a title and summary still renders as a deliberate-looking panel.
  */
-const { announcements = [] } = Astro.props;
+const {
+  announcements = [],
+  label = 'Announcements',
+  labelZh = '最新消息',
+  tinaField,
+} = Astro.props;
 
 const items = announcements.map((a) => a.data ?? a);
 const many = items.length > 1;
 ---
 
 {items.length > 0 && (
-  <section class="news" id="news" aria-labelledby="news-label">
+  <section class="news" id="news" aria-labelledby="news-label" data-tina-field={tinaField}>
     <div class="wrap">
       <p class="rule-label" id="news-label">
-        Announcements <span class="zh-inline" lang="zh-Hant">最新消息</span>
+        {label} {labelZh && <span class="zh-inline" lang="zh-Hant">{labelZh}</span>}
       </p>
 
       <div class="news__panel" data-carousel>

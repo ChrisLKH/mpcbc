@@ -7,7 +7,17 @@ import { render } from 'astro:content';
  * editor already writes to and the copy says so rather than promising an
  * integration that isn't there.
  */
-const { events = [] } = Astro.props;
+const {
+  events = [],
+  label = 'Coming up',
+  labelZh = '近期活動',
+  heading = 'Gatherings and small groups',
+  ctaText = 'Open the church calendar',
+  ctaLink = '/events',
+  note = 'Added through the editor. Anything dated in the future appears here automatically.',
+  emptyText = 'No upcoming events listed right now.',
+  tinaField,
+} = Astro.props;
 
 // The CMS preview (src/pages/cms-preview) passes a draft that is not a
 // collection entry, so there is nothing to render(); its body shows as
@@ -24,23 +34,23 @@ const shortDate = (d) =>
   d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 ---
 
-<section class="up" id="events" aria-labelledby="up-heading">
+<section class="up" id="events" aria-labelledby="up-heading" data-tina-field={tinaField}>
   <div class="wrap">
     <div class="up__head">
       <div>
         <p class="rule-label">
-          Coming up <span class="zh-inline" lang="zh-Hant">近期活動</span>
+          {label} {labelZh && <span class="zh-inline" lang="zh-Hant">{labelZh}</span>}
         </p>
-        <h2 id="up-heading" class="up__heading">Gatherings and small groups</h2>
+        <h2 id="up-heading" class="up__heading">{heading}</h2>
       </div>
-      <div class="up__actions">
-        <a class="btn btn--sm btn--ghost" href="/events">Open the church calendar</a>
-      </div>
+      {ctaText && (
+        <div class="up__actions">
+          <a class="btn btn--sm btn--ghost" href={ctaLink}>{ctaText}</a>
+        </div>
+      )}
     </div>
 
-    <p class="up__note">
-      Added through the editor. Anything dated in the future appears here automatically.
-    </p>
+    {note && <p class="up__note">{note}</p>}
 
     {rows.length > 0 ? (
       <ul class="up__list" role="list">
@@ -60,7 +70,7 @@ const shortDate = (d) =>
         ))}
       </ul>
     ) : (
-      <p class="up__empty">No upcoming events listed right now.</p>
+      <p class="up__empty">{emptyText}</p>
     )}
   </div>
 </section>

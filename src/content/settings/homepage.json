@@ -1,9 +1,72 @@
 {
-  "heroHeadline": "A church for three languages.",
-  "heroLede": "We have gathered in Monterey Park for fifty years. Grandparents worship in Cantonese, parents in Mandarin, children in English — in the same building, on the same morning.",
-  "heroCtaText": "What to expect on Sunday",
-  "heroCtaLink": "/visit",
-  "heroVideo": "",
+  "hero": {
+    "headline": "A church for three languages.",
+    "headlineZh": "一間教會，三種語言",
+    "lede": "We have gathered in Monterey Park for fifty years. Grandparents worship in Cantonese, parents in Mandarin, children in English — in the same building, on the same morning.",
+    "ctaText": "What to expect on Sunday",
+    "ctaLink": "/visit",
+    "video": ""
+  },
+  "serviceTimes": {
+    "label": "This Sunday",
+    "labelZh": "本主日",
+    "heading": "Three congregations, one morning.",
+    "intro": "Each congregation streams on its own channel. Live links update automatically from YouTube — nobody edits this weekly.",
+    "englishBlurb": "Mostly the children and grandchildren of the founding families. Sunday school runs at the same hour.",
+    "cantoneseBlurb": "Our founding congregation. Preaching in Cantonese, tea afterwards in the courtyard.",
+    "mandarinBlurb": "Our newest congregation, with traditional-character subtitles. Sunday school at the same hour.",
+    "footerNote": "Watching from home? Open the player for your congregation. Every service is posted to the sermon archive within a day or two.",
+    "youtubeText": "Our YouTube channels",
+    "youtubeLink": "https://youtube.com/@mpcbc-english"
+  },
+  "announcementsSection": {
+    "label": "Announcements",
+    "labelZh": "最新消息"
+  },
+  "pastorNote": {
+    "name": "Rev. Chan",
+    "nameZh": "陳牧師",
+    "role": "Senior Pastor",
+    "label": "A note from our pastor",
+    "labelZh": "牧者的話",
+    "heading": "You are welcome here, whichever language you pray in.",
+    "body": "We began in 1976 with a handful of families. Today three congregations share this building, and many of our members are the children and grandchildren of the people who started it.",
+    "bodyZh": "若您初次來訪，請放心前來，隨意入座。我們不會請您站起來自我介紹。門口的同工會為您指引兒童教室與後方停車場。",
+    "ctaText": "Read our welcome page",
+    "ctaLink": "/visit"
+  },
+  "children": {
+    "heading": "Children & families",
+    "headingZh": "兒童及家庭事工",
+    "body": "Children are welcome in every service. Sunday school runs during the 11:00 hour in English and the 11:30 hour in Mandarin, and a staffed nursery is open all morning for the youngest.",
+    "note": "Every volunteer who works with children has completed a background check and our safeguarding training.",
+    "ctaText": "Children's ministry",
+    "ctaTextZh": "兒童事工",
+    "ctaLink": "/childrens-ministry",
+    "groups": [
+      {
+        "title": "Nursery · 0–3",
+        "body": "Open 9:15 AM – 12:45 PM, hallway by the courtyard."
+      },
+      {
+        "title": "Sunday school · 4–11",
+        "body": "During the 11:00 and 11:30 services, two rooms upstairs."
+      },
+      {
+        "title": "Youth · 12–18",
+        "body": "Friday evenings in the Fellowship Hall, with supper."
+      }
+    ]
+  },
+  "upcomingEvents": {
+    "label": "Coming up",
+    "labelZh": "近期活動",
+    "heading": "Gatherings and small groups",
+    "note": "Added through the editor. Anything dated in the future appears here automatically.",
+    "ctaText": "Open the church calendar",
+    "ctaLink": "/events",
+    "emptyText": "No upcoming events listed right now."
+  },
   "sections": [
     {
       "heading": "Recent sermons",

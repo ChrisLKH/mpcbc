@@ -18,10 +18,9 @@
  */
 import Base from '../../layouts/Base.astro';
 import Blocks from '../../components/Blocks.astro';
-import Hero from '../../components/home/Hero.astro';
+import Home from '../../components/home/Home.astro';
 import AnnouncementCarousel from '../../components/home/AnnouncementCarousel.astro';
 import UpcomingEvents from '../../components/home/UpcomingEvents.astro';
-import servicesData from '../../data/services.json';
 
 export const prerender = false;
 
@@ -62,20 +61,7 @@ const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all
 ---
 {kind === 'homepage' && (
   <Base>
-    <Hero
-      headline={data.heroHeadline || ''}
-      lede={data.heroLede}
-      ctaText={data.heroCtaText}
-      ctaLink={data.heroCtaLink}
-      video={data.heroVideo}
-      image={data.heroImage}
-      services={servicesData.services}
-    />
-    <p class="wrap cmsnote">
-      The designed homepage sections (service board, announcements, pastor's note, children,
-      events) appear here on the live site. Your own sections follow.
-    </p>
-    <Blocks sections={data.sections || []} />
+    <Home home={data} />
   </Base>
 )}
 

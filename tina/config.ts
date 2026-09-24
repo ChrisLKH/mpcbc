@@ -254,6 +254,14 @@ const pageBlocks = [
   },
 ];
 
+// Names each section in the sidebar list by its kind and its heading, e.g.
+// "Video: A look at our 50th anniversary", instead of just "Video".
+const sectionLabel = (item) => {
+  const kind = pageBlocks.find((t) => t.name === item?._template)?.label
+    || item?._template || 'Section';
+  return { label: item?.heading ? `${kind}: ${item.heading}` : kind };
+};
+
 export default defineConfig({
   branch: process.env.TINA_BRANCH || 'main',
   clientId: process.env.TINA_CLIENT_ID || null,
@@ -337,6 +345,7 @@ export default defineConfig({
             type: 'object', name: 'sections', label: 'Page sections',
             list: true,
             templates: pageBlocks,
+            ui: { itemProps: sectionLabel },
           },
         ],
       },
@@ -351,17 +360,120 @@ export default defineConfig({
           allowedActions: { create: false, delete: false },
           router: () => '/',
         },
+        // In the order they appear on the page. The designed sections are
+        // groups rather than blocks: they are always there and cannot be
+        // moved, only reworded. A blank field falls back to the wording
+        // built into its component (src/components/home/).
         fields: [
-          { type: 'string', name: 'heroHeadline', label: 'Headline', required: true, ui: { component: 'textarea' } },
-          { type: 'string', name: 'heroLede', label: 'Opening paragraph', ui: { component: 'textarea' } },
-          { type: 'string', name: 'heroCtaText', label: 'Button text' },
-          { type: 'string', name: 'heroCtaLink', label: 'Button link' },
-          { type: 'string', name: 'heroVideo', label: 'Hero video URL' },
-          { type: 'image', name: 'heroImage', label: 'Hero image' },
           {
-            type: 'object', name: 'sections', label: 'Page sections',
+            type: 'object', name: 'hero', label: 'Hero section',
+            description: 'The big picture at the top, with the headline.',
+            fields: [
+              { type: 'string', name: 'headline', label: 'Headline', required: true, ui: { component: 'textarea' } },
+              {
+                type: 'string', name: 'headlineZh', label: 'Headline in Chinese',
+                description: 'Shown under the English headline.',
+              },
+              { type: 'string', name: 'lede', label: 'Opening paragraph', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaText', label: 'Button text' },
+              { type: 'string', name: 'ctaLink', label: 'Button link' },
+              { type: 'string', name: 'video', label: 'Background video URL' },
+              {
+                type: 'image', name: 'image', label: 'Background image',
+                description: 'Used when there is no video, and while the video loads.',
+              },
+            ],
+          },
+          {
+            type: 'object', name: 'serviceTimes', label: 'Service times board',
+            description:
+              'The three service cards. Times and live links update from YouTube ' +
+              'by themselves; these are the words around them.',
+            fields: [
+              { type: 'string', name: 'label', label: 'Small label' },
+              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+              { type: 'string', name: 'heading', label: 'Heading' },
+              { type: 'string', name: 'intro', label: 'Intro line', ui: { component: 'textarea' } },
+              { type: 'string', name: 'englishBlurb', label: 'English card text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'cantoneseBlurb', label: 'Cantonese card text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'mandarinBlurb', label: 'Mandarin card text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'footerNote', label: 'Note under the cards', ui: { component: 'textarea' } },
+              { type: 'string', name: 'youtubeText', label: 'YouTube button text' },
+              { type: 'string', name: 'youtubeLink', label: 'YouTube button link' },
+            ],
+          },
+          {
+            type: 'object', name: 'announcementsSection', label: 'Announcements heading',
+            description: 'The announcements themselves are under Announcements.',
+            fields: [
+              { type: 'string', name: 'label', label: 'Small label' },
+              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+            ],
+          },
+          {
+            type: 'object', name: 'pastorNote', label: 'A note from our pastor',
+            fields: [
+              { type: 'image', name: 'portrait', label: 'Portrait photo', description: 'Shown as a circle.' },
+              { type: 'string', name: 'name', label: 'Name' },
+              { type: 'string', name: 'nameZh', label: 'Name in Chinese' },
+              { type: 'string', name: 'role', label: 'Role' },
+              { type: 'string', name: 'label', label: 'Small label' },
+              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+              { type: 'string', name: 'heading', label: 'Heading', ui: { component: 'textarea' } },
+              { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'bodyZh', label: 'Text in Chinese', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaText', label: 'Button text', description: 'Leave blank and no button appears.' },
+              { type: 'string', name: 'ctaLink', label: 'Button link' },
+            ],
+          },
+          {
+            type: 'object', name: 'children', label: 'Children & families',
+            fields: [
+              { type: 'string', name: 'heading', label: 'Heading' },
+              { type: 'string', name: 'headingZh', label: 'Heading in Chinese' },
+              { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'note', label: 'Smaller note', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaText', label: 'Button text', description: 'Leave blank and no button appears.' },
+              { type: 'string', name: 'ctaTextZh', label: 'Button text in Chinese' },
+              { type: 'string', name: 'ctaLink', label: 'Button link' },
+              {
+                type: 'object', name: 'photos', label: 'Photos', list: true,
+                description: 'Up to three: one wide, then two square. Empty spots show a placeholder.',
+                ui: { max: 3, itemProps: (item) => ({ label: item?.alt || 'Photo' }) },
+                fields: [
+                  { type: 'image', name: 'src', label: 'Photo' },
+                  { type: 'string', name: 'alt', label: 'Describe the photo', description: 'For people using a screen reader.' },
+                ],
+              },
+              {
+                type: 'object', name: 'groups', label: 'Age groups', list: true,
+                ui: { itemProps: (item) => ({ label: item?.title || 'Group' }) },
+                fields: [
+                  { type: 'string', name: 'title', label: 'Title' },
+                  { type: 'string', name: 'body', label: 'Details' },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'object', name: 'upcomingEvents', label: 'Coming up (upcoming events)',
+            description: 'The events themselves are under Events.',
+            fields: [
+              { type: 'string', name: 'label', label: 'Small label' },
+              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+              { type: 'string', name: 'heading', label: 'Heading' },
+              { type: 'string', name: 'note', label: 'Note', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaText', label: 'Button text' },
+              { type: 'string', name: 'ctaLink', label: 'Button link' },
+              { type: 'string', name: 'emptyText', label: 'Shown when there are no events' },
+            ],
+          },
+          {
+            type: 'object', name: 'sections', label: 'More sections (recent sermons, videos, photos…)',
+            description: 'Shown below "Coming up". Add, remove and reorder these freely.',
             list: true,
             templates: pageBlocks,
+            ui: { itemProps: sectionLabel },
           },
         ],
       },

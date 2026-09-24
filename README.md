@@ -68,7 +68,7 @@ what gets published.
 
 | Collection | What it is |
 |---|---|
-| **Homepage** | Headline, opening paragraph, button, hero video, and the stack of sections |
+| **Homepage** | Every word on the front page, section by section: Hero, Service times board, Announcements heading, A note from our pastor, Children & families, Coming up, then More sections (recent sermons, videos, photos…) |
 | **Announcements** | Notices on the homepage and announcements page |
 | **Events** | Dated things — a picnic, a baptism, a members' meeting |
 | **Pages** | Whole pages, built by stacking sections |
@@ -135,9 +135,11 @@ column by itself, whatever you choose.
 
 | You want to | Where |
 |---|---|
-| Change the big headline | **Homepage** → Headline |
-| Change the opening paragraph | **Homepage** → Opening paragraph |
-| Change the hero button or video | **Homepage** → Button text / Hero video URL |
+| Change the big headline | **Homepage** → Hero section → Headline (and *Headline in Chinese*) |
+| Change the opening paragraph | **Homepage** → Hero section → Opening paragraph |
+| Change the hero button or video | **Homepage** → Hero section → Button text / Background video URL |
+| Change the pastor's welcome | **Homepage** → A note from our pastor |
+| Change the children's section | **Homepage** → Children & families |
 | Put a notice on the site | **Announcements** → new — *Remove after* is required |
 | Keep a notice at the top | **Announcements** → Pin to top |
 | Add an event | **Events** → new |

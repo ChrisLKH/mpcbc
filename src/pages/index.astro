@@ -1,22 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
-import Blocks from '../components/Blocks.astro';
-import ServiceBoard from '../components/ServiceBoard.astro';
-import Hero from '../components/home/Hero.astro';
-import AnnouncementCarousel from '../components/home/AnnouncementCarousel.astro';
-import PastorNote from '../components/home/PastorNote.astro';
-import Children from '../components/home/Children.astro';
-import UpcomingEvents from '../components/home/UpcomingEvents.astro';
+import Home from '../components/home/Home.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import { requestWithMetadata } from '@tinacms/astro/data';
-import { getCollection } from 'astro:content';
 import fileHome from '../content/settings/homepage.json';
 import { client } from '../../tina/__generated__/client';
-import servicesData from '../data/services.json';
 
 // Same handshake as [...slug].astro: query through Tina so the editor
 // knows which document this page shows, but only take its copy if it
-// actually came back with sections — otherwise the page would render
+// actually came back with a headline — otherwise the page would render
 // blank with no error.
 let home = fileHome;
 try {
@@ -25,51 +17,18 @@ try {
     { priority: 'primary' }
   );
   const fromTina = res?.data?.homepage;
-  if (fromTina?.sections?.length) home = fromTina;
+  if (fromTina?.hero?.headline) home = fromTina;
 } catch {
   // Tina not running — use the file data.
 }
-
-const today = new Date();
-today.setHours(0, 0, 0, 0);
-
-const announcements = (await getCollection('announcements'))
-  .filter((a) => a.data.removeAfter >= today)
-  .sort((a, b) => Number(b.data.pinned) - Number(a.data.pinned));
-
-const events = (await getCollection('events'))
-  .filter((e) => e.data.startDate >= today)
-  .sort((a, b) => a.data.startDate - b.data.startDate);
-
 ---
 
 <Base>
-  <Hero
-    headline={home.heroHeadline}
-    lede={home.heroLede}
-    ctaText={home.heroCtaText}
-    ctaLink={home.heroCtaLink}
-    video={home.heroVideo}
-    image={home.heroImage}
-    services={servicesData.services}
-  />
-
-  <ServiceBoard />
-
-  <AnnouncementCarousel announcements={announcements} />
-
-  <PastorNote />
-
-  <Children />
-
-  <UpcomingEvents events={events} />
-
   {/*
-    Anything the editor adds to the homepage renders below the designed
-    sections, so the fixed composition above and the block system can
-    coexist — no page has to choose one or the other.
+    The whole page is one island, so Tina's live preview redraws every
+    section as you type — not only the sections list at the bottom.
   */}
   <TinaIsland name="homepage" wrapper={{ tag: 'div' }} primary>
-    <Blocks sections={home.sections} />
+    <Home home={home} />
   </TinaIsland>
 </Base>

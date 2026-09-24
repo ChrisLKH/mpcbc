@@ -30,6 +30,10 @@
   const image = (name, label, extra = {}) => opt({ name, label, widget: 'image', ...extra });
   const select = (name, label, options, extra = {}) =>
     opt({ name, label, widget: 'select', options, ...extra });
+  // A fixed group of fields, like one of the homepage's designed sections.
+  // Collapsed so the homepage form opens as a short list of sections.
+  const group = (name, label, fields, extra = {}) =>
+    opt({ name, label, widget: 'object', collapsed: true, fields, ...extra });
   const date = (name, label, extra = {}) =>
     opt({
       name, label, widget: 'datetime',
@@ -181,14 +185,83 @@
           name: 'homepage',
           label: 'Homepage',
           file: 'src/content/settings/homepage.json',
+          // homepage in tina/config.ts, in the order they appear on the page.
           fields: [
-            text('heroHeadline', 'Headline', { required: true }),
-            text('heroLede', 'Opening paragraph'),
-            str('heroCtaText', 'Button text'),
-            str('heroCtaLink', 'Button link'),
-            str('heroVideo', 'Hero video URL'),
-            image('heroImage', 'Hero image'),
-            sections,
+            group('hero', 'Hero section', [
+              text('headline', 'Headline', { required: true }),
+              str('headlineZh', 'Headline in Chinese', { hint: 'Shown under the English headline.' }),
+              text('lede', 'Opening paragraph'),
+              str('ctaText', 'Button text'),
+              str('ctaLink', 'Button link'),
+              str('video', 'Background video URL'),
+              image('image', 'Background image', { hint: 'Used when there is no video, and while the video loads.' }),
+            ], { hint: 'The big picture at the top, with the headline.', collapsed: false }),
+            group('serviceTimes', 'Service times board', [
+              str('label', 'Small label'),
+              str('labelZh', 'Small label in Chinese'),
+              str('heading', 'Heading'),
+              text('intro', 'Intro line'),
+              text('englishBlurb', 'English card text'),
+              text('cantoneseBlurb', 'Cantonese card text'),
+              text('mandarinBlurb', 'Mandarin card text'),
+              text('footerNote', 'Note under the cards'),
+              str('youtubeText', 'YouTube button text'),
+              str('youtubeLink', 'YouTube button link'),
+            ], {
+              hint: 'The three service cards. Times and live links update from YouTube by themselves; these are the words around them.',
+            }),
+            group('announcementsSection', 'Announcements heading', [
+              str('label', 'Small label'),
+              str('labelZh', 'Small label in Chinese'),
+            ], { hint: 'The announcements themselves are under Announcements.' }),
+            group('pastorNote', 'A note from our pastor', [
+              image('portrait', 'Portrait photo', { hint: 'Shown as a circle.' }),
+              str('name', 'Name'),
+              str('nameZh', 'Name in Chinese'),
+              str('role', 'Role'),
+              str('label', 'Small label'),
+              str('labelZh', 'Small label in Chinese'),
+              text('heading', 'Heading'),
+              text('body', 'Text'),
+              text('bodyZh', 'Text in Chinese'),
+              str('ctaText', 'Button text', { hint: 'Leave blank and no button appears.' }),
+              str('ctaLink', 'Button link'),
+            ]),
+            group('children', 'Children & families', [
+              str('heading', 'Heading'),
+              str('headingZh', 'Heading in Chinese'),
+              text('body', 'Text'),
+              text('note', 'Smaller note'),
+              str('ctaText', 'Button text', { hint: 'Leave blank and no button appears.' }),
+              str('ctaTextZh', 'Button text in Chinese'),
+              str('ctaLink', 'Button link'),
+              opt({
+                name: 'photos', label: 'Photos', widget: 'list', max: 3, summary: '{{fields.alt}}',
+                hint: 'Up to three: one wide, then two square. Empty spots show a placeholder.',
+                fields: [
+                  image('src', 'Photo'),
+                  str('alt', 'Describe the photo', { hint: 'For people using a screen reader.' }),
+                ],
+              }),
+              opt({
+                name: 'groups', label: 'Age groups', widget: 'list', summary: '{{fields.title}}',
+                fields: [str('title', 'Title'), str('body', 'Details')],
+              }),
+            ]),
+            group('upcomingEvents', 'Coming up (upcoming events)', [
+              str('label', 'Small label'),
+              str('labelZh', 'Small label in Chinese'),
+              str('heading', 'Heading'),
+              text('note', 'Note'),
+              str('ctaText', 'Button text'),
+              str('ctaLink', 'Button link'),
+              str('emptyText', 'Shown when there are no events'),
+            ], { hint: 'The events themselves are under Events.' }),
+            {
+              ...sections,
+              label: 'More sections (recent sermons, videos, photos…)',
+              hint: 'Shown below "Coming up". Add, remove and reorder these freely.',
+            },
           ],
         },
       ],

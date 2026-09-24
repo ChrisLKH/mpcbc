@@ -149,8 +149,13 @@ change:
 
 ### Homepage
 
-The big headline, the opening paragraph, the button, the background video, and
-the stack of sections below.
+Everything on the front page, in the order it appears, each part in English
+and Chinese: **Hero section** (the big headline at the top), **Service times
+board**, **Announcements heading**, **A note from our pastor**, **Children &
+families**, **Coming up**, and then **More sections**: the recent sermons, the
+50th anniversary video, the photos link, and anything else you add there.
+
+Leave a box empty and the site shows its usual wording there.
 
 ### Announcements
 
@@ -209,7 +214,7 @@ Useful when you want to change something and aren't sure where to look.
 
 | Page | Where the words live |
 |---|---|
-| Home `/` | **Homepage** in the editor, plus some fixed sections |
+| Home `/` | **Homepage** in the editor — every section |
 | English / Cantonese / Mandarin | **Fixed text.** Each page lists sermons automatically |
 | Events `/events` | **Fixed heading.** The events themselves come from **Events** |
 | Sermons `/sermons` | **Fixed heading.** The list comes from **Sermons** |

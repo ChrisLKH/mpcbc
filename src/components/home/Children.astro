@@ -4,54 +4,60 @@
  * photographs are supplied; pass `photos` as [{ src, alt }] to fill them,
  * and any that are missing keep the empty treatment rather than
  * collapsing the grid.
+ *
+ * Every word here can come from the CMS (Homepage -> Children & families);
+ * the defaults below are what shows when the homepage file leaves one out.
  */
+const DEFAULT_GROUPS = [
+  { title: 'Nursery · 0–3', body: 'Open 9:15 AM – 12:45 PM, hallway by the courtyard.' },
+  { title: 'Sunday school · 4–11', body: 'During the 11:00 and 11:30 services, two rooms upstairs.' },
+  { title: 'Youth · 12–18', body: 'Friday evenings in the Fellowship Hall, with supper.' },
+];
+
 const {
   heading = 'Children & families',
   headingZh = '兒童及家庭事工',
+  body = 'Children are welcome in every service. Sunday school runs during the 11:00 hour in English and the 11:30 hour in Mandarin, and a staffed nursery is open all morning for the youngest.',
+  note = 'Every volunteer who works with children has completed a background check and our safeguarding training.',
+  ctaText = "Children's ministry",
+  ctaTextZh = '兒童事工',
   ctaLink = '/childrens-ministry',
   photos = [],
+  groups = DEFAULT_GROUPS,
+  tinaField,
 } = Astro.props;
 
 const wells = [
   { key: 'wide', hint: 'Sunday school room, wide shot\nchildren and teacher' },
   { key: 'craft', hint: 'craft table' },
   { key: 'nursery', hint: 'nursery corner' },
-].map((w, i) => ({ ...w, photo: photos[i] }));
+].map((w, i) => ({ ...w, photo: photos?.[i]?.src ? photos[i] : null }));
 
-const groups = [
-  { title: 'Nursery · 0–3', body: 'Open 9:15 AM – 12:45 PM, hallway by the courtyard.' },
-  { title: 'Sunday school · 4–11', body: 'During the 11:00 and 11:30 services, two rooms upstairs.' },
-  { title: 'Youth · 12–18', body: 'Friday evenings in the Fellowship Hall, with supper.' },
-];
+const rows = (groups || []).filter((g) => g?.title || g?.body);
 ---
 
-<section class="kids" id="children" aria-labelledby="kids-heading">
+<section class="kids" id="children" aria-labelledby="kids-heading" data-tina-field={tinaField}>
   <div class="wrap">
     <div class="kids__panel">
       <div class="kids__top">
         <div class="kids__copy">
           <h2 id="kids-heading" class="kids__heading">{heading}</h2>
-          <p class="kids__headingZh" lang="zh-Hant">{headingZh}</p>
-          <p>
-            Children are welcome in every service. Sunday school runs during the
-            11:00 hour in English and the 11:30 hour in Mandarin, and a staffed
-            nursery is open all morning for the youngest.
-          </p>
-          <p class="kids__muted">
-            Every volunteer who works with children has completed a background
-            check and our safeguarding training.
-          </p>
-          <a class="btn" href={ctaLink}>
-            Children's ministry <span class="zh-inline" lang="zh-Hant">兒童事工</span>
-            <span class="btn__arrow" aria-hidden="true">→</span>
-          </a>
+          {headingZh && <p class="kids__headingZh" lang="zh-Hant">{headingZh}</p>}
+          {body && <p>{body}</p>}
+          {note && <p class="kids__muted">{note}</p>}
+          {ctaText && (
+            <a class="btn" href={ctaLink}>
+              {ctaText} {ctaTextZh && <span class="zh-inline" lang="zh-Hant">{ctaTextZh}</span>}
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+          )}
         </div>
 
         <div class="kids__grid">
           {wells.map((w) => (
             <div class:list={['kids__well', `kids__well--${w.key}`]}>
               {w.photo ? (
-                <img src={w.photo.src} alt={w.photo.alt} loading="lazy" />
+                <img src={w.photo.src} alt={w.photo.alt || ''} loading="lazy" />
               ) : (
                 <span class="kids__hint">{w.hint}</span>
               )}
@@ -60,14 +66,16 @@ const groups = [
         </div>
       </div>
 
-      <div class="kids__groups">
-        {groups.map((g) => (
-          <div class="kids__group">
-            <p class="kids__groupTitle">{g.title}</p>
-            <p class="kids__groupBody">{g.body}</p>
-          </div>
-        ))}
-      </div>
+      {rows.length > 0 && (
+        <div class="kids__groups">
+          {rows.map((g) => (
+            <div class="kids__group">
+              {g.title && <p class="kids__groupTitle">{g.title}</p>}
+              {g.body && <p class="kids__groupBody">{g.body}</p>}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   </div>
 </section>

@@ -12,6 +12,7 @@ import { experimental_createIslandRoute } from '@tinacms/astro/experimental';
 // condition points at TinaMarkdown.astro.
 import { requestWithMetadata } from '@tinacms/astro/data';
 import Blocks from '../../components/Blocks.astro';
+import Home from '../../components/home/Home.astro';
 import { client } from '../../../tina/__generated__/client';
 
 // Needs to run per request, so it can't be prerendered.
@@ -44,9 +45,10 @@ export const ALL = experimental_createIslandRoute({
         client.queries.homepage({ relativePath: 'homepage.json' }),
         { priority: 'primary' }
       ),
-    component: Blocks,
+    // The whole homepage, not just its sections list — see index.astro.
+    component: Home,
     propsFromData: (data) => ({
-      sections: data?.data?.homepage?.sections ?? [],
+      home: data?.data?.homepage ?? {},
     }),
   },
 });
