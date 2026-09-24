@@ -12,11 +12,13 @@
 #
 # The livestream cron Worker is a separate deploy — see worker/wrangler.toml.
 
-name = "mpcbc-site"
+# Must match the Worker name in the Cloudflare dashboard. Cloudflare's own
+# Git build deploys to the Worker it is attached to, which is "mpcbc".
+name = "mpcbc"
 compatibility_date = "2026-08-01"
 compatibility_flags = ["nodejs_compat"]
 
-# Until this is set the site deploys to mpcbc-site.<subdomain>.workers.dev.
+# Until this is set the site deploys to mpcbc.<subdomain>.workers.dev.
 # Note that astro.config.mjs sets `site: 'https://mpcbc.org'`, so canonical
 # URLs and the sitemap already claim that domain — point the domain here
 # before announcing the site anywhere.

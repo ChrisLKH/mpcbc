@@ -385,7 +385,7 @@ Two Workers, one KV namespace.
 
 | Worker | Config | Job |
 |---|---|---|
-| `mpcbc-site` | `wrangler.toml` | the website; reads KV |
+| `mpcbc` | `wrangler.toml` | the website; reads KV |
 | `mpcbc-livestream-sync` | `worker/wrangler.toml` | cron; writes KV |
 
 `output: 'static'` plus an adapter is Astro's hybrid mode: **every route
@@ -428,7 +428,7 @@ npx wrangler deploy --dry-run -c dist/server/wrangler.json
 ```
 
 Until you set `routes` in `wrangler.toml`, the site lands on
-`mpcbc-site.<subdomain>.workers.dev`. `astro.config.mjs` already declares
+`mpcbc.<subdomain>.workers.dev`. `astro.config.mjs` already declares
 `site: 'https://mpcbc.org'`, so canonical URLs claim the real domain — point
 the domain at the Worker before sending the link anywhere that matters.
 
@@ -476,10 +476,24 @@ npx wrangler kv key get services --binding MPCBC --remote -c worker/wrangler.tom
 
 
 
+### Cloudflare's own Git build
+
+The site that is actually live is deployed by **Cloudflare Workers Builds**,
+the Git connection in the Cloudflare dashboard, onto the Worker named `mpcbc`
+(`mpcbc.chrisleekahei.workers.dev`). It runs plain `npm run build` and
+`npx wrangler deploy` on a fresh clone with no Tina credentials. Two things
+make that work:
+
+- `npm run build` runs `scripts/ensure-tina-client.mjs`, which generates the
+  gitignored Tina client in local mode when it is missing. Without it the
+  build fails with "Could not resolve '../../tina/__generated__/client'".
+- `name` in `wrangler.toml` is `mpcbc`, matching the dashboard Worker.
+
 ### Why the build must be `build:tina`
 
 `tina/__generated__/` is gitignored, and Astro imports the generated client —
 so plain `astro build` fails outright. `tinacms build` regenerates it first.
+(Plain `npm run build` now does too, in local mode. See above.)
 Leave `deploy.yml` on `build:tina`; plain `npm run build` also strips
 `public/admin` and would ship a site with no editor.
 
