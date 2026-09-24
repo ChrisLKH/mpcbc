@@ -22,9 +22,8 @@
         // Replace SITE_ID with the id it shows (see DEVELOPMENT.md).
         name: 'git-gateway',
         repo: 'ChrisLKH/mpcbc',
-        // A trial branch, so saves here never reach the live site.
-        // Change to 'main' only once this editor is the real one.
-        branch: 'cms-trial',
+        // Saves go to main, which deploys the live site.
+        branch: 'main',
         identity_url: 'https://auth.decapbridge.com/sites/SITE_ID',
         gateway_url: 'https://gateway.decapbridge.com',
         squash_merges: true,

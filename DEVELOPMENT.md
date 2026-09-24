@@ -270,8 +270,8 @@ key, so a file saved in any of the three editors reads back in the others and
 in `Blocks.astro`. **A field added to Tina must be added there too**, or these
 editors silently drop it on save.
 
-Both save to the **`cms-trial` branch**, not `main`, so nothing an editor does
-in the trial reaches the live site. The branch has to exist on GitHub first.
+Both save straight to **`main`**, like Tina Cloud does, so a save deploys the
+live site within a few minutes. There is no review step in between.
 
 **Live preview** is the site itself. The preview panel POSTs the unsaved draft
 to `/cms-preview/<kind>` (`src/pages/cms-preview/[kind].astro`, not
