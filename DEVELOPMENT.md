@@ -188,7 +188,7 @@ src/
   components/
     Blocks.astro              renders CMS page sections
     ServiceBoard.astro        the live Sunday board
-    home/                     the fixed homepage sections
+    home/                     the homepage: Home.astro and its designed sections
       Hero.astro  AnnouncementCarousel.astro  PastorNote.astro
       Children.astro  UpcomingEvents.astro
   content/                    what Tina edits, and what the site builds from
@@ -253,6 +253,27 @@ labelled "Section" on pages until that was mistaken for the menu field;
 removing it outright would mean making it optional in `src/content.config.ts`
 first.
 
+### The homepage
+
+`src/components/home/Home.astro` renders the whole homepage from one
+document, `src/content/settings/homepage.json`. It is used in three places:
+`index.astro` (the site), the `homepage` island in `tina-island/[name].ts`
+(so Tina's live preview redraws every section, not only the list at the
+bottom), and `cms-preview/[kind].astro` (Decap and Sveltia).
+
+The designed sections are fixed **groups** in the schema, not blocks: they are
+always on the page and cannot be moved, only reworded. In page order: `hero`,
+`serviceTimes`, `announcementsSection`, `pastorNote`, `children`,
+`upcomingEvents`, then the movable `sections` list. Each component keeps its
+own defaults. A field missing from the file (or `null` from Tina's GraphQL,
+which `Home.astro` strips) falls back to them. An empty string hides the
+optional pieces, such as the Chinese lines and buttons.
+
+A new homepage field goes in four places: the `homepage` collection in
+`tina/config.ts`, the homepage `fields` in `public/cms/shared.js`, the
+component's props, and `homepage.json` itself so the editors open with the
+current wording filled in. There is no Zod schema for the homepage.
+
 ### Trial editors: Decap and Sveltia
 
 Two browser-only editors are on trial beside Tina, because editors should not
@@ -275,8 +296,8 @@ live site within a few minutes. There is no review step in between.
 
 **Live preview** is the site itself. The preview panel POSTs the unsaved draft
 to `/cms-preview/<kind>` (`src/pages/cms-preview/[kind].astro`, not
-prerendered), which renders it with `Base`, `Blocks`, `Hero`,
-`AnnouncementCarousel` and `UpcomingEvents` and returns HTML shown in a
+prerendered), which renders it with `Base`, `Blocks`, the whole homepage
+(`home/Home.astro`), `AnnouncementCarousel` and `UpcomingEvents` and returns HTML shown in a
 script-less iframe. A new section in `Blocks.astro` previews with no change
 here. The route renders whatever it is sent under the church's domain, so it
 answers only a same-origin JSON POST, and returns 404 for anything else. It

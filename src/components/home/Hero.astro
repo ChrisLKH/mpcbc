@@ -13,6 +13,10 @@ const {
   video = '',
   image = '',
   services = [],
+  tinaField,
+  headlineField,
+  headlineZhField,
+  ledeField,
 } = Astro.props;
 
 // Chronological, so the line reads the way the morning runs.
@@ -25,7 +29,7 @@ const times = [...services]
   }));
 ---
 
-<section class="hero" id="top">
+<section class="hero" id="top" data-tina-field={tinaField}>
   {video ? (
     <video class="hero__media" src={video} poster={image || undefined} autoplay muted loop playsinline></video>
   ) : image ? (
@@ -37,9 +41,9 @@ const times = [...services]
   <div class="hero__scrim"></div>
 
   <div class="wrap hero__body">
-    <h1 class="hero__title" set:html={headline.replace(/\n/g, '<br />')}></h1>
-    {headlineZh && <p class="hero__zh" lang="zh-Hant">{headlineZh}</p>}
-    {lede && <p class="hero__lede">{lede}</p>}
+    <h1 class="hero__title" data-tina-field={headlineField} set:html={headline.replace(/\n/g, '<br />')}></h1>
+    {headlineZh && <p class="hero__zh" lang="zh-Hant" data-tina-field={headlineZhField}>{headlineZh}</p>}
+    {lede && <p class="hero__lede" data-tina-field={ledeField}>{lede}</p>}
 
     <div class="hero__actions">
       {ctaText && (

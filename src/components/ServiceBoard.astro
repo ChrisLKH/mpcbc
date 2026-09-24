@@ -3,7 +3,8 @@ import servicesData from '../data/services.json';
 
 const { services } = servicesData;
 
-// Heading and intro come from the CMS (Homepage -> Service times board).
+// On the homepage every word the board shows comes from the CMS (Homepage
+// -> Service times board); as a page section, only the heading and intro do.
 // `tinaField` markers are passed in rather than computed here: a component
 // can't take a bare data-tina-field attribute, so the caller hands down the
 // strings and we stamp them onto real elements.
@@ -17,6 +18,12 @@ const {
   heading = 'Three congregations, one morning.',
   intro = 'Each congregation streams on its own channel. Live links update automatically from YouTube — nobody edits this weekly.',
   showFooter = true,
+  footerNote = 'Watching from home? Open the player for your congregation. Every service is posted to the sermon archive within a day or two.',
+  youtubeText = 'Our YouTube channels',
+  youtubeLink = 'https://youtube.com/@mpcbc-english',
+  // Optional per-congregation overrides for the blurbs in COPY below —
+  // the homepage board takes them from the CMS. Blank keeps the default.
+  blurbs = {},
   tinaField,
   headingField,
   introField,
@@ -76,7 +83,7 @@ function href(s) {
     <div class="board__head">
       <div>
         <p class="rule-label">
-          {label} <span class="zh-inline" lang="zh-Hant">{labelZh}</span>
+          {label} {labelZh && <span class="zh-inline" lang="zh-Hant">{labelZh}</span>}
         </p>
         <h2 id={`${anchor}-heading`} class="board__heading" data-tina-field={headingField}>{heading}</h2>
       </div>
@@ -85,7 +92,8 @@ function href(s) {
 
     <ul class="board__list" role="list">
       {services.map((s) => {
-        const copy = COPY[s.id] || { channel: s.name, channelLang: null, blurb: '' };
+        const base = COPY[s.id] || { channel: s.name, channelLang: null, blurb: '' };
+        const copy = { ...base, blurb: blurbs?.[s.id] || base.blurb };
         const state = STATE[s.state] || STATE.unscheduled;
         const live = s.state === 'live';
 
@@ -130,13 +138,12 @@ function href(s) {
 
     {showFooter && (
       <div class="board__foot">
-        <p class="board__note">
-          Watching from home? Open the player for your congregation. Every service
-          is posted to the sermon archive within a day or two.
-        </p>
+        {footerNote && <p class="board__note">{footerNote}</p>}
         <div class="board__footActions">
           <a class="btn btn--sm btn--ghost" href="/sermons">All sermons</a>
-          <a class="btn btn--sm btn--ghost" href="https://youtube.com/@mpcbc-english">Our YouTube channels</a>
+          {youtubeText && youtubeLink && (
+            <a class="btn btn--sm btn--ghost" href={youtubeLink}>{youtubeText}</a>
+          )}
         </div>
       </div>
     )}

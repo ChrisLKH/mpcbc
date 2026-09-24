@@ -8,19 +8,22 @@ const {
   name = 'Rev. Chan',
   nameZh = '陳牧師',
   role = 'Senior Pastor',
+  label = 'A note from our pastor',
+  labelZh = '牧者的話',
   heading = 'You are welcome here, whichever language you pray in.',
   body = 'We began in 1976 with a handful of families. Today three congregations share this building, and many of our members are the children and grandchildren of the people who started it.',
   bodyZh = '若您初次來訪，請放心前來，隨意入座。我們不會請您站起來自我介紹。門口的同工會為您指引兒童教室與後方停車場。',
   ctaText = 'Read our welcome page',
   ctaLink = '/visit',
+  tinaField,
 } = Astro.props;
 ---
 
-<section class="welcome" id="welcome" aria-labelledby="welcome-heading">
+<section class="welcome" id="welcome" aria-labelledby="welcome-heading" data-tina-field={tinaField}>
   <div class="wrap welcome__inner">
     <div class="welcome__aside">
       {portrait ? (
-        <img class="welcome__portrait" src={portrait} alt={`${name}, ${role}`} loading="lazy" />
+        <img class="welcome__portrait" src={portrait} alt={[name, role].filter(Boolean).join(', ')} loading="lazy" />
       ) : (
         <div class="welcome__portrait welcome__portrait--empty">
           <span>pastor portrait<br />square crop</span>
@@ -28,17 +31,17 @@ const {
       )}
       <div class="welcome__id">
         <p class="welcome__name">
-          {name} <span class="zh-inline" lang="zh-Hant">{nameZh}</span>
+          {name} {nameZh && <span class="zh-inline" lang="zh-Hant">{nameZh}</span>}
         </p>
-        <p class="welcome__role">{role}</p>
+        {role && <p class="welcome__role">{role}</p>}
       </div>
     </div>
 
     <div class="welcome__body">
       <p class="welcome__label">
         <span class="welcome__rule" aria-hidden="true"></span>
-        A note from our pastor
-        <span class="zh-inline welcome__labelZh" lang="zh-Hant">牧者的話</span>
+        {label}
+        {labelZh && <span class="zh-inline welcome__labelZh" lang="zh-Hant">{labelZh}</span>}
       </p>
       <h2 id="welcome-heading" class="welcome__heading">{heading}</h2>
       {body && <p class="welcome__text">{body}</p>}
