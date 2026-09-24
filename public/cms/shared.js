@@ -447,17 +447,22 @@
   }
 
   window.MPCBC_CMS = {
-    start(CMS, backend) {
+    // `extra` is for top-level settings only one login needs, such as
+    // DecapBridge's `auth` block.
+    start(CMS, backend, extra = {}) {
       registerPreviews(CMS);
       CMS.init({
         config: {
           load_config_file: false,
           backend,
-          site_url: 'https://mpcbc.org',
+          // Whatever address the editor was opened on — the workers.dev
+          // URL now, the church domain once it points here.
+          site_url: location.origin,
           logo_url: '/images/logo-square.png',
           media_folder: 'public/images',
           public_folder: '/images',
           collections,
+          ...extra,
         },
       });
     },

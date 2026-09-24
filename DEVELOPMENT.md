@@ -285,9 +285,14 @@ site have to share an origin.
 
 **Setting up DecapBridge:** sign in at decapbridge.com with GitHub, add the
 site, install its GitHub App on `ChrisLKH/mpcbc`, and register
-`https://mpcbc.org` (plus `http://localhost:4321` for local testing). Put the
-site ID it gives you into `identity_url` in `public/admin-decap/index.html`,
-and invite editors by email from its dashboard.
+the admin URL (`https://mpcbc.chrisleekahei.workers.dev/admin-decap/` until the
+church domain points here). It asks for a fine-grained GitHub token with
+Contents and Pull requests read-write on this repo, which it uses to save on
+editors' behalf. When the token expires, saving stops until a new one is
+pasted in. The site ID it gives goes in `SITE` in
+`public/admin-decap/index.html`. "Hide commit author" is on because the repo is
+public, and the commit messages carry the editor's name but not their email
+for the same reason. Invite editors by email from its dashboard.
 
 ---
 

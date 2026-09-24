@@ -17,16 +17,40 @@
     <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
     <script src="/cms/shared.js"></script>
     <script>
+      // From the DecapBridge dashboard. The site id is not a secret — it
+      // only names this site to DecapBridge, which still asks each editor
+      // to sign in.
+      const SITE = '/sites/8fcff31f-fdcf-4482-a422-ca8d9397fa0e';
+
+      // Commits carry the editor's name but deliberately not their email:
+      // the repo is public, so anything in a commit message is too.
+      const by = ' - {{author-name}} via DecapBridge';
+
       MPCBC_CMS.start(window.CMS, {
-        // From the DecapBridge dashboard after adding the site there.
-        // Replace SITE_ID with the id it shows (see DEVELOPMENT.md).
         name: 'git-gateway',
         repo: 'ChrisLKH/mpcbc',
         // Saves go to main, which deploys the live site.
         branch: 'main',
-        identity_url: 'https://auth.decapbridge.com/sites/SITE_ID',
+        auth_type: 'pkce',
+        base_url: 'https://auth.decapbridge.com',
+        auth_endpoint: SITE + '/pkce',
+        auth_token_endpoint: SITE + '/token',
         gateway_url: 'https://gateway.decapbridge.com',
-        squash_merges: true,
+        commit_messages: {
+          create: 'Create {{collection}} “{{slug}}”' + by,
+          update: 'Update {{collection}} “{{slug}}”' + by,
+          delete: 'Delete {{collection}} “{{slug}}”' + by,
+          uploadMedia: 'Upload “{{path}}”' + by,
+          deleteMedia: 'Delete “{{path}}”' + by,
+          openAuthoring: 'Message {{message}}' + by,
+        },
+      }, {
+        auth: {
+          email_claim: 'email',
+          first_name_claim: 'first_name',
+          last_name_claim: 'last_name',
+          avatar_url_claim: 'avatar_url',
+        },
       });
     </script>
   </body>
