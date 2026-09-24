@@ -149,11 +149,17 @@ change:
 
 ### Homepage
 
-Everything on the front page, in the order it appears, each part in English
-and Chinese: **Hero section** (the big headline at the top), **Service times
-board**, **Announcements heading**, **A note from our pastor**, **Children &
-families**, **Coming up**, and then **More sections**: the recent sermons, the
-50th anniversary video, the photos link, and anything else you add there.
+Everything on the front page, each part in English and Chinese. The **Hero
+section** (the big headline) always stays at the top. Under it is one list,
+**Sections**, in the order they appear on the page: **Service times board**,
+**Announcements carousel**, **A note from our pastor**, **Children &
+families**, **Coming up**, the recent sermons, the 50th anniversary video, the
+photos link, and anything else you add.
+
+Drag sections to change their order, or remove one you don't want. A removed
+section can be added back from the same list. One caution: the menu's
+**Newsletter** link jumps to the announcements, and **About** to the pastor's
+note. Remove those sections and the links have nowhere to go.
 
 Leave a box empty and the site shows its usual wording there.
 

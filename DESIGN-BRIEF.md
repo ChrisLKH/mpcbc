@@ -261,7 +261,7 @@ the dotted ground is the finished treatment, not a placeholder gap.
 
 | Route | What it is |
 |---|---|
-| `/` | six fixed designed sections — hero, service board, announcements carousel, pastor's note, children & families, upcoming events — then editor-composed blocks below |
+| `/` | the hero, pinned to the top, then a reorderable list: the five designed sections — service board, announcements carousel, pastor's note, children & families, upcoming events — alongside editor-composed blocks, in whatever order the editor sets |
 | `/visit` | plain prose Q&A — parking, dress, children, which service, first fifteen minutes |
 | `/sermons` | archive, auto-synced from YouTube |
 | `/events` | upcoming events |

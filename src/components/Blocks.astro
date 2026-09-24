@@ -5,6 +5,10 @@
  * everywhere.
  */
 import ServiceBoard from './ServiceBoard.astro';
+import AnnouncementCarousel from './home/AnnouncementCarousel.astro';
+import PastorNote from './home/PastorNote.astro';
+import Children from './home/Children.astro';
+import UpcomingEvents from './home/UpcomingEvents.astro';
 import { tinaField } from '@tinacms/astro/tina-field';
 import { getCollection } from 'astro:content';
 
@@ -36,6 +40,10 @@ const field = (obj, prop) => tinaField(obj, prop) || undefined;
 const BLOCK_NAMES = [
   'textBlock', 'imageText', 'gallery', 'videoEmbed', 'buttons',
   'serviceBoard', 'announcements', 'recentSermons', 'facebookAlbum', 'flexible',
+  // The homepage's designed sections (homeBlocks in tina/config.ts). They
+  // are blocks rather than fixed groups so editors can reorder or remove
+  // them like any other section.
+  'serviceTimes', 'announcementsSection', 'pastorNote', 'children', 'upcomingEvents',
 ];
 
 // The component library that can appear INSIDE a 'flexible' section —
@@ -93,10 +101,72 @@ const allSermons = (await getCollection('sermons'))
   .sort((a, b) => b.data.date.localeCompare(a.data.date));
 
 const label = { english: 'English', cantonese: '粵語', mandarin: '國語', all: 'All' };
+
+// The designed homepage sections date their lists from midnight, so an
+// announcement or event dated today still shows all day.
+const startOfToday = new Date();
+startOfToday.setHours(0, 0, 0, 0);
+
+const currentAnnouncements = announcements.filter((a) => a.data.removeAfter >= startOfToday);
+
+const upcomingEvents = (await getCollection('events'))
+  .filter((e) => e.data.startDate >= startOfToday)
+  .sort((a, b) => a.data.startDate - b.data.startDate);
+
+/**
+ * The designed sections keep their own default wording, so a field left
+ * blank falls back to it instead of rendering empty. Tina's GraphQL answers
+ * `null` for an empty field, and `null` does not trigger a default, so
+ * those are stripped first — along with `_template` and Tina's own keys.
+ */
+const props = (obj) =>
+  Object.fromEntries(
+    Object.entries(obj || {}).filter(
+      ([k, v]) => v !== null && v !== undefined && !k.startsWith('_')
+    )
+  );
 ---
 
 {blocks.map((block, i) => {
   const v = block.value;
+
+  if (block.discriminant === 'serviceTimes') {
+    return (
+      <ServiceBoard
+        {...props(v)}
+        blurbs={props({
+          english: v.englishBlurb,
+          cantonese: v.cantoneseBlurb,
+          mandarin: v.mandarinBlurb,
+        })}
+        tinaField={field(v)}
+        headingField={field(v, 'heading')}
+        introField={field(v, 'intro')}
+      />
+    );
+  }
+
+  if (block.discriminant === 'announcementsSection') {
+    return (
+      <AnnouncementCarousel
+        {...props(v)}
+        announcements={currentAnnouncements}
+        tinaField={field(v)}
+      />
+    );
+  }
+
+  if (block.discriminant === 'pastorNote') {
+    return <PastorNote {...props(v)} tinaField={field(v)} />;
+  }
+
+  if (block.discriminant === 'children') {
+    return <Children {...props(v)} tinaField={field(v)} />;
+  }
+
+  if (block.discriminant === 'upcomingEvents') {
+    return <UpcomingEvents {...props(v)} events={upcomingEvents} tinaField={field(v)} />;
+  }
 
   if (block.discriminant === 'serviceBoard') {
     return (

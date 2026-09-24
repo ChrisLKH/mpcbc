@@ -8,21 +8,21 @@
  *   src/pages/tina-island/[name].ts   Tina's live preview while typing
  *   src/pages/cms-preview/[kind].astro  the Decap / Sveltia preview
  *
- * Every word on the designed sections comes from the homepage file
- * (src/content/settings/homepage.json). Each component keeps its own
- * defaults, so a field left out of the file falls back to them rather
- * than rendering blank. Tina's GraphQL answers `null` for an empty field,
- * and `null` does not trigger a default, so props() strips those first.
+ * The hero is pinned to the top: it carries the page's only <h1> and is
+ * designed as a full-bleed opener, so it is a fixed group of fields.
+ * Everything under it — including the designed sections (service times,
+ * announcements, pastor's note, children, coming up) — is the `sections`
+ * list, which Blocks.astro renders in whatever order the editor chose.
+ *
+ * Every word comes from src/content/settings/homepage.json. Each component
+ * keeps its own defaults, so a field left out of the file falls back to
+ * them rather than rendering blank. Tina's GraphQL answers `null` for an
+ * empty field, and `null` does not trigger a default, so props() strips
+ * those first.
  */
 import Blocks from '../Blocks.astro';
-import ServiceBoard from '../ServiceBoard.astro';
 import Hero from './Hero.astro';
-import AnnouncementCarousel from './AnnouncementCarousel.astro';
-import PastorNote from './PastorNote.astro';
-import Children from './Children.astro';
-import UpcomingEvents from './UpcomingEvents.astro';
 import { tinaField } from '@tinacms/astro/tina-field';
-import { getCollection } from 'astro:content';
 import servicesData from '../../data/services.json';
 
 const { home = {} } = Astro.props;
@@ -38,22 +38,6 @@ const props = (obj) =>
 const field = (obj, prop) => (obj ? tinaField(obj, prop) : '') || undefined;
 
 const hero = home.hero || {};
-const board = home.serviceTimes || {};
-const pastor = home.pastorNote || {};
-const kids = home.children || {};
-const news = home.announcementsSection || {};
-const upcoming = home.upcomingEvents || {};
-
-const today = new Date();
-today.setHours(0, 0, 0, 0);
-
-const announcements = (await getCollection('announcements'))
-  .filter((a) => a.data.removeAfter >= today)
-  .sort((a, b) => Number(b.data.pinned) - Number(a.data.pinned));
-
-const events = (await getCollection('events'))
-  .filter((e) => e.data.startDate >= today)
-  .sort((a, b) => a.data.startDate - b.data.startDate);
 ---
 
 <Hero
@@ -65,40 +49,4 @@ const events = (await getCollection('events'))
   ledeField={field(home.hero, 'lede')}
 />
 
-<ServiceBoard
-  {...props(board)}
-  blurbs={props({
-    english: board.englishBlurb,
-    cantonese: board.cantoneseBlurb,
-    mandarin: board.mandarinBlurb,
-  })}
-  tinaField={field(home.serviceTimes)}
-  headingField={field(home.serviceTimes, 'heading')}
-  introField={field(home.serviceTimes, 'intro')}
-/>
-
-<AnnouncementCarousel
-  {...props(news)}
-  announcements={announcements}
-  tinaField={field(home.announcementsSection)}
-/>
-
-<PastorNote {...props(pastor)} tinaField={field(home.pastorNote)} />
-
-<Children
-  {...props(kids)}
-  tinaField={field(home.children)}
-/>
-
-<UpcomingEvents
-  {...props(upcoming)}
-  events={events}
-  tinaField={field(home.upcomingEvents)}
-/>
-
-{/*
-  Anything the editor adds to the homepage renders below the designed
-  sections, so the fixed composition above and the block system can
-  coexist — no page has to choose one or the other.
-*/}
 <Blocks sections={home.sections || []} />

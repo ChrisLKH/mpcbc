@@ -261,17 +261,26 @@ document, `src/content/settings/homepage.json`. It is used in three places:
 (so Tina's live preview redraws every section, not only the list at the
 bottom), and `cms-preview/[kind].astro` (Decap and Sveltia).
 
-The designed sections are fixed **groups** in the schema, not blocks: they are
-always on the page and cannot be moved, only reworded. In page order: `hero`,
-`serviceTimes`, `announcementsSection`, `pastorNote`, `children`,
-`upcomingEvents`, then the movable `sections` list. Each component keeps its
-own defaults. A field missing from the file (or `null` from Tina's GraphQL,
-which `Home.astro` strips) falls back to them. An empty string hides the
-optional pieces, such as the Chinese lines and buttons.
+Only the **`hero`** is a fixed group, pinned to the top: it holds the page's
+only `<h1>` and is designed as a full-bleed opener. Everything under it is the
+**`sections` list**, and that includes the five designed sections:
+`serviceTimes`, `announcementsSection`, `pastorNote`, `children` and
+`upcomingEvents`. They are block templates (`homeBlocks` in `tina/config.ts`
+and `public/cms/shared.js`, rendered by `Blocks.astro`), so editors can drag
+them into any order among the ordinary sections, remove one, or add it back.
+They were fixed groups until editors asked to move them. They are offered on
+the homepage only, because the menu's `/#welcome` (pastor's note) and `/#news`
+(announcements) links and the hero's `#sunday` button point at their anchors. Removing one leaves that link
+going nowhere.
 
-A new homepage field goes in four places: the `homepage` collection in
-`tina/config.ts`, the homepage `fields` in `public/cms/shared.js`, the
-component's props, and `homepage.json` itself so the editors open with the
+Each component keeps its own defaults. A field missing from the file (or
+`null` from Tina's GraphQL, which `props()` in `Blocks.astro` and `Home.astro`
+strips) falls back to them. An empty string hides the optional pieces, such as
+the Chinese lines and buttons.
+
+A new field on one of the designed sections goes in four places: its template
+in `homeBlocks` in `tina/config.ts`, the same in `public/cms/shared.js`, the
+component's props, and `homepage.json` itself, so the editors open with the
 current wording filled in. There is no Zod schema for the homepage.
 
 ### Trial editors: Decap and Sveltia

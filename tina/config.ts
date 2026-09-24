@@ -254,10 +254,101 @@ const pageBlocks = [
   },
 ];
 
+// The homepage's designed sections. They are section templates, not fixed
+// groups, so an editor can drag them into any order among the ordinary
+// sections, remove one, or put one back. Offered on the homepage only:
+// they are built around the homepage's anchors (#sunday, #news, #events).
+// A blank field falls back to the wording built into its component
+// (src/components/home/). Blocks.astro renders them, and its BLOCK_NAMES
+// lists them too.
+const homeBlocks = [
+  {
+    name: 'serviceTimes', label: 'Service times board (designed)',
+    fields: [
+      { type: 'string', name: 'label', label: 'Small label' },
+      { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+      { type: 'string', name: 'heading', label: 'Heading' },
+      { type: 'string', name: 'intro', label: 'Intro line', ui: { component: 'textarea' } },
+      { type: 'string', name: 'englishBlurb', label: 'English card text', ui: { component: 'textarea' } },
+      { type: 'string', name: 'cantoneseBlurb', label: 'Cantonese card text', ui: { component: 'textarea' } },
+      { type: 'string', name: 'mandarinBlurb', label: 'Mandarin card text', ui: { component: 'textarea' } },
+      { type: 'string', name: 'footerNote', label: 'Note under the cards', ui: { component: 'textarea' } },
+      { type: 'string', name: 'youtubeText', label: 'YouTube button text' },
+      { type: 'string', name: 'youtubeLink', label: 'YouTube button link' },
+    ],
+  },
+  {
+    name: 'announcementsSection', label: 'Announcements carousel',
+    fields: [
+      { type: 'string', name: 'label', label: 'Small label' },
+      { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+    ],
+  },
+  {
+    name: 'pastorNote', label: 'A note from our pastor',
+    fields: [
+      { type: 'image', name: 'portrait', label: 'Portrait photo', description: 'Shown as a circle.' },
+      { type: 'string', name: 'name', label: 'Name' },
+      { type: 'string', name: 'nameZh', label: 'Name in Chinese' },
+      { type: 'string', name: 'role', label: 'Role' },
+      { type: 'string', name: 'label', label: 'Small label' },
+      { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+      { type: 'string', name: 'heading', label: 'Heading', ui: { component: 'textarea' } },
+      { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
+      { type: 'string', name: 'bodyZh', label: 'Text in Chinese', ui: { component: 'textarea' } },
+      { type: 'string', name: 'ctaText', label: 'Button text', description: 'Leave blank and no button appears.' },
+      { type: 'string', name: 'ctaLink', label: 'Button link' },
+    ],
+  },
+  {
+    name: 'children', label: 'Children & families',
+    fields: [
+      { type: 'string', name: 'heading', label: 'Heading' },
+      { type: 'string', name: 'headingZh', label: 'Heading in Chinese' },
+      { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
+      { type: 'string', name: 'note', label: 'Smaller note', ui: { component: 'textarea' } },
+      { type: 'string', name: 'ctaText', label: 'Button text', description: 'Leave blank and no button appears.' },
+      { type: 'string', name: 'ctaTextZh', label: 'Button text in Chinese' },
+      { type: 'string', name: 'ctaLink', label: 'Button link' },
+      {
+        type: 'object', name: 'photos', label: 'Photos', list: true,
+        description: 'Up to three: one wide, then two square. Empty spots show a placeholder.',
+        ui: { max: 3, itemProps: (item) => ({ label: item?.alt || 'Photo' }) },
+        fields: [
+          { type: 'image', name: 'src', label: 'Photo' },
+          // Required, like the gallery's: the two share one sections list,
+          // and Tina rejects a field that is required in one and not the other.
+          { type: 'string', name: 'alt', label: 'Describe the photo', required: true, description: 'For people using a screen reader.' },
+        ],
+      },
+      {
+        type: 'object', name: 'groups', label: 'Age groups', list: true,
+        ui: { itemProps: (item) => ({ label: item?.title || 'Group' }) },
+        fields: [
+          { type: 'string', name: 'title', label: 'Title' },
+          { type: 'string', name: 'body', label: 'Details' },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'upcomingEvents', label: 'Coming up (upcoming events)',
+    fields: [
+      { type: 'string', name: 'label', label: 'Small label' },
+      { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
+      { type: 'string', name: 'heading', label: 'Heading' },
+      { type: 'string', name: 'note', label: 'Note', ui: { component: 'textarea' } },
+      { type: 'string', name: 'ctaText', label: 'Button text' },
+      { type: 'string', name: 'ctaLink', label: 'Button link' },
+      { type: 'string', name: 'emptyText', label: 'Shown when there are no events' },
+    ],
+  },
+];
+
 // Names each section in the sidebar list by its kind and its heading, e.g.
 // "Video: A look at our 50th anniversary", instead of just "Video".
 const sectionLabel = (item) => {
-  const kind = pageBlocks.find((t) => t.name === item?._template)?.label
+  const kind = [...homeBlocks, ...pageBlocks].find((t) => t.name === item?._template)?.label
     || item?._template || 'Section';
   return { label: item?.heading ? `${kind}: ${item.heading}` : kind };
 };
@@ -360,10 +451,8 @@ export default defineConfig({
           allowedActions: { create: false, delete: false },
           router: () => '/',
         },
-        // In the order they appear on the page. The designed sections are
-        // groups rather than blocks: they are always there and cannot be
-        // moved, only reworded. A blank field falls back to the wording
-        // built into its component (src/components/home/).
+        // The hero is pinned to the top; everything else, the designed
+        // sections included, is the reorderable sections list.
         fields: [
           {
             type: 'object', name: 'hero', label: 'Hero section',
@@ -385,94 +474,13 @@ export default defineConfig({
             ],
           },
           {
-            type: 'object', name: 'serviceTimes', label: 'Service times board',
+            type: 'object', name: 'sections', label: 'Sections',
             description:
-              'The three service cards. Times and live links update from YouTube ' +
-              'by themselves; these are the words around them.',
-            fields: [
-              { type: 'string', name: 'label', label: 'Small label' },
-              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
-              { type: 'string', name: 'heading', label: 'Heading' },
-              { type: 'string', name: 'intro', label: 'Intro line', ui: { component: 'textarea' } },
-              { type: 'string', name: 'englishBlurb', label: 'English card text', ui: { component: 'textarea' } },
-              { type: 'string', name: 'cantoneseBlurb', label: 'Cantonese card text', ui: { component: 'textarea' } },
-              { type: 'string', name: 'mandarinBlurb', label: 'Mandarin card text', ui: { component: 'textarea' } },
-              { type: 'string', name: 'footerNote', label: 'Note under the cards', ui: { component: 'textarea' } },
-              { type: 'string', name: 'youtubeText', label: 'YouTube button text' },
-              { type: 'string', name: 'youtubeLink', label: 'YouTube button link' },
-            ],
-          },
-          {
-            type: 'object', name: 'announcementsSection', label: 'Announcements heading',
-            description: 'The announcements themselves are under Announcements.',
-            fields: [
-              { type: 'string', name: 'label', label: 'Small label' },
-              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
-            ],
-          },
-          {
-            type: 'object', name: 'pastorNote', label: 'A note from our pastor',
-            fields: [
-              { type: 'image', name: 'portrait', label: 'Portrait photo', description: 'Shown as a circle.' },
-              { type: 'string', name: 'name', label: 'Name' },
-              { type: 'string', name: 'nameZh', label: 'Name in Chinese' },
-              { type: 'string', name: 'role', label: 'Role' },
-              { type: 'string', name: 'label', label: 'Small label' },
-              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
-              { type: 'string', name: 'heading', label: 'Heading', ui: { component: 'textarea' } },
-              { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
-              { type: 'string', name: 'bodyZh', label: 'Text in Chinese', ui: { component: 'textarea' } },
-              { type: 'string', name: 'ctaText', label: 'Button text', description: 'Leave blank and no button appears.' },
-              { type: 'string', name: 'ctaLink', label: 'Button link' },
-            ],
-          },
-          {
-            type: 'object', name: 'children', label: 'Children & families',
-            fields: [
-              { type: 'string', name: 'heading', label: 'Heading' },
-              { type: 'string', name: 'headingZh', label: 'Heading in Chinese' },
-              { type: 'string', name: 'body', label: 'Text', ui: { component: 'textarea' } },
-              { type: 'string', name: 'note', label: 'Smaller note', ui: { component: 'textarea' } },
-              { type: 'string', name: 'ctaText', label: 'Button text', description: 'Leave blank and no button appears.' },
-              { type: 'string', name: 'ctaTextZh', label: 'Button text in Chinese' },
-              { type: 'string', name: 'ctaLink', label: 'Button link' },
-              {
-                type: 'object', name: 'photos', label: 'Photos', list: true,
-                description: 'Up to three: one wide, then two square. Empty spots show a placeholder.',
-                ui: { max: 3, itemProps: (item) => ({ label: item?.alt || 'Photo' }) },
-                fields: [
-                  { type: 'image', name: 'src', label: 'Photo' },
-                  { type: 'string', name: 'alt', label: 'Describe the photo', description: 'For people using a screen reader.' },
-                ],
-              },
-              {
-                type: 'object', name: 'groups', label: 'Age groups', list: true,
-                ui: { itemProps: (item) => ({ label: item?.title || 'Group' }) },
-                fields: [
-                  { type: 'string', name: 'title', label: 'Title' },
-                  { type: 'string', name: 'body', label: 'Details' },
-                ],
-              },
-            ],
-          },
-          {
-            type: 'object', name: 'upcomingEvents', label: 'Coming up (upcoming events)',
-            description: 'The events themselves are under Events.',
-            fields: [
-              { type: 'string', name: 'label', label: 'Small label' },
-              { type: 'string', name: 'labelZh', label: 'Small label in Chinese' },
-              { type: 'string', name: 'heading', label: 'Heading' },
-              { type: 'string', name: 'note', label: 'Note', ui: { component: 'textarea' } },
-              { type: 'string', name: 'ctaText', label: 'Button text' },
-              { type: 'string', name: 'ctaLink', label: 'Button link' },
-              { type: 'string', name: 'emptyText', label: 'Shown when there are no events' },
-            ],
-          },
-          {
-            type: 'object', name: 'sections', label: 'More sections (recent sermons, videos, photos…)',
-            description: 'Shown below "Coming up". Add, remove and reorder these freely.',
+              'Everything under the hero, top to bottom. Drag to reorder, or remove ' +
+              'one. The designed sections (service times, announcements, pastor, ' +
+              'children, coming up) can be added back from the list if removed.',
             list: true,
-            templates: pageBlocks,
+            templates: [...homeBlocks, ...pageBlocks],
             ui: { itemProps: sectionLabel },
           },
         ],

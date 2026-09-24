@@ -68,7 +68,7 @@ what gets published.
 
 | Collection | What it is |
 |---|---|
-| **Homepage** | Every word on the front page, section by section: Hero, Service times board, Announcements heading, A note from our pastor, Children & families, Coming up, then More sections (recent sermons, videos, photos…) |
+| **Homepage** | Every word on the front page: the Hero at the top, then one reorderable list of Sections — Service times board, Announcements carousel, A note from our pastor, Children & families, Coming up, recent sermons, videos, photos… |
 | **Announcements** | Notices on the homepage and announcements page |
 | **Events** | Dated things — a picnic, a baptism, a members' meeting |
 | **Pages** | Whole pages, built by stacking sections |
