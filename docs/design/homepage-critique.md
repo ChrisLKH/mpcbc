@@ -24,6 +24,11 @@ Decisions made after the first draft (2026-09-28):
 - **Simplified Chinese: confirmed.** `/zh` gets a 繁 / 简 switch (H3).
 - **"Real people" / newcomer stories section: dropped.**
 - **Plan a visit: kept as an information page, no sign-up form for now** (C4).
+- **Give stays in the main menu** (H4).
+- **Two demo designs, desktop only**: Design 1 = separate languages (§0.1),
+  Design 2 = combined English-first homepage with minimal Chinese (§0.4).
+- **Phone designs postponed** until the desktop design is chosen (C5).
+- **Add a prayer request button + form** (H13).
 
 Technical rules in `AGENTS.md` still apply when this reaches the Astro repo
 (Tina + `content.config.ts` + `public/cms/shared.js` in step; never touch
@@ -85,6 +90,37 @@ only to **pre-highlight** the likely button.
 | 50th anniversary video | **Remove from home** | About page |
 | "More photos" Facebook block | **Remove** | Replace with Section 8 |
 | Footer newsletter | Keep, only if it actually sends somewhere | Footer |
+
+### 0.4 The two demos to build (desktop only, 1440 wide)
+
+Both demos use the **same new visual system and the same components**, so the
+owner compares *structure*, not styling. A simple toggle bar at the top
+switches between them: **Design 1 · Separate languages** | **Design 2 ·
+Combined**.
+
+**Design 1 — Separate languages** (the structure in §0.1–0.3)
+Artboards: `/` Welcome (video + English / 中文 buttons), `/en` home, `/zh`
+home (with 繁/简 switch), `/en/visit`, `/zh/visit`, prayer request page.
+
+**Design 2 — Combined, English-first** (successor to the original A)
+One homepage for everyone. English leads; Chinese appears **only** where a
+Chinese-only visitor needs it to find their way:
+
+| Where | Chinese allowed |
+|---|---|
+| Nav | one `中文` link (goes to a Chinese visit/info page) — no Chinese after every menu item |
+| Hero | one small line under the English headline, e.g. 「歡迎你 ・ 粵語 9:30 ・ 國語 11:30」 |
+| This Sunday strip | the two Chinese service names (粵語崇拜, 國語崇拜) beside their English label |
+| Find your place | the 粵語 and 國語 doors carry their Chinese name + one short Chinese line |
+| One "中文訪客" strip | a single band: 「第一次來？中文資訊 →」 linking to `/zh/visit` |
+| Everywhere else | **English only** — no bilingual eyebrows, buttons, headings or footers |
+
+Section order: hero (video) → This Sunday → Find your place (4 doors: English
+· 粵語 · 國語 · Kids) → Your first Sunday → 中文訪客 strip → Kids → Pastor's
+welcome + prayer request button → Coming up + Latest message → Stay connected
+→ Footer.
+Rule of thumb: an English visitor should be able to read the whole page and
+see Chinese only as labels; aim for **<10% of visible text in Chinese**.
 
 ---
 
@@ -148,14 +184,11 @@ Done when: the CTA appears in the nav, the hero, after "Your first Sunday", in
 the footer and in the mobile sticky bar — and no competing primary button
 exists.
 
-**C5 — There are no phone designs.**
-Where: every artboard is 1440 wide.
-Why: first visits come from Google Maps, Instagram and WeChat links — on a
-phone. A desktop-only review is reviewing the wrong product.
-Fix: add a 390×844 (and full-length) artboard for `/`, `/en`, `/zh`. Mobile gets
-a **sticky bottom bar**: *Plan your visit* · *Directions* · *Watch live* (Live
-pill only when live). Hero on mobile must show headline + CTA + next-service
-chip without scrolling.
+**C5 — There are no phone designs.** *(postponed by owner — do after the
+desktop design is chosen)*
+When it's time: 390×844 artboards for every page; a **sticky bottom bar**
+(*Plan your visit* · *Directions* · *Watch live*); headline + CTA + next-service
+chip visible without scrolling.
 
 **C6 — The visual system reads as "old" (A) or "template" (B/C/E).**
 Where: A maroon + dotted `--shell` + serif Chinese + Nanum Pen handwriting =
@@ -231,9 +264,11 @@ hand-maintained copies). Default 繁; remember choice.
 **H4 — Navigation is insider-speak.**
 Where: About · Services · Newsletter · Offering (+ Chinese on each).
 Fix:
-- EN: **Visit · Sundays · Kids & Youth · Watch · About** · [Plan your visit] · `中文`
-- ZH: **初次來訪 · 主日聚會 · 兒童及青少年 · 線上崇拜 · 關於我們** · [計劃來訪] · `EN | 繁 | 简`
-"Give" moves to footer and About. "Newsletter" moves to footer.
+- EN: **Visit · Sundays · Kids & Youth · Watch · About · Give** · [Plan your visit] · `中文`
+- ZH: **初次來訪 · 主日聚會 · 兒童及青少年 · 線上崇拜 · 關於我們 · 奉獻** · [計劃來訪] · `EN | 繁 | 简`
+- Design 2 (combined): the EN menu, with `中文` linking to `/zh/visit`.
+"Give / 奉獻" **stays in the main menu** (owner decision) — last plain item,
+never styled as a button. "Newsletter" moves to the footer.
 
 **H5 — Service board: great logic, dead presentation.**
 Where: A 3 cards with 200px dotted "youtube · …" wells.
@@ -296,6 +331,32 @@ Announcements, events and pastor note need a `language` field
 `AGENTS.md`, update `tina/config.ts`, `src/content.config.ts` and
 `public/cms/shared.js` together, and stop the dev server first.
 
+**H13 — Prayer request (new, owner request).**
+Button label: **Prayer request** / **代禱請求**. Placement: under the pastor's
+welcome ("How can we pray for you?" / 「我們可以怎樣為你禱告？」), in the
+footer, and on the About/Visit pages. Not in the main menu.
+It opens a short page/form:
+- Your request (required, multiline)
+- Name (optional) · Email or phone (optional) · **WeChat ID** on `/zh` (optional)
+- Who may see it: ◉ Pastors only ○ Pastors and the prayer team
+- ☐ I'd like someone to contact me
+- Submit → "Thank you. Our pastors will pray for you this week." (in the page's
+  language)
+- Line under the button: who reads requests and that they are kept private.
+
+Implementation options, simplest first:
+
+| Option | How | Pros | Cons |
+|---|---|---|---|
+| **1. Google Form or Tally, embedded** *(recommended to start)* | A volunteer builds the form in the church's Google account; the site shows it on `/prayer` (or links out). Responses go to a Sheet + email alert to the pastor. | No code, free, volunteer-owned, working in an hour | Looks less native; data sits in Google/Tally |
+| 2. `mailto:` button | Opens the visitor's mail app to a prayer address | Zero setup | Many phones have no mail app set up; exposes the address to spam |
+| 3. Native form → Cloudflare Worker | Form posts to a new `/api/prayer` route on the existing Worker; Cloudflare Turnstile blocks spam; the Worker emails the prayer inbox (e.g. Resend or Cloudflare Email) and optionally stores in D1 with auto-delete after 30 days | Fully on-brand, bilingual, private | Needs an email service key (secret), someone to maintain it |
+
+Recommendation: ship the **button + page with option 1** now; move to option 3
+only if the church wants it fully native. For the demo, draw the form natively
+with a `[FORM ENDPOINT]` placeholder action. Never store requests in the git
+repo or in the CMS content.
+
 ### Nice to have
 
 - **N1** Site-wide "● Live now" pill in the header during a live service, per
@@ -306,7 +367,6 @@ Announcements, events and pastor note need a `language` field
 - **N4** 60-second "What a Sunday looks like" video on the visit page.
 - **N5** Simple illustrated map: entrance, parking, kids' rooms.
 - **N6** Seasonal hero swap (Easter, Christmas) via CMS.
-- **N7** Prayer request form, per language.
 - **N8** Analytics event on *Plan your visit* clicks (Cloudflare Web Analytics)
   so the owner can see if the redesign converts.
 - **N9** Demo toggle bar: add `/`, `/en`, `/zh`, mobile views; drop the A tab
@@ -445,14 +505,16 @@ Words to never use on the home pages: *congregation / 會眾*, *archive / 存檔
 ## 4. Suggested implementation order
 
 1. **Tokens + type** (C6, H2) — one shared stylesheet/`helmet` block.
-2. **`/` welcome + `/en` + `/zh` desktop and 390px artboards** (C1, C5, C7, C8,
-   §0.2) with copy from §3.
-3. **Plan-your-visit page + sticky mobile bar** (C4).
-4. **Restyled components**: This Sunday strip (H5), doors, first-Sunday steps,
-   kids (H6), pastor, coming up/latest message, connect (H8).
-5. **Language switch + 简体** (H3, H4, H11).
-6. Remove A's artboard from the toggle; keep it on the canvas only as
-   "before".
+2. **Shared components** in the new style: hero with video, This Sunday strip
+   (H5), doors, first-Sunday steps, kids (H6), pastor + prayer button (H13),
+   coming up/latest message, connect (H8), nav with Give (H4), footer.
+3. **Design 1 — Separate languages** (desktop): `/` Welcome, `/en`, `/zh`
+   (繁/简 switch), `/en/visit`, `/zh/visit`, `/prayer` — copy from §3.
+4. **Design 2 — Combined** (desktop): one homepage per §0.4, plus the
+   `/zh/visit` page it links to.
+5. **Toggle bar** between Design 1 and Design 2; drop the old A/B/C/E tabs
+   (keep the old artboards on the canvas as "before").
+6. Owner picks a direction → **phone designs** (C5).
 7. Nice-to-haves (N1–N9).
-8. Only after the owner picks the direction: port to the Astro repo with the
-   content-model changes in H12.
+8. Port to the Astro repo with the content-model changes in H12 and the
+   prayer form option chosen in H13.
