@@ -29,6 +29,13 @@ Decisions made after the first draft (2026-09-28):
   Design 2 = combined English-first homepage with minimal Chinese (§0.4).
 - **Phone designs postponed** until the desktop design is chosen (C5).
 - **Add a prayer request button + form** (H13).
+- **Kids' classes are taught in English**; Chinese-speaking helpers at check-in
+  for parents. Say so on both language versions (and in one short Chinese line
+  in Design 2's kids section).
+- **Colour: "Evergreen & Sun" recommended** (evergreen `#0E6B5C`, sun
+  `#F4B942`); alternative "Plum & Apricot" (`#7A2E5E`, `#F2A65A`) keeps a link
+  to the logo maroon. Both are drawn on the design canvas (Round 2 page) with a
+  Colour switch on every artboard.
 
 Technical rules in `AGENTS.md` still apply when this reaches the Astro repo
 (Tina + `content.config.ts` + `public/cms/shared.js` in step; never touch
