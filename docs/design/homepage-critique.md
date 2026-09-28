@@ -29,6 +29,13 @@ Decisions made after the first draft (2026-09-28):
   Design 2 = combined English-first homepage with minimal Chinese (§0.4).
 - **Phone designs postponed** until the desktop design is chosen (C5).
 - **Add a prayer request button + form** (H13).
+- **No saved visitor settings** (no remembered language, no detection) — may be
+  built in WordPress; keep features to what standard plugins cover.
+- **Service times: one compact "Sunday worship" bar** under the hero listing
+  all services + kids' worship on every home page; not repeated in the hero.
+- **Sermon archive in both designs**: Design 1 = English "Messages" page +
+  Chinese 講道 page with 粵語/國語 tabs; Design 2 = one Sermons page with
+  All / English / 粵語 / 國語 filters.
 - **Kids' classes are taught in English**; Chinese-speaking helpers at check-in
   for parents. Say so on both language versions (and in one short Chinese line
   in Design 2's kids section).
@@ -54,7 +61,7 @@ get a first-time visitor to plan a Sunday visit.**
 
 | Route | What it is | Built from |
 |---|---|---|
-| `/` | **Welcome.** Full-screen looping reel (E's hero). Only screen allowed to mix languages. Two huge buttons: **English** · **中文** (with small 繁 / 简 under 中文). Remembers the choice; returning visitors skip straight through (with a visible "change language" link). | E hero + B's front-door idea |
+| `/` | **Welcome.** Full-screen looping reel (E's hero). Only screen allowed to mix languages. Two huge buttons: **English** · **中文** (with small 繁 / 简 under 中文). No remembered choice — every visit shows the two buttons (owner decision: keep it simple, WordPress-friendly). | E hero + B's front-door idea |
 | `/en` | English home. 100% English. | E structure + C's "doors" |
 | `/zh` | 中文 home. 100% Traditional Chinese, with a 简体 switch. Written for Chinese readers, not translated. | E structure + C's "doors" |
 | `/en/kids`, `/zh/kids` | Children & families, per language (parents may be either). | A's kids section, rebuilt |
@@ -63,8 +70,7 @@ get a first-time visitor to plan a Sunday visit.**
 Why not auto-redirect `/` by browser language: many Chinese-speaking families
 here run English phones/OSes, and many English speakers share a device with
 Chinese-reading parents. A one-tap choice on top of a beautiful video is not a
-dead splash — it *is* the hero. Use `Accept-Language` / `navigator.language`
-only to **pre-highlight** the likely button.
+dead splash — it *is* the hero. No language detection or pre-highlighting.
 
 ### 0.2 Section order — `/en` (and mirror for `/zh`)
 
@@ -266,7 +272,7 @@ No letter-spacing on CJK.
 If most new Chinese-speaking visitors are from mainland China, an all-Traditional
 site signals "not really for you". Fix: 繁 / 简 switch on `/zh` (build-time
 OpenCC conversion or client-side conversion of the same content — never two
-hand-maintained copies). Default 繁; remember choice.
+hand-maintained copies). Default 繁; the switch is not remembered between visits.
 
 **H4 — Navigation is insider-speak.**
 Where: About · Services · Newsletter · Offering (+ Chinese on each).
@@ -450,7 +456,6 @@ jargon (congregation, fellowship, archive, ministry) on the home pages.
 - Headline (both, stacked, equal size): **Welcome** / **歡迎**
 - Buttons: **English** · **中文** (under 中文, small: 繁體 · 简体)
 - Small line under buttons: `[Street], Monterey Park · Since 1976`
-- Returning: "Continue in English →" / 「繼續瀏覽中文版 →」 with "change" link.
 
 ### `/en`
 
