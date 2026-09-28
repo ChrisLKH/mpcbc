@@ -19,6 +19,12 @@ Owner direction for this round (overrides the old DESIGN-BRIEF constraints):
 - **Keep the looping hero video.**
 - Placeholder content is fine; mark it `[LIKE THIS]`.
 
+Decisions made after the first draft (2026-09-28):
+
+- **Simplified Chinese: confirmed.** `/zh` gets a 繁 / 简 switch (H3).
+- **"Real people" / newcomer stories section: dropped.**
+- **Plan a visit: kept as an information page, no sign-up form for now** (C4).
+
 Technical rules in `AGENTS.md` still apply when this reaches the Astro repo
 (Tina + `content.config.ts` + `public/cms/shared.js` in step; never touch
 `services.json`, `.env`, sermon files; stop the dev server before editing
@@ -40,7 +46,7 @@ get a first-time visitor to plan a Sunday visit.**
 | `/en` | English home. 100% English. | E structure + C's "doors" |
 | `/zh` | 中文 home. 100% Traditional Chinese, with a 简体 switch. Written for Chinese readers, not translated. | E structure + C's "doors" |
 | `/en/kids`, `/zh/kids` | Children & families, per language (parents may be either). | A's kids section, rebuilt |
-| `/en/visit`, `/zh/visit` | Plan-a-visit page with the form (the conversion). | E's "Plan a visit" band, expanded |
+| `/en/visit`, `/zh/visit` | Plan-a-visit page: times, parking, kids, what happens, contact (phone / email / WeChat). No form for now. | E's "Plan a visit" band, expanded |
 
 Why not auto-redirect `/` by browser language: many Chinese-speaking families
 here run English phones/OSes, and many English speakers share a device with
@@ -59,13 +65,12 @@ only to **pre-highlight** the likely button.
    *Youth & young adults*. On `/zh`: *粵語崇拜* · *國語崇拜* · *兒童及青少年*.
 4. **Your first Sunday** — 4 numbered steps (park → greeted → kids check-in →
    lunch) + CTA. (from E's Plan-a-visit)
-5. **Real people** — 2–3 short newcomer stories with photo (placeholder).
-6. **Kids** — full-bleed colour section, age cards, trust line (A/E kids).
-7. **Pastor's welcome** — short, per language, with portrait.
-8. **Coming up + Latest message** — events list + one featured sermon, both
+5. **Kids** — full-bleed colour section, age cards, trust line (A/E kids).
+6. **Pastor's welcome** — short, per language, with portrait.
+7. **Coming up + Latest message** — events list + one featured sermon, both
    filtered to this language.
-9. **Stay connected** — EN: Instagram/YouTube/email. ZH: **WeChat QR** + YouTube.
-10. **Footer** — address, map link, times, give, contact, language switch.
+8. **Stay connected** — EN: Instagram/YouTube/email. ZH: **WeChat QR** + YouTube.
+9. **Footer** — address, map link, times, give, contact, language switch.
 
 ### 0.3 Components kept from A (restyle, don't copy)
 
@@ -73,12 +78,12 @@ only to **pre-highlight** the likely button.
 |---|---|---|
 | Service board (3 cards + live state) | **Keep the logic**, kill the look | "This Sunday strip", per language |
 | Announcements carousel | Keep, simplify to 3 cards, audience-tagged | Below "Coming up" or merge into it |
-| Pastor's note | Keep, per language, shorter | Section 7 |
-| Children & families (age cards) | **Keep**, strongest content in A | Section 6 + `/kids` |
-| Upcoming events list | Keep | Section 8 |
-| Recent sermons | Keep, filter by language, show 1 featured | Section 8 |
+| Pastor's note | Keep, per language, shorter | Section 6 |
+| Children & families (age cards) | **Keep**, strongest content in A | Section 5 + `/kids` |
+| Upcoming events list | Keep | Section 7 |
+| Recent sermons | Keep, filter by language, show 1 featured | Section 7 |
 | 50th anniversary video | **Remove from home** | About page |
-| "More photos" Facebook block | **Remove** | Replace with Section 9 |
+| "More photos" Facebook block | **Remove** | Replace with Section 8 |
 | Footer newsletter | Keep, only if it actually sends somewhere | Footer |
 
 ---
@@ -129,17 +134,19 @@ post photos from events to Facebook, where our members already are",
 Fix: delete all of it. Status labels become human: **Live now**, **Starts
 Sunday 11:00 AM**, **Watch last week's service**.
 
-**C4 — No conversion. "Plan a visit" goes to a page of prose.**
-Where: all designs.
-Fix: one primary action site-wide — **Plan your visit / 計劃來訪** — opening a
-short form: name · which service · number and ages of kids · how to reach you
-(email / phone / **WeChat ID** on `/zh`) · optional "what would help?". Promise
-on submit: *"Someone will meet you at the front door and walk you in."* (Form
-can post nowhere in the demo; label it `[FORM ENDPOINT]`.) Same button label
-and colour everywhere; nothing else uses that colour.
+**C4 — No clear next step.**
+Where: all designs — five different CTAs per page.
+Decision: **keep "Plan your visit / 計劃來訪" as the one primary action, but it
+opens an information page, not a sign-up form** (no one to follow up form
+submissions yet; a form that goes nowhere is worse than none).
+The visit page answers, in order: when · where + parking · what happens (the
+4 steps) · kids · what to wear / how long · contact (phone, email; **WeChat QR
+on `/zh`**). Optional later: a "Let us know you're coming" form once someone
+owns the inbox.
+Same button label and colour everywhere; nothing else uses that colour.
 Done when: the CTA appears in the nav, the hero, after "Your first Sunday", in
-the footer and in the mobile sticky bar — and nowhere is there a competing
-primary button.
+the footer and in the mobile sticky bar — and no competing primary button
+exists.
 
 **C5 — There are no phone designs.**
 Where: every artboard is 1440 wide.
@@ -215,7 +222,7 @@ friendly) instead of Noto Serif TC (formal, hymnal); Noto Sans TC 400 body.
 Body 18px minimum (older readers), Chinese line-height 1.8, English 1.6.
 No letter-spacing on CJK.
 
-**H3 — Simplified Chinese for Mandarin newcomers.** *(confirm with owner)*
+**H3 — Simplified Chinese for Mandarin newcomers.** *(confirmed by owner)*
 If most new Chinese-speaking visitors are from mainland China, an all-Traditional
 site signals "not really for you". Fix: 繁 / 简 switch on `/zh` (build-time
 OpenCC conversion or client-side conversion of the same content — never two
@@ -243,10 +250,7 @@ about the parent's worry, three age cards (Nursery 0–3 · Kids 4–11 · Youth
 volunteers · classes in English (and Mandarin, if true). Replace the
 handwritten note with a real line. CTA: *Plan a visit with kids*.
 
-**H7 — No social proof.**
-Fix: "Real people" section: 2–3 cards, photo + first name + one sentence +
-where they came from (e.g. `[Name], moved from [city] in [year]`). Separate
-stories per language. Placeholder now; real quotes later.
+**H7 — (dropped by owner)** Newcomer stories / social proof section — not doing it.
 
 **H8 — Channels don't match the audiences.**
 Fix: `/zh` gets a **WeChat** block (QR + "加入新朋友群"). `/en` gets
@@ -303,7 +307,7 @@ Announcements, events and pastor note need a `language` field
 - **N5** Simple illustrated map: entrance, parking, kids' rooms.
 - **N6** Seasonal hero swap (Easter, Christmas) via CMS.
 - **N7** Prayer request form, per language.
-- **N8** Analytics event on *Plan your visit* submit (Cloudflare Web Analytics)
+- **N8** Analytics event on *Plan your visit* clicks (Cloudflare Web Analytics)
   so the owner can see if the redesign converts.
 - **N9** Demo toggle bar: add `/`, `/en`, `/zh`, mobile views; drop the A tab
   once components are merged.
@@ -327,7 +331,7 @@ Three personas walked through A, B, C and E as they exist today.
 | Tries **E** | Slideshow feels alive. "This Sunday" bar is useful. Then "Who we are" is a paragraph about grandparents again. No address on screen. Where do I park? | Scrolls to bottom to find address |
 | Overall | Wants: time, address, "is anyone my age there?", "will it be weird if I come alone?" None answered above the fold. | — |
 
-Fixes: C1, C2, C3, C8, H4, H7, §3 copy.
+Fixes: C1, C2, C3, C8, H4, §3 copy.
 
 ### Persona 2 — 王太太 (Mrs. Wang), 38, moved from Guangzhou/Shenzhen 8 months ago, Mandarin, reads Simplified, two kids (6 and 9), a friend sent the link in WeChat (phone)
 
@@ -397,8 +401,7 @@ jargon (congregation, fellowship, archive, ministry) on the home pages.
 | Door 3 | **Youth & young adults** — Fridays [7:30 PM]. Food, friends, real questions. → See Youth |
 | First Sunday heading | **Your first Sunday** |
 | Steps | 1 **Park behind the building.** 2 **Someone will say hi at the door** and show you around. 3 **Check the kids in** — takes two minutes. 4 **Stay for lunch.** No one will single you out. |
-| First Sunday CTA | Plan your visit — we'll meet you at the door |
-| Stories heading | **Why people stay** |
+| First Sunday CTA | Plan your visit |
 | Kids heading | **Your kids will want to come back.** |
 | Kids trust row | Secure check-in · Background-checked volunteers · Same time as the service |
 | Pastor heading | **A word from [Pastor name]** — 2–3 sentences, first person, to the visitor. |
@@ -424,8 +427,7 @@ jargon (congregation, fellowship, archive, ministry) on the home pages.
 | Door 3 | **兒童及青少年** — 孩子在安全、有趣的環境中認識神。→ 了解更多 |
 | First Sunday heading | **第一次來？** |
 | Steps | 1 **車可停在教會後方。** 2 **門口有同工迎接你**，帶你熟悉環境。 3 **為孩子登記**，兩分鐘完成。 4 **崇拜後一起吃午飯。** 不用上台，也不用自我介紹。 |
-| First Sunday CTA | 計劃來訪 — 我們會在門口等你 |
-| Stories heading | **他們的故事** |
+| First Sunday CTA | 計劃來訪 |
 | Kids heading | **孩子會想再來。** |
 | Kids trust row | 安全簽到 ・ 同工均經背景審查 ・ 與崇拜同時進行 ・ 課堂語言：[英語／國語] |
 | Pastor heading | **[牧師姓名]牧師的話** |
@@ -445,9 +447,9 @@ Words to never use on the home pages: *congregation / 會眾*, *archive / 存檔
 1. **Tokens + type** (C6, H2) — one shared stylesheet/`helmet` block.
 2. **`/` welcome + `/en` + `/zh` desktop and 390px artboards** (C1, C5, C7, C8,
    §0.2) with copy from §3.
-3. **Plan-your-visit form + sticky mobile bar** (C4).
+3. **Plan-your-visit page + sticky mobile bar** (C4).
 4. **Restyled components**: This Sunday strip (H5), doors, first-Sunday steps,
-   kids (H6), stories (H7), pastor, coming up/latest message, connect (H8).
+   kids (H6), pastor, coming up/latest message, connect (H8).
 5. **Language switch + 简体** (H3, H4, H11).
 6. Remove A's artboard from the toggle; keep it on the canvas only as
    "before".
