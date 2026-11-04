@@ -1,0 +1,74 @@
+[
+  {
+    "children": "10:00",
+    "childrenBottom": 795,
+    "h1": "Know God.\nGrow together.",
+    "height": 900,
+    "heroBottom": 900,
+    "locationBottom": 876,
+    "overflow": false,
+    "railBottom": 795,
+    "railHeight": 73,
+    "width": 1440
+  },
+  {
+    "children": "10:00",
+    "childrenBottom": 695,
+    "h1": "Know God.\nGrow together.",
+    "height": 800,
+    "heroBottom": 800,
+    "locationBottom": 776,
+    "overflow": false,
+    "railBottom": 695,
+    "railHeight": 73,
+    "width": 1280
+  },
+  {
+    "children": "10:00",
+    "childrenBottom": 795,
+    "h1": "Know God.\nGrow together.",
+    "height": 900,
+    "heroBottom": 900,
+    "locationBottom": 876,
+    "overflow": false,
+    "railBottom": 795,
+    "railHeight": 73,
+    "width": 1110
+  },
+  {
+    "children": "10:00",
+    "childrenBottom": 919,
+    "h1": "Know God.\nGrow together.",
+    "height": 1024,
+    "heroBottom": 1024,
+    "locationBottom": 1000,
+    "overflow": false,
+    "railBottom": 919,
+    "railHeight": 115,
+    "width": 768
+  },
+  {
+    "children": "10:00",
+    "childrenBottom": 705,
+    "h1": "Know God.\nGrow together.",
+    "height": 844,
+    "heroBottom": 844,
+    "locationBottom": 824,
+    "overflow": false,
+    "railBottom": 705,
+    "railHeight": 183,
+    "width": 390
+  },
+  {
+    "children": "10:00",
+    "childrenBottom": 661,
+    "h1": "Know God.\nGrow together.",
+    "height": 800,
+    "heroBottom": 800,
+    "locationBottom": 780,
+    "overflow": false,
+    "railBottom": 661,
+    "railHeight": 183,
+    "width": 360
+  }
+]

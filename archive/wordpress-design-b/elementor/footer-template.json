@@ -1,0 +1,594 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Footer",
+    "type": "container",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "eb2faec4",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+                "content_width": "full",
+                "background_background": "classic",
+                "background_color": "#1B1014",
+                "__globals__": {
+                    "background_color": "globals/colors?id=secondary"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "20",
+                    "bottom": "64",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "20",
+                    "bottom": "48",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "40",
+                    "right": "20",
+                    "bottom": "40",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "flex_direction": "column",
+                "flex_align_items": "center"
+            },
+            "elements": [
+                {
+                    "id": "f9a8349c",
+                    "elType": "container",
+                    "isInner": false,
+                    "settings": {
+                        "content_width": "boxed",
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1080
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 40
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "59a8de09",
+                            "elType": "container",
+                            "isInner": false,
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_wrap": "wrap",
+                                "flex_justify_content": "space-between",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 40
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "57ee31db",
+                                    "elType": "container",
+                                    "isInner": false,
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 32
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "a0b24ddf",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc-2.local/wp-content/uploads/2026/10/logo.png",
+                                                    "id": 7
+                                                },
+                                                "align": "left",
+                                                "align_tablet": "left",
+                                                "align_mobile": "left",
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 180
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "308b501f",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p>000 Garvey Avenue<br>Monterey Park, CA 91754</p>",
+                                                "text_color": "rgba(255,255,255,0.7)",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "ed0ee957",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "button",
+                                            "settings": {
+                                                "text": "Get directions 交通指引 ↗",
+                                                "link": {
+                                                    "url": "https://maps.google.com/?q=Monterey+Park+Chinese+Baptist+Church",
+                                                    "is_external": false,
+                                                    "nofollow": false
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "999",
+                                                    "right": "999",
+                                                    "bottom": "999",
+                                                    "left": "999",
+                                                    "isLinked": true
+                                                },
+                                                "background_color": "transparent",
+                                                "button_text_color": "#FFFFFF",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "1",
+                                                    "bottom": "1",
+                                                    "left": "1",
+                                                    "isLinked": true
+                                                },
+                                                "border_color": "rgba(255,255,255,0.35)",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "8",
+                                                    "right": "16",
+                                                    "bottom": "8",
+                                                    "left": "16",
+                                                    "isLinked": false
+                                                },
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "336e3fe3",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p>Free parking in the lot off the alley, and on the street after 9 AM Sunday.</p>",
+                                                "text_color": "rgba(255,255,255,0.7)",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "45972a45",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p><a href=\"tel:+16265550100\">(626) 555-0100</a><br><a href=\"mailto:office@mpcbc.org\">office@mpcbc.org</a></p>",
+                                                "text_color": "#FFFFFF",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "1f83e96b",
+                                            "elType": "container",
+                                            "isInner": false,
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_wrap": "wrap",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 8
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "378edcb7",
+                                                    "elType": "widget",
+                                                    "isInner": false,
+                                                    "widgetType": "button",
+                                                    "settings": {
+                                                        "text": "Facebook",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": false,
+                                                            "nofollow": false
+                                                        },
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "999",
+                                                            "right": "999",
+                                                            "bottom": "999",
+                                                            "left": "999",
+                                                            "isLinked": true
+                                                        },
+                                                        "background_color": "transparent",
+                                                        "button_text_color": "#FFFFFF",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": true
+                                                        },
+                                                        "border_color": "rgba(255,255,255,0.3)",
+                                                        "padding": {
+                                                            "unit": "px",
+                                                            "top": "6",
+                                                            "right": "12",
+                                                            "bottom": "6",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 13
+                                                        }
+                                                    },
+                                                    "elements": []
+                                                },
+                                                {
+                                                    "id": "52d67df4",
+                                                    "elType": "widget",
+                                                    "isInner": false,
+                                                    "widgetType": "button",
+                                                    "settings": {
+                                                        "text": "YouTube",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": false,
+                                                            "nofollow": false
+                                                        },
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "999",
+                                                            "right": "999",
+                                                            "bottom": "999",
+                                                            "left": "999",
+                                                            "isLinked": true
+                                                        },
+                                                        "background_color": "transparent",
+                                                        "button_text_color": "#FFFFFF",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": true
+                                                        },
+                                                        "border_color": "rgba(255,255,255,0.3)",
+                                                        "padding": {
+                                                            "unit": "px",
+                                                            "top": "6",
+                                                            "right": "12",
+                                                            "bottom": "6",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 13
+                                                        }
+                                                    },
+                                                    "elements": []
+                                                },
+                                                {
+                                                    "id": "b9d8cf03",
+                                                    "elType": "widget",
+                                                    "isInner": false,
+                                                    "widgetType": "button",
+                                                    "settings": {
+                                                        "text": "Instagram",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": false,
+                                                            "nofollow": false
+                                                        },
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "999",
+                                                            "right": "999",
+                                                            "bottom": "999",
+                                                            "left": "999",
+                                                            "isLinked": true
+                                                        },
+                                                        "background_color": "transparent",
+                                                        "button_text_color": "#FFFFFF",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": true
+                                                        },
+                                                        "border_color": "rgba(255,255,255,0.3)",
+                                                        "padding": {
+                                                            "unit": "px",
+                                                            "top": "6",
+                                                            "right": "12",
+                                                            "bottom": "6",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 13
+                                                        }
+                                                    },
+                                                    "elements": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "7122b3e1",
+                                    "elType": "container",
+                                    "isInner": false,
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 28
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 14
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "79b105c6",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p><strong>SUNDAY SERVICES</strong></p>",
+                                                "text_color": "rgba(255,255,255,0.6)",
+                                                "typography_font_family": "Inter",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 13
+                                                },
+                                                "typography_font_weight": "700"
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "dd7b736d",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p>9:30 AM — 粵語 Cantonese<br>11:00 AM — English<br>11:30 AM — 國語 Mandarin</p>",
+                                                "text_color": "#FFFFFF",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "a1449215",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p><strong>OFFICE HOURS</strong></p>",
+                                                "text_color": "rgba(255,255,255,0.6)",
+                                                "typography_font_family": "Inter",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 13
+                                                },
+                                                "typography_font_weight": "700"
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "14b4b3af",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p>Tue – Fri, 9:00 AM – 4:00 PM<br>Closed Monday</p>",
+                                                "text_color": "rgba(255,255,255,0.7)",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "07eb9fba",
+                                    "elType": "container",
+                                    "isInner": false,
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 32
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 14
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "1d413b3b",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p><strong>WEEKLY EMAIL 每週通訊</strong></p>",
+                                                "text_color": "rgba(255,255,255,0.6)",
+                                                "typography_font_family": "Inter",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 13
+                                                },
+                                                "typography_font_weight": "700"
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "958d0dd0",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "settings": {
+                                                "editor": "<p>Announcements, service notes, and prayer requests. One email, Thursday mornings.</p>",
+                                                "text_color": "rgba(255,255,255,0.7)",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                }
+                                            },
+                                            "elements": []
+                                        },
+                                        {
+                                            "id": "e7aaad12",
+                                            "elType": "widget",
+                                            "isInner": false,
+                                            "widgetType": "shortcode",
+                                            "settings": {
+                                                "shortcode": "[fluentform id=\"5\"]"
+                                            },
+                                            "elements": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "813f72fd",
+                            "elType": "container",
+                            "isInner": false,
+                            "settings": {
+                                "content_width": "full",
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "border_color": "rgba(255,255,255,0.2)",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "20",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "flex_direction": "row",
+                                "flex_wrap": "wrap",
+                                "flex_justify_content": "space-between",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "289546a1",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>© 2026 Monterey Park Chinese Baptist Church 蒙迪園華人浸信會</p>",
+                                        "text_color": "rgba(255,255,255,0.6)",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 13
+                                        }
+                                    },
+                                    "elements": []
+                                },
+                                {
+                                    "id": "6b699ce8",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Live links update automatically from YouTube. Nobody edits this weekly.</p>",
+                                        "text_color": "rgba(255,255,255,0.6)",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 13
+                                        }
+                                    },
+                                    "elements": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sermons 講道 · MPCBC</title>
+<meta name="description" content="Every recorded Sunday sermon from MPCBC’s Cantonese, Mandarin and English congregations, searchable by title, speaker and series.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* shared by the five Sermon Archive options: the site's tokens (taste-mockup/index.html), header and footer */
+:root {
+  --bg: #e8e8e3; --surface: #dcdcd6; --paper: #ffffff; --ink: #181715; --muted: #5c5b55;
+  --accent: #ffd21a; --accent-ink: #181715; --soft-yellow: #ffe680;
+  --field: #181715; --field-ink: #e8e8e3; --field-muted: #b4b3ab; --field-2: #24231f; --field-3: #2f2e2a;
+  --font: 'Hanken Grotesk', 'Noto Sans TC', system-ui, sans-serif; --font-zh: 'Noto Sans TC', system-ui, sans-serif;
+  --t-hero: clamp(3rem, 1.2rem + 6vw, 6.5rem);
+  --t-head: clamp(2.5rem, 1.75rem + 2.2vw, 3.5rem);
+  --t-title: clamp(1.25rem, 1.1rem + 0.45vw, 1.5rem);
+  --t-body: 1.0625rem; --t-small: 0.9375rem;
+  --margin: clamp(1rem, 2.2vw, 2rem); --gutter: clamp(1rem, 2vw, 2rem); --section: clamp(5rem, 9vw, 9rem);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); font-size: var(--t-body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, p, figure, ul, ol, dl, dd, fieldset { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+fieldset { border: 0; padding: 0; min-width: 0; }
+legend { padding: 0; }
+img, video { display: block; max-width: 100%; height: auto; }
+button, input, select { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 0.07em; }
+:target { scroll-margin-top: 5rem; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+p { text-wrap: pretty; }
+.zh { font-family: var(--font-zh); font-weight: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: absolute; left: var(--margin); top: -4rem; z-index: 50; background: var(--ink); color: var(--bg); padding: 0.75rem 1.25rem; border-radius: 999px; }
+.skip:focus { top: 1rem; }
+b, strong { font-weight: 500; }
+
+/* one button shape on the site: fully round */
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 0.45em; min-height: 3rem; padding: 0 1.5rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 500; text-decoration: none; white-space: nowrap; transition: transform 140ms var(--ease-out), background-color 180ms ease, color 180ms ease; }
+.button--accent { background: var(--accent); color: var(--accent-ink); }
+.button:active { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) { .button:hover { background: var(--accent); color: var(--accent-ink); } .button--accent:hover { background: var(--paper); } }
+
+/* ---------- header: the site's white bar ---------- */
+.top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 0.75rem var(--margin); background: var(--paper); color: var(--ink); }
+.wordmark { display: inline-flex; align-items: baseline; gap: 0.6rem; text-decoration: none; font-weight: 500; font-size: 1.375rem; line-height: 1; letter-spacing: -0.02em; }
+.wordmark .zh { font-size: var(--t-body); }
+.nav { display: flex; align-items: center; gap: clamp(0.9rem, 1.6vw, 1.75rem); }
+.nav a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2.75rem; text-decoration: none; font-weight: 500; }
+.nav a .zh { font-size: var(--t-small); color: var(--muted); }
+.nav a:hover, .nav a:focus-visible, .nav a[aria-current] { text-decoration: underline; text-decoration-thickness: 2px; }
+.menu-button { display: none; min-height: 2.75rem; padding: 0 1.1rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 500; }
+.menu-panel { position: fixed; z-index: 21; top: 4.25rem; left: var(--margin); right: var(--margin); background: var(--paper); color: var(--ink); padding: 0.5rem 0; box-shadow: 0 12px 32px rgba(0,0,0,.18); } /* taste-skill-ignore: the open menu floats */
+.menu-panel[hidden] { display: none; }
+.menu-panel a { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 1.5rem; min-height: 3rem; text-decoration: none; font-weight: 500; }
+.menu-panel .zh { color: var(--muted); }
+@media (max-width: 1199px) { .nav { display: none; } .menu-button { display: inline-flex; align-items: center; } }
+
+/* ---------- footer: the site's template (footer 16), unchanged ---------- */
+.foot { background: var(--field); color: var(--field-ink); padding: 5rem var(--margin) 1.5rem; font-size: var(--t-body); }
+.foot__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem var(--gutter); }
+.foot h2 { font-size: var(--t-small); font-weight: 500; }
+.foot h2 .zh { margin-left: 0.4rem; }
+.foot ul { margin-top: 0.5rem; display: grid; }
+.foot li a { display: inline-flex; min-height: 2.75rem; align-items: center; text-decoration: none; font-weight: 500; }
+.foot li a:hover { text-decoration: underline; }
+.foot li .zh { margin-left: 0.4rem; color: var(--field-muted); }
+.foot p { margin-top: 0.5rem; }
+.foot .times-mini { display: grid; gap: 0.1rem; font-size: var(--t-small); font-variant-numeric: tabular-nums; }
+.foot .times-mini span { color: var(--field-muted); }
+.foot__bar { display: grid; grid-template-columns: auto 1fr auto; gap: 0.5rem 2rem; align-items: center; margin-top: 3.5rem; font-size: var(--t-small); color: var(--field-muted); }
+.foot__bar p { margin: 0; }
+.foot__id { color: var(--field-ink); } .foot__id .zh { margin-left: 0.5em; }
+.foot__bar a { display: inline-flex; min-height: 2.75rem; align-items: center; color: var(--field-ink); }
+.foot__bar .langs { display: flex; gap: 1.25rem; }
+@media (max-width: 899px) { .foot__cols { grid-template-columns: 1fr 1fr; } .foot__bar { grid-template-columns: 1fr; } }
+@media (max-width: 599px) { .foot { padding: 3.5rem 1rem 1.5rem; } .foot__cols { grid-template-columns: 1fr; gap: 2rem; } }
+
+/* ---------- archive parts every option shares (each option restyles them) ---------- */
+.field label, .chips legend { display: block; font-size: var(--t-small); font-weight: 500; margin-bottom: 0.5rem; }
+.field input, .field select { width: 100%; min-height: 3rem; padding: 0 1rem; border: 1px solid #bdbdb5; border-radius: 0; background: var(--paper); color: var(--ink); font-size: var(--t-body); }
+.field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23181715' stroke-width='2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; text-overflow: ellipsis; }
+.field input:focus-visible, .field select:focus-visible { outline: 3px solid var(--ink); outline-offset: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chips legend { width: 100%; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.chip > span { display: inline-flex; align-items: center; gap: 0.35em; min-height: 2.75rem; padding: 0 1.1rem; border-radius: 999px; background: var(--paper); font-weight: 500; cursor: pointer; transition: background-color 160ms ease, color 160ms ease; }
+.chip input:checked + span { background: var(--ink); color: var(--paper); }
+.chip input:focus-visible + span { outline: 3px solid var(--ink); outline-offset: 2px; }
+@media (hover: hover) { .chip:hover > span { background: var(--accent); color: var(--ink); } }
+.more summary { display: none; }
+.more__body { display: contents; }
+@media (max-width: 699px) {
+  .more summary { display: flex; align-items: center; gap: 0.4em; min-height: 2.75rem; font-weight: 500; cursor: pointer; text-decoration: underline; }
+  .more[open] .more__body { display: grid; gap: 1rem; margin-top: 0.75rem; }
+  .more:not([open]) .more__body { display: none; }
+}
+.ar-count { font-weight: 400; }
+.ar-count .zh { margin-left: 0.6em; color: var(--muted); }
+.ar-active { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 0.5rem; }
+.ar-active a { display: inline-flex; align-items: center; gap: 0.35em; min-height: 2.75rem; text-decoration: underline; font-weight: 500; }
+.pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; font-variant-numeric: tabular-nums; }
+.pager ol { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.pager__num, .pager__step { display: inline-flex; align-items: center; justify-content: center; min-width: 2.75rem; min-height: 2.75rem; padding: 0 0.6rem; border-radius: 999px; text-decoration: none; font-weight: 500; }
+.pager__step { padding: 0 1.1rem; background: var(--ink); color: var(--paper); }
+.pager__step[aria-disabled] { background: transparent; color: var(--muted); }
+.pager__num[aria-current] { background: var(--ink); color: var(--paper); }
+.pager__gap { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 0.25rem; color: var(--muted); }
+@media (hover: hover) { a.pager__num:hover, a.pager__step:hover { background: var(--accent); color: var(--ink); } }
+.hs__row { display: flex; gap: 0.5rem; }
+.hs { min-width: 0; }
+.hs input { flex: 1 1 0; width: 0; min-width: 0; min-height: 3rem; padding: 0 1.25rem; border: 0; border-radius: 999px; background: var(--paper); color: var(--ink); font-size: var(--t-body); }
+.hs input::placeholder { color: var(--muted); }
+.hs input:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--surface); }
+.empty { padding: 2rem 0; }
+
+/* entrances (Elementor free: Motion Effects › Entrance animation "Fade In Up"), off for reduced motion */
+.io [data-in] { opacity: 0; transform: translateY(24px); transition: opacity 700ms var(--ease-out), transform 900ms var(--ease-out); transition-delay: calc(var(--i, 0) * 80ms); }
+.io [data-in].is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 1ms !important; animation-duration: 1ms !important; animation-iteration-count: 1 !important; } }
+
+/* ================= Option 3 · Set in type ================= */
+
+.o3-hero { position: relative; min-height: calc(100svh - 4.25rem); display: flex; flex-direction: column; background: var(--field); color: var(--field-ink); overflow: hidden; }
+.o3-hero__top { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); padding: 3.5rem var(--margin) 0; }
+.o3-hero__say { grid-column: 1 / 6; display: grid; gap: 1.5rem; }
+.o3-lead { font-size: clamp(1.25rem, 1.7vw, 1.625rem); line-height: 1.3; max-width: 34ch; }
+.o3-lead .zh { display: block; font-size: 1.5em; color: var(--accent); margin-bottom: 0.25rem; }
+.o3-latest { grid-column: 9 / -1; display: grid; gap: 0.75rem; align-content: start; justify-items: end; text-align: right; }
+.o3-latest a { display: grid; text-decoration: none; padding: 0.25rem 0; }
+.o3-latest a span { font-size: var(--t-small); color: var(--field-muted); }
+.o3-latest a b { font-size: var(--t-title); font-weight: 500; line-height: 1.2; }
+@media (hover: hover) { .o3-latest a:hover b { text-decoration: underline; } }
+.o3-word { position: absolute; left: -8vw; bottom: -6%; margin: 0; font-size: 34vw; font-weight: 500; line-height: 0.8; letter-spacing: -0.06em; white-space: nowrap; color: var(--accent); transform-origin: 50% 100%; }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) { .o3-word { animation: o3-weigh linear both; animation-timeline: scroll(root); animation-range: 0 100svh; } }
+}
+@keyframes o3-weigh { to { transform: scale(0.94); } }
+
+.o3-relief { padding: var(--section) var(--margin); background: var(--bg); }
+.o3-relief h2 { font-size: clamp(1.75rem, 2.4vw, 2.25rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 2.5rem; }
+.o3-relief h2 .zh { margin-left: 0.35em; }
+.o3-relief__row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+.o3-relief__row a { display: grid; gap: 0.4rem; text-decoration: none; }
+.o3-relief__row img { margin-bottom: 0.75rem; transition: transform 300ms var(--ease-out); }
+.o3-relief__min { font-size: 1rem; color: var(--muted); }
+.o3-relief__row b { font-size: var(--t-title); font-weight: 500; line-height: 1.2; }
+.o3-relief__by { font-size: 1rem; }
+@media (hover: hover) { .o3-relief__row a:hover img { transform: translateY(-6px); } .o3-relief__row a:hover b { text-decoration: underline; } }
+.o3-scripts { position: relative; height: clamp(46rem, 100svh, 60rem); overflow: hidden; background: var(--accent); color: var(--ink); padding: var(--section) var(--margin) 0; }
+.o3-scripts__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.o3-scripts h2 { grid-column: 1 / 6; font-size: clamp(1.75rem, 2.4vw, 2.25rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; }
+.o3-scripts h2 .zh { display: block; }
+.o3-scripts__head p { grid-column: 7 / -1; max-width: 52ch; }
+.o3-spec { position: absolute; left: var(--margin); right: var(--margin); bottom: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--gutter); }
+.o3-spec figcaption { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; font-size: 1rem; font-weight: 500; }
+.o3-spec figcaption span { max-width: 24ch; }
+.o3-spec figcaption a { flex: none; width: clamp(12rem, 17vw, 16rem); }
+.o3-spec__glyph { font-family: var(--font-zh); font-size: clamp(11rem, 34vw, 32rem); line-height: 0.8; height: 0.6em; overflow: hidden; margin-top: 1rem; }
+
+.o3-series { padding: var(--section) var(--margin); background: var(--paper); }
+.o3-para { font-size: clamp(2.25rem, 5.2vw, 4.875rem); line-height: 1.1; letter-spacing: -0.03em; font-weight: 500; color: var(--muted); max-width: none; }
+.o3-para__head { color: var(--ink); }
+.o3-para a { color: var(--muted); text-decoration: none; transition: color 160ms ease; }
+.o3-para .o3-frame { display: inline-block; width: 1.2em; height: 0.8em; margin-left: 0.15em; vertical-align: -0.02em; overflow: hidden; transform-origin: 0 70%; transition: transform 300ms var(--ease-out); }
+.o3-para .o3-frame img { width: 100%; height: 100%; object-fit: cover; }
+.o3-para a:hover, .o3-para a:focus-visible { color: var(--ink); }
+.o3-para a:hover .o3-frame, .o3-para a:focus-visible .o3-frame { transform: scale(1.6); }
+.o3-series__note { margin-top: 2.5rem; font-size: 1rem; max-width: 80ch; }
+
+.o3-list { padding: var(--section) var(--margin); background: var(--bg); --one: clamp(1.125rem, 1.55vw, 1.5rem); }
+.o3-find { display: grid; gap: 1.5rem; }
+.o3-find__title { font-size: var(--t-head); font-weight: 500; line-height: 1; letter-spacing: -0.035em; }
+.o3-find__title .zh { margin-left: 0.4em; }
+.o3-list .ar-form { display: grid; grid-template-columns: 2fr 3fr; gap: 1.25rem var(--gutter); align-items: end; }
+.o3-list .field--q { grid-column: 1; }
+.o3-list .field--q input { min-height: 3.5rem; font-size: var(--one); }
+.o3-list .chips { grid-column: 2; }
+.o3-list .chip > span { font-size: var(--one); min-height: 3.5rem; padding: 0 1.25rem; }
+.o3-list .more { grid-column: 1 / 2; }
+.o3-list .more__body { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gutter); }
+.o3-list .ar-form__go { grid-column: 2; }
+.o3-sum { margin-top: 2rem; font-size: var(--one); }
+.o3-sum .ar-count .zh { font-size: 0.75em; }
+.o3-table { width: 100%; border-collapse: collapse; font-size: var(--one); line-height: 1.35; margin-top: 1rem; }
+.o3-table td { padding: 0 0 1.25rem; vertical-align: top; }
+.o3-day th { position: sticky; top: 4.25rem; z-index: 1; background: var(--bg); text-align: left; font-weight: 500; padding: 4.5rem 0 1.25rem; }
+.o3-day th .zh { margin-left: 0.35em; }
+.o3-row__pic { width: 7rem; padding-right: 1.25rem !important; }
+.o3-row__pic img { width: 7rem; }
+.o3-row__title { width: 38%; padding-right: 2rem !important; }
+.o3-row__title a { font-weight: 500; text-decoration: none; }
+.o3-row__title a:hover { text-decoration: underline; }
+.o3-row__sub { display: block; font-size: 1rem; color: var(--muted); margin-top: 0.25rem; }
+.o3-row td:nth-child(3) { width: 24%; padding-right: 1.5rem; }
+.o3-row td:nth-child(4) { width: 16%; }
+.o3-row__date { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.o3-row img { transition: transform 250ms var(--ease-out); }
+@media (hover: hover) { .o3-row:hover img { transform: scale(1.08); } }
+.o3-pager { margin-top: 4rem; font-size: var(--one); }
+
+@media (max-width: 1099px) {
+  .o3-hero__say { grid-column: 1 / 8; }
+  .o3-latest { grid-column: 8 / -1; }
+  .o3-list .ar-form { grid-template-columns: 1fr; }
+  .o3-list .field--q, .o3-list .chips, .o3-list .more, .o3-list .ar-form__go { grid-column: 1; }
+  .o3-table, .o3-table tbody, .o3-table tr, .o3-table td, .o3-table th { display: block; width: auto !important; }
+  .o3-row { display: grid !important; grid-template-columns: 6rem 1fr auto; column-gap: 1rem; padding-bottom: 1.25rem; }
+  .o3-row td { padding: 0 !important; }
+  .o3-row__pic { grid-row: 1 / 4; }
+  .o3-row__pic img { width: 6rem; }
+  .o3-row__title { grid-column: 2 / -1; }
+  .o3-row td:nth-child(3), .o3-row td:nth-child(4) { grid-column: 2; font-size: 1rem; color: var(--muted); }
+  .o3-row__date { grid-column: 3; grid-row: 3; font-size: 1rem; }
+  .o3-day th { padding-top: 3rem; }
+}
+@media (max-width: 699px) {
+  .o3-hero { min-height: calc(100svh - 4.25rem); }
+  .o3-hero__top { display: block; padding: 1.5rem var(--margin) 2rem; width: 60%; }
+  .o3-lead { font-size: 1.125rem; }
+  .o3-relief__row { grid-template-columns: 1fr; gap: 2.5rem; }
+  .o3-hero .hs__row { flex-direction: column; }
+  .o3-hero .hs input { width: 100%; flex: none; }
+  .o3-latest { margin-top: 2rem; justify-items: start; text-align: left; }
+  .o3-latest a b { font-size: 1.0625rem; }
+  .o3-word { left: auto; right: -0.16em; top: -0.1em; bottom: auto; writing-mode: vertical-rl; font-size: 62vw; line-height: 0.8; }
+  .o3-scripts { height: auto; padding: 4rem var(--margin) 0; }
+  .o3-scripts__head { display: block; }
+  .o3-scripts__head p { margin-top: 1rem; }
+  .o3-spec { position: static; grid-template-columns: 1fr; margin: 2rem calc(var(--margin) * -1) 0; }
+  .o3-spec figcaption a { width: 45%; }
+  .o3-spec figure { height: 52svh; overflow: hidden; padding: 1rem var(--margin) 0; }
+  .o3-spec figure + figure { background: var(--ink); color: var(--paper); }
+  .o3-spec__glyph { font-size: 62vw; height: auto; }
+  .o3-para { font-size: 9vw; color: var(--ink); line-height: 1.25; }
+  .o3-para a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 0.04em; }
+  .o3-para a:nth-of-type(n+4) .o3-frame { display: none; }
+}
+
+</style>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="wordmark" href="index.html" aria-label="MPCBC home">MPCBC <span class="zh" lang="zh-Hant">慕道園</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html#sundays">Sundays <span class="zh" lang="zh-Hant">主日</span></a>
+    <a href="sermons-3.html" aria-current="page">Sermons <span class="zh" lang="zh-Hant">講道</span></a>
+    <a href="index.html#about">Pastors <span class="zh" lang="zh-Hant">牧師</span></a>
+    <a href="index.html#kids">Kids <span class="zh" lang="zh-Hant">兒童</span></a>
+    <a href="index.html#events">Events <span class="zh" lang="zh-Hant">活動</span></a>
+    <a href="index.html#news">News <span class="zh" lang="zh-Hant">通訊</span></a>
+    <a href="index.html#connect">Visit <span class="zh" lang="zh-Hant">交通</span></a>
+    <a href="index.html#give">Give <span class="zh" lang="zh-Hant">奉獻</span></a>
+    <a class="zh" href="http://mpcbc.local/sermons/?lang=zh-hant" lang="zh-Hant">繁體</a>
+    <a class="zh" href="http://mpcbc.local/sermons/?lang=zh-hans" lang="zh-Hans">简体</a>
+  </nav>
+  <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-panel" data-menu>Menu&nbsp;<span class="zh" lang="zh-Hant">選單</span></button>
+</header>
+<nav class="menu-panel" id="menu-panel" aria-label="Main" hidden>
+  <a href="index.html#sundays">Sundays <span class="zh" lang="zh-Hant">主日</span></a>
+    <a href="sermons-3.html" aria-current="page">Sermons <span class="zh" lang="zh-Hant">講道</span></a>
+    <a href="index.html#about">Pastors <span class="zh" lang="zh-Hant">牧師</span></a>
+    <a href="index.html#kids">Kids <span class="zh" lang="zh-Hant">兒童</span></a>
+    <a href="index.html#events">Events <span class="zh" lang="zh-Hant">活動</span></a>
+    <a href="index.html#news">News <span class="zh" lang="zh-Hant">通訊</span></a>
+    <a href="index.html#connect">Visit <span class="zh" lang="zh-Hant">交通</span></a>
+    <a href="index.html#give">Give <span class="zh" lang="zh-Hant">奉獻</span></a>
+</nav>
+<main id="main">
+
+<section class="o3-hero" id="top" aria-labelledby="o3-title">
+  <div class="o3-hero__top">
+    <div class="o3-hero__say">
+      <p class="o3-lead"><span class="zh" lang="zh-Hant">講道</span> Every Sunday sermon from our Cantonese, Mandarin and English congregations: 672 recordings since April 2021.</p>
+      <form class="hs" method="get" action="#archive" role="search" aria-label="Search sermons"><label class="sr-only" for="o3-q">Search title, speaker or series <span class="zh" lang="zh-Hant">搜尋講道</span></label><span class="hs__row"><input id="o3-q" name="q" type="search" value="" autocomplete="off" spellcheck="false" placeholder="希伯來書, Joshua, 張健庭 …"><button class="button button--accent" type="submit">Search <span class="zh" lang="zh-Hant">搜尋</span></button></span></form>
+    </div>
+    <ul class="o3-latest" aria-label="On this page">
+      <li><a href="#latest"><span>This week 本週</span><b>Latest sermons</b></a></li>
+      <li><a href="#series"><span>17 series 系列</span><b>Sermon series</b></a></li>
+      <li><a href="#archive"><span>672 sermons 講道</span><b>Search the archive</b></a></li>
+    </ul>
+  </div>
+  <h1 class="o3-word" id="o3-title"><span aria-hidden="true">Sermons</span><span class="sr-only">Sermons 講道</span></h1>
+</section>
+
+<section class="o3-relief" id="latest" aria-labelledby="o3-relief-title">
+  <h2 id="o3-relief-title" data-in>Latest sermons <span class="zh" lang="zh-Hant">最新講道</span></h2>
+  <ul class="o3-relief__row">
+    <li data-in style="--i:1"><a href="https://www.youtube.com/watch?v=BeR_7bshp8A" target="_blank" rel="noopener"><img class="thumb" src="https://i.ytimg.com/vi/BeR_7bshp8A/maxresdefault.jpg" width="1280" height="720" alt="Title card: 因信而前行(一)" loading="lazy"><span class="o3-relief__min">Cantonese <span class="zh" lang="zh-Hant">粵語</span> · Nov 1, 2026</span><b lang="zh-Hant">因信而前行(一)</b><span class="o3-relief__by">張健庭 · 希伯來書 11:1-22</span><span class="sr-only"> (opens YouTube in a new tab)</span></a></li><li data-in style="--i:2"><a href="https://www.youtube.com/watch?v=VsdbiJfZ0Zw" target="_blank" rel="noopener"><img class="thumb" src="https://i.ytimg.com/vi/VsdbiJfZ0Zw/maxresdefault.jpg" width="1280" height="720" alt="Title card: 忿怒与温柔" loading="lazy"><span class="o3-relief__min">Mandarin <span class="zh" lang="zh-Hant">國語</span> · Nov 1, 2026</span><b lang="zh-Hans">忿怒与温柔</b><span class="o3-relief__by">張健庭 · 雅各书 1:19-21</span><span class="sr-only"> (opens YouTube in a new tab)</span></a></li><li data-in style="--i:3"><a href="https://www.youtube.com/watch?v=KikczBWW7Mc" target="_blank" rel="noopener"><img class="thumb" src="https://i.ytimg.com/vi/KikczBWW7Mc/maxresdefault.jpg" width="1280" height="720" alt="Title card: Who Has Been Paying Attention?" loading="lazy"><span class="o3-relief__min">English <span class="zh" lang="zh-Hant">英語</span> · Nov 1, 2026</span><b lang="en">Who Has Been Paying Attention?</b><span class="o3-relief__by">Rev. Edward Lu · Joshua 2</span><span class="sr-only"> (opens YouTube in a new tab)</span></a></li>
+  </ul>
+</section>
+
+<section class="o3-scripts" id="search-help" aria-labelledby="o3-scripts-title">
+  <div class="o3-scripts__head">
+    <h2 id="o3-scripts-title" data-in>One search, both scripts <span class="zh" lang="zh-Hant">繁簡通用</span></h2>
+    <p data-in style="--i:1">Cantonese titles are written in Traditional characters, Mandarin titles in Simplified, English titles in English. Search in any of them: 張健庭, 张健庭 and Rev. Dr. Caleb Cheung find the same 255 sermons.</p>
+  </div>
+  <div class="o3-spec">
+    <figure><figcaption><span>希伯來書, from a Cantonese title: Traditional characters</span><a href="https://www.youtube.com/watch?v=BeR_7bshp8A" target="_blank" rel="noopener"><img class="thumb" src="https://i.ytimg.com/vi/BeR_7bshp8A/hqdefault.jpg" width="480" height="360" alt="Title card of 因信而前行(一), 希伯來書 11:1-22" loading="lazy"></a></figcaption><p class="o3-spec__glyph" lang="zh-Hant" aria-hidden="true">書</p></figure>
+    <figure><figcaption><span>雅各书, from a Mandarin title: Simplified characters</span><a href="https://www.youtube.com/watch?v=VsdbiJfZ0Zw" target="_blank" rel="noopener"><img class="thumb" src="https://i.ytimg.com/vi/VsdbiJfZ0Zw/hqdefault.jpg" width="480" height="360" alt="Title card of 忿怒与温柔, 雅各书 1:19-21" loading="lazy"></a></figcaption><p class="o3-spec__glyph" lang="zh-Hans" aria-hidden="true">书</p></figure>
+  </div>
+</section>
+
+<section class="o3-series" id="series" aria-labelledby="o3-series-title">
+  <p class="o3-para"><span class="o3-para__head" id="o3-series-title" role="heading" aria-level="2">Sermon series:</span> <a href="?series=%E5%B8%8C%E4%BC%AF%E4%BE%86%E6%9B%B8#archive" lang="zh-Hant">希伯來書<span class="o3-frame"><img src="https://i.ytimg.com/vi/BeR_7bshp8A/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E9%87%8D%E5%A1%91%E7%94%9F%E5%91%BD#archive" lang="zh-Hant">重塑生命<span class="o3-frame"><img src="https://i.ytimg.com/vi/VsdbiJfZ0Zw/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E4%BD%BF%E5%BE%92%E4%BF%A1%E7%B6%93#archive" lang="zh-Hant">使徒信經<span class="o3-frame"><img src="https://i.ytimg.com/vi/h_tRQAMCKlA/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E5%82%B3%E9%81%93%E6%9B%B8%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">傳道書系列<span class="o3-frame"><img src="https://i.ytimg.com/vi/FeYYFi1bfiY/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E7%B4%84%E7%BF%B0%E7%A6%8F%E9%9F%B3#archive" lang="zh-Hant">約翰福音<span class="o3-frame"><img src="https://i.ytimg.com/vi/tDEfrUGmnWI/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E7%94%9F%E5%91%BD%E4%B8%AD%E4%B9%9D%E5%80%8B%E9%87%8D%E8%A6%81%E7%9A%84%E5%95%8F%E9%A1%8C#archive" lang="zh-Hant">生命中九個重要的問題<span class="o3-frame"><img src="https://i.ytimg.com/vi/ODMPxItQ128/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E6%B4%BB%E5%87%BA%E7%94%9F%E5%91%BD%E7%89%B9%E8%B3%AA#archive" lang="zh-Hant">活出生命特質<span class="o3-frame"><img src="https://i.ytimg.com/vi/apnUbUl8dtU/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E7%A6%B1%E5%91%8A%E5%9B%9B%E5%8D%81%E5%A4%A9#archive" lang="zh-Hant">禱告四十天<span class="o3-frame"><img src="https://i.ytimg.com/vi/iVQWoiV5Sg4/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></span></a><span class="o3-comma">, </span><a href="?series=%E4%B8%80%E5%BF%83%E8%B5%B4%E6%AD%BB%E7%9A%84%E6%97%85%E7%A8%8B#archive" lang="zh-Hant">一心赴死的旅程</a><span class="o3-comma">, </span><a href="?series=%E5%BD%BC%E5%BE%97%E5%89%8D%E6%9B%B8%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">彼得前書系列</a><span class="o3-comma">, </span><a href="?series=%E8%B7%AF%E5%BE%97%E8%A8%98%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">路得記系列</a><span class="o3-comma">, </span><a href="?series=%E8%85%93%E7%AB%8B%E6%AF%94%E6%9B%B8%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">腓立比書系列</a><span class="o3-comma">, </span><a href="?series=%E8%AA%8D%E8%AD%98%E6%B0%B8%E6%B4%BB%E7%A5%9E#archive" lang="zh-Hant">認識永活神</a><span class="o3-comma">, </span><a href="?series=%E6%AD%8C%E7%BE%85%E8%A5%BF%E6%9B%B8%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">歌羅西書系列</a><span class="o3-comma">, </span><a href="?series=%E5%B0%BC%E5%B8%8C%E7%B1%B3%E8%A8%98%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">尼希米記系列</a><span class="o3-comma">, </span><a href="?series=%E5%93%88%E5%B7%B4%E8%B0%B7%E6%9B%B8%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">哈巴谷書系列</a><span class="o3-comma">, </span><a href="?series=%E7%B4%84%E6%8B%BF%E6%9B%B8%E7%B3%BB%E5%88%97#archive" lang="zh-Hant">約拿書系列</a><span class="o3-comma">.</span></p>
+  <p class="o3-series__note" data-in>17 series, April 2021 to November 2026. English series names: 重塑生命 is Renovation of the Heart; 生命中九個重要的問題 is Life’s important questions.</p>
+</section>
+
+<section class="o3-list" id="archive" aria-labelledby="o3-list-title">
+  <h2 class="sr-only" id="o3-list-title">All sermons 所有講道</h2>
+  <div id="archive-body"><div class="o3-find"><h3 class="o3-find__title">All sermons <span class="zh" lang="zh-Hant">所有講道</span></h3><form class="ar-form" method="get" action="#archive" role="search" aria-label="Search sermons" data-archive-form><div class="field field--q"><label for="o3-q">Search title, speaker or series <span class="zh" lang="zh-Hant">搜尋標題、講員或系列</span></label><input id="o3-q" name="q" type="search" value="" autocomplete="off" spellcheck="false"></div><fieldset class="chips"><legend>Congregation <span class="zh" lang="zh-Hant">會眾</span></legend><label class="chip"><input type="radio" name="ministry" value="" checked><span>All <span class="zh" lang="zh-Hant">全部</span></span></label><label class="chip"><input type="radio" name="ministry" value="cantonese"><span>Cantonese <span class="zh" lang="zh-Hant">粵語</span></span></label><label class="chip"><input type="radio" name="ministry" value="mandarin"><span>Mandarin <span class="zh" lang="zh-Hant">國語</span></span></label><label class="chip"><input type="radio" name="ministry" value="english"><span>English <span class="zh" lang="zh-Hant">英語</span></span></label></fieldset><details class="more" open data-more><summary>Speaker and series <span class="zh" lang="zh-Hant">講員及系列</span></summary><div class="more__body"><div class="field"><label for="o3-speaker">Speaker <span class="zh" lang="zh-Hant">講員</span></label><select id="o3-speaker" name="speaker"><option value="">All speakers 全部</option><option value="張健庭">張健庭 · Rev. Dr. Caleb Cheung (255)</option><option value="rev-edward-lu">Rev. Edward Lu (148)</option><option value="解開武">解開武 (111)</option><option value="路长久">路长久 (42)</option><option value="梁紅源">梁紅源 (18)</option><option value="梁誠德">梁誠德 (17)</option><option value="鄭宇">鄭宇 (9)</option><option value="pastor-ken-yee">Pastor Ken Yee (8)</option><option value="朱孟杨牧师">朱孟杨牧师 (6)</option><option value="deacon-charles-leung">Deacon Charles Leung (5)</option><option value="rev-eric-kuykendall">Rev. Eric Kuykendall (5)</option><option value="田俐力">田俐力 · Sister Lili Tian (4)</option><option value="麥中堂">麥中堂 (4)</option><option value="湯傳哲">湯傳哲 (3)</option><option value="鄭美娜宣教士">鄭美娜宣教士 (3)</option><option value="孔祥恩弟兄">孔祥恩弟兄 (2)</option><option value="戴永富博士">戴永富博士 (2)</option><option value="李燕光">李燕光 (2)</option><option value="李約翰">李約翰 (2)</option><option value="林慈信">林慈信 (2)</option><option value="蕭海波">蕭海波 (2)</option><option value="陳易">陳易 (2)</option></select></div><div class="field"><label for="o3-series">Series <span class="zh" lang="zh-Hant">系列</span></label><select id="o3-series" name="series"><option value="">All series 全部</option><option value="希伯來書">希伯來書 (12)</option><option value="重塑生命">重塑生命 · Renovation of the Heart (18)</option><option value="使徒信經">使徒信經 (18)</option><option value="傳道書系列">傳道書系列 (9)</option><option value="約翰福音">約翰福音 (31)</option><option value="生命中九個重要的問題">生命中九個重要的問題 · Life’s important questions (10)</option><option value="活出生命特質">活出生命特質 (6)</option><option value="禱告四十天">禱告四十天 (7)</option><option value="一心赴死的旅程">一心赴死的旅程 (5)</option><option value="彼得前書系列">彼得前書系列 (9)</option><option value="路得記系列">路得記系列 (4)</option><option value="腓立比書系列">腓立比書系列 (9)</option><option value="認識永活神">認識永活神 (8)</option><option value="歌羅西書系列">歌羅西書系列 (9)</option><option value="尼希米記系列">尼希米記系列 (11)</option><option value="哈巴谷書系列">哈巴谷書系列 (3)</option><option value="約拿書系列">約拿書系列 (1)</option></select></div></div></details><div class="ar-form__go"><button class="button" type="submit">Search <span class="zh" lang="zh-Hant">搜尋</span></button></div></form></div>
+<div class="o3-sum"><p class="ar-count" role="status"><b>1–12</b> of <b>672</b> sermons<span class="zh" lang="zh-Hant">共 672 篇講道</span></p></div>
+<table class="o3-table"><caption class="sr-only">Sermons, newest first</caption><thead class="sr-only"><tr><th scope="col">Picture</th><th scope="col">Title</th><th scope="col">Speaker</th><th scope="col">Congregation</th><th scope="col">Date</th></tr></thead><tbody><tr class="o3-day"><th colspan="5" scope="colgroup">Sunday, November 1, 2026 <span class="zh" lang="zh-Hant">主日</span></th></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/KikczBWW7Mc/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=KikczBWW7Mc" target="_blank" rel="noopener" lang="en">Who Has Been Paying Attention?<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">Joshua 2</span></td><td>Rev. Edward Lu</td><td>English</td><td class="o3-row__date">Nov 1, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/VsdbiJfZ0Zw/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=VsdbiJfZ0Zw" target="_blank" rel="noopener" lang="zh-Hans">忿怒与温柔<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">雅各书 1:19-21 · 重塑生命</span></td><td>張健庭</td><td>Mandarin</td><td class="o3-row__date">Nov 1, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/BeR_7bshp8A/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=BeR_7bshp8A" target="_blank" rel="noopener" lang="zh-Hant">因信而前行(一)<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">希伯來書 11:1-22 · 希伯來書</span></td><td>張健庭</td><td>Cantonese</td><td class="o3-row__date">Nov 1, 2026</td></tr></tbody><tbody><tr class="o3-day"><th colspan="5" scope="colgroup">Sunday, October 18, 2026 <span class="zh" lang="zh-Hant">主日</span></th></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/Rr-Z1XbdquA/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=Rr-Z1XbdquA" target="_blank" rel="noopener" lang="en">Anger and Meekness<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">James 1:19-21 · 重塑生命</span></td><td>張健庭</td><td>English</td><td class="o3-row__date">Oct 18, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/3pwe24j9G2c/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=3pwe24j9G2c" target="_blank" rel="noopener" lang="zh-Hans">植堂的基因—生命﹑门训﹑圣灵<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">使徒行传 9:31</span></td><td>李約翰</td><td>Mandarin</td><td class="o3-row__date">Oct 18, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/hW2i_TUTBmM/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=hW2i_TUTBmM" target="_blank" rel="noopener" lang="zh-Hant">植堂的基因—生命﹑門訓﹑聖靈<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">使徒行傳 9:31</span></td><td>李約翰</td><td>Cantonese</td><td class="o3-row__date">Oct 18, 2026</td></tr></tbody><tbody><tr class="o3-day"><th colspan="5" scope="colgroup">Sunday, October 11, 2026 <span class="zh" lang="zh-Hant">主日</span></th></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/1tD4_P2eCmc/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=1tD4_P2eCmc" target="_blank" rel="noopener" lang="en">Who Will Stay Behind?<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">Joshua 1:12-18</span></td><td>Rev. Edward Lu</td><td>English</td><td class="o3-row__date">Oct 11, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/8T8RRSlc2EI/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=8T8RRSlc2EI" target="_blank" rel="noopener" lang="zh-Hans">困境中的挑战与成长<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">马可福音 4:35-41</span></td><td>路长久</td><td>Mandarin</td><td class="o3-row__date">Oct 11, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/4DPlInfMWmY/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=4DPlInfMWmY" target="_blank" rel="noopener" lang="zh-Hant">進前來並且堅忍<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">希伯來書 10:19-39 · 希伯來書</span></td><td>張健庭</td><td>Cantonese</td><td class="o3-row__date">Oct 11, 2026</td></tr></tbody><tbody><tr class="o3-day"><th colspan="5" scope="colgroup">Sunday, October 4, 2026 <span class="zh" lang="zh-Hant">主日</span></th></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/dZa2NeKiEwQ/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=dZa2NeKiEwQ" target="_blank" rel="noopener" lang="en">Who Will Cross Over?<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">Joshua 1:1-11</span></td><td>Rev. Edward Lu</td><td>English</td><td class="o3-row__date">Oct 4, 2026</td></tr></tbody><tbody><tr class="o3-day"><th colspan="5" scope="colgroup">Sunday, September 27, 2026 <span class="zh" lang="zh-Hant">主日</span></th></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/vi0UdNml_iE/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=vi0UdNml_iE" target="_blank" rel="noopener" lang="en">Contentment in Christ<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">Philippians 4:10-20</span></td><td>Rev. Edward Lu</td><td>English</td><td class="o3-row__date">Sep 27, 2026</td></tr><tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="https://i.ytimg.com/vi/4QYM6DAbLXY/mqdefault.jpg" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="https://www.youtube.com/watch?v=4QYM6DAbLXY" target="_blank" rel="noopener" lang="zh-Hans">从隐藏到显明—神国的成长与人的责任<span class="sr-only"> (opens YouTube in a new tab)</span></a><span class="o3-row__sub">马可福音 4:21-34</span></td><td>路长久</td><td>Mandarin</td><td class="o3-row__date">Sep 27, 2026</td></tr></tbody></table>
+<div class="o3-pager"><nav class="pager" aria-label="Pages of sermons"><span class="pager__step" aria-disabled="true">Newer <span class="zh" lang="zh-Hant">較新</span></span><ol><li><span class="pager__num" aria-current="page">1</span></li><li><a class="pager__num" href="?pg=2#archive">2</a></li><li class="pager__gap" aria-hidden="true">…</li><li><a class="pager__num" href="?pg=56#archive">56</a></li></ol><a class="pager__step" rel="next" href="?pg=2#archive">Older <span class="zh" lang="zh-Hant">較舊</span></a></nav></div></div>
+</section>
+</main>
+<footer class="foot" aria-label="Church details">
+  <div class="foot__cols">
+    <div>
+      <h2>Visit <span class="zh" lang="zh-Hant">交通指南</span></h2>
+      <p>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</p>
+      <p class="times-mini"><span>Sundays <span class="zh" lang="zh-Hant">主日</span></span>Mandarin 9:00 AM<br>Children 10:00 AM<br>Cantonese 11:00 AM<br>English 11:00 AM</p>
+    </div>
+    <div>
+      <h2>Contact <span class="zh" lang="zh-Hant">聯絡</span></h2>
+      <ul><li><a href="tel:+16262891284">(626) 289-1284</a></li><li><a href="mailto:info@mpcbc.net">info@mpcbc.net</a></li></ul>
+      <p>Office hours: [Days, times]</p>
+    </div>
+    <div>
+      <h2>Watch <span class="zh" lang="zh-Hant">收看</span></h2>
+      <ul><li><a href="https://www.youtube.com/@MPCBC">YouTube @MPCBC <span class="zh" lang="zh-Hant">粵語、國語</span></a></li><li><a href="https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ">English YouTube</a></li><li><a href="https://www.instagram.com/mpcbconnect/">Instagram @mpcbconnect</a></li></ul>
+    </div>
+    <div>
+      <h2>Explore <span class="zh" lang="zh-Hant">探索</span></h2>
+      <ul><li><a href="index.html#sundays">Watch live <span class="zh" lang="zh-Hant">直播</span></a></li><li><a href="index.html#events">Events <span class="zh" lang="zh-Hant">活動</span></a></li><li><a href="index.html#news">Newsletter <span class="zh" lang="zh-Hant">通訊</span></a></li><li><a href="http://mpcbc.local/visit/">Plan your visit</a></li></ul>
+    </div>
+  </div>
+  <div class="foot__bar">
+    <p class="foot__id"><b>Monterey Park Chinese Baptist Church</b> <span class="zh" lang="zh-Hant">慕道園華人浸信會</span></p>
+    <p>[Church logo] Founded in 1977, Alhambra, California.</p>
+    <p class="langs"><a href="http://mpcbc.local/sermons/?lang=zh-hant" lang="zh-Hant">繁體中文</a><a href="http://mpcbc.local/sermons/?lang=zh-hans" lang="zh-Hans">简体中文</a><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<script src="assets/sermons-data.js"></script>
+<script src="assets/sermons-archive.js"></script>
+<script>
+const ARCHIVE = function (res, p, A, D) {
+      const e = A.esc;
+      const days = A.sundays(res.items).map((g) => `<tbody><tr class="o3-day"><th colspan="5" scope="colgroup">Sunday, ${A.dateLong(g.date)} <span class="zh" lang="zh-Hant">主日</span></th></tr>${g.items.map((x) => `<tr class="o3-row" data-in><td class="o3-row__pic"><img class="thumb" src="${A.thumb(x.v)}" width="320" height="180" alt="" loading="lazy"></td><td class="o3-row__title"><a href="${A.watch(x.v)}" target="_blank" rel="noopener" lang="${A.lang(x)}">${e(x.t)}${A.newTab}</a><span class="o3-row__sub">${[x.sc, A.series(x, D)].filter(Boolean).map(e).join(' · ') || '—'}</span></td><td>${e(A.speaker(x, D))}</td><td>${A.min(x)}</td><td class="o3-row__date">${A.date(x.d)}</td></tr>`).join('')}</tbody>`).join('');
+      return `<div class="o3-find"><h3 class="o3-find__title">All sermons <span class="zh" lang="zh-Hant">所有講道</span></h3>${A.form(p, D, { id: 'o3' })}</div>
+<div class="o3-sum">${A.summary(res, p, D)}</div>
+${res.total ? `<table class="o3-table"><caption class="sr-only">Sermons, newest first</caption><thead class="sr-only"><tr><th scope="col">Picture</th><th scope="col">Title</th><th scope="col">Speaker</th><th scope="col">Congregation</th><th scope="col">Date</th></tr></thead>${days}</table>` : '<p class="empty">Try another spelling, or <a href="?#archive">clear the filters</a>.</p>'}
+<div class="o3-pager">${A.pager(res, p)}</div>`;
+    };
+
+
+(() => {
+  const menuBtn = document.querySelector('[data-menu]'), menu = document.getElementById('menu-panel');
+  const setMenu = (open) => { menu.hidden = !open; menuBtn.setAttribute('aria-expanded', String(open)); };
+  menuBtn.addEventListener('click', () => setMenu(menu.hidden));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { setMenu(false); menuBtn.focus(); } });
+  // the archive: re-run the server's query for the URL's parameters (WordPress does this in PHP)
+  const A = window.MPCBCArchive, D = window.MPCBC_SERMONS, box = document.getElementById('archive-body');
+  const p = A.params(location.search);
+  if (box && Object.keys(p).length) {
+    box.innerHTML = ARCHIVE(A.query(D, p), p, A, D);
+    for (const i of document.querySelectorAll('.hs input[name=q]')) i.value = p.q || '';
+  }
+  A.enhance(document);
+  // entrances: each part of a section rises once as it enters; content stays visible without script
+  const els = document.querySelectorAll('[data-in], [data-grow]');
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('io');
+    const io = new IntersectionObserver((es) => { for (const e of es) if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => io.observe(el));
+  }
+})();
+</script>
+</body>
+</html>

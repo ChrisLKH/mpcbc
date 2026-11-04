@@ -1,0 +1,40 @@
+[
+  {
+    "step": "Traditional to English Home",
+    "title": "MPCBC",
+    "url": "http://mpcbc.local/",
+    "videoPaused": true
+  },
+  {
+    "menu": "关于我们",
+    "selector": "zh-hans",
+    "step": "English to Simplified Home",
+    "title": "Home · 简体中文 – MPCBC",
+    "url": "http://mpcbc.local/zh-hans/home/?lang=zh-hans"
+  },
+  {
+    "hero": true,
+    "selector": "zh-hant",
+    "step": "Simplified to Traditional Home",
+    "title": "MPCBC",
+    "url": "http://mpcbc.local/?lang=zh-hant"
+  },
+  {
+    "beliefs": true,
+    "step": "Simplified About to Traditional About",
+    "title": "關於我們 – MPCBC",
+    "url": "http://mpcbc.local/zh-hant/about/?lang=zh-hant#beliefs"
+  },
+  {
+    "hero": true,
+    "step": "Desktop Traditional switch",
+    "url": "http://mpcbc.local/?lang=zh-hant",
+    "videoPaused": false
+  },
+  {
+    "step": "Desktop settled-video confirmation",
+    "beforePaused": true,
+    "afterPaused": true,
+    "url": "http://mpcbc.local/"
+  }
+]

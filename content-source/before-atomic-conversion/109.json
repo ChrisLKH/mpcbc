@@ -1,0 +1,154 @@
+{
+    "id": 109,
+    "title": "Spike Tabs",
+    "data": [
+        {
+            "id": "spike_root_container",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "background_background": "classic",
+                "background_color": "#E3EBEA",
+                "padding": {
+                    "unit": "px",
+                    "top": 64,
+                    "bottom": 64,
+                    "left": 32,
+                    "right": 32,
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "spike_nested_tabs",
+                    "elType": "widget",
+                    "widgetType": "nested-tabs",
+                    "settings": {
+                        "tabs_direction": "inline-start",
+                        "tabs_width": {
+                            "unit": "px",
+                            "size": 320
+                        },
+                        "tabs_title_space_between": {
+                            "unit": "px",
+                            "size": 8
+                        },
+                        "tabs": [
+                            {
+                                "_id": "tab_item_1",
+                                "tab_title": "Kids <span class=\"zh\" lang=\"zh-Hant\">兒童</span>"
+                            },
+                            {
+                                "_id": "tab_item_2",
+                                "tab_title": "Youth and students <span class=\"zh\" lang=\"zh-Hant\">青少年</span>"
+                            },
+                            {
+                                "_id": "tab_item_3",
+                                "tab_title": "Fellowships <span class=\"zh\" lang=\"zh-Hant\">團契</span>"
+                            },
+                            {
+                                "_id": "tab_item_4",
+                                "tab_title": "Care <span class=\"zh\" lang=\"zh-Hant\">關懷</span>"
+                            }
+                        ]
+                    },
+                    "elements": [
+                        {
+                            "id": "con_tab_1",
+                            "elType": "container",
+                            "settings": {
+                                "min_height": {
+                                    "unit": "px",
+                                    "size": 440
+                                },
+                                "background_background": "classic",
+                                "background_color": "#24434D"
+                            },
+                            "elements": [
+                                {
+                                    "id": "head_tab_1",
+                                    "elType": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Kids Panel Content"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "con_tab_2",
+                            "elType": "container",
+                            "settings": {
+                                "min_height": {
+                                    "unit": "px",
+                                    "size": 440
+                                },
+                                "background_background": "classic",
+                                "background_color": "#2C4A45"
+                            },
+                            "elements": [
+                                {
+                                    "id": "head_tab_2",
+                                    "elType": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Youth Panel Content"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "con_tab_3",
+                            "elType": "container",
+                            "settings": {
+                                "min_height": {
+                                    "unit": "px",
+                                    "size": 440
+                                },
+                                "background_background": "classic",
+                                "background_color": "#1E3A44"
+                            },
+                            "elements": [
+                                {
+                                    "id": "head_tab_3",
+                                    "elType": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Fellowships Panel Content"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "con_tab_4",
+                            "elType": "container",
+                            "settings": {
+                                "min_height": {
+                                    "unit": "px",
+                                    "size": 440
+                                },
+                                "background_background": "classic",
+                                "background_color": "#33424A"
+                            },
+                            "elements": [
+                                {
+                                    "id": "head_tab_4",
+                                    "elType": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Care Panel Content"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "settings": ""
+}

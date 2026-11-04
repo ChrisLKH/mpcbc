@@ -1,0 +1,31 @@
+{
+    "pages": {
+        "about": {
+            "id": 64,
+            "url": "http://mpcbc.local/about/"
+        },
+        "beliefs": {
+            "id": 181,
+            "url": "http://mpcbc.local/beliefs/"
+        },
+        "give": {
+            "id": 65,
+            "url": "http://mpcbc.local/give/"
+        },
+        "zh": {
+            "id": 66,
+            "url": "http://mpcbc.local/zh/"
+        }
+    },
+    "portrait": 177,
+    "fonts": [
+        "interior_h1",
+        "interior_h2",
+        "interior_card",
+        "interior_subtitle",
+        "interior_body",
+        "interior_zh",
+        "interior_refs",
+        "interior_button"
+    ]
+}

@@ -1,0 +1,577 @@
+{
+ "url": "sermons-1.html",
+ "at": "2026-11-03T09:22:23.891Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    1,
+    0.59,
+    0.74,
+    0.59,
+    0.63,
+    0.81
+   ],
+   "motion": {
+    "elements": 42,
+    "css": 0,
+    "transitions": 42,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4942,
+     "screens": 5.5,
+     "words": 836,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "sanctuary-aisle.jpg",
+      "maxresdefault.jpg",
+      "hqdefault.jpg",
+      "hqdefault.jpg",
+      "hqdefault.jpg",
+      "hqdefault.jpg",
+      "hqdefault.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Sermon archive 講道錄",
+     "words": 3,
+     "chars": 18,
+     "lines": 1,
+     "size": 40.3,
+     "vw": 2.8,
+     "font": "Hanken Grotesk",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.52,
+     "top": 237,
+     "mixedFonts": [
+      "Hanken Grotesk",
+      "Noto Sans TC"
+     ],
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sermon archive 講道錄",
+     "words": 3,
+     "lines": 1,
+     "size": 40.3,
+     "font": "Hanken Grotesk"
+    },
+    "headings": [
+     {
+      "text": "Sermon archive 講道錄",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 40.3,
+      "vw": 2.8,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.52,
+      "top": 237,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "672 recorded sermons Cantonese, Mandarin, English Every Sunday since April 2021",
+      "words": 11,
+      "chars": 79,
+      "lines": 3,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.52,
+      "top": 379,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Find one by its title, speaker or series. 中英文皆可搜尋。",
+      "words": 9,
+      "chars": 50,
+      "lines": 2,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 498,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "All sermons 所有講道",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 2503,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 9,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.92,
+       "mono": false
+      },
+      {
+       "family": "Noto Sans TC",
+       "share": 0.08,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      22,
+      24,
+      29,
+      40,
+      56
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 58,
+     "max": {
+      "size": 56,
+      "vw": 3.9,
+      "font": "Hanken Grotesk",
+      "text": "All sermons"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.15,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e8e8e3",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.1,
+      "l": 0.9
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#181715",
+       "top": 68,
+       "hsl": {
+        "h": 40,
+        "s": 0.07,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 205,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#181715",
+       "share": 0.48
+      },
+      {
+       "color": "#5c5b55",
+       "share": 0.24
+      },
+      {
+       "color": "#e8e8e3",
+       "share": 0.15
+      },
+      {
+       "color": "#b4b3ab",
+       "share": 0.11
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#181715",
+      "hsl": {
+       "h": 40,
+       "s": 0.07,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Search 搜尋"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.92
+     }
+    ],
+    "nav": {
+     "links": 11,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "hanken grotesk",
+     "noto sans tc"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4942,
+    "margins": {
+     "left": 32,
+     "right": 42
+    },
+    "sections": [
+     {
+      "sel": "section#top.o1-hero",
+      "tag": "section",
+      "top": 68,
+      "height": 832,
+      "words": 35,
+      "media": 1,
+      "middle": 26,
+      "heading": {
+       "text": "Sermon",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 349,
+      "right": 349,
+      "textLeft": 349,
+      "textRight": 349,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#latest.o1-latest",
+      "tag": "section",
+      "top": 900,
+      "height": 643,
+      "words": 37,
+      "media": 3,
+      "middle": 127,
+      "heading": {
+       "text": "Latest sermons",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 33,
+      "textLeft": 32,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#series.o1-shelf",
+      "tag": "section",
+      "top": 1543,
+      "height": 745,
+      "words": 119,
+      "media": 0,
+      "middle": 47,
+      "heading": {
+       "text": "Series and speakers",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 42,
+      "textLeft": 32,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#archive.o1-archive",
+      "tag": "section",
+      "top": 2288,
+      "height": 2243,
+      "words": 197,
+      "media": 0,
+      "middle": 242,
+      "heading": {
+       "text": "All sermons",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 64,
+      "right": 96,
+      "textLeft": 64,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 4531,
+      "height": 412,
+      "words": 71,
+      "media": 0,
+      "middle": 117,
+      "heading": {
+       "text": "Visit",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Sermon archive 講道錄",
+      "size": 40,
+      "top": 237,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 5
+     },
+     {
+      "x": 64,
+      "n": 2
+     },
+     {
+      "x": 276,
+      "n": 1
+     },
+     {
+      "x": 349,
+      "n": 1
+     },
+     {
+      "x": 662,
+      "n": 1
+     },
+     {
+      "x": 965,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "2 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-1\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-1\\inspect\\desktop-page-01.jpg",
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-1\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": 6,
+    "title": "Test Hand Build",
+    "data": [
+        {
+            "id": "test_container",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+                "background_background": "classic",
+                "background_color": "#FAF7F2",
+                "__globals__": {
+                    "background_color": "globals/colors?id=primary"
+                }
+            },
+            "elements": [
+                {
+                    "id": "test_heading",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                        "title": "Hand-built Heading",
+                        "title_color": "#0E6B5C",
+                        "__globals__": {
+                            "title_color": "globals/colors?id=primary"
+                        }
+                    }
+                },
+                {
+                    "id": "test_button",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                        "text": "Hand-built Button",
+                        "background_color": "#0E6B5C",
+                        "__globals__": {
+                            "background_color": "globals/colors?id=primary"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "settings": ""
+}

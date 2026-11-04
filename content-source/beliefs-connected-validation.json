@@ -1,0 +1,38 @@
+[
+    {
+        "id": 64,
+        "topic": "about",
+        "locale": "en",
+        "belief_text_preserved": null
+    },
+    {
+        "id": 181,
+        "topic": "beliefs",
+        "locale": "en",
+        "belief_text_preserved": true
+    },
+    {
+        "id": 215,
+        "topic": "about",
+        "locale": "zh-hant",
+        "belief_text_preserved": null
+    },
+    {
+        "id": 224,
+        "topic": "beliefs",
+        "locale": "zh-hant",
+        "belief_text_preserved": true
+    },
+    {
+        "id": 218,
+        "topic": "about",
+        "locale": "zh-hans",
+        "belief_text_preserved": null
+    },
+    {
+        "id": 227,
+        "topic": "beliefs",
+        "locale": "zh-hans",
+        "belief_text_preserved": true
+    }
+]

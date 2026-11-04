@@ -1,0 +1,162 @@
+[
+    {
+        "id": 110,
+        "title": "Sundays",
+        "description": "主日",
+        "url": "http://mpcbc.local/#sunday-times",
+        "parent": 0,
+        "order": 1
+    },
+    {
+        "id": 111,
+        "title": "Service times",
+        "description": "聚會時間",
+        "url": "http://mpcbc.local/#sunday-times",
+        "parent": 110,
+        "order": 2
+    },
+    {
+        "id": 112,
+        "title": "Sunday worship",
+        "description": "主日崇拜",
+        "url": "http://mpcbc.local/#watch",
+        "parent": 110,
+        "order": 3
+    },
+    {
+        "id": 398,
+        "title": "Directions",
+        "description": "交通指南",
+        "url": "https://www.google.com/maps/search/?api=1&query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801",
+        "parent": 110,
+        "order": 4
+    },
+    {
+        "id": 116,
+        "title": "Sermons",
+        "description": "講道",
+        "url": "http://mpcbc.local/#sermons",
+        "parent": 0,
+        "order": 5
+    },
+    {
+        "id": 113,
+        "title": "Cantonese sermons",
+        "description": "粵語講道",
+        "url": "https://mpcbc.net/category/cantonese-sermons/",
+        "parent": 116,
+        "order": 6
+    },
+    {
+        "id": 114,
+        "title": "English sermons",
+        "description": "英語講道",
+        "url": "https://mpcbc.net/english/connect-ministry-sermons/",
+        "parent": 116,
+        "order": 7
+    },
+    {
+        "id": 115,
+        "title": "Mandarin sermons",
+        "description": "國語講道",
+        "url": "https://mpcbc.net/category/mandarin-sermons/",
+        "parent": 116,
+        "order": 8
+    },
+    {
+        "id": 118,
+        "title": "Church life",
+        "description": "教會生活",
+        "url": "http://mpcbc.local/#community",
+        "parent": 0,
+        "order": 9
+    },
+    {
+        "id": 119,
+        "title": "Kids and youth",
+        "description": "兒童及青少年",
+        "url": "http://mpcbc.local/#kids",
+        "parent": 118,
+        "order": 10
+    },
+    {
+        "id": 120,
+        "title": "Fellowships and groups",
+        "description": "團契小組",
+        "url": "http://mpcbc.local/#community",
+        "parent": 118,
+        "order": 11
+    },
+    {
+        "id": 122,
+        "title": "Care and prayer",
+        "description": "關懷代禱",
+        "url": "http://mpcbc.local/#connect",
+        "parent": 118,
+        "order": 12
+    },
+    {
+        "id": 121,
+        "title": "Bible reading plan",
+        "description": "讀經計劃",
+        "url": "https://mpcbc.net/english/bible-in-a-year/",
+        "parent": 118,
+        "order": 13
+    },
+    {
+        "id": 117,
+        "title": "Newsletter",
+        "description": "通訊",
+        "url": "http://mpcbc.local/#news",
+        "parent": 118,
+        "order": 14
+    },
+    {
+        "id": 123,
+        "title": "About",
+        "description": "關於我們",
+        "url": "http://mpcbc.local/about/",
+        "parent": 0,
+        "order": 15
+    },
+    {
+        "id": 124,
+        "title": "Our story",
+        "description": "教會歷史",
+        "url": "http://mpcbc.local/about/#story",
+        "parent": 123,
+        "order": 16
+    },
+    {
+        "id": 127,
+        "title": "Our mission",
+        "description": "使命宣言",
+        "url": "http://mpcbc.local/about/#mission",
+        "parent": 123,
+        "order": 17
+    },
+    {
+        "id": 126,
+        "title": "Our pastoral team",
+        "description": "教牧團隊",
+        "url": "http://mpcbc.local/about/#pastors",
+        "parent": 123,
+        "order": 18
+    },
+    {
+        "id": 125,
+        "title": "What we believe",
+        "description": "信仰告白",
+        "url": "http://mpcbc.local/about/#beliefs",
+        "parent": 123,
+        "order": 19
+    },
+    {
+        "id": 128,
+        "title": "Give",
+        "description": "奉獻",
+        "url": "http://mpcbc.local/give/",
+        "parent": 0,
+        "order": 20
+    }
+]

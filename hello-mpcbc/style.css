@@ -1,0 +1,775 @@
+/*
+Theme Name: Hello MPCBC
+Theme URI: https://mpcbc.net
+Description: Child theme for MPCBC website using Hello Elementor and Elementor Free.
+Author: MPCBC
+Author URI: https://mpcbc.net
+Template: hello-elementor
+Version: 1.0.0
+Text Domain: hello-mpcbc
+*/
+
+/* -------------------------------------------------------------
+ * 1. CSS Variables & Harbor Palette Integration
+ * ------------------------------------------------------------- */
+:root {
+  --mpcbc-primary: var(--e-global-color-primary, #181715);
+  --mpcbc-primary-hover: #2E2D2A;
+  --mpcbc-secondary: var(--e-global-color-secondary, #181715);
+  --mpcbc-text: var(--e-global-color-text, #181715);
+  --mpcbc-accent: var(--e-global-color-accent, #FFD21A);
+  --mpcbc-paper: #E8E8E3;
+  --mpcbc-header: #FFFFFF;
+  --mpcbc-mist: #DCDCD6;
+  --mpcbc-ink-soft: #5C5B55;
+  --mpcbc-live: #D92D27;
+  --mpcbc-live-text: #B8231E;
+  --mpcbc-card-tint: #FFFFFF;
+  --mpcbc-line: #C4C4BC;
+  --mpcbc-line-strong: #B4B3AB;
+  --mpcbc-footer: #181715;
+
+  --font-heading: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body: 'Hanken Grotesk', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+  --font-chinese: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+  --font-chinese-hans: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--mpcbc-text);
+  background-color: var(--mpcbc-paper);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+/* Language visibility only; all wording remains in native editable Atomic text.
+ * Editors see both versions and can locate them by their Structure titles. */
+[id^="mpcbc-copy-zh-hans-"] { display: none !important; }
+html[data-mpcbc-reading-language="zh-hans"] [id^="mpcbc-copy-zh-hant-"] { display: none !important; }
+html[data-mpcbc-reading-language="zh-hans"] [id^="mpcbc-copy-zh-hans-"] { display: revert !important; }
+body.elementor-editor-active [id^="mpcbc-copy-zh-hant-"],
+body.elementor-editor-active [id^="mpcbc-copy-zh-hans-"] { display: revert !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.035em;
+}
+
+:lang(zh-Hant) {
+  font-family: var(--font-chinese);
+}
+
+:lang(zh-Hans) {
+  font-family: var(--font-chinese-hans);
+}
+
+/* -------------------------------------------------------------
+ * 2. Header: Solid on Inner Pages, Fixed on Home with Fade-to-Paper
+ * ------------------------------------------------------------- */
+.site-header,
+header.site-header {
+  height: 80px;
+  min-height: 80px;
+  padding-block: 0 !important;
+  box-sizing: border-box;
+  background-color: var(--mpcbc-header) !important;
+  border-bottom: 1px solid var(--mpcbc-line) !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.site-header .header-inner {
+  width: 100%;
+  max-width: 100%;
+  height: 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 56px;
+  box-sizing: border-box;
+}
+
+/* Longer active language labels still fit above the mobile-menu breakpoint. */
+@media (min-width: 1110px) and (max-width: 1279px) {
+  .site-header .header-inner {
+    padding-right: 32px;
+    padding-left: 32px;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Logo placeholder styling */
+.site-header .site-branding .site-title a {
+  height: 44px;
+  padding: 0 16px;
+  border: 1.5px dashed var(--mpcbc-ink-soft);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--mpcbc-ink-soft);
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Menu list gaps: 18px item gap; nav gap 20px */
+.site-header .site-navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-header .site-navigation ul.menu,
+.site-header .site-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links default (inner pages & scrolled) */
+.site-header a,
+.site-header .site-navigation ul.menu > li > a,
+.site-header .site-navigation ul > li > a {
+  color: var(--mpcbc-text);
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.site-header a:hover,
+.site-header .site-navigation ul.menu > li > a:hover,
+.site-header .site-navigation ul > li > a:hover {
+  color: var(--mpcbc-primary);
+}
+
+/* One-line menu items: English label + Chinese description inline */
+.site-header .site-navigation ul.menu > li,
+.site-header .site-navigation ul > li {
+  position: relative;
+}
+
+.site-header .site-navigation ul.menu > li > a,
+.site-header .site-navigation ul > li > a,
+.main-navigation ul > li > a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  line-height: 1.2;
+  min-height: 44px;
+  padding: 0 4px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.menu-item-description {
+  display: inline-block;
+  font-family: var(--font-chinese);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mpcbc-ink-soft);
+  opacity: 0.8;
+  letter-spacing: 0.01em;
+  transition: color 0.25s ease;
+}
+
+/* Give: the menu's one action, a flat yellow pill */
+.site-header .site-navigation ul > li.mpcbc-menu-give > a {
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--e-global-color-accent, #FFD21A);
+  color: var(--e-global-color-primary, #181715);
+}
+.site-header .site-navigation ul > li.mpcbc-menu-give > a:hover { color: var(--e-global-color-primary, #181715); filter: brightness(0.95); }
+.site-header .site-navigation ul > li.mpcbc-menu-give .menu-item-description { color: inherit; opacity: 1; }
+
+/* Small chevron after parents with children */
+.site-header .site-navigation ul.menu > li.menu-item-has-children > a::after,
+.site-header .site-navigation ul > li.menu-item-has-children > a::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 4px;
+  margin-bottom: 2px;
+  opacity: 0.7;
+}
+
+/* Dropdowns (.sub-menu) */
+.site-header .site-navigation ul.menu li .sub-menu,
+.site-header .site-navigation ul li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 260px;
+  background: var(--e-global-color-white, #FFFFFF);
+  border: 1px solid var(--mpcbc-line);
+  border-radius: 16px;
+  padding: 8px;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 16px 40px rgba(24, 23, 21, 0.16);
+  z-index: 100;
+}
+
+.site-header .site-navigation ul.menu li:hover > .sub-menu,
+.site-header .site-navigation ul.menu li:focus-within > .sub-menu,
+.site-header .site-navigation ul li:hover > .sub-menu,
+.site-header .site-navigation ul li:focus-within > .sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.site-header .site-navigation ul.menu .sub-menu li,
+.site-header .site-navigation ul .sub-menu li {
+  width: 100%;
+}
+
+.site-header .site-navigation ul.menu .sub-menu li a,
+.site-header .site-navigation ul .sub-menu li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--mpcbc-text);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.site-header .site-navigation ul.menu .sub-menu li a .menu-item-description,
+.site-header .site-navigation ul .sub-menu li a .menu-item-description {
+  font-size: 13px;
+  color: var(--mpcbc-ink-soft);
+  opacity: 0.85;
+}
+
+.site-header .site-navigation ul.menu .sub-menu li a:hover,
+.site-header .site-navigation ul.menu .sub-menu li a:focus,
+.site-header .site-navigation ul .sub-menu li a:hover,
+.site-header .site-navigation ul .sub-menu li a:focus {
+  background-color: var(--mpcbc-mist);
+  color: var(--mpcbc-primary);
+}
+
+.site-header .site-navigation ul.menu .sub-menu li a:hover .menu-item-description,
+.site-header .site-navigation ul.menu .sub-menu li a:focus .menu-item-description,
+.site-header .site-navigation ul .sub-menu li a:hover .menu-item-description,
+.site-header .site-navigation ul .sub-menu li a:focus .menu-item-description {
+  color: var(--mpcbc-primary);
+}
+
+/* 中文 language switch pill in header: min-height 40px */
+.site-header .site-navigation > ul.menu > li.mpcbc-language-menu > a,
+.site-header .site-navigation > ul.menu > li.lang-switch > a,
+.site-header .site-navigation > ul > li.mpcbc-language-menu > a,
+.site-header .site-navigation > ul > li.lang-switch > a {
+  border: 1.5px solid var(--mpcbc-line-strong);
+  border-radius: 8px;
+  padding: 0 12px !important;
+  min-height: 40px !important;
+  height: 40px !important;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Hamburger toggle styling */
+.mpcbc-mobile-language { display: none; }
+.site-header .site-navigation-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  display: none;
+}
+
+/* -------------------------------------------------------------
+ * 3. Homepage Fixed Header (stays on screen, fades on scroll)
+ * ------------------------------------------------------------- */
+body.home .site-header,
+body.home header.site-header {
+  position: fixed !important;
+  top: var(--wp-admin--admin-bar--height, 0px) !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: transparent !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent !important;
+  transition: background 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+/* At top of Home: transparent, white text, white logo border & hamburger */
+body.home:not(.is-scrolled) .site-header {
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--mpcbc-secondary) 65%, transparent),
+    color-mix(in srgb, var(--mpcbc-secondary) 45%, transparent)) !important;
+}
+
+body.home:not(.is-scrolled) .site-header .site-branding .site-title a {
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  color: #ffffff !important;
+}
+
+/* Only the top-level links sit on the hero; dropdowns keep their dark text. */
+body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li > a {
+  color: #ffffff;
+}
+
+body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li > a:hover {
+  color: var(--mpcbc-accent);
+}
+
+body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li > a > .menu-item-description {
+  color: #ffffff !important;
+  opacity: 0.8 !important;
+}
+
+body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li.mpcbc-language-menu > a,
+body.home:not(.is-scrolled) .site-header .site-navigation > ul > li.mpcbc-language-menu > a {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: #ffffff !important;
+}
+
+body.home:not(.is-scrolled) .site-header .site-navigation-toggle {
+  color: #ffffff !important;
+}
+
+/* When scrolled on Home (body.is-scrolled): White bg, blur, Ink text */
+body.home.is-scrolled .site-header,
+body.home.is-scrolled header.site-header {
+  background: rgba(255, 255, 255, 0.96) !important;
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid var(--mpcbc-line) !important;
+}
+
+body.home.is-scrolled .site-header .site-branding .site-title a {
+  border-color: var(--mpcbc-line-strong) !important;
+  color: var(--mpcbc-ink-soft) !important;
+}
+
+body.home.is-scrolled .site-header .site-navigation > ul.menu > li > a {
+  color: var(--mpcbc-text) !important;
+}
+
+body.home.is-scrolled .site-header .site-navigation > ul.menu > li > a:hover {
+  color: var(--mpcbc-primary) !important;
+}
+
+body.home.is-scrolled .site-header .site-navigation > ul.menu > li > a > .menu-item-description {
+  color: var(--mpcbc-ink-soft) !important;
+  opacity: 0.85 !important;
+}
+
+body.home.is-scrolled .site-header .site-navigation > ul.menu > li.mpcbc-language-menu > a,
+body.home.is-scrolled .site-header .site-navigation > ul > li.mpcbc-language-menu > a {
+  border-color: var(--mpcbc-line-strong) !important;
+  color: var(--mpcbc-text) !important;
+}
+
+body.home.is-scrolled .site-header .site-navigation-toggle,
+body:not(.home) .site-header .site-navigation-toggle {
+  color: var(--mpcbc-text) !important;
+}
+
+/* -------------------------------------------------------------
+ * 4. Menu Collapse at <= 1109px (Hamburger & Mobile Panel)
+ * ------------------------------------------------------------- */
+/* Hello draws its own arrow on parents; we draw one chevron on the link instead */
+.site-navigation ul.menu li.menu-item-has-children::after {
+  content: none;
+}
+.site-navigation ul.menu li.menu-item-has-children {
+  padding-inline-end: 0;
+}
+
+/* Last dropdowns open towards the left so they never run off the right edge */
+.site-header .site-navigation ul.menu > li:nth-last-child(-n+3) > .sub-menu {
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 1109px) {
+  .site-header .mpcbc-mobile-language {
+    display: block;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 148px;
+    min-height: 44px;
+    margin: 0 8px 0 auto;
+    padding: 0 10px;
+    border: 1px solid var(--mpcbc-line-strong);
+    border-radius: 8px;
+    background-color: var(--mpcbc-paper);
+    color: var(--mpcbc-text);
+    font: 500 14px var(--font-body);
+  }
+  .site-header .mpcbc-mobile-language:focus-visible {
+    outline: 2px solid var(--mpcbc-primary);
+    outline-offset: 3px;
+  }
+  .site-header.mpcbc-mobile-language-ready .site-navigation-dropdown .mpcbc-language-menu {
+    display: none;
+  }
+  body.home:not(.is-scrolled) .site-header:not(:has(.site-navigation-toggle[aria-expanded="true"])) .mpcbc-mobile-language {
+    background-color: var(--mpcbc-secondary);
+    color: var(--mpcbc-paper);
+    border-color: var(--mpcbc-line-strong);
+  }
+  .site-header,
+  header.site-header,
+  body.home .site-header,
+  body.home header.site-header {
+    height: 72px !important;
+    min-height: 72px !important;
+    padding-block: 0 !important;
+  }
+
+  .site-header .header-inner {
+    height: 72px !important;
+    min-height: 72px !important;
+    padding: 0 32px !important;
+  }
+
+  /* Hello only collapses at 992px; we collapse at 1109px */
+  .site-header.menu-dropdown-tablet:not(.menu-layout-dropdown) .site-navigation {
+    display: none !important;
+  }
+  .site-header.menu-dropdown-tablet:not(.menu-layout-dropdown) .site-navigation-toggle-holder {
+    display: flex !important;
+  }
+  .site-header .site-navigation-toggle {
+    display: inline-flex !important;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Header turns Paper while the panel is open */
+  .site-header:has(.site-navigation-toggle[aria-expanded="true"]) {
+    background: var(--mpcbc-header) !important;
+    background-color: var(--mpcbc-header) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom-color: var(--mpcbc-line) !important;
+  }
+  body .site-header:has(.site-navigation-toggle[aria-expanded="true"]) .site-navigation-toggle,
+  body.home:not(.is-scrolled) .site-header:has(.site-navigation-toggle[aria-expanded="true"]) .site-navigation-toggle {
+    color: var(--mpcbc-text) !important;
+  }
+  body .site-header:has(.site-navigation-toggle[aria-expanded="true"]) .site-branding .site-title a,
+  body.home:not(.is-scrolled) .site-header:has(.site-navigation-toggle[aria-expanded="true"]) .site-branding .site-title a {
+    border-color: var(--mpcbc-line-strong) !important;
+    color: var(--mpcbc-ink-soft) !important;
+  }
+
+  /* The panel hangs under the header bar */
+  .site-header .site-navigation-dropdown {
+    top: 100%;
+    bottom: auto;
+    margin: 0;
+    background: var(--mpcbc-header);
+    border-bottom: 1px solid var(--mpcbc-line);
+    box-shadow: 0 16px 40px rgba(24, 23, 21, 0.16);
+  }
+
+  .site-header .site-navigation-dropdown ul.menu {
+    position: static;
+    display: block;
+    width: 100%;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    margin: 0;
+    padding: 8px 32px 32px;
+    background: var(--mpcbc-paper);
+    gap: 0;
+  }
+
+  .site-header .site-navigation-dropdown ul.menu li {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-height: none;
+    transform: none;
+  }
+
+  /* Top level rows: 56px, 20px text, English left, Chinese right */
+  .site-header .site-navigation-dropdown ul.menu > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 56px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none !important;
+    border-bottom: 1px solid var(--mpcbc-line);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--mpcbc-text) !important;
+  }
+
+  body .site-header .site-navigation-dropdown .menu-item-description,
+  body.home:not(.is-scrolled) .site-header .site-navigation-dropdown .menu-item-description {
+    font-family: var(--font-chinese);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--mpcbc-ink-soft) !important;
+    opacity: 1 !important;
+  }
+
+  /* Children are already open, indented 16px, 17px text, 48px rows */
+  .site-header .site-navigation-dropdown ul.menu li ul.sub-menu {
+    display: block;
+    position: static;
+    margin: 0;
+    padding: 0 0 8px 16px;
+    max-height: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none !important;
+    transform: none;
+  }
+  .site-header .site-navigation-dropdown ul.menu li ul.sub-menu li {
+    max-height: none;
+    transform: none;
+  }
+  .site-header .site-navigation-dropdown ul.menu li ul.sub-menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none !important;
+    border: 0;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--mpcbc-text) !important;
+  }
+  .site-header .site-navigation-dropdown ul.menu li ul.sub-menu li a .menu-item-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header .header-inner {
+    padding: 0 16px !important;
+  }
+  .site-header .site-navigation-dropdown ul.menu {
+    padding: 8px 16px 32px;
+  }
+}
+
+/* Live pill (times card): the " · Watch" tail is dropped at 1279px and below */
+.mpcbc-live a {
+  position: relative;
+  display: inline-block;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--e-global-color-live, #D92D27);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mpcbc-live a:hover { color: #fff; background: var(--e-global-color-live_text, #B8231E); }
+.mpcbc-live a::before { content: ""; display: inline-block; vertical-align: middle; width: 7px; height: 7px; margin: -2px 7px 0 0; border-radius: 50%; background: #fff; }
+.mpcbc-live a::after { content: ""; position: absolute; inset: -8px 0; } /* 44px tap height */
+@media (max-width: 1279px) {
+  .mpcbc-live .lw { display: none; }
+}
+
+/* Chinese line inside Nested Tabs titles (a tab title cannot hold a widget) */
+.e-n-tabs .e-n-tabs-heading .e-n-tab-title .e-n-tab-title-text { display: block; }
+.e-n-tab-title .zh {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-chinese);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--mpcbc-ink-soft);
+}
+.e-n-tab-title[aria-selected="true"] .zh { color: rgba(255, 255, 255, 0.75); }
+.e-n-tab-title .zh-inline {
+  margin-left: 4px;
+  font-family: var(--font-chinese);
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .e-n-tab-title .zh { font-size: 14px; margin-top: 2px; }
+}
+
+/* -------------------------------------------------------------
+ * 5. Video Pause/Play Button (video-toggle.js)
+ * ------------------------------------------------------------- */
+body button.mpcbc-video-toggle {
+  position: absolute;
+  right: 24px;
+  bottom: 128px; /* 128px from bottom desktop per step 3 */
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+body button.mpcbc-video-toggle:hover,
+body button.mpcbc-video-toggle:focus,
+body button.mpcbc-video-toggle:focus-visible {
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  opacity: 1;
+}
+
+body button.mpcbc-video-toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Pause icon: two bars */
+body button.mpcbc-video-toggle::before {
+  content: "";
+  box-sizing: border-box;
+  width: 10px;
+  height: 12px;
+  border-left: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+}
+
+/* Play icon: triangle */
+body button.mpcbc-video-toggle.is-paused::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent currentColor;
+}
+
+@media (max-width: 767px) {
+  body button.mpcbc-video-toggle {
+    right: 16px;
+    bottom: 104px; /* 104px mobile per step 3 */
+  }
+}
+
+/* The integrated service rail leaves a dedicated gap beside its address row. */
+body .elementor-element-hero_container button.mpcbc-video-toggle {
+  bottom: 24px;
+  right: 24px;
+  opacity: 1;
+}
+
+/* -------------------------------------------------------------
+ * 7. Footer Styles (Step 12: 44px tap targets, clean link styling)
+ * ------------------------------------------------------------- */
+.elementor-element[class*="elementor-element-mpcbc_foot"] a,
+#mpcbc_footer_root a,
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.elementor-element[class*="elementor-element-mpcbc_foot"] a:hover,
+#mpcbc_footer_root a:hover,
+.elementor-element[class*="elementor-element-mpcbc_foot"] a:focus,
+#mpcbc_footer_root a:focus,
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.elementor-element[class*="elementor-element-mpcbc_foot"] ul,
+#mpcbc_footer_root ul,
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Respect user motion preferences */
+.mpcbc-topic-select { display: none; }
+.mpcbc-topic-reader .reader-unavailable { visibility: hidden; }
+#mpcbc-topic-reader [id^="mpcbc-reader-unavailable-"] { visibility: hidden; }
+@media (max-width: 767px) {
+  .mpcbc-topic-reader[data-reader-ready] .e-n-tabs-heading { display: none; }
+  #mpcbc-topic-reader[data-reader-ready] [role="tablist"] { display: none; }
+  .mpcbc-topic-reader[data-reader-ready] .mpcbc-topic-select,
+  #mpcbc-topic-reader[data-reader-ready] .mpcbc-topic-select {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    border: 1px solid var(--e-global-color-line);
+    border-radius: 8px;
+    background: var(--e-global-color-mist);
+    color: var(--e-global-color-primary);
+    font: inherit;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Kids photo stack: on phones the three absolute photos become a flat row of three
+   (Elementor's Position control is not responsive, so it cannot do this itself) */
+@media (max-width: 767px) {
+  .elementor-element-kids_col_collage .elementor-element.elementor-absolute {
+    position: static !important;
+  }
+  .elementor-element-kids_col_collage img {
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"prayer_root 12\"><e-flexbox configuration-id=\"Boxed inner 11\"><e-flexbox configuration-id=\"prayer_col_info 8\"><e-heading configuration-id=\"prayer_heading 1\"></e-heading><e-paragraph configuration-id=\"prayer_lead 2\"></e-paragraph><e-flexbox configuration-id=\"prayer_promises_container 7\"><e-flexbox configuration-id=\"prayer_bullets 6\"><e-paragraph configuration-id=\"List item 3\"></e-paragraph><e-paragraph configuration-id=\"List item 4\"></e-paragraph><e-paragraph configuration-id=\"List item 5\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"prayer_col_form_card 10\"><e-div-block configuration-id=\"prayer_form_embed embed placeholder 9\"></e-div-block></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "prayer_heading 1": {
+      "_cssid": "mpcbc-prayer_heading",
+      "title": "How can we pray for you?",
+      "tag": "h1"
+    },
+    "prayer_lead 2": {
+      "_cssid": "mpcbc-prayer_lead",
+      "paragraph": "Our pastors read every request and pray for you by name this week.",
+      "tag": "p"
+    },
+    "List item 3": {
+      "paragraph": "Read only by [Pastor names] — or the prayer team, if you choose."
+    },
+    "List item 4": {
+      "paragraph": "Never posted or shared without your permission."
+    },
+    "List item 5": {
+      "paragraph": "You don’t need to give your name."
+    },
+    "prayer_bullets 6": {
+      "_cssid": "mpcbc-prayer_bullets"
+    },
+    "prayer_promises_container 7": {
+      "_cssid": "mpcbc-prayer_promises_container"
+    },
+    "prayer_col_info 8": {
+      "_cssid": "mpcbc-prayer_col_info"
+    },
+    "prayer_form_embed embed placeholder 9": {
+      "_cssid": "mpcbc-embed-prayer_form_embed"
+    },
+    "prayer_col_form_card 10": {
+      "_cssid": "mpcbc-prayer_col_form_card"
+    },
+    "Boxed inner 11": {},
+    "prayer_root 12": {
+      "_cssid": "mpcbc-prayer_root"
+    }
+  },
+  "style": {
+    "prayer_heading 1": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:96px;font-weight:700;line-height:0.98em;color:var(--mpcbc-color-6c2314b57);@media (--mobile){font-size:48px;}",
+    "prayer_lead 2": "min-width:0;margin:0;max-width:100%;font-size:22px;line-height:1.55em;color:var(--mpcbc-color-4a261092f);",
+    "List item 3": "min-width:0;margin:0;max-width:100%;color:var(--mpcbc-color-4a261092f);",
+    "List item 4": "min-width:0;margin:0;max-width:100%;color:var(--mpcbc-color-4a261092f);",
+    "List item 5": "min-width:0;margin:0;max-width:100%;color:var(--mpcbc-color-4a261092f);",
+    "prayer_bullets 6": "display:flex;flex-direction:column;gap:12px;padding:0;",
+    "prayer_promises_container 7": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 0px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-fbe4cdc76);",
+    "prayer_col_info 8": "min-width:0;margin:0;display:flex;flex-direction:column;width:46%;padding:0;gap:32px;@media (--tablet){width:100%;}@media (--mobile){width:100%;}",
+    "prayer_form_embed embed placeholder 9": "width:100%;padding:0;",
+    "prayer_col_form_card 10": "min-width:0;margin:0;display:flex;flex-direction:column;width:50%;padding:44px 44px 44px 44px;gap:20px;border-width:1px 1px 1px 1px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-54922f2e9);border-style:solid;border-color:var(--mpcbc-color-fbe4cdc76);@media (--tablet){width:100%;}@media (--mobile){width:100%;padding:24px 20px 24px 20px;}",
+    "Boxed inner 11": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0;gap:80px;align-items:flex-start;justify-content:space-between;@media (--tablet){flex-direction:column;}@media (--mobile){flex-direction:column;}max-width:1328px;margin-left:auto;margin-right:auto;",
+    "prayer_root 12": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:104px 56px 104px 56px;gap:80px;align-items:flex-start;justify-content:space-between;@media (--tablet){flex-direction:column;}@media (--mobile){flex-direction:column;padding:56px 20px 56px 20px;}"
+  }
+}

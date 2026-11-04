@@ -1,0 +1,162 @@
+{
+    "pages": [
+        {
+            "id": 109,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 25
+            }
+        },
+        {
+            "id": 16,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 51
+            }
+        },
+        {
+            "id": 17,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 21
+            }
+        },
+        {
+            "id": 18,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 12,
+                "3": 1
+            }
+        },
+        {
+            "id": 181,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 141
+            }
+        },
+        {
+            "id": 19,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 6
+            }
+        },
+        {
+            "id": 21,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 399,
+                "3": 3
+            }
+        },
+        {
+            "id": 210,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 39
+            }
+        },
+        {
+            "id": 211,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 39
+            }
+        },
+        {
+            "id": 215,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 198
+            }
+        },
+        {
+            "id": 218,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 198
+            }
+        },
+        {
+            "id": 224,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 141
+            }
+        },
+        {
+            "id": 227,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 141
+            }
+        },
+        {
+            "id": 233,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 20
+            }
+        },
+        {
+            "id": 236,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 20
+            }
+        },
+        {
+            "id": 60,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 6
+            }
+        },
+        {
+            "id": 61,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 6
+            }
+        },
+        {
+            "id": 62,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 6
+            }
+        },
+        {
+            "id": 63,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 6
+            }
+        },
+        {
+            "id": 64,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 198
+            }
+        },
+        {
+            "id": 65,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 20
+            }
+        },
+        {
+            "id": 66,
+            "mcp_structure_read": true,
+            "versions": {
+                "4": 39
+            }
+        }
+    ],
+    "unused_pro_size_tokens_removed": 0,
+    "network_mcp_connected": false
+}

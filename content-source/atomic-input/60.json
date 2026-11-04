@@ -1,0 +1,41 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"visit_root 6\"><e-flexbox configuration-id=\"Boxed inner 5\"><e-heading configuration-id=\"visit_title 1\"></e-heading><e-paragraph configuration-id=\"visit_zh 2\"></e-paragraph><e-paragraph configuration-id=\"visit_desc 3\"></e-paragraph><e-button configuration-id=\"visit_btn 4\"></e-button></e-flexbox></e-flexbox>",
+  "element_config": {
+    "visit_title 1": {
+      "_cssid": "mpcbc-visit_title",
+      "title": "Visit",
+      "tag": "h1"
+    },
+    "visit_zh 2": {
+      "_cssid": "mpcbc-visit_zh",
+      "paragraph": "初次來訪",
+      "tag": "p"
+    },
+    "visit_desc 3": {
+      "_cssid": "mpcbc-visit_desc",
+      "paragraph": "[This section is currently being prepared as part of the MPCBC website update.]",
+      "tag": "p"
+    },
+    "visit_btn 4": {
+      "_cssid": "mpcbc-visit_btn",
+      "text": "Back to Home →",
+      "link": {
+        "destination": "http://mpcbc.local/",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "Boxed inner 5": {},
+    "visit_root 6": {
+      "_cssid": "mpcbc-visit_root"
+    }
+  },
+  "style": {
+    "visit_title 1": "min-width:0;margin:0;max-width:100%;text-align:center;font-family:var(--mpcbc-font-635da6514);font-size:64px;font-weight:700;color:var(--mpcbc-color-6c2314b57);@media (--mobile){font-size:44px;}",
+    "visit_zh 2": "min-width:0;margin:0;max-width:100%;text-align:center;font-family:var(--mpcbc-font-529ca1d09);font-size:28px;line-height:1.5em;color:var(--mpcbc-color-4a261092f);",
+    "visit_desc 3": "min-width:0;margin:0;max-width:100%;text-align:center;font-size:18px;line-height:1.6em;color:var(--mpcbc-color-4a261092f);",
+    "visit_btn 4": "min-width:0;margin:0;max-width:100%;border-radius:12px 12px 12px 12px;font-size:16px;font-weight:600;color:var(--mpcbc-color-54922f2e9);background-color:var(--mpcbc-color-14b48ba19);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;padding:12px 24px;font-family:var(--mpcbc-font-0071814e4);",
+    "Boxed inner 5": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:24px;align-items:center;justify-content:center;max-width:900px;margin-left:auto;margin-right:auto;",
+    "visit_root 6": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:120px 32px 120px 32px;gap:24px;min-height:60vh;align-items:center;justify-content:center;@media (--mobile){padding:64px 20px 64px 20px;}"
+  }
+}

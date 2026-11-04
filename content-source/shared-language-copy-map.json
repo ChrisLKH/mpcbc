@@ -1,0 +1,473 @@
+[
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "ebb433d",
+    "simplified_id": "c6bc1142",
+    "field": "paragraph",
+    "traditional": "慕道園華人浸信會",
+    "simplified": "慕道园华人浸信会"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "3bb3909a",
+    "simplified_id": "341906d6",
+    "field": "paragraph",
+    "traditional": "主日聚會",
+    "simplified": "主日聚会"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "424e1b46",
+    "simplified_id": "71bc7192",
+    "field": "paragraph",
+    "traditional": "粵語",
+    "simplified": "粤语"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "5e16d28e",
+    "simplified_id": "0f536a3c",
+    "field": "paragraph",
+    "traditional": "英語",
+    "simplified": "英语"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "1b2e3d1f",
+    "simplified_id": "5de2b48b",
+    "field": "paragraph",
+    "traditional": "國語",
+    "simplified": "国语"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "6db899f5",
+    "simplified_id": "8e23a7c6",
+    "field": "paragraph",
+    "traditional": "兒童",
+    "simplified": "儿童"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "3a994704",
+    "traditional_id": "42bdc144",
+    "simplified_id": "e8f293f2",
+    "field": "paragraph",
+    "traditional": "交通指引",
+    "simplified": "交通指引"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "aa07d1e",
+    "simplified_id": "6d16d93f",
+    "field": "paragraph",
+    "traditional": "<span>本主日</span>",
+    "simplified": "<span>本主日</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "d88b706",
+    "simplified_id": "0020b52c",
+    "field": "title",
+    "traditional": "<span>粵語主日崇拜</span>",
+    "simplified": "<span>粤语主日崇拜</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "7e5abf72",
+    "traditional_id": "a2f2c5b8",
+    "simplified_id": "22607c60",
+    "field": "paragraph",
+    "traditional": "存檔",
+    "simplified": "存档"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "2712ff45",
+    "simplified_id": "9e385519",
+    "field": "title",
+    "traditional": "<span>國語主日崇拜</span>",
+    "simplified": "<span>国语主日崇拜</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "6c106fcb",
+    "traditional_id": "320be6ff",
+    "simplified_id": "d485049b",
+    "field": "paragraph",
+    "traditional": "存檔",
+    "simplified": "存档"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "1977593f",
+    "simplified_id": "434fda3b",
+    "field": "paragraph",
+    "traditional": "<span>通訊</span>",
+    "simplified": "<span>通讯</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "72161e9d",
+    "simplified_id": "5e4bd5cb",
+    "field": "paragraph",
+    "traditional": "2026年7月會刊：信仰見證、信靠神與宣教分享。",
+    "simplified": "2026年7月会刊：信仰见证、信靠神与宣教分享。"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "34e83bd0",
+    "simplified_id": "f48f9a24",
+    "field": "paragraph",
+    "traditional": "更多內容",
+    "simplified": "更多内容"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "17f2e72f",
+    "simplified_id": "0e170419",
+    "field": "paragraph",
+    "traditional": "<span>認識我們的牧師</span>",
+    "simplified": "<span>认识我们的牧师</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "26dcad8",
+    "simplified_id": "d42be8cc",
+    "field": "paragraph",
+    "traditional": "張健庭牧師",
+    "simplified": "张健庭牧师"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "643f5690",
+    "simplified_id": "e20ba749",
+    "field": "paragraph",
+    "traditional": "<span>[牧師姓名]</span>",
+    "simplified": "<span>[牧师姓名]</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "658f01c3",
+    "simplified_id": "3f98be03",
+    "field": "paragraph",
+    "traditional": "<span>[牧師姓名]</span>",
+    "simplified": "<span>[牧师姓名]</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "4b5836d9",
+    "simplified_id": "5167ee05",
+    "field": "paragraph",
+    "traditional": "認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。",
+    "simplified": "认识神为基础，荣耀神是目标。我们藉著敬拜﹑团契﹑门徒训练﹑事奉﹑传福音来认识和荣耀神。"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "7132f6b0",
+    "traditional_id": "0b5446a5",
+    "simplified_id": "436f57c8",
+    "field": "paragraph",
+    "traditional": "教會介紹及教牧團隊",
+    "simplified": "教会介绍及教牧团队"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "42571a79",
+    "simplified_id": "2e0dbe45",
+    "field": "paragraph",
+    "traditional": "<span>團契</span>",
+    "simplified": "<span>团契</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "665ce0f9",
+    "traditional_id": "2b77a3e8",
+    "simplified_id": "164beadb",
+    "field": "paragraph",
+    "traditional": "兒童",
+    "simplified": "儿童"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "3f034932",
+    "traditional_id": "925cc2e7",
+    "simplified_id": "e88884e8",
+    "field": "paragraph",
+    "traditional": "青少年",
+    "simplified": "青少年"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "6f932659",
+    "traditional_id": "0fc3f3d7",
+    "simplified_id": "821d73bb",
+    "field": "paragraph",
+    "traditional": "團契",
+    "simplified": "团契"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "36a8ff01",
+    "traditional_id": "ac9f255c",
+    "simplified_id": "762c52b2",
+    "field": "paragraph",
+    "traditional": "關懷",
+    "simplified": "关怀"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "59705670",
+    "simplified_id": "530bf61b",
+    "field": "paragraph",
+    "traditional": "<span>兒童</span>",
+    "simplified": "<span>儿童</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "14cb7369",
+    "simplified_id": "733ac8e9",
+    "field": "paragraph",
+    "traditional": "<span>青少年</span>",
+    "simplified": "<span>青少年</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "6be68ff5",
+    "simplified_id": "aa8a683f",
+    "field": "paragraph",
+    "traditional": "<span>團契</span>",
+    "simplified": "<span>团契</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "7ab50b2d",
+    "traditional_id": "e0bed9c5",
+    "simplified_id": "5bb8660f",
+    "field": "paragraph",
+    "traditional": "粵語",
+    "simplified": "粤语"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "8ebe71b",
+    "traditional_id": "757ecb97",
+    "simplified_id": "cd955f3c",
+    "field": "paragraph",
+    "traditional": "國語",
+    "simplified": "国语"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "1701a358",
+    "simplified_id": "45fee2de",
+    "field": "paragraph",
+    "traditional": "<span>關懷</span>",
+    "simplified": "<span>关怀</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "5b356369",
+    "simplified_id": "c94d6900",
+    "field": "paragraph",
+    "traditional": "<span>課堂以英語進行，登記處有中文同工協助家長。</span>",
+    "simplified": "<span>课堂以英语进行，登记处有中文同工协助家长。</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "7f2c77d0",
+    "simplified_id": "3411e2c1",
+    "field": "paragraph",
+    "traditional": "<span>近期活動</span>",
+    "simplified": "<span>近期活动</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "4b067e57",
+    "simplified_id": "d7136f9f",
+    "field": "paragraph",
+    "traditional": "<span>最近講道</span>",
+    "simplified": "<span>最近讲道</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "526e0609",
+    "traditional_id": "fc9b14e8",
+    "simplified_id": "01dc9c35",
+    "field": "paragraph",
+    "traditional": "講道題目",
+    "simplified": "讲道题目"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "797e3435",
+    "traditional_id": "95869a72",
+    "simplified_id": "808c7973",
+    "field": "paragraph",
+    "traditional": "講道題目",
+    "simplified": "讲道题目"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "50cac094",
+    "simplified_id": "c8d78fe0",
+    "field": "paragraph",
+    "traditional": "<span>與我們聯絡</span>",
+    "simplified": "<span>与我们联络</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "74065794",
+    "traditional_id": "8f480bd9",
+    "simplified_id": "a3362859",
+    "field": "paragraph",
+    "traditional": "聯絡卡",
+    "simplified": "联络卡"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "6cc2b8c4",
+    "traditional_id": "84360fdc",
+    "simplified_id": "9b01b4f3",
+    "field": "paragraph",
+    "traditional": "代禱",
+    "simplified": "代祷"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "31957f0",
+    "simplified_id": "02cf16a7",
+    "field": "paragraph",
+    "traditional": "<span>奉獻</span>",
+    "simplified": "<span>奉献</span>"
+  },
+  {
+    "document": 21,
+    "kind": "native",
+    "traditional_id": "7cb79a50",
+    "simplified_id": "c85f566c",
+    "field": "paragraph",
+    "traditional": "奉獻支票抬頭請寫 MPCBC，郵寄至教會地址。",
+    "simplified": "奉献支票抬头请写 MPCBC，邮寄至教会地址。"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "2ee04fc6",
+    "traditional_id": "0fab7ae6",
+    "simplified_id": "4aa8641e",
+    "field": "paragraph",
+    "traditional": "透過 PayPal 奉獻",
+    "simplified": "透过 PayPal 奉献"
+  },
+  {
+    "document": 21,
+    "kind": "native-group",
+    "element_id": "681a8236",
+    "traditional_id": "7bee0765",
+    "simplified_id": "62be0bab",
+    "field": "paragraph",
+    "traditional": "奉獻方式",
+    "simplified": "奉献方式"
+  },
+  {
+    "document": 16,
+    "kind": "native",
+    "traditional_id": "1f07782",
+    "simplified_id": "404d33e0",
+    "field": "paragraph",
+    "traditional": "慕道園華人浸信會",
+    "simplified": "慕道园华人浸信会"
+  },
+  {
+    "document": 16,
+    "kind": "native-group",
+    "element_id": "6343d04e",
+    "traditional_id": "c81d8c9d",
+    "simplified_id": "f598f414",
+    "field": "paragraph",
+    "traditional": "主日",
+    "simplified": "主日"
+  },
+  {
+    "document": 16,
+    "kind": "native-group",
+    "element_id": "586de25a",
+    "traditional_id": "a4b5a8fe",
+    "simplified_id": "6ae3748b",
+    "field": "paragraph",
+    "traditional": "粵語",
+    "simplified": "粤语"
+  },
+  {
+    "document": 16,
+    "kind": "native-group",
+    "element_id": "2f4999fc",
+    "traditional_id": "b15da699",
+    "simplified_id": "81a2fc57",
+    "field": "paragraph",
+    "traditional": "國語",
+    "simplified": "国语"
+  },
+  {
+    "document": 16,
+    "kind": "native-group",
+    "element_id": "5ededafd",
+    "traditional_id": "840de2ea",
+    "simplified_id": "5f2a0554",
+    "field": "paragraph",
+    "traditional": "微信群",
+    "simplified": "微信群"
+  },
+  {
+    "document": 16,
+    "kind": "native-group",
+    "element_id": "541c7818",
+    "traditional_id": "81713199",
+    "simplified_id": "ca9aee58",
+    "field": "paragraph",
+    "traditional": "中文",
+    "simplified": "中文"
+  }
+]

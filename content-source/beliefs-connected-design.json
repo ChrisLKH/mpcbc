@@ -1,0 +1,5 @@
+{
+  "builder": "scripts/build-beliefs-reader.mjs",
+  "decision": "Approved Topic reader with native Elementor Nested Tabs; all three locales.",
+  "doctrinal_text": "Preserved from beliefs-core-{locale}.json"
+}

@@ -1,0 +1,63 @@
+{
+    "post": {
+        "ID": 65,
+        "post_author": "1",
+        "post_date": "2026-10-20 03:57:36",
+        "post_date_gmt": "2026-10-20 03:57:36",
+        "post_content": "<h1>Give</h1>\t\t\t\t\t奉獻\t\t<p>Giving is a Christian’s privilege, responsibility and a channel of blessing. God is pleased when believers give willingly. You can give in the following ways.</p><p lang=\"zh-Hant\">奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻:</p>\t\t\t<h2>Give online</h2>\t\t\t\t\t網上奉獻\t\t<p>Give through the church’s PayPal donation page.</p><p lang=\"zh-Hant\">透過教會的 PayPal 奉獻頁面進行奉獻。</p>\t\t\t\t\t\t\t\t<a href=\"https://www.paypal.com/donate/?hosted_button_id=PQJTK3MEFJ9M2\">\n\t\t\t\t\t\t\t\t\tGive with PayPal · 透過 PayPal 奉獻\n\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t<h2>Give by cheque</h2>\t\t\t\t\t支票奉獻\t\t<p>Make your cheque payable to MPCBC and mail it to the church address below.</p><p lang=\"zh-Hant\">支票抬頭請寫 MPCBC，郵寄教會地址：</p><p>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</p>\t\t\t\t\t\t\t\t<a href=\"mailto:info@mpcbc.net\">\n\t\t\t\t\t\t\t\t\tContact us · 聯絡我們\n\t\t\t\t\t</a>",
+        "post_title": "Give · 奉獻",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "give",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2026-10-20 03:57:36",
+        "post_modified_gmt": "2026-10-20 03:57:36",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "http://mpcbc.local/give/",
+        "menu_order": 0,
+        "post_type": "page",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+    },
+    "meta": {
+        "_elementor_edit_mode": [
+            "builder"
+        ],
+        "_elementor_version": [
+            "4.3.4"
+        ],
+        "_elementor_data": [
+            "[{\"id\":\"bc0006e\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"background_background\":\"classic\",\"__globals__\":{\"background_color\":\"globals\\/colors?id=mist\"},\"padding\":{\"unit\":\"px\",\"top\":\"80\",\"right\":\"56\",\"bottom\":\"80\",\"left\":\"56\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"32\",\"bottom\":\"64\",\"left\":\"32\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"bc0006d\",\"elType\":\"container\",\"settings\":{\"content_width\":\"boxed\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"boxed_width\":{\"unit\":\"px\",\"size\":1120},\"_element_id\":\"giving\"},\"elements\":[{\"id\":\"bc00069\",\"elType\":\"widget\",\"settings\":{\"title\":\"Give\",\"header_size\":\"h1\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_h1\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"bc0006a\",\"elType\":\"widget\",\"settings\":{\"title\":\"\\u5949\\u737b\",\"header_size\":\"div\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=ink_soft\",\"typography_typography\":\"globals\\/typography?id=interior_subtitle\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"bc0006b\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>Giving is a Christian\\u2019s privilege, responsibility and a channel of blessing. God is pleased when believers give willingly. You can give in the following ways.<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_body\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"bc0006c\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p lang=\\\"zh-Hant\\\">\\u5949\\u737b\\u662f\\u57fa\\u7763\\u5f92\\u7684\\u6b0a\\u5229\\u02ce\\u7fa9\\u52d9\\u548c\\u8499\\u798f\\u7684\\u7ba1\\u9053, \\u4fe1\\u5f92\\u6a02\\u610f\\u7684\\u5949\\u737b\\uff0c\\u5fc5\\u70ba\\u795e\\u6240\\u6085\\u7d0d\\u3002\\u5927\\u5bb6\\u53ef\\u4ee5\\u900f\\u904e\\u4ee5\\u4e0b\\u7684\\u9014\\u5f91\\u9032\\u884c\\u5949\\u737b:<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_zh\"}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":false}],\"isInner\":false},{\"id\":\"bc00080\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"background_background\":\"classic\",\"__globals__\":{\"background_color\":\"globals\\/colors?id=paper\"},\"padding\":{\"unit\":\"px\",\"top\":\"80\",\"right\":\"56\",\"bottom\":\"80\",\"left\":\"56\",\"isLinked\":false},\"padding_tablet\":{\"unit\":\"px\",\"top\":\"64\",\"right\":\"32\",\"bottom\":\"64\",\"left\":\"32\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"48\",\"right\":\"20\",\"bottom\":\"48\",\"left\":\"20\",\"isLinked\":false}},\"elements\":[{\"id\":\"bc0007f\",\"elType\":\"container\",\"settings\":{\"content_width\":\"boxed\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"boxed_width\":{\"unit\":\"px\",\"size\":1120}},\"elements\":[{\"id\":\"bc0007e\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"row\",\"flex_gap\":{\"unit\":\"px\",\"size\":24},\"flex_direction_mobile\":\"column\",\"flex_wrap\":\"wrap\"},\"elements\":[{\"id\":\"bc00075\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"width\":{\"unit\":\"%\",\"size\":48},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"bc00074\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"background_background\":\"classic\",\"__globals__\":{\"background_color\":\"globals\\/colors?id=white\"},\"border_radius\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"32\",\"right\":\"32\",\"bottom\":\"32\",\"left\":\"32\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":false}},\"elements\":[{\"id\":\"bc0006f\",\"elType\":\"widget\",\"settings\":{\"title\":\"Give online\",\"header_size\":\"h2\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_h2\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"bc00070\",\"elType\":\"widget\",\"settings\":{\"title\":\"\\u7db2\\u4e0a\\u5949\\u737b\",\"header_size\":\"div\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=ink_soft\",\"typography_typography\":\"globals\\/typography?id=interior_subtitle\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"bc00071\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>Give through the church\\u2019s PayPal donation page.<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_body\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"bc00072\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p lang=\\\"zh-Hant\\\">\\u900f\\u904e\\u6559\\u6703\\u7684 PayPal \\u5949\\u737b\\u9801\\u9762\\u9032\\u884c\\u5949\\u737b\\u3002<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_zh\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"bc00073\",\"elType\":\"widget\",\"settings\":{\"text\":\"Give with PayPal \\u00b7 \\u900f\\u904e PayPal \\u5949\\u737b\",\"link\":{\"url\":\"https:\\/\\/www.paypal.com\\/donate\\/?hosted_button_id=PQJTK3MEFJ9M2\"},\"align\":\"left\",\"size\":\"md\",\"border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":false},\"text_padding\":{\"unit\":\"px\",\"top\":\"16\",\"right\":\"24\",\"bottom\":\"16\",\"left\":\"24\",\"isLinked\":false},\"__globals__\":{\"button_text_color\":\"globals\\/colors?id=white\",\"background_color\":\"globals\\/colors?id=primary\",\"border_color\":\"globals\\/colors?id=line\",\"typography_typography\":\"globals\\/typography?id=interior_button\"}},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":false}],\"isInner\":false},{\"id\":\"bc0007d\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"width\":{\"unit\":\"%\",\"size\":48},\"width_mobile\":{\"unit\":\"%\",\"size\":100}},\"elements\":[{\"id\":\"bc0007c\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"flex_direction\":\"column\",\"flex_gap\":{\"unit\":\"px\",\"size\":20},\"background_background\":\"classic\",\"__globals__\":{\"background_color\":\"globals\\/colors?id=white\"},\"border_radius\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":false},\"padding\":{\"unit\":\"px\",\"top\":\"32\",\"right\":\"32\",\"bottom\":\"32\",\"left\":\"32\",\"isLinked\":false},\"padding_mobile\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":false}},\"elements\":[{\"id\":\"bc00076\",\"elType\":\"widget\",\"settings\":{\"title\":\"Give by cheque\",\"header_size\":\"h2\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_h2\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"bc00077\",\"elType\":\"widget\",\"settings\":{\"title\":\"\\u652f\\u7968\\u5949\\u737b\",\"header_size\":\"div\",\"__globals__\":{\"title_color\":\"globals\\/colors?id=ink_soft\",\"typography_typography\":\"globals\\/typography?id=interior_subtitle\"}},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"bc00078\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>Make your cheque payable to MPCBC and mail it to the church address below.<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_body\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"bc00079\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p lang=\\\"zh-Hant\\\">\\u652f\\u7968\\u62ac\\u982d\\u8acb\\u5beb MPCBC\\uff0c\\u90f5\\u5bc4\\u6559\\u6703\\u5730\\u5740\\uff1a<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_zh\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"bc0007a\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>302 W. Commonwealth Ave.<br>Alhambra, CA 91801<\\/p>\",\"__globals__\":{\"text_color\":\"globals\\/colors?id=text\",\"typography_typography\":\"globals\\/typography?id=interior_body\"}},\"elements\":[],\"widgetType\":\"text-editor\"},{\"id\":\"bc0007b\",\"elType\":\"widget\",\"settings\":{\"text\":\"Contact us \\u00b7 \\u806f\\u7d61\\u6211\\u5011\",\"link\":{\"url\":\"mailto:info@mpcbc.net\"},\"align\":\"left\",\"size\":\"md\",\"border_radius\":{\"unit\":\"px\",\"top\":\"12\",\"right\":\"12\",\"bottom\":\"12\",\"left\":\"12\",\"isLinked\":false},\"text_padding\":{\"unit\":\"px\",\"top\":\"16\",\"right\":\"24\",\"bottom\":\"16\",\"left\":\"24\",\"isLinked\":false},\"background_color\":\"\",\"border_border\":\"solid\",\"border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":false},\"__globals__\":{\"button_text_color\":\"globals\\/colors?id=primary\",\"background_color\":\"globals\\/colors?id=paper\",\"border_color\":\"globals\\/colors?id=line\",\"typography_typography\":\"globals\\/typography?id=interior_button\"}},\"elements\":[],\"widgetType\":\"button\"}],\"isInner\":false}],\"isInner\":false}],\"isInner\":false}],\"isInner\":false}],\"isInner\":false}]"
+        ],
+        "_elementor_page_settings": [
+            "a:1:{s:10:\"hide_title\";s:3:\"yes\";}"
+        ],
+        "_wp_page_template": [
+            "elementor_header_footer"
+        ],
+        "_elementor_template_type": [
+            "wp-page"
+        ],
+        "_eael_post_view_count": [
+            "11"
+        ],
+        "_elementor_migrations_state_d2a1": [
+            "4.3.4:4619a43acdb71a3fd22ba7518aa0a7ef"
+        ],
+        "_eael_custom_js": [
+            ""
+        ],
+        "_elementor_global_class_usage_indexed": [
+            "1"
+        ],
+        "_elementor_global_class_usage_indexed_preview": [
+            "1"
+        ]
+    }
+}

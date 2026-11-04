@@ -1,0 +1,202 @@
+{
+    "status": "error",
+    "results": [
+        {
+            "index": 0,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-306ab1982&#039; already exists."
+        },
+        {
+            "index": 1,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-224a9d1d2&#039; already exists."
+        },
+        {
+            "index": 2,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-7e3ea77c2&#039; already exists."
+        },
+        {
+            "index": 3,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-d69f92af9&#039; already exists."
+        },
+        {
+            "index": 4,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-98465e2b3&#039; already exists."
+        },
+        {
+            "index": 5,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-941e632fe&#039; already exists."
+        },
+        {
+            "index": 6,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-c7c6a7b0e&#039; already exists."
+        },
+        {
+            "index": 7,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-cf3c032cd&#039; already exists."
+        },
+        {
+            "index": 8,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-ba698890e&#039; already exists."
+        },
+        {
+            "index": 9,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-4d3604fc3&#039; already exists."
+        },
+        {
+            "index": 10,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-f4f9f2f45&#039; already exists."
+        },
+        {
+            "index": 11,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-3c54bf036&#039; already exists."
+        },
+        {
+            "index": 12,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-07d16b949&#039; already exists."
+        },
+        {
+            "index": 13,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-865b4c0b4&#039; already exists."
+        },
+        {
+            "index": 14,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-9eea7bca2&#039; already exists."
+        },
+        {
+            "index": 15,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-6e90187b2&#039; already exists."
+        },
+        {
+            "index": 16,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-33f60d473&#039; already exists."
+        },
+        {
+            "index": 17,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-14cdf5964&#039; already exists."
+        },
+        {
+            "index": 18,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-c6b690ada&#039; already exists."
+        },
+        {
+            "index": 19,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-ad97dd7b0&#039; already exists."
+        },
+        {
+            "index": 20,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-aabbe7421&#039; already exists."
+        },
+        {
+            "index": 21,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-00759cb07&#039; already exists."
+        },
+        {
+            "index": 22,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-38c45c6e4&#039; already exists."
+        },
+        {
+            "index": 23,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-9a9cf7f9c&#039; already exists."
+        },
+        {
+            "index": 24,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-b8c9f0a67&#039; already exists."
+        },
+        {
+            "index": 25,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-53d7ee4c7&#039; already exists."
+        },
+        {
+            "index": 26,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-b2342e3f0&#039; already exists."
+        },
+        {
+            "index": 27,
+            "action": "create",
+            "status": "error",
+            "code": "duplicated_label",
+            "message": "Variable label &#039;mpcbc-size-b0b526cc2&#039; already exists."
+        }
+    ],
+    "watermark": 2
+}

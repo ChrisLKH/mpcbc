@@ -1,0 +1,1201 @@
+{
+    "version": "0.4",
+    "title": "Chinese content · 中文",
+    "type": "page",
+    "page_settings": {
+        "hide_title": "yes"
+    },
+    "content": [
+        {
+            "id": "bc00086",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=mist"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "56",
+                    "bottom": "80",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "32",
+                    "bottom": "64",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "20",
+                    "bottom": "48",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "bc00085",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "bc00081",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "Welcome",
+                                "header_size": "h1",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=interior_h1"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "bc00082",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "歡迎來到慕道園",
+                                "header_size": "div",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=ink_soft",
+                                    "typography_typography": "globals/typography?id=interior_subtitle"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "bc00083",
+                            "elType": "widget",
+                            "settings": {
+                                "editor": "<p>Explore our church’s Chinese-language content.</p>",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=interior_body"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                        },
+                        {
+                            "id": "bc00084",
+                            "elType": "widget",
+                            "settings": {
+                                "editor": "<p lang=\"zh-Hant\">從這裡認識教會、閱讀信仰告白，並查看主日崇拜及奉獻資訊。</p>",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=interior_zh"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "bc000b3",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "56",
+                    "bottom": "80",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "32",
+                    "bottom": "64",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "20",
+                    "bottom": "48",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "bc000b2",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "bc000b1",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 24
+                                },
+                                "flex_direction_mobile": "column",
+                                "flex_wrap": "wrap"
+                            },
+                            "elements": [
+                                {
+                                    "id": "bc0008d",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc0008c",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00087",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Our church",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00088",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "教會介紹",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00089",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>History, mission and pastoral team.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0008a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">教會歷史、使命及教牧團隊。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0008b",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Explore · 查看",
+                                                        "link": {
+                                                            "url": "/about/#story"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "bc00094",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc00093",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0008e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Our beliefs",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0008f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "信仰告白",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00090",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Eight statements of faith and scripture references.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00091",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">八項信仰告白及相關經文。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00092",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Explore · 查看",
+                                                        "link": {
+                                                            "url": "/beliefs/"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "bc0009b",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc0009a",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00095",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Sunday worship",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00096",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "主日崇拜",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00097",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Cantonese 11 AM · Mandarin 9 AM · English 11 AM.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00098",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">粵語上午11時 · 國語上午9時 · 英語上午11時。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00099",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Explore · 查看",
+                                                        "link": {
+                                                            "url": "/#top"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "bc000a2",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc000a1",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0009c",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Sermons",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0009d",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "講道",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0009e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Browse Cantonese and Mandarin sermon series.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0009f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">瀏覽粵語及國語講道系列。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc000a0",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Explore · 查看",
+                                                        "link": {
+                                                            "url": "/#watch"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "bc000a9",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc000a8",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc000a3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Give",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc000a4",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "奉獻",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc000a5",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Give with PayPal or by cheque.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc000a6",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">透過 PayPal 或支票奉獻。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc000a7",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Explore · 查看",
+                                                        "link": {
+                                                            "url": "/give/#giving"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "bc000b0",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc000af",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc000aa",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Contact and prayer",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc000ab",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "聯絡與代禱",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc000ac",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Get in touch with our church.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc000ad",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">與教會聯絡或提交代禱事項。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc000ae",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Explore · 查看",
+                                                        "link": {
+                                                            "url": "/#connect"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

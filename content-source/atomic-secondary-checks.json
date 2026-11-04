@@ -1,0 +1,38 @@
+[
+  {
+    "locale": "en",
+    "overflow": false,
+    "page": "give",
+    "width": 1440
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "page": "give",
+    "width": 390
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "page": "give",
+    "width": 1440
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "page": "give",
+    "width": 390
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "page": "give",
+    "width": 1440
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "page": "give",
+    "width": 390
+  }
+]

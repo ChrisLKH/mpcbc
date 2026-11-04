@@ -1,0 +1,2465 @@
+{
+    "id": 227,
+    "title": "信仰告白",
+    "data": [
+        {
+            "id": "be00111",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "56",
+                    "bottom": "48",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "32",
+                    "bottom": "56",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "36",
+                    "right": "20",
+                    "bottom": "36",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "be00110",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be0010d",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "认识教会 / 信仰告白",
+                                "header_size": "div",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=primary",
+                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be0010e",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "共同信仰，<br>连系彼此。",
+                                "header_size": "h1",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=about_sc_hero"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be0010f",
+                            "elType": "widget",
+                            "settings": {
+                                "editor": "<p>探索我们以圣经为根基、以耶稣为中心的信仰。</p>",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=ink_soft",
+                                    "typography_typography": "globals/typography?id=about_sc_intro"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "be00113",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "56",
+                    "bottom": "20",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=white"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "32",
+                    "bottom": "20",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "18",
+                    "right": "20",
+                    "bottom": "18",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "be00112",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be0010c",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "flex_wrap": "wrap",
+                                "flex_gap_mobile": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "be00108",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "教会历史",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                        },
+                                        "link": {
+                                            "url": "http://mpcbc.local/zh-hans/about/#story"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be00109",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "使命宣言",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                        },
+                                        "link": {
+                                            "url": "http://mpcbc.local/zh-hans/about/#mission"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be0010a",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "教牧团队",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                        },
+                                        "link": {
+                                            "url": "http://mpcbc.local/zh-hans/about/#pastors"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be0010b",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "信仰告白",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=text",
+                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                        },
+                                        "link": {
+                                            "url": "#beliefs"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "be00118",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "72",
+                    "right": "56",
+                    "bottom": "72",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "32",
+                    "bottom": "56",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "40",
+                    "right": "20",
+                    "bottom": "40",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "_element_id": "beliefs"
+            },
+            "elements": [
+                {
+                    "id": "be00117",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be00116",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 12
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "css_classes": "mpcbc-topic-index",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 100
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "be00114",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "我们的信仰告白",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be00115",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "八项信仰根基，<br>同一份信仰。",
+                                        "header_size": "h2",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=text",
+                                            "typography_typography": "globals/typography?id=about_sc_card"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "be000ff",
+                            "elType": "widget",
+                            "widgetType": "nested-tabs",
+                            "settings": {
+                                "_css_classes": "mpcbc-topic-reader",
+                                "tabs": [
+                                    {
+                                        "_id": "be00100",
+                                        "tab_title": "01 · 神"
+                                    },
+                                    {
+                                        "_id": "be00101",
+                                        "tab_title": "02 · 耶稣基督"
+                                    },
+                                    {
+                                        "_id": "be00102",
+                                        "tab_title": "03 · 圣灵"
+                                    },
+                                    {
+                                        "_id": "be00103",
+                                        "tab_title": "04 · 圣经"
+                                    },
+                                    {
+                                        "_id": "be00104",
+                                        "tab_title": "05 · 人类"
+                                    },
+                                    {
+                                        "_id": "be00105",
+                                        "tab_title": "06 · 救恩"
+                                    },
+                                    {
+                                        "_id": "be00106",
+                                        "tab_title": "07 · 永远的保障"
+                                    },
+                                    {
+                                        "_id": "be00107",
+                                        "tab_title": "08 · 永恒"
+                                    }
+                                ],
+                                "tabs_direction": "inline-start",
+                                "tabs_direction_tablet": "inline-start",
+                                "tabs_direction_mobile": "block-start",
+                                "tabs_width": {
+                                    "unit": "px",
+                                    "size": 248
+                                },
+                                "tabs_width_tablet": {
+                                    "unit": "px",
+                                    "size": 210
+                                },
+                                "tabs_title_spacing": {
+                                    "unit": "px",
+                                    "size": 64
+                                },
+                                "tabs_title_spacing_tablet": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "tabs_title_spacing_mobile": {
+                                    "unit": "px",
+                                    "size": 24
+                                },
+                                "tabs_title_space_between": {
+                                    "unit": "px",
+                                    "size": 4
+                                },
+                                "tabs_title_border_radius": {
+                                    "unit": "px",
+                                    "top": "8",
+                                    "right": "8",
+                                    "bottom": "8",
+                                    "left": "8",
+                                    "isLinked": false
+                                },
+                                "title_alignment": "start",
+                                "tabs_justify_vertical": "start",
+                                "breakpoint_selector": "none",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "14",
+                                    "right": "16",
+                                    "bottom": "14",
+                                    "left": "16",
+                                    "isLinked": false
+                                },
+                                "tabs_title_background_color_background": "classic",
+                                "tabs_title_background_color_active_background": "classic",
+                                "tabs_title_background_color_hover_background": "classic",
+                                "content_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "content_border_border": "none",
+                                "__globals__": {
+                                    "title_typography_typography": "globals/typography?id=about_sc_nav",
+                                    "title_text_color": "globals/colors?id=ink_soft",
+                                    "title_text_color_active": "globals/colors?id=primary",
+                                    "title_text_color_hover": "globals/colors?id=primary",
+                                    "tabs_title_background_color_color": "globals/colors?id=paper",
+                                    "tabs_title_background_color_active_color": "globals/colors?id=mist",
+                                    "tabs_title_background_color_hover_color": "globals/colors?id=mist"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "be000c6",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000c1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "01",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000c2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "神",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000c3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00039",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">神是宇宙的创造者与主宰，祂以三位一体永远存在:圣父、圣子、圣灵。三位同等为一神。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0003a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0003b",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">创1:1,26,27, 3:22, 诗90:2; 太28:19; 彼前1:2; 林后13:14</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000c5",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000bf",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-0"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        },
+                                                        "_css_classes": "reader-unavailable"
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000c4",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "1 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000c0",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-2"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000ce",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000c9",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "02",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000ca",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "耶稣基督",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000cb",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0003e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">耶稣基督是神的儿子，与父同等。耶稣曾在地上无罪活过人生，并将自己献上成为最完美的祭，为所有的人类死在十字架上。三天后从死里复活，彰显祂胜过罪与死的权能。祂升到天上的荣耀，有一天要回到地上来作万王之王、万主之主。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0003f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00040",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">太1:22-23; 赛9:6; 约1:1-5, 14:10-30; 来4:14,15; 林前15:3-4; 罗1:3-4; 徒1:9-11; 提前6:14; 多2:13</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000cd",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000c7",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-1"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000cc",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "2 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000c8",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-3"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000d6",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000d1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "03",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000d2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "圣灵",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000d3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00043",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">圣灵与圣父圣子同等。祂临在世上为要帮助人认识基督。并且在人得救那一刻，祂便住在每一个基督徒里面。祂供应每个基督徒每天生活的能力，对于属灵真理的理解力，以及前行的引导。祂赏赐属灵恩赐给每个得救的信徒。作为基督徒，我们每天寻求过一个圣灵管理的生活。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00044",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00045",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">林后3:17; 约16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000d5",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000cf",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-2"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000d4",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "3 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000d0",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-4"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000de",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000d9",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "04",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000da",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "圣经",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000db",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00048",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">圣经是神给我们的话，是藉著圣灵超然的引导，由人写成。是基督徒信仰与生活的最高准则。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00049",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0004a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">提后3:16,1:13; 彼后1:20-21; 诗119:105, 160, 12:6; 箴30:5</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000dd",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000d7",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-3"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000dc",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "4 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000d8",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-5"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000e6",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000e1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "05",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000e2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "人类",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000e3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0004d",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">人类是照神属灵的形象所造，本有神的属性。人是神创造的极致。虽然人本有善的潜能，我们每个人却都因著罪的态度与神隔绝，而使得生命陷入种种问题。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0004e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0004f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">创1:27; 诗8:3-6; 赛53:6a; 罗3:23; 赛59:1-2</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000e5",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000df",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-4"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000e4",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "5 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000e0",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-6"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000ee",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000e9",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "06",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000ea",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "救恩",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000eb",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00052",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">救恩是神给我们白白的礼物，但需要我们去接受。我们永远无法靠著善行与自我改善来赎我们的罪。惟有靠著耶稣基督，蒙神赦免，才能从罪的刑罚得赎。当我们从以自我为中心、靠自己的生命，凭信心转向耶稣时，我们便得救。永远的生命开始于我们凭信心接受耶稣基督的生命那一刻。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00053",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00054",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">罗6:23,5:1; 弗2:8-9; 约14:6;1:12; 多3:5; 加3:26</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000ed",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000e7",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-5"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000ec",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "6 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000e8",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-7"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000f6",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000f1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "07",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000f2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "永远的保障",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000f3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00057",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">由于神通过耶稣基督赐给我们永远的生命，真信徒有永远的得救保障。救赎是藉著神的权能与恩典，不是凭基督徒自己的努力。神保守的权能与恩典使我们有这永远的保障。但信徒也有责任不断信靠神，活在神的保守之中。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00058",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00059",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">约10:29; 提后1:12; 来7:25, 10:10,14; 彼前1:3-5; 来6:4-8; 来10:26-27; 约15:6</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000f5",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000ef",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-6"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000f4",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "7 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000f0",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-8"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be000fe",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be000f9",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "08",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000fa",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "永恒",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be000fb",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0005c",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">人被创造要存到永远。我们或要因著罪与神永远隔离，或是因著赦免与救恩与神永远同在。与神永远隔离便是地狱，与神永远同在便是永远的生命。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0005d",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "经文",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0005e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hans\">约3:16, 2:25, 5:11-13; 罗6:23; 启20:15; 太1:8; 太2:44,46</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_sc_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be000fd",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be000f7",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← 上一项",
+                                                        "link": {
+                                                            "url": "#belief-topic-7"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be000fc",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "8 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_sc_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be000f8",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "下一项 →",
+                                                        "link": {
+                                                            "url": "#belief-topic-9"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_sc_nav"
+                                                        },
+                                                        "_css_classes": "reader-unavailable"
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ]
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "be0011d",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "72",
+                    "right": "56",
+                    "bottom": "72",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=mist"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "32",
+                    "bottom": "56",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "40",
+                    "right": "20",
+                    "bottom": "40",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "be0011c",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be00119",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "进一步认识教会",
+                                "header_size": "div",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=primary",
+                                    "typography_typography": "globals/typography?id=about_sc_label"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be0011a",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "认识共同信仰背后的<br>教会与弟兄姊妹。",
+                                "header_size": "h2",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=about_sc_section"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be0011b",
+                            "elType": "widget",
+                            "settings": {
+                                "text": "教会历史与教牧团队 ↗",
+                                "link": {
+                                    "url": "http://mpcbc.local/zh-hans/about/#story"
+                                },
+                                "text_padding": {
+                                    "unit": "px",
+                                    "top": "12",
+                                    "right": "0",
+                                    "bottom": "12",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "__globals__": {
+                                    "button_text_color": "globals/colors?id=primary",
+                                    "background_color": "globals/colors?id=paper",
+                                    "typography_typography": "globals/typography?id=about_sc_nav"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "button"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ],
+    "settings": {
+        "hide_title": "yes"
+    }
+}

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;600;700&family=Nanum+Pen+Script&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FFFFFF; color: #221419; font-family: 'Geist', 'Noto Sans TC', system-ui, sans-serif; font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: #6F2841; text-underline-offset: 3px; }
+  a:hover { color: #221419; }
+  :lang(zh-Hant) { line-height: 1.85; letter-spacing: 0.02em; line-break: strict; }
+  :focus-visible { outline: 2px solid #943759; outline-offset: 3px; }
+  @keyframes mpPulse { 0%,100% { opacity: 1 } 50% { opacity: 0.3 } }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="background: #FFFFFF">
+
+  <header style="position: sticky; top: 0; z-index: 30; min-height: 64px; width: 100%; transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease; background: {{ headerBg }}; backdrop-filter: {{ headerBlur }}; border-bottom: 1px solid {{ headerBorder }}; color: {{ headerFg }}">
+    <div style="min-height: 64px; padding-block: 0.6rem; width: min(1080px, 100% - 2.5rem); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem 1.5rem; flex-wrap: wrap">
+      <a href="#top" style="display: flex; align-items: center; text-decoration: none; flex: 0 0 auto">
+        <img src="images/logo.png" alt="Monterey Park Chinese Baptist Church 蒙迪園華人浸信會" style="height: 38px; width: auto; display: block; border-radius: 4px; transition: filter 0.25s ease; filter: {{ logoFilter }}" />
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.15rem; font-size: 14px; font-weight: 500">
+        <span style="position: relative; display: inline-flex" onMouseEnter="{{ openAbout }}" onMouseLeave="{{ closeAbout }}">
+          <button type="button" onClick="{{ toggleAbout }}" aria-expanded="{{ aboutOpen }}" style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0; border: 0; background: transparent; font: inherit; font-weight: 500; color: inherit; cursor: pointer">About <span lang="zh-Hant" style="opacity: 0.7">關於我們</span> <span style="font-family: 'Inter', sans-serif; font-size: 10px; color: #6B5560">▾</span></button>
+          <sc-if value="{{ aboutOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position: absolute; top: 100%; left: -0.75rem; margin-top: 0.6rem; width: 17rem; background: #FFFFFF; border: 1px solid #E3D3D8; border-radius: 16px; box-shadow: 0 18px 40px rgba(34,20,25,0.12); padding: 0.5rem; display: flex; flex-direction: column; z-index: 40">
+              <a href="#welcome" style="display: flex; flex-direction: column; gap: 2px; padding: 0.6rem 0.75rem; border-radius: 12px; text-decoration: none; color: #221419" style-hover="background: #F8F3F4"><span style="font-weight: 600">Our story <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif">我們的故事</span></span><span style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #6B5560">Fifty years in Monterey Park</span></a>
+              <a href="#leaders" style="display: flex; flex-direction: column; gap: 2px; padding: 0.6rem 0.75rem; border-radius: 12px; text-decoration: none; color: #221419" style-hover="background: #F8F3F4"><span style="font-weight: 600">Our pastors <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif">教牧同工</span></span><span style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #6B5560">Three congregations, one eldership</span></a>
+              <a href="#children" style="display: flex; flex-direction: column; gap: 2px; padding: 0.6rem 0.75rem; border-radius: 12px; text-decoration: none; color: #221419" style-hover="background: #F8F3F4"><span style="font-weight: 600">Children &amp; families <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif">兒童及家庭</span></span><span style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #6B5560">Sunday school and nursery</span></a>
+              <a href="#connect" style="display: block; padding: 0.6rem 0.75rem; border-top: 1px solid #E3D3D8; margin-top: 0.3rem; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #943759; text-decoration: none">Contact the office</a>
+            </div>
+          </sc-if>
+        </span>
+        <span style="position: relative; display: inline-flex" onMouseEnter="{{ openMenu }}" onMouseLeave="{{ closeMenu }}">
+          <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0; border: 0; background: transparent; font: inherit; font-weight: 500; color: inherit; cursor: pointer">Services <span lang="zh-Hant" style="opacity: 0.7">崇拜</span> <span style="font-family: 'Inter', sans-serif; font-size: 10px; color: #6B5560">▾</span></button>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position: absolute; top: 100%; left: -0.75rem; margin-top: 0.6rem; width: 17rem; background: #FFFFFF; border: 1px solid #E3D3D8; border-radius: 16px; box-shadow: 0 18px 40px rgba(34,20,25,0.12); padding: 0.5rem; display: flex; flex-direction: column; z-index: 40">
+              <a href="#" style="display: flex; flex-direction: column; gap: 2px; padding: 0.6rem 0.75rem; border-radius: 12px; text-decoration: none; color: #221419" style-hover="background: #F8F3F4"><span style="font-weight: 600">English Worship</span><span style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #6B5560">11:00 AM · page &amp; sermon archive</span></a>
+              <a href="#" style="display: flex; flex-direction: column; gap: 2px; padding: 0.6rem 0.75rem; border-radius: 12px; text-decoration: none; color: #221419" style-hover="background: #F8F3F4"><span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 600">粵語堂 Cantonese</span><span style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #6B5560">9:30 AM · page &amp; sermon archive</span></a>
+              <a href="#" style="display: flex; flex-direction: column; gap: 2px; padding: 0.6rem 0.75rem; border-radius: 12px; text-decoration: none; color: #221419" style-hover="background: #F8F3F4"><span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 600">國語堂 Mandarin</span><span style="font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #6B5560">11:30 AM · page &amp; sermon archive</span></a>
+              <a href="#sunday" style="display: block; padding: 0.6rem 0.75rem; border-top: 1px solid #E3D3D8; margin-top: 0.3rem; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #943759; text-decoration: none">All services this Sunday</a>
+            </div>
+          </sc-if>
+        </span>
+        <a href="#news" style="text-decoration: none; color: inherit">Newsletter <span lang="zh-Hant" style="opacity: 0.7">通訊</span></a>
+        <a href="#connect" style="text-decoration: none; color: inherit">Prayer <span lang="zh-Hant" style="opacity: 0.7">代禱</span></a>
+        <a href="#give" style="display: inline-flex; align-items: center; gap: 0.4em; height: 40px; padding: 0 1.25em; border-radius: 999px; background: #943759; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #6F2841">Give <span lang="zh-Hant" style="font-weight: 500">奉獻</span></a>
+      </nav>
+      </sc-if>
+
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; align-items: center; gap: 0.6rem">
+        <a href="#give" style="display: inline-flex; align-items: center; gap: 0.4em; height: 44px; padding: 0 1.2em; border-radius: 999px; background: #943759; color: #FFFFFF; font-size: 15px; font-weight: 600; text-decoration: none" style-hover="background: #6F2841">Give <span lang="zh-Hant" style="font-weight: 500">奉獻</span></a>
+        <button type="button" onClick="{{ toggleDrawer }}" aria-expanded="{{ drawerOpen }}" aria-label="Menu" style="display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; width: 48px; height: 48px; padding: 0; border: 1px solid {{ headerBorder }}; border-radius: 999px; background: transparent; color: inherit; cursor: pointer">
+          <span style="display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor"></span>
+          <span style="display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor"></span>
+          <span style="display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor"></span>
+        </button>
+      </div>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ drawerVisible }}" hint-placeholder-val="{{ false }}">
+      <nav style="border-top: 1px solid #E3D3D8; background: #FFFFFF; max-height: calc(100vh - 64px); overflow-y: auto">
+        <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto; padding-block: 0.75rem 1.5rem; display: flex; flex-direction: column">
+          <a href="#welcome" onClick="{{ closeDrawer }}" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; padding: 0.5rem 0; border-bottom: 1px solid #F0DFE4; font-size: 18px; font-weight: 600; text-decoration: none; color: #221419">Our story <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 500; color: #6B5560">我們的故事</span></a>
+          <a href="#leaders" onClick="{{ closeDrawer }}" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; padding: 0.5rem 0; border-bottom: 1px solid #F0DFE4; font-size: 18px; font-weight: 600; text-decoration: none; color: #221419">Our pastors <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 500; color: #6B5560">教牧同工</span></a>
+          <a href="#sunday" onClick="{{ closeDrawer }}" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; padding: 0.5rem 0; border-bottom: 1px solid #F0DFE4; font-size: 18px; font-weight: 600; text-decoration: none; color: #221419">Services <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 500; color: #6B5560">崇拜</span></a>
+          <a href="#children" onClick="{{ closeDrawer }}" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; padding: 0.5rem 0; border-bottom: 1px solid #F0DFE4; font-size: 18px; font-weight: 600; text-decoration: none; color: #221419">Children &amp; families <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 500; color: #6B5560">兒童及家庭</span></a>
+          <a href="#news" onClick="{{ closeDrawer }}" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; padding: 0.5rem 0; border-bottom: 1px solid #F0DFE4; font-size: 18px; font-weight: 600; text-decoration: none; color: #221419">Newsletter <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 500; color: #6B5560">通訊</span></a>
+          <a href="#connect" onClick="{{ closeDrawer }}" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; padding: 0.5rem 0; border-bottom: 1px solid #F0DFE4; font-size: 18px; font-weight: 600; text-decoration: none; color: #221419">Prayer <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif; font-weight: 500; color: #6B5560">代禱</span></a>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.25rem">
+            <a href="#connect" onClick="{{ closeDrawer }}" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 1.5em; border-radius: 999px; background: #943759; color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none">Plan a visit <span lang="zh-Hant" style="font-weight: 500; margin-left: 0.4em">計劃到訪</span></a>
+            <a href="{{ mapsUrl }}" target="_blank" rel="noreferrer" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 1.5em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 16px; font-weight: 600; text-decoration: none">Get directions <span lang="zh-Hant" style="font-weight: 500; margin-left: 0.4em">交通指引</span></a>
+            <a href="tel:+16265550100" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 1.5em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 16px; font-weight: 600; text-decoration: none">Call the office (626) 555-0100</a>
+          </div>
+        </div>
+      </nav>
+    </sc-if>
+  </header>
+
+  <section id="top" style="position: relative; margin-top: -65px; padding-top: 65px; min-height: min(88vh, 820px); display: flex; align-items: end; background: #1B1014; background-image: radial-gradient(rgba(255,255,255,0.18) 0.6px, rgba(0,0,0,0) 1.4px); background-size: 16px 16px; overflow: hidden">
+    <span style="position: absolute; top: 1.5rem; left: 1.5rem; z-index: 2; font-family: ui-monospace, Menlo, monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5)">background video placeholder — church and people, muted loop</span>
+    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(27,16,20,0.86) 0%, rgba(27,16,20,0.2) 62%, rgba(27,16,20,0.4) 100%)"></div>
+    <div style="position: relative; width: min(1080px, 100% - 2.5rem); margin-inline: auto; padding: clamp(3rem, 8vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem); display: flex; flex-direction: column; gap: 1.5rem">
+      <h1 style="margin: 0; font-size: clamp(2.9rem, 1.2rem + 6.5vw, 5.5rem); line-height: 1.02; letter-spacing: -3.2px; font-weight: 700; color: #FFFFFF; max-width: 16ch">One church.<br />Short Slogan.</h1>
+      <p lang="zh-Hant" style="margin: 0; font-family: 'Noto Serif TC', serif; font-weight: 600; font-size: clamp(1.25rem, 1rem + 1vw, 1.8rem); color: #FFFFFF">一間教會，三種語言</p>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; margin-top: 0.5rem">
+        <a href="#sunday" style="display: inline-flex; align-items: center; gap: 0.6rem; height: 52px; padding: 0 1.8em; border-radius: 999px; background: #FFFFFF; color: #221419; font-size: 17px; font-weight: 600; text-decoration: none" style-hover="background: #F0DFE4">Join us this Sunday <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+        <a href="#connect" style="display: inline-flex; align-items: center; height: 52px; padding: 0 1.6em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.5); color: #FFFFFF; font-size: 17px; font-weight: 600; text-decoration: none" style-hover="background: rgba(255,255,255,0.14)">Tell us you're coming</a>
+        <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: rgba(255,255,255,0.88)"><span lang="zh-Hant">粵語</span> 9:30 · ENGLISH 11:00 · <span lang="zh-Hant">國語</span> 11:30</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sunday" style="padding-block: clamp(3rem, 8vw, 6rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto">
+      <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 2.2rem">
+        <div>
+          <p style="margin: 0 0 0.7rem; display: flex; align-items: center; gap: 0.65rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #943759"><span style="width: 26px; height: 2px; background: #943759; display: block"></span>This Sunday <span lang="zh-Hant" style="letter-spacing: 0.06em">本主日</span></p>
+          <h2 style="margin: 0; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); line-height: 1.25; letter-spacing: -1.4px; font-weight: 600">Three congregations, one morning.</h2>
+        </div>
+        <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; line-height: 1.7; color: #6B5560; max-width: 40ch">Each congregation streams on its own channel. Live links update automatically from YouTube — nobody edits this weekly.</p>
+      </div>
+
+      <div style="display: grid; gap: clamp(1rem, 2.5vw, 1.5rem); grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))">
+        <div style="display: flex; flex-direction: column; gap: 0.9rem; border: 1px solid #E3D3D8; border-radius: 24px; padding: 1rem 1rem 1.2rem">
+          <div style="aspect-ratio: 16 / 9; border-radius: 16px; background: #1B1014; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3rem; text-align: center; padding: 1rem">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5)">youtube · scheduled</span>
+            <span lang="zh-Hant" style="font-size: 16px; color: #FFFFFF">粵語頻道</span>
+          </div>
+          <div>
+            <h3 lang="zh-Hant" style="margin: 0 0 0.2rem; font-family: 'Noto Serif TC', serif; font-size: 20px; line-height: 1.4; font-weight: 600">粵語主日崇拜</h3>
+            <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #943759">Cantonese · 9:30 AM</p>
+          </div>
+          <p style="margin: 0; color: #6B5560; font-size: 14px">Our founding congregation. Preaching in Cantonese, tea afterwards in the courtyard.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.4rem">
+            <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Set a reminder</a>
+            <a href="#" style="display: inline-flex; align-items: center; gap: 0.3em; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Archive <span lang="zh-Hant">存檔</span></a>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0.9rem; border: 1px solid #943759; border-radius: 24px; padding: 1rem 1rem 1.2rem; background: #F8F3F4">
+          <div style="aspect-ratio: 16 / 9; border-radius: 16px; background: #1B1014; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.35rem; text-align: center; padding: 1rem">
+            <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #E8836B"><span style="width: 7px; height: 7px; border-radius: 999px; background: #C2410C; display: block; animation: mpPulse 1.8s ease-in-out infinite"></span>youtube · live now</span>
+            <span style="font-size: 16px; color: #FFFFFF">English channel</span>
+          </div>
+          <div>
+            <h3 style="margin: 0 0 0.2rem; font-size: 20px; line-height: 1.4; letter-spacing: -0.6px; font-weight: 600">English Worship</h3>
+            <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #C2410C">Live now · 11:00 AM</p>
+          </div>
+          <p style="margin: 0; color: #6B5560; font-size: 14px">Mostly the children and grandchildren of the founding families. Sunday school runs at the same hour.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.4rem">
+            <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.1em; border-radius: 999px; background: #943759; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #6F2841">Watch now</a>
+            <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none; background: #FFFFFF" style-hover="background: #FFFFFF">Archive</a>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0.9rem; border: 1px solid #E3D3D8; border-radius: 24px; padding: 1rem 1rem 1.2rem">
+          <div style="aspect-ratio: 16 / 9; border-radius: 16px; background: #1B1014; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3rem; text-align: center; padding: 1rem">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5)">youtube · last recording</span>
+            <span lang="zh-Hant" style="font-size: 16px; color: #FFFFFF">國語頻道</span>
+          </div>
+          <div>
+            <h3 lang="zh-Hant" style="margin: 0 0 0.2rem; font-family: 'Noto Serif TC', serif; font-size: 20px; line-height: 1.4; font-weight: 600">國語主日崇拜</h3>
+            <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #943759">Mandarin · 11:30 AM</p>
+          </div>
+          <p style="margin: 0; color: #6B5560; font-size: 14px">Our newest congregation, with traditional-character subtitles. Sunday school at the same hour.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.4rem">
+            <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Go to channel</a>
+            <a href="#" style="display: inline-flex; align-items: center; gap: 0.3em; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Archive <span lang="zh-Hant">存檔</span></a>
+          </div>
+        </div>
+      </div>
+
+      <sc-if value="{{ showLivestream }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; justify-content: space-between; align-items: center; border-top: 1px solid #E3D3D8; padding-top: 1.2rem">
+          <p style="margin: 0; max-width: 52ch; color: #6B5560; font-size: 14px">Watching from home? Open the player for your congregation. Every service is posted to the sermon archive within a day or two.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+            <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">All sermons</a>
+            <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.1em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Our YouTube channels</a>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section id="news" style="background: #F8F3F4; border-block: 1px solid #E3D3D8; padding-block: clamp(3rem, 8vw, 5.5rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto">
+      <p style="margin: 0 0 1.2rem; display: flex; align-items: center; gap: 0.65rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #943759"><span style="width: 26px; height: 2px; background: #943759; display: block"></span>Announcements <span lang="zh-Hant" style="letter-spacing: 0.06em">最新消息</span></p>
+      <div style="background: #FFFFFF; border: 1px solid #E3D3D8; border-radius: 24px; padding: clamp(1.5rem, 4vw, 3rem)">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: clamp(1.2rem, 3vw, 1.8rem)">
+          <span style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6B5560">{{ ann.kicker }}</span>
+          <div style="display: flex; align-items: center; gap: 0.75rem">
+            <div style="display: flex; align-items: center; gap: 0.4rem">
+              <sc-for list="{{ dots }}" as="d" hint-placeholder-count="3">
+                <button type="button" onClick="{{ d.onClick }}" aria-label="{{ d.aria }}" style="width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px; cursor: pointer; background: {{ d.dotColor }}"></button>
+              </sc-for>
+            </div>
+            <button type="button" onClick="{{ onPrev }}" aria-label="Previous announcement" style="width: 36px; height: 36px; border-radius: 999px; border: 1px solid #E3D3D8; background: #FFFFFF; color: #221419; font-family: 'Inter', sans-serif; font-size: 13px; cursor: pointer" style-hover="background: #F8F3F4">←</button>
+            <button type="button" onClick="{{ onNext }}" aria-label="Next announcement" style="width: 36px; height: 36px; border-radius: 999px; border: 1px solid #E3D3D8; background: #FFFFFF; color: #221419; font-family: 'Inter', sans-serif; font-size: 13px; cursor: pointer" style-hover="background: #F8F3F4">→</button>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start">
+          <div style="flex: 1 1 26rem; min-width: 0">
+            <h2 style="margin: 0 0 0.5rem; font-size: clamp(1.8rem, 1.4rem + 1.8vw, 2.6rem); line-height: 1.15; letter-spacing: -1.8px; font-weight: 600; max-width: 26ch; text-wrap: balance">{{ ann.title }}</h2>
+            <p lang="zh-Hant" style="margin: 0 0 1.2rem; font-family: 'Noto Serif TC', serif; font-size: 20px; color: #6B5560">{{ ann.titleZh }}</p>
+            <p style="margin: 0 0 1.8rem; max-width: 56ch; color: #6B5560; font-size: 16px">{{ ann.body }}</p>
+            <a href="#" style="display: inline-flex; align-items: center; gap: 0.6rem; height: 48px; padding: 0 1.6em; border-radius: 999px; background: #943759; color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none" style-hover="background: #6F2841">{{ ann.primary }} <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+          </div>
+          <div style="flex: 0 1 17rem; min-width: 0">
+            <div style="border-top: 1px solid #E3D3D8">
+              <sc-for list="{{ ann.meta }}" as="row" hint-placeholder-count="3">
+                <div style="display: flex; justify-content: space-between; gap: 1rem; padding: 0.8rem 0; border-bottom: 1px solid #E3D3D8">
+                  <span style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #6B5560">{{ row.label }}</span>
+                  <span style="font-size: 14px; text-align: right">{{ row.value }}</span>
+                </div>
+              </sc-for>
+            </div>
+            <p style="margin: 1.1rem 0 0; font-family: 'Nanum Pen Script', cursive; font-size: 24px; line-height: 1.3; color: #943759">{{ ann.note }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="welcome" style="padding-block: clamp(3.5rem, 9vw, 6.5rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto; display: flex; flex-wrap: wrap; gap: clamp(1.8rem, 5vw, 4rem); align-items: start">
+      <div style="flex: 0 1 15rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-inline: auto">
+        <div style="width: min(14rem, 60vw); aspect-ratio: 1; border-radius: 999px; background: #F8F3F4; border: 1px solid #E3D3D8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1.4rem">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; line-height: 1.7; color: #6B5560">pastor portrait<br />square crop</span>
+        </div>
+        <div style="text-align: center">
+          <p style="margin: 0; font-size: 16px; font-weight: 600">Rev. Chan <span lang="zh-Hant">陳牧師</span></p>
+          <p style="margin: 0.15rem 0 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">Senior Pastor</p>
+        </div>
+      </div>
+      <div style="flex: 1 1 26rem; min-width: 0">
+        <p style="margin: 0 0 0.9rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem; font-size: 17px; font-weight: 600; letter-spacing: 0.02em; color: #943759"><span style="width: 34px; height: 2px; background: #943759; display: block"></span>A note from our pastor <span lang="zh-Hant" style="font-family: 'Noto Serif TC', serif">牧者的話</span></p>
+        <h2 style="margin: 0 0 1.2rem; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); line-height: 1.25; letter-spacing: -1.4px; font-weight: 600; max-width: 26ch">You are welcome here, whichever language you pray in.</h2>
+        <p style="margin: 0 0 1rem; max-width: 56ch">We began in 1976 with a handful of families. Today three congregations share this building, and many of our members are the children and grandchildren of the people who started it.</p>
+        <p lang="zh-Hant" style="margin: 0 0 1.5rem; max-width: 44ch; color: #6B5560; font-family: 'Noto Serif TC', serif">若您初次來訪，請放心前來，隨意入座。我們不會請您站起來自我介紹。門口的同工會為您指引兒童教室與後方停車場。</p>
+        <a href="#" style="display: inline-flex; align-items: center; gap: 0.4rem; height: 44px; padding: 0 1.5em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 15px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Read our welcome page <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="connect" style="background: #1B1014; color: #FFFFFF; padding-block: clamp(3.5rem, 9vw, 6rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto; display: flex; flex-wrap: wrap; gap: clamp(1.8rem, 5vw, 4rem); align-items: start">
+      <div style="flex: 1 1 20rem; min-width: 0">
+        <p style="margin: 0 0 0.9rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6)">Say hello <span lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; letter-spacing: 0; text-transform: none">與我們聯絡</span></p>
+        <h2 style="margin: 0 0 1rem; font-size: clamp(1.9rem, 1.4rem + 1.8vw, 2.6rem); line-height: 1.15; letter-spacing: -1.8px; font-weight: 600; max-width: 18ch; text-wrap: balance">We would rather hear from you than guess.</h2>
+        <p style="margin: 0 0 1rem; max-width: 46ch; color: rgba(255,255,255,0.75)">Two cards, both read by a person. A connect card reaches the pastor of the congregation you name, usually within two days. A prayer request goes to the pastors and, if you allow it, to the Wednesday prayer meeting.</p>
+        <p lang="zh-Hant" style="margin: 0; max-width: 34ch; font-family: 'Noto Serif TC', serif; color: rgba(255,255,255,0.75)">您也可以致電教會辦公室，我們有會說粵語、國語及英語的同工。</p>
+      </div>
+
+      <div style="flex: 1 1 26rem; min-width: 0; background: #FFFFFF; color: #221419; border-radius: 24px; padding: clamp(1.25rem, 3vw, 2rem)">
+        <div role="tablist" style="display: flex; gap: 0.4rem; padding: 0.3rem; background: #F8F3F4; border: 1px solid #E3D3D8; border-radius: 999px; margin-bottom: 1.5rem">
+          <button type="button" role="tab" aria-selected="{{ isConnect }}" onClick="{{ showConnect }}" style="flex: 1; height: 40px; padding: 0 1em; border: 0; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px; font-weight: 600; background: {{ connectTabBg }}; color: {{ connectTabFg }}">Connect card <span lang="zh-Hant">聯絡卡</span></button>
+          <button type="button" role="tab" aria-selected="{{ isPrayer }}" onClick="{{ showPrayer }}" style="flex: 1; height: 40px; padding: 0 1em; border: 0; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px; font-weight: 600; background: {{ prayerTabBg }}; color: {{ prayerTabFg }}">Prayer request <span lang="zh-Hant">代禱</span></button>
+        </div>
+
+        <sc-if value="{{ isConnect }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ onConnectSubmit }}" style="display: flex; flex-direction: column; gap: 1rem">
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <label for="v4-name" style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">Your name <span lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; font-weight: 500">姓名</span></label>
+              <input id="v4-name" value="{{ cName }}" onChange="{{ onCName }}" style="height: 46px; padding: 0 0.9em; font: inherit; font-size: 15px; border: 1px solid #E3D3D8; border-radius: 10px; background: #FFFFFF; color: #221419" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <label for="v4-contact" style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">Email or phone <span lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; font-weight: 500">電郵或電話</span></label>
+              <input id="v4-contact" value="{{ cContact }}" onChange="{{ onCContact }}" style="height: 46px; padding: 0 0.9em; font: inherit; font-size: 15px; border: 1px solid #E3D3D8; border-radius: 10px; background: #FFFFFF; color: #221419" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem">
+              <span style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">Which service will you visit?</span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                <sc-for list="{{ congOptions }}" as="c" hint-placeholder-count="3">
+                  <button type="button" onClick="{{ c.onClick }}" style="height: 38px; padding: 0 1.1em; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px; font-weight: 600; border: 1px solid {{ c.border }}; background: {{ c.bg }}; color: {{ c.fg }}">{{ c.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <label for="v4-note" style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">Anything we should know? <span style="font-weight: 500">Optional</span></label>
+              <textarea id="v4-note" rows="3" value="{{ cNote }}" onChange="{{ onCNote }}" placeholder="Kids' ages, accessibility needs, a question…" style="padding: 0.7em 0.9em; font: inherit; font-size: 15px; border: 1px solid #E3D3D8; border-radius: 10px; resize: vertical; background: #FFFFFF; color: #221419"></textarea>
+            </div>
+            <button type="submit" style="height: 48px; padding: 0 1.6em; align-self: start; border: 0; border-radius: 999px; cursor: pointer; font: inherit; font-size: 16px; font-weight: 600; background: #943759; color: #FFFFFF" style-hover="background: #6F2841">Send my card</button>
+            <sc-if value="{{ connectSent }}" hint-placeholder-val="{{ false }}">
+              <p style="margin: 0; font-family: 'Nanum Pen Script', cursive; font-size: 26px; color: #6F2841">got it — {{ connectPastor }} will write to you</p>
+            </sc-if>
+          </form>
+        </sc-if>
+
+        <sc-if value="{{ isPrayer }}" hint-placeholder-val="{{ false }}">
+          <form onSubmit="{{ onPrayerSubmit }}" style="display: flex; flex-direction: column; gap: 1rem">
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <label for="v4-pname" style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">Your name <span style="font-weight: 500">or leave blank to stay anonymous</span></label>
+              <input id="v4-pname" value="{{ pName }}" onChange="{{ onPName }}" style="height: 46px; padding: 0 0.9em; font: inherit; font-size: 15px; border: 1px solid #E3D3D8; border-radius: 10px; background: #FFFFFF; color: #221419" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <label for="v4-request" style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560">What can we pray for? <span lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; font-weight: 500">代禱事項</span></label>
+              <textarea id="v4-request" rows="5" value="{{ pRequest }}" onChange="{{ onPRequest }}" placeholder="Write in Chinese or English — both are read." style="padding: 0.7em 0.9em; font: inherit; font-size: 15px; border: 1px solid #E3D3D8; border-radius: 10px; resize: vertical; background: #FFFFFF; color: #221419"></textarea>
+            </div>
+            <label for="v4-private" style="display: flex; gap: 0.65rem; align-items: start; padding: 0.9rem; background: #F8F3F4; border: 1px solid #E3D3D8; border-radius: 12px; cursor: pointer">
+              <input id="v4-private" type="checkbox" checked="{{ pPrivate }}" onChange="{{ onPPrivate }}" style="width: 20px; height: 20px; margin: 0; accent-color: #943759; flex: 0 0 auto" />
+              <span style="font-size: 14px; line-height: 1.5; color: #6B5560">Keep this between me and the pastors. <span style="display: block; color: #221419">Unchecked, it is shared with the Wednesday prayer meeting.</span></span>
+            </label>
+            <button type="submit" style="height: 48px; padding: 0 1.6em; align-self: start; border: 0; border-radius: 999px; cursor: pointer; font: inherit; font-size: 16px; font-weight: 600; background: #943759; color: #FFFFFF" style-hover="background: #6F2841">Send my request</button>
+            <sc-if value="{{ prayerSent }}" hint-placeholder-val="{{ false }}">
+              <p style="margin: 0; font-family: 'Nanum Pen Script', cursive; font-size: 26px; color: #6F2841">we are praying — thank you for trusting us</p>
+            </sc-if>
+          </form>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <section id="children" style="padding-block: clamp(3.5rem, 9vw, 6.5rem) clamp(3.5rem, 9vw, 6.5rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto">
+      <div style="background: #F8F3F4; border: 1px solid #E3D3D8; border-radius: 24px; padding: clamp(1.5rem, 4vw, 3rem)">
+        <div style="display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 4vw, 3rem); align-items: start">
+          <div style="flex: 1 1 22rem; min-width: 0">
+            <h2 style="margin: 0 0 0.3rem; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); line-height: 1.25; letter-spacing: -1.4px; font-weight: 600">Children &amp; families</h2>
+            <p lang="zh-Hant" style="margin: 0 0 1rem; font-family: 'Noto Serif TC', serif; font-size: 20px; color: #6B5560">兒童及家庭事工</p>
+            <p style="margin: 0 0 1rem; max-width: 52ch">Children are welcome in every service. Sunday school runs during the 11:00 hour in English and the 11:30 hour in Mandarin, and a staffed nursery is open all morning for the youngest.</p>
+            <p style="margin: 0 0 1.5rem; max-width: 52ch; color: #6B5560">Every volunteer who works with children has completed a background check and our safeguarding training.</p>
+            <a href="#" style="display: inline-flex; align-items: center; gap: 0.4em; height: 44px; padding: 0 1.5em; border-radius: 999px; background: #943759; color: #FFFFFF; font-size: 15px; font-weight: 600; text-decoration: none" style-hover="background: #6F2841">Children's ministry <span lang="zh-Hant">兒童事工</span> <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+          </div>
+          <div style="flex: 1 1 18rem; min-width: 0; display: grid; gap: 1rem; grid-template-columns: 1fr 1fr">
+            <div style="grid-column: span 2; aspect-ratio: 16 / 9; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3D3D8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem">
+              <span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; line-height: 1.7; color: #6B5560">Sunday school room, wide shot<br />children and teacher</span>
+            </div>
+            <div style="aspect-ratio: 1; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3D3D8; display: flex; align-items: center; justify-content: center; padding: 0.9rem"><span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #6B5560">craft table</span></div>
+            <div style="aspect-ratio: 1; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3D3D8; display: flex; align-items: center; justify-content: center; padding: 0.9rem"><span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #6B5560">nursery corner</span></div>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #E3D3D8">
+          <div style="flex: 1 1 14rem; min-width: 0">
+            <p style="margin: 0 0 0.25rem; font-size: 18px; font-weight: 600">Nursery · 0–3</p>
+            <p style="margin: 0; color: #6B5560; font-size: 14px">Open 9:15 AM – 12:45 PM, hallway by the courtyard.</p>
+          </div>
+          <div style="flex: 1 1 14rem; min-width: 0">
+            <p style="margin: 0 0 0.25rem; font-size: 18px; font-weight: 600">Sunday school · 4–11</p>
+            <p style="margin: 0; color: #6B5560; font-size: 14px">During the 11:00 and 11:30 services, two rooms upstairs.</p>
+          </div>
+          <div style="flex: 1 1 14rem; min-width: 0">
+            <p style="margin: 0 0 0.25rem; font-size: 18px; font-weight: 600">Youth · 12–18</p>
+            <p style="margin: 0; color: #6B5560; font-size: 14px">Friday evenings in the Fellowship Hall, with supper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" style="padding-bottom: clamp(3.5rem, 9vw, 6.5rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto">
+      <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem">
+        <div>
+          <p style="margin: 0 0 0.7rem; display: flex; align-items: center; gap: 0.65rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #943759"><span style="width: 26px; height: 2px; background: #943759; display: block"></span>Coming up <span lang="zh-Hant" style="letter-spacing: 0.06em">近期活動</span></p>
+          <h2 style="margin: 0; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); line-height: 1.25; letter-spacing: -1.4px; font-weight: 600">Gatherings and small groups</h2>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.6rem">
+          <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.2em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Open the church calendar</a>
+          <a href="#" style="display: inline-flex; align-items: center; height: 36px; padding: 0 1.2em; border-radius: 999px; border: 1px solid #E3D3D8; color: #221419; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: #F8F3F4">Subscribe in your app</a>
+        </div>
+      </div>
+      <p style="margin: 0.9rem 0 1.8rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: #6B5560">Pulled live from the church Google Calendar. Add or change an event there and it appears here.</p>
+      <ul role="list" style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #E3D3D8">
+        <sc-for list="{{ events }}" as="ev" hint-placeholder-count="5">
+          <li style="display: grid; gap: 0.3rem 1.5rem; grid-template-columns: 6rem 1fr auto; align-items: baseline; padding: 1.2rem 0; border-bottom: 1px solid #E3D3D8">
+            <span style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #943759">{{ ev.date }}</span>
+            <span style="min-width: 0">
+              <span style="display: block; font-size: 18px; line-height: 1.4; font-weight: 600">{{ ev.title }}</span>
+              <span style="display: block; color: #6B5560; font-size: 14px; margin-top: 0.2rem">{{ ev.body }}</span>
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: #6B5560; text-align: right; white-space: nowrap">{{ ev.meta }}</span>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+
+  <section id="leaders" style="background: #F8F3F4; border-block: 1px solid #E3D3D8; padding-block: clamp(3.5rem, 9vw, 6rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto">
+      <p style="margin: 0 0 0.7rem; display: flex; align-items: center; gap: 0.65rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #943759"><span style="width: 28px; height: 1px; background: #943759"></span>Our pastors <span lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; letter-spacing: 0; text-transform: none; color: #6B5560">教牧同工</span></p>
+      <h2 style="margin: 0 0 0.6rem; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem); line-height: 1.25; letter-spacing: -1.4px; font-weight: 600">Know who you are walking in to meet.</h2>
+      <p style="margin: 0 0 2.4rem; max-width: 54ch; color: #6B5560">Each congregation has its own pastor, and all three share the same eldership. Any of them will meet you for tea without an appointment.</p>
+      <div style="display: grid; gap: clamp(1.2rem, 3vw, 2rem); grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))">
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+          <image-slot id="v4-pastor-cantonese" style="width: 100%; aspect-ratio: 4 / 5" shape="rounded" radius="18" placeholder="Photo of the Cantonese congregation pastor"></image-slot>
+          <div>
+            <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #943759">Senior pastor · Cantonese</p>
+            <h3 lang="zh-Hant" style="margin: 0.3rem 0 0.1rem; font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 600">陳志明 牧師</h3>
+            <p style="margin: 0 0 0.6rem; font-size: 16px; font-weight: 600">Rev. Peter Chan</p>
+            <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #6B5560">Has preached here since 1998. Writes the pastor's note in the weekly bulletin and visits the hospital every Tuesday.</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+          <image-slot id="v4-pastor-english" style="width: 100%; aspect-ratio: 4 / 5" shape="rounded" radius="18" placeholder="Photo of the English congregation pastor"></image-slot>
+          <div>
+            <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #943759">Pastor · English</p>
+            <h3 style="margin: 0.3rem 0 0.1rem; font-size: 22px; font-weight: 600; letter-spacing: -0.6px">Rev. David Lam</h3>
+            <p lang="zh-Hant" style="margin: 0 0 0.6rem; font-family: 'Noto Serif TC', serif; font-size: 16px; color: #6B5560">林大偉 牧師</p>
+            <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #6B5560">Grew up in this church's Sunday school. Leads the English congregation and the youth fellowship with his wife, Amy.</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+          <image-slot id="v4-pastor-mandarin" style="width: 100%; aspect-ratio: 4 / 5" shape="rounded" radius="18" placeholder="Photo of the Mandarin congregation pastor"></image-slot>
+          <div>
+            <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #943759">Pastor · Mandarin</p>
+            <h3 lang="zh-Hant" style="margin: 0.3rem 0 0.1rem; font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 600">王慧珍 牧師</h3>
+            <p style="margin: 0 0 0.6rem; font-size: 16px; font-weight: 600">Rev. Grace Wang</p>
+            <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #6B5560">Planted our Mandarin congregation in 2011. Teaches the newcomers' class and coordinates the Friday small groups.</p>
+          </div>
+        </div>
+      </div>
+      <p style="margin: 2rem 0 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: #6B5560">Deacons, ministry staff, and the church office are listed on the <a href="#" style="color: #6F2841">full staff page</a>.</p>
+    </div>
+  </section>
+
+  <section id="give" style="padding-block: clamp(3.5rem, 9vw, 6rem) clamp(3.5rem, 9vw, 6.5rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto">
+      <div style="background: #1B1014; color: #FFFFFF; border-radius: 24px; padding: clamp(1.6rem, 4vw, 3.2rem); display: flex; flex-wrap: wrap; gap: clamp(1.6rem, 4vw, 3.5rem); align-items: start">
+        <div style="flex: 1 1 24rem; min-width: 0">
+          <p style="margin: 0 0 0.9rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6)">Giving <span lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; letter-spacing: 0; text-transform: none">奉獻</span></p>
+          <h2 style="margin: 0 0 1rem; font-size: clamp(1.8rem, 1.4rem + 1.6vw, 2.4rem); line-height: 1.2; letter-spacing: -1.6px; font-weight: 600; max-width: 20ch">Giving here is worship, not a subscription.</h2>
+          <p style="margin: 0 0 1rem; max-width: 50ch; color: rgba(255,255,255,0.75)">Fifty years of offerings built this building, sent our first missionaries, and keep the food pantry open on Saturdays. We do not pass a plate at visitors, and no one is asked for a pledge.</p>
+          <p lang="zh-Hant" style="margin: 0; max-width: 34ch; font-family: 'Noto Serif TC', serif; color: rgba(255,255,255,0.75)">奉獻是感恩的回應，不是責任。</p>
+        </div>
+        <div style="flex: 1 1 18rem; min-width: 0; display: flex; flex-direction: column; gap: 0.7rem">
+          <a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 56px; padding: 0 1.5em; border-radius: 999px; background: #FFFFFF; color: #221419; font-size: 16px; font-weight: 600; text-decoration: none" style-hover="background: #F0DFE4">Give online <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+          <a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 56px; padding: 0 1.5em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.35); color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none" style-hover="background: rgba(255,255,255,0.12)">Set up monthly giving <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+          <a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 56px; padding: 0 1.5em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.35); color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none" style-hover="background: rgba(255,255,255,0.12)">Mail a check or give by mail <span style="font-family: 'Inter', sans-serif; font-size: 13px">→</span></a>
+          <p style="margin: 0.6rem 0 0; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; line-height: 1.7; color: rgba(255,255,255,0.6)">A 501(c)(3) receipt is mailed every January. Designated gifts — missions, the building fund, benevolence — can be chosen at checkout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #1B1014; color: #FFFFFF; padding-block: clamp(2.5rem, 6vw, 4rem)">
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto; display: flex; flex-wrap: wrap; gap: clamp(1.8rem, 5vw, 3.5rem)">
+      <div style="flex: 1 1 15rem; min-width: 0">
+        <img src="images/logo.png" alt="Monterey Park Chinese Baptist Church 蒙迪園華人浸信會" style="height: 40px; width: auto; display: block; border-radius: 4px; margin-bottom: 1rem" />
+        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 14px">000 Garvey Avenue<br />Monterey Park, CA 91754</p>
+        <a href="{{ mapsUrl }}" target="_blank" rel="noreferrer" style="display: inline-flex; align-items: center; gap: 0.5em; height: 40px; margin-top: 0.8rem; padding: 0 1.1em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.35); color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none" style-hover="background: rgba(255,255,255,0.12)">Get directions <span lang="zh-Hant" style="font-weight: 500">交通指引</span> <span style="font-family: 'Inter', sans-serif; font-size: 12px">↗</span></a>
+        <p style="margin: 0.8rem 0 0; font-size: 14px; color: rgba(255,255,255,0.7)">Free parking in the lot off the alley, and on the street after 9 AM Sunday.</p>
+        <p style="margin: 0.8rem 0 0; font-size: 14px"><a href="tel:+16265550100" style="color: #FFFFFF">(626) 555-0100</a><br /><a href="mailto:office@mpcbc.org" style="color: #FFFFFF">office@mpcbc.org</a></p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem">
+          <a href="#" style="display: inline-flex; align-items: center; height: 34px; padding: 0 1em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); color: #FFFFFF; font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 700; text-decoration: none" style-hover="background: rgba(255,255,255,0.12)">Facebook</a>
+          <a href="#" style="display: inline-flex; align-items: center; height: 34px; padding: 0 1em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); color: #FFFFFF; font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 700; text-decoration: none" style-hover="background: rgba(255,255,255,0.12)">YouTube</a>
+          <a href="#" style="display: inline-flex; align-items: center; height: 34px; padding: 0 1em; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); color: #FFFFFF; font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 700; text-decoration: none" style-hover="background: rgba(255,255,255,0.12)">Instagram</a>
+        </div>
+      </div>
+      <div style="flex: 1 1 13rem; min-width: 0">
+        <p style="margin: 0 0 0.8rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6)">Sunday services</p>
+        <ul role="list" style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; font-size: 14px">
+          <li>9:30 AM — <span lang="zh-Hant">粵語</span> Cantonese</li>
+          <li>11:00 AM — English</li>
+          <li>11:30 AM — <span lang="zh-Hant">國語</span> Mandarin</li>
+        </ul>
+        <p style="margin: 1.5rem 0 0.6rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6)">Office hours</p>
+        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 14px">Tue – Fri, 9:00 AM – 4:00 PM<br />Closed Monday</p>
+      </div>
+      <sc-if value="{{ showNewsletter }}" hint-placeholder-val="{{ true }}">
+        <div style="flex: 1 1 17rem; min-width: 0">
+          <p style="margin: 0 0 0.8rem; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6)">Weekly email <span lang="zh-Hant">每週通訊</span></p>
+          <p style="margin: 0 0 1rem; color: rgba(255,255,255,0.7); font-size: 14px">Announcements, service notes, and prayer requests. One email, Thursday mornings.</p>
+          <form onSubmit="{{ onSubscribe }}" style="display: flex; flex-direction: column; gap: 0.6rem; max-width: 20rem">
+            <label for="v3-email" style="font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.7)">Email address</label>
+            <input id="v3-email" type="email" value="{{ email }}" onChange="{{ onEmailChange }}" placeholder="you@example.com" style="height: 42px; padding: 0 0.9em; font: inherit; font-size: 14px; color: #221419; background: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); border-radius: 8px" />
+            <button type="submit" style="height: 42px; padding: 0 1.4em; font: inherit; font-size: 14px; font-weight: 600; background: #943759; color: #FFFFFF; border: 0; border-radius: 999px; cursor: pointer; align-self: start" style-hover="background: #6F2841">Sign up</button>
+          </form>
+          <sc-if value="{{ subscribed }}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0.8rem 0 0; font-family: 'Nanum Pen Script', cursive; font-size: 24px; color: #FFFFFF">thank you — you're on the list</p>
+          </sc-if>
+        </div>
+      </sc-if>
+    </div>
+    <div style="width: min(1080px, 100% - 2.5rem); margin-inline: auto; margin-top: clamp(2rem, 5vw, 3rem); padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,0.2); display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; justify-content: space-between; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.6)">
+      <span>© 2026 Monterey Park Chinese Baptist Church <span lang="zh-Hant">蒙迪園華人浸信會</span></span>
+      <span>Live links update automatically from YouTube. Nobody edits this weekly.</span>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showLivestream&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;showNewsletter&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage&quot;}}">
+const ANNOUNCEMENTS = [
+  {
+    aria: "Show the Bible in 365 days announcement",
+    kicker: "Newsletter · September 2026",
+    title: "Read the Bible together in 365 days.",
+    titleZh: "一年讀完聖經 · 全教會一同開始",
+    body: "Starting Sunday, October 4, all three congregations read the same passage each day. There is a printed plan in the foyer, a daily email, and a short discussion question for small groups — in Cantonese, Mandarin, and English.",
+    primary: "Join the reading plan",
+    meta: [
+      { label: "Starts", value: "Sunday, October 4" },
+      { label: "Pace", value: "About 15 minutes a day" },
+      { label: "Languages", value: "粵語 · 國語 · English" }
+    ],
+    note: "day one is Genesis 1 — catch up anytime"
+  },
+  {
+    aria: "Show the 50th anniversary announcement",
+    kicker: "Save the date · October 2026",
+    title: "Fifty years, one combined trilingual service.",
+    titleZh: "五十週年感恩崇拜 · 三堂聯合",
+    body: "One service for all three congregations, followed by lunch in the courtyard. We are collecting photographs from every decade for the display — bring prints to the office and we will scan and return them.",
+    primary: "Read the invitation",
+    meta: [
+      { label: "Date", value: "Sunday, October 18" },
+      { label: "Time", value: "10:00 AM · Sanctuary" },
+      { label: "Lunch", value: "Courtyard, after" }
+    ],
+    note: "prints from 1976 onwards welcome"
+  },
+  {
+    aria: "Show the small groups announcement",
+    kicker: "Sign-ups open · September 2026",
+    title: "Six small groups, three languages, meeting in homes.",
+    titleZh: "小組開始 · 三種語言，六個小組",
+    body: "Groups meet weekly across Monterey Park and Alhambra, most on weekday evenings. Tell us which language and which night suits you and we will introduce you to a host.",
+    primary: "Find a group",
+    meta: [
+      { label: "Begins", value: "Week of September 12" },
+      { label: "Where", value: "Members' homes" },
+      { label: "Childcare", value: "At three of six" }
+    ],
+    note: "no need to commit — visit one and see"
+  }
+];
+
+const MAPS_URL = "https://maps.google.com/maps?q=Monterey+Park+Chinese+Baptist+Church,+Monterey+Park,+CA+91754";
+
+const CONGREGATIONS = [
+  { id: "cantonese", label: "粵語 9:30", pastor: "Pastor Chan" },
+  { id: "english", label: "English 11:00", pastor: "Pastor Lam" },
+  { id: "mandarin", label: "國語 11:30", pastor: "Pastor Wang" },
+  { id: "unsure", label: "Not sure yet", pastor: "one of our pastors" }
+];
+
+class Component extends DCLogic {
+  state = {
+    email: "", subscribed: false, ann: 0, menuOpen: false, aboutOpen: false, isMobile: false, drawerOpen: false, atTop: true,
+    tab: "connect", cong: "english", cName: "", cContact: "", cNote: "", connectSent: false,
+    pName: "", pRequest: "", pPrivate: true, prayerSent: false
+  };
+  componentDidMount() {
+    this.mq = window.matchMedia("(max-width: 880px)");
+    this.syncWidth = () => {
+      const m = this.mq.matches;
+      if (m !== this.state.isMobile) this.setState({ isMobile: m, drawerOpen: false });
+    };
+    this.mq.addEventListener("change", this.syncWidth);
+    window.addEventListener("resize", this.syncWidth);
+    this.syncWidth();
+    requestAnimationFrame(this.syncWidth);
+    this.widthPoll = setInterval(this.syncWidth, 500);
+    this.onScroll = () => {
+      const t = window.scrollY < 40;
+      if (t !== this.state.atTop) this.setState({ atTop: t });
+    };
+    window.addEventListener("scroll", this.onScroll, { passive: true });
+    this.onScroll();
+    this.timer = setInterval(() => this.setState(s => ({ ann: (s.ann + 1) % ANNOUNCEMENTS.length })), 7000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    clearInterval(this.widthPoll);
+    if (this.mq) this.mq.removeEventListener("change", this.syncWidth);
+    window.removeEventListener("resize", this.syncWidth);
+    window.removeEventListener("scroll", this.onScroll);
+  }
+  go(next) {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => this.setState(s => ({ ann: (s.ann + 1) % ANNOUNCEMENTS.length })), 12000);
+    this.setState({ ann: (next + ANNOUNCEMENTS.length) % ANNOUNCEMENTS.length });
+  }
+  renderVals() {
+    const i = this.state.ann;
+    const over = this.state.atTop && !(this.state.isMobile && this.state.drawerOpen);
+    return {
+      ann: ANNOUNCEMENTS[i],
+      headerBg: over ? "transparent" : "rgba(255,255,255,0.92)",
+      headerBlur: over ? "none" : "blur(8px)",
+      headerBorder: over ? "rgba(255,255,255,0.25)" : "#E3D3D8",
+      headerFg: over ? "#FFFFFF" : "#221419",
+      logoFilter: over ? "brightness(0) invert(1)" : "none",
+      isMobile: !!this.state.isMobile,
+      isDesktop: !this.state.isMobile,
+      drawerOpen: this.state.drawerOpen,
+      drawerVisible: this.state.isMobile && this.state.drawerOpen,
+      toggleDrawer: () => this.setState(s => ({ drawerOpen: !s.drawerOpen })),
+      closeDrawer: () => this.setState({ drawerOpen: false }),
+      mapsUrl: MAPS_URL,
+      menuOpen: this.state.menuOpen,
+      openMenu: () => this.setState({ menuOpen: true, aboutOpen: false }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen, aboutOpen: false })),
+      aboutOpen: this.state.aboutOpen,
+      openAbout: () => this.setState({ aboutOpen: true, menuOpen: false }),
+      closeAbout: () => this.setState({ aboutOpen: false }),
+      toggleAbout: () => this.setState(s => ({ aboutOpen: !s.aboutOpen, menuOpen: false })),
+      onPrev: () => this.go(i - 1),
+      onNext: () => this.go(i + 1),
+      dots: ANNOUNCEMENTS.map((a, n) => ({
+        aria: a.aria,
+        dotColor: n === i ? "#943759" : "#E3D3D8",
+        onClick: () => this.go(n)
+      })),
+      isConnect: this.state.tab !== "prayer",
+      isPrayer: this.state.tab === "prayer",
+      showConnect: () => this.setState({ tab: "connect" }),
+      showPrayer: () => this.setState({ tab: "prayer" }),
+      connectTabBg: this.state.tab !== "prayer" ? "#943759" : "transparent",
+      connectTabFg: this.state.tab !== "prayer" ? "#FFFFFF" : "#6B5560",
+      prayerTabBg: this.state.tab === "prayer" ? "#943759" : "transparent",
+      prayerTabFg: this.state.tab === "prayer" ? "#FFFFFF" : "#6B5560",
+      congOptions: CONGREGATIONS.map(c => ({
+        label: c.label,
+        bg: this.state.cong === c.id ? "#F0DFE4" : "#FFFFFF",
+        border: this.state.cong === c.id ? "#943759" : "#E3D3D8",
+        fg: this.state.cong === c.id ? "#6F2841" : "#221419",
+        onClick: () => this.setState({ cong: c.id, connectSent: false })
+      })),
+      cName: this.state.cName,
+      cContact: this.state.cContact,
+      cNote: this.state.cNote,
+      onCName: (e) => this.setState({ cName: e.target.value, connectSent: false }),
+      onCContact: (e) => this.setState({ cContact: e.target.value, connectSent: false }),
+      onCNote: (e) => this.setState({ cNote: e.target.value, connectSent: false }),
+      onConnectSubmit: (e) => { e.preventDefault(); this.setState({ connectSent: true }); },
+      connectSent: this.state.connectSent,
+      connectPastor: (CONGREGATIONS.find(c => c.id === this.state.cong) || CONGREGATIONS[0]).pastor,
+      pName: this.state.pName,
+      pRequest: this.state.pRequest,
+      pPrivate: this.state.pPrivate,
+      onPName: (e) => this.setState({ pName: e.target.value, prayerSent: false }),
+      onPRequest: (e) => this.setState({ pRequest: e.target.value, prayerSent: false }),
+      onPPrivate: (e) => this.setState({ pPrivate: e.target.checked }),
+      onPrayerSubmit: (e) => { e.preventDefault(); if (this.state.pRequest.trim()) this.setState({ prayerSent: true }); },
+      prayerSent: this.state.prayerSent,
+      showLivestream: this.props.showLivestream ?? true,
+      showNewsletter: this.props.showNewsletter ?? true,
+      email: this.state.email,
+      subscribed: this.state.subscribed,
+      onEmailChange: (e) => this.setState({ email: e.target.value, subscribed: false }),
+      onSubscribe: (e) => { e.preventDefault(); if (this.state.email.includes("@")) this.setState({ subscribed: true }); },
+      events: [
+        { date: "Sep 4", title: "Friday fellowship 週五團契", body: "Singing, teaching, and supper. All ages welcome.", meta: "7:30 PM · Fellowship Hall" },
+        { date: "Sep 6", title: "Church picnic 教會野餐", body: "Barnes Park after the 11:30 service. Bring a dish to share.", meta: "1:00 PM · Barnes Park" },
+        { date: "Sep 12", title: "Small groups begin 小組開始", body: "Six groups across three languages, meeting in homes.", meta: "Weekly · Various" },
+        { date: "Sep 20", title: "Children's teacher training 兒童教師訓練", body: "Safeguarding refresher for all Sunday school volunteers.", meta: "9:00 AM · Room 2" },
+        { date: "Oct 18", title: "50th Anniversary celebration", body: "A combined trilingual service marking fifty years, followed by lunch.", meta: "10:00 AM · Sanctuary" }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

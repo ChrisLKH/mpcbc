@@ -9,3 +9,26 @@ logs/
 admin/
 tina/__generated__/
 
+
+# WordPress mockups
+**/*.zip
+**/*_archive.zip
+**/*installer.php
+
+# Site (from the former wordpress-design-a/.gitignore)
+# Public source PDFs are retained locally for reference, not bundled into Git.
+content-source/documents/*.pdf
+.content-tools/
+# Public vendor packages retained only for read-only research; not site plugins.
+content-source/servantly-research/*.zip
+content-source/servantly-research/source/
+
+# Local-only tools and settings
+.agents/
+skills-lock.json
+.claude/settings.local.json
+.claude/skills/
+# tasteskill working screenshots
+taste-mockup/.taste-skill/inspect/
+# Headless-browser profiles left by screenshot tools (caches, cookies)
+.chrome-*/

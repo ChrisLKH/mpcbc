@@ -1,0 +1,161 @@
+{
+    "wordpress": "7.1.3",
+    "elementor": "4.3.4",
+    "theme": "hello-mpcbc",
+    "mcp_enabled": false,
+    "atomic_editor_active": true,
+    "converted_documents": 22,
+    "atomic_elements": 1732,
+    "classic_form_placements": 4,
+    "forms_unique": 3,
+    "home_template": "elementor_header_footer",
+    "menu_locations": {
+        "menu-1": 3,
+        "menu-2": 0
+    },
+    "preview_status": "draft",
+    "pages": [
+        {
+            "id": 109,
+            "title": "Spike Tabs",
+            "atomic_elements": 25,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 16,
+            "title": "MPCBC – Footer",
+            "atomic_elements": 51,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 17,
+            "title": "Welcome",
+            "atomic_elements": 21,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 18,
+            "title": "Prayer",
+            "atomic_elements": 12,
+            "fluent_form_embeds": 1
+        },
+        {
+            "id": 181,
+            "title": "Beliefs",
+            "atomic_elements": 141,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 19,
+            "title": "Coming soon",
+            "atomic_elements": 6,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 21,
+            "title": "Home",
+            "atomic_elements": 399,
+            "fluent_form_embeds": 3
+        },
+        {
+            "id": 210,
+            "title": "繁體中文",
+            "atomic_elements": 39,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 211,
+            "title": "简体中文",
+            "atomic_elements": 39,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 215,
+            "title": "關於我們",
+            "atomic_elements": 198,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 218,
+            "title": "关于我们",
+            "atomic_elements": 198,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 224,
+            "title": "信仰告白",
+            "atomic_elements": 141,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 227,
+            "title": "信仰告白",
+            "atomic_elements": 141,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 233,
+            "title": "奉獻",
+            "atomic_elements": 20,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 236,
+            "title": "奉献",
+            "atomic_elements": 20,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 60,
+            "title": "Visit 初次來訪",
+            "atomic_elements": 6,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 61,
+            "title": "Sundays 主日崇拜",
+            "atomic_elements": 6,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 62,
+            "title": "Kids &#038; Youth 兒童及青少年",
+            "atomic_elements": 6,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 63,
+            "title": "Watch 線上崇拜",
+            "atomic_elements": 6,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 64,
+            "title": "About",
+            "atomic_elements": 198,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 65,
+            "title": "Give",
+            "atomic_elements": 20,
+            "fluent_form_embeds": 0
+        },
+        {
+            "id": 66,
+            "title": "Chinese content · 中文",
+            "atomic_elements": 39,
+            "fluent_form_embeds": 0
+        }
+    ],
+    "menu_script_conversion_only": true,
+    "footer_spacing_mcp_operations": 19,
+    "shared_home": 21,
+    "shared_footer": 16,
+    "independent_chinese_pairs": 50,
+    "retired_native_copies": {
+        "511": "published redirect to shared Home",
+        "513": "draft archive"
+    },
+    "home_language_switch_without_reload": true
+}

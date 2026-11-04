@@ -1,0 +1,905 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Kids",
+    "type": "container",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "kids_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "_element_id": "kids",
+                "background_background": "classic",
+                "background_color": "#F6F7F5",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": 112,
+                    "right": 56,
+                    "bottom": 112,
+                    "left": 56,
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": 80,
+                    "right": 32,
+                    "bottom": 80,
+                    "left": 32,
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": 44,
+                    "right": 16,
+                    "bottom": 44,
+                    "left": 16,
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "kids_card_inner",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "background_background": "classic",
+                        "background_color": "#FCE3CC",
+                        "__globals__": {
+                            "background_color": "globals/colors?id=persimmon_soft"
+                        },
+                        "border_radius": {
+                            "unit": "px",
+                            "top": 24,
+                            "right": 24,
+                            "bottom": 24,
+                            "left": 24,
+                            "isLinked": true
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": 56,
+                            "right": 56,
+                            "bottom": 56,
+                            "left": 56,
+                            "isLinked": true
+                        },
+                        "padding_tablet": {
+                            "unit": "px",
+                            "top": 40,
+                            "right": 40,
+                            "bottom": 40,
+                            "left": 40,
+                            "isLinked": true
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": 24,
+                            "right": 16,
+                            "bottom": 24,
+                            "left": 16,
+                            "isLinked": false
+                        },
+                        "flex_direction": "row",
+                        "flex_direction_tablet": "column",
+                        "flex_direction_mobile": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 48
+                        },
+                        "flex_gap_mobile": {
+                            "unit": "px",
+                            "size": 28
+                        },
+                        "flex_align_items": "center",
+                        "flex_align_items_tablet": "stretch",
+                        "flex_align_items_mobile": "stretch"
+                    },
+                    "elements": [
+                        {
+                            "id": "kids_col_content",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 58
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "kids_heading",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Your kids will want to come back.",
+                                        "header_size": "h2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 72
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 56
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 40
+                                        },
+                                        "typography_font_weight": "700",
+                                        "typography_letter_spacing": {
+                                            "unit": "em",
+                                            "size": -0.035
+                                        },
+                                        "title_color": "#2B1404",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=on_persimmon"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "kids_lede",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Safe, fun classes for every age while you’re in the service.",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.4
+                                        },
+                                        "title_color": "#2B1404",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=on_persimmon"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "kids_tiles_row",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "row",
+                                        "flex_direction_mobile": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "margin": {
+                                            "unit": "px",
+                                            "top": 8,
+                                            "right": 0,
+                                            "bottom": 8,
+                                            "left": 0,
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "tile_nursery",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "background_background": "classic",
+                                                "background_color": "#FFFFFF",
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": 14,
+                                                    "right": 14,
+                                                    "bottom": 14,
+                                                    "left": 14,
+                                                    "isLinked": true
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 16,
+                                                    "right": 18,
+                                                    "bottom": 16,
+                                                    "left": 18,
+                                                    "isLinked": true
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": 12,
+                                                    "right": 16,
+                                                    "bottom": 12,
+                                                    "left": 16,
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "tile_nursery_name",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Nursery",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 17
+                                                        },
+                                                        "typography_font_weight": "700",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "tile_nursery_detail",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Ages 0–3 · all morning",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "tile_kids",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "background_background": "classic",
+                                                "background_color": "#FFFFFF",
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": 14,
+                                                    "right": 14,
+                                                    "bottom": 14,
+                                                    "left": 14,
+                                                    "isLinked": true
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 16,
+                                                    "right": 18,
+                                                    "bottom": 16,
+                                                    "left": 18,
+                                                    "isLinked": true
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": 12,
+                                                    "right": 16,
+                                                    "bottom": 12,
+                                                    "left": 16,
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "tile_kids_name",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Kids",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 17
+                                                        },
+                                                        "typography_font_weight": "700",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "tile_kids_detail",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Ages 4–11 · [time]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "tile_youth",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "background_background": "classic",
+                                                "background_color": "#FFFFFF",
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": 14,
+                                                    "right": 14,
+                                                    "bottom": 14,
+                                                    "left": 14,
+                                                    "isLinked": true
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 16,
+                                                    "right": 18,
+                                                    "bottom": 16,
+                                                    "left": 18,
+                                                    "isLinked": true
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": 12,
+                                                    "right": 16,
+                                                    "bottom": 12,
+                                                    "left": 16,
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "tile_youth_name",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Youth",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 17
+                                                        },
+                                                        "typography_font_weight": "700",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "tile_youth_detail",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Ages 12–18 · [day, time]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "kids_checks_row",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 0,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "flex_direction_mobile": "column",
+                                        "flex_gap_mobile": {
+                                            "unit": "px",
+                                            "size": 10
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "kids_checks_a",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "icon_list": [
+                                                    {
+                                                        "_id": "kids_checks_a0",
+                                                        "text": "Secure check-in with matching tags",
+                                                        "selected_icon": {
+                                                            "value": "fas fa-check",
+                                                            "library": "fa-solid"
+                                                        }
+                                                    },
+                                                    {
+                                                        "_id": "kids_checks_a1",
+                                                        "text": "Background-checked volunteers",
+                                                        "selected_icon": {
+                                                            "value": "fas fa-check",
+                                                            "library": "fa-solid"
+                                                        }
+                                                    }
+                                                ],
+                                                "icon_color": "#C2600F",
+                                                "text_color": "#2B1404",
+                                                "__globals__": {
+                                                    "icon_color": "globals/colors?id=tick",
+                                                    "text_color": "globals/colors?id=on_persimmon"
+                                                },
+                                                "icon_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "space_between": {
+                                                    "unit": "px",
+                                                    "size": 10
+                                                },
+                                                "icon_typography_typography": "custom",
+                                                "icon_typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "_flex_size": "grow"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "icon-list"
+                                        },
+                                        {
+                                            "id": "kids_checks_b",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "icon_list": [
+                                                    {
+                                                        "_id": "kids_checks_b0",
+                                                        "text": "Classes taught in English",
+                                                        "selected_icon": {
+                                                            "value": "fas fa-check",
+                                                            "library": "fa-solid"
+                                                        }
+                                                    },
+                                                    {
+                                                        "_id": "kids_checks_b1",
+                                                        "text": "Chinese-speaking helpers for parents",
+                                                        "selected_icon": {
+                                                            "value": "fas fa-check",
+                                                            "library": "fa-solid"
+                                                        }
+                                                    }
+                                                ],
+                                                "icon_color": "#C2600F",
+                                                "text_color": "#2B1404",
+                                                "__globals__": {
+                                                    "icon_color": "globals/colors?id=tick",
+                                                    "text_color": "globals/colors?id=on_persimmon"
+                                                },
+                                                "icon_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "space_between": {
+                                                    "unit": "px",
+                                                    "size": 10
+                                                },
+                                                "icon_typography_typography": "custom",
+                                                "icon_typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "_flex_size": "grow"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "icon-list"
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "kids_zh_note",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 8,
+                                            "right": 14,
+                                            "bottom": 8,
+                                            "left": 14,
+                                            "isLinked": false
+                                        },
+                                        "background_background": "classic",
+                                        "background_color": "rgba(255,255,255,0.65)",
+                                        "border_radius": {
+                                            "unit": "px",
+                                            "top": 10,
+                                            "right": 10,
+                                            "bottom": 10,
+                                            "left": 10,
+                                            "isLinked": true
+                                        },
+                                        "width": {
+                                            "unit": "custom",
+                                            "size": "fit-content"
+                                        },
+                                        "flex_direction": "column"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "kids_zh_note_txt",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "<span lang=\"zh-Hant\">課堂以英語進行，登記處有中文同工協助家長。</span>",
+                                                "header_size": "p",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                },
+                                                "typography_font_weight": "500",
+                                                "typography_font_family": "Noto Sans TC",
+                                                "title_color": "#2B1404",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=on_persimmon"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "kids_btn",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "text": "See Kids & Youth",
+                                        "link": {
+                                            "url": "#"
+                                        },
+                                        "background_color": "#F28C38",
+                                        "__globals__": {
+                                            "background_color": "globals/colors?id=accent",
+                                            "button_text_color": "globals/colors?id=on_persimmon",
+                                            "button_background_hover_color": "globals/colors?id=persimmon_hover",
+                                            "hover_color": "globals/colors?id=on_persimmon"
+                                        },
+                                        "border_radius": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 12,
+                                            "bottom": 12,
+                                            "left": 12,
+                                            "isLinked": true
+                                        },
+                                        "button_text_color": "#2B1404",
+                                        "button_background_hover_color": "#E07A26",
+                                        "hover_color": "#2B1404"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "button"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "kids_col_collage",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 38
+                                },
+                                "width_tablet": {
+                                    "unit": "px",
+                                    "size": 440
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "min_height": {
+                                    "unit": "custom",
+                                    "size": "calc(0.4447 * (min(100vw, 1440px) - 224px))",
+                                    "sizes": []
+                                },
+                                "min_height_tablet": {
+                                    "unit": "px",
+                                    "size": 515
+                                },
+                                "min_height_mobile": {
+                                    "unit": "px",
+                                    "size": 120
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0,
+                                    "isLinked": false
+                                },
+                                "flex_direction": "column",
+                                "flex_direction_mobile": "row",
+                                "flex_gap_mobile": {
+                                    "unit": "px",
+                                    "size": 8
+                                },
+                                "flex_align_items_mobile": "stretch",
+                                "flex_wrap_mobile": "nowrap"
+                            },
+                            "elements": [
+                                {
+                                    "id": "kids_collage_img1",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "image": {
+                                            "url": "http://mpcbc.local/wp-content/uploads/2026/10/photo-kids-craft.png",
+                                            "id": 84
+                                        },
+                                        "image_size": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "image_border_radius": {
+                                            "unit": "px",
+                                            "top": 20,
+                                            "right": 20,
+                                            "bottom": 20,
+                                            "left": 20,
+                                            "isLinked": true
+                                        },
+                                        "image_box_shadow_box_shadow_type": "yes",
+                                        "image_box_shadow_box_shadow": {
+                                            "horizontal": 0,
+                                            "vertical": 24,
+                                            "blur": 48,
+                                            "spread": 0,
+                                            "color": "rgba(15,42,51,0.25)"
+                                        },
+                                        "_position": "absolute",
+                                        "_element_width": "initial",
+                                        "_element_custom_width": {
+                                            "unit": "%",
+                                            "size": 67
+                                        },
+                                        "_element_custom_width_mobile": {
+                                            "unit": "%",
+                                            "size": 32
+                                        },
+                                        "_transform_rotate_popover": "transform",
+                                        "_transform_rotateZ_effect": {
+                                            "unit": "deg",
+                                            "size": -3
+                                        },
+                                        "_transform_rotateZ_effect_mobile": {
+                                            "unit": "deg",
+                                            "size": 0
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 120
+                                        },
+                                        "object_fit_mobile": "cover",
+                                        "_offset_orientation_h": "start",
+                                        "_offset_x": {
+                                            "unit": "%",
+                                            "size": 0
+                                        },
+                                        "_offset_orientation_v": "start",
+                                        "_offset_y": {
+                                            "unit": "%",
+                                            "size": 6
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "image"
+                                },
+                                {
+                                    "id": "kids_collage_img2",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "image": {
+                                            "url": "http://mpcbc.local/wp-content/uploads/2026/10/photo-kids-vbs.png",
+                                            "id": 86
+                                        },
+                                        "image_size": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "image_border_radius": {
+                                            "unit": "px",
+                                            "top": 20,
+                                            "right": 20,
+                                            "bottom": 20,
+                                            "left": 20,
+                                            "isLinked": true
+                                        },
+                                        "image_box_shadow_box_shadow_type": "yes",
+                                        "image_box_shadow_box_shadow": {
+                                            "horizontal": 0,
+                                            "vertical": 24,
+                                            "blur": 48,
+                                            "spread": 0,
+                                            "color": "rgba(15,42,51,0.25)"
+                                        },
+                                        "_position": "absolute",
+                                        "_element_width": "initial",
+                                        "_element_custom_width": {
+                                            "unit": "%",
+                                            "size": 53
+                                        },
+                                        "_element_custom_width_mobile": {
+                                            "unit": "%",
+                                            "size": 32
+                                        },
+                                        "_transform_rotate_popover": "transform",
+                                        "_transform_rotateZ_effect": {
+                                            "unit": "deg",
+                                            "size": 2.5
+                                        },
+                                        "_transform_rotateZ_effect_mobile": {
+                                            "unit": "deg",
+                                            "size": 0
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 120
+                                        },
+                                        "object_fit_mobile": "cover",
+                                        "_offset_orientation_h": "end",
+                                        "_offset_x_end": {
+                                            "unit": "%",
+                                            "size": 0
+                                        },
+                                        "_offset_orientation_v": "start",
+                                        "_offset_y": {
+                                            "unit": "%",
+                                            "size": 0
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "image"
+                                },
+                                {
+                                    "id": "kids_collage_img3",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "image": {
+                                            "url": "http://mpcbc.local/wp-content/uploads/2026/10/photo-kids-checkin.png",
+                                            "id": 83
+                                        },
+                                        "image_size": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "image_border_radius": {
+                                            "unit": "px",
+                                            "top": 20,
+                                            "right": 20,
+                                            "bottom": 20,
+                                            "left": 20,
+                                            "isLinked": true
+                                        },
+                                        "image_box_shadow_box_shadow_type": "yes",
+                                        "image_box_shadow_box_shadow": {
+                                            "horizontal": 0,
+                                            "vertical": 24,
+                                            "blur": 48,
+                                            "spread": 0,
+                                            "color": "rgba(15,42,51,0.25)"
+                                        },
+                                        "_position": "absolute",
+                                        "_element_width": "initial",
+                                        "_element_custom_width": {
+                                            "unit": "%",
+                                            "size": 57
+                                        },
+                                        "_element_custom_width_mobile": {
+                                            "unit": "%",
+                                            "size": 32
+                                        },
+                                        "_transform_rotate_popover": "transform",
+                                        "_transform_rotateZ_effect": {
+                                            "unit": "deg",
+                                            "size": -1.5
+                                        },
+                                        "_transform_rotateZ_effect_mobile": {
+                                            "unit": "deg",
+                                            "size": 0
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 120
+                                        },
+                                        "object_fit_mobile": "cover",
+                                        "_offset_orientation_h": "end",
+                                        "_offset_x_end": {
+                                            "unit": "%",
+                                            "size": 7
+                                        },
+                                        "_offset_orientation_v": "end",
+                                        "_offset_y_end": {
+                                            "unit": "%",
+                                            "size": 0
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "image"
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

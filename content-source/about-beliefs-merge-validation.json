@@ -1,0 +1,20 @@
+[
+    {
+        "locale": "en",
+        "about": 64,
+        "legacy_beliefs": 181,
+        "statements_preserved": 8
+    },
+    {
+        "locale": "zh-hant",
+        "about": 215,
+        "legacy_beliefs": 224,
+        "statements_preserved": 8
+    },
+    {
+        "locale": "zh-hans",
+        "about": 218,
+        "legacy_beliefs": 227,
+        "statements_preserved": 8
+    }
+]

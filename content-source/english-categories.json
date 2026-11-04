@@ -1,0 +1,137 @@
+[
+  {
+    "id": 123,
+    "count": 2,
+    "description": "",
+    "link": "https://mpcbc.net/english/category/newsletter/",
+    "name": "Newsletter",
+    "slug": "newsletter",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/categories/123",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/posts?categories=123"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "count": 66,
+    "description": "",
+    "link": "https://mpcbc.net/english/category/sermons/",
+    "name": "Sermons",
+    "slug": "sermons",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/categories/34",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/posts?categories=34"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 0,
+    "description": "",
+    "link": "https://mpcbc.net/english/category/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/english/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "site": "http://mpcbc.local",
+  "scope": "Design A only",
+  "reading_languages": [
+    "en",
+    "zh-hant",
+    "zh-hans"
+  ],
+  "verified": [
+    "Simplified selection on Beliefs followed through header About link",
+    "Home retained Simplified preference",
+    "Opening /give/ with Simplified selected resolved to /zh-hans/give/",
+    "Traditional and English switch-back verified",
+    "About beliefs button retained Simplified",
+    "PayPal and email destinations unchanged",
+    "1110px header remained one row with active Traditional label",
+    "360px service card remained two columns, ended at 811px in an 844px viewport",
+    "All 11 language variants passed native Elementor validation"
+  ],
+  "limitations": [
+    "Shared Home and footer remain bilingual; missing translations are not generated"
+  ],
+  "deployment": "Local only; no online writes or MCP connection"
+}

@@ -1,0 +1,378 @@
+{
+    "e-gv-2635213": {
+        "type": "global-font-variable",
+        "label": "mpcbc-font-529ca1d09",
+        "value": "Noto Sans TC",
+        "order": 1,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-c70cdc4": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-6c2314b57",
+        "value": "#13232A",
+        "order": 5,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-824ebc4": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-8ab1c66cf",
+        "value": "#E3EBEA",
+        "order": 7,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-f5301be": {
+        "type": "global-font-variable",
+        "label": "mpcbc-font-0071814e4",
+        "value": "Geist",
+        "order": 11,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-1771cc2": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-14b48ba19",
+        "value": "#155E75",
+        "order": 13,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-f7cfe2a": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-2d543f96b",
+        "value": "#F6F7F5",
+        "order": 14,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-3cc97d2": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-76b1f0d6b",
+        "value": "#D9E2E1",
+        "order": 15,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-1984c94": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-262da8014",
+        "value": "#FFFFFF",
+        "order": 16,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-99d935c": {
+        "type": "global-font-variable",
+        "label": "mpcbc-font-c48f08c2b",
+        "value": "Noto Sans SC",
+        "order": 17,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-d649b5e": {
+        "type": "global-font-variable",
+        "label": "mpcbc-font-635da6514",
+        "value": "Bricolage Grotesque",
+        "order": 18,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-7317e11": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-4a261092f",
+        "value": "#4F6168",
+        "order": 26,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-5a81035": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-21e91e8d2",
+        "value": "#0F2A33",
+        "order": 32,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-55a0d95": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-89d17a384",
+        "value": "#24434D",
+        "order": 33,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-48e97d9": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-e30164937",
+        "value": "#2C4A45",
+        "order": 34,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-43b7e33": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-f86885b8a",
+        "value": "#1E3A44",
+        "order": 35,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-c89d4ba": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-686f37c40",
+        "value": "#33424A",
+        "order": 36,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-d98b04b": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-54922f2e9",
+        "value": "#ffffff",
+        "order": 37,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-436185d": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-af363454f",
+        "value": "rgba(255,255,255,0.3)",
+        "order": 38,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-6b30939": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-719d34b27",
+        "value": "rgba(10,31,38,0.12)",
+        "order": 39,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-588b9f7": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-486c07071",
+        "value": "rgba(10,31,38,0.97)",
+        "order": 41,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-1a6ea38": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-f52c72c09",
+        "value": "#B8231E",
+        "order": 44,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-8cf32a6": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-66bb13529",
+        "value": "#0E4A5C",
+        "order": 46,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-468ea41": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-060cbc425",
+        "value": "#BFCDCC",
+        "order": 47,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-05d5c52": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-ad065af56",
+        "value": "#EAF2F3",
+        "order": 48,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-fe52081": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-3d5e1fb3d",
+        "value": "rgba(255,255,255,0.75)",
+        "order": 49,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-803b57a": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-51b24b692",
+        "value": "rgba(255,255,255,0.88)",
+        "order": 50,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-63e4e5d": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-5c68d45b7",
+        "value": "rgba(15,42,51,0.88)",
+        "order": 51,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-96b5dde": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-d2abe1e14",
+        "value": "#2B1404",
+        "order": 52,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-688bedb": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-ebbfd2997",
+        "value": "rgba(255,255,255,0.65)",
+        "order": 53,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-0c168a6": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-30594db85",
+        "value": "#F28C38",
+        "order": 54,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-f8f865d": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-8126134ba",
+        "value": "#E07A26",
+        "order": 55,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-428b859": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-95d6436df",
+        "value": "#FCE3CC",
+        "order": 56,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-2dedca6": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-b18f30ff2",
+        "value": "rgba(255,255,255,0.85)",
+        "order": 59,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-56ef666": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-615b42f5c",
+        "value": "rgba(255,255,255,0.14)",
+        "order": 60,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-b25e5d0": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-98d20b0f3",
+        "value": "rgba(255,255,255,0.55)",
+        "order": 61,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-468b90b": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-661aec25c",
+        "value": "#D92D27",
+        "order": 63,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-20c72a3": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-c6e48f28a",
+        "value": "rgba(255,255,255,0.7)",
+        "order": 64,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-f7f3384": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-7b82aa25b",
+        "value": "#16140F",
+        "order": 65,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-f911c08": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-cf8562be1",
+        "value": "rgba(18,17,14,0.42)",
+        "order": 66,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-753dc0b": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-6acb658b6",
+        "value": "rgba(255,255,255,0.2)",
+        "order": 67,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-b6fea0c": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-77d8fab8f",
+        "value": "rgba(18,17,14,0.72)",
+        "order": 68,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-11121dc": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-70755dafe",
+        "value": "rgba(18,17,14,0.25)",
+        "order": 69,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-3a42021": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-fbe4cdc76",
+        "value": "#E3DACB",
+        "order": 71,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-4932553": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-2d5d7ee8e",
+        "value": "rgba(255,255,255,0.8)",
+        "order": 72,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-955e0d8": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-f2c7aadfd",
+        "value": "rgba(255,255,255,0.6)",
+        "order": 73,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-46fe72d": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-760d5a356",
+        "value": "rgba(255,255,255,0.15)",
+        "order": 74,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    },
+    "e-gv-32ae709": {
+        "type": "global-color-variable",
+        "label": "mpcbc-color-c36e560d8",
+        "value": "#0A1F26",
+        "order": 75,
+        "created_at": "2026-10-20 10:49:08",
+        "updated_at": "2026-10-20 10:49:08"
+    }
+}

@@ -1,0 +1,13 @@
+<?php
+try {
+if(untrailingslashit(home_url())!=='http://mpcbc.local')throw new RuntimeException('Design A only.');
+$root='C:/Projects/mpcbc';$admins=get_users(['role'=>'administrator','number'=>1]);wp_set_current_user($admins[0]->ID);
+$pilot=json_decode(file_get_contents("$root/content-source/atomic-pilot.json"),true);wp_update_post(['ID'=>$pilot['id'],'post_status'=>'draft','post_title'=>'Atomic conversion preview']);
+$home=json_decode(file_get_contents("$root/elementor/home-content-filled.json"),true);$home['content']=json_decode(get_post_meta(21,'_elementor_data',true),true);
+$find=function($ns,$anchor)use(&$find){foreach($ns as $n){if(($n['settings']['_cssid']['value']??'')===$anchor)return $n;$r=$find($n['elements']??[],$anchor);if($r)return $r;}return null;};
+foreach(['home-hero.json'=>'top','home-service-rail.json'=>'sunday-times','home-times-card.json'=>'sunday-times'] as $file=>$anchor){$export=$home;$export['content']=[$find($home['content'],$anchor)];$export['title']=$anchor==='top'?'Atomic Home hero':'Atomic Sunday service rail';file_put_contents("$root/elementor/$file",wp_json_encode($export,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));}
+$variables=(new Elementor\Modules\Mcp\Abilities\Global_Variables_Resource_Ability())->execute();file_put_contents("$root/content-source/atomic-global-variables.json",$variables);
+$conversion=json_decode(file_get_contents("$root/content-source/atomic-conversion-result.json"),true);$audit=['wordpress'=>get_bloginfo('version'),'elementor'=>ELEMENTOR_VERSION,'theme'=>get_stylesheet(),'mcp_enabled'=>Elementor\MCP\Composer\Admin\McpSettingsController::is_enabled(),'atomic_editor_active'=>Elementor\Modules\Mcp\Utils\Mcp_V4_Gate::is_atomic_editor_active(),'converted_documents'=>count($conversion['pages']),'atomic_elements'=>array_sum(array_column($conversion['pages'],'atomic_elements')),'classic_form_placements'=>array_sum(array_column($conversion['pages'],'fluent_form_embeds')),'forms_unique'=>3,'home_template'=>get_post_meta(21,'_wp_page_template',true),'menu_locations'=>get_nav_menu_locations(),'preview_status'=>get_post_status($pilot['id']),'pages'=>$conversion['pages']];
+$old="$root/content-source/migration-mcp-audit.json";if(!file_exists("$root/content-source/before-atomic-conversion/migration-mcp-audit.json"))copy($old,"$root/content-source/before-atomic-conversion/migration-mcp-audit.json");file_put_contents($old,wp_json_encode($audit,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));
+echo wp_json_encode(array_diff_key($audit,['pages'=>true]),JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
+}catch(Throwable $e){fwrite(STDERR,$e->getMessage());exit(1);}

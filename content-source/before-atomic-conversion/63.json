@@ -1,0 +1,152 @@
+{
+    "id": 63,
+    "title": "Watch 線上崇拜",
+    "data": [
+        {
+            "id": "watch_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 900
+                },
+                "min_height": {
+                    "unit": "vh",
+                    "size": 60
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "120",
+                    "right": "32",
+                    "bottom": "120",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "20",
+                    "bottom": "64",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "flex_direction": "column",
+                "flex_justify_content": "center",
+                "flex_align_items": "center",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 24
+                }
+            },
+            "elements": [
+                {
+                    "id": "watch_title",
+                    "elType": "widget",
+                    "settings": {
+                        "title": "Watch",
+                        "header_size": "h1",
+                        "align": "center",
+                        "title_color": "#16140F",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Bricolage Grotesque",
+                        "typography_font_size": {
+                            "unit": "px",
+                            "size": 64
+                        },
+                        "typography_font_size_mobile": {
+                            "unit": "px",
+                            "size": 44
+                        },
+                        "typography_font_weight": "700",
+                        "__globals__": {
+                            "title_color": "globals/colors?id=text"
+                        }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                },
+                {
+                    "id": "watch_zh",
+                    "elType": "widget",
+                    "settings": {
+                        "editor": "<p lang=\"zh-Hant\">線上崇拜</p>",
+                        "text_color": "#5C564D",
+                        "__globals__": {
+                            "text_color": "globals/colors?id=ink_soft"
+                        },
+                        "align": "center",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Noto Sans TC",
+                        "typography_font_size": {
+                            "unit": "px",
+                            "size": 28
+                        },
+                        "typography_line_height": {
+                            "unit": "em",
+                            "size": 1.5
+                        }
+                    },
+                    "elements": [],
+                    "widgetType": "text-editor"
+                },
+                {
+                    "id": "watch_desc",
+                    "elType": "widget",
+                    "settings": {
+                        "editor": "<p>[This section is currently being prepared as part of the MPCBC website update.]</p>",
+                        "text_color": "#5C564D",
+                        "__globals__": {
+                            "text_color": "globals/colors?id=ink_soft"
+                        },
+                        "align": "center",
+                        "typography_typography": "custom",
+                        "typography_font_size": {
+                            "unit": "px",
+                            "size": 18
+                        },
+                        "typography_line_height": {
+                            "unit": "em",
+                            "size": 1.6000000000000001
+                        }
+                    },
+                    "elements": [],
+                    "widgetType": "text-editor"
+                },
+                {
+                    "id": "watch_btn",
+                    "elType": "widget",
+                    "settings": {
+                        "text": "Back to Home →",
+                        "link": {
+                            "url": "http://mpcbc.local/"
+                        },
+                        "button_text_color": "#ffffff",
+                        "background_color": "#0E6B5C",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": 12,
+                            "right": 12,
+                            "bottom": 12,
+                            "left": 12,
+                            "isLinked": true
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_weight": "600",
+                        "typography_font_size": {
+                            "unit": "px",
+                            "size": 16
+                        },
+                        "__globals__": {
+                            "background_color": "globals/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "widgetType": "button"
+                }
+            ],
+            "isInner": false
+        }
+    ],
+    "settings": []
+}

@@ -1,0 +1,19 @@
+{
+  "design": "Anchored story · Recommended",
+  "source": {
+    "story": {
+      "en": "Our church was founded in 1977 with worship in Cantonese. During the 1980s, as the number of Mandarin-speaking immigrants in Los Angeles grew rapidly, the church saw the need to share the gospel and provide a spiritual home for new arrivals. Mandarin worship began in 1988. English worship was added in 1991, and the church continues to worship in all three languages.",
+      "zh": "教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。"
+    },
+    "bio": {
+      "en": "Pastor Caleb is from Hong Kong. After being called to ministry, he studied theology at Fuller Theological Seminary and pursued doctoral studies in theology and philosophy of religion at Claremont Graduate University. He has continued serving and shepherding this church and is its senior pastor.",
+      "zh": "張健庭牧師來自香港，多年前蒙召在福樂神學院(Fuller Theological Seminary)念神學，繼在克箂蒙研究大學(Claremont Graduate University) 進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。"
+    }
+  },
+  "locales": [
+    "en",
+    "zh-hant",
+    "zh-hans"
+  ],
+  "builder": "scripts/build-about-anchored.mjs"
+}

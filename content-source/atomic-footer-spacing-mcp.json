@@ -1,0 +1,223 @@
+{
+    "method": "local official Elementor MCP ability",
+    "operations": [
+        {
+            "action": "update",
+            "element_id": "29c6e4c9",
+            "style": "padding:64px 56px 40px;@media (--tablet){padding:56px 32px 32px;}@media (--mobile){padding:40px 24px 28px;}"
+        },
+        {
+            "action": "update",
+            "element_id": "758b8744",
+            "style": "gap:40px;align-items:flex-start;@media (--tablet){gap:32px;}@media (--mobile){gap:32px;flex-direction:column;}"
+        },
+        {
+            "action": "update",
+            "element_id": "198512d6",
+            "style": "gap:40px;align-items:flex-start;@media (--tablet){gap:32px;}@media (--mobile){gap:32px;flex-direction:column;}"
+        },
+        {
+            "action": "update",
+            "element_id": "7fa289e2",
+            "style": "gap:10px;@media (--mobile){width:100%;}"
+        },
+        {
+            "action": "update",
+            "element_id": "4a48e9a8",
+            "style": "margin:6px 0 0 0;"
+        },
+        {
+            "action": "update",
+            "element_id": "70213874",
+            "style": "gap:10px;@media (--mobile){width:100%;}"
+        },
+        {
+            "action": "update",
+            "element_id": "6343d04e",
+            "style": "margin:0 0 4px 0;line-height:1.5;"
+        },
+        {
+            "action": "update",
+            "element_id": "16f362aa",
+            "style": "gap:10px;@media (--mobile){width:100%;}"
+        },
+        {
+            "action": "update",
+            "element_id": "e7fc91a",
+            "style": "margin:0 0 4px 0;line-height:1.5;"
+        },
+        {
+            "action": "update",
+            "element_id": "33e44877",
+            "style": "line-height:1.6;"
+        },
+        {
+            "action": "update",
+            "element_id": "7bb1a9bf",
+            "style": "line-height:1.6;"
+        },
+        {
+            "action": "update",
+            "element_id": "193492ef",
+            "style": "line-height:1.6;"
+        },
+        {
+            "action": "update",
+            "element_id": "4827996d",
+            "style": "line-height:1.6;"
+        },
+        {
+            "action": "update",
+            "element_id": "7d3aed0d",
+            "style": "line-height:1.6;"
+        },
+        {
+            "action": "update",
+            "element_id": "3283c02",
+            "style": "line-height:1.6;"
+        },
+        {
+            "action": "update",
+            "element_id": "17a50622",
+            "style": "gap:10px;@media (--mobile){width:100%;}"
+        },
+        {
+            "action": "update",
+            "element_id": "15101451",
+            "style": "margin:0 0 4px 0;line-height:1.5;"
+        },
+        {
+            "action": "update",
+            "element_id": "1586b0f0",
+            "style": "margin:40px 0 0 0;padding:24px 0 0 0;@media (--mobile){margin:32px 0 0 0;padding:20px 0 0 0;}"
+        },
+        {
+            "action": "update",
+            "element_id": "7f9cb23d",
+            "style": "@media (--mobile){flex-direction:column;align-items:flex-start;gap:12px;}"
+        }
+    ],
+    "result": {
+        "status": "ok",
+        "results": [
+            {
+                "index": 0,
+                "action": "update",
+                "status": "ok",
+                "element_id": "29c6e4c9"
+            },
+            {
+                "index": 1,
+                "action": "update",
+                "status": "ok",
+                "element_id": "758b8744"
+            },
+            {
+                "index": 2,
+                "action": "update",
+                "status": "ok",
+                "element_id": "198512d6"
+            },
+            {
+                "index": 3,
+                "action": "update",
+                "status": "ok",
+                "element_id": "7fa289e2"
+            },
+            {
+                "index": 4,
+                "action": "update",
+                "status": "ok",
+                "element_id": "4a48e9a8"
+            },
+            {
+                "index": 5,
+                "action": "update",
+                "status": "ok",
+                "element_id": "70213874"
+            },
+            {
+                "index": 6,
+                "action": "update",
+                "status": "ok",
+                "element_id": "6343d04e"
+            },
+            {
+                "index": 7,
+                "action": "update",
+                "status": "ok",
+                "element_id": "16f362aa"
+            },
+            {
+                "index": 8,
+                "action": "update",
+                "status": "ok",
+                "element_id": "e7fc91a"
+            },
+            {
+                "index": 9,
+                "action": "update",
+                "status": "ok",
+                "element_id": "33e44877"
+            },
+            {
+                "index": 10,
+                "action": "update",
+                "status": "ok",
+                "element_id": "7bb1a9bf"
+            },
+            {
+                "index": 11,
+                "action": "update",
+                "status": "ok",
+                "element_id": "193492ef"
+            },
+            {
+                "index": 12,
+                "action": "update",
+                "status": "ok",
+                "element_id": "4827996d"
+            },
+            {
+                "index": 13,
+                "action": "update",
+                "status": "ok",
+                "element_id": "7d3aed0d"
+            },
+            {
+                "index": 14,
+                "action": "update",
+                "status": "ok",
+                "element_id": "3283c02"
+            },
+            {
+                "index": 15,
+                "action": "update",
+                "status": "ok",
+                "element_id": "17a50622"
+            },
+            {
+                "index": 16,
+                "action": "update",
+                "status": "ok",
+                "element_id": "15101451"
+            },
+            {
+                "index": 17,
+                "action": "update",
+                "status": "ok",
+                "element_id": "1586b0f0"
+            },
+            {
+                "index": 18,
+                "action": "update",
+                "status": "ok",
+                "element_id": "7f9cb23d"
+            }
+        ],
+        "post_id": 16,
+        "version": "2026-10-21 04:56:29",
+        "edit_url": "http://mpcbc.local/wp-admin/post.php?post=16&action=elementor"
+    },
+    "non_style_fields_preserved": true
+}

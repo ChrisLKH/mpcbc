@@ -1,0 +1,1026 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"ab00054 11\"><e-flexbox configuration-id=\"ab00053 10\"><e-flexbox configuration-id=\"Boxed inner 9\"><e-flexbox configuration-id=\"ab00052 8\"><e-flexbox configuration-id=\"ab0004f 5\"><e-paragraph configuration-id=\"ab0004b 1\"></e-paragraph><e-heading configuration-id=\"ab0004c 2\"></e-heading><e-paragraph configuration-id=\"ab0004d 3\"></e-paragraph><e-paragraph configuration-id=\"ab0004e 4\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab00051 7\"><e-image configuration-id=\"ab00050 6\"></e-image></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab0005a 19\"><e-flexbox configuration-id=\"ab00059 18\"><e-flexbox configuration-id=\"Boxed inner 17\"><e-flexbox configuration-id=\"ab00058 16\"><e-paragraph configuration-id=\"ab00055 12\"></e-paragraph><e-paragraph configuration-id=\"ab00056 13\"></e-paragraph><e-paragraph configuration-id=\"ab00057 14\"></e-paragraph><e-paragraph configuration-id=\"bf00042 15\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab00070 45\"><e-flexbox configuration-id=\"ab0006f 44\"><e-flexbox configuration-id=\"Boxed inner 43\"><e-flexbox configuration-id=\"ab0006e 42\"><e-flexbox configuration-id=\"ab0005d 22\"><e-paragraph configuration-id=\"ab0005b 20\"></e-paragraph><e-heading configuration-id=\"ab0005c 21\"></e-heading></e-flexbox><e-flexbox configuration-id=\"ab0006d 41\"><e-paragraph configuration-id=\"ab0005e 23\"></e-paragraph><e-flexbox configuration-id=\"ab00068 33\"><e-flexbox configuration-id=\"ab00061 26\"><e-heading configuration-id=\"ab0005f 24\"></e-heading><e-paragraph configuration-id=\"ab00060 25\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab00064 29\"><e-heading configuration-id=\"ab00062 27\"></e-heading><e-paragraph configuration-id=\"ab00063 28\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab00067 32\"><e-heading configuration-id=\"ab00065 30\"></e-heading><e-paragraph configuration-id=\"ab00066 31\"></e-paragraph></e-flexbox></e-flexbox><e-accordion configuration-id=\"ab0006c 40\"><e-accordion-item configuration-id=\"Accordion item 39\"><e-accordion-item-header configuration-id=\"Accordion header 36\"><e-accordion-item-title configuration-id=\"Accordion title 35\"><e-paragraph configuration-id=\"Accordion label 34\"></e-paragraph></e-accordion-item-title></e-accordion-item-header><e-accordion-item-content configuration-id=\"Accordion content 38\"><e-paragraph configuration-id=\"ab00069 37\"></e-paragraph></e-accordion-item-content></e-accordion-item></e-accordion></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab00078 54\"><e-flexbox configuration-id=\"ab00077 53\"><e-flexbox configuration-id=\"Boxed inner 52\"><e-flexbox configuration-id=\"ab00076 51\"><e-flexbox configuration-id=\"ab00072 47\"><e-paragraph configuration-id=\"ab00071 46\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab00075 50\"><e-heading configuration-id=\"ab00073 48\"></e-heading><e-paragraph configuration-id=\"ab00074 49\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab0008b 77\"><e-flexbox configuration-id=\"ab0008a 76\"><e-flexbox configuration-id=\"Boxed inner 75\"><e-flexbox configuration-id=\"ab00089 74\"><e-flexbox configuration-id=\"ab0007b 57\"><e-paragraph configuration-id=\"ab00079 55\"></e-paragraph><e-heading configuration-id=\"ab0007a 56\"></e-heading></e-flexbox><e-flexbox configuration-id=\"ab00088 73\"><e-flexbox configuration-id=\"ab00082 64\"><e-flexbox configuration-id=\"ab0007d 59\"><e-image configuration-id=\"ab0007c 58\"></e-image></e-flexbox><e-flexbox configuration-id=\"ab00081 63\"><e-heading configuration-id=\"ab0007e 60\"></e-heading><e-paragraph configuration-id=\"ab0007f 61\"></e-paragraph><e-paragraph configuration-id=\"ab00080 62\"></e-paragraph></e-flexbox></e-flexbox><e-accordion configuration-id=\"ab00087 72\"><e-accordion-item configuration-id=\"Accordion item 71\"><e-accordion-item-header configuration-id=\"Accordion header 67\"><e-accordion-item-title configuration-id=\"Accordion title 66\"><e-paragraph configuration-id=\"Accordion label 65\"></e-paragraph></e-accordion-item-title></e-accordion-item-header><e-accordion-item-content configuration-id=\"Accordion content 70\"><e-paragraph configuration-id=\"ab00083 68\"></e-paragraph><e-button configuration-id=\"ab00084 69\"></e-button></e-accordion-item-content></e-accordion-item></e-accordion></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be000b9 198\"><e-flexbox configuration-id=\"be000b8 197\"><e-flexbox configuration-id=\"Boxed inner 196\"><e-flexbox configuration-id=\"be000b7 80\"><e-paragraph configuration-id=\"be000b5 78\"></e-paragraph><e-heading configuration-id=\"be000b6 79\"></e-heading></e-flexbox><e-tabs configuration-id=\"be000a0 195\"><e-tabs-menu configuration-id=\"Tabs menu 97\"><e-tab configuration-id=\"Tab 1 82\"><e-paragraph configuration-id=\"Tab label 81\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 2 84\"><e-paragraph configuration-id=\"Tab label 83\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 3 86\"><e-paragraph configuration-id=\"Tab label 85\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 4 88\"><e-paragraph configuration-id=\"Tab label 87\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 5 90\"><e-paragraph configuration-id=\"Tab label 89\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 6 92\"><e-paragraph configuration-id=\"Tab label 91\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 7 94\"><e-paragraph configuration-id=\"Tab label 93\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 8 96\"><e-paragraph configuration-id=\"Tab label 95\"></e-paragraph></e-tab></e-tabs-menu><e-tabs-content-area configuration-id=\"Tabs panels 194\"><e-tab-content configuration-id=\"Tab panel 1 109\"><e-flexbox configuration-id=\"be00067 108\"><e-paragraph configuration-id=\"be00062 98\"></e-paragraph><e-heading configuration-id=\"be00063 99\"></e-heading><e-flexbox configuration-id=\"be00064 103\"><e-paragraph configuration-id=\"bc00039 100\"></e-paragraph><e-heading configuration-id=\"bc0003a 101\"></e-heading><e-paragraph configuration-id=\"bc0003b 102\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00066 107\"><e-button configuration-id=\"be00060 104\"></e-button><e-paragraph configuration-id=\"be00065 105\"></e-paragraph><e-button configuration-id=\"be00061 106\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 2 121\"><e-flexbox configuration-id=\"be0006f 120\"><e-paragraph configuration-id=\"be0006a 110\"></e-paragraph><e-heading configuration-id=\"be0006b 111\"></e-heading><e-flexbox configuration-id=\"be0006c 115\"><e-paragraph configuration-id=\"bc0003e 112\"></e-paragraph><e-heading configuration-id=\"bc0003f 113\"></e-heading><e-paragraph configuration-id=\"bc00040 114\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0006e 119\"><e-button configuration-id=\"be00068 116\"></e-button><e-paragraph configuration-id=\"be0006d 117\"></e-paragraph><e-button configuration-id=\"be00069 118\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 3 133\"><e-flexbox configuration-id=\"be00077 132\"><e-paragraph configuration-id=\"be00072 122\"></e-paragraph><e-heading configuration-id=\"be00073 123\"></e-heading><e-flexbox configuration-id=\"be00074 127\"><e-paragraph configuration-id=\"bc00043 124\"></e-paragraph><e-heading configuration-id=\"bc00044 125\"></e-heading><e-paragraph configuration-id=\"bc00045 126\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00076 131\"><e-button configuration-id=\"be00070 128\"></e-button><e-paragraph configuration-id=\"be00075 129\"></e-paragraph><e-button configuration-id=\"be00071 130\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 4 145\"><e-flexbox configuration-id=\"be0007f 144\"><e-paragraph configuration-id=\"be0007a 134\"></e-paragraph><e-heading configuration-id=\"be0007b 135\"></e-heading><e-flexbox configuration-id=\"be0007c 139\"><e-paragraph configuration-id=\"bc00048 136\"></e-paragraph><e-heading configuration-id=\"bc00049 137\"></e-heading><e-paragraph configuration-id=\"bc0004a 138\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0007e 143\"><e-button configuration-id=\"be00078 140\"></e-button><e-paragraph configuration-id=\"be0007d 141\"></e-paragraph><e-button configuration-id=\"be00079 142\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 5 157\"><e-flexbox configuration-id=\"be00087 156\"><e-paragraph configuration-id=\"be00082 146\"></e-paragraph><e-heading configuration-id=\"be00083 147\"></e-heading><e-flexbox configuration-id=\"be00084 151\"><e-paragraph configuration-id=\"bc0004d 148\"></e-paragraph><e-heading configuration-id=\"bc0004e 149\"></e-heading><e-paragraph configuration-id=\"bc0004f 150\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00086 155\"><e-button configuration-id=\"be00080 152\"></e-button><e-paragraph configuration-id=\"be00085 153\"></e-paragraph><e-button configuration-id=\"be00081 154\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 6 169\"><e-flexbox configuration-id=\"be0008f 168\"><e-paragraph configuration-id=\"be0008a 158\"></e-paragraph><e-heading configuration-id=\"be0008b 159\"></e-heading><e-flexbox configuration-id=\"be0008c 163\"><e-paragraph configuration-id=\"bc00052 160\"></e-paragraph><e-heading configuration-id=\"bc00053 161\"></e-heading><e-paragraph configuration-id=\"bc00054 162\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0008e 167\"><e-button configuration-id=\"be00088 164\"></e-button><e-paragraph configuration-id=\"be0008d 165\"></e-paragraph><e-button configuration-id=\"be00089 166\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 7 181\"><e-flexbox configuration-id=\"be00097 180\"><e-paragraph configuration-id=\"be00092 170\"></e-paragraph><e-heading configuration-id=\"be00093 171\"></e-heading><e-flexbox configuration-id=\"be00094 175\"><e-paragraph configuration-id=\"bc00057 172\"></e-paragraph><e-heading configuration-id=\"bc00058 173\"></e-heading><e-paragraph configuration-id=\"bc00059 174\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00096 179\"><e-button configuration-id=\"be00090 176\"></e-button><e-paragraph configuration-id=\"be00095 177\"></e-paragraph><e-button configuration-id=\"be00091 178\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 8 193\"><e-flexbox configuration-id=\"be0009f 192\"><e-paragraph configuration-id=\"be0009a 182\"></e-paragraph><e-heading configuration-id=\"be0009b 183\"></e-heading><e-flexbox configuration-id=\"be0009c 187\"><e-paragraph configuration-id=\"bc0005c 184\"></e-paragraph><e-heading configuration-id=\"bc0005d 185\"></e-heading><e-paragraph configuration-id=\"bc0005e 186\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0009e 191\"><e-button configuration-id=\"be00098 188\"></e-button><e-paragraph configuration-id=\"be0009d 189\"></e-paragraph><e-button configuration-id=\"be00099 190\"></e-button></e-flexbox></e-flexbox></e-tab-content></e-tabs-content-area></e-tabs></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "ab0004b 1": {
+      "_cssid": "mpcbc-ab0004b",
+      "paragraph": "認識教會",
+      "tag": "p"
+    },
+    "ab0004c 2": {
+      "_cssid": "mpcbc-ab0004c",
+      "title": "扎根信仰，<br>一同成長。",
+      "tag": "h1"
+    },
+    "ab0004d 3": {
+      "_cssid": "mpcbc-ab0004d",
+      "paragraph": "一個教會大家庭，以粵語、英語及國語一同敬拜。",
+      "tag": "p"
+    },
+    "ab0004e 4": {
+      "_cssid": "mpcbc-ab0004e",
+      "paragraph": "始於1977年 · 加州阿罕布拉市",
+      "tag": "p"
+    },
+    "ab0004f 5": {
+      "_cssid": "mpcbc-ab0004f"
+    },
+    "ab00050 6": {
+      "_cssid": "mpcbc-ab00050",
+      "image": {
+        "src": {
+          "id": 327
+        },
+        "size": "full"
+      }
+    },
+    "ab00051 7": {
+      "_cssid": "mpcbc-ab00051"
+    },
+    "ab00052 8": {
+      "_cssid": "mpcbc-ab00052"
+    },
+    "Boxed inner 9": {},
+    "ab00053 10": {
+      "_cssid": "mpcbc-ab00053"
+    },
+    "ab00054 11": {
+      "_cssid": "mpcbc-ab00054"
+    },
+    "ab00055 12": {
+      "_cssid": "mpcbc-ab00055",
+      "paragraph": "教會歷史 ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#story",
+        "isTargetBlank": false
+      }
+    },
+    "ab00056 13": {
+      "_cssid": "mpcbc-ab00056",
+      "paragraph": "使命宣言 ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#mission",
+        "isTargetBlank": false
+      }
+    },
+    "ab00057 14": {
+      "_cssid": "mpcbc-ab00057",
+      "paragraph": "教牧團隊 ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#pastors",
+        "isTargetBlank": false
+      }
+    },
+    "bf00042 15": {
+      "_cssid": "mpcbc-bf00042",
+      "paragraph": "信仰告白 ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#beliefs",
+        "isTargetBlank": false
+      }
+    },
+    "ab00058 16": {
+      "_cssid": "mpcbc-ab00058"
+    },
+    "Boxed inner 17": {},
+    "ab00059 18": {
+      "_cssid": "mpcbc-ab00059"
+    },
+    "ab0005a 19": {
+      "_cssid": "mpcbc-ab0005a"
+    },
+    "ab0005b 20": {
+      "_cssid": "mpcbc-ab0005b",
+      "paragraph": "教會歷史",
+      "tag": "p"
+    },
+    "ab0005c 21": {
+      "_cssid": "mpcbc-ab0005c",
+      "title": "三種語言，<br>同屬一家。",
+      "tag": "h2"
+    },
+    "ab0005d 22": {
+      "_cssid": "mpcbc-ab0005d"
+    },
+    "ab0005e 23": {
+      "_cssid": "mpcbc-ab0005e",
+      "paragraph": "教會於1977年成立，最初以粵語崇拜。隨著國語及英語事工的發展，我們一直保持三種語言的崇拜。",
+      "tag": "p"
+    },
+    "ab0005f 24": {
+      "_cssid": "mpcbc-ab0005f",
+      "title": "1977",
+      "tag": "h3"
+    },
+    "ab00060 25": {
+      "_cssid": "mpcbc-ab00060",
+      "paragraph": "開始粵語崇拜",
+      "tag": "p"
+    },
+    "ab00061 26": {
+      "_cssid": "mpcbc-ab00061"
+    },
+    "ab00062 27": {
+      "_cssid": "mpcbc-ab00062",
+      "title": "1988",
+      "tag": "h3"
+    },
+    "ab00063 28": {
+      "_cssid": "mpcbc-ab00063",
+      "paragraph": "開始國語崇拜",
+      "tag": "p"
+    },
+    "ab00064 29": {
+      "_cssid": "mpcbc-ab00064"
+    },
+    "ab00065 30": {
+      "_cssid": "mpcbc-ab00065",
+      "title": "1991",
+      "tag": "h3"
+    },
+    "ab00066 31": {
+      "_cssid": "mpcbc-ab00066",
+      "paragraph": "開始英語崇拜",
+      "tag": "p"
+    },
+    "ab00067 32": {
+      "_cssid": "mpcbc-ab00067"
+    },
+    "ab00068 33": {
+      "_cssid": "mpcbc-ab00068"
+    },
+    "Accordion label 34": {
+      "paragraph": "閱讀完整教會歷史"
+    },
+    "Accordion title 35": {},
+    "Accordion header 36": {},
+    "ab00069 37": {
+      "_cssid": "mpcbc-ab00069",
+      "paragraph": "教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。",
+      "tag": "p"
+    },
+    "Accordion content 38": {},
+    "Accordion item 39": {},
+    "ab0006c 40": {
+      "_cssid": "mpcbc-ab0006c",
+      "default_state": "all_collapsed",
+      "max_expanded": "multiple",
+      "show_icon": false
+    },
+    "ab0006d 41": {
+      "_cssid": "mpcbc-ab0006d"
+    },
+    "ab0006e 42": {
+      "_cssid": "mpcbc-ab0006e"
+    },
+    "Boxed inner 43": {},
+    "ab0006f 44": {
+      "_cssid": "mpcbc-ab0006f"
+    },
+    "ab00070 45": {
+      "_cssid": "story"
+    },
+    "ab00071 46": {
+      "_cssid": "mpcbc-ab00071",
+      "paragraph": "使命宣言",
+      "tag": "p"
+    },
+    "ab00072 47": {
+      "_cssid": "mpcbc-ab00072"
+    },
+    "ab00073 48": {
+      "_cssid": "mpcbc-ab00073",
+      "title": "認識神為基礎，<br>榮耀神是目標。",
+      "tag": "h2"
+    },
+    "ab00074 49": {
+      "_cssid": "mpcbc-ab00074",
+      "paragraph": "我們藉著敬拜、團契、門徒訓練、事奉、傳福音來認識和榮耀神。",
+      "tag": "p"
+    },
+    "ab00075 50": {
+      "_cssid": "mpcbc-ab00075"
+    },
+    "ab00076 51": {
+      "_cssid": "mpcbc-ab00076"
+    },
+    "Boxed inner 52": {},
+    "ab00077 53": {
+      "_cssid": "mpcbc-ab00077"
+    },
+    "ab00078 54": {
+      "_cssid": "mission"
+    },
+    "ab00079 55": {
+      "_cssid": "mpcbc-ab00079",
+      "paragraph": "教牧團隊",
+      "tag": "p"
+    },
+    "ab0007a 56": {
+      "_cssid": "mpcbc-ab0007a",
+      "title": "認識張健庭牧師。",
+      "tag": "h2"
+    },
+    "ab0007b 57": {
+      "_cssid": "mpcbc-ab0007b"
+    },
+    "ab0007c 58": {
+      "_cssid": "mpcbc-ab0007c",
+      "image": {
+        "src": {
+          "id": "177"
+        },
+        "size": "full"
+      }
+    },
+    "ab0007d 59": {
+      "_cssid": "mpcbc-ab0007d"
+    },
+    "ab0007e 60": {
+      "_cssid": "mpcbc-ab0007e",
+      "title": "張健庭博士",
+      "tag": "h3"
+    },
+    "ab0007f 61": {
+      "_cssid": "mpcbc-ab0007f",
+      "paragraph": "主任牧師及粵語堂牧師",
+      "tag": "p"
+    },
+    "ab00080 62": {
+      "_cssid": "mpcbc-ab00080",
+      "paragraph": "張牧師來自香港，曾於福樂神學院及克箂蒙研究大學進修，現任本教會主任牧師。",
+      "tag": "p"
+    },
+    "ab00081 63": {
+      "_cssid": "mpcbc-ab00081"
+    },
+    "ab00082 64": {
+      "_cssid": "mpcbc-ab00082"
+    },
+    "Accordion label 65": {
+      "paragraph": "牧師簡介與聯絡"
+    },
+    "Accordion title 66": {},
+    "Accordion header 67": {},
+    "ab00083 68": {
+      "_cssid": "mpcbc-ab00083",
+      "paragraph": "張健庭牧師來自香港，多年前蒙召在福樂神學院(Fuller Theological Seminary)念神學，繼在克箂蒙研究大學(Claremont Graduate University) 進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。",
+      "tag": "p"
+    },
+    "ab00084 69": {
+      "_cssid": "mpcbc-ab00084",
+      "text": "聯絡張牧師",
+      "link": {
+        "destination": "mailto:calebcheung@mpcbc.net",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "Accordion content 70": {},
+    "Accordion item 71": {},
+    "ab00087 72": {
+      "_cssid": "mpcbc-ab00087",
+      "default_state": "all_collapsed",
+      "max_expanded": "multiple",
+      "show_icon": false
+    },
+    "ab00088 73": {
+      "_cssid": "mpcbc-ab00088"
+    },
+    "ab00089 74": {
+      "_cssid": "mpcbc-ab00089"
+    },
+    "Boxed inner 75": {},
+    "ab0008a 76": {
+      "_cssid": "mpcbc-ab0008a"
+    },
+    "ab0008b 77": {
+      "_cssid": "pastors"
+    },
+    "be000b5 78": {
+      "_cssid": "mpcbc-be000b5",
+      "paragraph": "我們的信仰告白",
+      "tag": "p"
+    },
+    "be000b6 79": {
+      "_cssid": "mpcbc-be000b6",
+      "title": "八項信仰根基，<br>同一份信仰。",
+      "tag": "h2"
+    },
+    "be000b7 80": {
+      "_cssid": "mpcbc-topic-index"
+    },
+    "Tab label 81": {
+      "paragraph": "01 · 神"
+    },
+    "Tab 1 82": {},
+    "Tab label 83": {
+      "paragraph": "02 · 耶穌基督"
+    },
+    "Tab 2 84": {},
+    "Tab label 85": {
+      "paragraph": "03 · 聖靈"
+    },
+    "Tab 3 86": {},
+    "Tab label 87": {
+      "paragraph": "04 · 聖經"
+    },
+    "Tab 4 88": {},
+    "Tab label 89": {
+      "paragraph": "05 · 人類"
+    },
+    "Tab 5 90": {},
+    "Tab label 91": {
+      "paragraph": "06 · 救恩"
+    },
+    "Tab 6 92": {},
+    "Tab label 93": {
+      "paragraph": "07 · 永遠的保障"
+    },
+    "Tab 7 94": {},
+    "Tab label 95": {
+      "paragraph": "08 · 永恆"
+    },
+    "Tab 8 96": {},
+    "Tabs menu 97": {},
+    "be00062 98": {
+      "_cssid": "mpcbc-be00062",
+      "paragraph": "01",
+      "tag": "p"
+    },
+    "be00063 99": {
+      "_cssid": "mpcbc-be00063",
+      "title": "神",
+      "tag": "h2"
+    },
+    "bc00039 100": {
+      "_cssid": "mpcbc-bc00039",
+      "paragraph": "神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。",
+      "tag": "p"
+    },
+    "bc0003a 101": {
+      "_cssid": "mpcbc-bc0003a",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc0003b 102": {
+      "_cssid": "mpcbc-bc0003b",
+      "paragraph": "創1:1,26,27, 3:22, 詩90:2; 太28:19; 彼前1:2; 林後13:14",
+      "tag": "p"
+    },
+    "be00064 103": {
+      "_cssid": "mpcbc-be00064"
+    },
+    "be00060 104": {
+      "_cssid": "mpcbc-reader-unavailable-be00060",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-0",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00065 105": {
+      "_cssid": "mpcbc-be00065",
+      "paragraph": "1 / 8",
+      "tag": "p"
+    },
+    "be00061 106": {
+      "_cssid": "mpcbc-be00061",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00066 107": {
+      "_cssid": "mpcbc-be00066"
+    },
+    "be00067 108": {
+      "_cssid": "mpcbc-be00067"
+    },
+    "Tab panel 1 109": {},
+    "be0006a 110": {
+      "_cssid": "mpcbc-be0006a",
+      "paragraph": "02",
+      "tag": "p"
+    },
+    "be0006b 111": {
+      "_cssid": "mpcbc-be0006b",
+      "title": "耶穌基督",
+      "tag": "h2"
+    },
+    "bc0003e 112": {
+      "_cssid": "mpcbc-bc0003e",
+      "paragraph": "耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。",
+      "tag": "p"
+    },
+    "bc0003f 113": {
+      "_cssid": "mpcbc-bc0003f",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc00040 114": {
+      "_cssid": "mpcbc-bc00040",
+      "paragraph": "太1:22-23; 賽9:6; 約1:1-5, 14:10-30; 來4:14,15; 林前15:3-4; 羅1:3-4; 徒1:9-11; 提前6:14; 多2:13",
+      "tag": "p"
+    },
+    "be0006c 115": {
+      "_cssid": "mpcbc-be0006c"
+    },
+    "be00068 116": {
+      "_cssid": "mpcbc-be00068",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-1",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0006d 117": {
+      "_cssid": "mpcbc-be0006d",
+      "paragraph": "2 / 8",
+      "tag": "p"
+    },
+    "be00069 118": {
+      "_cssid": "mpcbc-be00069",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0006e 119": {
+      "_cssid": "mpcbc-be0006e"
+    },
+    "be0006f 120": {
+      "_cssid": "mpcbc-be0006f"
+    },
+    "Tab panel 2 121": {},
+    "be00072 122": {
+      "_cssid": "mpcbc-be00072",
+      "paragraph": "03",
+      "tag": "p"
+    },
+    "be00073 123": {
+      "_cssid": "mpcbc-be00073",
+      "title": "聖靈",
+      "tag": "h2"
+    },
+    "bc00043 124": {
+      "_cssid": "mpcbc-bc00043",
+      "paragraph": "聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。",
+      "tag": "p"
+    },
+    "bc00044 125": {
+      "_cssid": "mpcbc-bc00044",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc00045 126": {
+      "_cssid": "mpcbc-bc00045",
+      "paragraph": "林後3:17; 約16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25",
+      "tag": "p"
+    },
+    "be00074 127": {
+      "_cssid": "mpcbc-be00074"
+    },
+    "be00070 128": {
+      "_cssid": "mpcbc-be00070",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00075 129": {
+      "_cssid": "mpcbc-be00075",
+      "paragraph": "3 / 8",
+      "tag": "p"
+    },
+    "be00071 130": {
+      "_cssid": "mpcbc-be00071",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00076 131": {
+      "_cssid": "mpcbc-be00076"
+    },
+    "be00077 132": {
+      "_cssid": "mpcbc-be00077"
+    },
+    "Tab panel 3 133": {},
+    "be0007a 134": {
+      "_cssid": "mpcbc-be0007a",
+      "paragraph": "04",
+      "tag": "p"
+    },
+    "be0007b 135": {
+      "_cssid": "mpcbc-be0007b",
+      "title": "聖經",
+      "tag": "h2"
+    },
+    "bc00048 136": {
+      "_cssid": "mpcbc-bc00048",
+      "paragraph": "聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。",
+      "tag": "p"
+    },
+    "bc00049 137": {
+      "_cssid": "mpcbc-bc00049",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc0004a 138": {
+      "_cssid": "mpcbc-bc0004a",
+      "paragraph": "提後3:16,1:13; 彼後1:20-21; 詩119:105, 160, 12:6; 箴30:5",
+      "tag": "p"
+    },
+    "be0007c 139": {
+      "_cssid": "mpcbc-be0007c"
+    },
+    "be00078 140": {
+      "_cssid": "mpcbc-be00078",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0007d 141": {
+      "_cssid": "mpcbc-be0007d",
+      "paragraph": "4 / 8",
+      "tag": "p"
+    },
+    "be00079 142": {
+      "_cssid": "mpcbc-be00079",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0007e 143": {
+      "_cssid": "mpcbc-be0007e"
+    },
+    "be0007f 144": {
+      "_cssid": "mpcbc-be0007f"
+    },
+    "Tab panel 4 145": {},
+    "be00082 146": {
+      "_cssid": "mpcbc-be00082",
+      "paragraph": "05",
+      "tag": "p"
+    },
+    "be00083 147": {
+      "_cssid": "mpcbc-be00083",
+      "title": "人類",
+      "tag": "h2"
+    },
+    "bc0004d 148": {
+      "_cssid": "mpcbc-bc0004d",
+      "paragraph": "人類是照神屬靈的形象所造，本有神的屬性。人是神創造的極致。雖然人本有善的潛能，我們每個人卻都因著罪的態度與神隔絕，而使得生命陷入種種問題。",
+      "tag": "p"
+    },
+    "bc0004e 149": {
+      "_cssid": "mpcbc-bc0004e",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc0004f 150": {
+      "_cssid": "mpcbc-bc0004f",
+      "paragraph": "創1:27; 詩8:3-6; 賽53:6a; 羅3:23; 賽59:1-2",
+      "tag": "p"
+    },
+    "be00084 151": {
+      "_cssid": "mpcbc-be00084"
+    },
+    "be00080 152": {
+      "_cssid": "mpcbc-be00080",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00085 153": {
+      "_cssid": "mpcbc-be00085",
+      "paragraph": "5 / 8",
+      "tag": "p"
+    },
+    "be00081 154": {
+      "_cssid": "mpcbc-be00081",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00086 155": {
+      "_cssid": "mpcbc-be00086"
+    },
+    "be00087 156": {
+      "_cssid": "mpcbc-be00087"
+    },
+    "Tab panel 5 157": {},
+    "be0008a 158": {
+      "_cssid": "mpcbc-be0008a",
+      "paragraph": "06",
+      "tag": "p"
+    },
+    "be0008b 159": {
+      "_cssid": "mpcbc-be0008b",
+      "title": "救恩",
+      "tag": "h2"
+    },
+    "bc00052 160": {
+      "_cssid": "mpcbc-bc00052",
+      "paragraph": "救恩是神給我們白白的禮物，但需要我們去接受。我們永遠無法靠著善行與自我改善來贖我們的罪。惟有靠著耶穌基督，蒙神赦免，才能從罪的刑罰得贖。當我們從以自我為中心、靠自己的生命，憑信心轉向耶穌時，我們便得救。永遠的生命開始於我們憑信心接受耶穌基督的生命那一刻。",
+      "tag": "p"
+    },
+    "bc00053 161": {
+      "_cssid": "mpcbc-bc00053",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc00054 162": {
+      "_cssid": "mpcbc-bc00054",
+      "paragraph": "羅6:23,5:1; 弗2:8-9; 約14:6;1:12; 多3:5; 加3:26",
+      "tag": "p"
+    },
+    "be0008c 163": {
+      "_cssid": "mpcbc-be0008c"
+    },
+    "be00088 164": {
+      "_cssid": "mpcbc-be00088",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0008d 165": {
+      "_cssid": "mpcbc-be0008d",
+      "paragraph": "6 / 8",
+      "tag": "p"
+    },
+    "be00089 166": {
+      "_cssid": "mpcbc-be00089",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0008e 167": {
+      "_cssid": "mpcbc-be0008e"
+    },
+    "be0008f 168": {
+      "_cssid": "mpcbc-be0008f"
+    },
+    "Tab panel 6 169": {},
+    "be00092 170": {
+      "_cssid": "mpcbc-be00092",
+      "paragraph": "07",
+      "tag": "p"
+    },
+    "be00093 171": {
+      "_cssid": "mpcbc-be00093",
+      "title": "永遠的保障",
+      "tag": "h2"
+    },
+    "bc00057 172": {
+      "_cssid": "mpcbc-bc00057",
+      "paragraph": "由於神通過耶穌基督賜給我們永遠的生命，真信徒有永遠的得救保障。救贖是藉著神的權能與恩典，不是憑基督徒自己的努力。神保守的權能與恩典使我們有這永遠的保障。但信徒也有責任不斷信靠神，活在神的保守之中。",
+      "tag": "p"
+    },
+    "bc00058 173": {
+      "_cssid": "mpcbc-bc00058",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc00059 174": {
+      "_cssid": "mpcbc-bc00059",
+      "paragraph": "約10:29; 提後1:12; 來7:25, 10:10,14; 彼前1:3-5; 來6:4-8; 來10:26-27; 約15:6",
+      "tag": "p"
+    },
+    "be00094 175": {
+      "_cssid": "mpcbc-be00094"
+    },
+    "be00090 176": {
+      "_cssid": "mpcbc-be00090",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00095 177": {
+      "_cssid": "mpcbc-be00095",
+      "paragraph": "7 / 8",
+      "tag": "p"
+    },
+    "be00091 178": {
+      "_cssid": "mpcbc-be00091",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-8",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00096 179": {
+      "_cssid": "mpcbc-be00096"
+    },
+    "be00097 180": {
+      "_cssid": "mpcbc-be00097"
+    },
+    "Tab panel 7 181": {},
+    "be0009a 182": {
+      "_cssid": "mpcbc-be0009a",
+      "paragraph": "08",
+      "tag": "p"
+    },
+    "be0009b 183": {
+      "_cssid": "mpcbc-be0009b",
+      "title": "永恆",
+      "tag": "h2"
+    },
+    "bc0005c 184": {
+      "_cssid": "mpcbc-bc0005c",
+      "paragraph": "人被創造要存到永遠。我們或要因著罪與神永遠隔離，或是因著赦免與救恩與神永遠同在。與神永遠隔離便是地獄，與神永遠同在便是永遠的生命。",
+      "tag": "p"
+    },
+    "bc0005d 185": {
+      "_cssid": "mpcbc-bc0005d",
+      "title": "經文",
+      "tag": "h3"
+    },
+    "bc0005e 186": {
+      "_cssid": "mpcbc-bc0005e",
+      "paragraph": "約3:16, 2:25, 5:11-13; 羅6:23; 啟20:15; 太1:8; 太2:44,46",
+      "tag": "p"
+    },
+    "be0009c 187": {
+      "_cssid": "mpcbc-be0009c"
+    },
+    "be00098 188": {
+      "_cssid": "mpcbc-be00098",
+      "text": "← 上一項",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0009d 189": {
+      "_cssid": "mpcbc-be0009d",
+      "paragraph": "8 / 8",
+      "tag": "p"
+    },
+    "be00099 190": {
+      "_cssid": "mpcbc-reader-unavailable-be00099",
+      "text": "下一項 →",
+      "link": {
+        "destination": "#belief-topic-9",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0009e 191": {
+      "_cssid": "mpcbc-be0009e"
+    },
+    "be0009f 192": {
+      "_cssid": "mpcbc-be0009f"
+    },
+    "Tab panel 8 193": {},
+    "Tabs panels 194": {},
+    "be000a0 195": {
+      "_cssid": "mpcbc-topic-reader",
+      "default-active-tab": 0
+    },
+    "Boxed inner 196": {},
+    "be000b8 197": {
+      "_cssid": "mpcbc-be000b8"
+    },
+    "be000b9 198": {
+      "_cssid": "beliefs"
+    }
+  },
+  "style": {
+    "ab0004b 1": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab0004c 2": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:64px;font-weight:700;line-height:1.12em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:52px;}@media (--mobile){font-size:40px;}",
+    "ab0004d 3": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:21px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:20px;}@media (--mobile){font-size:19px;}",
+    "ab0004e 4": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab0004f 5": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00050 6": "min-width:0;margin:0;max-width:100%;width:100%;height:auto;object-fit:cover;border-radius:24px 24px 24px 24px;",
+    "ab00051 7": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00052 8": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;align-items:center;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 9": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab00053 10": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab00054 11": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 56px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:40px 20px 32px 20px;}",
+    "ab00055 12": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "ab00056 13": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "ab00057 14": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bf00042 15": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "ab00058 16": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:32px;flex-wrap:wrap;@media (--tablet){flex-direction:row;}@media (--mobile){gap:20px;}",
+    "Boxed inner 17": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab00059 18": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab0005a 19": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:20px 56px 20px 56px;gap:20px;background-color:var(--mpcbc-color-262da8014);@media (--tablet){padding:20px 32px 20px 32px;}@media (--mobile){padding:18px 20px 18px 20px;}",
+    "ab0005b 20": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab0005c 21": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "ab0005d 22": "min-width:0;margin:0;display:flex;flex-direction:column;width:38%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0005e 23": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab0005f 24": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:32px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab00060 25": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00061 26": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00062 27": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:32px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab00063 28": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00064 29": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00065 30": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:32px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab00066 31": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00067 32": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00068 33": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:16px;@media (--tablet){flex-direction:row;}@media (--mobile){gap:28px;}",
+    "Accordion label 34": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;margin:0;",
+    "Accordion title 35": "padding:0;width:100%;",
+    "Accordion header 36": "display:flex;align-items:center;padding:20px 20px 20px 20px;color:var(--mpcbc-color-14b48ba19);cursor:pointer;",
+    "ab00069 37": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "Accordion content 38": "padding:4px 20px 24px 20px;",
+    "Accordion item 39": "border-radius:12px;background-color:var(--mpcbc-color-262da8014);",
+    "ab0006c 40": "padding:0;width:100%;gap:12px;",
+    "ab0006d 41": "min-width:0;margin:0;display:flex;flex-direction:column;width:58%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0006e 42": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 43": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab0006f 44": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab00070 45": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "ab00071 46": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-262da8014);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00072 47": "min-width:0;margin:0;display:flex;flex-direction:column;width:38%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00073 48": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:34px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-262da8014);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab00074 49": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-262da8014);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab00075 50": "min-width:0;margin:0;display:flex;flex-direction:column;width:58%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00076 51": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 52": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab00077 53": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab00078 54": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-21e91e8d2);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "ab00079 55": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab0007a 56": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "ab0007b 57": "min-width:0;margin:0;display:flex;flex-direction:column;width:38%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0007c 58": "min-width:0;margin:0;max-width:100%;width:100%;height:auto;object-fit:cover;border-radius:16px 16px 16px 16px;",
+    "ab0007d 59": "min-width:0;margin:0;display:flex;flex-direction:column;width:27%;padding:0px 0px 0px 0px;gap:20px;@media (--mobile){width:146px;}",
+    "ab0007e 60": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:26px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:24px;}@media (--mobile){font-size:22px;}",
+    "ab0007f 61": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00080 62": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab00081 63": "min-width:0;margin:0;display:flex;flex-direction:column;width:69%;padding:0px 0px 0px 0px;gap:20px;@media (--mobile){width:100%;}",
+    "ab00082 64": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:24px;@media (--tablet){flex-direction:row;}@media (--mobile){flex-direction:column;gap:28px;}",
+    "Accordion label 65": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;margin:0;",
+    "Accordion title 66": "padding:0;width:100%;",
+    "Accordion header 67": "display:flex;align-items:center;padding:20px 20px 20px 20px;color:var(--mpcbc-color-14b48ba19);cursor:pointer;",
+    "ab00083 68": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab00084 69": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-262da8014);background-color:var(--mpcbc-color-14b48ba19);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "Accordion content 70": "padding:4px 20px 24px 20px;",
+    "Accordion item 71": "border-radius:12px;background-color:var(--mpcbc-color-262da8014);",
+    "ab00087 72": "padding:0;width:100%;gap:12px;",
+    "ab00088 73": "min-width:0;margin:0;display:flex;flex-direction:column;width:58%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00089 74": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 75": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab0008a 76": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab0008b 77": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "be000b5 78": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000b6 79": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:26px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:24px;}@media (--mobile){font-size:22px;}",
+    "be000b7 80": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab label 81": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 1 82": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 83": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 2 84": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 85": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 3 86": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 87": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 4 88": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 89": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 5 90": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 91": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 6 92": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 93": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 7 94": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 95": "font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 8 96": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tabs menu 97": "display:flex;flex-direction:column;flex-wrap:nowrap;width:248px;flex-shrink:0;gap:4px;padding:0;@media (--mobile){width:100%;flex-direction:row;flex-wrap:wrap;}",
+    "be00062 98": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00063 99": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00039 100": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003a 101": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0003b 102": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00064 103": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00060 104": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00065 105": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00061 106": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00066 107": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00067 108": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 1 109": "width:100%;padding:0;",
+    "be0006a 110": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0006b 111": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0003e 112": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003f 113": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00040 114": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0006c 115": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00068 116": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0006d 117": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00069 118": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0006e 119": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be0006f 120": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 2 121": "width:100%;padding:0;",
+    "be00072 122": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00073 123": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00043 124": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00044 125": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00045 126": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00074 127": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00070 128": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00075 129": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00071 130": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00076 131": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00077 132": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 3 133": "width:100%;padding:0;",
+    "be0007a 134": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0007b 135": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00048 136": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00049 137": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004a 138": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0007c 139": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00078 140": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0007d 141": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00079 142": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0007e 143": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be0007f 144": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 4 145": "width:100%;padding:0;",
+    "be00082 146": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00083 147": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0004d 148": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0004e 149": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004f 150": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00084 151": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00080 152": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00085 153": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00081 154": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00086 155": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00087 156": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 5 157": "width:100%;padding:0;",
+    "be0008a 158": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0008b 159": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00052 160": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00053 161": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00054 162": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0008c 163": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00088 164": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0008d 165": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00089 166": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0008e 167": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be0008f 168": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 6 169": "width:100%;padding:0;",
+    "be00092 170": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00093 171": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00057 172": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00058 173": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00059 174": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00094 175": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00090 176": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00095 177": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00091 178": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00096 179": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00097 180": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 7 181": "width:100%;padding:0;",
+    "be0009a 182": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0009b 183": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0005c 184": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0005d 185": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0005e 186": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0009c 187": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00098 188": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0009d 189": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00099 190": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-529ca1d09);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0009e 191": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be0009f 192": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 8 193": "width:100%;padding:0;",
+    "Tabs panels 194": "min-width:0;width:100%;padding:0;flex-grow:1;",
+    "be000a0 195": "display:flex;align-items:stretch;flex-direction:row;width:100%;gap:64px;padding:0;@media (--tablet){gap:32px;}@media (--mobile){flex-direction:column;gap:24px;}",
+    "Boxed inner 196": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be000b8 197": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be000b9 198": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 72px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:40px 20px 40px 20px;}"
+  }
+}

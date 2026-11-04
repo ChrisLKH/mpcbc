@@ -1,0 +1,542 @@
+{
+ "url": "sermons-4.html",
+ "at": "2026-11-03T09:21:10.807Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.54,
+    0.4,
+    0.34,
+    0.37,
+    0.31,
+    0.52,
+    0.82,
+    0.83,
+    0.92
+   ],
+   "motion": {
+    "elements": 26,
+    "css": 2,
+    "transitions": 24,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7327,
+     "screens": 8.1,
+     "words": 648,
+     "img": 21,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 9,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Sermons 講道",
+     "words": 2,
+     "chars": 10,
+     "lines": 2,
+     "size": 40.3,
+     "vw": 2.8,
+     "font": "Hanken Grotesk",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.23,
+     "top": 573,
+     "mixedFonts": [
+      "Hanken Grotesk",
+      "Noto Sans TC"
+     ],
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sermons 講道",
+     "words": 2,
+     "lines": 2,
+     "size": 40.3,
+     "font": "Hanken Grotesk"
+    },
+    "headings": [
+     {
+      "text": "Sermons 講道",
+      "words": 2,
+      "chars": 10,
+      "lines": 2,
+      "size": 40.3,
+      "vw": 2.8,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 573,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Series 系列",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1242,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Every sermon, newest first 所有講道，由新至舊",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 64.8,
+      "vw": 4.5,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5402,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 3
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Noto Sans TC",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      22,
+      24,
+      40,
+      65
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 29,
+     "max": {
+      "size": 64.8,
+      "vw": 4.5,
+      "font": "Hanken Grotesk",
+      "text": "Every sermon, newest first"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e8e8e3",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.1,
+      "l": 0.9
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 5272,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#181715",
+       "top": 6915,
+       "hsl": {
+        "h": 40,
+        "s": 0.07,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#181715",
+       "share": 0.51
+      },
+      {
+       "color": "#5c5b55",
+       "share": 0.27
+      },
+      {
+       "color": "#e8e8e3",
+       "share": 0.17
+      },
+      {
+       "color": "#b4b3ab",
+       "share": 0.03
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#181715",
+      "hsl": {
+       "h": 40,
+       "s": 0.07,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Search 搜尋"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 9,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.36
+     }
+    ],
+    "nav": {
+     "links": 11,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "hanken grotesk",
+     "noto sans tc"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7327,
+    "margins": {
+     "left": 32,
+     "right": 37
+    },
+    "sections": [
+     {
+      "sel": "section#top.o4-hero",
+      "tag": "section",
+      "top": 68,
+      "height": 1045,
+      "words": 36,
+      "media": 3,
+      "middle": 149,
+      "heading": {
+       "text": "Sermons",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 0,
+      "textLeft": 32,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#series.o4-series",
+      "tag": "section",
+      "top": 1113,
+      "height": 4160,
+      "words": 119,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Series",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "h2#o4-list-title.o4-statement.is-in",
+      "tag": "h2",
+      "top": 5402,
+      "height": 127,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#archive-body.o4-list__body",
+      "tag": "div",
+      "top": 5625,
+      "height": 1161,
+      "words": 173,
+      "media": 0,
+      "middle": 202,
+      "heading": null,
+      "left": 64,
+      "right": 48,
+      "textLeft": 64,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 6915,
+      "height": 412,
+      "words": 71,
+      "media": 0,
+      "middle": 117,
+      "heading": {
+       "text": "Visit",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Sermons 講道",
+      "size": 40,
+      "top": 573,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 6
+     },
+     {
+      "x": 75,
+      "n": 1
+     },
+     {
+      "x": 158,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 1080,
+     "y": 600,
+     "w": 360,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "3 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-4\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-4\\inspect\\desktop-page-01.jpg",
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-4\\inspect\\desktop-page-02.jpg",
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-4\\inspect\\desktop-page-03.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

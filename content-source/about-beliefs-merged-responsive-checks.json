@@ -1,0 +1,50 @@
+[
+  {
+    "beliefReaders": 1,
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "url": "http://mpcbc.local/about/#beliefs",
+    "width": 1440
+  },
+  {
+    "beliefReaders": 1,
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "url": "http://mpcbc.local/about/#beliefs",
+    "width": 390
+  },
+  {
+    "beliefReaders": 1,
+    "locale": "zh-Hant",
+    "overflow": false,
+    "panels": 8,
+    "url": "http://mpcbc.local/zh-hant/about/?lang=zh-hant#beliefs",
+    "width": 1440
+  },
+  {
+    "beliefReaders": 1,
+    "locale": "zh-Hant",
+    "overflow": false,
+    "panels": 8,
+    "url": "http://mpcbc.local/zh-hant/about/?lang=zh-hant#beliefs",
+    "width": 390
+  },
+  {
+    "beliefReaders": 1,
+    "locale": "zh-Hans",
+    "overflow": false,
+    "panels": 8,
+    "url": "http://mpcbc.local/zh-hans/about/?lang=zh-hans#beliefs",
+    "width": 1440
+  },
+  {
+    "beliefReaders": 1,
+    "locale": "zh-Hans",
+    "overflow": false,
+    "panels": 8,
+    "url": "http://mpcbc.local/zh-hans/about/?lang=zh-hans#beliefs",
+    "width": 390
+  }
+]

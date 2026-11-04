@@ -1,0 +1,34 @@
+[
+  {
+    "footer": true,
+    "forms": 3,
+    "overflow": false,
+    "selectorVisible": true,
+    "url": "/zh-hans/home/",
+    "width": 360
+  },
+  {
+    "footer": true,
+    "forms": 3,
+    "overflow": false,
+    "selectorVisible": true,
+    "url": "/zh-hans/home/",
+    "width": 390
+  },
+  {
+    "footer": true,
+    "forms": 3,
+    "overflow": false,
+    "selectorVisible": true,
+    "url": "/zh-hans/home/",
+    "width": 768
+  },
+  {
+    "footer": true,
+    "forms": 3,
+    "overflow": false,
+    "selectorVisible": false,
+    "url": "/zh-hans/home/",
+    "width": 1440
+  }
+]

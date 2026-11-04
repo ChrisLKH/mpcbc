@@ -1,0 +1,80 @@
+[
+  {
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "selectorVisible": false,
+    "width": 1440
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "selectorVisible": false,
+    "width": 1280
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "selectorVisible": false,
+    "width": 1110
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "selectorVisible": false,
+    "width": 768
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "selectorVisible": true,
+    "width": 390
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "panels": 8,
+    "selectorVisible": true,
+    "width": 360
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "panels": 8,
+    "width": 1280
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "panels": 8,
+    "width": 768
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "panels": 8,
+    "width": 390
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "panels": 8,
+    "width": 1280
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "panels": 8,
+    "width": 768
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "panels": 8,
+    "width": 390
+  }
+]

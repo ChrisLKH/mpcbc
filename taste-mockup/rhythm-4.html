@@ -1,0 +1,1230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monterey Park Chinese Baptist Church 慕道園華人浸信會</title>
+<meta name="description" content="Sunday worship in Cantonese, English and Mandarin at 302 W. Commonwealth Ave., Alhambra, California.">
+<script>
+  document.documentElement.classList.add('js');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* palette: Newsprint (taste-skill), with the brass brightened to a clear yellow */
+:root {
+  --bg: #e8e8e3;
+  --surface: #dcdcd6;
+  --ink: #181715;
+  --muted: #5c5b55;
+  --accent: #ffd21a;
+  --accent-ink: #181715;
+  --field: #181715;
+  --field-ink: #e8e8e3;
+  --field-muted: #b4b3ab;
+  --coupon: #ffd21a;
+  --coupon-ink: #181715;
+  --coupon-input: #fff4bf;
+  --disc-2: #ffd21a;
+  --kids-field: #ffe680;
+  --tone-1: #e8e8e3;
+  --tone-2: #d6d6cf;
+  --tone-3: #c4c4bc;
+  --scrim: rgba(24, 23, 21, 0.88);
+
+  /* type: Hanken Grotesk (taste-skill hanken-medium), a Google Font so Elementor free can load it */
+  --font-display: 'Hanken Grotesk', 'Noto Sans TC', system-ui, sans-serif;
+  --display-weight: 500;
+  --display-track: -0.05em;
+  --display-lead: 0.92;
+  --font-text: 'Hanken Grotesk', 'Noto Sans TC', system-ui, sans-serif;
+  --font-zh: 'Noto Sans TC', system-ui, sans-serif;
+
+  --step-small: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-title: clamp(2rem, 1.25rem + 2vw, 3rem);
+  --step-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+
+  --margin: clamp(1rem, 2.2vw, 2rem);
+  --gutter: clamp(1rem, 2vw, 2rem);
+  --section: clamp(6rem, 11vw, 10rem);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-press: 140ms;
+  --t-hover: 180ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-text); font-size: var(--step-body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, p, figure, ul, ol, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, video { display: block; max-width: 100%; height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 0.07em; }
+:target { scroll-margin-top: 1.5rem; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+p { max-width: 62ch; text-wrap: pretty; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: absolute; left: var(--margin); top: -4rem; z-index: 50; background: var(--ink); color: var(--bg); padding: 0.75rem 1.25rem; border-radius: 999px; }
+.skip:focus { top: 1rem; }
+
+/* type: one display setting everywhere, sentence case */
+.display { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-track); line-height: var(--display-lead); text-wrap: balance; }
+.head { font-size: var(--step-head); }
+.title { font-size: var(--step-title); }
+.small { font-size: var(--step-small); line-height: 1.45; }
+.muted { color: var(--muted); }
+.zh { font-family: var(--font-zh); font-weight: 500; }
+.h-zh { font-family: var(--font-zh); font-weight: 500; font-size: var(--step-lead); line-height: 1.3; margin-top: 0.75rem; color: var(--muted); }
+.nums { font-variant-numeric: tabular-nums; }
+
+.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+
+/* controls: one button shape, fully round */
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; min-height: 3.25rem; padding: 0 1.6rem; border-radius: 999px; background: var(--ink); color: var(--bg); font-weight: 600; text-decoration: none; white-space: nowrap; transition: transform var(--t-press) var(--ease-out), opacity var(--t-hover) ease; }
+.button--accent { background: var(--accent); color: var(--accent-ink); }
+.button--paper { background: var(--bg); color: var(--ink); }
+.button:active { transform: scale(0.97); }
+.link { text-decoration: underline; text-decoration-color: currentColor; transition: text-decoration-color var(--t-hover) ease; }
+a.link > .zh { margin-left: 0.35em; }
+@media (hover: hover) and (pointer: fine) {
+  .button:hover { opacity: 0.86; }
+  .link:hover { text-decoration-color: transparent; }
+}
+
+/* ---------- header ---------- */
+.top { position: absolute; inset: 0 0 auto 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem var(--margin); color: #f7f9f8; }
+.wordmark { display: inline-flex; align-items: baseline; gap: 0.6rem; text-decoration: none; font-weight: 700; font-size: var(--step-lead); line-height: 1; letter-spacing: -0.02em; }
+.wordmark .zh { font-size: var(--step-body); }
+.nav { display: flex; align-items: center; gap: clamp(1rem, 2vw, 2rem); }
+.nav a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.75rem; text-decoration: none; font-weight: 500; }
+.nav a .zh { font-size: var(--step-small); opacity: 0.85; }
+.nav a:hover, .nav a:focus-visible { text-decoration: underline; }
+.menu-button { display: none; min-height: 2.75rem; padding: 0 1.1rem; border-radius: 999px; background: var(--bg); color: var(--ink); font-weight: 600; }
+.menu-panel { position: absolute; z-index: 6; top: 5rem; left: var(--margin); right: var(--margin); background: var(--bg); color: var(--ink); padding: 0.5rem 0; }
+.menu-panel[hidden] { display: none; }
+.menu-panel a { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 1.5rem; min-height: 3rem; text-decoration: none; font-weight: 500; }
+.menu-panel a:hover { background: var(--surface); }
+.menu-panel .zh { color: var(--muted); }
+@media (max-width: 1099px) {
+  .nav { flex-wrap: wrap; justify-content: flex-end; }
+  .js .nav { display: none; }
+  .js .menu-button { display: inline-flex; align-items: center; }
+}
+
+/* ---------- hero: the film kept clear; names and four large times along its bottom ---------- */
+.hero { position: relative; min-height: max(42rem, 100svh); display: flex; flex-direction: column; justify-content: flex-end; padding: 6rem var(--margin) 1.5rem; overflow: hidden; background: #181715; color: #f7f9f8; }
+.hero__film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.88); background: #181715; }
+.hero::after { content: ""; position: absolute; inset: auto 0 0 0; height: 68%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--scrim)); pointer-events: none; } /* taste-skill-ignore: neutral scrim under text on the film */
+.hero__foot { position: relative; z-index: 2; }
+.hero__name { grid-column: 1 / 11; }
+.hero__name h1 span { display: block; }
+.hero__zh { font-family: var(--font-zh); font-weight: 700; font-size: var(--step-title); line-height: 1.2; margin-top: 0.75rem; }
+.hero__line { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 1.5rem; }
+.hero__line p { font-size: var(--step-lead); font-weight: 600; }
+.hero .button--accent { background: #ffd21a; color: #181715; }
+.strip { grid-column: 1 / -1; margin-top: 2.75rem; display: grid; grid-template-columns: 1.4fr repeat(4, minmax(0, 1fr)); gap: 1.25rem var(--gutter); align-items: end; }
+.slot b { display: block; font-family: var(--font-display); font-size: var(--step-title); font-weight: var(--display-weight); letter-spacing: var(--display-track); line-height: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.slot span { display: block; margin-top: 0.5rem; font-weight: 600; }
+.slot span .zh { display: inline; margin-left: 0.35rem; }
+.slot--label p { font-weight: 700; font-size: var(--step-lead); line-height: 1.2; }
+.slot--label p .zh { display: block; font-size: var(--step-body); opacity: 0.8; }
+.slot--label a { display: inline-flex; min-height: 2.75rem; align-items: center; margin-top: 0.25rem; }
+.hero__bar { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.5rem; }
+.hero__bar .credit { opacity: 0.8; }
+.film-toggle { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 2.75rem; padding: 0 1.1rem; border-radius: 999px; background: #f7f9f8; color: #181715; font-weight: 600; transition: transform var(--t-press) var(--ease-out); }
+.film-toggle:active { transform: scale(0.96); }
+.film-toggle svg { width: 0.9rem; height: 0.9rem; fill: currentColor; }
+@media (max-width: 1099px) {
+  .hero__name { grid-column: 1 / -1; }
+  .strip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .slot--label { order: 5; grid-column: 1 / -1; }
+}
+@media (max-width: 640px) {
+  .hero { padding: 5.5rem 1rem 1rem; }
+  .hero::after { height: 80%; }
+  .hero__name h1 { font-size: var(--step-title); }
+  .hero__name h1 span { display: inline; }
+  .hero__zh { font-size: var(--step-lead); }
+  .hero__line { margin-top: 1rem; }
+  .hero__line p { font-size: var(--step-body); }
+  .hero__line .button { width: 100%; min-height: 3.5rem; }
+  .strip { grid-template-columns: 1fr 1fr; margin-top: 1.5rem; row-gap: 1rem; }
+  .slot--label { display: none; }
+  .hero__bar { margin-top: 1rem; }
+}
+
+/* ---------- This Sunday: taste-skill "Output slips along the edge"; the sanctuary, three order-of-service slips standing on its bottom edge, each with its congregation's player
+   (Elementor: section with background image + overlay; slips absolute at the bottom, rotated via transform) ---------- */
+.sunday { position: relative; height: max(96svh, 60rem); padding: 0; overflow: hidden; color: #fff; background: var(--ink); }
+.sunday__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); }
+.sunday__intro { position: absolute; z-index: 2; left: 18%; top: 3.5rem; width: min(34rem, 60%); padding: 1.5rem 1.75rem; background: rgba(24, 23, 21, 0.6); }
+.sunday__lede { margin-top: 1rem; font-size: var(--t-title); line-height: 1.35; }
+.slips { position: absolute; z-index: 1; left: var(--margin); right: var(--margin); bottom: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: end; }
+.slip { background: var(--paper); color: var(--ink); padding: 1rem 1rem 3rem; }
+.slip:nth-child(1) { min-height: 0; transform: rotate(-1.5deg); transform-origin: bottom left; }
+.slip:nth-child(2) { min-height: 60svh; }
+.slip:nth-child(3) { min-height: 54svh; transform: rotate(1deg); transform-origin: bottom right; }
+.player { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--field); overflow: hidden; }
+.player img, .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.player img { filter: brightness(0.85); transition: filter 300ms ease; }
+.player__play { position: absolute; left: 0.75rem; bottom: 0.75rem; display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0 1rem; border-radius: 999px; background: #ffd21a; color: #181715; font-weight: 600; font-size: var(--step-small); transition: transform var(--t-press) var(--ease-out); }
+.player__play svg { width: 0.7rem; height: 0.7rem; fill: currentColor; }
+.player:active .player__play { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) { .player:hover img { filter: brightness(1); } }
+.service__links { display: flex; flex-wrap: wrap; gap: 0 1.25rem; margin-top: 0.25rem; }
+.service__links a { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 500; }
+.slip h3 { margin-top: 1rem; font-size: var(--t-title); font-weight: 500; line-height: 1.2; }
+.slip h3 .zh { display: inline; margin-left: 0.4em; font-size: inherit; }
+.slip__dash { margin: 0.5rem 0; color: var(--muted); letter-spacing: 0.2em; font-size: var(--t-small); max-width: none; overflow: hidden; white-space: nowrap; }
+.slip .service__when { font-size: var(--t-small); font-weight: 500; }
+.slip .service__latest { margin-top: 0.3rem; }
+@media (max-width: 899px) {
+  .sunday { height: auto; min-height: 0; padding: 0 var(--margin); }
+  .sunday__intro { position: relative; left: auto; top: auto; width: auto; margin-top: 4rem; }
+  .slips { position: relative; left: auto; right: auto; margin-top: 3rem; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .slip:nth-child(n) { min-height: 0; transform: none; }
+}
+
+/* ---------- Pastors: three name cards on the dark field ---------- */
+.pastors { background: var(--field); color: var(--field-ink); padding: var(--section) var(--margin) 6rem; }
+.pastors__head { grid-column: 1 / 6; }
+.pastors .h-zh { color: var(--field-muted); }
+.mission { grid-column: 7 / 13; }
+.mission p { font-size: var(--step-lead); line-height: 1.35; }
+.mission .zh { font-size: var(--step-body); line-height: 1.8; margin-top: 1rem; }
+.mission .mark { background: var(--accent); color: var(--accent-ink); padding: 0 0.15em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.namecards { grid-column: 1 / -1; margin-top: 4rem; display: grid; grid-template-columns: repeat(3, minmax(0, 16rem)); gap: clamp(2rem, 4vw, 4rem); align-items: start; }
+.namecard { background: var(--bg); color: var(--ink); padding: 0.75rem 0.75rem 1.25rem; }
+.deal:nth-child(1) .namecard { transform: rotate(-1.5deg); }
+.deal:nth-child(2) .namecard { transform: rotate(1deg); margin-top: 2.5rem; }
+.deal:nth-child(3) .namecard { transform: rotate(-0.5deg); margin-top: 1rem; }
+.namecard__face { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--surface); }
+.namecard__face--none { display: grid; place-items: center; padding: 1rem; text-align: center; color: var(--ink); font-size: var(--step-small); }
+.namecard__body { padding: 1rem 0.5rem 0; }
+.namecard__role { color: var(--muted); font-size: var(--step-small); }
+.namecard h3 { margin-top: 0.25rem; font-size: 1.25rem; font-style: italic; font-weight: 600; line-height: 1.2; }
+.namecard__zh { font-weight: 700; margin-top: 0.25rem; }
+.namecard__about { margin-top: 0.5rem; font-size: 1rem; line-height: 1.45; }
+.pastors__foot { grid-column: 1 / -1; margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; }
+.pastors__foot .link { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 600; }
+.pastors__foot .button { background: var(--bg); color: var(--ink); }
+@media (max-width: 899px) {
+  .pastors__head, .mission { grid-column: 1 / -1; }
+  .mission { margin-top: 2rem; }
+  .namecards { grid-template-columns: minmax(0, 34rem); margin-top: 3rem; gap: 1.5rem; }
+  .namecard { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; align-items: start; }
+  .deal:nth-child(n) .namecard { margin-top: 0; }
+  .namecard__body { padding: 0.5rem 0 0; }
+}
+@media (max-width: 640px) {
+  .pastors { padding-inline: 1rem; }
+  .namecards { grid-template-columns: 1fr; gap: 1.5rem; }
+  .namecard { grid-template-columns: 7rem 1fr; }
+  .deal:nth-child(n) .namecard { margin-top: 0; transform: rotate(-0.75deg); }
+  .deal:nth-child(2) .namecard { transform: rotate(0.75deg); }
+  .pastors__foot .button { width: 100%; white-space: normal; flex-direction: column; gap: 0.15rem; padding-block: 0.75rem; }
+}
+
+
+/* ---------- Kids: the owner's original mpcbc.local layout (card, heading, three age tiles, checklist, note, button), one real photo ---------- */
+.kids { padding: var(--section) var(--margin); }
+.kids__card { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 3rem clamp(2rem, 4vw, 4.5rem); align-items: center; padding: clamp(1.75rem, 5vw, 4.5rem); background: var(--kids-field); }
+.kids h2 { font-size: var(--step-head); }
+.kids__lede { margin-top: 1.25rem; font-size: var(--step-lead); line-height: 1.35; }
+.ages { margin-top: 2rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; }
+.age { padding: 1.25rem; background: var(--bg); }
+.age b { display: block; font-size: var(--step-lead); font-weight: 600; line-height: 1.15; }
+.age span { display: block; margin-top: 0.6rem; color: var(--muted); font-size: var(--step-small); }
+.ticks { margin-top: 1.75rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem var(--gutter); }
+.kids__zh { display: inline-block; margin-top: 1.25rem; padding: 0.5rem 1rem; background: var(--bg); font-family: var(--font-zh); font-weight: 500; }
+.kids__worship { margin-top: 1rem; color: var(--muted); font-size: var(--step-small); }
+.kids__actions { margin-top: 1.75rem; }
+.fade { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--surface); }
+.fade img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.6s ease; }
+.fade img:first-child, .fade img.is-on { opacity: 1; }
+.fade.is-running img:first-child:not(.is-on) { opacity: 0; }
+.kids__photo figcaption { margin-top: 0.6rem; color: var(--muted); font-size: var(--step-small); }
+@media (max-width: 1099px) {
+  .kids__card { grid-template-columns: 1fr; }
+  .fade { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 640px) {
+  .kids { padding-inline: 0.75rem; }
+  .kids h2 { font-size: var(--step-title); }
+  .ages { grid-template-columns: 1fr; }
+  .ticks { grid-template-columns: 1fr; }
+}
+
+/* ---------- Church life: the programme sheet ---------- */
+.life { padding: 2rem var(--margin) 6rem; }
+.zigzag { display: block; width: 100%; height: 14px; color: var(--field); }
+.zigzag--down { transform: scaleY(-1); }
+.programme { grid-column: 1 / -1; }
+.programme__paper { background: var(--field); color: var(--field-ink); padding: 4rem 3.5rem 3.5rem; }
+.programme h2 { font-size: var(--step-head); text-align: center; }
+.programme .h-zh { color: var(--field-muted); text-align: center; max-width: none; }
+.groups { margin-top: 3.5rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3rem clamp(2rem, 4vw, 4rem); }
+.group h3 { font-size: var(--step-lead); font-weight: 600; line-height: 1.2; }
+.group h3 .zh { margin-left: 0.4rem; font-weight: 500; color: var(--field-muted); }
+.items { margin-top: 1.25rem; display: grid; gap: 1.125rem; }
+.item__row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; }
+.item__row .leader { flex: 1; min-width: 1.5rem; border-bottom: 4px dotted var(--field-muted); transform: translateY(-0.3em); }
+.item__row .val { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.item__row a { text-decoration: none; }
+.item__row a:hover { text-decoration: underline; }
+.item__desc { font-size: var(--step-small); color: var(--field-muted); margin-top: 0.15rem; }
+@media (max-width: 899px) { .groups { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+  .life { padding-inline: 0.75rem; }
+  .programme__paper { padding: 2.5rem 1.25rem 2rem; }
+}
+
+/* ---------- Coming up: taste-skill "Statement, table pushed right", the month calendar in the open left side ---------- */
+.events { background: var(--surface); padding: 6rem var(--margin) var(--section); }
+.events__head { grid-column: 1 / -1; }
+.events__head h2 { font-size: var(--step-head); text-indent: 3vw; }
+.events__head .h-zh { padding-left: 3vw; }
+/* a page from a wall calendar pad: punched binding holes along the top (Elementor: border-top "Dotted", ground colour) */
+.cal { grid-column: 7 / 13; grid-row: 2; align-self: start; margin-top: 3.5rem; background: var(--bg); padding: 2rem 2rem 1.5rem; border-top: 14px dotted var(--surface); }
+.cal__top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.cal__top h3 { font-size: var(--step-lead); font-weight: 600; line-height: 1; }
+.cal__nav { display: flex; gap: 0.5rem; }
+.cal__nav button { width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--surface); font-weight: 700; transition: transform var(--t-press) var(--ease-out); }
+.cal__nav button:active { transform: scale(0.94); }
+.cal table { width: 100%; margin-top: 1.25rem; border-collapse: collapse; table-layout: fixed; text-align: center; font-variant-numeric: tabular-nums; }
+.cal th { padding-bottom: 0.75rem; font-weight: 600; font-size: var(--step-small); color: var(--muted); }
+.cal td { padding: 0.2rem 0; }
+.cal td span { display: inline-grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 50%; font-weight: 500; }
+.cal .is-worship span { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.cal .is-fellowship span { border: 2px solid var(--ink); }
+.cal .is-today span { background: var(--ink); color: var(--bg); }
+.cal__key { margin-top: 1.25rem; display: grid; gap: 0.35rem; font-size: var(--step-small); max-width: none; }
+.cal__key i { display: inline-block; width: 1rem; height: 1rem; border-radius: 50%; margin-right: 0.5rem; vertical-align: -0.15em; }
+.cal__key .k-worship { background: var(--accent); }
+.cal__key .k-fellowship { border: 2px solid var(--ink); }
+.agenda { grid-column: 1 / 6; grid-row: 2; margin-top: 3.5rem; position: relative; }
+.agenda table { width: 100%; border-collapse: collapse; }
+.agenda th, .agenda td { padding: 0 0 1.625rem; text-align: left; vertical-align: top; font-weight: 400; }
+.agenda th { width: 30%; color: var(--muted); padding-right: 1rem; }
+.agenda td:last-child { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 1rem; }
+.agenda .group th, .agenda .group td { padding-top: 1.25rem; }
+.agenda__all a { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 600; }
+.also { grid-column: 1 / -1; margin-top: 5rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem var(--gutter); align-items: start; }
+.also h3 { font-weight: 600; }
+.also p { margin-top: 0.35rem; }
+.also .links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+.also .links a { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 500; }
+.subscribe { display: grid; gap: 0.5rem; }
+.subscribe label { font-weight: 600; }
+.subscribe__row { display: flex; gap: 0.5rem; }
+.subscribe input { flex: 1; min-width: 0; min-height: 3.25rem; padding: 0.75rem 1.25rem; background: var(--bg); border: 1.5px solid var(--muted); border-radius: 0; font-size: var(--step-body); }
+@media (max-width: 899px) {
+  .events__head { order: -2; }
+  .events__head h2 { text-indent: 0; }
+  .events__head .h-zh { padding-left: 0; }
+  .cal, .agenda, .also { grid-column: 1 / -1; grid-row: auto; }
+  .agenda { margin-top: 3rem; order: -1; }
+  .cal { margin-top: 3rem; }
+  .also { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .events { padding-inline: 1rem; }
+  .cal { padding: 1.25rem 0.75rem; }
+  .cal td span { width: 2.2rem; height: 2.2rem; }
+  .agenda th { display: block; width: auto; padding: 0; }
+  .agenda tr { display: grid; grid-template-columns: 1fr auto; padding-bottom: 1.25rem; }
+  .agenda th { grid-column: 1 / -1; }
+  .agenda td { padding: 0; }
+  .subscribe__row { flex-direction: column; }
+}
+
+/* ---------- Newsletter: taste-skill "Square plate, spare text"; a drawn cover of each issue, tabs switch issues
+   (Elementor: Nested Tabs; each tab panel holds the cover and the text) ---------- */
+.nlB { background: var(--kids-field); padding: var(--section) var(--margin); }
+.nlB__head { grid-column: 1 / 7; }
+.nlB .nl__lede { margin-top: 1rem; }
+.nlB__tabs { grid-column: 8 / 13; align-self: end; display: flex; gap: 0.5rem; }
+.nlB__tabs button { min-height: 2.75rem; padding: 0 1.25rem; border-radius: 999px; background: var(--paper); font-weight: 500; transition: transform var(--t-press) var(--ease-out); }
+.nlB__tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+.nlB__tabs button:active { transform: scale(0.97); }
+.nlB__issue { grid-column: 1 / -1; margin-top: 2.5rem; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.nlB__issue[hidden] { display: none; }
+.nlB__plate { grid-column: 1 / 7; aspect-ratio: 4 / 3; display: grid; place-items: center; background: var(--accent); }
+.nlB__cover { width: 46%; aspect-ratio: 8.5 / 11; padding: 1.75rem 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; background: var(--paper); transform: rotate(-2deg); }
+.nlB__cover b { font-size: 2rem; font-weight: 500; line-height: 1; letter-spacing: -0.03em; }
+.nlB__cover .zh { font-size: var(--t-title); }
+.nlB__cover p { font-size: var(--t-small); }
+.nlB__rule { border-top: 6px dotted var(--ink); }
+.nlB__side { grid-column: 8 / 13; display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; }
+.nlB__side h3 { font-size: var(--t-head); font-weight: 500; line-height: 1.05; letter-spacing: -0.035em; }
+.nlB__zh { margin-top: 0.75rem; font-size: var(--t-title); }
+.nlB__side p:not(.nlB__zh):not(.nlB__cells) { margin-top: 1rem; max-width: 36ch; }
+.nlB__cells { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.nlB__cells a { display: grid; place-items: center; min-height: 4.5rem; border-radius: 999px; background: var(--paper); font-weight: 500; text-decoration: none; transition: transform var(--t-press) var(--ease-out); }
+.nlB__cells a:first-child { background: var(--ink); color: var(--bg); }
+.nlB__cells a:active { transform: scale(0.98); }
+.nlB__sub { grid-column: 8 / 13; margin-top: 2rem; }
+@media (max-width: 899px) {
+  .nlB__head, .nlB__tabs, .nlB__plate, .nlB__side, .nlB__sub { grid-column: 1 / -1; }
+  .nlB__tabs { margin-top: 1.5rem; }
+  .nlB__side { margin-top: 2rem; }
+}
+
+/* ---------- Visit and say hello: the clip-out coupon ---------- */
+.connect { background: var(--field); color: var(--field-ink); }
+.connect__photo { width: 100%; height: 56svh; min-height: 22rem; object-fit: cover; object-position: 35% 45%; }
+.connect__inner { padding: 0 var(--margin) var(--section); }
+.coupon { grid-column: 2 / 12; position: relative; margin-top: -7.5rem; display: grid; grid-template-columns: 46fr 54fr; min-height: 32rem; background: var(--coupon); color: var(--coupon-ink); }
+.coupon::before, .coupon::after { content: ""; position: absolute; left: 46%; width: 28px; height: 28px; margin-left: -14px; border-radius: 50%; background: var(--field); }
+.coupon::before { top: -14px; }
+.coupon::after { bottom: -14px; }
+.coupon__stub { padding: 3rem; display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; border-right: 5px dotted var(--field); }
+.coupon__stub h2 { font-size: var(--step-title); }
+.coupon__stub .zh-h { font-family: var(--font-zh); font-weight: 700; margin-top: 0.5rem; }
+.coupon__stub address { font-style: normal; font-size: var(--step-lead); line-height: 1.3; }
+.coupon__hours { margin-top: 1rem; display: grid; gap: 0.15rem; font-variant-numeric: tabular-nums; }
+.coupon__hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 22rem; }
+.coupon__hours dd { font-weight: 600; }
+.coupon__stub .actions { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; }
+.coupon .button { background: var(--coupon-ink); color: var(--coupon); }
+.coupon__stub .actions a.link { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 500; }
+.coupon__form { padding: 3rem; }
+.coupon__form > p { margin-bottom: 1.25rem; }
+.tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tabs button { min-height: 2.75rem; padding: 0 1.25rem; border-radius: 999px; background: var(--coupon-input); color: var(--ink); font-weight: 600; transition: transform var(--t-press) var(--ease-out); }
+.tabs button:active { transform: scale(0.97); }
+.tabs button[aria-selected="true"] { background: var(--coupon-ink); color: var(--coupon); }
+.tabs button .zh { margin-left: 0.35rem; font-weight: 500; }
+.form { margin-top: 1.25rem; display: grid; gap: 0.625rem; }
+.form[hidden] { display: none; }
+.form input, .form select, .form textarea { width: 100%; min-height: 3.25rem; padding: 0.75rem 1.1rem; background: var(--coupon-input); color: var(--ink); border: 0; border-radius: 0; font-size: var(--step-body); }
+.form input::placeholder, .form textarea::placeholder { color: var(--muted); opacity: 1; }
+.form textarea { min-height: 5.5rem; resize: vertical; }
+.form fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 0.25rem; }
+.form legend { font-weight: 600; margin-bottom: 0.25rem; }
+.form .check { display: flex; align-items: center; gap: 0.6rem; min-height: 2.75rem; }
+.form .check input { width: 1.25rem; min-height: 1.25rem; height: 1.25rem; accent-color: var(--coupon-ink); }
+.form .bar { width: 100%; min-height: 3.5rem; margin-top: 0.25rem; background: var(--coupon-ink); color: var(--coupon); }
+@media (max-width: 899px) {
+  .coupon { grid-column: 1 / -1; grid-template-columns: 1fr; }
+  /* the tear line runs across under the stub, so the notches sit on its ends */
+  .coupon::before, .coupon::after { display: none; }
+  .coupon__stub { position: relative; border-right: 0; border-bottom: 5px dotted var(--field); }
+  .coupon__stub::before, .coupon__stub::after { content: ""; position: absolute; bottom: -16.5px; width: 28px; height: 28px; border-radius: 50%; background: var(--field); }
+  .coupon__stub::before { left: -14px; }
+  .coupon__stub::after { right: -14px; }
+}
+@media (max-width: 640px) {
+  .connect__inner { padding-inline: 0.75rem; }
+  .coupon { margin-top: -4rem; }
+  .coupon__stub, .coupon__form { padding: 2rem 1.25rem; }
+}
+
+/* ---------- Give: the envelope addressed to the church ---------- */
+.give { padding: var(--section) var(--margin); }
+.envelope { grid-column: 2 / 12; }
+.envelope { position: relative; }
+/* the front of an airmail envelope: white paper, a striped yellow edge, a postmark beside the stamp
+   (Elementor: container border-image or a striped SVG background strip; postmark = a round dotted-border text box) */
+.postmark { position: absolute; top: 2.75rem; right: 10rem; z-index: 2; width: 6rem; height: 6rem; display: grid; place-items: center; text-align: center; border-radius: 50%; border: 4px dotted var(--ink); font-size: 0.8125rem; font-weight: 500; line-height: 1.3; transform: rotate(-12deg); opacity: 0.6; }
+@media (max-width: 1099px) { .postmark { display: none; } }
+.envelope__paper { background: var(--paper, #fff); border: 12px solid transparent; border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M0 0h12L0 12zM24 0h12L0 36V24zM48 0v12L12 48H0zM48 24v12l-12 12H24z' fill='%23ffffff'/%3E%3Cpath d='M12 0h12L0 24V12zM36 0h12L0 48V36zM48 12v12L24 48H12zM48 36v12H36z' fill='%23ffd21a'/%3E%3C/svg%3E") 12 round; padding: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem 4rem; }
+.envelope h2 { font-size: var(--step-title); }
+.envelope__msg > p { margin-top: 1.25rem; }
+.envelope__msg .zh-line { font-family: var(--font-zh); margin-top: 0.5rem; }
+.envelope__actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
+.envelope__actions .link { font-weight: 500; display: inline-flex; min-height: 2.75rem; align-items: center; }
+.envelope__to { align-self: end; }
+.envelope__to .small { color: var(--muted); margin-bottom: 0.5rem; }
+.stamp { position: absolute; top: 3rem; right: 3.25rem; z-index: 2; width: 5.5rem; padding: 8px; background: var(--bg); transform: rotate(3deg); }
+.stamp img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.addr { display: grid; gap: 0.35rem; font-size: var(--step-lead); line-height: 1.3; font-style: normal; }
+.addr .zh { color: var(--muted); font-size: var(--step-body); }
+@media (max-width: 899px) {
+  .envelope { grid-column: 1 / -1; }
+  .envelope__paper { grid-template-columns: 1fr; padding: 6rem 1.5rem 2.5rem; }
+  .stamp { top: 1.5rem; right: 1.5rem; width: 4.25rem; padding: 6px; }
+}
+@media (max-width: 640px) {
+  .give { padding-inline: 0.75rem; }
+  .envelope__actions .button { width: 100%; white-space: normal; flex-direction: column; gap: 0.15rem; padding-block: 0.75rem; }
+}
+
+/* ---------- Footer: the paper stub the page ends on ---------- */
+.foot { position: relative; background: var(--field); color: var(--field-ink); padding: 5rem var(--margin) 2rem; }
+.foot__cols { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem var(--gutter); }
+.foot h2 { font-size: var(--step-body); font-weight: 700; }
+.foot h2 .zh { margin-left: 0.4rem; font-weight: 500; color: var(--field-muted); }
+.foot ul { margin-top: 0.75rem; display: grid; }
+.foot li a { display: inline-flex; min-height: 2.75rem; align-items: center; text-decoration: none; }
+.foot li a:hover { text-decoration: underline; }
+.foot li .zh { margin-left: 0.4rem; color: var(--field-muted); }
+.foot p { margin-top: 0.75rem; }
+.foot .times-mini { display: grid; gap: 0.1rem; font-variant-numeric: tabular-nums; }
+.foot .times-mini span { color: var(--field-muted); }
+.foot__name { grid-column: 1 / -1; margin-top: 6rem; font-size: var(--step-head); }
+.foot__name span { display: block; }
+.foot__name span + span { text-align: right; }
+.foot__name-zh { grid-column: 1 / -1; margin-top: 1rem; font-family: var(--font-zh); font-weight: 700; font-size: var(--step-title); color: var(--accent); }
+.foot__bar { grid-column: 1 / -1; margin-top: 3rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; align-items: center; color: var(--field-muted); }
+.foot__bar p { margin: 0; }
+.foot__bar a { display: inline-flex; min-height: 2.75rem; align-items: center; color: var(--field-ink); }
+.foot__bar .langs { display: flex; gap: 1.25rem; }
+@media (max-width: 899px) { .foot__cols { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) {
+  .foot { padding: 3.5rem 1rem 1.5rem; }
+  .foot__cols { grid-template-columns: 1fr; gap: 2rem; }
+  .foot__name { font-size: var(--step-title); margin-top: 4rem; }
+  .foot__name span + span { text-align: left; }
+}
+
+/* ================= type system: every section except the hero =================
+   Five sizes on the page: hero (its own) · heading · title · body · small. Weights 400 and 500 only.
+   A "fact" is the small size at 500 in full ink; "small print" is the small size at 400 in the soft ink.
+   Elementor: Global Fonts "Heading", "Title", "Body", "Small", "Fact". */
+:root {
+  --t-head: clamp(2.5rem, 1.75rem + 2.2vw, 3.5rem);   /* 40–56px */
+  --t-title: clamp(1.25rem, 1.1rem + 0.45vw, 1.5rem); /* 20–24px */
+  --t-body: 1.0625rem;                                /* 17px */
+  --t-small: 0.9375rem;                               /* 15px */
+  --paper: #ffffff;                                   /* white paper pieces on the grey page: cards, tiles, chips, calendar page */
+}
+main > section:not(.hero), .foot { font-size: var(--t-body); line-height: 1.5; }
+main > section:not(.hero) p { max-width: 60ch; }
+
+/* section heading: English, then its Chinese in full ink at title size, one layout everywhere, left-aligned */
+main > section:not(.hero) h2.display { font-size: var(--t-head); font-weight: 500; line-height: 1; letter-spacing: -0.035em; text-align: left; }
+main > section:not(.hero) .h-zh, .coupon__stub .zh-h { margin-top: 0.5rem; font-family: var(--font-zh); font-size: var(--t-title); font-weight: 500; line-height: 1.3; color: inherit; text-align: left; padding: 0; }
+
+/* title: services, pastors, groups, events, reading, calendar month, age groups; Chinese sits beside, same size */
+.service h3, .namecard h3, .group h3, .ev h3, .read h3, .cal__top h3, .age b {
+  font-size: var(--t-title); font-weight: 500; font-style: normal; line-height: 1.2; letter-spacing: -0.01em; }
+.service h3 .zh, .group h3 .zh, .read h3 .zh { display: inline; margin: 0 0 0 0.4em; font-size: inherit; font-weight: 500; color: inherit; }
+.namecard__zh { margin-top: 0.15rem; font-size: var(--t-title); font-weight: 500; line-height: 1.2; }
+
+/* statements and leads take the title size at the text weight */
+.mission p:first-child, .kids__lede, .coupon__stub address, .addr { font-size: var(--t-title); font-weight: 400; line-height: 1.35; }
+.mission .zh, .addr .zh { font-size: var(--t-body); }
+
+/* facts: time, room, age, role, date, opening hours */
+.service__when, .namecard__role, .age span, .ev__meta, .coupon__hours, .cal__key, .foot h2, .foot .times-mini, .envelope__to .small {
+  font-size: var(--t-small); font-weight: 500; line-height: 1.45; font-variant-numeric: tabular-nums; color: inherit; }
+.foot h2 .zh { color: inherit; }
+
+/* small print: captions, notes, placeholders */
+.item__desc, .kids__worship, figcaption, .cal th, .foot__bar, .cal__key .muted, .namecard__face--none {
+  font-size: var(--t-small); font-weight: 400; }
+
+/* body text everywhere else, at 17px */
+.namecard__about, .service__latest, .ticks, .item__row, .form input, .form select, .form textarea, .subscribe input, .tabs button,
+.foot li a, .foot__cols p, .envelope__msg > p, .read p { font-size: var(--t-body); }
+
+/* weights: 400 and 500 only */
+main > section:not(.hero) :is(b, strong, dd, dt, legend, label, th, .val, .link, a, button), .foot :is(h2, a) { font-weight: 500; }
+main > section:not(.hero) .button, .foot .button, .player__play { font-weight: 500; }
+.cal .is-worship span { font-weight: 500; }
+.foot__name-zh { font-weight: 500; }
+
+/* ---------- spacing: tighter between and inside sections ---------- */
+:root { --section: clamp(4.5rem, 7vw, 7rem); }
+.pastors { padding-bottom: var(--section); }
+.mission { align-self: end; }
+.ages { margin-top: 1.75rem; }
+.ticks { margin-top: 1.5rem; }
+.groups { margin-top: 2.5rem; }
+.items { margin-top: 1rem; gap: 0.9rem; }
+.programme__paper { padding: 3rem 3rem 2.75rem; }
+
+/* ---------- pastors: back to the previous card size, a little smaller ---------- */
+.namecards { margin-top: 3rem; grid-template-columns: repeat(3, minmax(0, 24rem)); gap: clamp(1.5rem, 3vw, 3rem); }
+.namecard { padding: 1rem 1rem 1.5rem; background: var(--paper); }
+.namecard__body { padding: 1.25rem 0.5rem 0; }
+.namecard__about { margin-top: 0.6rem; }
+@media (max-width: 899px) {
+  .namecards { grid-template-columns: 1fr; }
+  .namecard { grid-template-columns: 2fr 3fr; }
+}
+@media (max-width: 640px) {
+  .namecard { grid-template-columns: 2fr 3fr; }
+}
+
+/* ---------- paper pieces ---------- */
+.age, .kids__zh, .cal, .ev__date { background: var(--paper); }
+.stamp { background: var(--paper); }
+.subscribe input { background: var(--paper); }
+/* the kids photo as a print: a white paper mat, nothing else (Elementor: container with white background + padding) */
+.kids__photo .fade { border: 14px solid var(--paper); }
+
+/* ---------- Coming up: compact event units, the column runs as tall as the calendar ---------- */
+.events { padding-top: var(--section); }
+.events__head h2 { text-indent: 0; }
+.agenda { grid-column: 1 / 7; grid-row: 2; margin-top: 2.5rem; }
+.events__side { grid-column: 7 / 13; grid-row: 2; margin-top: 2.5rem; }
+.events__side .cal { margin-top: 0; }
+.evs { display: grid; gap: 1.25rem; }
+/* each date is a small leaf torn off the calendar pad */
+.ev { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+.ev__date { display: grid; justify-items: center; align-content: center; min-height: 4.5rem; padding: 0.5rem 0.25rem; text-align: center; line-height: 1.15; }
+.ev__date b { font-size: var(--t-title); font-weight: 500; }
+.ev__date span { font-size: var(--t-small); color: var(--muted); }
+.ev h3 { padding-top: 0.35rem; }
+.ev__meta { margin-top: 0.2rem; }
+.agenda__all { margin-top: 1rem; }
+.reads { margin-top: 2.5rem; display: grid; gap: 1.5rem; }
+.read p { margin-top: 0.3rem; }
+.read .links { display: flex; flex-wrap: wrap; gap: 0 1.25rem; margin-top: 0.1rem; }
+.read .links a { display: inline-flex; min-height: 2.75rem; align-items: center; }
+.events__side .subscribe { margin-top: 1.5rem; }
+@media (max-width: 899px) {
+  .agenda, .events__side { grid-column: 1 / -1; grid-row: auto; }
+  .events__side { margin-top: 3rem; }
+}
+
+/* ---------- Visit, Give, footer ---------- */
+.coupon__stub h2 { margin-bottom: 0; }
+.coupon__hours { margin-top: 0.75rem; }
+.envelope__msg > p { margin-top: 1rem; }
+.foot ul { margin-top: 0.5rem; }
+.foot__cols p { margin-top: 0.5rem; }
+
+/* ---------- motion (each has an Elementor free equivalent) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-rise] { opacity: 0; transform: translateY(24px); animation: rise 900ms var(--ease-out) forwards; animation-delay: calc(var(--i, 0) * 90ms + 150ms); }
+  .js [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 700ms var(--ease-out), transform 900ms var(--ease-out); transition-delay: calc(var(--i, 0) * 80ms); }
+  .js [data-reveal].is-in { opacity: 1; transform: none; }
+  .js [data-anim] { opacity: 0; transition: opacity 700ms var(--ease-out), transform 900ms var(--ease-out); transition-delay: var(--d, calc(var(--i, 0) * 90ms)); }
+  .js [data-anim="from-left"] { transform: translateX(-32px); }
+  .js [data-anim="from-right"] { transform: translateX(32px); }
+  .js [data-anim="from-up"] { transform: translateY(32px); }
+  .js [data-anim="slide-up"] { transform: translateY(48px); transition-duration: 700ms, 1100ms; }
+  .js [data-anim="drop"] { transform: translateY(-24px) rotate(3deg); }
+  .js [data-anim="settle"] { transform: scale(0.94); }
+  .js [data-anim].is-in { opacity: 1; transform: none; }
+  .js .stamp[data-anim].is-in { transform: rotate(3deg); }
+  .js .fade img.is-on { animation: kenburns 7.2s linear both; }
+}
+/* on a phone the coupon and envelope are taller than a scroll step: they are simply there */
+@media (max-width: 899px) {
+  .js .coupon[data-anim], .js .envelope[data-anim] { opacity: 1; transform: none; }
+  .js .stamp[data-anim] { opacity: 1; transform: rotate(3deg); }
+}
+@keyframes rise { to { opacity: 1; transform: none; } }
+@keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.1); } }
+/* rhythm option 4 */
+.top { position: fixed; transition: background-color 200ms ease, color 200ms ease; }
+.top.is-scrolled { background: #fff; color: var(--ink); border-bottom: 1px solid var(--tone-3); }
+body, .kids, .give, .events { background: #fff; }
+.slip:nth-child(n) { transform: none; }
+.pastors { color: var(--ink); }
+.pastors .h-zh { color: var(--ink); }
+.pastors .mission p, .pastors .mission .zh { color: var(--ink); }
+.pastors__foot .button { background: var(--ink); color: #fff; }
+.pastors__foot .link { color: var(--ink); }
+.cal { background: var(--bg); border-top-color: #fff; }
+.ev__date { background: var(--bg); }
+
+.sunday { background: var(--bg); color: var(--ink); height: auto; min-height: 0; padding: var(--section) var(--margin); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.sunday__photo { display: none; }
+.sunday__intro { position: static; grid-column: 1 / 7; width: auto; padding: 0; background: none; }
+.slips { position: static; grid-column: 1 / -1; margin-top: 3rem; }
+.slip:nth-child(1) { min-height: 30rem; } .slip:nth-child(2) { min-height: 34rem; } .slip:nth-child(3) { min-height: 32rem; }
+.pastors { background: #fff; } .namecard { background: var(--bg); }
+.kids { background: var(--kids-field); } .kids__card { background: transparent; padding: 0; }
+.life { background: var(--field); padding: var(--section) var(--margin); } .zigzag { display: none; } .programme__paper { padding: 0; }
+.nlB { background: var(--bg); } .nlB__tabs button:not([aria-selected="true"]), .nlB__cells a:not(:first-child) { background: #fff; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="wordmark" href="#top" aria-label="MPCBC home">MPCBC <span class="zh">慕道園</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#sundays">Sundays <span class="zh">主日</span></a>
+    <a href="#about">Pastors <span class="zh">牧師</span></a>
+    <a href="#kids">Kids <span class="zh">兒童</span></a>
+    <a href="#events">Events <span class="zh">活動</span></a>
+    <a href="#news">News <span class="zh">通訊</span></a>
+    <a href="#connect">Visit <span class="zh">交通</span></a>
+    <a href="#give">Give <span class="zh">奉獻</span></a>
+    <a class="zh" href="http://mpcbc.local/?lang=zh-hant" lang="zh-Hant">繁體</a>
+    <a class="zh" href="http://mpcbc.local/?lang=zh-hans" lang="zh-Hans">简体</a>
+  </nav>
+  <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-panel" data-menu>Menu&nbsp;<span class="zh" lang="zh-Hant">選單</span></button>
+</header>
+<nav class="menu-panel" id="menu-panel" aria-label="Main" hidden>
+  <a href="#sundays">Sundays <span class="zh" lang="zh-Hant">主日</span></a>
+  <a href="#about">Pastors <span class="zh" lang="zh-Hant">牧師</span></a>
+  <a href="#kids">Kids <span class="zh" lang="zh-Hant">兒童</span></a>
+  <a href="#events">Events <span class="zh" lang="zh-Hant">活動</span></a>
+  <a href="#connect">Visit <span class="zh" lang="zh-Hant">交通</span></a>
+  <a href="#give">Give <span class="zh" lang="zh-Hant">奉獻</span></a>
+  <a href="http://mpcbc.local/?lang=zh-hant" lang="zh-Hant">繁體中文 <span class="zh">Traditional</span></a>
+  <a href="http://mpcbc.local/?lang=zh-hans" lang="zh-Hans">简体中文 <span class="zh">Simplified</span></a>
+</nav>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <video class="hero__film" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-hidden="true">
+      <source src="assets/hero-1080.mp4" type="video/mp4" media="(min-width: 900px)">
+      <source src="assets/hero-720.mp4" type="video/mp4">
+    </video>
+
+    <div class="grid hero__foot">
+      <div class="hero__name">
+        <h1 class="display head" id="hero-title" data-rise style="--i:0"><span>Monterey Park</span> <span>Chinese Baptist Church</span></h1>
+        <p class="hero__zh" lang="zh-Hant" data-rise style="--i:1">慕道園華人浸信會</p>
+        <div class="hero__line" data-rise style="--i:2">
+          <p>Know God. Grow together.</p>
+          <a class="button button--accent" href="#sundays">Join us this Sunday</a>
+        </div>
+      </div>
+      <ul class="strip" aria-label="Sunday mornings" data-rise style="--i:3">
+        <li class="slot slot--label">
+          <p>Sunday mornings <span class="zh" lang="zh-Hant">主日聚會</span></p>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801">302 W. Commonwealth Ave.</a>
+        </li>
+        <li class="slot"><b>9:00 AM</b><span>Mandarin <span class="zh" lang="zh-Hant">國語</span></span></li>
+        <li class="slot"><b>10:00 AM</b><span>Children <span class="zh" lang="zh-Hant">兒童</span></span></li>
+        <li class="slot"><b>11:00 AM</b><span>Cantonese <span class="zh" lang="zh-Hant">粵語</span></span></li>
+        <li class="slot"><b>11:00 AM</b><span>English <span class="zh" lang="zh-Hant">英語</span></span></li>
+      </ul>
+    </div>
+
+    <div class="hero__bar">
+      <p class="credit small">On screen: VBS Magnified! 2025</p>
+      <button class="film-toggle" type="button" data-film-toggle aria-pressed="false">
+        <svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg>
+        <span>Pause film</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="sunday" id="sundays" aria-labelledby="sundays-title">
+    <img class="sunday__photo" src="assets/sanctuary-aisle.jpg" width="1600" height="900" alt="" loading="lazy">
+    <div class="sunday__intro" data-reveal>
+      <h2 class="display" id="sundays-title">This Sunday</h2>
+      <p class="h-zh" lang="zh-Hant">本主日</p>
+      <p class="sunday__lede">Three congregations worship under one roof at 302 W. Commonwealth Ave. Watch live or catch up on the latest message.</p>
+    </div>
+    <div class="slips" id="sermons" data-reveal>
+        <article class="slip">
+          <a class="player" href="https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw/live" data-yt="UCnxu_A53vGhcNohchKzZ7hw" data-title="Mandarin worship live on YouTube">
+              <img src="assets/sanctuary-aisle.jpg" width="1600" height="900" alt="" loading="lazy">
+              <span class="player__play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z"/></svg>Watch</span>
+            </a>
+          <h3>Mandarin worship <span class="zh" lang="zh-Hant">國語主日崇拜</span></h3>
+          <p class="slip__dash" aria-hidden="true">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+          <p class="service__when">Sundays 9:00 AM, Sanctuary</p>
+          <p class="service__latest">Latest: <span lang="zh-Hant">[講道題目]</span>, [Speaker]</p>
+          <p class="service__links"><a class="link" href="https://mpcbc.net/category/mandarin-sermons/">Archive <span class="zh" lang="zh-Hant">存檔</span></a><a class="link" href="https://www.youtube.com/@MPCBC">YouTube @MPCBC</a></p>
+        </article>
+        <article class="slip">
+          <a class="player" href="https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw/live" data-yt="UCnxu_A53vGhcNohchKzZ7hw" data-title="Cantonese worship live on YouTube">
+              <img src="assets/sanctuary-vbs.jpg" width="1600" height="900" alt="" loading="lazy">
+              <span class="player__play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z"/></svg>Watch</span>
+            </a>
+          <h3>Cantonese worship <span class="zh" lang="zh-Hant">粵語主日崇拜</span></h3>
+          <p class="slip__dash" aria-hidden="true">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+          <p class="service__when">Sundays 11:00 AM, Sanctuary</p>
+          <p class="service__latest">Latest: <span lang="zh-Hant">[講道題目]</span>, [Speaker]</p>
+          <p class="service__links"><a class="link" href="https://mpcbc.net/category/cantonese-sermons/">Archive <span class="zh" lang="zh-Hant">存檔</span></a><a class="link" href="https://www.youtube.com/@MPCBC">YouTube @MPCBC</a></p>
+        </article>
+        <article class="slip">
+          <a class="player" href="https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ/live" data-yt="UCJx8Xl0QqiNkZwwfLXaASHQ" data-title="English worship live on YouTube">
+              <img src="assets/courtyard-lights.jpg" width="1600" height="900" alt="" loading="lazy">
+              <span class="player__play"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z"/></svg>Watch</span>
+            </a>
+          <h3>English worship <span class="zh" lang="zh-Hant">英語主日崇拜</span></h3>
+          <p class="slip__dash" aria-hidden="true">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+          <p class="service__when">Sundays 11:00 AM, Fellowship Hall (Connect Ministry)</p>
+          <p class="service__latest">Latest: [Sermon title], [Speaker]</p>
+          <p class="service__links"><a class="link" href="https://mpcbc.net/english/connect-ministry-sermons/">Messages</a><a class="link" href="https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ">English YouTube</a></p>
+        </article>
+    </div>
+  </section>
+
+  <section class="pastors" id="about" aria-labelledby="pastors-title">
+    <div class="grid">
+      <div class="pastors__head" data-reveal>
+        <h2 class="display head" id="pastors-title">Meet our pastors</h2>
+        <p class="h-zh" lang="zh-Hant">認識我們的牧師</p>
+      </div>
+      <div class="mission" data-reveal style="--i:1">
+        <p><span class="mark">Knowing God is our foundation.</span> Glorifying God is our goal.</p>
+        <p class="zh" lang="zh-Hant">認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。</p>
+      </div>
+
+      <div class="namecards">
+        <div class="deal" data-anim="from-left" style="--i:0"><article class="namecard">
+          <img class="namecard__face" src="assets/pastor-caleb.jpg" width="600" height="600" alt="Rev. Caleb Cheung, smiling, in a grey suit and red tie" loading="lazy">
+          <div class="namecard__body">
+            <p class="namecard__role">Pastor, Cantonese</p>
+            <h3>Rev. Caleb Cheung, Ph.D.</h3>
+            <p class="namecard__zh zh" lang="zh-Hant">張健庭牧師</p>
+            <p class="namecard__about">Senior pastor; studied at Fuller Theological Seminary and Claremont Graduate University.</p>
+          </div>
+        </article></div>
+        <div class="deal" data-anim="from-up" style="--i:1"><article class="namecard">
+          <p class="namecard__face namecard__face--none">[Photo of Rev. Edward Lu]</p>
+          <div class="namecard__body">
+            <p class="namecard__role">Pastor, English</p>
+            <h3>Rev. Edward Lu</h3>
+            <p class="namecard__zh zh" lang="zh-Hant">[牧師姓名]</p>
+            <p class="namecard__about">Lead pastor of Connect Ministry, the church’s English-language ministry.</p>
+          </div>
+        </article></div>
+        <div class="deal" data-anim="from-right" style="--i:2"><article class="namecard">
+          <p class="namecard__face namecard__face--none">[Photo of the Mandarin pastor]</p>
+          <div class="namecard__body">
+            <p class="namecard__role">Pastor, Mandarin</p>
+            <h3>[Pastor name]</h3>
+            <p class="namecard__zh zh" lang="zh-Hant">[牧師姓名]</p>
+            <p class="namecard__about">[One line about this pastor.]</p>
+          </div>
+        </article></div>
+      </div>
+
+      <p class="pastors__foot" data-reveal>
+        <a class="button button--paper" href="http://mpcbc.local/about/">Our story and team <span class="zh" lang="zh-Hant">教會介紹及教牧團隊</span></a>
+        <a class="link" href="mailto:info@mpcbc.net">info@mpcbc.net</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="kids" id="kids" aria-labelledby="kids-title">
+    <div class="grid">
+      <div class="kids__card" data-reveal>
+        <div>
+          <h2 class="display" id="kids-title">Your kids will want to come back.</h2>
+          <p class="h-zh" lang="zh-Hant">兒童及青少年</p>
+          <p class="kids__lede">Safe, fun classes for every age while you’re in the service.</p>
+          <ul class="ages">
+            <li class="age"><b>Nursery</b><span>Ages 0–3, all morning</span></li>
+            <li class="age"><b>Kids</b><span>Ages 4–11, [time]</span></li>
+            <li class="age"><b>Youth</b><span>Sunday school, Sundays 10:00–10:45 AM</span></li>
+          </ul>
+          <ul class="ticks">
+            <li>Secure check-in with matching tags</li>
+            <li>Classes taught in English</li>
+            <li>Background-checked volunteers</li>
+            <li>Chinese-speaking helpers for parents</li>
+          </ul>
+          <p class="kids__zh" lang="zh-Hant">課堂以英語進行，登記處有中文同工協助家長。</p>
+          <p class="kids__worship">Children’s worship is held on Sundays at 11:00 AM. [The Sunday timetable says 10:00 AM: confirm.]</p>
+          <p class="kids__actions"><a class="button" href="#life">See Kids &amp; Youth</a></p>
+        </div>
+        <figure class="kids__photo">
+          <div class="fade" data-fade>
+            <img src="assets/vbs-crafts.jpg" width="1600" height="900" alt="Children at a craft table holding up paper flowers they made" loading="lazy">
+            <img src="assets/vbs-wave.jpg" width="1600" height="900" alt="Three girls in VBS shirts waving at the camera in the courtyard" loading="lazy">
+            <img src="assets/vbs-floor.jpg" width="1600" height="900" alt="Children in “Love God, love others” shirts building on the classroom floor" loading="lazy">
+          </div>
+          <figcaption>VBS Magnified! 2025 at MPCBC.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="life" id="life" aria-labelledby="life-title">
+    <div class="grid">
+      <div class="programme" data-reveal>
+        <svg class="zigzag" viewBox="0 0 480 14" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 14 L10 0 L20 14 L30 0 L40 14 L50 0 L60 14 L70 0 L80 14 L90 0 L100 14 L110 0 L120 14 L130 0 L140 14 L150 0 L160 14 L170 0 L180 14 L190 0 L200 14 L210 0 L220 14 L230 0 L240 14 L250 0 L260 14 L270 0 L280 14 L290 0 L300 14 L310 0 L320 14 L330 0 L340 14 L350 0 L360 14 L370 0 L380 14 L390 0 L400 14 L410 0 L420 14 L430 0 L440 14 L450 0 L460 14 L470 0 L480 14 Z"/></svg>
+        <div class="programme__paper">
+          <h2 class="display" id="life-title">Church life</h2>
+          <p class="h-zh" lang="zh-Hant">教會生活</p>
+          <div class="groups">
+            <div class="group">
+              <h3>Youth and students <span class="zh" lang="zh-Hant">青少年</span></h3>
+              <ul class="items">
+                <li><p class="item__row"><a href="https://mpcbc.net/english/fellowship-bible-study-and-prayer/">Youth Sunday School</a><span class="leader"></span><span class="val">Sun 10:00–10:45 AM</span></p><p class="item__desc">In the education annex.</p></li>
+                <li><p class="item__row"><a href="https://mpcbc.net/english/fellowship-bible-study-and-prayer/">College / Career Fellowship</a><span class="leader"></span><span class="val">Mon 6:30–9:00 PM</span></p><p class="item__desc">In West Covina.</p></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3>Fellowships <span class="zh" lang="zh-Hant">團契</span></h3>
+              <ul class="items">
+                <li><p class="item__row"><span>Cantonese <span class="zh" lang="zh-Hant">粵語</span></span><span class="leader"></span><span class="val">[Day, time]</span></p></li>
+                <li><p class="item__row"><a href="https://mpcbc.net/english/fellowship-bible-study-and-prayer/">English</a><span class="leader"></span><span class="val">[Day, time]</span></p></li>
+                <li><p class="item__row"><span>Mandarin <span class="zh" lang="zh-Hant">國語</span></span><span class="leader"></span><span class="val">[Day, time]</span></p><p class="item__desc">Study the Bible, pray and grow together.</p></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3>Care <span class="zh" lang="zh-Hant">關懷</span></h3>
+              <ul class="items">
+                <li><p class="item__row"><a href="#connect" data-open-prayer>Prayer request <span class="zh" lang="zh-Hant">代禱</span></a><span class="leader"></span><span class="val">A pastor reads every one</span></p></li>
+                <li><p class="item__row"><span>[Counseling]</span><span class="leader"></span><span class="val">[Details]</span></p></li>
+                <li><p class="item__row"><span>[Visitation]</span><span class="leader"></span><span class="val">[Details]</span></p><p class="item__desc">[How the church cares for people when life is hard.]</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <svg class="zigzag zigzag--down" viewBox="0 0 480 14" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 14 L10 0 L20 14 L30 0 L40 14 L50 0 L60 14 L70 0 L80 14 L90 0 L100 14 L110 0 L120 14 L130 0 L140 14 L150 0 L160 14 L170 0 L180 14 L190 0 L200 14 L210 0 L220 14 L230 0 L240 14 L250 0 L260 14 L270 0 L280 14 L290 0 L300 14 L310 0 L320 14 L330 0 L340 14 L350 0 L360 14 L370 0 L380 14 L390 0 L400 14 L410 0 L420 14 L430 0 L440 14 L450 0 L460 14 L470 0 L480 14 Z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="events" id="events" aria-labelledby="events-title">
+    <div class="grid">
+      <div class="events__head" data-reveal>
+        <h2 class="display" id="events-title">Coming up</h2>
+        <p class="h-zh" lang="zh-Hant">近期活動</p>
+      </div>
+
+      <div class="agenda" data-reveal>
+        <ul class="evs">
+          <li class="ev"><p class="ev__date"><b>[Day]</b><span>[Mon]</span></p><div><h3>[Event title]</h3><p class="ev__meta">[Time], [Place]</p></div></li>
+          <li class="ev"><p class="ev__date"><b>[Day]</b><span>[Mon]</span></p><div><h3>[Event title]</h3><p class="ev__meta">[Time], [Place]</p></div></li>
+          <li class="ev"><p class="ev__date"><b>[Day]</b><span>[Mon]</span></p><div><h3>[Event title]</h3><p class="ev__meta">[Time], [Place]</p></div></li>
+          <li class="ev"><p class="ev__date"><b>Mon</b><span>weekly</span></p><div><h3>College / Career Fellowship</h3><p class="ev__meta">6:30–9:00 PM, West Covina</p></div></li>
+        </ul>
+        <p class="agenda__all"><a class="link" href="#events">See all events</a></p>
+
+        <div class="reads">
+          <article class="read">
+            <h3>Read the Bible in a year <span class="zh" lang="zh-Hant">讀經計劃</span></h3>
+            <p>Learn about the Reformation Reading Plan and the YouVersion Bible App.</p>
+            <p class="links"><a class="link" href="https://mpcbc.net/english/bible-in-a-year/">See the plan</a></p>
+          </article>
+        </div>
+      </div>
+
+      <div class="events__side">
+        <div class="cal" data-anim="settle" data-cal>
+          <div class="cal__top">
+            <h3 data-cal-title>This month</h3>
+            <p class="cal__nav"><button type="button" data-cal-step="-1" aria-label="Previous month">‹</button><button type="button" data-cal-step="1" aria-label="Next month">›</button></p>
+          </div>
+          <table aria-describedby="cal-key">
+            <thead><tr><th scope="col">Sun</th><th scope="col">Mon</th><th scope="col">Tue</th><th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th></tr></thead>
+            <tbody data-cal-body></tbody>
+          </table>
+          <p class="cal__key" id="cal-key"><span><i class="k-worship"></i>Sunday worship <span class="zh" lang="zh-Hant">主日崇拜</span></span><span><i class="k-fellowship"></i>College / Career Fellowship, Mondays 6:30 PM</span><span class="muted">[Event days are circled here once their dates are added.]</span></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="nl nlB" id="news" aria-labelledby="news-title">
+    <div class="grid">
+      <div class="nlB__head" data-reveal>
+        <h2 class="display" id="news-title">Newsletter</h2>
+        <p class="h-zh" lang="zh-Hant">通訊</p>
+        <p class="nl__lede">Stories, reflections and ministry updates from our church family.</p>
+      </div>
+      <div class="nlB__tabs" role="tablist" aria-label="Newsletter issues">
+        <button type="button" role="tab" id="tab-jul" aria-controls="issue-jul" aria-selected="true">July 2026</button>
+        <button type="button" role="tab" id="tab-jan" aria-controls="issue-jan" aria-selected="false" tabindex="-1">January 2026</button>
+      </div>
+      <article class="nlB__issue" id="issue-jul" role="tabpanel" aria-labelledby="tab-jul">
+          <div class="nlB__plate"><div class="nlB__cover">
+            <b>Newsletter</b><span class="zh" lang="zh-Hant">通訊</span>
+            <p class="fact">Monterey Park Chinese Baptist Church<br>July 2026</p>
+            <div class="nlB__rule"></div>
+            <p>Faith, testimony and mission</p>
+            <p>Testimonies, trusting God, mission in Mongolia and Hong Kong</p>
+          </div></div>
+        <div class="nlB__side">
+          <div>
+            <h3>Faith, testimony and mission</h3>
+            <p class="nlB__zh zh" lang="zh-Hant">2026年7月會刊：信仰見證、信靠神與宣教分享。</p>
+            <p>The July issue shares personal testimonies, reflections on trusting God and mission experiences in Mongolia and Hong Kong.</p>
+          </div>
+          <p class="nlB__cells"><a href="https://mpcbc.net/english/newsletters__trashed/newsletter-july-2026/">Read the newsletter</a><a href="https://mpcbc.net/wp-content/uploads/2026/07/MPCBC-Jul-2026-Newsletter-FINAL-V3.pdf">Open PDF</a></p>
+        </div>
+      </article>
+      <article class="nlB__issue" id="issue-jan" role="tabpanel" aria-labelledby="tab-jan" hidden>
+          <div class="nlB__plate"><div class="nlB__cover">
+            <b>Newsletter</b><span class="zh" lang="zh-Hant">通訊</span>
+            <p class="fact">Monterey Park Chinese Baptist Church<br>January 2026</p>
+            <div class="nlB__rule"></div>
+            <p>Devotionals, church reflections and mission updates from Paris</p>
+          </div></div>
+        <div class="nlB__side">
+          <div>
+            <h3>January 2026 newsletter</h3>
+            <p>Devotionals, church reflections and mission updates from Paris.</p>
+          </div>
+          <p class="nlB__cells"><a href="https://mpcbc.net/english/newsletters__trashed/newsletter-january-2026/">Read the newsletter</a></p>
+        </div>
+      </article>
+      <form class="subscribe nlB__sub" data-mail="subscribe">
+        <label for="sub-email">Stay in the loop (Weekly Email)</label>
+        <span class="subscribe__row"><input id="sub-email" name="email" type="email" autocomplete="email" required><button class="button" type="submit">Subscribe</button></span>
+      </form>
+    </div>
+  </section>
+
+  <section class="connect" id="connect" aria-labelledby="connect-title">
+    <img class="connect__photo" src="assets/church-commonwealth.jpg" width="2400" height="1800" alt="The church at 302 W. Commonwealth Ave.: a cream stucco chapel with a white steeple, palm trees and a black iron fence" loading="lazy">
+    <div class="connect__inner">
+      <div class="grid">
+        <div class="coupon" data-anim="slide-up">
+          <div class="coupon__stub">
+            <div>
+              <h2 class="display" id="connect-title">We’d love to hear from you.</h2>
+              <p class="zh-h" lang="zh-Hant">與我們聯絡</p>
+            </div>
+            <div>
+              <address>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</address>
+              <dl class="coupon__hours">
+                <div><dt>Mandarin <span class="zh" lang="zh-Hant">國語</span></dt><dd>9:00 AM</dd></div>
+                <div><dt>Children <span class="zh" lang="zh-Hant">兒童</span></dt><dd>10:00 AM</dd></div>
+                <div><dt>Cantonese <span class="zh" lang="zh-Hant">粵語</span></dt><dd>11:00 AM</dd></div>
+                <div><dt>English</dt><dd>11:00 AM</dd></div>
+              </dl>
+            </div>
+            <p class="actions">
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801">Get directions <span class="zh" lang="zh-Hant">交通指引</span></a>
+              <a class="link" href="tel:+16262891284">(626) 289-1284</a>
+            </p>
+          </div>
+
+          <div class="coupon__form">
+            <p>Tell us you’re coming and someone will look out for you. Or send a prayer request. A pastor reads every one and keeps it private.</p>
+            <div class="tabs" role="tablist" aria-label="Choose a card">
+              <button type="button" role="tab" id="tab-hello" aria-controls="form-hello" aria-selected="true">Say hello <span class="zh" lang="zh-Hant">聯絡卡</span></button>
+              <button type="button" role="tab" id="tab-prayer" aria-controls="form-prayer" aria-selected="false" tabindex="-1">Prayer request <span class="zh" lang="zh-Hant">代禱</span></button>
+            </div>
+            <form class="form" id="form-hello" role="tabpanel" aria-labelledby="tab-hello" data-mail="hello">
+              <label class="sr-only" for="f-name">Your name 姓名</label><input id="f-name" name="name" autocomplete="name" placeholder="Your name 姓名" required>
+              <label class="sr-only" for="f-contact">Email or phone 電郵或電話</label><input id="f-contact" name="contact" autocomplete="email" placeholder="Email or phone 電郵或電話" required>
+              <label class="sr-only" for="f-service">Which service will you visit? 參加哪一堂？</label>
+              <select id="f-service" name="service">
+                <option value="">Which service will you visit? 參加哪一堂？</option>
+                <option value="cantonese">Cantonese 粵語, 11:00</option>
+                <option value="english">English, 11:00</option>
+                <option value="mandarin">Mandarin 國語, 9:00</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+              <label class="sr-only" for="f-note">Anything we should know? (Optional)</label><textarea id="f-note" name="note" placeholder="Anything we should know? (Optional)"></textarea>
+              <button class="button bar" type="submit">Send</button>
+            </form>
+            <form class="form" id="form-prayer" role="tabpanel" aria-labelledby="tab-prayer" data-mail="prayer" hidden>
+              <label class="sr-only" for="p-request">Your prayer request</label><textarea id="p-request" name="request" placeholder="Your prayer request" required></textarea>
+              <label class="sr-only" for="p-name">Name (optional)</label><input id="p-name" name="name" autocomplete="name" placeholder="Name (optional)">
+              <label class="sr-only" for="p-contact">Email or phone (optional)</label><input id="p-contact" name="contact" autocomplete="email" placeholder="Email or phone (optional)">
+              <fieldset>
+                <legend>Who may see this?</legend>
+                <label class="check"><input type="radio" name="who" value="Pastors only" checked> Pastors only</label>
+                <label class="check"><input type="radio" name="who" value="Pastors and the prayer team"> Pastors and the prayer team</label>
+              </fieldset>
+              <label class="check"><input type="checkbox" name="contactme" value="yes"> I’d like someone to contact me</label>
+              <button class="button bar" type="submit">Send prayer request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="give" id="give" aria-labelledby="give-title">
+    <div class="grid">
+      <div class="envelope" data-anim="fade">
+        <figure class="stamp" data-anim="drop" style="--d:600ms"><img src="assets/steeple-stamp.jpg" width="300" height="400" alt="The church's white steeple and cross" loading="lazy"></figure>
+        <p class="postmark" aria-hidden="true">ALHAMBRA CA<br>91801</p>
+        <div class="envelope__paper">
+          <div class="envelope__msg">
+            <h2 class="display" id="give-title">Give</h2>
+            <p class="h-zh" lang="zh-Hant">奉獻</p>
+            <p>Make checks payable to MPCBC and mail to the church address.</p>
+            <p class="zh-line" lang="zh-Hant">奉獻支票抬頭請寫 MPCBC，郵寄至教會地址。</p>
+            <p class="envelope__actions">
+              <a class="button button--accent" href="https://www.paypal.com/donate/?hosted_button_id=PQJTK3MEFJ9M2">Give with PayPal <span class="zh" lang="zh-Hant">透過 PayPal 奉獻</span></a>
+              <a class="link" href="http://mpcbc.local/give/">Ways to give <span class="zh" lang="zh-Hant">奉獻方式</span></a>
+            </p>
+          </div>
+          <div class="envelope__to">
+            <p class="small">Pay to MPCBC, mail to</p>
+            <address class="addr">
+              <span>Monterey Park Chinese Baptist Church</span>
+              <span class="zh" lang="zh-Hant">慕道園華人浸信會</span>
+              <span>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</span>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" aria-label="Church details">
+  <div class="grid">
+    <div class="foot__cols">
+      <div>
+        <h2>Visit <span class="zh" lang="zh-Hant">交通指南</span></h2>
+        <p>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</p>
+        <p class="times-mini"><span>Sundays <span class="zh" lang="zh-Hant">主日</span></span>Mandarin 9:00 AM<br>Children 10:00 AM<br>Cantonese 11:00 AM<br>English 11:00 AM</p>
+        <ul><li><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801">Get directions <span class="zh" lang="zh-Hant">交通指引</span></a></li></ul>
+      </div>
+      <div>
+        <h2>Contact <span class="zh" lang="zh-Hant">聯絡</span></h2>
+        <ul>
+          <li><a href="tel:+16262891284">(626) 289-1284</a></li>
+          <li><a href="mailto:info@mpcbc.net">info@mpcbc.net</a></li>
+          <li><a href="#connect" data-open-prayer>Prayer request <span class="zh" lang="zh-Hant">代禱</span></a></li>
+        </ul>
+        <p>Office hours: [Days, times]</p>
+      </div>
+      <div>
+        <h2>Follow <span class="zh" lang="zh-Hant">關注</span></h2>
+        <ul>
+          <li><a href="https://www.instagram.com/mpcbconnect/">Instagram @mpcbconnect</a></li>
+          <li><a href="https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ">English YouTube</a></li>
+          <li><a href="https://www.youtube.com/@MPCBC">YouTube @MPCBC <span class="zh" lang="zh-Hant">中文</span></a></li>
+          <li><span>WeChat <span class="zh" lang="zh-Hant">微信群</span> [group link]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Explore <span class="zh" lang="zh-Hant">探索</span></h2>
+        <ul>
+          <li><a href="http://mpcbc.local/visit/">Plan your visit</a></li>
+          <li><a href="#sundays">Watch live <span class="zh" lang="zh-Hant">直播</span></a></li>
+          <li><a href="#events">Events <span class="zh" lang="zh-Hant">活動</span></a></li>
+          <li><a href="#kids">Kids and youth <span class="zh" lang="zh-Hant">兒童及青少年</span></a></li>
+          <li><a href="https://mpcbc.net/english/newsletters__trashed/newsletter-july-2026/">Newsletter <span class="zh" lang="zh-Hant">通訊</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="foot__name display" aria-hidden="true"><span>Monterey Park</span> <span>Chinese Baptist Church</span></p>
+    <p class="foot__name-zh" lang="zh-Hant" aria-hidden="true">慕道園華人浸信會</p>
+
+    <div class="foot__bar small">
+      <p>[Church logo] Founded in 1977, Alhambra, California.</p>
+      <p class="langs"><a href="http://mpcbc.local/?lang=zh-hant" lang="zh-Hant">繁體中文</a><a href="http://mpcbc.local/?lang=zh-hans" lang="zh-Hans">简体中文</a><a href="#top">Back to top</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+
+  // ---- phone menu ----
+  const menuBtn = document.querySelector('[data-menu]'), menu = document.getElementById('menu-panel');
+  const setMenu = (open) => { menu.hidden = !open; menuBtn.setAttribute('aria-expanded', String(open)); };
+  menuBtn.addEventListener('click', () => setMenu(menu.hidden));
+  menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { setMenu(false); menuBtn.focus(); } });
+
+  // ---- the film: pause control, reduced motion shows the poster ----
+  const film = document.querySelector('.hero__film');
+  const toggle = document.querySelector('[data-film-toggle]');
+  const setFilm = (play) => {
+    if (play) film.play().catch(() => {}); else film.pause();
+    toggle.setAttribute('aria-pressed', String(!play));
+    toggle.querySelector('span').textContent = play ? 'Pause film' : 'Play film';
+    toggle.querySelector('svg').innerHTML = play
+      ? '<rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/>'
+      : '<path d="M2 1 L9 5 L2 9 Z"/>';
+  };
+  if (reduce.matches) setFilm(false);
+  toggle.addEventListener('click', () => setFilm(film.paused));
+
+  // ---- entrance: fade in and up once (Elementor: Entrance Animation "Fade In Up" + delay) ----
+  const targets = document.querySelectorAll('[data-reveal], [data-anim]');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    targets.forEach((el) => io.observe(el));
+    addEventListener('load', () => setTimeout(() => targets.forEach((el) => {
+      const r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('is-in');
+    }), 2500));
+  } else targets.forEach((el) => el.classList.add('is-in'));
+
+  // ---- signature: slow crossfade with a slow zoom on the kids photo (Elementor: background slideshow, Ken Burns) ----
+  const fade = document.querySelector('[data-fade]');
+  if (fade && !reduce.matches) {
+    const imgs = [...fade.querySelectorAll('img')];
+    let i = 0, timer = null;
+    imgs.forEach((img) => (img.loading = 'eager'));
+    imgs[0].classList.add('is-on');
+    fade.classList.add('is-running');
+    const step = () => { imgs[i].classList.remove('is-on'); i = (i + 1) % imgs.length; imgs[i].classList.add('is-on'); };
+    const start = () => { if (!timer) timer = setInterval(step, 6000); };
+    const stop = () => { clearInterval(timer); timer = null; };
+    start();
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  }
+
+  // ---- the three service players load YouTube only when asked (Elementor: Video widget, image overlay + lazy load) ----
+  // ponytail: channel live_stream embeds until the sermon plugin picks each congregation's video; Cantonese and Mandarin share @MPCBC.
+  document.querySelectorAll('[data-yt]').forEach((a) => a.addEventListener('click', (e) => {
+    e.preventDefault();
+    const f = document.createElement('iframe');
+    f.src = `https://www.youtube-nocookie.com/embed/live_stream?channel=${a.dataset.yt}&autoplay=1`;
+    f.title = a.dataset.title;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    const box = document.createElement('div');
+    box.className = 'player';
+    box.append(f);
+    a.replaceWith(box);
+  }));
+
+  // ---- month calendar: marks the real recurring days (Sunday worship, Monday fellowship) and today ----
+  // ponytail: dated events get circled once they exist; in WordPress this needs an events plugin (none is installed).
+  const cal = document.querySelector('[data-cal]');
+  const laToday = () => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric' }).formatToParts(new Date()).map((x) => [x.type, x.value])); return { y: +p.year, m: +p.month - 1, d: +p.day }; };
+  const today = laToday();
+  let view = { y: today.y, m: today.m };
+  const drawCal = () => {
+    const first = new Date(Date.UTC(view.y, view.m, 1)).getUTCDay();
+    const days = new Date(Date.UTC(view.y, view.m + 1, 0)).getUTCDate();
+    cal.querySelector('[data-cal-title]').textContent = new Date(Date.UTC(view.y, view.m, 1)).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', year: 'numeric' });
+    let html = '<tr>' + '<td></td>'.repeat(first);
+    for (let d = 1; d <= days; d++) {
+      const dow = (first + d - 1) % 7;
+      const cls = view.y === today.y && view.m === today.m && d === today.d ? 'is-today' : dow === 0 ? 'is-worship' : dow === 1 ? 'is-fellowship' : '';
+      html += `<td class="${cls}"><span>${d}</span></td>`;
+      if (dow === 6 && d < days) html += '</tr><tr>';
+    }
+    cal.querySelector('[data-cal-body]').innerHTML = html + '</tr>';
+  };
+  cal.querySelectorAll('[data-cal-step]').forEach((b) => b.addEventListener('click', () => {
+    const m = view.m + Number(b.dataset.calStep);
+    view = { y: view.y + Math.floor(m / 12), m: ((m % 12) + 12) % 12 };
+    drawCal();
+  }));
+  drawCal();
+
+  // ---- reply tabs (Elementor: Nested Tabs) ----
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const showTab = (tab) => [...tab.closest('[role="tablist"]').querySelectorAll('[role="tab"]')].forEach((t) => {
+    const on = t === tab;
+    t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+  });
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => showTab(t));
+    t.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const group = [...t.closest('[role="tablist"]').querySelectorAll('[role="tab"]')], j = group.indexOf(t);
+      const n = group[(j + (e.key === 'ArrowRight' ? 1 : group.length - 1)) % group.length];
+      showTab(n); n.focus();
+    });
+  });
+  document.querySelectorAll('[data-open-prayer]').forEach((a) => a.addEventListener('click', () => showTab(document.getElementById('tab-prayer'))));
+
+  // ponytail: no form backend in the mockup; Send opens an email to the office. Wire to Fluent Forms in WordPress.
+  document.querySelectorAll('form[data-mail]').forEach((f) => f.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(f), lines = [];
+    for (const [k, v] of data) if (v) lines.push(`${k}: ${v}`);
+    const subject = { prayer: 'Prayer request', subscribe: 'Subscribe to the weekly email' }[f.dataset.mail] || 'Say hello (Connect Card)';
+    location.href = `mailto:info@mpcbc.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+  }));
+})();
+</script>
+<script>(() => { const t = document.querySelector('.top'); const f = () => t.classList.toggle('is-scrolled', scrollY > 40); addEventListener('scroll', f, { passive: true }); f(); })();</script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+{
+    "version": "0.4",
+    "title": "Give · 奉獻",
+    "type": "page",
+    "page_settings": {
+        "hide_title": "yes"
+    },
+    "content": [
+        {
+            "id": "bc0006e",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=mist"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "56",
+                    "bottom": "80",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "32",
+                    "bottom": "64",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "20",
+                    "bottom": "48",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "bc0006d",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        },
+                        "_element_id": "giving"
+                    },
+                    "elements": [
+                        {
+                            "id": "bc00069",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "Give",
+                                "header_size": "h1",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=interior_h1"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "bc0006a",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "奉獻",
+                                "header_size": "div",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=ink_soft",
+                                    "typography_typography": "globals/typography?id=interior_subtitle"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "bc0006b",
+                            "elType": "widget",
+                            "settings": {
+                                "editor": "<p>Giving is a Christian’s privilege, responsibility and a channel of blessing. God is pleased when believers give willingly. You can give in the following ways.</p>",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=interior_body"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                        },
+                        {
+                            "id": "bc0006c",
+                            "elType": "widget",
+                            "settings": {
+                                "editor": "<p lang=\"zh-Hant\">奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻:</p>",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=interior_zh"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "bc00080",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "56",
+                    "bottom": "80",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "32",
+                    "bottom": "64",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "20",
+                    "bottom": "48",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "bc0007f",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "bc0007e",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 24
+                                },
+                                "flex_direction_mobile": "column",
+                                "flex_wrap": "wrap"
+                            },
+                            "elements": [
+                                {
+                                    "id": "bc00075",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc00074",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0006f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Give online",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00070",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "網上奉獻",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00071",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Give through the church’s PayPal donation page.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00072",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">透過教會的 PayPal 奉獻頁面進行奉獻。</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00073",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Give with PayPal · 透過 PayPal 奉獻",
+                                                        "link": {
+                                                            "url": "https://www.paypal.com/donate/?hosted_button_id=PQJTK3MEFJ9M2"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=white",
+                                                            "background_color": "globals/colors?id=primary",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "bc0007d",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 48
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "bc0007c",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "background_background": "classic",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "32",
+                                                    "right": "32",
+                                                    "bottom": "32",
+                                                    "left": "32",
+                                                    "isLinked": false
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": "24",
+                                                    "right": "24",
+                                                    "bottom": "24",
+                                                    "left": "24",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00076",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Give by cheque",
+                                                        "header_size": "h2",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_h2"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00077",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "支票奉獻",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=interior_subtitle"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00078",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Make your cheque payable to MPCBC and mail it to the church address below.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00079",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p lang=\"zh-Hant\">支票抬頭請寫 MPCBC，郵寄教會地址：</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_zh"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0007a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=interior_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0007b",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Contact us · 聯絡我們",
+                                                        "link": {
+                                                            "url": "mailto:info@mpcbc.net"
+                                                        },
+                                                        "align": "left",
+                                                        "size": "md",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "12",
+                                                            "bottom": "12",
+                                                            "left": "12",
+                                                            "isLinked": false
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "16",
+                                                            "right": "24",
+                                                            "bottom": "16",
+                                                            "left": "24",
+                                                            "isLinked": false
+                                                        },
+                                                        "background_color": "",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": "1",
+                                                            "right": "1",
+                                                            "bottom": "1",
+                                                            "left": "1",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "border_color": "globals/colors?id=line",
+                                                            "typography_typography": "globals/typography?id=interior_button"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

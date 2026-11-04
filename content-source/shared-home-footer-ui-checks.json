@@ -1,0 +1,87 @@
+{
+  "homeResponsive": [
+    {
+      "forms": 3,
+      "overflow": false,
+      "selectorVisible": false,
+      "simplified": 50,
+      "traditional": 0,
+      "url": "http://mpcbc.local/?lang=zh-hans",
+      "width": 1440
+    },
+    {
+      "forms": 3,
+      "overflow": false,
+      "selectorVisible": false,
+      "simplified": 50,
+      "traditional": 0,
+      "url": "http://mpcbc.local/?lang=zh-hans",
+      "width": 1280
+    },
+    {
+      "forms": 3,
+      "overflow": false,
+      "selectorVisible": false,
+      "simplified": 50,
+      "traditional": 0,
+      "url": "http://mpcbc.local/?lang=zh-hans",
+      "width": 1110
+    },
+    {
+      "forms": 3,
+      "overflow": false,
+      "selectorVisible": true,
+      "simplified": 50,
+      "traditional": 0,
+      "url": "http://mpcbc.local/?lang=zh-hans",
+      "width": 768
+    },
+    {
+      "forms": 3,
+      "overflow": false,
+      "selectorVisible": true,
+      "simplified": 50,
+      "traditional": 0,
+      "url": "http://mpcbc.local/?lang=zh-hans",
+      "width": 390
+    },
+    {
+      "forms": 3,
+      "overflow": false,
+      "selectorVisible": true,
+      "simplified": 50,
+      "traditional": 0,
+      "url": "http://mpcbc.local/?lang=zh-hans",
+      "width": 360
+    }
+  ],
+  "interiorFooters": [
+    {
+      "footerTemplate": "16",
+      "overflow": false,
+      "selected": "zh-hans",
+      "url": "http://mpcbc.local/zh-hans/about/?lang=zh-hans#beliefs",
+      "visibleSC": 6,
+      "visibleTC": 0
+    },
+    {
+      "footerTemplate": "16",
+      "overflow": false,
+      "selected": "zh-hant",
+      "url": "http://mpcbc.local/zh-hant/give/?lang=zh-hant",
+      "visibleSC": 0,
+      "visibleTC": 6
+    },
+    {
+      "footerTemplate": "16",
+      "overflow": false,
+      "selected": "zh-hans",
+      "url": "http://mpcbc.local/prayer/?lang=zh-hans",
+      "visibleSC": 6,
+      "visibleTC": 0
+    }
+  ],
+  "legacyRedirect": "http://mpcbc.local/?lang=zh-hans#sunday-times",
+  "desktopSwitchPreservedPausedVideo": true,
+  "homeSwitchesWithoutReload": true
+}

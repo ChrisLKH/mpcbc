@@ -1,0 +1,1026 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"ab0000a 11\"><e-flexbox configuration-id=\"ab00009 10\"><e-flexbox configuration-id=\"Boxed inner 9\"><e-flexbox configuration-id=\"ab00008 8\"><e-flexbox configuration-id=\"ab00005 5\"><e-paragraph configuration-id=\"ab00001 1\"></e-paragraph><e-heading configuration-id=\"ab00002 2\"></e-heading><e-paragraph configuration-id=\"ab00003 3\"></e-paragraph><e-paragraph configuration-id=\"ab00004 4\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab00007 7\"><e-image configuration-id=\"ab00006 6\"></e-image></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab00010 19\"><e-flexbox configuration-id=\"ab0000f 18\"><e-flexbox configuration-id=\"Boxed inner 17\"><e-flexbox configuration-id=\"ab0000e 16\"><e-paragraph configuration-id=\"ab0000b 12\"></e-paragraph><e-paragraph configuration-id=\"ab0000c 13\"></e-paragraph><e-paragraph configuration-id=\"ab0000d 14\"></e-paragraph><e-paragraph configuration-id=\"bf00021 15\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab00026 45\"><e-flexbox configuration-id=\"ab00025 44\"><e-flexbox configuration-id=\"Boxed inner 43\"><e-flexbox configuration-id=\"ab00024 42\"><e-flexbox configuration-id=\"ab00013 22\"><e-paragraph configuration-id=\"ab00011 20\"></e-paragraph><e-heading configuration-id=\"ab00012 21\"></e-heading></e-flexbox><e-flexbox configuration-id=\"ab00023 41\"><e-paragraph configuration-id=\"ab00014 23\"></e-paragraph><e-flexbox configuration-id=\"ab0001e 33\"><e-flexbox configuration-id=\"ab00017 26\"><e-heading configuration-id=\"ab00015 24\"></e-heading><e-paragraph configuration-id=\"ab00016 25\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab0001a 29\"><e-heading configuration-id=\"ab00018 27\"></e-heading><e-paragraph configuration-id=\"ab00019 28\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab0001d 32\"><e-heading configuration-id=\"ab0001b 30\"></e-heading><e-paragraph configuration-id=\"ab0001c 31\"></e-paragraph></e-flexbox></e-flexbox><e-accordion configuration-id=\"ab00022 40\"><e-accordion-item configuration-id=\"Accordion item 39\"><e-accordion-item-header configuration-id=\"Accordion header 36\"><e-accordion-item-title configuration-id=\"Accordion title 35\"><e-paragraph configuration-id=\"Accordion label 34\"></e-paragraph></e-accordion-item-title></e-accordion-item-header><e-accordion-item-content configuration-id=\"Accordion content 38\"><e-paragraph configuration-id=\"ab0001f 37\"></e-paragraph></e-accordion-item-content></e-accordion-item></e-accordion></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab0002e 54\"><e-flexbox configuration-id=\"ab0002d 53\"><e-flexbox configuration-id=\"Boxed inner 52\"><e-flexbox configuration-id=\"ab0002c 51\"><e-flexbox configuration-id=\"ab00028 47\"><e-paragraph configuration-id=\"ab00027 46\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"ab0002b 50\"><e-heading configuration-id=\"ab00029 48\"></e-heading><e-paragraph configuration-id=\"ab0002a 49\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"ab00041 77\"><e-flexbox configuration-id=\"ab00040 76\"><e-flexbox configuration-id=\"Boxed inner 75\"><e-flexbox configuration-id=\"ab0003f 74\"><e-flexbox configuration-id=\"ab00031 57\"><e-paragraph configuration-id=\"ab0002f 55\"></e-paragraph><e-heading configuration-id=\"ab00030 56\"></e-heading></e-flexbox><e-flexbox configuration-id=\"ab0003e 73\"><e-flexbox configuration-id=\"ab00038 64\"><e-flexbox configuration-id=\"ab00033 59\"><e-image configuration-id=\"ab00032 58\"></e-image></e-flexbox><e-flexbox configuration-id=\"ab00037 63\"><e-heading configuration-id=\"ab00034 60\"></e-heading><e-paragraph configuration-id=\"ab00035 61\"></e-paragraph><e-paragraph configuration-id=\"ab00036 62\"></e-paragraph></e-flexbox></e-flexbox><e-accordion configuration-id=\"ab0003d 72\"><e-accordion-item configuration-id=\"Accordion item 71\"><e-accordion-item-header configuration-id=\"Accordion header 67\"><e-accordion-item-title configuration-id=\"Accordion title 66\"><e-paragraph configuration-id=\"Accordion label 65\"></e-paragraph></e-accordion-item-title></e-accordion-item-header><e-accordion-item-content configuration-id=\"Accordion content 70\"><e-paragraph configuration-id=\"ab00039 68\"></e-paragraph><e-button configuration-id=\"ab0003a 69\"></e-button></e-accordion-item-content></e-accordion-item></e-accordion></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be0005a 198\"><e-flexbox configuration-id=\"be00059 197\"><e-flexbox configuration-id=\"Boxed inner 196\"><e-flexbox configuration-id=\"be00058 80\"><e-paragraph configuration-id=\"be00056 78\"></e-paragraph><e-heading configuration-id=\"be00057 79\"></e-heading></e-flexbox><e-tabs configuration-id=\"be00041 195\"><e-tabs-menu configuration-id=\"Tabs menu 97\"><e-tab configuration-id=\"Tab 1 82\"><e-paragraph configuration-id=\"Tab label 81\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 2 84\"><e-paragraph configuration-id=\"Tab label 83\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 3 86\"><e-paragraph configuration-id=\"Tab label 85\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 4 88\"><e-paragraph configuration-id=\"Tab label 87\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 5 90\"><e-paragraph configuration-id=\"Tab label 89\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 6 92\"><e-paragraph configuration-id=\"Tab label 91\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 7 94\"><e-paragraph configuration-id=\"Tab label 93\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 8 96\"><e-paragraph configuration-id=\"Tab label 95\"></e-paragraph></e-tab></e-tabs-menu><e-tabs-content-area configuration-id=\"Tabs panels 194\"><e-tab-content configuration-id=\"Tab panel 1 109\"><e-flexbox configuration-id=\"be00008 108\"><e-paragraph configuration-id=\"be00003 98\"></e-paragraph><e-heading configuration-id=\"be00004 99\"></e-heading><e-flexbox configuration-id=\"be00005 103\"><e-paragraph configuration-id=\"bc00038 100\"></e-paragraph><e-heading configuration-id=\"bc0003a 101\"></e-heading><e-paragraph configuration-id=\"bc0003b 102\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00007 107\"><e-button configuration-id=\"be00001 104\"></e-button><e-paragraph configuration-id=\"be00006 105\"></e-paragraph><e-button configuration-id=\"be00002 106\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 2 121\"><e-flexbox configuration-id=\"be00010 120\"><e-paragraph configuration-id=\"be0000b 110\"></e-paragraph><e-heading configuration-id=\"be0000c 111\"></e-heading><e-flexbox configuration-id=\"be0000d 115\"><e-paragraph configuration-id=\"bc0003d 112\"></e-paragraph><e-heading configuration-id=\"bc0003f 113\"></e-heading><e-paragraph configuration-id=\"bc00040 114\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0000f 119\"><e-button configuration-id=\"be00009 116\"></e-button><e-paragraph configuration-id=\"be0000e 117\"></e-paragraph><e-button configuration-id=\"be0000a 118\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 3 133\"><e-flexbox configuration-id=\"be00018 132\"><e-paragraph configuration-id=\"be00013 122\"></e-paragraph><e-heading configuration-id=\"be00014 123\"></e-heading><e-flexbox configuration-id=\"be00015 127\"><e-paragraph configuration-id=\"bc00042 124\"></e-paragraph><e-heading configuration-id=\"bc00044 125\"></e-heading><e-paragraph configuration-id=\"bc00045 126\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00017 131\"><e-button configuration-id=\"be00011 128\"></e-button><e-paragraph configuration-id=\"be00016 129\"></e-paragraph><e-button configuration-id=\"be00012 130\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 4 145\"><e-flexbox configuration-id=\"be00020 144\"><e-paragraph configuration-id=\"be0001b 134\"></e-paragraph><e-heading configuration-id=\"be0001c 135\"></e-heading><e-flexbox configuration-id=\"be0001d 139\"><e-paragraph configuration-id=\"bc00047 136\"></e-paragraph><e-heading configuration-id=\"bc00049 137\"></e-heading><e-paragraph configuration-id=\"bc0004a 138\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0001f 143\"><e-button configuration-id=\"be00019 140\"></e-button><e-paragraph configuration-id=\"be0001e 141\"></e-paragraph><e-button configuration-id=\"be0001a 142\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 5 157\"><e-flexbox configuration-id=\"be00028 156\"><e-paragraph configuration-id=\"be00023 146\"></e-paragraph><e-heading configuration-id=\"be00024 147\"></e-heading><e-flexbox configuration-id=\"be00025 151\"><e-paragraph configuration-id=\"bc0004c 148\"></e-paragraph><e-heading configuration-id=\"bc0004e 149\"></e-heading><e-paragraph configuration-id=\"bc0004f 150\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00027 155\"><e-button configuration-id=\"be00021 152\"></e-button><e-paragraph configuration-id=\"be00026 153\"></e-paragraph><e-button configuration-id=\"be00022 154\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 6 169\"><e-flexbox configuration-id=\"be00030 168\"><e-paragraph configuration-id=\"be0002b 158\"></e-paragraph><e-heading configuration-id=\"be0002c 159\"></e-heading><e-flexbox configuration-id=\"be0002d 163\"><e-paragraph configuration-id=\"bc00051 160\"></e-paragraph><e-heading configuration-id=\"bc00053 161\"></e-heading><e-paragraph configuration-id=\"bc00054 162\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0002f 167\"><e-button configuration-id=\"be00029 164\"></e-button><e-paragraph configuration-id=\"be0002e 165\"></e-paragraph><e-button configuration-id=\"be0002a 166\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 7 181\"><e-flexbox configuration-id=\"be00038 180\"><e-paragraph configuration-id=\"be00033 170\"></e-paragraph><e-heading configuration-id=\"be00034 171\"></e-heading><e-flexbox configuration-id=\"be00035 175\"><e-paragraph configuration-id=\"bc00056 172\"></e-paragraph><e-heading configuration-id=\"bc00058 173\"></e-heading><e-paragraph configuration-id=\"bc00059 174\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00037 179\"><e-button configuration-id=\"be00031 176\"></e-button><e-paragraph configuration-id=\"be00036 177\"></e-paragraph><e-button configuration-id=\"be00032 178\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 8 193\"><e-flexbox configuration-id=\"be00040 192\"><e-paragraph configuration-id=\"be0003b 182\"></e-paragraph><e-heading configuration-id=\"be0003c 183\"></e-heading><e-flexbox configuration-id=\"be0003d 187\"><e-paragraph configuration-id=\"bc0005b 184\"></e-paragraph><e-heading configuration-id=\"bc0005d 185\"></e-heading><e-paragraph configuration-id=\"bc0005e 186\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0003f 191\"><e-button configuration-id=\"be00039 188\"></e-button><e-paragraph configuration-id=\"be0003e 189\"></e-paragraph><e-button configuration-id=\"be0003a 190\"></e-button></e-flexbox></e-flexbox></e-tab-content></e-tabs-content-area></e-tabs></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "ab00001 1": {
+      "_cssid": "mpcbc-ab00001",
+      "paragraph": "ABOUT OUR CHURCH",
+      "tag": "p"
+    },
+    "ab00002 2": {
+      "_cssid": "mpcbc-ab00002",
+      "title": "Rooted in faith.<br>Growing together.",
+      "tag": "h1"
+    },
+    "ab00003 3": {
+      "_cssid": "mpcbc-ab00003",
+      "paragraph": "One church family, worshipping in Cantonese, English and Mandarin.",
+      "tag": "p"
+    },
+    "ab00004 4": {
+      "_cssid": "mpcbc-ab00004",
+      "paragraph": "Since 1977 · Alhambra, California",
+      "tag": "p"
+    },
+    "ab00005 5": {
+      "_cssid": "mpcbc-ab00005"
+    },
+    "ab00006 6": {
+      "_cssid": "mpcbc-ab00006",
+      "image": {
+        "src": {
+          "id": 327
+        },
+        "size": "full"
+      }
+    },
+    "ab00007 7": {
+      "_cssid": "mpcbc-ab00007"
+    },
+    "ab00008 8": {
+      "_cssid": "mpcbc-ab00008"
+    },
+    "Boxed inner 9": {},
+    "ab00009 10": {
+      "_cssid": "mpcbc-ab00009"
+    },
+    "ab0000a 11": {
+      "_cssid": "mpcbc-ab0000a"
+    },
+    "ab0000b 12": {
+      "_cssid": "mpcbc-ab0000b",
+      "paragraph": "Our story ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#story",
+        "isTargetBlank": false
+      }
+    },
+    "ab0000c 13": {
+      "_cssid": "mpcbc-ab0000c",
+      "paragraph": "Our mission ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#mission",
+        "isTargetBlank": false
+      }
+    },
+    "ab0000d 14": {
+      "_cssid": "mpcbc-ab0000d",
+      "paragraph": "Our pastoral team ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#pastors",
+        "isTargetBlank": false
+      }
+    },
+    "bf00021 15": {
+      "_cssid": "mpcbc-bf00021",
+      "paragraph": "What we believe ↓",
+      "tag": "p",
+      "link": {
+        "destination": "#beliefs",
+        "isTargetBlank": false
+      }
+    },
+    "ab0000e 16": {
+      "_cssid": "mpcbc-ab0000e"
+    },
+    "Boxed inner 17": {},
+    "ab0000f 18": {
+      "_cssid": "mpcbc-ab0000f"
+    },
+    "ab00010 19": {
+      "_cssid": "mpcbc-ab00010"
+    },
+    "ab00011 20": {
+      "_cssid": "mpcbc-ab00011",
+      "paragraph": "OUR STORY",
+      "tag": "p"
+    },
+    "ab00012 21": {
+      "_cssid": "mpcbc-ab00012",
+      "title": "A home for<br>three languages.",
+      "tag": "h2"
+    },
+    "ab00013 22": {
+      "_cssid": "mpcbc-ab00013"
+    },
+    "ab00014 23": {
+      "_cssid": "mpcbc-ab00014",
+      "paragraph": "Our church began in 1977 with Cantonese worship. As Mandarin and English ministries grew, we became a church family worshipping in three languages.",
+      "tag": "p"
+    },
+    "ab00015 24": {
+      "_cssid": "mpcbc-ab00015",
+      "title": "1977",
+      "tag": "h3"
+    },
+    "ab00016 25": {
+      "_cssid": "mpcbc-ab00016",
+      "paragraph": "Cantonese begins",
+      "tag": "p"
+    },
+    "ab00017 26": {
+      "_cssid": "mpcbc-ab00017"
+    },
+    "ab00018 27": {
+      "_cssid": "mpcbc-ab00018",
+      "title": "1988",
+      "tag": "h3"
+    },
+    "ab00019 28": {
+      "_cssid": "mpcbc-ab00019",
+      "paragraph": "Mandarin begins",
+      "tag": "p"
+    },
+    "ab0001a 29": {
+      "_cssid": "mpcbc-ab0001a"
+    },
+    "ab0001b 30": {
+      "_cssid": "mpcbc-ab0001b",
+      "title": "1991",
+      "tag": "h3"
+    },
+    "ab0001c 31": {
+      "_cssid": "mpcbc-ab0001c",
+      "paragraph": "English begins",
+      "tag": "p"
+    },
+    "ab0001d 32": {
+      "_cssid": "mpcbc-ab0001d"
+    },
+    "ab0001e 33": {
+      "_cssid": "mpcbc-ab0001e"
+    },
+    "Accordion label 34": {
+      "paragraph": "Read our full story"
+    },
+    "Accordion title 35": {},
+    "Accordion header 36": {},
+    "ab0001f 37": {
+      "_cssid": "mpcbc-ab0001f",
+      "paragraph": "Our church was founded in 1977 with worship in Cantonese. During the 1980s, as the number of Mandarin-speaking immigrants in Los Angeles grew rapidly, the church saw the need to share the gospel and provide a spiritual home for new arrivals. Mandarin worship began in 1988. English worship was added in 1991, and the church continues to worship in all three languages.",
+      "tag": "p"
+    },
+    "Accordion content 38": {},
+    "Accordion item 39": {},
+    "ab00022 40": {
+      "_cssid": "mpcbc-ab00022",
+      "default_state": "all_collapsed",
+      "max_expanded": "multiple",
+      "show_icon": false
+    },
+    "ab00023 41": {
+      "_cssid": "mpcbc-ab00023"
+    },
+    "ab00024 42": {
+      "_cssid": "mpcbc-ab00024"
+    },
+    "Boxed inner 43": {},
+    "ab00025 44": {
+      "_cssid": "mpcbc-ab00025"
+    },
+    "ab00026 45": {
+      "_cssid": "story"
+    },
+    "ab00027 46": {
+      "_cssid": "mpcbc-ab00027",
+      "paragraph": "OUR MISSION",
+      "tag": "p"
+    },
+    "ab00028 47": {
+      "_cssid": "mpcbc-ab00028"
+    },
+    "ab00029 48": {
+      "_cssid": "mpcbc-ab00029",
+      "title": "Knowing God is our foundation.<br>Glorifying God is our goal.",
+      "tag": "h2"
+    },
+    "ab0002a 49": {
+      "_cssid": "mpcbc-ab0002a",
+      "paragraph": "Through worship, fellowship, discipleship, ministry, and evangelism, we seek to know God, and make His name known.",
+      "tag": "p"
+    },
+    "ab0002b 50": {
+      "_cssid": "mpcbc-ab0002b"
+    },
+    "ab0002c 51": {
+      "_cssid": "mpcbc-ab0002c"
+    },
+    "Boxed inner 52": {},
+    "ab0002d 53": {
+      "_cssid": "mpcbc-ab0002d"
+    },
+    "ab0002e 54": {
+      "_cssid": "mission"
+    },
+    "ab0002f 55": {
+      "_cssid": "mpcbc-ab0002f",
+      "paragraph": "OUR PASTORAL TEAM",
+      "tag": "p"
+    },
+    "ab00030 56": {
+      "_cssid": "mpcbc-ab00030",
+      "title": "Meet Pastor Caleb.",
+      "tag": "h2"
+    },
+    "ab00031 57": {
+      "_cssid": "mpcbc-ab00031"
+    },
+    "ab00032 58": {
+      "_cssid": "mpcbc-ab00032",
+      "image": {
+        "src": {
+          "id": "177"
+        },
+        "size": "full"
+      }
+    },
+    "ab00033 59": {
+      "_cssid": "mpcbc-ab00033"
+    },
+    "ab00034 60": {
+      "_cssid": "mpcbc-ab00034",
+      "title": "Rev. Caleb Cheung, Ph.D.",
+      "tag": "h3"
+    },
+    "ab00035 61": {
+      "_cssid": "mpcbc-ab00035",
+      "paragraph": "Senior Pastor · Cantonese Congregation",
+      "tag": "p"
+    },
+    "ab00036 62": {
+      "_cssid": "mpcbc-ab00036",
+      "paragraph": "Originally from Hong Kong, Pastor Caleb studied at Fuller Theological Seminary and Claremont Graduate University and now serves as our senior pastor.",
+      "tag": "p"
+    },
+    "ab00037 63": {
+      "_cssid": "mpcbc-ab00037"
+    },
+    "ab00038 64": {
+      "_cssid": "mpcbc-ab00038"
+    },
+    "Accordion label 65": {
+      "paragraph": "Biography and contact"
+    },
+    "Accordion title 66": {},
+    "Accordion header 67": {},
+    "ab00039 68": {
+      "_cssid": "mpcbc-ab00039",
+      "paragraph": "Pastor Caleb is from Hong Kong. After being called to ministry, he studied theology at Fuller Theological Seminary and pursued doctoral studies in theology and philosophy of religion at Claremont Graduate University. He has continued serving and shepherding this church and is its senior pastor.",
+      "tag": "p"
+    },
+    "ab0003a 69": {
+      "_cssid": "mpcbc-ab0003a",
+      "text": "Contact Pastor Caleb",
+      "link": {
+        "destination": "mailto:calebcheung@mpcbc.net",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "Accordion content 70": {},
+    "Accordion item 71": {},
+    "ab0003d 72": {
+      "_cssid": "mpcbc-ab0003d",
+      "default_state": "all_collapsed",
+      "max_expanded": "multiple",
+      "show_icon": false
+    },
+    "ab0003e 73": {
+      "_cssid": "mpcbc-ab0003e"
+    },
+    "ab0003f 74": {
+      "_cssid": "mpcbc-ab0003f"
+    },
+    "Boxed inner 75": {},
+    "ab00040 76": {
+      "_cssid": "mpcbc-ab00040"
+    },
+    "ab00041 77": {
+      "_cssid": "pastors"
+    },
+    "be00056 78": {
+      "_cssid": "mpcbc-be00056",
+      "paragraph": "OUR STATEMENT OF FAITH",
+      "tag": "p"
+    },
+    "be00057 79": {
+      "_cssid": "mpcbc-be00057",
+      "title": "Eight foundations.<br>One shared faith.",
+      "tag": "h2"
+    },
+    "be00058 80": {
+      "_cssid": "mpcbc-topic-index"
+    },
+    "Tab label 81": {
+      "paragraph": "01 · God"
+    },
+    "Tab 1 82": {},
+    "Tab label 83": {
+      "paragraph": "02 · Jesus Christ"
+    },
+    "Tab 2 84": {},
+    "Tab label 85": {
+      "paragraph": "03 · The Holy Spirit"
+    },
+    "Tab 3 86": {},
+    "Tab label 87": {
+      "paragraph": "04 · The Bible"
+    },
+    "Tab 4 88": {},
+    "Tab label 89": {
+      "paragraph": "05 · Humanity"
+    },
+    "Tab 5 90": {},
+    "Tab label 91": {
+      "paragraph": "06 · Salvation"
+    },
+    "Tab 6 92": {},
+    "Tab label 93": {
+      "paragraph": "07 · Eternal Security"
+    },
+    "Tab 7 94": {},
+    "Tab label 95": {
+      "paragraph": "08 · Eternity"
+    },
+    "Tab 8 96": {},
+    "Tabs menu 97": {},
+    "be00003 98": {
+      "_cssid": "mpcbc-be00003",
+      "paragraph": "01",
+      "tag": "p"
+    },
+    "be00004 99": {
+      "_cssid": "mpcbc-be00004",
+      "title": "God",
+      "tag": "h2"
+    },
+    "bc00038 100": {
+      "_cssid": "mpcbc-bc00038",
+      "paragraph": "God is the Creator and Ruler of the universe. He exists eternally as three persons: the Father, the Son and the Holy Spirit. These three are equal and are one God.",
+      "tag": "p"
+    },
+    "bc0003a 101": {
+      "_cssid": "mpcbc-bc0003a",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0003b 102": {
+      "_cssid": "mpcbc-bc0003b",
+      "paragraph": "Genesis 1:1,26,27, 3:22, Psalms 90:2; Matthew 28:19; 1 Peter 1:2; 2 Corinthians 13:14",
+      "tag": "p"
+    },
+    "be00005 103": {
+      "_cssid": "mpcbc-be00005"
+    },
+    "be00001 104": {
+      "_cssid": "mpcbc-reader-unavailable-be00001",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-0",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00006 105": {
+      "_cssid": "mpcbc-be00006",
+      "paragraph": "1 / 8",
+      "tag": "p"
+    },
+    "be00002 106": {
+      "_cssid": "mpcbc-be00002",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00007 107": {
+      "_cssid": "mpcbc-be00007"
+    },
+    "be00008 108": {
+      "_cssid": "mpcbc-be00008"
+    },
+    "Tab panel 1 109": {},
+    "be0000b 110": {
+      "_cssid": "mpcbc-be0000b",
+      "paragraph": "02",
+      "tag": "p"
+    },
+    "be0000c 111": {
+      "_cssid": "mpcbc-be0000c",
+      "title": "Jesus Christ",
+      "tag": "h2"
+    },
+    "bc0003d 112": {
+      "_cssid": "mpcbc-bc0003d",
+      "paragraph": "Jesus Christ is the Son of God and is equal with the Father. Jesus lived a sinless life on earth and offered Himself as the perfect sacrifice, dying on the cross for all humanity. He rose from the dead after three days, demonstrating His power over sin and death. He ascended to heavenly glory and will return to earth as King of kings and Lord of lords.",
+      "tag": "p"
+    },
+    "bc0003f 113": {
+      "_cssid": "mpcbc-bc0003f",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00040 114": {
+      "_cssid": "mpcbc-bc00040",
+      "paragraph": "Matthew 1:22-23; Isaiah 9:6; John 1:1-5, 14:10-30; Hebrews 4:14,15; 1 Corinthians 15:3-4; Romans 1:3-4; Acts 1:9-11; 1 Timothy 6:14; Titus 2:13",
+      "tag": "p"
+    },
+    "be0000d 115": {
+      "_cssid": "mpcbc-be0000d"
+    },
+    "be00009 116": {
+      "_cssid": "mpcbc-be00009",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-1",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0000e 117": {
+      "_cssid": "mpcbc-be0000e",
+      "paragraph": "2 / 8",
+      "tag": "p"
+    },
+    "be0000a 118": {
+      "_cssid": "mpcbc-be0000a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0000f 119": {
+      "_cssid": "mpcbc-be0000f"
+    },
+    "be00010 120": {
+      "_cssid": "mpcbc-be00010"
+    },
+    "Tab panel 2 121": {},
+    "be00013 122": {
+      "_cssid": "mpcbc-be00013",
+      "paragraph": "03",
+      "tag": "p"
+    },
+    "be00014 123": {
+      "_cssid": "mpcbc-be00014",
+      "title": "The Holy Spirit",
+      "tag": "h2"
+    },
+    "bc00042 124": {
+      "_cssid": "mpcbc-bc00042",
+      "paragraph": "The Holy Spirit is equal with the Father and the Son. He is present in the world to help people know Christ, and He lives in every Christian from the moment of salvation. He gives believers power for daily living, understanding of spiritual truth and guidance for the way ahead. He gives spiritual gifts to every believer. As Christians, we seek daily to live under the Holy Spirit’s direction.",
+      "tag": "p"
+    },
+    "bc00044 125": {
+      "_cssid": "mpcbc-bc00044",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00045 126": {
+      "_cssid": "mpcbc-bc00045",
+      "paragraph": "2 Corinthians 3:17; John 16:7-13, 14:16-17; Acts 1:8; 1 Corinthians 2:12; 3:16 Ephesians 1:13,5:18; Galatians 5:25",
+      "tag": "p"
+    },
+    "be00015 127": {
+      "_cssid": "mpcbc-be00015"
+    },
+    "be00011 128": {
+      "_cssid": "mpcbc-be00011",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00016 129": {
+      "_cssid": "mpcbc-be00016",
+      "paragraph": "3 / 8",
+      "tag": "p"
+    },
+    "be00012 130": {
+      "_cssid": "mpcbc-be00012",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00017 131": {
+      "_cssid": "mpcbc-be00017"
+    },
+    "be00018 132": {
+      "_cssid": "mpcbc-be00018"
+    },
+    "Tab panel 3 133": {},
+    "be0001b 134": {
+      "_cssid": "mpcbc-be0001b",
+      "paragraph": "04",
+      "tag": "p"
+    },
+    "be0001c 135": {
+      "_cssid": "mpcbc-be0001c",
+      "title": "The Bible",
+      "tag": "h2"
+    },
+    "bc00047 136": {
+      "_cssid": "mpcbc-bc00047",
+      "paragraph": "The Bible is God’s Word to us, written by people under the supernatural guidance of the Holy Spirit. It is the highest authority for Christian faith and life.",
+      "tag": "p"
+    },
+    "bc00049 137": {
+      "_cssid": "mpcbc-bc00049",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0004a 138": {
+      "_cssid": "mpcbc-bc0004a",
+      "paragraph": "2 Timothy 3:16,1:13; 2 Peter 1:20-21; Psalms 119:105, 160, 12:6; Proverbs 30:5",
+      "tag": "p"
+    },
+    "be0001d 139": {
+      "_cssid": "mpcbc-be0001d"
+    },
+    "be00019 140": {
+      "_cssid": "mpcbc-be00019",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0001e 141": {
+      "_cssid": "mpcbc-be0001e",
+      "paragraph": "4 / 8",
+      "tag": "p"
+    },
+    "be0001a 142": {
+      "_cssid": "mpcbc-be0001a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0001f 143": {
+      "_cssid": "mpcbc-be0001f"
+    },
+    "be00020 144": {
+      "_cssid": "mpcbc-be00020"
+    },
+    "Tab panel 4 145": {},
+    "be00023 146": {
+      "_cssid": "mpcbc-be00023",
+      "paragraph": "05",
+      "tag": "p"
+    },
+    "be00024 147": {
+      "_cssid": "mpcbc-be00024",
+      "title": "Humanity",
+      "tag": "h2"
+    },
+    "bc0004c 148": {
+      "_cssid": "mpcbc-bc0004c",
+      "paragraph": "Human beings were created in God’s spiritual image, reflecting His character. Humanity is the pinnacle of God’s creation. Although every person has the potential for good, our sinful attitudes separate us from God and bring many problems into our lives.",
+      "tag": "p"
+    },
+    "bc0004e 149": {
+      "_cssid": "mpcbc-bc0004e",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0004f 150": {
+      "_cssid": "mpcbc-bc0004f",
+      "paragraph": "Genesis 1:27; Psalms 8:3-6; Isaiah 53:6a; Romans 3:23; Isaiah 59:1-2",
+      "tag": "p"
+    },
+    "be00025 151": {
+      "_cssid": "mpcbc-be00025"
+    },
+    "be00021 152": {
+      "_cssid": "mpcbc-be00021",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00026 153": {
+      "_cssid": "mpcbc-be00026",
+      "paragraph": "5 / 8",
+      "tag": "p"
+    },
+    "be00022 154": {
+      "_cssid": "mpcbc-be00022",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00027 155": {
+      "_cssid": "mpcbc-be00027"
+    },
+    "be00028 156": {
+      "_cssid": "mpcbc-be00028"
+    },
+    "Tab panel 5 157": {},
+    "be0002b 158": {
+      "_cssid": "mpcbc-be0002b",
+      "paragraph": "06",
+      "tag": "p"
+    },
+    "be0002c 159": {
+      "_cssid": "mpcbc-be0002c",
+      "title": "Salvation",
+      "tag": "h2"
+    },
+    "bc00051 160": {
+      "_cssid": "mpcbc-bc00051",
+      "paragraph": "Salvation is God’s free gift, which we must receive. We can never atone for our sins through good works or self-improvement. Only through Jesus Christ and God’s forgiveness can we be delivered from the penalty of sin. We are saved when we turn in faith to Jesus from a self-centred life lived in our own strength. Eternal life begins when we receive the life of Jesus Christ by faith.",
+      "tag": "p"
+    },
+    "bc00053 161": {
+      "_cssid": "mpcbc-bc00053",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00054 162": {
+      "_cssid": "mpcbc-bc00054",
+      "paragraph": "Romans 6:23,5:1; Ephesians 2:8-9; John 14:6;1:12; Titus 3:5; Galatians 3:26",
+      "tag": "p"
+    },
+    "be0002d 163": {
+      "_cssid": "mpcbc-be0002d"
+    },
+    "be00029 164": {
+      "_cssid": "mpcbc-be00029",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0002e 165": {
+      "_cssid": "mpcbc-be0002e",
+      "paragraph": "6 / 8",
+      "tag": "p"
+    },
+    "be0002a 166": {
+      "_cssid": "mpcbc-be0002a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0002f 167": {
+      "_cssid": "mpcbc-be0002f"
+    },
+    "be00030 168": {
+      "_cssid": "mpcbc-be00030"
+    },
+    "Tab panel 6 169": {},
+    "be00033 170": {
+      "_cssid": "mpcbc-be00033",
+      "paragraph": "07",
+      "tag": "p"
+    },
+    "be00034 171": {
+      "_cssid": "mpcbc-be00034",
+      "title": "Eternal Security",
+      "tag": "h2"
+    },
+    "bc00056 172": {
+      "_cssid": "mpcbc-bc00056",
+      "paragraph": "Because God gives us eternal life through Jesus Christ, true believers have eternal assurance of salvation. Salvation comes through God’s power and grace, not through a Christian’s own efforts. His preserving power and grace give us this lasting assurance. Believers also have a responsibility to continue trusting God and living in His care.",
+      "tag": "p"
+    },
+    "bc00058 173": {
+      "_cssid": "mpcbc-bc00058",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00059 174": {
+      "_cssid": "mpcbc-bc00059",
+      "paragraph": "John 10:29; 2 Timothy 1:12; Hebrews 7:25, 10:10,14; 1 Peter 1:3-5; Hebrews 6:4-8; Hebrews 10:26-27; John 15:6",
+      "tag": "p"
+    },
+    "be00035 175": {
+      "_cssid": "mpcbc-be00035"
+    },
+    "be00031 176": {
+      "_cssid": "mpcbc-be00031",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00036 177": {
+      "_cssid": "mpcbc-be00036",
+      "paragraph": "7 / 8",
+      "tag": "p"
+    },
+    "be00032 178": {
+      "_cssid": "mpcbc-be00032",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-8",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00037 179": {
+      "_cssid": "mpcbc-be00037"
+    },
+    "be00038 180": {
+      "_cssid": "mpcbc-be00038"
+    },
+    "Tab panel 7 181": {},
+    "be0003b 182": {
+      "_cssid": "mpcbc-be0003b",
+      "paragraph": "08",
+      "tag": "p"
+    },
+    "be0003c 183": {
+      "_cssid": "mpcbc-be0003c",
+      "title": "Eternity",
+      "tag": "h2"
+    },
+    "bc0005b 184": {
+      "_cssid": "mpcbc-bc0005b",
+      "paragraph": "People were created to exist forever. We will either be eternally separated from God because of sin, or live eternally with Him through forgiveness and salvation. Eternal separation from God is hell; eternal life is being with God forever.",
+      "tag": "p"
+    },
+    "bc0005d 185": {
+      "_cssid": "mpcbc-bc0005d",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0005e 186": {
+      "_cssid": "mpcbc-bc0005e",
+      "paragraph": "John 3:16, 2:25, 5:11-13; Romans 6:23; Revelation 20:15; Matthew 1:8; Matthew 2:44,46",
+      "tag": "p"
+    },
+    "be0003d 187": {
+      "_cssid": "mpcbc-be0003d"
+    },
+    "be00039 188": {
+      "_cssid": "mpcbc-be00039",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0003e 189": {
+      "_cssid": "mpcbc-be0003e",
+      "paragraph": "8 / 8",
+      "tag": "p"
+    },
+    "be0003a 190": {
+      "_cssid": "mpcbc-reader-unavailable-be0003a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-9",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0003f 191": {
+      "_cssid": "mpcbc-be0003f"
+    },
+    "be00040 192": {
+      "_cssid": "mpcbc-be00040"
+    },
+    "Tab panel 8 193": {},
+    "Tabs panels 194": {},
+    "be00041 195": {
+      "_cssid": "mpcbc-topic-reader",
+      "default-active-tab": 0
+    },
+    "Boxed inner 196": {},
+    "be00059 197": {
+      "_cssid": "mpcbc-be00059"
+    },
+    "be0005a 198": {
+      "_cssid": "beliefs"
+    }
+  },
+  "style": {
+    "ab00001 1": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00002 2": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:64px;font-weight:700;line-height:1.12em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:52px;}@media (--mobile){font-size:40px;}",
+    "ab00003 3": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:21px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:20px;}@media (--mobile){font-size:19px;}",
+    "ab00004 4": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00005 5": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00006 6": "min-width:0;margin:0;max-width:100%;width:100%;height:auto;object-fit:cover;border-radius:24px 24px 24px 24px;",
+    "ab00007 7": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00008 8": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;align-items:center;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 9": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab00009 10": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab0000a 11": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 56px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:40px 20px 32px 20px;}",
+    "ab0000b 12": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "ab0000c 13": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "ab0000d 14": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bf00021 15": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "ab0000e 16": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:32px;flex-wrap:wrap;@media (--tablet){flex-direction:row;}@media (--mobile){gap:20px;}",
+    "Boxed inner 17": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab0000f 18": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab00010 19": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:20px 56px 20px 56px;gap:20px;background-color:var(--mpcbc-color-262da8014);@media (--tablet){padding:20px 32px 20px 32px;}@media (--mobile){padding:18px 20px 18px 20px;}",
+    "ab00011 20": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00012 21": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "ab00013 22": "min-width:0;margin:0;display:flex;flex-direction:column;width:38%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00014 23": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab00015 24": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:32px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab00016 25": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00017 26": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00018 27": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:32px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab00019 28": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab0001a 29": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0001b 30": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:32px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab0001c 31": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab0001d 32": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0001e 33": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:16px;@media (--tablet){flex-direction:row;}@media (--mobile){gap:28px;}",
+    "Accordion label 34": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;margin:0;",
+    "Accordion title 35": "padding:0;width:100%;",
+    "Accordion header 36": "display:flex;align-items:center;padding:20px 20px 20px 20px;color:var(--mpcbc-color-14b48ba19);cursor:pointer;",
+    "ab0001f 37": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "Accordion content 38": "padding:4px 20px 24px 20px;",
+    "Accordion item 39": "border-radius:12px;background-color:var(--mpcbc-color-262da8014);",
+    "ab00022 40": "padding:0;width:100%;gap:12px;",
+    "ab00023 41": "min-width:0;margin:0;display:flex;flex-direction:column;width:58%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00024 42": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 43": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab00025 44": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab00026 45": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "ab00027 46": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-262da8014);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00028 47": "min-width:0;margin:0;display:flex;flex-direction:column;width:38%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00029 48": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:34px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-262da8014);@media (--tablet){font-size:30px;}@media (--mobile){font-size:26px;}",
+    "ab0002a 49": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-262da8014);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab0002b 50": "min-width:0;margin:0;display:flex;flex-direction:column;width:58%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0002c 51": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 52": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab0002d 53": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab0002e 54": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-21e91e8d2);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "ab0002f 55": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00030 56": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "ab00031 57": "min-width:0;margin:0;display:flex;flex-direction:column;width:38%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab00032 58": "min-width:0;margin:0;max-width:100%;width:100%;height:auto;object-fit:cover;border-radius:16px 16px 16px 16px;",
+    "ab00033 59": "min-width:0;margin:0;display:flex;flex-direction:column;width:27%;padding:0px 0px 0px 0px;gap:20px;@media (--mobile){width:146px;}",
+    "ab00034 60": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:26px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:24px;}@media (--mobile){font-size:22px;}",
+    "ab00035 61": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "ab00036 62": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab00037 63": "min-width:0;margin:0;display:flex;flex-direction:column;width:69%;padding:0px 0px 0px 0px;gap:20px;@media (--mobile){width:100%;}",
+    "ab00038 64": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:24px;@media (--tablet){flex-direction:row;}@media (--mobile){flex-direction:column;gap:28px;}",
+    "Accordion label 65": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;margin:0;",
+    "Accordion title 66": "padding:0;width:100%;",
+    "Accordion header 67": "display:flex;align-items:center;padding:20px 20px 20px 20px;color:var(--mpcbc-color-14b48ba19);cursor:pointer;",
+    "ab00039 68": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "ab0003a 69": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-262da8014);background-color:var(--mpcbc-color-14b48ba19);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "Accordion content 70": "padding:4px 20px 24px 20px;",
+    "Accordion item 71": "border-radius:12px;background-color:var(--mpcbc-color-262da8014);",
+    "ab0003d 72": "padding:0;width:100%;gap:12px;",
+    "ab0003e 73": "min-width:0;margin:0;display:flex;flex-direction:column;width:58%;padding:0px 0px 0px 0px;gap:20px;@media (--tablet){width:100%;}",
+    "ab0003f 74": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:40px;@media (--tablet){flex-direction:column;}@media (--mobile){gap:28px;}",
+    "Boxed inner 75": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "ab00040 76": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "ab00041 77": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "be00056 78": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00057 79": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:26px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:24px;}@media (--mobile){font-size:22px;}",
+    "be00058 80": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab label 81": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 1 82": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 83": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 2 84": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 85": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 3 86": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 87": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 4 88": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 89": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 5 90": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 91": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 6 92": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 93": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 7 94": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 95": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 8 96": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tabs menu 97": "display:flex;flex-direction:column;flex-wrap:nowrap;width:248px;flex-shrink:0;gap:4px;padding:0;@media (--mobile){width:100%;flex-direction:row;flex-wrap:wrap;}",
+    "be00003 98": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00004 99": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00038 100": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003a 101": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0003b 102": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00005 103": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00001 104": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00006 105": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00002 106": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00007 107": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00008 108": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 1 109": "width:100%;padding:0;",
+    "be0000b 110": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0000c 111": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0003d 112": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003f 113": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00040 114": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0000d 115": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00009 116": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0000e 117": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0000a 118": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0000f 119": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00010 120": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 2 121": "width:100%;padding:0;",
+    "be00013 122": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00014 123": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00042 124": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00044 125": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00045 126": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00015 127": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00011 128": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00016 129": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00012 130": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00017 131": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00018 132": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 3 133": "width:100%;padding:0;",
+    "be0001b 134": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0001c 135": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00047 136": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00049 137": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004a 138": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0001d 139": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00019 140": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0001e 141": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0001a 142": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0001f 143": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00020 144": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 4 145": "width:100%;padding:0;",
+    "be00023 146": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00024 147": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0004c 148": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0004e 149": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004f 150": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00025 151": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00021 152": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00026 153": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00022 154": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00027 155": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00028 156": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 5 157": "width:100%;padding:0;",
+    "be0002b 158": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0002c 159": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00051 160": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00053 161": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00054 162": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0002d 163": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00029 164": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0002e 165": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0002a 166": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0002f 167": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00030 168": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 6 169": "width:100%;padding:0;",
+    "be00033 170": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00034 171": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00056 172": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00058 173": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00059 174": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00035 175": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00031 176": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00036 177": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00032 178": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00037 179": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00038 180": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 7 181": "width:100%;padding:0;",
+    "be0003b 182": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0003c 183": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0005b 184": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0005d 185": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0005e 186": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0003d 187": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00039 188": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0003e 189": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0003a 190": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0003f 191": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00040 192": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 8 193": "width:100%;padding:0;",
+    "Tabs panels 194": "min-width:0;width:100%;padding:0;flex-grow:1;",
+    "be00041 195": "display:flex;align-items:stretch;flex-direction:row;width:100%;gap:64px;padding:0;@media (--tablet){gap:32px;}@media (--mobile){flex-direction:column;gap:24px;}",
+    "Boxed inner 196": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00059 197": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be0005a 198": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 72px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:40px 20px 40px 20px;}"
+  }
+}

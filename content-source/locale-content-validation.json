@@ -1,0 +1,189 @@
+{
+    "pages": [
+        {
+            "id": 64,
+            "path": "/about/",
+            "locale": "en",
+            "widgets": {
+                "e-flexbox": 63,
+                "e-paragraph": 62,
+                "e-heading": 25,
+                "e-image": 2,
+                "e-accordion": 2,
+                "e-accordion-item": 2,
+                "e-accordion-item-header": 2,
+                "e-accordion-item-title": 2,
+                "e-accordion-item-content": 2,
+                "e-button": 17,
+                "e-tabs": 1,
+                "e-tabs-menu": 1,
+                "e-tab": 8,
+                "e-tabs-content-area": 1,
+                "e-tab-content": 8
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 215,
+            "path": "/zh-hant/about/",
+            "locale": "zh-hant",
+            "widgets": {
+                "e-flexbox": 63,
+                "e-paragraph": 62,
+                "e-heading": 25,
+                "e-image": 2,
+                "e-accordion": 2,
+                "e-accordion-item": 2,
+                "e-accordion-item-header": 2,
+                "e-accordion-item-title": 2,
+                "e-accordion-item-content": 2,
+                "e-button": 17,
+                "e-tabs": 1,
+                "e-tabs-menu": 1,
+                "e-tab": 8,
+                "e-tabs-content-area": 1,
+                "e-tab-content": 8
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 218,
+            "path": "/zh-hans/about/",
+            "locale": "zh-hans",
+            "widgets": {
+                "e-flexbox": 63,
+                "e-paragraph": 62,
+                "e-heading": 25,
+                "e-image": 2,
+                "e-accordion": 2,
+                "e-accordion-item": 2,
+                "e-accordion-item-header": 2,
+                "e-accordion-item-title": 2,
+                "e-accordion-item-content": 2,
+                "e-button": 17,
+                "e-tabs": 1,
+                "e-tabs-menu": 1,
+                "e-tab": 8,
+                "e-tabs-content-area": 1,
+                "e-tab-content": 8
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 181,
+            "path": "/beliefs/",
+            "locale": "en",
+            "widgets": {
+                "e-flexbox": 38,
+                "e-paragraph": 48,
+                "e-heading": 19,
+                "e-tabs": 1,
+                "e-tabs-menu": 1,
+                "e-tab": 8,
+                "e-tabs-content-area": 1,
+                "e-tab-content": 8,
+                "e-button": 17
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 224,
+            "path": "/zh-hant/beliefs/",
+            "locale": "zh-hant",
+            "widgets": {
+                "e-flexbox": 38,
+                "e-paragraph": 48,
+                "e-heading": 19,
+                "e-tabs": 1,
+                "e-tabs-menu": 1,
+                "e-tab": 8,
+                "e-tabs-content-area": 1,
+                "e-tab-content": 8,
+                "e-button": 17
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 227,
+            "path": "/zh-hans/beliefs/",
+            "locale": "zh-hans",
+            "widgets": {
+                "e-flexbox": 38,
+                "e-paragraph": 48,
+                "e-heading": 19,
+                "e-tabs": 1,
+                "e-tabs-menu": 1,
+                "e-tab": 8,
+                "e-tabs-content-area": 1,
+                "e-tab-content": 8,
+                "e-button": 17
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 65,
+            "path": "/give/",
+            "locale": "en",
+            "widgets": {
+                "e-flexbox": 11,
+                "e-heading": 3,
+                "e-paragraph": 4,
+                "e-button": 2
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 233,
+            "path": "/zh-hant/give/",
+            "locale": "zh-hant",
+            "widgets": {
+                "e-flexbox": 11,
+                "e-heading": 3,
+                "e-paragraph": 4,
+                "e-button": 2
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 236,
+            "path": "/zh-hans/give/",
+            "locale": "zh-hans",
+            "widgets": {
+                "e-flexbox": 11,
+                "e-heading": 3,
+                "e-paragraph": 4,
+                "e-button": 2
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 210,
+            "path": "/zh-hant/",
+            "locale": "zh-hant",
+            "widgets": {
+                "e-flexbox": 19,
+                "e-heading": 7,
+                "e-paragraph": 7,
+                "e-button": 6
+            },
+            "language_controls_in_content": 0
+        },
+        {
+            "id": 211,
+            "path": "/zh-hans/",
+            "locale": "zh-hans",
+            "widgets": {
+                "e-flexbox": 19,
+                "e-heading": 7,
+                "e-paragraph": 7,
+                "e-button": 6
+            },
+            "language_controls_in_content": 0
+        }
+    ],
+    "palette_preserved": true,
+    "menu_location": {
+        "menu-1": 3,
+        "menu-2": 0
+    }
+}

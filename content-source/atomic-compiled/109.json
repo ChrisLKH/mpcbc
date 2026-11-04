@@ -1,0 +1,2055 @@
+[
+    {
+        "elType": "e-flexbox",
+        "settings": {
+            "_cssid": {
+                "$$type": "string",
+                "value": "mpcbc-spike_root_container"
+            },
+            "classes": {
+                "$$type": "classes",
+                "value": [
+                    "e-568db737-9e7b"
+                ]
+            }
+        },
+        "elements": [
+            {
+                "elType": "e-flexbox",
+                "settings": {
+                    "classes": {
+                        "$$type": "classes",
+                        "value": [
+                            "e-77004808-d588"
+                        ]
+                    }
+                },
+                "elements": [
+                    {
+                        "elType": "e-tabs",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-spike_nested_tabs"
+                            },
+                            "default-active-tab": {
+                                "$$type": "number",
+                                "value": 0
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-7dfb9628-b94a"
+                                ]
+                            }
+                        },
+                        "elements": [
+                            {
+                                "elType": "e-tabs-menu",
+                                "settings": {
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-23e6151-c8b4"
+                                        ]
+                                    }
+                                },
+                                "elements": [
+                                    {
+                                        "elType": "e-tab",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-3ef72510-e5e1"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "widget",
+                                                "settings": {
+                                                    "paragraph": {
+                                                        "$$type": "escaped-html",
+                                                        "value": "Kids <span class=\"zh\" lang=\"zh-Hant\">兒童</span>"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-7d8d12b1-f7fd"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [],
+                                                "editor_settings": {
+                                                    "title": "Tab label 1"
+                                                },
+                                                "widgetType": "e-paragraph",
+                                                "styles": {
+                                                    "e-7d8d12b1-f7fd": {
+                                                        "id": "e-7d8d12b1-f7fd",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "color": {
+                                                                        "$$type": "color",
+                                                                        "value": "inherit"
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab 1 2"
+                                        },
+                                        "styles": {
+                                            "e-3ef72510-e5e1": {
+                                                "id": "e-3ef72510-e5e1",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": "e--selected"
+                                                        },
+                                                        "props": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-1771cc2"
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-824ebc4"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    },
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-7317e11"
+                                                            },
+                                                            "text-align": {
+                                                                "$$type": "string",
+                                                                "value": "start"
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "dimensions",
+                                                                "value": {
+                                                                    "block-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "block-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "border-radius": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 8,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "border-width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-f7cfe2a"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "elType": "e-tab",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-745b426d-4347"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "widget",
+                                                "settings": {
+                                                    "paragraph": {
+                                                        "$$type": "escaped-html",
+                                                        "value": "Youth and students <span class=\"zh\" lang=\"zh-Hant\">青少年</span>"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-3e2e5cd1-7ea0"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [],
+                                                "editor_settings": {
+                                                    "title": "Tab label 3"
+                                                },
+                                                "widgetType": "e-paragraph",
+                                                "styles": {
+                                                    "e-3e2e5cd1-7ea0": {
+                                                        "id": "e-3e2e5cd1-7ea0",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "color": {
+                                                                        "$$type": "color",
+                                                                        "value": "inherit"
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab 2 4"
+                                        },
+                                        "styles": {
+                                            "e-745b426d-4347": {
+                                                "id": "e-745b426d-4347",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": "e--selected"
+                                                        },
+                                                        "props": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-1771cc2"
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-824ebc4"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    },
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-7317e11"
+                                                            },
+                                                            "text-align": {
+                                                                "$$type": "string",
+                                                                "value": "start"
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "dimensions",
+                                                                "value": {
+                                                                    "block-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "block-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "border-radius": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 8,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "border-width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-f7cfe2a"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "elType": "e-tab",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-7638629f-9d06"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "widget",
+                                                "settings": {
+                                                    "paragraph": {
+                                                        "$$type": "escaped-html",
+                                                        "value": "Fellowships <span class=\"zh\" lang=\"zh-Hant\">團契</span>"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-1edc68c1-1eea"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [],
+                                                "editor_settings": {
+                                                    "title": "Tab label 5"
+                                                },
+                                                "widgetType": "e-paragraph",
+                                                "styles": {
+                                                    "e-1edc68c1-1eea": {
+                                                        "id": "e-1edc68c1-1eea",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "color": {
+                                                                        "$$type": "color",
+                                                                        "value": "inherit"
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab 3 6"
+                                        },
+                                        "styles": {
+                                            "e-7638629f-9d06": {
+                                                "id": "e-7638629f-9d06",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": "e--selected"
+                                                        },
+                                                        "props": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-1771cc2"
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-824ebc4"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    },
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-7317e11"
+                                                            },
+                                                            "text-align": {
+                                                                "$$type": "string",
+                                                                "value": "start"
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "dimensions",
+                                                                "value": {
+                                                                    "block-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "block-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "border-radius": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 8,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "border-width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-f7cfe2a"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "elType": "e-tab",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-29ab0342-53d8"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "widget",
+                                                "settings": {
+                                                    "paragraph": {
+                                                        "$$type": "escaped-html",
+                                                        "value": "Care <span class=\"zh\" lang=\"zh-Hant\">關懷</span>"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-c189874-9a6d"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [],
+                                                "editor_settings": {
+                                                    "title": "Tab label 7"
+                                                },
+                                                "widgetType": "e-paragraph",
+                                                "styles": {
+                                                    "e-c189874-9a6d": {
+                                                        "id": "e-c189874-9a6d",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "color": {
+                                                                        "$$type": "color",
+                                                                        "value": "inherit"
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab 4 8"
+                                        },
+                                        "styles": {
+                                            "e-29ab0342-53d8": {
+                                                "id": "e-29ab0342-53d8",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": "e--selected"
+                                                        },
+                                                        "props": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-1771cc2"
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-824ebc4"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    },
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-7317e11"
+                                                            },
+                                                            "text-align": {
+                                                                "$$type": "string",
+                                                                "value": "start"
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "dimensions",
+                                                                "value": {
+                                                                    "block-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "block-end": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 14,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "inline-start": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 16,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "border-radius": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 8,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "border-width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "background": {
+                                                                "$$type": "background",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "global-color-variable",
+                                                                        "value": "e-gv-f7cfe2a"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "editor_settings": {
+                                    "title": "Tabs menu 9"
+                                },
+                                "styles": {
+                                    "e-23e6151-c8b4": {
+                                        "id": "e-23e6151-c8b4",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "mobile",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "flex-direction": {
+                                                        "$$type": "string",
+                                                        "value": "row"
+                                                    },
+                                                    "flex-wrap": {
+                                                        "$$type": "string",
+                                                        "value": "wrap"
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            },
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 320,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "display": {
+                                                        "$$type": "string",
+                                                        "value": "flex"
+                                                    },
+                                                    "flex-direction": {
+                                                        "$$type": "string",
+                                                        "value": "column"
+                                                    },
+                                                    "gap": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 8,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "flex-wrap": {
+                                                        "$$type": "string",
+                                                        "value": "nowrap"
+                                                    },
+                                                    "flex": {
+                                                        "$$type": "flex",
+                                                        "value": {
+                                                            "flexShrink": {
+                                                                "$$type": "number",
+                                                                "value": 0
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "e-tabs-content-area",
+                                "settings": {
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-77c980b6-8321"
+                                        ]
+                                    }
+                                },
+                                "elements": [
+                                    {
+                                        "elType": "e-tab-content",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-134c5e90-12f2"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "e-flexbox",
+                                                "settings": {
+                                                    "_cssid": {
+                                                        "$$type": "string",
+                                                        "value": "mpcbc-con_tab_1"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-656b7ed4-73d2"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [
+                                                    {
+                                                        "elType": "widget",
+                                                        "settings": {
+                                                            "_cssid": {
+                                                                "$$type": "string",
+                                                                "value": "mpcbc-head_tab_1"
+                                                            },
+                                                            "paragraph": {
+                                                                "$$type": "escaped-html",
+                                                                "value": "Kids Panel Content"
+                                                            },
+                                                            "tag": {
+                                                                "$$type": "string",
+                                                                "value": "p"
+                                                            },
+                                                            "classes": {
+                                                                "$$type": "classes",
+                                                                "value": [
+                                                                    "e-3f4855b3-cb92"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "elements": [],
+                                                        "editor_settings": {
+                                                            "title": "head_tab_1 10"
+                                                        },
+                                                        "widgetType": "e-paragraph",
+                                                        "styles": {
+                                                            "e-3f4855b3-cb92": {
+                                                                "id": "e-3f4855b3-cb92",
+                                                                "label": "local",
+                                                                "type": "class",
+                                                                "variants": [
+                                                                    {
+                                                                        "meta": {
+                                                                            "breakpoint": "desktop",
+                                                                            "state": null
+                                                                        },
+                                                                        "props": {
+                                                                            "min-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            },
+                                                                            "max-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 100,
+                                                                                    "unit": "%"
+                                                                                }
+                                                                            },
+                                                                            "margin": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "custom_css": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "editor_settings": {
+                                                    "title": "con_tab_1 11"
+                                                },
+                                                "styles": {
+                                                    "e-656b7ed4-73d2": {
+                                                        "id": "e-656b7ed4-73d2",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 100,
+                                                                            "unit": "%"
+                                                                        }
+                                                                    },
+                                                                    "min-width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "min-height": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 440,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "padding": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "background": {
+                                                                        "$$type": "background",
+                                                                        "value": {
+                                                                            "color": {
+                                                                                "$$type": "global-color-variable",
+                                                                                "value": "e-gv-55a0d95"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "display": {
+                                                                        "$$type": "string",
+                                                                        "value": "flex"
+                                                                    },
+                                                                    "flex-direction": {
+                                                                        "$$type": "string",
+                                                                        "value": "column"
+                                                                    },
+                                                                    "gap": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 20,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab panel 1 12"
+                                        },
+                                        "styles": {
+                                            "e-134c5e90-12f2": {
+                                                "id": "e-134c5e90-12f2",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "elType": "e-tab-content",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-341c29a6-eac5"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "e-flexbox",
+                                                "settings": {
+                                                    "_cssid": {
+                                                        "$$type": "string",
+                                                        "value": "mpcbc-con_tab_2"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-e04462b-80ec"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [
+                                                    {
+                                                        "elType": "widget",
+                                                        "settings": {
+                                                            "_cssid": {
+                                                                "$$type": "string",
+                                                                "value": "mpcbc-head_tab_2"
+                                                            },
+                                                            "paragraph": {
+                                                                "$$type": "escaped-html",
+                                                                "value": "Youth Panel Content"
+                                                            },
+                                                            "tag": {
+                                                                "$$type": "string",
+                                                                "value": "p"
+                                                            },
+                                                            "classes": {
+                                                                "$$type": "classes",
+                                                                "value": [
+                                                                    "e-5857cd31-d7ad"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "elements": [],
+                                                        "editor_settings": {
+                                                            "title": "head_tab_2 13"
+                                                        },
+                                                        "widgetType": "e-paragraph",
+                                                        "styles": {
+                                                            "e-5857cd31-d7ad": {
+                                                                "id": "e-5857cd31-d7ad",
+                                                                "label": "local",
+                                                                "type": "class",
+                                                                "variants": [
+                                                                    {
+                                                                        "meta": {
+                                                                            "breakpoint": "desktop",
+                                                                            "state": null
+                                                                        },
+                                                                        "props": {
+                                                                            "min-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            },
+                                                                            "max-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 100,
+                                                                                    "unit": "%"
+                                                                                }
+                                                                            },
+                                                                            "margin": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "custom_css": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "editor_settings": {
+                                                    "title": "con_tab_2 14"
+                                                },
+                                                "styles": {
+                                                    "e-e04462b-80ec": {
+                                                        "id": "e-e04462b-80ec",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 100,
+                                                                            "unit": "%"
+                                                                        }
+                                                                    },
+                                                                    "min-width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "min-height": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 440,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "padding": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "background": {
+                                                                        "$$type": "background",
+                                                                        "value": {
+                                                                            "color": {
+                                                                                "$$type": "global-color-variable",
+                                                                                "value": "e-gv-48e97d9"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "display": {
+                                                                        "$$type": "string",
+                                                                        "value": "flex"
+                                                                    },
+                                                                    "flex-direction": {
+                                                                        "$$type": "string",
+                                                                        "value": "column"
+                                                                    },
+                                                                    "gap": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 20,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab panel 2 15"
+                                        },
+                                        "styles": {
+                                            "e-341c29a6-eac5": {
+                                                "id": "e-341c29a6-eac5",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "elType": "e-tab-content",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-415723a9-b9f2"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "e-flexbox",
+                                                "settings": {
+                                                    "_cssid": {
+                                                        "$$type": "string",
+                                                        "value": "mpcbc-con_tab_3"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-1ee010a4-3a8f"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [
+                                                    {
+                                                        "elType": "widget",
+                                                        "settings": {
+                                                            "_cssid": {
+                                                                "$$type": "string",
+                                                                "value": "mpcbc-head_tab_3"
+                                                            },
+                                                            "paragraph": {
+                                                                "$$type": "escaped-html",
+                                                                "value": "Fellowships Panel Content"
+                                                            },
+                                                            "tag": {
+                                                                "$$type": "string",
+                                                                "value": "p"
+                                                            },
+                                                            "classes": {
+                                                                "$$type": "classes",
+                                                                "value": [
+                                                                    "e-5e29f4b5-e941"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "elements": [],
+                                                        "editor_settings": {
+                                                            "title": "head_tab_3 16"
+                                                        },
+                                                        "widgetType": "e-paragraph",
+                                                        "styles": {
+                                                            "e-5e29f4b5-e941": {
+                                                                "id": "e-5e29f4b5-e941",
+                                                                "label": "local",
+                                                                "type": "class",
+                                                                "variants": [
+                                                                    {
+                                                                        "meta": {
+                                                                            "breakpoint": "desktop",
+                                                                            "state": null
+                                                                        },
+                                                                        "props": {
+                                                                            "min-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            },
+                                                                            "max-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 100,
+                                                                                    "unit": "%"
+                                                                                }
+                                                                            },
+                                                                            "margin": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "custom_css": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "editor_settings": {
+                                                    "title": "con_tab_3 17"
+                                                },
+                                                "styles": {
+                                                    "e-1ee010a4-3a8f": {
+                                                        "id": "e-1ee010a4-3a8f",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 100,
+                                                                            "unit": "%"
+                                                                        }
+                                                                    },
+                                                                    "min-width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "min-height": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 440,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "padding": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "background": {
+                                                                        "$$type": "background",
+                                                                        "value": {
+                                                                            "color": {
+                                                                                "$$type": "global-color-variable",
+                                                                                "value": "e-gv-43b7e33"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "display": {
+                                                                        "$$type": "string",
+                                                                        "value": "flex"
+                                                                    },
+                                                                    "flex-direction": {
+                                                                        "$$type": "string",
+                                                                        "value": "column"
+                                                                    },
+                                                                    "gap": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 20,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab panel 3 18"
+                                        },
+                                        "styles": {
+                                            "e-415723a9-b9f2": {
+                                                "id": "e-415723a9-b9f2",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "elType": "e-tab-content",
+                                        "settings": {
+                                            "classes": {
+                                                "$$type": "classes",
+                                                "value": [
+                                                    "e-1ccc7bdc-467d"
+                                                ]
+                                            }
+                                        },
+                                        "elements": [
+                                            {
+                                                "elType": "e-flexbox",
+                                                "settings": {
+                                                    "_cssid": {
+                                                        "$$type": "string",
+                                                        "value": "mpcbc-con_tab_4"
+                                                    },
+                                                    "classes": {
+                                                        "$$type": "classes",
+                                                        "value": [
+                                                            "e-73a788ca-bbe8"
+                                                        ]
+                                                    }
+                                                },
+                                                "elements": [
+                                                    {
+                                                        "elType": "widget",
+                                                        "settings": {
+                                                            "_cssid": {
+                                                                "$$type": "string",
+                                                                "value": "mpcbc-head_tab_4"
+                                                            },
+                                                            "paragraph": {
+                                                                "$$type": "escaped-html",
+                                                                "value": "Care Panel Content"
+                                                            },
+                                                            "tag": {
+                                                                "$$type": "string",
+                                                                "value": "p"
+                                                            },
+                                                            "classes": {
+                                                                "$$type": "classes",
+                                                                "value": [
+                                                                    "e-237792d1-e4eb"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "elements": [],
+                                                        "editor_settings": {
+                                                            "title": "head_tab_4 19"
+                                                        },
+                                                        "widgetType": "e-paragraph",
+                                                        "styles": {
+                                                            "e-237792d1-e4eb": {
+                                                                "id": "e-237792d1-e4eb",
+                                                                "label": "local",
+                                                                "type": "class",
+                                                                "variants": [
+                                                                    {
+                                                                        "meta": {
+                                                                            "breakpoint": "desktop",
+                                                                            "state": null
+                                                                        },
+                                                                        "props": {
+                                                                            "min-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            },
+                                                                            "max-width": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 100,
+                                                                                    "unit": "%"
+                                                                                }
+                                                                            },
+                                                                            "margin": {
+                                                                                "$$type": "size",
+                                                                                "value": {
+                                                                                    "size": 0,
+                                                                                    "unit": "px"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "custom_css": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "editor_settings": {
+                                                    "title": "con_tab_4 20"
+                                                },
+                                                "styles": {
+                                                    "e-73a788ca-bbe8": {
+                                                        "id": "e-73a788ca-bbe8",
+                                                        "label": "local",
+                                                        "type": "class",
+                                                        "variants": [
+                                                            {
+                                                                "meta": {
+                                                                    "breakpoint": "desktop",
+                                                                    "state": null
+                                                                },
+                                                                "props": {
+                                                                    "width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 100,
+                                                                            "unit": "%"
+                                                                        }
+                                                                    },
+                                                                    "min-width": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "min-height": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 440,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "padding": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "margin": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 0,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    },
+                                                                    "background": {
+                                                                        "$$type": "background",
+                                                                        "value": {
+                                                                            "color": {
+                                                                                "$$type": "global-color-variable",
+                                                                                "value": "e-gv-c89d4ba"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "display": {
+                                                                        "$$type": "string",
+                                                                        "value": "flex"
+                                                                    },
+                                                                    "flex-direction": {
+                                                                        "$$type": "string",
+                                                                        "value": "column"
+                                                                    },
+                                                                    "gap": {
+                                                                        "$$type": "size",
+                                                                        "value": {
+                                                                            "size": 20,
+                                                                            "unit": "px"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "custom_css": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "editor_settings": {
+                                            "title": "Tab panel 4 21"
+                                        },
+                                        "styles": {
+                                            "e-1ccc7bdc-467d": {
+                                                "id": "e-1ccc7bdc-467d",
+                                                "label": "local",
+                                                "type": "class",
+                                                "variants": [
+                                                    {
+                                                        "meta": {
+                                                            "breakpoint": "desktop",
+                                                            "state": null
+                                                        },
+                                                        "props": {
+                                                            "width": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 100,
+                                                                    "unit": "%"
+                                                                }
+                                                            },
+                                                            "padding": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 0,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        },
+                                                        "custom_css": null
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "editor_settings": {
+                                    "title": "Tabs panels 22"
+                                },
+                                "styles": {
+                                    "e-77c980b6-8321": {
+                                        "id": "e-77c980b6-8321",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "flex": {
+                                                        "$$type": "flex",
+                                                        "value": {
+                                                            "flexGrow": {
+                                                                "$$type": "number",
+                                                                "value": 1
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "editor_settings": {
+                            "title": "spike_nested_tabs 23"
+                        },
+                        "styles": {
+                            "e-7dfb9628-b94a": {
+                                "id": "e-7dfb9628-b94a",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "tablet",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "gap": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 32,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    },
+                                    {
+                                        "meta": {
+                                            "breakpoint": "mobile",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "flex-direction": {
+                                                "$$type": "string",
+                                                "value": "column"
+                                            },
+                                            "gap": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 24,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    },
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "padding": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "display": {
+                                                "$$type": "string",
+                                                "value": "flex"
+                                            },
+                                            "flex-direction": {
+                                                "$$type": "string",
+                                                "value": "row"
+                                            },
+                                            "gap": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 32,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "align-items": {
+                                                "$$type": "string",
+                                                "value": "stretch"
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "editor_settings": {
+                    "title": "Boxed inner 24"
+                },
+                "styles": {
+                    "e-77004808-d588": {
+                        "id": "e-77004808-d588",
+                        "label": "local",
+                        "type": "class",
+                        "variants": [
+                            {
+                                "meta": {
+                                    "breakpoint": "desktop",
+                                    "state": null
+                                },
+                                "props": {
+                                    "width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 100,
+                                            "unit": "%"
+                                        }
+                                    },
+                                    "min-width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "max-width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 1328,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "padding": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "display": {
+                                        "$$type": "string",
+                                        "value": "flex"
+                                    },
+                                    "flex-direction": {
+                                        "$$type": "string",
+                                        "value": "column"
+                                    },
+                                    "gap": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 20,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "margin": {
+                                        "$$type": "dimensions",
+                                        "value": {
+                                            "block-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": null,
+                                                    "unit": "auto"
+                                                }
+                                            },
+                                            "block-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": null,
+                                                    "unit": "auto"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "custom_css": null
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "editor_settings": {
+            "title": "spike_root_container 25"
+        },
+        "styles": {
+            "e-568db737-9e7b": {
+                "id": "e-568db737-9e7b",
+                "label": "local",
+                "type": "class",
+                "variants": [
+                    {
+                        "meta": {
+                            "breakpoint": "desktop",
+                            "state": null
+                        },
+                        "props": {
+                            "width": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 100,
+                                    "unit": "%"
+                                }
+                            },
+                            "min-width": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 0,
+                                    "unit": "px"
+                                }
+                            },
+                            "padding": {
+                                "$$type": "dimensions",
+                                "value": {
+                                    "block-start": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 64,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "inline-end": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 32,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "block-end": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 64,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "inline-start": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 32,
+                                            "unit": "px"
+                                        }
+                                    }
+                                }
+                            },
+                            "margin": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 0,
+                                    "unit": "px"
+                                }
+                            },
+                            "background": {
+                                "$$type": "background",
+                                "value": {
+                                    "color": {
+                                        "$$type": "global-color-variable",
+                                        "value": "e-gv-824ebc4"
+                                    }
+                                }
+                            },
+                            "display": {
+                                "$$type": "string",
+                                "value": "flex"
+                            },
+                            "flex-direction": {
+                                "$$type": "string",
+                                "value": "column"
+                            },
+                            "gap": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 20,
+                                    "unit": "px"
+                                }
+                            }
+                        },
+                        "custom_css": null
+                    }
+                ]
+            }
+        }
+    }
+]

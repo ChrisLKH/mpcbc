@@ -1,0 +1,2795 @@
+[
+    {
+        "elType": "e-flexbox",
+        "settings": {
+            "_cssid": {
+                "$$type": "string",
+                "value": "mpcbc-welcome_root"
+            },
+            "classes": {
+                "$$type": "classes",
+                "value": [
+                    "e-7046784a-3d0f"
+                ]
+            }
+        },
+        "elements": [
+            {
+                "elType": "e-flexbox",
+                "settings": {
+                    "_cssid": {
+                        "$$type": "string",
+                        "value": "mpcbc-welcome_top_bar"
+                    },
+                    "classes": {
+                        "$$type": "classes",
+                        "value": [
+                            "e-4596f823-dfe7"
+                        ]
+                    }
+                },
+                "elements": [
+                    {
+                        "elType": "widget",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_logo"
+                            },
+                            "image": {
+                                "$$type": "image",
+                                "value": {
+                                    "src": {
+                                        "$$type": "image-src",
+                                        "value": {
+                                            "id": {
+                                                "$$type": "image-attachment-id",
+                                                "value": 78
+                                            }
+                                        }
+                                    },
+                                    "size": {
+                                        "$$type": "string",
+                                        "value": "full"
+                                    }
+                                }
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-1cdb5eab-b11f"
+                                ]
+                            }
+                        },
+                        "elements": [],
+                        "editor_settings": {
+                            "title": "welcome_logo 1"
+                        },
+                        "widgetType": "e-image",
+                        "styles": {
+                            "e-1cdb5eab-b11f": {
+                                "id": "e-1cdb5eab-b11f",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 140,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "max-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "object-fit": {
+                                                "$$type": "string",
+                                                "value": "cover"
+                                            },
+                                            "margin": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "height": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": null,
+                                                    "unit": "auto"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "editor_settings": {
+                    "title": "welcome_top_bar 2"
+                },
+                "styles": {
+                    "e-4596f823-dfe7": {
+                        "id": "e-4596f823-dfe7",
+                        "label": "local",
+                        "type": "class",
+                        "variants": [
+                            {
+                                "meta": {
+                                    "breakpoint": "desktop",
+                                    "state": null
+                                },
+                                "props": {
+                                    "width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 100,
+                                            "unit": "%"
+                                        }
+                                    },
+                                    "min-width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "padding": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "margin": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "display": {
+                                        "$$type": "string",
+                                        "value": "flex"
+                                    },
+                                    "flex-direction": {
+                                        "$$type": "string",
+                                        "value": "row"
+                                    },
+                                    "gap": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 20,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "justify-content": {
+                                        "$$type": "string",
+                                        "value": "space-between"
+                                    },
+                                    "align-items": {
+                                        "$$type": "string",
+                                        "value": "center"
+                                    }
+                                },
+                                "custom_css": null
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "elType": "e-flexbox",
+                "settings": {
+                    "_cssid": {
+                        "$$type": "string",
+                        "value": "mpcbc-welcome_center_hero"
+                    },
+                    "classes": {
+                        "$$type": "classes",
+                        "value": [
+                            "e-1ec00569-3394"
+                        ]
+                    }
+                },
+                "elements": [
+                    {
+                        "elType": "widget",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_fancy_text"
+                            },
+                            "paragraph": {
+                                "$$type": "escaped-html",
+                                "value": "Welcome · 歡迎你 · 欢迎你"
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-3ef9d073-831e"
+                                ]
+                            }
+                        },
+                        "elements": [],
+                        "editor_settings": {
+                            "title": "welcome_fancy_text 3"
+                        },
+                        "widgetType": "e-paragraph",
+                        "styles": {
+                            "e-3ef9d073-831e": {
+                                "id": "e-3ef9d073-831e",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "max-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "elType": "widget",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_title"
+                            },
+                            "title": {
+                                "$$type": "escaped-html",
+                                "value": "MPCBC"
+                            },
+                            "tag": {
+                                "$$type": "string",
+                                "value": "h1"
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-21279ed4-7fb8"
+                                ]
+                            }
+                        },
+                        "elements": [],
+                        "editor_settings": {
+                            "title": "welcome_title 4"
+                        },
+                        "widgetType": "e-heading",
+                        "styles": {
+                            "e-21279ed4-7fb8": {
+                                "id": "e-21279ed4-7fb8",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "max-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "font-family": {
+                                                "$$type": "global-font-variable",
+                                                "value": "e-gv-d649b5e"
+                                            },
+                                            "font-weight": {
+                                                "$$type": "string",
+                                                "value": "700"
+                                            },
+                                            "font-size": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 112,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "color": {
+                                                "$$type": "global-color-variable",
+                                                "value": "e-gv-d98b04b"
+                                            },
+                                            "line-height": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0.94999999999999996,
+                                                    "unit": "em"
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "elType": "widget",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_sub_title"
+                            },
+                            "paragraph": {
+                                "$$type": "escaped-html",
+                                "value": "蒙特利公園華人浸信會"
+                            },
+                            "tag": {
+                                "$$type": "string",
+                                "value": "p"
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-382b3687-d33a"
+                                ]
+                            }
+                        },
+                        "elements": [],
+                        "editor_settings": {
+                            "title": "welcome_sub_title 5"
+                        },
+                        "widgetType": "e-paragraph",
+                        "styles": {
+                            "e-382b3687-d33a": {
+                                "id": "e-382b3687-d33a",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "max-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "font-family": {
+                                                "$$type": "global-font-variable",
+                                                "value": "e-gv-2635213"
+                                            },
+                                            "font-size": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 44,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "color": {
+                                                "$$type": "global-color-variable",
+                                                "value": "e-gv-2dedca6"
+                                            },
+                                            "line-height": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 1.3999999999999999,
+                                                    "unit": "em"
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "elType": "e-flexbox",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_lang_buttons"
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-1261038a-72de"
+                                ]
+                            }
+                        },
+                        "elements": [
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-btn_lang_en"
+                                    },
+                                    "text": {
+                                        "$$type": "escaped-html",
+                                        "value": "English"
+                                    },
+                                    "link": {
+                                        "$$type": "link",
+                                        "value": {
+                                            "destination": {
+                                                "$$type": "url",
+                                                "value": "http://mpcbc.local/"
+                                            },
+                                            "isTargetBlank": {
+                                                "$$type": "boolean",
+                                                "value": false
+                                            }
+                                        }
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "a"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-5f49ed7a-5548"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "btn_lang_en 6"
+                                },
+                                "widgetType": "e-button",
+                                "styles": {
+                                    "e-5f49ed7a-5548": {
+                                        "id": "e-5f49ed7a-5548",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-f5301be"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 20,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "text-decoration": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "dimensions",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 14,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 28,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 14,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 24,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "border-radius": {
+                                                        "$$type": "border-radius-v2",
+                                                        "value": {
+                                                            "start-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "start-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-width": {
+                                                        "$$type": "border-width-v2",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-b25e5d0"
+                                                    },
+                                                    "border-style": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "background": {
+                                                        "$$type": "background",
+                                                        "value": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-56ef666"
+                                                            }
+                                                        }
+                                                    },
+                                                    "display": {
+                                                        "$$type": "string",
+                                                        "value": "inline-flex"
+                                                    },
+                                                    "justify-content": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "align-items": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "align-self": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": null,
+                                                            "unit": "auto"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-btn_lang_tc"
+                                    },
+                                    "text": {
+                                        "$$type": "escaped-html",
+                                        "value": "繁體中文"
+                                    },
+                                    "link": {
+                                        "$$type": "link",
+                                        "value": {
+                                            "destination": {
+                                                "$$type": "url",
+                                                "value": "http://mpcbc.local/zh-hant/"
+                                            },
+                                            "isTargetBlank": {
+                                                "$$type": "boolean",
+                                                "value": false
+                                            }
+                                        }
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "a"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-582d2aa8-c0f6"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "btn_lang_tc 7"
+                                },
+                                "widgetType": "e-button",
+                                "styles": {
+                                    "e-582d2aa8-c0f6": {
+                                        "id": "e-582d2aa8-c0f6",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-2635213"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 20,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "text-decoration": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "dimensions",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 14,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 28,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 14,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 24,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "border-radius": {
+                                                        "$$type": "border-radius-v2",
+                                                        "value": {
+                                                            "start-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "start-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-width": {
+                                                        "$$type": "border-width-v2",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-b25e5d0"
+                                                    },
+                                                    "border-style": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "background": {
+                                                        "$$type": "background",
+                                                        "value": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-56ef666"
+                                                            }
+                                                        }
+                                                    },
+                                                    "display": {
+                                                        "$$type": "string",
+                                                        "value": "inline-flex"
+                                                    },
+                                                    "justify-content": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "align-items": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "align-self": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": null,
+                                                            "unit": "auto"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-btn_lang_sc"
+                                    },
+                                    "text": {
+                                        "$$type": "escaped-html",
+                                        "value": "简体中文"
+                                    },
+                                    "link": {
+                                        "$$type": "link",
+                                        "value": {
+                                            "destination": {
+                                                "$$type": "url",
+                                                "value": "http://mpcbc.local/zh-hans/"
+                                            },
+                                            "isTargetBlank": {
+                                                "$$type": "boolean",
+                                                "value": false
+                                            }
+                                        }
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "a"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-2589d336-c38c"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "btn_lang_sc 8"
+                                },
+                                "widgetType": "e-button",
+                                "styles": {
+                                    "e-2589d336-c38c": {
+                                        "id": "e-2589d336-c38c",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-99d935c"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 20,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "text-decoration": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "dimensions",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 14,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 28,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 14,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 24,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "border-radius": {
+                                                        "$$type": "border-radius-v2",
+                                                        "value": {
+                                                            "start-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "start-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-width": {
+                                                        "$$type": "border-width-v2",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 1,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-b25e5d0"
+                                                    },
+                                                    "border-style": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "background": {
+                                                        "$$type": "background",
+                                                        "value": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-56ef666"
+                                                            }
+                                                        }
+                                                    },
+                                                    "display": {
+                                                        "$$type": "string",
+                                                        "value": "inline-flex"
+                                                    },
+                                                    "justify-content": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "align-items": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "align-self": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": null,
+                                                            "unit": "auto"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "editor_settings": {
+                            "title": "welcome_lang_buttons 9"
+                        },
+                        "styles": {
+                            "e-1261038a-72de": {
+                                "id": "e-1261038a-72de",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "padding": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "dimensions",
+                                                "value": {
+                                                    "block-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 16,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "inline-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "block-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "inline-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "display": {
+                                                "$$type": "string",
+                                                "value": "flex"
+                                            },
+                                            "flex-direction": {
+                                                "$$type": "string",
+                                                "value": "row"
+                                            },
+                                            "gap": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 14,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "flex-wrap": {
+                                                "$$type": "string",
+                                                "value": "wrap"
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "editor_settings": {
+                    "title": "welcome_center_hero 10"
+                },
+                "styles": {
+                    "e-1ec00569-3394": {
+                        "id": "e-1ec00569-3394",
+                        "label": "local",
+                        "type": "class",
+                        "variants": [
+                            {
+                                "meta": {
+                                    "breakpoint": "desktop",
+                                    "state": null
+                                },
+                                "props": {
+                                    "width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 100,
+                                            "unit": "%"
+                                        }
+                                    },
+                                    "min-width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "padding": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "display": {
+                                        "$$type": "string",
+                                        "value": "flex"
+                                    },
+                                    "flex-direction": {
+                                        "$$type": "string",
+                                        "value": "column"
+                                    },
+                                    "gap": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 28,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "margin": {
+                                        "$$type": "dimensions",
+                                        "value": {
+                                            "block-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 40,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": null,
+                                                    "unit": "auto"
+                                                }
+                                            },
+                                            "block-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 40,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "custom_css": null
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "elType": "e-flexbox",
+                "settings": {
+                    "_cssid": {
+                        "$$type": "string",
+                        "value": "mpcbc-welcome_schedule_strip"
+                    },
+                    "classes": {
+                        "$$type": "classes",
+                        "value": [
+                            "e-466bb05c-6ea7"
+                        ]
+                    }
+                },
+                "elements": [
+                    {
+                        "elType": "e-flexbox",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_strip_times_row"
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-3fe1fc7e-deaa"
+                                ]
+                            }
+                        },
+                        "elements": [
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_sundays"
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "<strong>Sundays</strong> <span lang=\"zh-Hant\">主日</span>"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-27587612-14d6"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_sundays 11"
+                                },
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-27587612-14d6": {
+                                        "id": "e-27587612-14d6",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 15,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_canto"
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "<span lang=\"zh-Hant\">粵語</span> <strong>9:30</strong>"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-58f34e7b-9378"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_canto 12"
+                                },
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-58f34e7b-9378": {
+                                        "id": "e-58f34e7b-9378",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 15,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_live_pill"
+                                    },
+                                    "text": {
+                                        "$$type": "escaped-html",
+                                        "value": "Live"
+                                    },
+                                    "link": {
+                                        "$$type": "link",
+                                        "value": {
+                                            "destination": {
+                                                "$$type": "url",
+                                                "value": "http://mpcbc.local/watch/"
+                                            },
+                                            "isTargetBlank": {
+                                                "$$type": "boolean",
+                                                "value": false
+                                            }
+                                        }
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "a"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-5765fb9c-ad4c"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_live_pill 13"
+                                },
+                                "widgetType": "e-button",
+                                "styles": {
+                                    "e-5765fb9c-ad4c": {
+                                        "id": "e-5765fb9c-ad4c",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-f5301be"
+                                                    },
+                                                    "font-weight": {
+                                                        "$$type": "string",
+                                                        "value": "700"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 11,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "text-decoration": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "dimensions",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 2,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 8,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 2,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 8,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "border-radius": {
+                                                        "$$type": "border-radius-v2",
+                                                        "value": {
+                                                            "start-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "start-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 999,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-style": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "background": {
+                                                        "$$type": "background",
+                                                        "value": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-468b90b"
+                                                            }
+                                                        }
+                                                    },
+                                                    "display": {
+                                                        "$$type": "string",
+                                                        "value": "inline-flex"
+                                                    },
+                                                    "justify-content": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "align-items": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "align-self": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": null,
+                                                            "unit": "auto"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_en"
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "English <strong>11:00</strong>"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-a8d2a37-b232"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_en 14"
+                                },
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-a8d2a37-b232": {
+                                        "id": "e-a8d2a37-b232",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 15,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_mando"
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "<span lang=\"zh-Hant\">國語</span> <strong>11:30</strong>"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-7dda7b4c-66d6"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_mando 15"
+                                },
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-7dda7b4c-66d6": {
+                                        "id": "e-7dda7b4c-66d6",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 15,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_kids"
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "Kids <span lang=\"zh-Hant\">兒童</span> <strong>11:00</strong>"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-54a6755c-e01d"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_kids 16"
+                                },
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-54a6755c-e01d": {
+                                        "id": "e-54a6755c-e01d",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 15,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-0c168a6"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "elType": "widget",
+                                "settings": {
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-welcome_time_addr"
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "[Street address]"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-a2c723-bd37"
+                                        ]
+                                    }
+                                },
+                                "elements": [],
+                                "editor_settings": {
+                                    "title": "welcome_time_addr 17"
+                                },
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-a2c723-bd37": {
+                                        "id": "e-a2c723-bd37",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 13,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-20c72a3"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "editor_settings": {
+                            "title": "welcome_strip_times_row 18"
+                        },
+                        "styles": {
+                            "e-3fe1fc7e-deaa": {
+                                "id": "e-3fe1fc7e-deaa",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "tablet",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    },
+                                    {
+                                        "meta": {
+                                            "breakpoint": "mobile",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    },
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 75,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "padding": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "display": {
+                                                "$$type": "string",
+                                                "value": "flex"
+                                            },
+                                            "flex-direction": {
+                                                "$$type": "string",
+                                                "value": "row"
+                                            },
+                                            "gap": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 14,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "flex-wrap": {
+                                                "$$type": "string",
+                                                "value": "wrap"
+                                            },
+                                            "align-items": {
+                                                "$$type": "string",
+                                                "value": "center"
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "elType": "widget",
+                        "settings": {
+                            "_cssid": {
+                                "$$type": "string",
+                                "value": "mpcbc-welcome_strip_btn"
+                            },
+                            "text": {
+                                "$$type": "escaped-html",
+                                "value": "Watch live 觀看直播 →"
+                            },
+                            "link": {
+                                "$$type": "link",
+                                "value": {
+                                    "destination": {
+                                        "$$type": "url",
+                                        "value": "http://mpcbc.local/watch/"
+                                    },
+                                    "isTargetBlank": {
+                                        "$$type": "boolean",
+                                        "value": false
+                                    }
+                                }
+                            },
+                            "tag": {
+                                "$$type": "string",
+                                "value": "a"
+                            },
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-39561bac-f31b"
+                                ]
+                            }
+                        },
+                        "elements": [],
+                        "editor_settings": {
+                            "title": "welcome_strip_btn 19"
+                        },
+                        "widgetType": "e-button",
+                        "styles": {
+                            "e-39561bac-f31b": {
+                                "id": "e-39561bac-f31b",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "max-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "font-family": {
+                                                "$$type": "global-font-variable",
+                                                "value": "e-gv-f5301be"
+                                            },
+                                            "font-weight": {
+                                                "$$type": "string",
+                                                "value": "700"
+                                            },
+                                            "font-size": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 15,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "color": {
+                                                "$$type": "global-color-variable",
+                                                "value": "e-gv-f7f3384"
+                                            },
+                                            "text-decoration": {
+                                                "$$type": "string",
+                                                "value": "none"
+                                            },
+                                            "padding": {
+                                                "$$type": "dimensions",
+                                                "value": {
+                                                    "block-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 12,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "inline-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 20,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "block-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 12,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "inline-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 20,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "border-radius": {
+                                                "$$type": "border-radius-v2",
+                                                "value": {
+                                                    "start-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 999,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "start-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 999,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "end-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 999,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "end-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 999,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "border-style": {
+                                                "$$type": "string",
+                                                "value": "none"
+                                            },
+                                            "background": {
+                                                "$$type": "background",
+                                                "value": {
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-f7cfe2a"
+                                                    }
+                                                }
+                                            },
+                                            "display": {
+                                                "$$type": "string",
+                                                "value": "inline-flex"
+                                            },
+                                            "justify-content": {
+                                                "$$type": "string",
+                                                "value": "flex-start"
+                                            },
+                                            "align-items": {
+                                                "$$type": "string",
+                                                "value": "center"
+                                            },
+                                            "align-self": {
+                                                "$$type": "string",
+                                                "value": "flex-start"
+                                            },
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": null,
+                                                    "unit": "auto"
+                                                }
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "editor_settings": {
+                    "title": "welcome_schedule_strip 20"
+                },
+                "styles": {
+                    "e-466bb05c-6ea7": {
+                        "id": "e-466bb05c-6ea7",
+                        "label": "local",
+                        "type": "class",
+                        "variants": [
+                            {
+                                "meta": {
+                                    "breakpoint": "mobile",
+                                    "state": null
+                                },
+                                "props": {
+                                    "flex-direction": {
+                                        "$$type": "string",
+                                        "value": "column"
+                                    }
+                                },
+                                "custom_css": null
+                            },
+                            {
+                                "meta": {
+                                    "breakpoint": "desktop",
+                                    "state": null
+                                },
+                                "props": {
+                                    "width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 100,
+                                            "unit": "%"
+                                        }
+                                    },
+                                    "min-width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "padding": {
+                                        "$$type": "dimensions",
+                                        "value": {
+                                            "block-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 8,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 10,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "block-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 8,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 24,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "margin": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "border-radius": {
+                                        "$$type": "border-radius-v2",
+                                        "value": {
+                                            "start-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 999,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "start-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 999,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "end-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 999,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "end-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 999,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "border-width": {
+                                        "$$type": "border-width-v2",
+                                        "value": {
+                                            "block-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 1,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 1,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "block-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 1,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 1,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "border-color": {
+                                        "$$type": "global-color-variable",
+                                        "value": "e-gv-753dc0b"
+                                    },
+                                    "border-style": {
+                                        "$$type": "string",
+                                        "value": "solid"
+                                    },
+                                    "background": {
+                                        "$$type": "background",
+                                        "value": {
+                                            "color": {
+                                                "$$type": "global-color-variable",
+                                                "value": "e-gv-f911c08"
+                                            }
+                                        }
+                                    },
+                                    "display": {
+                                        "$$type": "string",
+                                        "value": "flex"
+                                    },
+                                    "flex-direction": {
+                                        "$$type": "string",
+                                        "value": "row"
+                                    },
+                                    "gap": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 16,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "flex-wrap": {
+                                        "$$type": "string",
+                                        "value": "wrap"
+                                    },
+                                    "justify-content": {
+                                        "$$type": "string",
+                                        "value": "space-between"
+                                    },
+                                    "align-items": {
+                                        "$$type": "string",
+                                        "value": "center"
+                                    }
+                                },
+                                "custom_css": null
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "editor_settings": {
+            "title": "welcome_root 21"
+        },
+        "styles": {
+            "e-7046784a-3d0f": {
+                "id": "e-7046784a-3d0f",
+                "label": "local",
+                "type": "class",
+                "variants": [
+                    {
+                        "meta": {
+                            "breakpoint": "mobile",
+                            "state": null
+                        },
+                        "props": {
+                            "padding": {
+                                "$$type": "dimensions",
+                                "value": {
+                                    "block-start": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 24,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "inline-end": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 20,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "block-end": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 24,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "inline-start": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 20,
+                                            "unit": "px"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "custom_css": null
+                    },
+                    {
+                        "meta": {
+                            "breakpoint": "desktop",
+                            "state": null
+                        },
+                        "props": {
+                            "width": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 100,
+                                    "unit": "%"
+                                }
+                            },
+                            "min-width": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 0,
+                                    "unit": "px"
+                                }
+                            },
+                            "min-height": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 100,
+                                    "unit": "vh"
+                                }
+                            },
+                            "padding": {
+                                "$$type": "dimensions",
+                                "value": {
+                                    "block-start": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 32,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "inline-end": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 56,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "block-end": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 28,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "inline-start": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 56,
+                                            "unit": "px"
+                                        }
+                                    }
+                                }
+                            },
+                            "margin": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 0,
+                                    "unit": "px"
+                                }
+                            },
+                            "background": {
+                                "$$type": "background",
+                                "value": {
+                                    "color": {
+                                        "$$type": "global-color-variable",
+                                        "value": "e-gv-5a81035"
+                                    },
+                                    "background-overlay": {
+                                        "$$type": "background-overlay",
+                                        "value": [
+                                            {
+                                                "$$type": "background-gradient-overlay",
+                                                "value": {
+                                                    "type": {
+                                                        "$$type": "string",
+                                                        "value": "linear"
+                                                    },
+                                                    "stops": {
+                                                        "$$type": "gradient-color-stop",
+                                                        "value": [
+                                                            {
+                                                                "$$type": "color-stop",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "color",
+                                                                        "value": "rgba(18,17,14,0.72)"
+                                                                    },
+                                                                    "offset": {
+                                                                        "$$type": "number",
+                                                                        "value": 0
+                                                                    }
+                                                                }
+                                                            },
+                                                            {
+                                                                "$$type": "color-stop",
+                                                                "value": {
+                                                                    "color": {
+                                                                        "$$type": "color",
+                                                                        "value": "rgba(18,17,14,0.25)"
+                                                                    },
+                                                                    "offset": {
+                                                                        "$$type": "number",
+                                                                        "value": 100
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "angle": {
+                                                        "$$type": "number",
+                                                        "value": 90
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "display": {
+                                "$$type": "string",
+                                "value": "flex"
+                            },
+                            "flex-direction": {
+                                "$$type": "string",
+                                "value": "column"
+                            },
+                            "gap": {
+                                "$$type": "size",
+                                "value": {
+                                    "size": 20,
+                                    "unit": "px"
+                                }
+                            },
+                            "justify-content": {
+                                "$$type": "string",
+                                "value": "space-between"
+                            }
+                        },
+                        "custom_css": null
+                    }
+                ]
+            }
+        }
+    }
+]

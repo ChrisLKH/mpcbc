@@ -1,0 +1,169 @@
+[
+    {
+        "title": "Prayer request",
+        "status": "published",
+        "appearance_settings": [],
+        "form_fields": {
+            "fields": [
+                {
+                    "element": "textarea",
+                    "attributes": {
+                        "name": "message",
+                        "id": "pr-text",
+                        "class": "field-prayer-text",
+                        "placeholder": "Type your prayer request here...",
+                        "rows": 6,
+                        "cols": 50
+                    },
+                    "settings": {
+                        "container_class": "field-wrap",
+                        "label": "Your prayer request",
+                        "label_placement": "top",
+                        "validation_rules": {
+                            "required": {
+                                "value": true,
+                                "message": "Please enter your prayer request."
+                            }
+                        }
+                    },
+                    "editor_options": {
+                        "title": "Textarea Field"
+                    }
+                },
+                {
+                    "element": "container",
+                    "attributes": {
+                        "class": ""
+                    },
+                    "settings": {
+                        "container_class": "field-wrap"
+                    },
+                    "columns": [
+                        {
+                            "width": 50,
+                            "fields": [
+                                {
+                                    "element": "input_text",
+                                    "attributes": {
+                                        "name": "names",
+                                        "id": "pr-name",
+                                        "type": "text",
+                                        "placeholder": "Your name",
+                                        "class": ""
+                                    },
+                                    "settings": {
+                                        "container_class": "field-wrap",
+                                        "label": "Name (optional)",
+                                        "label_placement": "top"
+                                    },
+                                    "editor_options": {
+                                        "title": "Name"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "width": 50,
+                            "fields": [
+                                {
+                                    "element": "input_text",
+                                    "attributes": {
+                                        "name": "email_or_phone",
+                                        "id": "pr-contact",
+                                        "type": "text",
+                                        "placeholder": "you@example.com or phone",
+                                        "class": ""
+                                    },
+                                    "settings": {
+                                        "container_class": "field-wrap",
+                                        "label": "Email or phone (optional)",
+                                        "label_placement": "top"
+                                    },
+                                    "editor_options": {
+                                        "title": "Contact info"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "element": "input_radio",
+                    "attributes": {
+                        "name": "who_may_see",
+                        "id": "pr-who",
+                        "type": "radio",
+                        "value": "pastors",
+                        "class": ""
+                    },
+                    "settings": {
+                        "container_class": "field-wrap",
+                        "label": "Who may see this?",
+                        "label_placement": "top",
+                        "advanced_options": [
+                            {
+                                "label": "Pastors only",
+                                "value": "pastors"
+                            },
+                            {
+                                "label": "Pastors and the prayer team",
+                                "value": "team"
+                            }
+                        ]
+                    },
+                    "options": {
+                        "pastors": "Pastors only",
+                        "team": "Pastors and the prayer team"
+                    },
+                    "editor_options": {
+                        "title": "Radio Field"
+                    }
+                },
+                {
+                    "element": "input_checkbox",
+                    "attributes": {
+                        "name": "contact_me",
+                        "id": "pr-contact-me",
+                        "type": "checkbox",
+                        "class": ""
+                    },
+                    "settings": {
+                        "container_class": "field-wrap",
+                        "label": "",
+                        "advanced_options": [
+                            {
+                                "label": "I’d like someone to contact me",
+                                "value": "yes"
+                            }
+                        ]
+                    },
+                    "options": {
+                        "yes": "I’d like someone to contact me"
+                    },
+                    "editor_options": {
+                        "title": "Checkbox Field"
+                    }
+                }
+            ],
+            "submitButton": {
+                "element": "button",
+                "attributes": {
+                    "type": "submit",
+                    "class": "ff-btn-submit btn-p"
+                },
+                "settings": {
+                    "container_class": "",
+                    "background_color": "#155E75",
+                    "color": "#ffffff",
+                    "button_ui": {
+                        "type": "default",
+                        "text": "Send prayer request"
+                    }
+                },
+                "editor_options": {
+                    "title": "Submit Button"
+                }
+            }
+        }
+    }
+]

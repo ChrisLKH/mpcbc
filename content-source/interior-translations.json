@@ -1,0 +1,65 @@
+{
+  "mission": {
+    "english": "Knowing God is our foundation, glorifying God is our goal. Through worship, fellowship, discipleship, ministry, and evangelism, we seek to know God, and make His name known.",
+    "chinese": "認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。"
+  },
+  "beliefs": [
+    {
+      "en": "God",
+      "zh": "神",
+      "english": "God is the Creator and Ruler of the universe. He exists eternally as three persons: the Father, the Son and the Holy Spirit. These three are equal and are one God.",
+      "chinese": "神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。",
+      "refs": "創1:1,26,27, 3:22, 詩90:2; 太28:19; 彼前1:2; 林後13:14"
+    },
+    {
+      "en": "Jesus Christ",
+      "zh": "耶穌基督",
+      "english": "Jesus Christ is the Son of God and is equal with the Father. Jesus lived a sinless life on earth and offered Himself as the perfect sacrifice, dying on the cross for all humanity. He rose from the dead after three days, demonstrating His power over sin and death. He ascended to heavenly glory and will return to earth as King of kings and Lord of lords.",
+      "chinese": "耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。",
+      "refs": "太1:22-23; 賽9:6; 約1:1-5, 14:10-30; 來4:14,15; 林前15:3-4; 羅1:3-4; 徒1:9-11; 提前6:14; 多2:13"
+    },
+    {
+      "en": "The Holy Spirit",
+      "zh": "聖靈",
+      "english": "The Holy Spirit is equal with the Father and the Son. He is present in the world to help people know Christ, and He lives in every Christian from the moment of salvation. He gives believers power for daily living, understanding of spiritual truth and guidance for the way ahead. He gives spiritual gifts to every believer. As Christians, we seek daily to live under the Holy Spirit’s direction.",
+      "chinese": "聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。",
+      "refs": "林後3:17; 約16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25"
+    },
+    {
+      "en": "The Bible",
+      "zh": "聖經",
+      "english": "The Bible is God’s Word to us, written by people under the supernatural guidance of the Holy Spirit. It is the highest authority for Christian faith and life.",
+      "chinese": "聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。",
+      "refs": "提後3:16,1:13; 彼後1:20-21; 詩119:105, 160, 12:6; 箴30:5"
+    },
+    {
+      "en": "Humanity",
+      "zh": "人類",
+      "english": "Human beings were created in God’s spiritual image, reflecting His character. Humanity is the pinnacle of God’s creation. Although every person has the potential for good, our sinful attitudes separate us from God and bring many problems into our lives.",
+      "chinese": "人類是照神屬靈的形象所造，本有神的屬性。人是神創造的極致。雖然人本有善的潛能，我們每個人卻都因著罪的態度與神隔絕，而使得生命陷入種種問題。",
+      "refs": "創1:27; 詩8:3-6; 賽53:6a; 羅3:23; 賽59:1-2"
+    },
+    {
+      "en": "Salvation",
+      "zh": "救恩",
+      "english": "Salvation is God’s free gift, which we must receive. We can never atone for our sins through good works or self-improvement. Only through Jesus Christ and God’s forgiveness can we be delivered from the penalty of sin. We are saved when we turn in faith to Jesus from a self-centred life lived in our own strength. Eternal life begins when we receive the life of Jesus Christ by faith.",
+      "chinese": "救恩是神給我們白白的禮物，但需要我們去接受。我們永遠無法靠著善行與自我改善來贖我們的罪。惟有靠著耶穌基督，蒙神赦免，才能從罪的刑罰得贖。當我們從以自我為中心、靠自己的生命，憑信心轉向耶穌時，我們便得救。永遠的生命開始於我們憑信心接受耶穌基督的生命那一刻。",
+      "refs": "羅6:23,5:1; 弗2:8-9; 約14:6;1:12; 多3:5; 加3:26"
+    },
+    {
+      "en": "Eternal Security",
+      "zh": "永遠的保障",
+      "english": "Because God gives us eternal life through Jesus Christ, true believers have eternal assurance of salvation. Salvation comes through God’s power and grace, not through a Christian’s own efforts. His preserving power and grace give us this lasting assurance. Believers also have a responsibility to continue trusting God and living in His care.",
+      "chinese": "由於神通過耶穌基督賜給我們永遠的生命，真信徒有永遠的得救保障。救贖是藉著神的權能與恩典，不是憑基督徒自己的努力。神保守的權能與恩典使我們有這永遠的保障。但信徒也有責任不斷信靠神，活在神的保守之中。",
+      "refs": "約10:29; 提後1:12; 來7:25, 10:10,14; 彼前1:3-5; 來6:4-8; 來10:26-27; 約15:6"
+    },
+    {
+      "en": "Eternity",
+      "zh": "永恆",
+      "english": "People were created to exist forever. We will either be eternally separated from God because of sin, or live eternally with Him through forgiveness and salvation. Eternal separation from God is hell; eternal life is being with God forever.",
+      "chinese": "人被創造要存到永遠。我們或要因著罪與神永遠隔離，或是因著赦免與救恩與神永遠同在。與神永遠隔離便是地獄，與神永遠同在便是永遠的生命。",
+      "refs": "約3:16, 2:25, 5:11-13; 羅6:23; 啟20:15; 太1:8; 太2:44,46"
+    }
+  ],
+  "review": "English translations are for church review; Chinese wording and references retained from supplied/live source."
+}

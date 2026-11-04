@@ -1,0 +1,817 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Footer",
+    "type": "container",
+    "content": [
+        {
+            "id": "mpcbc_footer_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "background_background": "classic",
+                "background_color": "#0A1F26",
+                "__globals__": {
+                    "background_color": "globals/colors?id=footer"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "88",
+                    "right": "56",
+                    "bottom": "48",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "72",
+                    "right": "32",
+                    "bottom": "40",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "16",
+                    "bottom": "32",
+                    "left": "16",
+                    "isLinked": false
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 0
+                }
+            },
+            "elements": [
+                {
+                    "id": "mpcbc_footer_grid",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1328
+                        },
+                        "flex_direction": "row",
+                        "flex_wrap": "nowrap",
+                        "flex_direction_tablet": "row",
+                        "flex_wrap_tablet": "wrap",
+                        "flex_direction_mobile": "row",
+                        "flex_wrap_mobile": "wrap",
+                        "flex_justify_content": "space-between",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 48
+                        },
+                        "flex_gap_tablet": {
+                            "unit": "px",
+                            "size": 32
+                        },
+                        "flex_gap_mobile": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "mpcbc_footer_col1",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 30
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 46
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 4
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "mpcbc_foot_logo",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "[Church logo]",
+                                        "header_size": "h4",
+                                        "title_color": "rgba(255,255,255,0.7)",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "700"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_address",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Monterey Park Chinese Baptist Church",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_address_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">[教會中文名稱]</span>",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 15
+                                        },
+                                        "typography_font_weight": "500",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.8
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_address_street",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "[Street address], Monterey Park, CA",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_directions",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Directions",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "600",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "#FFFFFF",
+                                        "link": {
+                                            "url": "#",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "mpcbc_footer_col2",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 20
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 46
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 0
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "mpcbc_foot_sundays_h",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Sundays 主日",
+                                        "header_size": "h3",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "700",
+                                        "_margin": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_sundays_0",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Cantonese 粵語 9:30 AM",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_sundays_1",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "English 11:00 AM",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_sundays_2",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Mandarin 國語 11:30 AM",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "mpcbc_footer_col3",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 18
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 46
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 46
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 0
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "mpcbc_foot_explore_h",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Explore",
+                                        "header_size": "h3",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "700",
+                                        "_margin": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_explore_0",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Plan your visit",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)",
+                                        "link": {
+                                            "url": "#",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_explore_1",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Watch live",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)",
+                                        "link": {
+                                            "url": "#watch",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_explore_2",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Sermons",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)",
+                                        "link": {
+                                            "url": "#sermons",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_explore_3",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Newsletter",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)",
+                                        "link": {
+                                            "url": "#news",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_explore_4",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Kids &amp; Youth",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)",
+                                        "link": {
+                                            "url": "#kids",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_explore_5",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Prayer request",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)",
+                                        "link": {
+                                            "url": "#connect",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "mpcbc_footer_col4",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 22
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 46
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 46
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 0
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "mpcbc_foot_contact_h",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Contact",
+                                        "header_size": "h3",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "700",
+                                        "_margin": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_contact_0",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "[Phone]",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_contact_1",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "[Email]",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_contact_2",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Office hours: [Days, times]",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_contact_3",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Instagram @[handle]",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_contact_4",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "YouTube",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "mpcbc_foot_contact_5",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "WeChat 微信群",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.6
+                                        },
+                                        "title_color": "rgba(255,255,255,0.8)"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "mpcbc_footer_bottom_bar",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1328
+                        },
+                        "border_border": "solid",
+                        "border_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "border_color": "rgba(255,255,255,0.15)",
+                        "margin": {
+                            "unit": "px",
+                            "top": "56",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "24",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "flex_direction": "row",
+                        "flex_justify_content": "space-between",
+                        "flex_align_items": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "mpcbc_foot_since",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "Since 1976 · Monterey Park, California",
+                                "header_size": "p",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14
+                                },
+                                "typography_font_weight": "400",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.4
+                                },
+                                "title_color": "rgba(255,255,255,0.6)"
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "mpcbc_foot_zh",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "<span lang=\"zh-Hant\">中文</span>",
+                                "header_size": "p",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 14
+                                },
+                                "typography_font_weight": "400",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.4
+                                },
+                                "title_color": "rgba(255,255,255,0.8)",
+                                "link": {
+                                    "url": "#",
+                                    "is_external": "",
+                                    "nofollow": "",
+                                    "custom_attributes": ""
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

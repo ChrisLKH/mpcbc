@@ -1,0 +1,32 @@
+TASTESKILL · INSPECT   about-4.html
+
+MEASURED (first viewport listed)
+  hero headline   "Rooted in faith, growing together."  5 words · 2 line(s) · 138.2px (9.6vw) · Hanken Grotesk 500 · tracking -0.05em · leading 0.9
+  @768px          2 line(s) · 84.5px
+  @390px          2 line(s) · 42.9px
+  typefaces       Hanken Grotesk 84%, Noto Sans TC 16%
+  sizes in use    15 / 18 / 19 / 26 / 29 / 48 / 88 / 138 px   body 19px / 1.5
+  colour          page #ffffff · sections #ffffff #e8e8e3 #ffd21a #181715 · button #ffd21a
+  page            9.8 screens · 512 words · 3 images · hero media 16% video
+  headings        26 · longest 2 line(s) · median 1 words
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  1 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+  [size-count] @390px  10 different font sizes (14, 17, 18, 19, 20, 22, 32, 39, 43, 47).
+      → A page needs about five: display, heading, lead, body, small.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  .taste-skill/inspect/about-4/desktop-fold.jpg
+                  .taste-skill/inspect/about-4/desktop-page-01.jpg
+                  .taste-skill/inspect/about-4/desktop-page-02.jpg
+                  .taste-skill/inspect/about-4/desktop-page-03.jpg
+  tablet 768px    .taste-skill/inspect/about-4/tablet-fold.jpg
+                  .taste-skill/inspect/about-4/tablet-page-01.jpg
+                  .taste-skill/inspect/about-4/tablet-page-02.jpg
+  mobile 390px    .taste-skill/inspect/about-4/mobile-fold.jpg
+                  .taste-skill/inspect/about-4/mobile-page-01.jpg
+                  .taste-skill/inspect/about-4/mobile-page-02.jpg
+
+report: .taste-skill/inspect/about-4/report.json
+RESULT: 0 FAIL, 2 WARN — measurements pass. Passing the meter is the floor, not the grade: score the screenshots with references/critique.md.

@@ -1,0 +1,223 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"bc00086 5\"><e-flexbox configuration-id=\"bc00085 4\"><e-flexbox configuration-id=\"Boxed inner 3\"><e-heading configuration-id=\"bc00081 1\"></e-heading><e-paragraph configuration-id=\"bc00084 2\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"bc000b3 39\"><e-flexbox configuration-id=\"bc000b2 38\"><e-flexbox configuration-id=\"Boxed inner 37\"><e-flexbox configuration-id=\"bc000b1 36\"><e-flexbox configuration-id=\"bc0008d 10\"><e-flexbox configuration-id=\"bc0008c 9\"><e-heading configuration-id=\"bc00087 6\"></e-heading><e-paragraph configuration-id=\"bc0008a 7\"></e-paragraph><e-button configuration-id=\"bc0008b 8\"></e-button></e-flexbox></e-flexbox><e-flexbox configuration-id=\"bc00094 15\"><e-flexbox configuration-id=\"bc00093 14\"><e-heading configuration-id=\"bc0008e 11\"></e-heading><e-paragraph configuration-id=\"bc00091 12\"></e-paragraph><e-button configuration-id=\"bc00092 13\"></e-button></e-flexbox></e-flexbox><e-flexbox configuration-id=\"bc0009b 20\"><e-flexbox configuration-id=\"bc0009a 19\"><e-heading configuration-id=\"bc00095 16\"></e-heading><e-paragraph configuration-id=\"bc00098 17\"></e-paragraph><e-button configuration-id=\"bc00099 18\"></e-button></e-flexbox></e-flexbox><e-flexbox configuration-id=\"bc000a2 25\"><e-flexbox configuration-id=\"bc000a1 24\"><e-heading configuration-id=\"bc0009c 21\"></e-heading><e-paragraph configuration-id=\"bc0009f 22\"></e-paragraph><e-button configuration-id=\"bc000a0 23\"></e-button></e-flexbox></e-flexbox><e-flexbox configuration-id=\"bc000a9 30\"><e-flexbox configuration-id=\"bc000a8 29\"><e-heading configuration-id=\"bc000a3 26\"></e-heading><e-paragraph configuration-id=\"bc000a6 27\"></e-paragraph><e-button configuration-id=\"bc000a7 28\"></e-button></e-flexbox></e-flexbox><e-flexbox configuration-id=\"bc000b0 35\"><e-flexbox configuration-id=\"bc000af 34\"><e-heading configuration-id=\"bc000aa 31\"></e-heading><e-paragraph configuration-id=\"bc000ad 32\"></e-paragraph><e-button configuration-id=\"bc000ae 33\"></e-button></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "bc00081 1": {
+      "_cssid": "mpcbc-bc00081",
+      "title": "欢迎来到慕道园",
+      "tag": "h1"
+    },
+    "bc00084 2": {
+      "_cssid": "mpcbc-bc00084",
+      "paragraph": "从这里认识教会、阅读信仰告白，并查看主日崇拜及奉献资讯。",
+      "tag": "p"
+    },
+    "Boxed inner 3": {},
+    "bc00085 4": {
+      "_cssid": "mpcbc-bc00085"
+    },
+    "bc00086 5": {
+      "_cssid": "mpcbc-bc00086"
+    },
+    "bc00087 6": {
+      "_cssid": "mpcbc-bc00087",
+      "title": "教会介绍",
+      "tag": "h2"
+    },
+    "bc0008a 7": {
+      "_cssid": "mpcbc-bc0008a",
+      "paragraph": "教会历史、使命及教牧团队。",
+      "tag": "p"
+    },
+    "bc0008b 8": {
+      "_cssid": "mpcbc-bc0008b",
+      "text": "查看",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/about/#story",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "bc0008c 9": {
+      "_cssid": "mpcbc-bc0008c"
+    },
+    "bc0008d 10": {
+      "_cssid": "mpcbc-bc0008d"
+    },
+    "bc0008e 11": {
+      "_cssid": "mpcbc-bc0008e",
+      "title": "信仰告白",
+      "tag": "h2"
+    },
+    "bc00091 12": {
+      "_cssid": "mpcbc-bc00091",
+      "paragraph": "八项信仰告白及相关经文。",
+      "tag": "p"
+    },
+    "bc00092 13": {
+      "_cssid": "mpcbc-bc00092",
+      "text": "查看",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/about/#beliefs",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "bc00093 14": {
+      "_cssid": "mpcbc-bc00093"
+    },
+    "bc00094 15": {
+      "_cssid": "mpcbc-bc00094"
+    },
+    "bc00095 16": {
+      "_cssid": "mpcbc-bc00095",
+      "title": "主日崇拜",
+      "tag": "h2"
+    },
+    "bc00098 17": {
+      "_cssid": "mpcbc-bc00098",
+      "paragraph": "粤语上午11时 · 国语上午9时 · 英语上午11时。",
+      "tag": "p"
+    },
+    "bc00099 18": {
+      "_cssid": "mpcbc-bc00099",
+      "text": "查看",
+      "link": {
+        "destination": "http://mpcbc.local/#top",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "bc0009a 19": {
+      "_cssid": "mpcbc-bc0009a"
+    },
+    "bc0009b 20": {
+      "_cssid": "mpcbc-bc0009b"
+    },
+    "bc0009c 21": {
+      "_cssid": "mpcbc-bc0009c",
+      "title": "讲道",
+      "tag": "h2"
+    },
+    "bc0009f 22": {
+      "_cssid": "mpcbc-bc0009f",
+      "paragraph": "浏览粤语及国语讲道系列。",
+      "tag": "p"
+    },
+    "bc000a0 23": {
+      "_cssid": "mpcbc-bc000a0",
+      "text": "查看",
+      "link": {
+        "destination": "http://mpcbc.local/#watch",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "bc000a1 24": {
+      "_cssid": "mpcbc-bc000a1"
+    },
+    "bc000a2 25": {
+      "_cssid": "mpcbc-bc000a2"
+    },
+    "bc000a3 26": {
+      "_cssid": "mpcbc-bc000a3",
+      "title": "奉献",
+      "tag": "h2"
+    },
+    "bc000a6 27": {
+      "_cssid": "mpcbc-bc000a6",
+      "paragraph": "透过 PayPal 或支票奉献。",
+      "tag": "p"
+    },
+    "bc000a7 28": {
+      "_cssid": "mpcbc-bc000a7",
+      "text": "查看",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/give/#giving",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "bc000a8 29": {
+      "_cssid": "mpcbc-bc000a8"
+    },
+    "bc000a9 30": {
+      "_cssid": "mpcbc-bc000a9"
+    },
+    "bc000aa 31": {
+      "_cssid": "mpcbc-bc000aa",
+      "title": "联络与代祷",
+      "tag": "h2"
+    },
+    "bc000ad 32": {
+      "_cssid": "mpcbc-bc000ad",
+      "paragraph": "与教会联络或提交代祷事项。",
+      "tag": "p"
+    },
+    "bc000ae 33": {
+      "_cssid": "mpcbc-bc000ae",
+      "text": "查看",
+      "link": {
+        "destination": "http://mpcbc.local/#connect",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "bc000af 34": {
+      "_cssid": "mpcbc-bc000af"
+    },
+    "bc000b0 35": {
+      "_cssid": "mpcbc-bc000b0"
+    },
+    "bc000b1 36": {
+      "_cssid": "mpcbc-bc000b1"
+    },
+    "Boxed inner 37": {},
+    "bc000b2 38": {
+      "_cssid": "mpcbc-bc000b2"
+    },
+    "bc000b3 39": {
+      "_cssid": "mpcbc-bc000b3"
+    }
+  },
+  "style": {
+    "bc00081 1": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:64px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:48px;}@media (--mobile){font-size:36px;}",
+    "bc00084 2": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "Boxed inner 3": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "bc00085 4": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;",
+    "bc00086 5": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-8ab1c66cf);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}",
+    "bc00087 6": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:40px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:34px;}@media (--mobile){font-size:28px;}",
+    "bc0008a 7": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0008b 8": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-width:1px 1px 1px 1px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);border-style:none;border-color:var(--mpcbc-color-76b1f0d6b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bc0008c 9": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 32px 32px 32px;gap:20px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-262da8014);@media (--mobile){padding:24px 24px 24px 24px;}",
+    "bc0008d 10": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0;gap:20px;@media (--mobile){width:100%;}",
+    "bc0008e 11": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:40px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:34px;}@media (--mobile){font-size:28px;}",
+    "bc00091 12": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00092 13": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-width:1px 1px 1px 1px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);border-style:none;border-color:var(--mpcbc-color-76b1f0d6b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bc00093 14": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 32px 32px 32px;gap:20px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-262da8014);@media (--mobile){padding:24px 24px 24px 24px;}",
+    "bc00094 15": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0;gap:20px;@media (--mobile){width:100%;}",
+    "bc00095 16": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:40px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:34px;}@media (--mobile){font-size:28px;}",
+    "bc00098 17": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00099 18": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-width:1px 1px 1px 1px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);border-style:none;border-color:var(--mpcbc-color-76b1f0d6b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bc0009a 19": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 32px 32px 32px;gap:20px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-262da8014);@media (--mobile){padding:24px 24px 24px 24px;}",
+    "bc0009b 20": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0;gap:20px;@media (--mobile){width:100%;}",
+    "bc0009c 21": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:40px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:34px;}@media (--mobile){font-size:28px;}",
+    "bc0009f 22": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc000a0 23": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-width:1px 1px 1px 1px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);border-style:none;border-color:var(--mpcbc-color-76b1f0d6b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bc000a1 24": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 32px 32px 32px;gap:20px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-262da8014);@media (--mobile){padding:24px 24px 24px 24px;}",
+    "bc000a2 25": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0;gap:20px;@media (--mobile){width:100%;}",
+    "bc000a3 26": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:40px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:34px;}@media (--mobile){font-size:28px;}",
+    "bc000a6 27": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc000a7 28": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-width:1px 1px 1px 1px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);border-style:none;border-color:var(--mpcbc-color-76b1f0d6b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bc000a8 29": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 32px 32px 32px;gap:20px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-262da8014);@media (--mobile){padding:24px 24px 24px 24px;}",
+    "bc000a9 30": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0;gap:20px;@media (--mobile){width:100%;}",
+    "bc000aa 31": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:40px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:34px;}@media (--mobile){font-size:28px;}",
+    "bc000ad 32": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.9em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc000ae 33": "min-width:0;margin:0;max-width:100%;padding:16px 24px 16px 24px;border-width:1px 1px 1px 1px;border-radius:12px 12px 12px 12px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.4em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);border-style:none;border-color:var(--mpcbc-color-76b1f0d6b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "bc000af 34": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 32px 32px 32px;gap:20px;border-radius:24px 24px 24px 24px;background-color:var(--mpcbc-color-262da8014);@media (--mobile){padding:24px 24px 24px 24px;}",
+    "bc000b0 35": "min-width:0;margin:0;display:flex;flex-direction:column;width:48%;padding:0;gap:20px;@media (--mobile){width:100%;}",
+    "bc000b1 36": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0;gap:24px;flex-wrap:wrap;@media (--mobile){flex-direction:column;}",
+    "Boxed inner 37": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "bc000b2 38": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;",
+    "bc000b3 39": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:80px 56px 80px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:64px 32px 64px 32px;}@media (--mobile){padding:48px 20px 48px 20px;}"
+  }
+}

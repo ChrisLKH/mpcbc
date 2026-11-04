@@ -1,0 +1,10 @@
+<?php
+try {
+if(untrailingslashit(home_url())!=='http://mpcbc.local')throw new RuntimeException('Design A only.');
+$admins=get_users(['role'=>'administrator','number'=>1]);wp_set_current_user($admins[0]->ID);$root='C:/Projects/mpcbc';$conversion=json_decode(file_get_contents("$root/content-source/atomic-conversion-result.json"),true);$report=[];
+$ability=new Elementor\Modules\Mcp\Abilities\Get_Structure_Ability();
+foreach($conversion['pages'] as $entry){$id=$entry['id'];$result=$ability->execute(['post_id'=>$id]);if(is_wp_error($result))throw new RuntimeException("MCP structure failed $id: ".$result->get_error_message());$versions=[];$walk=function($ns)use(&$walk,&$versions,$id){foreach($ns as $n){$type=$n['widgetType']??$n['elType'];$v=str_starts_with($type,'e-')?4:3;$versions[$v]=($versions[$v]??0)+1;if($v!==4&&$type!=='shortcode')throw new RuntimeException("MCP found unsupported node $id $type");$walk($n['elements']??[]);}};$walk($result['elements']??[]);$report[]=['id'=>$id,'mcp_structure_read'=>true,'versions'=>$versions];}
+$kit=Elementor\Plugin::$instance->kits_manager->get_active_kit();$repo=new Elementor\Modules\Variables\Storage\Variables_Repository($kit);$all=$repo->load()->serialize(true)['data'];$cleanup=[];foreach($all as $id=>$variable)if(($variable['type']??'')==='global-size-variable'&&str_starts_with($variable['label']??'','mpcbc-size-')&&empty($variable['deleted']))$cleanup[]=['action'=>'delete','id'=>$id];
+if($cleanup){$r=(new Elementor\Modules\Mcp\Abilities\Manage_Variable_Ability())->execute(['operations'=>$cleanup]);if(is_wp_error($r)||($r['status']??'')!=='ok')throw new RuntimeException('Unused pilot size token cleanup failed');}
+file_put_contents("$root/content-source/atomic-mcp-validation.json",wp_json_encode(['pages'=>$report,'unused_pro_size_tokens_removed'=>count($cleanup),'network_mcp_connected'=>false],JSON_PRETTY_PRINT));echo 'Official MCP structure reader verifies '.count($report).' converted documents. Removed '.count($cleanup).' unused pilot size tokens.';
+}catch(Throwable $e){fwrite(STDERR,$e->getMessage());exit(1);}

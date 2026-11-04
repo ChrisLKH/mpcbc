@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1280,
+        "title": "About",
+        "zh": "關於我們",
+        "url": "http://mpcbc.local/about/",
+        "parent": ""
+    },
+    {
+        "id": 1281,
+        "title": "Visit us",
+        "zh": "歡迎新朋友",
+        "url": "http://mpcbc.local/visit/",
+        "parent": "about"
+    },
+    {
+        "id": 1282,
+        "title": "About us",
+        "zh": "認識我們",
+        "url": "http://mpcbc.local/about/",
+        "parent": "about"
+    },
+    {
+        "id": 1283,
+        "title": "Pastors & leaders",
+        "zh": "牧者與領袖",
+        "url": "http://mpcbc.local/about/#pastors",
+        "parent": "about"
+    },
+    {
+        "id": 1284,
+        "title": "Worship",
+        "zh": "崇拜與事工",
+        "url": "http://mpcbc.local/watch/",
+        "parent": ""
+    },
+    {
+        "id": 1285,
+        "title": "Sermons & livestream",
+        "zh": "講道及網上直播",
+        "url": "http://mpcbc.local/watch/",
+        "parent": "worship"
+    },
+    {
+        "id": 1286,
+        "title": "Cantonese",
+        "zh": "粵語堂",
+        "url": "https://mpcbc.net/category/cantonese-sermons/",
+        "parent": "worship"
+    },
+    {
+        "id": 1287,
+        "title": "Mandarin",
+        "zh": "國語堂",
+        "url": "https://mpcbc.net/category/mandarin-sermons/",
+        "parent": "worship"
+    },
+    {
+        "id": 1288,
+        "title": "English",
+        "zh": "英語堂",
+        "url": "https://mpcbc.net/english/",
+        "parent": "worship"
+    },
+    {
+        "id": 1289,
+        "title": "Groups & fellowships",
+        "zh": "團契及小組",
+        "url": "http://mpcbc.local/#community",
+        "parent": "worship"
+    },
+    {
+        "id": 1290,
+        "title": "Bible study & Sunday school",
+        "zh": "主日學及查經",
+        "url": "http://mpcbc.local/#community",
+        "parent": "worship"
+    },
+    {
+        "id": 1291,
+        "title": "Children",
+        "zh": "兒童事工",
+        "url": "http://mpcbc.local/kids/",
+        "parent": ""
+    },
+    {
+        "id": 1292,
+        "title": "News",
+        "zh": "教會消息與活動",
+        "url": "http://mpcbc.local/#events",
+        "parent": ""
+    },
+    {
+        "id": 1293,
+        "title": "Announcements & events",
+        "zh": "教會報告及活動",
+        "url": "http://mpcbc.local/#events",
+        "parent": "news"
+    },
+    {
+        "id": 1294,
+        "title": "Newsletter",
+        "zh": "教會通訊",
+        "url": "http://mpcbc.local/#news",
+        "parent": "news"
+    },
+    {
+        "id": 1295,
+        "title": "Photos & videos",
+        "zh": "相片及影片",
+        "url": "http://mpcbc.local/#community",
+        "parent": "news"
+    },
+    {
+        "id": 1296,
+        "title": "Give",
+        "zh": "奉獻",
+        "url": "http://mpcbc.local/give/",
+        "parent": ""
+    }
+]

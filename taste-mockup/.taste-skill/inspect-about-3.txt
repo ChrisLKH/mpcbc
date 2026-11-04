@@ -1,0 +1,30 @@
+TASTESKILL · INSPECT   about-3.html
+
+MEASURED (first viewport listed)
+  hero headline   "About MPCBC"  2 words · 1 line(s) · 236.2px (16.4vw) · Hanken Grotesk 500 · tracking -0.06em · leading 0.9
+  @768px          1 line(s) · 122.9px
+  @390px          1 line(s) · 62.4px
+  typefaces       Hanken Grotesk 88%, Noto Sans TC 12%
+  sizes in use    15 / 19 / 26 / 43 / 48 / 69 / 86 / 88 / 236 px   body 19px / 1.5
+  colour          page #ffffff · sections #181715 #e8e8e3 #ffd21a · button #ffffff
+  page            9.1 screens · 568 words · 8 images · hero media 92% img
+  headings        14 · longest 2 line(s) · median 3 words
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  1 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  .taste-skill/inspect/about-3/desktop-fold.jpg
+                  .taste-skill/inspect/about-3/desktop-page-01.jpg
+                  .taste-skill/inspect/about-3/desktop-page-02.jpg
+                  .taste-skill/inspect/about-3/desktop-page-03.jpg
+  tablet 768px    .taste-skill/inspect/about-3/tablet-fold.jpg
+                  .taste-skill/inspect/about-3/tablet-page-01.jpg
+                  .taste-skill/inspect/about-3/tablet-page-02.jpg
+  mobile 390px    .taste-skill/inspect/about-3/mobile-fold.jpg
+                  .taste-skill/inspect/about-3/mobile-page-01.jpg
+                  .taste-skill/inspect/about-3/mobile-page-02.jpg
+
+report: .taste-skill/inspect/about-3/report.json
+RESULT: 0 FAIL, 1 WARN — measurements pass. Passing the meter is the floor, not the grade: score the screenshots with references/critique.md.

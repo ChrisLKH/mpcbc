@@ -1,0 +1,13 @@
+{
+  "local_mcp_read_simplified_home": "passed with existing administrator context",
+  "local_mcp_noop_edit": "passed on preview 420",
+  "pilot_status": "draft",
+  "network_mcp_connected": false,
+  "warm_ttfb_seconds": {
+    "theme_css": 0.069258,
+    "home_en": 2.611286,
+    "home_hans": 2.547237
+  },
+  "measurement": "curl public HTTP responses on mpcbc.local; TTFB, not browser load or LCP",
+  "scope": "Local routing and blocking script fixes; no hosting/caching plugin changes"
+}

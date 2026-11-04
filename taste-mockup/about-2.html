@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About MPCBC: annual</title>
+<meta name="description" content="About Monterey Park Chinese Baptist Church, laid out like a printed annual: history, pastors, mission, beliefs and visiting. Option 2.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #ffffff; --grey: #e8e8e3; --grey-2: #dcdcd6; --ink: #181715; --muted: #5c5b55;
+  --yellow: #ffd21a; --yellow-soft: #ffe680; --field-ink: #e8e8e3; --field-muted: #b4b3ab;
+  --font: 'Hanken Grotesk', 'Noto Sans TC', system-ui, sans-serif; --font-zh: 'Noto Sans TC', system-ui, sans-serif;
+  --s-small: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --s-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --s-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --s-title: clamp(2rem, 1.25rem + 2vw, 3rem);
+  --s-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+  --margin: clamp(1rem, 2.2vw, 2rem); --gutter: clamp(1rem, 2vw, 2rem); --section: clamp(6rem, 11vw, 10rem);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); font-size: var(--s-body); line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+h1, h2, h3, h4, p, figure, ul, ol, dl, dd, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, video { display: block; max-width: 100%; height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 0.07em; }
+:target, section[id] { scroll-margin-top: 5rem; }
+::selection { background: var(--yellow); color: var(--ink); }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+p { max-width: 62ch; text-wrap: pretty; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: absolute; left: var(--margin); top: 1rem; z-index: 50; clip-path: inset(50%); background: var(--ink); color: var(--paper); padding: 0.75rem 1.25rem; border-radius: 999px; }
+.skip:focus { clip-path: none; }
+.d { font-weight: 500; letter-spacing: -0.045em; line-height: 0.95; text-wrap: balance; }
+.zh { font-family: var(--font-zh); font-weight: 500; }
+.h-zh { font-family: var(--font-zh); font-weight: 500; font-size: var(--s-lead); line-height: 1.3; margin-top: 0.6rem; color: var(--muted); }
+.zh-p { font-family: var(--font-zh); line-height: 1.8; }
+.small { font-size: var(--s-small); line-height: 1.45; }
+.muted { color: var(--muted); }
+.nums { font-variant-numeric: tabular-nums; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; min-height: 3.25rem; padding: 0 1.6rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 600; text-decoration: none; white-space: nowrap; transition: transform 140ms var(--ease), background-color 180ms ease, color 180ms ease; }
+.button--y { background: var(--yellow); color: var(--ink); }
+.button--p { background: var(--paper); color: var(--ink); }
+.button:active { transform: scale(0.97); }
+.link { display: inline-flex; align-items: center; min-height: 2.75rem; text-decoration: underline; transition: text-decoration-color 180ms ease; }
+@media (hover: hover) and (pointer: fine) { .button:hover { background: var(--yellow); color: var(--ink); } .button--y:hover { background: var(--ink); color: var(--paper); } .link:hover { text-decoration-color: transparent; } }
+.ph { min-height: 8rem; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem; background: var(--grey-2); color: var(--muted); font-size: var(--s-body); }
+
+/* header: the site header (Hello Elementor + child theme), white on interior pages; About has its dropdown open on hover/focus */
+.top { position: relative; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 0.75rem var(--margin); background: var(--paper); }
+.wordmark { display: inline-flex; align-items: baseline; gap: 0.6rem; text-decoration: none; font-weight: 700; font-size: var(--s-lead); line-height: 1; letter-spacing: -0.02em; }
+.wordmark .zh { font-size: var(--s-body); }
+.nav { display: flex; align-items: center; gap: clamp(1rem, 2vw, 2rem); }
+.nav a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.75rem; text-decoration: none; font-weight: 500; }
+.nav a .zh { font-size: var(--s-small); color: var(--muted); }
+.nav a:hover, .nav a:focus-visible, .nav a[aria-current] { text-decoration: underline; text-decoration-thickness: 2px; }
+.drop { position: relative; }
+.drop__menu { position: absolute; top: 100%; left: -1rem; min-width: 17rem; padding: 0.5rem 0; background: var(--paper); display: none; }
+.drop:hover .drop__menu, .drop:focus-within .drop__menu { display: grid; }
+.drop__menu a { justify-content: space-between; padding: 0 1rem; }
+.drop__menu a:hover { background: var(--grey); text-decoration: none; }
+.menu-button { display: none; min-height: 2.75rem; padding: 0 1.1rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 600; }
+.menu-panel { position: absolute; z-index: 21; top: 4.5rem; left: var(--margin); right: var(--margin); background: var(--paper); padding: 0.5rem 0; }
+.menu-panel[hidden] { display: none; }
+.menu-panel a { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 1.5rem; min-height: 3rem; text-decoration: none; font-weight: 500; }
+.menu-panel a:hover { background: var(--grey); }
+.menu-panel .zh { color: var(--muted); }
+@media (max-width: 1099px) { .js .nav { display: none; } .js .menu-button { display: inline-flex; align-items: center; } }
+
+/* footer: site footer template 16 */
+.foot { background: var(--ink); color: var(--field-ink); padding: 5rem var(--margin) 1.5rem; }
+.foot__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem var(--gutter); }
+.foot h2 { font-size: var(--s-body); font-weight: 700; }
+.foot h2 .zh, .foot li .zh { margin-left: 0.4rem; color: var(--field-muted); }
+.foot ul { margin-top: 0.5rem; display: grid; }
+.foot li a { display: inline-flex; min-height: 2.75rem; align-items: center; text-decoration: none; }
+.foot li a:hover { text-decoration: underline; }
+.foot p { margin-top: 0.5rem; }
+.foot .times-mini { display: grid; gap: 0.1rem; font-variant-numeric: tabular-nums; }
+.foot .times-mini span { color: var(--field-muted); }
+.foot .credits { margin-top: 3rem; max-width: none; font-size: var(--s-small); color: var(--field-muted); }
+.foot .credits a { color: var(--field-ink); }
+.foot__bar { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; align-items: center; color: var(--field-muted); font-size: var(--s-small); }
+.foot__bar p { margin: 0; }
+.foot__bar a { display: inline-flex; min-height: 2.75rem; align-items: center; color: var(--field-ink); }
+.foot__bar .langs { display: flex; gap: 1.25rem; }
+@media (max-width: 899px) { .foot__cols { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .foot__cols { grid-template-columns: 1fr; } }
+
+/* accordion rows (Elementor free: Nested Accordion) */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+.plus { flex: none; width: 1.75rem; height: 1.75rem; border-radius: 999px; background: var(--yellow); color: var(--ink); display: inline-grid; place-items: center; font-size: 1.125rem; line-height: 1; font-weight: 600; letter-spacing: 0; transition: transform 200ms var(--ease); }
+details[open] .plus { transform: rotate(45deg); }
+
+/* motion (Elementor Interactions: fade in + slide up, staggered; off for reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .js .r { opacity: 0; transform: translateY(24px); transition: opacity 700ms var(--ease), transform 900ms var(--ease); transition-delay: calc(var(--i, 0) * 80ms); }
+  .js .r.is-in { opacity: 1; transform: none; }
+  .kb { animation: kb 24s ease-in-out infinite alternate; }
+  @keyframes kb { from { transform: scale(1); } to { transform: scale(1.08); } }
+}
+
+/* ===== option 2 ===== */
+:root { --s-st: clamp(1.25rem, 0.5rem + 1.9vw, 2.125rem); }
+.o2-hero { display: grid; grid-template-columns: 34fr 66fr; min-height: calc(100svh - 4.25rem); background: var(--grey); padding: 0 var(--margin); column-gap: var(--gutter); overflow: hidden; }
+.o2-hero__talk { padding-top: 28svh; display: flex; flex-direction: column; gap: 1.25rem; align-items: flex-start; }
+.o2-hero__line { font-size: var(--s-lead); line-height: 1.35; max-width: 24ch; }
+.o2-hero__main { display: flex; flex-direction: column; }
+.o2-hero__links { display: flex; gap: 2rem; padding-top: 1rem; }
+.o2-hero__links a { display: inline-flex; min-height: 2.75rem; align-items: center; font-size: var(--s-small); }
+.o2-h1 { margin-top: 2rem; font-size: clamp(4.5rem, 9.4vw, 9.5rem); line-height: 0.86; letter-spacing: -0.055em; }
+.o2-mask { display: block; overflow: hidden; padding-bottom: 0.08em; }
+.o2-mask > span { display: inline-block; }
+@media (prefers-reduced-motion: no-preference) { .js .o2-mask > span { animation: o2up 900ms var(--ease) both; } .js .o2-mask + .o2-mask > span { animation-delay: 110ms; } @keyframes o2up { from { transform: translateY(105%); } } }
+.o2-h1zh { margin-top: 1rem; font-size: var(--s-lead); line-height: 1.3; }
+.o2-hero__pic { position: relative; margin-top: auto; height: 34svh; }
+.o2-hero__pic img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.o2-fig { position: absolute; z-index: 2; left: 0; top: -3.25rem; width: 16.25rem; padding: 1rem 1.25rem; background: var(--yellow); }
+.o2-fig b { display: block; font-size: var(--s-title); font-weight: 500; line-height: 1; letter-spacing: -0.03em; }
+.o2-fig span { display: block; margin-top: 0.4rem; font-size: var(--s-small); }
+.o2-tiles { padding: 8px; }
+.o2-board { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: 38svh 38svh; gap: 8px; }
+.o2-tile { overflow: hidden; }
+.o2-tile--a { grid-column: 1 / 9; grid-row: 1 / 3; background: var(--ink); color: var(--field-ink); padding: 1.25rem; display: flex; flex-direction: column; justify-content: flex-end; }
+.o2-tile--a .h-zh { color: var(--field-muted); }
+.o2-slogan { font-size: var(--s-head); font-weight: 500; text-transform: uppercase; letter-spacing: -0.04em; line-height: 0.88; }
+.o2-tile--b { grid-column: 9 / 13; background: var(--yellow); padding: 1.25rem; display: flex; flex-direction: column; justify-content: flex-end; }
+.o2-big { font-size: var(--s-head); font-weight: 500; letter-spacing: -0.05em; line-height: 0.9; }
+.o2-tile--c { grid-column: 9 / 13; } .o2-tile--c img { width: 100%; height: 100%; object-fit: cover; }
+.o2-story { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); padding: 2.5rem calc(var(--margin) - 8px) 0; }
+.o2-story__zh { grid-column: 1 / 6; } .o2-story__en { grid-column: 7 / 13; font-size: var(--s-lead); line-height: 1.35; }
+.o2-cap { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); padding: 8.75rem var(--margin); }
+.o2-cap__side { grid-column: 1 / 4; }
+.o2-h2 { font-size: var(--s-title); font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
+.o2-facts { margin-top: 2rem; display: grid; gap: 1rem; }
+.o2-facts dd a { text-decoration: underline; }
+.o2-cap__text { grid-column: 4 / 13; }
+.o2-drop { font-size: var(--s-st); line-height: 1.2; letter-spacing: -0.02em; max-width: none; color: var(--muted); }
+.o2-drop b { color: var(--ink); font-weight: 500; }
+.o2-drop img { float: left; width: 3.6em; height: 3.6em; margin: 0.2em 0.5em 0 0; object-fit: cover; }
+.o2-drop--2 { margin-top: 1.2em; }
+.o2-cap__zh { margin-top: 2rem; }
+.o2-words { background: var(--yellow); padding: var(--section) var(--margin); }
+.o2-mis { font-size: var(--s-head); }
+.o2-words .h-zh { color: var(--ink); }
+.o2-mst { margin: 2.5rem 0 0.75rem; font-size: var(--s-st); line-height: 1.2; font-weight: 500; }
+.o2-pw { margin-top: 4rem; font-size: var(--s-st); font-weight: 500; line-height: 1.25; max-width: 52ch; }
+.slot { display: inline-block; width: 1.9em; height: 1em; vertical-align: -0.12em; object-fit: cover; margin: 0 0.06em; }
+.o2-words__foot { margin-top: 4.5rem; margin-left: 50%; display: grid; gap: 1.25rem; justify-items: start; }
+.o2-table { padding: var(--section) var(--margin); }
+.o2-table__h { font-size: var(--s-head); }
+.o2-table__h span { display: block; } .o2-table__h span:first-child { padding-left: 3vw; }
+.o2-table__grid { margin-top: 6rem; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); align-items: start; }
+.o2-table__pic { grid-column: 1 / 5; }
+.o2-table__pic img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; }
+.o2-table__pic figcaption { margin-top: 0.5rem; }
+.o2-table__word { grid-column: 6 / 7; }
+.o2-rows { grid-column: 7 / 13; display: grid; }
+.o2-row summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 3.5rem; font-size: var(--s-lead); }
+.o2-row summary .zh { margin-left: 0.5rem; color: var(--muted); font-size: var(--s-body); }
+.o2-row .bbody { padding: 0.5rem 0 1.5rem; display: grid; gap: 0.75rem; }
+.o2-row:nth-child(4n+1):not(:first-child) { margin-top: 1.75rem; }
+.o2-strip { display: grid; grid-template-columns: repeat(3, 1fr); }
+.o2-strip img, .o2-strip video { width: 100%; height: 40svh; object-fit: cover; }
+.o2-band { position: relative; background: var(--ink); color: var(--field-ink); min-height: 44svh; padding: 4rem var(--margin); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); }
+.o2-band .h-zh { color: var(--field-muted); }
+.o2-band__text { grid-column: 1 / 9; display: grid; gap: 1.5rem; align-content: start; }
+.o2-band__st { font-size: var(--s-lead); line-height: 1.3; }
+.o2-band__st a { text-decoration-thickness: 4px; text-underline-offset: 6px; text-decoration-color: var(--yellow); }
+.o2-band__st a:hover { color: var(--yellow); }
+.o2-band__text .small { color: var(--field-muted); }
+.o2-band__face { grid-column: 11 / 13; align-self: end; width: 100%; max-width: 9.5rem; justify-self: end; aspect-ratio: 4 / 5; object-fit: cover; }
+.o2-contact { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); padding: 10rem var(--margin) 7.5rem; align-items: start; }
+.o2-contact__s { grid-column: 1 / 6; font-size: var(--s-st); line-height: 1.1; letter-spacing: -0.02em; }
+.o2-contact__pic { grid-column: 7 / 9; width: 100%; max-width: 10rem; aspect-ratio: 1; object-fit: cover; justify-self: end; }
+.o2-contact__links { grid-column: 9 / 13; display: grid; justify-items: start; gap: 0.25rem; }
+.o2-contact__q { font-size: var(--s-body); font-weight: 600; margin-bottom: 0.75rem; }
+.o2-contact__q .zh { margin-left: 0.4rem; color: var(--muted); }
+.o2-contact__links .link { font-size: var(--s-body); }
+.o2-contact__links p { margin-top: 0.75rem; } .o2-contact__links p a { text-decoration: underline; }
+@media (max-width: 899px) {
+  .o2-hero { grid-template-columns: 1fr; padding-bottom: 2rem; }
+  .o2-hero__talk { order: 2; padding-top: 1.5rem; } .o2-hero__links { display: none; }
+  .o2-h1 { font-size: 15vw; }
+  .o2-hero__pic { margin-top: 4rem; height: auto; } .o2-hero__pic img { aspect-ratio: 4 / 3; height: auto; }
+  .o2-board { grid-template-columns: 1fr 1fr; grid-template-rows: auto; gap: 6px; }
+  .o2-tile--a { grid-column: 1 / -1; grid-row: auto; min-height: 46svh; } .o2-tile--b, .o2-tile--c { grid-column: auto; aspect-ratio: 1; }
+  .o2-slogan { font-size: 8.6vw; }
+  .o2-story__zh, .o2-story__en, .o2-cap__side, .o2-cap__text, .o2-table__pic, .o2-table__word, .o2-rows, .o2-band__text, .o2-contact__s, .o2-contact__links { grid-column: 1 / -1; }
+  .o2-story__en { order: -1; }
+  .o2-cap { padding: 5rem var(--margin); } .o2-drop { font-size: var(--s-lead); } .o2-drop img { width: 4.8em; height: 4.8em; }
+  .o2-words__foot { margin-left: 0; }
+  .o2-table__pic { position: static; width: 60%; justify-self: end; order: 3; } .o2-table__word { display: none; } .o2-table__grid { margin-top: 3rem; }
+  .o2-strip { grid-template-columns: 1fr 1fr; } .o2-strip img { height: auto; aspect-ratio: 1; } .o2-strip video { grid-column: 1 / -1; aspect-ratio: 4 / 3; height: auto; }
+  .o2-band__face { grid-column: 1 / -1; max-width: 6rem; }
+  .o2-contact { padding: 5rem var(--margin); } .o2-contact__s { font-size: var(--s-lead); } .o2-contact__pic { grid-column: 1 / 4; justify-self: start; max-width: 6rem; }
+  .o2-contact__links { grid-column: 4 / -1; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="wordmark" href="http://mpcbc.local/">MPCBC <span class="zh" lang="zh-Hant">慕道園</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="http://mpcbc.local/#sundays">Sundays <span class="zh" lang="zh-Hant">主日</span></a>
+    <a href="http://mpcbc.local/#sundays">Sermons <span class="zh" lang="zh-Hant">講道</span></a>
+    <a href="http://mpcbc.local/#life">Church life <span class="zh" lang="zh-Hant">教會生活</span></a>
+    <div class="drop"><a href="#about-us" aria-current="page">About <span class="zh" lang="zh-Hant">關於我們</span></a>
+      <div class="drop__menu"><a href="#new-here">New here? <span class="zh" lang="zh-Hant">初次來訪</span></a><a href="#about-us">About us <span class="zh" lang="zh-Hant">關於我們</span></a><a href="#history">Our history <span class="zh" lang="zh-Hant">教會歷史</span></a><a href="#beliefs">Mission & beliefs <span class="zh" lang="zh-Hant">使命與信仰</span></a><a href="#pastors">Pastors & leaders <span class="zh" lang="zh-Hant">教牧團隊</span></a><a href="#connect">Get connected <span class="zh" lang="zh-Hant">與我們聯絡</span></a><a href="#contact">Contact & directions <span class="zh" lang="zh-Hant">交通指南</span></a></div></div>
+    <a href="http://mpcbc.local/#give">Give <span class="zh" lang="zh-Hant">奉獻</span></a>
+    <a class="zh" href="http://mpcbc.local/about/?lang=zh-hant" lang="zh-Hant">繁體</a>
+    <a class="zh" href="http://mpcbc.local/about/?lang=zh-hans" lang="zh-Hans">简体</a>
+  </nav>
+  <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-panel" data-menu>Menu&nbsp;<span class="zh" lang="zh-Hant">選單</span></button>
+</header>
+<nav class="menu-panel" id="menu-panel" aria-label="About this page" hidden>
+  <a href="#new-here">New here? <span class="zh" lang="zh-Hant">初次來訪</span></a>
+  <a href="#about-us">About us <span class="zh" lang="zh-Hant">關於我們</span></a>
+  <a href="#history">Our history <span class="zh" lang="zh-Hant">教會歷史</span></a>
+  <a href="#beliefs">Mission & beliefs <span class="zh" lang="zh-Hant">使命與信仰</span></a>
+  <a href="#pastors">Pastors & leaders <span class="zh" lang="zh-Hant">教牧團隊</span></a>
+  <a href="#connect">Get connected <span class="zh" lang="zh-Hant">與我們聯絡</span></a>
+  <a href="#contact">Contact & directions <span class="zh" lang="zh-Hant">交通指南</span></a>
+  <a href="http://mpcbc.local/about/?lang=zh-hant" lang="zh-Hant">繁體中文 <span class="zh">Traditional</span></a>
+  <a href="http://mpcbc.local/about/?lang=zh-hans" lang="zh-Hans">简体中文 <span class="zh">Simplified</span></a>
+</nav>
+<main id="main">
+
+<section class="o2-hero" id="about-us" aria-labelledby="h1">
+  <div class="o2-hero__talk" data-r><p class="o2-hero__line">One church family, worshipping in Cantonese, English and Mandarin.</p><p class="zh-p" lang="zh-Hant">一個教會大家庭，以粵語、英語及國語一同敬拜。</p><a class="button" href="#new-here">Plan your visit</a></div>
+  <div class="o2-hero__main">
+    <nav class="o2-hero__links" aria-label="On this page"><a href="#history">Our history</a><a href="#pastors">Pastors</a><a href="#beliefs">Beliefs</a><a href="#contact">Directions</a></nav>
+    <h1 class="d o2-h1" id="h1"><span class="o2-mask"><span>About</span></span> <span class="o2-mask"><span>our church</span></span></h1>
+    <p class="o2-h1zh">Monterey Park Chinese Baptist Church <span class="zh" lang="zh-Hant">慕道園華人浸信會</span></p>
+    <div class="o2-hero__pic"><div class="o2-fig"><b class="nums">1977</b><span>Founded in Alhambra, with worship in Cantonese</span></div><img src="assets/church-commonwealth.jpg" width="2000" height="1500" alt="The chapel at 302 W. Commonwealth Ave., with its white steeple and queen palms"></div>
+  </div>
+</section>
+
+<section class="o2-tiles" id="history" aria-labelledby="hist-title">
+  <div class="o2-board">
+    <div class="o2-tile o2-tile--a" data-r><h2 class="o2-slogan" id="hist-title">A home for three languages</h2><p class="h-zh" lang="zh-Hant">三種語言，同屬一家。</p></div>
+    <div class="o2-tile o2-tile--b"><p class="o2-big nums" aria-label="1988 and 1991">1988<br>1991</p><p class="small">Mandarin worship began, then English.</p></div>
+    <figure class="o2-tile o2-tile--c"><img src="assets/sanctuary-aisle.jpg" width="1600" height="900" alt="The sanctuary, red carpet between the pews" loading="lazy"></figure>
+  </div>
+  <div class="o2-story" data-r><p class="zh-p o2-story__zh" lang="zh-Hant">教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。</p><p class="o2-story__en">Our church was founded in 1977 with worship in Cantonese. During the 1980s, as the number of Mandarin-speaking immigrants in Los Angeles grew rapidly, the church saw the need to share the gospel and provide a spiritual home for new arrivals. Mandarin worship began in 1988. English worship was added in 1991, and the church continues to worship in all three languages.</p></div>
+</section>
+
+<section class="o2-cap" id="pastors" aria-labelledby="past-title">
+  <div class="o2-cap__side" data-r><h2 class="o2-h2" id="past-title">Pastors &amp; leaders</h2><p class="h-zh" lang="zh-Hant">教牧團隊</p><dl class="o2-facts small"><div><dt class="muted">From</dt><dd>Hong Kong</dd></div><div><dt class="muted">Studied</dt><dd>Fuller Theological Seminary; Claremont Graduate University</dd></div><div><dt class="muted">Contact</dt><dd><a href="mailto:info@mpcbc.net">info@mpcbc.net</a></dd></div></dl></div>
+  <div class="o2-cap__text" data-r>
+    <p class="o2-drop"><img src="assets/pastor-caleb.jpg" width="400" height="400" alt="Rev. Caleb Cheung" loading="lazy"><b>Rev. Caleb Cheung, Ph.D. (張健庭牧師)</b> is from Hong Kong. After being called to ministry, he studied theology at Fuller Theological Seminary and pursued doctoral studies in theology and philosophy of religion at Claremont Graduate University. He has continued serving and shepherding this church and is its senior pastor.</p>
+    <p class="o2-drop o2-drop--2"><b>Rev. Edward Lu (呂德勝牧師)</b> is lead pastor of Connect Ministry, the church’s English-language ministry. The Mandarin congregation is led by <b>[Pastor name] ([牧師姓名])</b>.</p>
+    <p class="zh-p o2-cap__zh" lang="zh-Hant">張健庭牧師來自香港，多年前蒙召在福樂神學院念神學，繼在克箂蒙研究大學進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。</p>
+  </div>
+</section>
+
+<section class="o2-words" id="mission" aria-labelledby="mis-title">
+  <div data-r><h2 class="d o2-mis" id="mis-title">Our mission</h2><p class="h-zh" lang="zh-Hant">使命宣言</p><p class="o2-mst">Knowing God is our foundation.<br>Glorifying God is our goal.</p><p class="zh-p" lang="zh-Hant">認識神為基礎，榮耀神是目標。</p></div>
+  <p class="o2-pw" data-r>We seek to know God and make His name known through worship <img class="slot" src="assets/sanctuary-aisle.jpg" alt="" width="80" height="42" loading="lazy">, fellowship <img class="slot" src="assets/courtyard-lights.jpg" alt="" width="80" height="42" loading="lazy">, discipleship, ministry <img class="slot" src="assets/vbs-crafts.jpg" alt="" width="80" height="42" loading="lazy"> and evangelism.</p>
+  <div class="o2-words__foot" data-r><p class="zh-p" lang="zh-Hant">我們藉著敬拜、團契、門徒訓練、事奉、傳福音來認識和榮耀神。</p><a class="button" href="#beliefs">Read our beliefs</a></div>
+</section>
+
+<section class="o2-table" id="beliefs" aria-labelledby="bel-title">
+  <h2 class="d o2-table__h" id="bel-title" data-r><span>Eight foundations.</span> <span>One shared faith.</span></h2>
+  <div class="o2-table__grid">
+    <figure class="o2-table__pic"><img src="assets/foochow-bible-in-characters-1940-p-2.jpg" width="1920" height="2716" alt="A page of Genesis from a Chinese Bible printed in characters, 1940" loading="lazy"><figcaption class="small muted">Genesis, from a Chinese Bible printed in 1940</figcaption></figure>
+    <p class="o2-table__word small">Beliefs<br><span class="zh" lang="zh-Hant">信仰告白</span></p>
+    <div class="o2-rows" data-r><details class="o2-row"><summary><span class="bname">God <span class="zh" lang="zh-Hant">神</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>God is the Creator and Ruler of the universe. He exists eternally as three persons: the Father, the Son and the Holy Spirit. These three are equal and are one God.</p><p class="zh-p" lang="zh-Hant">神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。</p><p class="small muted">Scripture references: Genesis 1:1,26,27, 3:22, Psalms 90:2; Matthew 28:19; 1 Peter 1:2; 2 Corinthians 13:14</p></div></details><details class="o2-row"><summary><span class="bname">Jesus Christ <span class="zh" lang="zh-Hant">耶穌基督</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>Jesus Christ is the Son of God and is equal with the Father. Jesus lived a sinless life on earth and offered Himself as the perfect sacrifice, dying on the cross for all humanity. He rose from the dead after three days, demonstrating His power over sin and death. He ascended to heavenly glory and will return to earth as King of kings and Lord of lords.</p><p class="zh-p" lang="zh-Hant">耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。</p><p class="small muted">Scripture references: Matthew 1:22-23; Isaiah 9:6; John 1:1-5, 14:10-30; Hebrews 4:14,15; 1 Corinthians 15:3-4; Romans 1:3-4; Acts 1:9-11; 1 Timothy 6:14; Titus 2:13</p></div></details><details class="o2-row"><summary><span class="bname">The Holy Spirit <span class="zh" lang="zh-Hant">聖靈</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>The Holy Spirit is equal with the Father and the Son. He is present in the world to help people know Christ, and He lives in every Christian from the moment of salvation. He gives believers power for daily living, understanding of spiritual truth and guidance for the way ahead. He gives spiritual gifts to every believer. As Christians, we seek daily to live under the Holy Spirit’s direction.</p><p class="zh-p" lang="zh-Hant">聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。</p><p class="small muted">Scripture references: 2 Corinthians 3:17; John 16:7-13, 14:16-17; Acts 1:8; 1 Corinthians 2:12; 3:16 Ephesians 1:13,5:18; Galatians 5:25</p></div></details><details class="o2-row"><summary><span class="bname">The Bible <span class="zh" lang="zh-Hant">聖經</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>The Bible is God’s Word to us, written by people under the supernatural guidance of the Holy Spirit. It is the highest authority for Christian faith and life.</p><p class="zh-p" lang="zh-Hant">聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。</p><p class="small muted">Scripture references: 2 Timothy 3:16,1:13; 2 Peter 1:20-21; Psalms 119:105, 160, 12:6; Proverbs 30:5</p></div></details><details class="o2-row"><summary><span class="bname">Humanity <span class="zh" lang="zh-Hant">人類</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>Human beings were created in God’s spiritual image, reflecting His character. Humanity is the pinnacle of God’s creation. Although every person has the potential for good, our sinful attitudes separate us from God and bring many problems into our lives.</p><p class="zh-p" lang="zh-Hant">人類是照神屬靈的形象所造，本有神的屬性。人是神創造的極致。雖然人本有善的潛能，我們每個人卻都因著罪的態度與神隔絕，而使得生命陷入種種問題。</p><p class="small muted">Scripture references: Genesis 1:27; Psalms 8:3-6; Isaiah 53:6a; Romans 3:23; Isaiah 59:1-2</p></div></details><details class="o2-row"><summary><span class="bname">Salvation <span class="zh" lang="zh-Hant">救恩</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>Salvation is God’s free gift, which we must receive. We can never atone for our sins through good works or self-improvement. Only through Jesus Christ and God’s forgiveness can we be delivered from the penalty of sin. We are saved when we turn in faith to Jesus from a self-centred life lived in our own strength. Eternal life begins when we receive the life of Jesus Christ by faith.</p><p class="zh-p" lang="zh-Hant">救恩是神給我們白白的禮物，但需要我們去接受。我們永遠無法靠著善行與自我改善來贖我們的罪。惟有靠著耶穌基督，蒙神赦免，才能從罪的刑罰得贖。當我們從以自我為中心、靠自己的生命，憑信心轉向耶穌時，我們便得救。永遠的生命開始於我們憑信心接受耶穌基督的生命那一刻。</p><p class="small muted">Scripture references: Romans 6:23,5:1; Ephesians 2:8-9; John 14:6;1:12; Titus 3:5; Galatians 3:26</p></div></details><details class="o2-row"><summary><span class="bname">Eternal Security <span class="zh" lang="zh-Hant">永遠的保障</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>Because God gives us eternal life through Jesus Christ, true believers have eternal assurance of salvation. Salvation comes through God’s power and grace, not through a Christian’s own efforts. His preserving power and grace give us this lasting assurance. Believers also have a responsibility to continue trusting God and living in His care.</p><p class="zh-p" lang="zh-Hant">由於神通過耶穌基督賜給我們永遠的生命，真信徒有永遠的得救保障。救贖是藉著神的權能與恩典，不是憑基督徒自己的努力。神保守的權能與恩典使我們有這永遠的保障。但信徒也有責任不斷信靠神，活在神的保守之中。</p><p class="small muted">Scripture references: John 10:29; 2 Timothy 1:12; Hebrews 7:25, 10:10,14; 1 Peter 1:3-5; Hebrews 6:4-8; Hebrews 10:26-27; John 15:6</p></div></details><details class="o2-row"><summary><span class="bname">Eternity <span class="zh" lang="zh-Hant">永恆</span></span><span class="plus" aria-hidden="true">+</span></summary>
+  <div class="bbody"><p>People were created to exist forever. We will either be eternally separated from God because of sin, or live eternally with Him through forgiveness and salvation. Eternal separation from God is hell; eternal life is being with God forever.</p><p class="zh-p" lang="zh-Hant">人被創造要存到永遠。我們或要因著罪與神永遠隔離，或是因著赦免與救恩與神永遠同在。與神永遠隔離便是地獄，與神永遠同在便是永遠的生命。</p><p class="small muted">Scripture references: John 3:16, 2:25, 5:11-13; Romans 6:23; Revelation 20:15; Matthew 1:8; Matthew 2:44,46</p></div></details></div>
+  </div>
+</section>
+
+<section class="o2-close" id="new-here" aria-labelledby="new-title">
+  <div class="o2-strip"><video class="film " autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-label="VBS Magnified! 2025, filmed at the church"><source src="assets/hero-720.mp4" type="video/mp4"></video><img src="assets/vbs-boy.jpg" width="1600" height="900" alt="A boy in a blue VBS shirt" loading="lazy"><img src="assets/courtyard-lights.jpg" width="1600" height="900" alt="String lights over the courtyard" loading="lazy"></div>
+  <div class="o2-band" id="connect">
+    <div class="o2-band__text" data-r><h2 class="o2-h2" id="new-title">New here? Get connected.</h2><p class="h-zh" lang="zh-Hant">初次來訪 · 與我們聯絡</p>
+      <p class="o2-band__st">We know visiting a church for the first time can feel intimidating. <a href="http://mpcbc.local/#connect">Tell us you’re coming</a> and someone will look out for you.</p>
+      <p class="small">Sundays: Mandarin 9:00 · Children 10:00 · Cantonese and English 11:00 AM.<br>Youth Sunday School, Sundays 10:00–10:45 AM · College / Career Fellowship, Mondays 6:30–9:00 PM, West Covina.</p></div>
+    <img class="o2-band__face" src="assets/pastor-caleb.jpg" width="300" height="375" alt="Rev. Caleb Cheung" loading="lazy">
+  </div>
+</section>
+
+<section class="o2-contact" id="contact" aria-labelledby="con-title">
+  <p class="o2-contact__s" data-r>Call, write or come by on a Sunday: we are at 302 W. Commonwealth Ave., Alhambra.</p>
+  <img class="o2-contact__pic" src="assets/steeple-stamp.jpg" width="300" height="400" alt="The white steeple with its cross" loading="lazy">
+  <div class="o2-contact__links" data-r><h2 class="o2-contact__q" id="con-title">Contact &amp; directions <span class="zh" lang="zh-Hant">交通指南</span></h2>
+    <a class="link" href="mailto:info@mpcbc.net">info@mpcbc.net</a><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801">Get directions</a>
+    <p class="small muted">Alhambra, CA 91801 · <a href="tel:+16262891284">(626) 289-1284</a> · Office hours: [Days, times]</p></div>
+</section>
+</main>
+<footer class="foot" aria-label="Church details">
+  <div class="foot__cols">
+    <div><h2>Visit <span class="zh" lang="zh-Hant">交通指南</span></h2>
+      <p>302 W. Commonwealth Ave.<br>Alhambra, CA 91801</p>
+      <p class="times-mini"><span>Sundays <span class="zh" lang="zh-Hant">主日</span></span>Mandarin 9:00 AM<br>Children 10:00 AM<br>Cantonese 11:00 AM<br>English 11:00 AM</p>
+      <ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801">Get directions <span class="zh" lang="zh-Hant">交通指引</span></a></li></ul></div>
+    <div><h2>Contact <span class="zh" lang="zh-Hant">聯絡</span></h2>
+      <ul><li><a href="tel:+16262891284">(626) 289-1284</a></li><li><a href="mailto:info@mpcbc.net">info@mpcbc.net</a></li><li><a href="http://mpcbc.local/#connect">Prayer request <span class="zh" lang="zh-Hant">代禱</span></a></li></ul>
+      <p>Office hours: [Days, times]</p></div>
+    <div><h2>Follow <span class="zh" lang="zh-Hant">關注</span></h2>
+      <ul><li><a href="https://www.instagram.com/mpcbconnect/">Instagram @mpcbconnect</a></li><li><a href="https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ">English YouTube</a></li><li><a href="https://www.youtube.com/@MPCBC">YouTube @MPCBC <span class="zh" lang="zh-Hant">中文</span></a></li><li><span>WeChat <span class="zh" lang="zh-Hant">微信群</span> [group link]</span></li></ul></div>
+    <div><h2>Explore <span class="zh" lang="zh-Hant">探索</span></h2>
+      <ul><li><a href="http://mpcbc.local/visit/">Plan your visit</a></li><li><a href="http://mpcbc.local/#sundays">Watch live <span class="zh" lang="zh-Hant">直播</span></a></li><li><a href="http://mpcbc.local/#events">Events <span class="zh" lang="zh-Hant">活動</span></a></li><li><a href="http://mpcbc.local/#kids">Kids and youth <span class="zh" lang="zh-Hant">兒童及青少年</span></a></li><li><a href="https://mpcbc.net/english/newsletters__trashed/newsletter-july-2026/">Newsletter <span class="zh" lang="zh-Hant">通訊</span></a></li></ul></div>
+  </div>
+  <p class="credits">Pictures: <a href="https://commons.wikimedia.org/wiki/File:Foochow_Bible_in_Characters,_1940,_p.2.jpg">“Foochow Bible in Characters, 1940, p.2”</a>, public domain, via Wikimedia Commons. Other photographs: MPCBC.</p>
+  <div class="foot__bar">
+    <p><b>Monterey Park Chinese Baptist Church</b> <span class="zh" lang="zh-Hant">慕道園華人浸信會</span></p>
+    <p>[Church logo] Founded in 1977, Alhambra, California.</p>
+    <p class="langs"><a href="http://mpcbc.local/about/?lang=zh-hant" lang="zh-Hant">繁體中文</a><a href="http://mpcbc.local/about/?lang=zh-hans" lang="zh-Hans">简体中文</a><a href="#about-us">Back to top</a></p>
+  </div>
+</footer>
+<script>
+(() => {
+  const btn = document.querySelector('[data-menu]'), menu = document.getElementById('menu-panel');
+  const set = (o) => { menu.hidden = !o; btn.setAttribute('aria-expanded', String(o)); };
+  btn.addEventListener('click', () => set(menu.hidden));
+  menu.addEventListener('click', (e) => { if (e.target.closest('a')) set(false); });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { set(false); btn.focus(); } });
+  // entrance: the parts of each [data-r] block rise in turn, once
+  const els = [];
+  document.querySelectorAll('[data-r]').forEach((box) => [...box.children].forEach((c, i) => { c.classList.add('r'); c.style.setProperty('--i', i); els.push(c); }));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((en) => en.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    els.forEach((el) => io.observe(el));
+    setTimeout(() => els.forEach((el) => { const r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('is-in'); }), 2500);
+  } else els.forEach((el) => el.classList.add('is-in'));
+  // slow crossfade (Elementor free: container background slideshow)
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) document.querySelectorAll('video').forEach((v) => { v.removeAttribute('autoplay'); v.pause(); });
+  document.querySelectorAll('[data-fade]').forEach((box) => {
+    const imgs = [...box.querySelectorAll('img')]; let i = 0; imgs[0].classList.add('on');
+    if (reduce || imgs.length < 2) return;
+    let t = setInterval(() => { imgs[i].classList.remove('on'); i = (i + 1) % imgs.length; imgs[i].classList.add('on'); }, 6000);
+    document.addEventListener('visibilitychange', () => { clearInterval(t); if (!document.hidden) t = setInterval(() => { imgs[i].classList.remove('on'); i = (i + 1) % imgs.length; imgs[i].classList.add('on'); }, 6000); });
+  });
+})();
+</script>
+</body>
+</html>

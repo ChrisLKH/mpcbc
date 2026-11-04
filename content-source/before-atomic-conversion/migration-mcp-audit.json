@@ -1,0 +1,190 @@
+{
+    "wordpress": "7.1.3",
+    "elementor": "4.3.4",
+    "theme": "hello-mpcbc",
+    "php": "8.2.29",
+    "menu_locations": {
+        "menu-1": 3,
+        "menu-2": 0
+    },
+    "pages": [
+        {
+            "id": 21,
+            "title": "Home",
+            "legacy_nodes": 279,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 110,
+                "heading": 122,
+                "button": 25,
+                "image": 14,
+                "shortcode": 3,
+                "text-editor": 1,
+                "nested-tabs": 2,
+                "icon-list": 2
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [
+                "hero_link_plan"
+            ],
+            "bracketed_text_count": 29
+        },
+        {
+            "id": 64,
+            "title": "About",
+            "legacy_nodes": 158,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 59,
+                "heading": 50,
+                "text-editor": 27,
+                "image": 2,
+                "nested-accordion": 2,
+                "button": 17,
+                "nested-tabs": 1
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [],
+            "bracketed_text_count": 0
+        },
+        {
+            "id": 215,
+            "title": "關於我們",
+            "legacy_nodes": 158,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 59,
+                "heading": 50,
+                "text-editor": 27,
+                "image": 2,
+                "nested-accordion": 2,
+                "button": 17,
+                "nested-tabs": 1
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [],
+            "bracketed_text_count": 0
+        },
+        {
+            "id": 218,
+            "title": "关于我们",
+            "legacy_nodes": 158,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 59,
+                "heading": 50,
+                "text-editor": 27,
+                "image": 2,
+                "nested-accordion": 2,
+                "button": 17,
+                "nested-tabs": 1
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [],
+            "bracketed_text_count": 0
+        },
+        {
+            "id": 65,
+            "title": "Give",
+            "legacy_nodes": 18,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 9,
+                "heading": 3,
+                "text-editor": 4,
+                "button": 2
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [],
+            "bracketed_text_count": 0
+        },
+        {
+            "id": 233,
+            "title": "奉獻",
+            "legacy_nodes": 18,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 9,
+                "heading": 3,
+                "text-editor": 4,
+                "button": 2
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [],
+            "bracketed_text_count": 0
+        },
+        {
+            "id": 236,
+            "title": "奉献",
+            "legacy_nodes": 18,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 9,
+                "heading": 3,
+                "text-editor": 4,
+                "button": 2
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [],
+            "bracketed_text_count": 0
+        },
+        {
+            "id": 16,
+            "title": "MPCBC – Footer",
+            "legacy_nodes": 32,
+            "atomic_nodes": 0,
+            "types": {
+                "container": 7,
+                "heading": 25
+            },
+            "missing_media": [],
+            "visit_placeholder_links": [
+                "mpcbc_foot_explore_0"
+            ],
+            "bracketed_text_count": 2
+        }
+    ],
+    "atomic_editor_active": true,
+    "mcp_enabled": false,
+    "v3_mcp_allowlist": [
+        "nav-menu",
+        "theme-post-content",
+        "theme-post-title",
+        "theme-post-featured-image",
+        "theme-post-excerpt",
+        "theme-archive-title"
+    ],
+    "redirects": [
+        {
+            "id": 181,
+            "target": 64,
+            "anchor": "beliefs"
+        },
+        {
+            "id": 224,
+            "target": 215,
+            "anchor": "beliefs"
+        },
+        {
+            "id": 227,
+            "target": 218,
+            "anchor": "beliefs"
+        }
+    ],
+    "theme_files": [
+        "footer.php",
+        "functions.php",
+        "language-navigation.js",
+        "nav.js",
+        "style.css",
+        "video-toggle.js"
+    ],
+    "theme_bytes": {
+        "style.css": 21908,
+        "functions.php": 7388,
+        "footer.php": 1993,
+        "nav.js": 4370,
+        "video-toggle.js": 1179,
+        "language-navigation.js": 4178
+    }
+}

@@ -1,0 +1,536 @@
+{
+  "id": "bc00037",
+  "elType": "widget",
+  "widgetType": "nested-accordion",
+  "settings": {
+    "items": [
+      {
+        "_id": "belief0",
+        "item_title": "神",
+        "element_css_id": "belief-1"
+      },
+      {
+        "_id": "belief1",
+        "item_title": "耶稣基督",
+        "element_css_id": "belief-2"
+      },
+      {
+        "_id": "belief2",
+        "item_title": "圣灵",
+        "element_css_id": "belief-3"
+      },
+      {
+        "_id": "belief3",
+        "item_title": "圣经",
+        "element_css_id": "belief-4"
+      },
+      {
+        "_id": "belief4",
+        "item_title": "人类",
+        "element_css_id": "belief-5"
+      },
+      {
+        "_id": "belief5",
+        "item_title": "救恩",
+        "element_css_id": "belief-6"
+      },
+      {
+        "_id": "belief6",
+        "item_title": "永远的保障",
+        "element_css_id": "belief-7"
+      },
+      {
+        "_id": "belief7",
+        "item_title": "永恒",
+        "element_css_id": "belief-8"
+      }
+    ],
+    "default_state": "expanded",
+    "max_items_expended": "multiple",
+    "title_tag": "h2",
+    "accordion_padding": {
+      "unit": "px",
+      "top": "24",
+      "right": "24",
+      "bottom": "24",
+      "left": "24",
+      "isLinked": false
+    },
+    "content_padding": {
+      "unit": "px",
+      "top": "8",
+      "right": "24",
+      "bottom": "32",
+      "left": "24",
+      "isLinked": false
+    },
+    "accordion_border_radius": {
+      "unit": "px",
+      "top": "16",
+      "right": "16",
+      "bottom": "16",
+      "left": "16",
+      "isLinked": false
+    },
+    "accordion_background_normal_background": "classic",
+    "accordion_background_active_background": "classic",
+    "__globals__": {
+      "accordion_background_normal_color": "globals/colors?id=white",
+      "accordion_background_active_color": "globals/colors?id=white",
+      "normal_title_color": "globals/colors?id=text",
+      "hover_title_color": "globals/colors?id=primary",
+      "active_title_color": "globals/colors?id=primary",
+      "title_typography_typography": "globals/typography?id=interior_hans_card"
+    }
+  },
+  "elements": [
+    {
+      "id": "bc0003c",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc00039",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">神是宇宙的创造者与主宰，祂以三位一体永远存在:圣父、圣子、圣灵。三位同等为一神。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc0003a",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc0003b",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">创1:1,26,27, 3:22, 诗90:2; 太28:19; 彼前1:2; 林后13:14</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc00041",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc0003e",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">耶稣基督是神的儿子，与父同等。耶稣曾在地上无罪活过人生，并将自己献上成为最完美的祭，为所有的人类死在十字架上。三天后从死里复活，彰显祂胜过罪与死的权能。祂升到天上的荣耀，有一天要回到地上来作万王之王、万主之主。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc0003f",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc00040",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">太1:22-23; 赛9:6; 约1:1-5, 14:10-30; 来4:14,15; 林前15:3-4; 罗1:3-4; 徒1:9-11; 提前6:14; 多2:13</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc00046",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc00043",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">圣灵与圣父圣子同等。祂临在世上为要帮助人认识基督。并且在人得救那一刻，祂便住在每一个基督徒里面。祂供应每个基督徒每天生活的能力，对于属灵真理的理解力，以及前行的引导。祂赏赐属灵恩赐给每个得救的信徒。作为基督徒，我们每天寻求过一个圣灵管理的生活。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc00044",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc00045",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">林后3:17; 约16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc0004b",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc00048",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">圣经是神给我们的话，是藉著圣灵超然的引导，由人写成。是基督徒信仰与生活的最高准则。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc00049",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc0004a",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">提后3:16,1:13; 彼后1:20-21; 诗119:105, 160, 12:6; 箴30:5</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc00050",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc0004d",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">人类是照神属灵的形象所造，本有神的属性。人是神创造的极致。虽然人本有善的潜能，我们每个人却都因著罪的态度与神隔绝，而使得生命陷入种种问题。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc0004e",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc0004f",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">创1:27; 诗8:3-6; 赛53:6a; 罗3:23; 赛59:1-2</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc00055",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc00052",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">救恩是神给我们白白的礼物，但需要我们去接受。我们永远无法靠著善行与自我改善来赎我们的罪。惟有靠著耶稣基督，蒙神赦免，才能从罪的刑罚得赎。当我们从以自我为中心、靠自己的生命，凭信心转向耶稣时，我们便得救。永远的生命开始于我们凭信心接受耶稣基督的生命那一刻。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc00053",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc00054",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">罗6:23,5:1; 弗2:8-9; 约14:6;1:12; 多3:5; 加3:26</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc0005a",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc00057",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">由于神通过耶稣基督赐给我们永远的生命，真信徒有永远的得救保障。救赎是藉著神的权能与恩典，不是凭基督徒自己的努力。神保守的权能与恩典使我们有这永远的保障。但信徒也有责任不断信靠神，活在神的保守之中。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc00058",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc00059",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">约10:29; 提后1:12; 来7:25, 10:10,14; 彼前1:3-5; 来6:4-8; 来10:26-27; 约15:6</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bc0005f",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "__globals__": {}
+      },
+      "elements": [
+        {
+          "id": "bc0005c",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">人被创造要存到永远。我们或要因著罪与神永远隔离，或是因著赦免与救恩与神永远同在。与神永远隔离便是地狱，与神永远同在便是永远的生命。</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "bc0005d",
+          "elType": "widget",
+          "settings": {
+            "title": "经文",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=primary",
+              "typography_typography": "globals/typography?id=interior_hans_card"
+            }
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "bc0005e",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p lang=\"zh-Hans\">约3:16, 2:25, 5:11-13; 罗6:23; 启20:15; 太1:8; 太2:44,46</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=text",
+              "typography_typography": "globals/typography?id=interior_hans"
+            }
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

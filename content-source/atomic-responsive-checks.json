@@ -1,0 +1,134 @@
+[
+  {
+    "childrenBottom": 795,
+    "forms": 3,
+    "heroTop": 0,
+    "locationBottom": 876,
+    "overflow": false,
+    "page": "home",
+    "viewport": 900,
+    "width": 1440
+  },
+  {
+    "childrenBottom": 795,
+    "forms": 3,
+    "heroTop": 0,
+    "locationBottom": 876,
+    "overflow": false,
+    "page": "home",
+    "viewport": 900,
+    "width": 1280
+  },
+  {
+    "childrenBottom": 794,
+    "forms": 3,
+    "heroTop": 0,
+    "locationBottom": 876,
+    "overflow": false,
+    "page": "home",
+    "viewport": 900,
+    "width": 1110
+  },
+  {
+    "childrenBottom": 795,
+    "forms": 3,
+    "heroTop": 0,
+    "locationBottom": 876,
+    "overflow": false,
+    "page": "home",
+    "viewport": 900,
+    "width": 768
+  },
+  {
+    "childrenBottom": 705,
+    "forms": 3,
+    "heroTop": 0,
+    "locationBottom": 824,
+    "overflow": false,
+    "page": "home",
+    "viewport": 844,
+    "width": 390
+  },
+  {
+    "childrenBottom": 705,
+    "forms": 3,
+    "heroTop": 0,
+    "locationBottom": 824,
+    "overflow": false,
+    "page": "home",
+    "viewport": 844,
+    "width": 360
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": false,
+    "width": 1440
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": false,
+    "width": 768
+  },
+  {
+    "locale": "en",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": true,
+    "width": 390
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": false,
+    "width": 1440
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": false,
+    "width": 768
+  },
+  {
+    "locale": "zh-Hant",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": true,
+    "width": 390
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": false,
+    "width": 1440
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": false,
+    "width": 768
+  },
+  {
+    "locale": "zh-Hans",
+    "overflow": false,
+    "page": "about",
+    "readerPanels": 8,
+    "selectVisible": true,
+    "width": 390
+  }
+]

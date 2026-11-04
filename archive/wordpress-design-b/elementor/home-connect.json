@@ -1,0 +1,239 @@
+{
+    "version": "0.4",
+    "title": "Home - Connect & Prayer",
+    "type": "section",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "9d189964",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+                "_element_id": "connect",
+                "css_id": "connect",
+                "content_width": "full",
+                "background_background": "classic",
+                "background_color": "#1B1014",
+                "__globals__": {
+                    "background_color": "globals/colors?id=secondary"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "96",
+                    "right": "20",
+                    "bottom": "96",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "72",
+                    "right": "20",
+                    "bottom": "72",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "20",
+                    "bottom": "56",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "flex_direction": "column",
+                "flex_align_items": "center"
+            },
+            "elements": [
+                {
+                    "id": "3660e4b8",
+                    "elType": "container",
+                    "isInner": false,
+                    "settings": {
+                        "content_width": "boxed",
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1080
+                        },
+                        "flex_direction": "row",
+                        "flex_wrap": "wrap",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 48
+                        },
+                        "flex_align_items": "flex-start"
+                    },
+                    "elements": [
+                        {
+                            "id": "717d12c8",
+                            "elType": "container",
+                            "isInner": false,
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 45
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "4a6ef5bb",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>SAY HELLO 與我們聯絡</p>",
+                                        "text_color": "rgba(255,255,255,0.6)",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Inter",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 13
+                                        },
+                                        "typography_font_weight": "700"
+                                    },
+                                    "elements": []
+                                },
+                                {
+                                    "id": "a0adc3b9",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "We would rather hear from you than guess.",
+                                        "header_size": "h2",
+                                        "title_color": "#FFFFFF",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Geist",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600",
+                                        "typography_letter_spacing": {
+                                            "unit": "px",
+                                            "size": -1.8
+                                        }
+                                    },
+                                    "elements": []
+                                },
+                                {
+                                    "id": "5a96948c",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Two cards, both read by a person. A connect card reaches the pastor of the congregation you name, usually within two days. A prayer request goes to the pastors and, if you allow it, to the Wednesday prayer meeting.</p>",
+                                        "text_color": "rgba(255,255,255,0.75)",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        }
+                                    },
+                                    "elements": []
+                                },
+                                {
+                                    "id": "a5727ffd",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p class=\"zh-serif\">您也可以致電教會辦公室，我們有會說粵語、國語及英語的同工。</p>",
+                                        "text_color": "rgba(255,255,255,0.75)",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        }
+                                    },
+                                    "elements": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c3b6af73",
+                            "elType": "container",
+                            "isInner": false,
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 50
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "background_background": "classic",
+                                "background_color": "#FFFFFF",
+                                "border_radius": {
+                                    "unit": "px",
+                                    "top": "24",
+                                    "right": "24",
+                                    "bottom": "24",
+                                    "left": "24",
+                                    "isLinked": true
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "32",
+                                    "right": "32",
+                                    "bottom": "32",
+                                    "left": "32",
+                                    "isLinked": true
+                                },
+                                "padding_tablet": {
+                                    "unit": "px",
+                                    "top": "24",
+                                    "right": "24",
+                                    "bottom": "24",
+                                    "left": "24",
+                                    "isLinked": true
+                                },
+                                "padding_mobile": {
+                                    "unit": "px",
+                                    "top": "20",
+                                    "right": "20",
+                                    "bottom": "20",
+                                    "left": "20",
+                                    "isLinked": true
+                                },
+                                "flex_direction": "column"
+                            },
+                            "elements": [
+                                {
+                                    "id": "f01f54f9",
+                                    "elType": "widget",
+                                    "isInner": false,
+                                    "widgetType": "tabs",
+                                    "settings": {
+                                        "tabs": [
+                                            {
+                                                "tab_title": "Connect card 聯絡卡",
+                                                "tab_content": "[fluentform id=\"3\"]"
+                                            },
+                                            {
+                                                "tab_title": "Prayer request 代禱",
+                                                "tab_content": "[fluentform id=\"4\"]"
+                                            }
+                                        ],
+                                        "css_classes": "connect-tabs"
+                                    },
+                                    "elements": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

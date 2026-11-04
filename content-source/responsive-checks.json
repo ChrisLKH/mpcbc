@@ -1,0 +1,32 @@
+[
+  {
+    "documentWidth": 1425,
+    "overflow": false,
+    "scrollWidth": 1425,
+    "viewport": 1440
+  },
+  {
+    "documentWidth": 1265,
+    "overflow": false,
+    "scrollWidth": 1265,
+    "viewport": 1280
+  },
+  {
+    "documentWidth": 1095,
+    "overflow": false,
+    "scrollWidth": 1095,
+    "viewport": 1110
+  },
+  {
+    "documentWidth": 753,
+    "overflow": false,
+    "scrollWidth": 753,
+    "viewport": 768
+  },
+  {
+    "documentWidth": 375,
+    "overflow": false,
+    "scrollWidth": 375,
+    "viewport": 390
+  }
+]

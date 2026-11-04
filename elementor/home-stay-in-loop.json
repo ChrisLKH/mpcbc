@@ -1,0 +1,898 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Newsletter",
+    "type": "container",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "newsletter_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "_element_id": "news",
+                "background_background": "classic",
+                "background_color": "#E3EBEA",
+                "__globals__": {
+                    "background_color": "globals/colors?id=mist"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": 112,
+                    "right": 56,
+                    "bottom": 112,
+                    "left": 56,
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": 80,
+                    "right": 32,
+                    "bottom": 80,
+                    "left": 32,
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": 44,
+                    "right": 16,
+                    "bottom": 44,
+                    "left": 16,
+                    "isLinked": false
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 48
+                }
+            },
+            "elements": [
+                {
+                    "id": "news_head",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_direction_tablet": "column",
+                        "flex_direction_mobile": "column",
+                        "flex_justify_content": "space-between",
+                        "flex_align_items": "flex-start",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "news_heading_group",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 4
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "news_title",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Newsletter",
+                                        "header_size": "h2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 72
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 56
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 40
+                                        },
+                                        "typography_font_weight": "700",
+                                        "typography_letter_spacing": {
+                                            "unit": "em",
+                                            "size": -0.035
+                                        },
+                                        "title_color": "#13232A"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "news_title_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">通訊</span>",
+                                        "header_size": "span",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 22
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 17
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#4F6168"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "news_lede",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "The weekly newsletter, in all three languages.",
+                                "header_size": "p",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18
+                                },
+                                "typography_font_weight": "400",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.5
+                                },
+                                "title_color": "#4F6168",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=ink_soft"
+                                },
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "px",
+                                    "size": 440
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "news_grid",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_direction_tablet": "column",
+                        "flex_direction_mobile": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "news_card_left",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 59
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "background_background": "classic",
+                                "background_color": "#FFFFFF",
+                                "__globals__": {
+                                    "background_color": "globals/colors?id=white"
+                                },
+                                "border_radius": {
+                                    "unit": "px",
+                                    "top": 24,
+                                    "right": 24,
+                                    "bottom": 24,
+                                    "left": 24,
+                                    "isLinked": true
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": 40,
+                                    "right": 40,
+                                    "bottom": 40,
+                                    "left": 40,
+                                    "isLinked": true
+                                },
+                                "padding_mobile": {
+                                    "unit": "px",
+                                    "top": 24,
+                                    "right": 24,
+                                    "bottom": 24,
+                                    "left": 24,
+                                    "isLinked": true
+                                },
+                                "flex_direction": "row",
+                                "flex_direction_mobile": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 24
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "news_left_text_col",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "news_issue_kicker",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Newsletter · [Date]",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#155E75",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "news_main_title",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[Main announcement title]",
+                                                "header_size": "h3",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Bricolage Grotesque",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 48
+                                                },
+                                                "typography_font_size_mobile": {
+                                                    "unit": "px",
+                                                    "size": 34
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#13232A"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "news_main_desc",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[Two or three sentences about this week’s main announcement: what it is, when it starts and who it’s for.]",
+                                                "header_size": "p",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_weight": "400",
+                                                "typography_line_height": {
+                                                    "unit": "em",
+                                                    "size": 1.5
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "news_main_desc_zh",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "<span lang=\"zh-Hant\">[中文摘要]</span>",
+                                                "header_size": "p",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 15
+                                                },
+                                                "typography_font_weight": "500",
+                                                "typography_font_family": "Noto Sans TC",
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "news_left_btns",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 12
+                                                },
+                                                "margin": {
+                                                    "unit": "px",
+                                                    "top": 16,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "news_btn_read",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Read the newsletter",
+                                                        "link": {
+                                                            "url": "#"
+                                                        },
+                                                        "background_color": "#155E75",
+                                                        "__globals__": {
+                                                            "background_color": "globals/colors?id=primary",
+                                                            "button_text_color": "globals/colors?id=white",
+                                                            "button_background_hover_color": "globals/colors?id=harbor_deep",
+                                                            "hover_color": "globals/colors?id=white"
+                                                        },
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": 12,
+                                                            "right": 12,
+                                                            "bottom": 12,
+                                                            "left": 12,
+                                                            "isLinked": true
+                                                        },
+                                                        "button_text_color": "#FFFFFF",
+                                                        "button_background_hover_color": "#0E4A5C",
+                                                        "hover_color": "#FFFFFF"
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "news_btn_pdf",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Download PDF",
+                                                        "link": {
+                                                            "url": "#"
+                                                        },
+                                                        "background_color": "transparent",
+                                                        "border_border": "solid",
+                                                        "border_width": {
+                                                            "unit": "px",
+                                                            "top": 1.5,
+                                                            "right": 1.5,
+                                                            "bottom": 1.5,
+                                                            "left": 1.5,
+                                                            "isLinked": true
+                                                        },
+                                                        "border_color": "#BFCDCC",
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": 12,
+                                                            "right": 12,
+                                                            "bottom": 12,
+                                                            "left": 12,
+                                                            "isLinked": true
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=text",
+                                                            "border_color": "globals/colors?id=line_strong",
+                                                            "button_background_hover_color": "globals/colors?id=mist",
+                                                            "hover_color": "globals/colors?id=text",
+                                                            "button_hover_border_color": "globals/colors?id=line_strong"
+                                                        },
+                                                        "button_text_color": "#13232A",
+                                                        "button_background_hover_color": "#E3EBEA",
+                                                        "hover_color": "#13232A",
+                                                        "button_hover_border_color": "#BFCDCC"
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "news_left_photo",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "image": {
+                                            "url": "http://mpcbc.local/wp-content/uploads/2026/10/photo-newsletter.png",
+                                            "id": 135
+                                        },
+                                        "image_size": "full",
+                                        "width": {
+                                            "unit": "px",
+                                            "size": 220
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 160
+                                        },
+                                        "object_fit_mobile": "cover",
+                                        "image_border_radius": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 16,
+                                            "bottom": 16,
+                                            "left": 16,
+                                            "isLinked": true
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "image"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "news_card_right",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 39
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "background_background": "classic",
+                                "background_color": "#FFFFFF",
+                                "__globals__": {
+                                    "background_color": "globals/colors?id=white"
+                                },
+                                "border_radius": {
+                                    "unit": "px",
+                                    "top": 24,
+                                    "right": 24,
+                                    "bottom": 24,
+                                    "left": 24,
+                                    "isLinked": true
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": 32,
+                                    "right": 32,
+                                    "bottom": 32,
+                                    "left": 32,
+                                    "isLinked": true
+                                },
+                                "padding_mobile": {
+                                    "unit": "px",
+                                    "top": 24,
+                                    "right": 20,
+                                    "bottom": 24,
+                                    "left": 20,
+                                    "isLinked": false
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "news_side_h3",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Also this week",
+                                        "header_size": "h3",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 22
+                                        },
+                                        "typography_font_weight": "700",
+                                        "title_color": "#13232A"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "news_side_h3_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">本週其他消息</span>",
+                                        "header_size": "span",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14
+                                        },
+                                        "typography_font_weight": "500",
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 14
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 14
+                                        },
+                                        "title_color": "#4F6168",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=ink_soft"
+                                        },
+                                        "_margin": {
+                                            "unit": "px",
+                                            "top": -12,
+                                            "right": 0,
+                                            "bottom": 0,
+                                            "left": 0,
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "news_side_rows",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 0,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "news_side_row_1",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 12,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 4
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 10,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 1,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "border_color": "#D9E2E1",
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "news_side_t_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Announcement title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 16
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "news_side_d_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[One line of detail]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "news_side_row_2",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 12,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 4
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 10,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 1,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "border_color": "#D9E2E1",
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "news_side_t_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Announcement title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 16
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "news_side_d_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[One line of detail]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "news_side_row_3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 12,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 4
+                                                },
+                                                "padding_mobile": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 10,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 1,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "border_color": "#D9E2E1",
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "news_side_t_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Announcement title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 16
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "news_side_d_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[One line of detail]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "news_side_form",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "shortcode": "[fluentform id=\"4\"]"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "shortcode"
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

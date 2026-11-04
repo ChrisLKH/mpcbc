@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Prayer request</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Geist:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FAF7F2;color:#16140F;font-family:'Geist','Noto Sans TC',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#0E6B5C}a:hover{color:#0A5247}
+h1,h2,h3,p{margin:0}
+.disp{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;letter-spacing:-0.035em;line-height:.98}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:12px;font-weight:600;font-size:17px;text-decoration:none;box-sizing:border-box;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-p{background:var(--accent,#0E6B5C);color:#fff}.btn-p:hover{background:var(--accent-deep,#0A5247);color:#fff}
+.tl{font-weight:600;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px}
+.navd{color:#16140F;text-decoration:none;font-size:16px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+.navd:hover{color:var(--accent,#0E6B5C)}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label,.legend{font-weight:600;font-size:17px}
+.hint{font-weight:400;color:#5C564D}
+.inp{min-height:56px;border-radius:12px;border:1.5px solid #CFC5B4;background:#fff;padding:0 16px;font:inherit;font-size:17px;box-sizing:border-box}
+.inp:focus,textarea:focus{outline:3px solid var(--accent,#0E6B5C);outline-offset:1px}
+.opt{display:flex;align-items:center;gap:12px;min-height:48px;font-size:17px;cursor:pointer}
+.opt input{width:22px;height:22px;accent-color:var(--accent,#0E6B5C)}
+.demo a{color:rgba(255,255,255,.78);text-decoration:none;font-size:14px;min-height:36px;padding:0 12px;border-radius:8px;display:inline-flex;align-items:center}
+.demo a:hover{background:rgba(255,255,255,.1);color:#fff}
+.demo a.on{background:#fff;color:#12110E}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #FAF7F2; --accent: {{accent}}; --accent-deep: {{accentDeep}}">
+
+<nav class="demo" aria-label="Demo designs" style="height: 56px; flex-shrink: 0; background: #12110E; display: flex; align-items: center; gap: 4px; padding: 0 20px">
+<span style="color: #F4B942; font-weight: 600; font-size: 14px; margin-right: 8px">Design 1 · Separate languages</span>
+<a href="Welcome.dc.html">Welcome</a>
+<a href="EnHome.dc.html">English home</a>
+<a href="ZhHome.dc.html">中文主頁</a>
+<a href="EnVisit.dc.html">Visit</a>
+<a href="EnSermons.dc.html">Messages</a>
+<a href="ZhSermons.dc.html">講道</a>
+<a class="on" href="Prayer.dc.html" aria-current="page">Prayer</a>
+<span style="width: 1px; height: 24px; background: rgba(255,255,255,.2); margin: 0 10px"></span>
+<span style="color: #F4B942; font-weight: 600; font-size: 14px; margin-right: 8px">Design 2 · Combined</span>
+<a href="Combined.dc.html">Home</a>
+<a href="Sermons.dc.html">Sermons</a>
+<span style="margin-left: auto; color: rgba(255,255,255,.55); font-size: 13px">Used by both designs · the form sends nothing in this demo</span>
+</nav>
+
+<header style="height: 96px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; border-bottom: 1px solid #E3DACB">
+<a href="EnHome.dc.html" style="height: 44px; padding: 0 16px; border: 1.5px dashed #5C564D; border-radius: 8px; display: inline-flex; align-items: center; color: #5C564D; font-family: ui-monospace, Menlo, monospace; font-size: 12px; text-decoration: none">[Church logo]</a>
+<div style="display: flex; align-items: center; gap: 32px">
+<a class="navd" href="EnVisit.dc.html">Visit</a>
+<a class="navd" href="#">Sundays</a>
+<a class="navd" href="#">Kids &amp; Youth</a>
+<a class="navd" href="EnSermons.dc.html">Watch</a>
+<a class="navd" href="#">About</a>
+<a class="navd" href="#">Give</a>
+<a class="navd" href="ZhHome.dc.html" lang="zh-Hant" style="border: 1.5px solid #CFC5B4; border-radius: 8px; padding: 0 12px">中文</a>
+<a class="btn btn-p" href="EnVisit.dc.html" style="min-height: 48px; font-size: 16px">Plan your visit</a>
+</div>
+</header>
+
+<main style="flex-grow: 1; padding: 104px 56px; display: grid; grid-template-columns: minmax(0, 1fr) 640px; gap: 96px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<h1 class="disp" style="font-size: 112px">How can we pray for you?</h1>
+<p style="font-size: 22px; line-height: 1.55; color: #3E3A33; max-width: 32ch">Our pastors read every request and pray for you by name this week.</p>
+<ul style="list-style: none; margin: 0; padding: 28px 0 0; border-top: 1px solid #E3DACB; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.5; color: #3E3A33">
+<li>Read only by [Pastor names] — or the prayer team, if you choose.</li>
+<li>Never posted or shared without your permission.</li>
+<li>You don’t need to give your name.</li>
+</ul>
+</div>
+
+<div style="background: #ffffff; border: 1px solid #E3DACB; border-radius: 24px; padding: 44px; box-shadow: 0 30px 60px rgba(22,20,15,.08)">
+<sc-if value="{{editing}}" hint-placeholder-val="{{ true }}">
+<form style="display: flex; flex-direction: column; gap: 26px" onSubmit="{{send}}">
+<div class="field"><label for="pr-text">Your prayer request</label><textarea id="pr-text" required rows="6" style="border-radius: 12px; border: 1.5px solid #CFC5B4; padding: 14px 16px; font: inherit; font-size: 17px; line-height: 1.5; resize: vertical"></textarea></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px">
+<div class="field"><label for="pr-name">Name <span class="hint">(optional)</span></label><input id="pr-name" class="inp" type="text" autocomplete="name"></div>
+<div class="field"><label for="pr-contact">Email or phone <span class="hint">(optional)</span></label><input id="pr-contact" class="inp" type="text" autocomplete="email"></div>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px">
+<legend class="legend" style="margin-bottom: 6px">Who may see this?</legend>
+<label class="opt"><input type="radio" name="pr-who" value="pastors">Pastors only</label>
+<label class="opt"><input type="radio" name="pr-who" value="team">Pastors and the prayer team</label>
+</fieldset>
+<label class="opt"><input type="checkbox" name="pr-contact-me">I’d like someone to contact me</label>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<button class="btn btn-p" type="submit">Send prayer request</button>
+<span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #5C564D">[FORM ENDPOINT]</span>
+</div>
+</form>
+</sc-if>
+<sc-if value="{{sent}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 20px; min-height: 480px; justify-content: center">
+<h2 class="disp" style="font-size: 64px">Thank you.</h2>
+<p style="font-size: 20px; line-height: 1.55; color: #3E3A33">Our pastors will pray for you this week. If you asked us to, someone will be in touch.</p>
+<div style="display: flex; gap: 24px; align-items: center"><a class="tl" href="EnHome.dc.html">Back to home</a><button type="button" onClick="{{reset}}" style="min-height: 44px; border: 0; background: transparent; font: inherit; font-size: 17px; color: #5C564D; cursor: pointer; text-decoration: underline">Send another</button></div>
+</div>
+</sc-if>
+</div>
+</main>
+
+<footer style="flex-shrink: 0; background: #12110E; color: rgba(255,255,255,.75); padding: 40px 56px; display: flex; justify-content: space-between; font-size: 16px">
+<span>Monterey Park Chinese Baptist Church · [Street address], Monterey Park, CA</span>
+<a href="ZhHome.dc.html" lang="zh-Hant" style="color: rgba(255,255,255,.85)">中文</a>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"palette":{"editor":"enum","options":["Evergreen & Sun","Plum & Apricot"],"default":"Evergreen & Sun","section":"Colour"},"$preview":{"width":1440,"height":1400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var st = this.state || {};
+    var plum = (this.props.palette ?? 'Evergreen & Sun') === 'Plum & Apricot';
+    return {
+      accent: plum ? '#7A2E5E' : '#0E6B5C',
+      accentDeep: plum ? '#5E2248' : '#0A5247',
+      editing: !st.sent,
+      sent: !!st.sent,
+      send: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ sent: true }); },
+      reset: () => this.setState({ sent: false })
+    };
+  }
+}
+</script>
+</body>
+</html>

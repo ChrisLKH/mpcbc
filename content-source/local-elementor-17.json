@@ -1,0 +1,604 @@
+[
+    {
+        "id": "welcome_root",
+        "elType": "container",
+        "settings": {
+            "content_width": "full",
+            "min_height": {
+                "unit": "vh",
+                "size": 100
+            },
+            "background_background": "classic",
+            "background_color": "#12110E",
+            "background_overlay_background": "gradient",
+            "background_overlay_color": "rgba(18,17,14,0.72)",
+            "background_overlay_color_b": "rgba(18,17,14,0.25)",
+            "background_overlay_gradient_angle": {
+                "unit": "deg",
+                "size": 90
+            },
+            "padding": {
+                "unit": "px",
+                "top": "32",
+                "right": "56",
+                "bottom": "28",
+                "left": "56",
+                "isLinked": false
+            },
+            "padding_mobile": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20",
+                "isLinked": false
+            },
+            "flex_direction": "column",
+            "flex_justify_content": "space-between",
+            "__globals__": {
+                "background_color": "globals/colors?id=secondary"
+            }
+        },
+        "elements": [
+            {
+                "id": "welcome_top_bar",
+                "elType": "container",
+                "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center"
+                },
+                "elements": [
+                    {
+                        "id": "welcome_logo",
+                        "elType": "widget",
+                        "widgetType": "image",
+                        "settings": {
+                            "image": {
+                                "url": "http://mpcbc.local/wp-content/uploads/2026/10/church-logo.png",
+                                "id": 78
+                            },
+                            "width": {
+                                "unit": "px",
+                                "size": 140
+                            }
+                        },
+                        "isInner": false,
+                        "elements": []
+                    }
+                ],
+                "isInner": true
+            },
+            {
+                "id": "welcome_center_hero",
+                "elType": "container",
+                "settings": {
+                    "boxed_width": {
+                        "unit": "px",
+                        "size": 800
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                        "unit": "px",
+                        "size": 28
+                    },
+                    "margin": {
+                        "unit": "px",
+                        "top": "40",
+                        "right": "auto",
+                        "bottom": "40",
+                        "left": "0",
+                        "isLinked": false
+                    }
+                },
+                "elements": [
+                    {
+                        "id": "welcome_fancy_text",
+                        "elType": "widget",
+                        "settings": {
+                            "eael_fancy_text_strings": [
+                                {
+                                    "_id": "ft_1",
+                                    "eael_fancy_text_strings_text_field": "Welcome"
+                                },
+                                {
+                                    "_id": "ft_2",
+                                    "eael_fancy_text_strings_text_field": "歡迎你"
+                                },
+                                {
+                                    "_id": "ft_3",
+                                    "eael_fancy_text_strings_text_field": "欢迎你"
+                                }
+                            ],
+                            "eael_fancy_text_prefix": "",
+                            "eael_fancy_text_suffix": "",
+                            "eael_fancy_text_type": "typing",
+                            "eael_fancy_text_strings_color": "#ffffff",
+                            "eael_fancy_text_cursor_color": "#ffffff",
+                            "eael_fancy_text_strings_typography_typography": "custom",
+                            "eael_fancy_text_strings_typography_font_family": "Bricolage Grotesque",
+                            "eael_fancy_text_strings_typography_font_size": {
+                                "unit": "px",
+                                "size": 88
+                            },
+                            "eael_fancy_text_strings_typography_font_weight": "700",
+                            "eael_fancy_text_strings_typography_line_height": {
+                                "unit": "em",
+                                "size": 1
+                            },
+                            "eael_fancy_text_strings_typography_letter_spacing": {
+                                "unit": "em",
+                                "size": -0.035000000000000003
+                            },
+                            "eael_vto_writing_gradient_color_repeater": [],
+                            "_flex_align_self": "flex-start"
+                        },
+                        "elements": [],
+                        "widgetType": "eael-fancy-text"
+                    },
+                    {
+                        "id": "welcome_title",
+                        "elType": "widget",
+                        "settings": {
+                            "title": "MPCBC",
+                            "header_size": "h1",
+                            "title_color": "#ffffff",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Bricolage Grotesque",
+                            "typography_font_size": {
+                                "unit": "px",
+                                "size": 112
+                            },
+                            "typography_font_weight": "700",
+                            "typography_line_height": {
+                                "unit": "em",
+                                "size": 0.94999999999999996
+                            },
+                            "eael_vto_writing_gradient_color_repeater": []
+                        },
+                        "elements": [],
+                        "widgetType": "heading"
+                    },
+                    {
+                        "id": "welcome_sub_title",
+                        "elType": "widget",
+                        "settings": {
+                            "editor": "<p lang=\"zh-Hant\">蒙特利公園華人浸信會</p>",
+                            "text_color": "rgba(255,255,255,0.85)",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Noto Sans TC",
+                            "typography_font_size": {
+                                "unit": "px",
+                                "size": 44
+                            },
+                            "typography_line_height": {
+                                "unit": "em",
+                                "size": 1.3999999999999999
+                            }
+                        },
+                        "elements": [],
+                        "widgetType": "text-editor"
+                    },
+                    {
+                        "id": "welcome_lang_buttons",
+                        "elType": "container",
+                        "settings": {
+                            "content_width": "full",
+                            "flex_direction": "row",
+                            "flex_wrap": "wrap",
+                            "flex_gap": {
+                                "unit": "px",
+                                "size": 14
+                            },
+                            "margin": {
+                                "unit": "px",
+                                "top": "16",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": false
+                            }
+                        },
+                        "elements": [
+                            {
+                                "id": "btn_lang_en",
+                                "elType": "widget",
+                                "settings": {
+                                    "text": "English",
+                                    "link": {
+                                        "url": "/"
+                                    },
+                                    "button_text_color": "#ffffff",
+                                    "background_color": "rgba(255,255,255,0.14)",
+                                    "border_border": "solid",
+                                    "border_width": {
+                                        "unit": "px",
+                                        "top": 1,
+                                        "right": 1,
+                                        "bottom": 1,
+                                        "left": 1,
+                                        "isLinked": true
+                                    },
+                                    "border_color": "rgba(255,255,255,0.55)",
+                                    "border_radius": {
+                                        "unit": "px",
+                                        "top": 999,
+                                        "right": 999,
+                                        "bottom": 999,
+                                        "left": 999,
+                                        "isLinked": true
+                                    },
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 20
+                                    },
+                                    "padding": {
+                                        "unit": "px",
+                                        "top": "14",
+                                        "right": "28",
+                                        "bottom": "14",
+                                        "left": "24",
+                                        "isLinked": false
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "button"
+                            },
+                            {
+                                "id": "btn_lang_tc",
+                                "elType": "widget",
+                                "settings": {
+                                    "text": "繁體中文",
+                                    "link": {
+                                        "url": "/zh/"
+                                    },
+                                    "button_text_color": "#ffffff",
+                                    "background_color": "rgba(255,255,255,0.14)",
+                                    "border_border": "solid",
+                                    "border_width": {
+                                        "unit": "px",
+                                        "top": 1,
+                                        "right": 1,
+                                        "bottom": 1,
+                                        "left": 1,
+                                        "isLinked": true
+                                    },
+                                    "border_color": "rgba(255,255,255,0.55)",
+                                    "border_radius": {
+                                        "unit": "px",
+                                        "top": 999,
+                                        "right": 999,
+                                        "bottom": 999,
+                                        "left": 999,
+                                        "isLinked": true
+                                    },
+                                    "typography_typography": "custom",
+                                    "typography_font_family": "Noto Sans TC",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 20
+                                    },
+                                    "padding": {
+                                        "unit": "px",
+                                        "top": "14",
+                                        "right": "28",
+                                        "bottom": "14",
+                                        "left": "24",
+                                        "isLinked": false
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "button"
+                            },
+                            {
+                                "id": "btn_lang_sc",
+                                "elType": "widget",
+                                "settings": {
+                                    "text": "简体中文",
+                                    "link": {
+                                        "url": "/zh/"
+                                    },
+                                    "button_text_color": "#ffffff",
+                                    "background_color": "rgba(255,255,255,0.14)",
+                                    "border_border": "solid",
+                                    "border_width": {
+                                        "unit": "px",
+                                        "top": 1,
+                                        "right": 1,
+                                        "bottom": 1,
+                                        "left": 1,
+                                        "isLinked": true
+                                    },
+                                    "border_color": "rgba(255,255,255,0.55)",
+                                    "border_radius": {
+                                        "unit": "px",
+                                        "top": 999,
+                                        "right": 999,
+                                        "bottom": 999,
+                                        "left": 999,
+                                        "isLinked": true
+                                    },
+                                    "typography_typography": "custom",
+                                    "typography_font_family": "Noto Sans SC",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 20
+                                    },
+                                    "padding": {
+                                        "unit": "px",
+                                        "top": "14",
+                                        "right": "28",
+                                        "bottom": "14",
+                                        "left": "24",
+                                        "isLinked": false
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "button"
+                            }
+                        ],
+                        "isInner": true
+                    }
+                ],
+                "isInner": true
+            },
+            {
+                "id": "welcome_schedule_strip",
+                "elType": "container",
+                "settings": {
+                    "content_width": "full",
+                    "background_background": "classic",
+                    "background_color": "rgba(18,17,14,0.42)",
+                    "border_border": "solid",
+                    "border_width": {
+                        "unit": "px",
+                        "top": 1,
+                        "right": 1,
+                        "bottom": 1,
+                        "left": 1,
+                        "isLinked": true
+                    },
+                    "border_color": "rgba(255,255,255,0.2)",
+                    "border_radius": {
+                        "unit": "px",
+                        "top": 999,
+                        "right": 999,
+                        "bottom": 999,
+                        "left": 999,
+                        "isLinked": true
+                    },
+                    "padding": {
+                        "unit": "px",
+                        "top": "8",
+                        "right": "10",
+                        "bottom": "8",
+                        "left": "24",
+                        "isLinked": false
+                    },
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_align_items": "center",
+                    "flex_justify_content": "space-between",
+                    "flex_gap": {
+                        "unit": "px",
+                        "size": 16
+                    },
+                    "flex_direction_mobile": "column"
+                },
+                "elements": [
+                    {
+                        "id": "welcome_strip_times_row",
+                        "elType": "container",
+                        "settings": {
+                            "content_width": "full",
+                            "width": {
+                                "unit": "%",
+                                "size": 75
+                            },
+                            "width_tablet": {
+                                "unit": "%",
+                                "size": 100
+                            },
+                            "width_mobile": {
+                                "unit": "%",
+                                "size": 100
+                            },
+                            "flex_direction": "row",
+                            "flex_wrap": "wrap",
+                            "flex_align_items": "center",
+                            "flex_gap": {
+                                "unit": "px",
+                                "size": 14
+                            }
+                        },
+                        "elements": [
+                            {
+                                "id": "welcome_time_sundays",
+                                "elType": "widget",
+                                "widgetType": "text-editor",
+                                "settings": {
+                                    "editor": "<p><strong>Sundays</strong> <span lang=\"zh-Hant\">主日</span></p>",
+                                    "text_color": "#ffffff",
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 15
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            },
+                            {
+                                "id": "welcome_time_canto",
+                                "elType": "widget",
+                                "widgetType": "text-editor",
+                                "settings": {
+                                    "editor": "<p><span lang=\"zh-Hant\">粵語</span> <strong>9:30</strong></p>",
+                                    "text_color": "#ffffff",
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 15
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            },
+                            {
+                                "id": "welcome_time_live_pill",
+                                "elType": "widget",
+                                "widgetType": "button",
+                                "settings": {
+                                    "text": "Live",
+                                    "link": {
+                                        "url": "/watch/"
+                                    },
+                                    "button_text_color": "#ffffff",
+                                    "background_color": "#D92D27",
+                                    "__globals__": {
+                                        "background_color": "globals/colors?id=live"
+                                    },
+                                    "border_radius": {
+                                        "unit": "px",
+                                        "top": 999,
+                                        "right": 999,
+                                        "bottom": 999,
+                                        "left": 999,
+                                        "isLinked": true
+                                    },
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 11
+                                    },
+                                    "typography_font_weight": "700",
+                                    "padding": {
+                                        "unit": "px",
+                                        "top": 2,
+                                        "right": 8,
+                                        "bottom": 2,
+                                        "left": 8,
+                                        "isLinked": false
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            },
+                            {
+                                "id": "welcome_time_en",
+                                "elType": "widget",
+                                "widgetType": "text-editor",
+                                "settings": {
+                                    "editor": "<p>English <strong>11:00</strong></p>",
+                                    "text_color": "#ffffff",
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 15
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            },
+                            {
+                                "id": "welcome_time_mando",
+                                "elType": "widget",
+                                "widgetType": "text-editor",
+                                "settings": {
+                                    "editor": "<p><span lang=\"zh-Hant\">國語</span> <strong>11:30</strong></p>",
+                                    "text_color": "#ffffff",
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 15
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            },
+                            {
+                                "id": "welcome_time_kids",
+                                "elType": "widget",
+                                "widgetType": "text-editor",
+                                "settings": {
+                                    "editor": "<p>Kids <span lang=\"zh-Hant\">兒童</span> <strong>11:00</strong></p>",
+                                    "text_color": "#F4B942",
+                                    "__globals__": {
+                                        "text_color": "globals/colors?id=accent"
+                                    },
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 15
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            },
+                            {
+                                "id": "welcome_time_addr",
+                                "elType": "widget",
+                                "widgetType": "text-editor",
+                                "settings": {
+                                    "editor": "<p>[Street address]</p>",
+                                    "text_color": "rgba(255,255,255,0.7)",
+                                    "typography_typography": "custom",
+                                    "typography_font_size": {
+                                        "unit": "px",
+                                        "size": 13
+                                    }
+                                },
+                                "isInner": false,
+                                "elements": []
+                            }
+                        ],
+                        "isInner": false
+                    },
+                    {
+                        "id": "welcome_strip_btn",
+                        "elType": "widget",
+                        "settings": {
+                            "text": "Watch live 觀看直播 →",
+                            "link": {
+                                "url": "/watch/"
+                            },
+                            "button_text_color": "#16140F",
+                            "background_color": "#FAF7F2",
+                            "border_radius": {
+                                "unit": "px",
+                                "top": 999,
+                                "right": 999,
+                                "bottom": 999,
+                                "left": 999,
+                                "isLinked": true
+                            },
+                            "typography_typography": "custom",
+                            "typography_font_weight": "700",
+                            "typography_font_size": {
+                                "unit": "px",
+                                "size": 15
+                            },
+                            "padding": {
+                                "unit": "px",
+                                "top": "12",
+                                "right": "20",
+                                "bottom": "12",
+                                "left": "20",
+                                "isLinked": false
+                            },
+                            "__globals__": {
+                                "background_color": "globals/colors?id=paper"
+                            }
+                        },
+                        "elements": [],
+                        "widgetType": "button"
+                    }
+                ],
+                "isInner": true
+            }
+        ],
+        "isInner": false
+    }
+]

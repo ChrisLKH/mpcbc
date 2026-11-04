@@ -1,0 +1,764 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"be00111 6\"><e-flexbox configuration-id=\"be00110 5\"><e-flexbox configuration-id=\"Boxed inner 4\"><e-paragraph configuration-id=\"be0010d 1\"></e-paragraph><e-heading configuration-id=\"be0010e 2\"></e-heading><e-paragraph configuration-id=\"be0010f 3\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be00113 14\"><e-flexbox configuration-id=\"be00112 13\"><e-flexbox configuration-id=\"Boxed inner 12\"><e-flexbox configuration-id=\"be0010c 11\"><e-paragraph configuration-id=\"be00108 7\"></e-paragraph><e-paragraph configuration-id=\"be00109 8\"></e-paragraph><e-paragraph configuration-id=\"be0010a 9\"></e-paragraph><e-paragraph configuration-id=\"be0010b 10\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be00118 135\"><e-flexbox configuration-id=\"be00117 134\"><e-flexbox configuration-id=\"Boxed inner 133\"><e-flexbox configuration-id=\"be00116 17\"><e-paragraph configuration-id=\"be00114 15\"></e-paragraph><e-heading configuration-id=\"be00115 16\"></e-heading></e-flexbox><e-tabs configuration-id=\"be000ff 132\"><e-tabs-menu configuration-id=\"Tabs menu 34\"><e-tab configuration-id=\"Tab 1 19\"><e-paragraph configuration-id=\"Tab label 18\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 2 21\"><e-paragraph configuration-id=\"Tab label 20\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 3 23\"><e-paragraph configuration-id=\"Tab label 22\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 4 25\"><e-paragraph configuration-id=\"Tab label 24\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 5 27\"><e-paragraph configuration-id=\"Tab label 26\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 6 29\"><e-paragraph configuration-id=\"Tab label 28\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 7 31\"><e-paragraph configuration-id=\"Tab label 30\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 8 33\"><e-paragraph configuration-id=\"Tab label 32\"></e-paragraph></e-tab></e-tabs-menu><e-tabs-content-area configuration-id=\"Tabs panels 131\"><e-tab-content configuration-id=\"Tab panel 1 46\"><e-flexbox configuration-id=\"be000c6 45\"><e-paragraph configuration-id=\"be000c1 35\"></e-paragraph><e-heading configuration-id=\"be000c2 36\"></e-heading><e-flexbox configuration-id=\"be000c3 40\"><e-paragraph configuration-id=\"bc00039 37\"></e-paragraph><e-heading configuration-id=\"bc0003a 38\"></e-heading><e-paragraph configuration-id=\"bc0003b 39\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000c5 44\"><e-button configuration-id=\"be000bf 41\"></e-button><e-paragraph configuration-id=\"be000c4 42\"></e-paragraph><e-button configuration-id=\"be000c0 43\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 2 58\"><e-flexbox configuration-id=\"be000ce 57\"><e-paragraph configuration-id=\"be000c9 47\"></e-paragraph><e-heading configuration-id=\"be000ca 48\"></e-heading><e-flexbox configuration-id=\"be000cb 52\"><e-paragraph configuration-id=\"bc0003e 49\"></e-paragraph><e-heading configuration-id=\"bc0003f 50\"></e-heading><e-paragraph configuration-id=\"bc00040 51\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000cd 56\"><e-button configuration-id=\"be000c7 53\"></e-button><e-paragraph configuration-id=\"be000cc 54\"></e-paragraph><e-button configuration-id=\"be000c8 55\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 3 70\"><e-flexbox configuration-id=\"be000d6 69\"><e-paragraph configuration-id=\"be000d1 59\"></e-paragraph><e-heading configuration-id=\"be000d2 60\"></e-heading><e-flexbox configuration-id=\"be000d3 64\"><e-paragraph configuration-id=\"bc00043 61\"></e-paragraph><e-heading configuration-id=\"bc00044 62\"></e-heading><e-paragraph configuration-id=\"bc00045 63\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000d5 68\"><e-button configuration-id=\"be000cf 65\"></e-button><e-paragraph configuration-id=\"be000d4 66\"></e-paragraph><e-button configuration-id=\"be000d0 67\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 4 82\"><e-flexbox configuration-id=\"be000de 81\"><e-paragraph configuration-id=\"be000d9 71\"></e-paragraph><e-heading configuration-id=\"be000da 72\"></e-heading><e-flexbox configuration-id=\"be000db 76\"><e-paragraph configuration-id=\"bc00048 73\"></e-paragraph><e-heading configuration-id=\"bc00049 74\"></e-heading><e-paragraph configuration-id=\"bc0004a 75\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000dd 80\"><e-button configuration-id=\"be000d7 77\"></e-button><e-paragraph configuration-id=\"be000dc 78\"></e-paragraph><e-button configuration-id=\"be000d8 79\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 5 94\"><e-flexbox configuration-id=\"be000e6 93\"><e-paragraph configuration-id=\"be000e1 83\"></e-paragraph><e-heading configuration-id=\"be000e2 84\"></e-heading><e-flexbox configuration-id=\"be000e3 88\"><e-paragraph configuration-id=\"bc0004d 85\"></e-paragraph><e-heading configuration-id=\"bc0004e 86\"></e-heading><e-paragraph configuration-id=\"bc0004f 87\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000e5 92\"><e-button configuration-id=\"be000df 89\"></e-button><e-paragraph configuration-id=\"be000e4 90\"></e-paragraph><e-button configuration-id=\"be000e0 91\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 6 106\"><e-flexbox configuration-id=\"be000ee 105\"><e-paragraph configuration-id=\"be000e9 95\"></e-paragraph><e-heading configuration-id=\"be000ea 96\"></e-heading><e-flexbox configuration-id=\"be000eb 100\"><e-paragraph configuration-id=\"bc00052 97\"></e-paragraph><e-heading configuration-id=\"bc00053 98\"></e-heading><e-paragraph configuration-id=\"bc00054 99\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000ed 104\"><e-button configuration-id=\"be000e7 101\"></e-button><e-paragraph configuration-id=\"be000ec 102\"></e-paragraph><e-button configuration-id=\"be000e8 103\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 7 118\"><e-flexbox configuration-id=\"be000f6 117\"><e-paragraph configuration-id=\"be000f1 107\"></e-paragraph><e-heading configuration-id=\"be000f2 108\"></e-heading><e-flexbox configuration-id=\"be000f3 112\"><e-paragraph configuration-id=\"bc00057 109\"></e-paragraph><e-heading configuration-id=\"bc00058 110\"></e-heading><e-paragraph configuration-id=\"bc00059 111\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000f5 116\"><e-button configuration-id=\"be000ef 113\"></e-button><e-paragraph configuration-id=\"be000f4 114\"></e-paragraph><e-button configuration-id=\"be000f0 115\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 8 130\"><e-flexbox configuration-id=\"be000fe 129\"><e-paragraph configuration-id=\"be000f9 119\"></e-paragraph><e-heading configuration-id=\"be000fa 120\"></e-heading><e-flexbox configuration-id=\"be000fb 124\"><e-paragraph configuration-id=\"bc0005c 121\"></e-paragraph><e-heading configuration-id=\"bc0005d 122\"></e-heading><e-paragraph configuration-id=\"bc0005e 123\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be000fd 128\"><e-button configuration-id=\"be000f7 125\"></e-button><e-paragraph configuration-id=\"be000fc 126\"></e-paragraph><e-button configuration-id=\"be000f8 127\"></e-button></e-flexbox></e-flexbox></e-tab-content></e-tabs-content-area></e-tabs></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be0011d 141\"><e-flexbox configuration-id=\"be0011c 140\"><e-flexbox configuration-id=\"Boxed inner 139\"><e-paragraph configuration-id=\"be00119 136\"></e-paragraph><e-heading configuration-id=\"be0011a 137\"></e-heading><e-button configuration-id=\"be0011b 138\"></e-button></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "be0010d 1": {
+      "_cssid": "mpcbc-be0010d",
+      "paragraph": "认识教会 / 信仰告白",
+      "tag": "p"
+    },
+    "be0010e 2": {
+      "_cssid": "mpcbc-be0010e",
+      "title": "共同信仰，<br>连系彼此。",
+      "tag": "h1"
+    },
+    "be0010f 3": {
+      "_cssid": "mpcbc-be0010f",
+      "paragraph": "探索我们以圣经为根基、以耶稣为中心的信仰。",
+      "tag": "p"
+    },
+    "Boxed inner 4": {},
+    "be00110 5": {
+      "_cssid": "mpcbc-be00110"
+    },
+    "be00111 6": {
+      "_cssid": "mpcbc-be00111"
+    },
+    "be00108 7": {
+      "_cssid": "mpcbc-be00108",
+      "paragraph": "教会历史",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/about/#story",
+        "isTargetBlank": false
+      }
+    },
+    "be00109 8": {
+      "_cssid": "mpcbc-be00109",
+      "paragraph": "使命宣言",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/about/#mission",
+        "isTargetBlank": false
+      }
+    },
+    "be0010a 9": {
+      "_cssid": "mpcbc-be0010a",
+      "paragraph": "教牧团队",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/about/#pastors",
+        "isTargetBlank": false
+      }
+    },
+    "be0010b 10": {
+      "_cssid": "mpcbc-be0010b",
+      "paragraph": "信仰告白",
+      "tag": "p",
+      "link": {
+        "destination": "#beliefs",
+        "isTargetBlank": false
+      }
+    },
+    "be0010c 11": {
+      "_cssid": "mpcbc-be0010c"
+    },
+    "Boxed inner 12": {},
+    "be00112 13": {
+      "_cssid": "mpcbc-be00112"
+    },
+    "be00113 14": {
+      "_cssid": "mpcbc-be00113"
+    },
+    "be00114 15": {
+      "_cssid": "mpcbc-be00114",
+      "paragraph": "我们的信仰告白",
+      "tag": "p"
+    },
+    "be00115 16": {
+      "_cssid": "mpcbc-be00115",
+      "title": "八项信仰根基，<br>同一份信仰。",
+      "tag": "h2"
+    },
+    "be00116 17": {
+      "_cssid": "mpcbc-topic-index"
+    },
+    "Tab label 18": {
+      "paragraph": "01 · 神"
+    },
+    "Tab 1 19": {},
+    "Tab label 20": {
+      "paragraph": "02 · 耶稣基督"
+    },
+    "Tab 2 21": {},
+    "Tab label 22": {
+      "paragraph": "03 · 圣灵"
+    },
+    "Tab 3 23": {},
+    "Tab label 24": {
+      "paragraph": "04 · 圣经"
+    },
+    "Tab 4 25": {},
+    "Tab label 26": {
+      "paragraph": "05 · 人类"
+    },
+    "Tab 5 27": {},
+    "Tab label 28": {
+      "paragraph": "06 · 救恩"
+    },
+    "Tab 6 29": {},
+    "Tab label 30": {
+      "paragraph": "07 · 永远的保障"
+    },
+    "Tab 7 31": {},
+    "Tab label 32": {
+      "paragraph": "08 · 永恒"
+    },
+    "Tab 8 33": {},
+    "Tabs menu 34": {},
+    "be000c1 35": {
+      "_cssid": "mpcbc-be000c1",
+      "paragraph": "01",
+      "tag": "p"
+    },
+    "be000c2 36": {
+      "_cssid": "mpcbc-be000c2",
+      "title": "神",
+      "tag": "h2"
+    },
+    "bc00039 37": {
+      "_cssid": "mpcbc-bc00039",
+      "paragraph": "神是宇宙的创造者与主宰，祂以三位一体永远存在:圣父、圣子、圣灵。三位同等为一神。",
+      "tag": "p"
+    },
+    "bc0003a 38": {
+      "_cssid": "mpcbc-bc0003a",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc0003b 39": {
+      "_cssid": "mpcbc-bc0003b",
+      "paragraph": "创1:1,26,27, 3:22, 诗90:2; 太28:19; 彼前1:2; 林后13:14",
+      "tag": "p"
+    },
+    "be000c3 40": {
+      "_cssid": "mpcbc-be000c3"
+    },
+    "be000bf 41": {
+      "_cssid": "mpcbc-reader-unavailable-be000bf",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-0",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000c4 42": {
+      "_cssid": "mpcbc-be000c4",
+      "paragraph": "1 / 8",
+      "tag": "p"
+    },
+    "be000c0 43": {
+      "_cssid": "mpcbc-be000c0",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000c5 44": {
+      "_cssid": "mpcbc-be000c5"
+    },
+    "be000c6 45": {
+      "_cssid": "mpcbc-be000c6"
+    },
+    "Tab panel 1 46": {},
+    "be000c9 47": {
+      "_cssid": "mpcbc-be000c9",
+      "paragraph": "02",
+      "tag": "p"
+    },
+    "be000ca 48": {
+      "_cssid": "mpcbc-be000ca",
+      "title": "耶稣基督",
+      "tag": "h2"
+    },
+    "bc0003e 49": {
+      "_cssid": "mpcbc-bc0003e",
+      "paragraph": "耶稣基督是神的儿子，与父同等。耶稣曾在地上无罪活过人生，并将自己献上成为最完美的祭，为所有的人类死在十字架上。三天后从死里复活，彰显祂胜过罪与死的权能。祂升到天上的荣耀，有一天要回到地上来作万王之王、万主之主。",
+      "tag": "p"
+    },
+    "bc0003f 50": {
+      "_cssid": "mpcbc-bc0003f",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc00040 51": {
+      "_cssid": "mpcbc-bc00040",
+      "paragraph": "太1:22-23; 赛9:6; 约1:1-5, 14:10-30; 来4:14,15; 林前15:3-4; 罗1:3-4; 徒1:9-11; 提前6:14; 多2:13",
+      "tag": "p"
+    },
+    "be000cb 52": {
+      "_cssid": "mpcbc-be000cb"
+    },
+    "be000c7 53": {
+      "_cssid": "mpcbc-be000c7",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-1",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000cc 54": {
+      "_cssid": "mpcbc-be000cc",
+      "paragraph": "2 / 8",
+      "tag": "p"
+    },
+    "be000c8 55": {
+      "_cssid": "mpcbc-be000c8",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000cd 56": {
+      "_cssid": "mpcbc-be000cd"
+    },
+    "be000ce 57": {
+      "_cssid": "mpcbc-be000ce"
+    },
+    "Tab panel 2 58": {},
+    "be000d1 59": {
+      "_cssid": "mpcbc-be000d1",
+      "paragraph": "03",
+      "tag": "p"
+    },
+    "be000d2 60": {
+      "_cssid": "mpcbc-be000d2",
+      "title": "圣灵",
+      "tag": "h2"
+    },
+    "bc00043 61": {
+      "_cssid": "mpcbc-bc00043",
+      "paragraph": "圣灵与圣父圣子同等。祂临在世上为要帮助人认识基督。并且在人得救那一刻，祂便住在每一个基督徒里面。祂供应每个基督徒每天生活的能力，对于属灵真理的理解力，以及前行的引导。祂赏赐属灵恩赐给每个得救的信徒。作为基督徒，我们每天寻求过一个圣灵管理的生活。",
+      "tag": "p"
+    },
+    "bc00044 62": {
+      "_cssid": "mpcbc-bc00044",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc00045 63": {
+      "_cssid": "mpcbc-bc00045",
+      "paragraph": "林后3:17; 约16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25",
+      "tag": "p"
+    },
+    "be000d3 64": {
+      "_cssid": "mpcbc-be000d3"
+    },
+    "be000cf 65": {
+      "_cssid": "mpcbc-be000cf",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000d4 66": {
+      "_cssid": "mpcbc-be000d4",
+      "paragraph": "3 / 8",
+      "tag": "p"
+    },
+    "be000d0 67": {
+      "_cssid": "mpcbc-be000d0",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000d5 68": {
+      "_cssid": "mpcbc-be000d5"
+    },
+    "be000d6 69": {
+      "_cssid": "mpcbc-be000d6"
+    },
+    "Tab panel 3 70": {},
+    "be000d9 71": {
+      "_cssid": "mpcbc-be000d9",
+      "paragraph": "04",
+      "tag": "p"
+    },
+    "be000da 72": {
+      "_cssid": "mpcbc-be000da",
+      "title": "圣经",
+      "tag": "h2"
+    },
+    "bc00048 73": {
+      "_cssid": "mpcbc-bc00048",
+      "paragraph": "圣经是神给我们的话，是藉著圣灵超然的引导，由人写成。是基督徒信仰与生活的最高准则。",
+      "tag": "p"
+    },
+    "bc00049 74": {
+      "_cssid": "mpcbc-bc00049",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc0004a 75": {
+      "_cssid": "mpcbc-bc0004a",
+      "paragraph": "提后3:16,1:13; 彼后1:20-21; 诗119:105, 160, 12:6; 箴30:5",
+      "tag": "p"
+    },
+    "be000db 76": {
+      "_cssid": "mpcbc-be000db"
+    },
+    "be000d7 77": {
+      "_cssid": "mpcbc-be000d7",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000dc 78": {
+      "_cssid": "mpcbc-be000dc",
+      "paragraph": "4 / 8",
+      "tag": "p"
+    },
+    "be000d8 79": {
+      "_cssid": "mpcbc-be000d8",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000dd 80": {
+      "_cssid": "mpcbc-be000dd"
+    },
+    "be000de 81": {
+      "_cssid": "mpcbc-be000de"
+    },
+    "Tab panel 4 82": {},
+    "be000e1 83": {
+      "_cssid": "mpcbc-be000e1",
+      "paragraph": "05",
+      "tag": "p"
+    },
+    "be000e2 84": {
+      "_cssid": "mpcbc-be000e2",
+      "title": "人类",
+      "tag": "h2"
+    },
+    "bc0004d 85": {
+      "_cssid": "mpcbc-bc0004d",
+      "paragraph": "人类是照神属灵的形象所造，本有神的属性。人是神创造的极致。虽然人本有善的潜能，我们每个人却都因著罪的态度与神隔绝，而使得生命陷入种种问题。",
+      "tag": "p"
+    },
+    "bc0004e 86": {
+      "_cssid": "mpcbc-bc0004e",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc0004f 87": {
+      "_cssid": "mpcbc-bc0004f",
+      "paragraph": "创1:27; 诗8:3-6; 赛53:6a; 罗3:23; 赛59:1-2",
+      "tag": "p"
+    },
+    "be000e3 88": {
+      "_cssid": "mpcbc-be000e3"
+    },
+    "be000df 89": {
+      "_cssid": "mpcbc-be000df",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000e4 90": {
+      "_cssid": "mpcbc-be000e4",
+      "paragraph": "5 / 8",
+      "tag": "p"
+    },
+    "be000e0 91": {
+      "_cssid": "mpcbc-be000e0",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000e5 92": {
+      "_cssid": "mpcbc-be000e5"
+    },
+    "be000e6 93": {
+      "_cssid": "mpcbc-be000e6"
+    },
+    "Tab panel 5 94": {},
+    "be000e9 95": {
+      "_cssid": "mpcbc-be000e9",
+      "paragraph": "06",
+      "tag": "p"
+    },
+    "be000ea 96": {
+      "_cssid": "mpcbc-be000ea",
+      "title": "救恩",
+      "tag": "h2"
+    },
+    "bc00052 97": {
+      "_cssid": "mpcbc-bc00052",
+      "paragraph": "救恩是神给我们白白的礼物，但需要我们去接受。我们永远无法靠著善行与自我改善来赎我们的罪。惟有靠著耶稣基督，蒙神赦免，才能从罪的刑罚得赎。当我们从以自我为中心、靠自己的生命，凭信心转向耶稣时，我们便得救。永远的生命开始于我们凭信心接受耶稣基督的生命那一刻。",
+      "tag": "p"
+    },
+    "bc00053 98": {
+      "_cssid": "mpcbc-bc00053",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc00054 99": {
+      "_cssid": "mpcbc-bc00054",
+      "paragraph": "罗6:23,5:1; 弗2:8-9; 约14:6;1:12; 多3:5; 加3:26",
+      "tag": "p"
+    },
+    "be000eb 100": {
+      "_cssid": "mpcbc-be000eb"
+    },
+    "be000e7 101": {
+      "_cssid": "mpcbc-be000e7",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000ec 102": {
+      "_cssid": "mpcbc-be000ec",
+      "paragraph": "6 / 8",
+      "tag": "p"
+    },
+    "be000e8 103": {
+      "_cssid": "mpcbc-be000e8",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000ed 104": {
+      "_cssid": "mpcbc-be000ed"
+    },
+    "be000ee 105": {
+      "_cssid": "mpcbc-be000ee"
+    },
+    "Tab panel 6 106": {},
+    "be000f1 107": {
+      "_cssid": "mpcbc-be000f1",
+      "paragraph": "07",
+      "tag": "p"
+    },
+    "be000f2 108": {
+      "_cssid": "mpcbc-be000f2",
+      "title": "永远的保障",
+      "tag": "h2"
+    },
+    "bc00057 109": {
+      "_cssid": "mpcbc-bc00057",
+      "paragraph": "由于神通过耶稣基督赐给我们永远的生命，真信徒有永远的得救保障。救赎是藉著神的权能与恩典，不是凭基督徒自己的努力。神保守的权能与恩典使我们有这永远的保障。但信徒也有责任不断信靠神，活在神的保守之中。",
+      "tag": "p"
+    },
+    "bc00058 110": {
+      "_cssid": "mpcbc-bc00058",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc00059 111": {
+      "_cssid": "mpcbc-bc00059",
+      "paragraph": "约10:29; 提后1:12; 来7:25, 10:10,14; 彼前1:3-5; 来6:4-8; 来10:26-27; 约15:6",
+      "tag": "p"
+    },
+    "be000f3 112": {
+      "_cssid": "mpcbc-be000f3"
+    },
+    "be000ef 113": {
+      "_cssid": "mpcbc-be000ef",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000f4 114": {
+      "_cssid": "mpcbc-be000f4",
+      "paragraph": "7 / 8",
+      "tag": "p"
+    },
+    "be000f0 115": {
+      "_cssid": "mpcbc-be000f0",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-8",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000f5 116": {
+      "_cssid": "mpcbc-be000f5"
+    },
+    "be000f6 117": {
+      "_cssid": "mpcbc-be000f6"
+    },
+    "Tab panel 7 118": {},
+    "be000f9 119": {
+      "_cssid": "mpcbc-be000f9",
+      "paragraph": "08",
+      "tag": "p"
+    },
+    "be000fa 120": {
+      "_cssid": "mpcbc-be000fa",
+      "title": "永恒",
+      "tag": "h2"
+    },
+    "bc0005c 121": {
+      "_cssid": "mpcbc-bc0005c",
+      "paragraph": "人被创造要存到永远。我们或要因著罪与神永远隔离，或是因著赦免与救恩与神永远同在。与神永远隔离便是地狱，与神永远同在便是永远的生命。",
+      "tag": "p"
+    },
+    "bc0005d 122": {
+      "_cssid": "mpcbc-bc0005d",
+      "title": "经文",
+      "tag": "h3"
+    },
+    "bc0005e 123": {
+      "_cssid": "mpcbc-bc0005e",
+      "paragraph": "约3:16, 2:25, 5:11-13; 罗6:23; 启20:15; 太1:8; 太2:44,46",
+      "tag": "p"
+    },
+    "be000fb 124": {
+      "_cssid": "mpcbc-be000fb"
+    },
+    "be000f7 125": {
+      "_cssid": "mpcbc-be000f7",
+      "text": "← 上一项",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000fc 126": {
+      "_cssid": "mpcbc-be000fc",
+      "paragraph": "8 / 8",
+      "tag": "p"
+    },
+    "be000f8 127": {
+      "_cssid": "mpcbc-reader-unavailable-be000f8",
+      "text": "下一项 →",
+      "link": {
+        "destination": "#belief-topic-9",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be000fd 128": {
+      "_cssid": "mpcbc-be000fd"
+    },
+    "be000fe 129": {
+      "_cssid": "mpcbc-be000fe"
+    },
+    "Tab panel 8 130": {},
+    "Tabs panels 131": {},
+    "be000ff 132": {
+      "_cssid": "mpcbc-topic-reader",
+      "default-active-tab": 0
+    },
+    "Boxed inner 133": {},
+    "be00117 134": {
+      "_cssid": "mpcbc-be00117"
+    },
+    "be00118 135": {
+      "_cssid": "beliefs"
+    },
+    "be00119 136": {
+      "_cssid": "mpcbc-be00119",
+      "paragraph": "进一步认识教会",
+      "tag": "p"
+    },
+    "be0011a 137": {
+      "_cssid": "mpcbc-be0011a",
+      "title": "认识共同信仰背后的<br>教会与弟兄姊妹。",
+      "tag": "h2"
+    },
+    "be0011b 138": {
+      "_cssid": "mpcbc-be0011b",
+      "text": "教会历史与教牧团队 ↗",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/about/#story",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "Boxed inner 139": {},
+    "be0011c 140": {
+      "_cssid": "mpcbc-be0011c"
+    },
+    "be0011d 141": {
+      "_cssid": "mpcbc-be0011d"
+    }
+  },
+  "style": {
+    "be0010d 1": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0010e 2": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:64px;font-weight:700;line-height:1.12em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:52px;}@media (--mobile){font-size:40px;}",
+    "be0010f 3": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:21px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:20px;}@media (--mobile){font-size:19px;}",
+    "Boxed inner 4": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00110 5": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be00111 6": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:64px 56px 48px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:36px 20px 36px 20px;}",
+    "be00108 7": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00109 8": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0010a 9": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0010b 10": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0010c 11": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:32px;flex-wrap:wrap;@media (--mobile){gap:20px;}",
+    "Boxed inner 12": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00112 13": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be00113 14": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:20px 56px 20px 56px;gap:20px;background-color:var(--mpcbc-color-262da8014);@media (--tablet){padding:20px 32px 20px 32px;}@media (--mobile){padding:18px 20px 18px 20px;}",
+    "be00114 15": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00115 16": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:26px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:24px;}@media (--mobile){font-size:22px;}",
+    "be00116 17": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab label 18": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 1 19": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 20": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 2 21": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 22": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 3 23": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 24": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 4 25": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 26": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 5 27": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 28": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 6 29": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 30": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 7 31": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 32": "font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 8 33": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tabs menu 34": "display:flex;flex-direction:column;flex-wrap:nowrap;width:248px;flex-shrink:0;gap:4px;padding:0;@media (--mobile){width:100%;flex-direction:row;flex-wrap:wrap;}",
+    "be000c1 35": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000c2 36": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00039 37": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003a 38": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0003b 39": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000c3 40": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000bf 41": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000c4 42": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000c0 43": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000c5 44": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000c6 45": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 1 46": "width:100%;padding:0;",
+    "be000c9 47": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000ca 48": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0003e 49": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003f 50": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00040 51": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000cb 52": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000c7 53": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000cc 54": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000c8 55": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000cd 56": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000ce 57": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 2 58": "width:100%;padding:0;",
+    "be000d1 59": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000d2 60": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00043 61": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00044 62": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00045 63": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000d3 64": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000cf 65": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000d4 66": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000d0 67": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000d5 68": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000d6 69": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 3 70": "width:100%;padding:0;",
+    "be000d9 71": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000da 72": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00048 73": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00049 74": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004a 75": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000db 76": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000d7 77": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000dc 78": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000d8 79": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000dd 80": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000de 81": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 4 82": "width:100%;padding:0;",
+    "be000e1 83": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000e2 84": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0004d 85": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0004e 86": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004f 87": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000e3 88": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000df 89": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000e4 90": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000e0 91": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000e5 92": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000e6 93": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 5 94": "width:100%;padding:0;",
+    "be000e9 95": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000ea 96": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00052 97": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00053 98": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00054 99": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000eb 100": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000e7 101": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000ec 102": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000e8 103": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000ed 104": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000ee 105": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 6 106": "width:100%;padding:0;",
+    "be000f1 107": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000f2 108": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00057 109": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00058 110": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00059 111": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000f3 112": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000ef 113": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000f4 114": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000f0 115": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000f5 116": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000f6 117": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 7 118": "width:100%;padding:0;",
+    "be000f9 119": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000fa 120": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0005c 121": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0005d 122": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0005e 123": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be000fb 124": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000f7 125": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000fc 126": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be000f8 127": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be000fd 128": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be000fe 129": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 8 130": "width:100%;padding:0;",
+    "Tabs panels 131": "min-width:0;width:100%;padding:0;flex-grow:1;",
+    "be000ff 132": "display:flex;align-items:stretch;flex-direction:row;width:100%;gap:64px;padding:0;@media (--tablet){gap:32px;}@media (--mobile){flex-direction:column;gap:24px;}",
+    "Boxed inner 133": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00117 134": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be00118 135": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 72px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:40px 20px 40px 20px;}",
+    "be00119 136": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0011a 137": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-c48f08c2b);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "be0011b 138": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-c48f08c2b);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "Boxed inner 139": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be0011c 140": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be0011d 141": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 72px 56px;gap:20px;background-color:var(--mpcbc-color-8ab1c66cf);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:40px 20px 40px 20px;}"
+  }
+}

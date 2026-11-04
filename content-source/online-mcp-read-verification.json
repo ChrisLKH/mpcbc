@@ -1,0 +1,109 @@
+{
+  "review_date": "2026-10-21",
+  "target": "https://qmj.hxy.temporary.site/website_3849f7d0/wp-json/elementor/mcp/",
+  "method": "Authenticated remote MCP tools/call",
+  "authentication_verified": true,
+  "site_content_changed": false,
+  "documents": [
+    {
+      "document": "Home",
+      "post_id": 21,
+      "read_success": true,
+      "total_elements": 402,
+      "widget_types": [
+        {
+          "type": "e-button",
+          "count": 18
+        },
+        {
+          "type": "e-heading",
+          "count": 29
+        },
+        {
+          "type": "e-image",
+          "count": 14
+        },
+        {
+          "type": "e-paragraph",
+          "count": 176
+        },
+        {
+          "type": "shortcode",
+          "count": 3
+        },
+        {
+          "type": "",
+          "count": 162
+        }
+      ],
+      "sample": [
+        {
+          "keys": [
+            "id",
+            "elType",
+            "title",
+            "elements"
+          ],
+          "id": "79886c5f",
+          "elType": "e-background-video",
+          "widgetType": null
+        },
+        {
+          "keys": [
+            "id",
+            "elType",
+            "title",
+            "elements"
+          ],
+          "id": "477016a1",
+          "elType": "e-background-video-content",
+          "widgetType": null
+        }
+      ]
+    },
+    {
+      "document": "Shared footer",
+      "post_id": 16,
+      "read_success": true,
+      "total_elements": 51,
+      "widget_types": [
+        {
+          "type": "e-heading",
+          "count": 4
+        },
+        {
+          "type": "e-paragraph",
+          "count": 33
+        },
+        {
+          "type": "",
+          "count": 14
+        }
+      ],
+      "sample": [
+        {
+          "keys": [
+            "id",
+            "elType",
+            "title",
+            "elements"
+          ],
+          "id": "29c6e4c9",
+          "elType": "e-flexbox",
+          "widgetType": null
+        },
+        {
+          "keys": [
+            "id",
+            "elType",
+            "title",
+            "elements"
+          ],
+          "id": "758b8744",
+          "elType": "e-flexbox",
+          "widgetType": null
+        }
+      ]
+    }
+  ]
+}

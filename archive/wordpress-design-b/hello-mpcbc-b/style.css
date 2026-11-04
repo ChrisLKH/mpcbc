@@ -1,0 +1,755 @@
+/*
+Theme Name: Hello MPCBC B
+Theme URI: https://mpcbc.net
+Description: Child theme for MPCBC Design B using Hello Elementor and Elementor Free.
+Author: MPCBC
+Author URI: https://mpcbc.net
+Template: hello-elementor
+Version: 1.0.0
+Text Domain: hello-mpcbc-b
+*/
+
+/* -------------------------------------------------------------
+ * 1. CSS Variables & Global Colors
+ * ------------------------------------------------------------- */
+:root {
+  --mpcbc-primary: var(--e-global-color-primary, #943759);
+  --mpcbc-primary-hover: #6F2841;
+  --mpcbc-secondary: var(--e-global-color-secondary, #1B1014);
+  --mpcbc-text: var(--e-global-color-text, #221419);
+  --mpcbc-accent: var(--e-global-color-accent, #C2410C);
+  --mpcbc-live-sub: #E8836B;
+  --mpcbc-card: #F8F3F4;
+  --mpcbc-border: #E3D3D8;
+  --mpcbc-muted: #6B5560;
+  --mpcbc-white: #FFFFFF;
+
+  --font-body: 'Geist', 'Noto Sans TC', system-ui, sans-serif;
+  --font-heading: 'Geist', system-ui, sans-serif;
+  --font-serif-zh: 'Noto Serif TC', serif;
+  --font-sans-zh: 'Noto Sans TC', sans-serif;
+  --font-meta: 'Inter', sans-serif;
+  --font-script: 'Nanum Pen Script', cursive;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--mpcbc-text);
+  background-color: var(--mpcbc-white);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--mpcbc-primary-hover);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--mpcbc-text);
+}
+
+:lang(zh-Hant) {
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--mpcbc-primary);
+  outline-offset: 3px;
+}
+
+/* -------------------------------------------------------------
+ * 2. Header: Sticky Fading Nav
+ * ------------------------------------------------------------- */
+header.site-header,
+.site-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  width: 100% !important;
+  height: 65px !important;
+  min-height: 65px !important;
+  max-height: 65px !important;
+  padding-block: 0 !important;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, backdrop-filter 0.25s ease !important;
+  box-sizing: border-box !important;
+}
+
+body.home .site-header {
+  position: fixed !important;
+  top: var(--wp-admin--admin-bar--height, 0px) !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.site-header .header-inner {
+  max-width: 1080px !important;
+  width: min(1080px, 100% - 2.5rem) !important;
+  margin-inline: auto !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+  padding-block: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem 1.5rem !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 1024px) {
+  .site-header .header-inner {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.site-header .site-branding img,
+.site-header .site-logo img,
+.site-header .custom-logo {
+  height: 38px !important;
+  width: auto !important;
+  display: block !important;
+  border-radius: 4px !important;
+}
+
+/* Default state on Homepage (at top, scrollY < 40) */
+body.home:not(.is-scrolled) .site-header {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #FFFFFF !important;
+}
+
+body.home:not(.is-scrolled) .site-header a,
+body.home:not(.is-scrolled) .site-header .site-navigation > ul > li > a,
+body.home:not(.is-scrolled) .site-header .site-navigation > div > ul > li > a {
+  color: #FFFFFF !important;
+}
+
+body.home:not(.is-scrolled) .site-header .menu-item-description {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Hamburger toggle button */
+.site-navigation-toggle-holder {
+  padding-block: 0 !important;
+}
+
+.site-navigation-toggle-holder .site-navigation-toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+body.home:not(.is-scrolled) .site-header .site-navigation-toggle,
+body.home:not(.is-scrolled) .site-header .site-navigation-toggle-icon {
+  color: #FFFFFF !important;
+}
+
+/* Scrolled state or on inner pages */
+body.is-scrolled .site-header,
+body:not(.home) .site-header {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid var(--mpcbc-border, #E3D3D8) !important;
+  color: var(--mpcbc-text, #221419) !important;
+}
+
+body.is-scrolled .site-header a,
+body:not(.home) .site-header a,
+body.is-scrolled .site-header .site-navigation > ul > li > a,
+body:not(.home) .site-header .site-navigation > ul > li > a,
+body.is-scrolled .site-header .site-navigation > div > ul > li > a,
+body:not(.home) .site-header .site-navigation > div > ul > li > a {
+  color: var(--mpcbc-text, #221419) !important;
+}
+
+body.is-scrolled .site-header .site-navigation-toggle,
+body:not(.home) .site-header .site-navigation-toggle,
+body.is-scrolled .site-header .site-navigation-toggle-icon,
+body:not(.home) .site-header .site-navigation-toggle-icon {
+  color: var(--mpcbc-text, #221419) !important;
+}
+
+body.is-scrolled .site-header a:hover,
+body:not(.home) .site-header a:hover,
+body.is-scrolled .site-header .site-navigation > ul > li > a:hover,
+body:not(.home) .site-header .site-navigation > ul > li > a:hover {
+  color: var(--mpcbc-primary, #943759) !important;
+}
+
+body.is-scrolled .site-header .menu-item-description,
+body:not(.home) .site-header .menu-item-description {
+  color: var(--mpcbc-muted, #6B5560) !important;
+}
+
+/* Full bleed hero overlap on home */
+body.home #top.hero-section,
+body.home .hero-section {
+  margin-top: 0 !important;
+  padding-top: 65px !important;
+  min-height: 100vh !important;
+}
+
+@media (max-width: 767px) {
+  body.home #top.hero-section,
+  body.home .hero-section {
+    min-height: 100svh !important;
+  }
+}
+
+/* Smooth anchor jump offset */
+[id] {
+  scroll-margin-top: 72px;
+}
+
+/* -------------------------------------------------------------
+ * 3. Menu Items & Two-line Description
+ * ------------------------------------------------------------- */
+.site-header .site-navigation > ul,
+.site-header .site-navigation > ul.menu,
+.site-header .site-navigation div > ul.menu,
+.site-header .site-navigation div > ul {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 0.6rem 1.15rem !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.site-header .site-navigation > ul > li > a,
+.site-header .site-navigation div > ul > li > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  min-height: 40px !important;
+}
+
+.site-header .site-navigation li.menu-item-has-children {
+  position: relative !important;
+}
+
+/* Sub-menus (Dropdowns) */
+.site-header .site-navigation ul.sub-menu {
+  display: none !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: -0.75rem !important;
+  margin-top: 0.4rem !important;
+  width: 17rem !important;
+  background: #FFFFFF !important;
+  border: 1px solid #E3D3D8 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 18px 40px rgba(34, 20, 25, 0.12) !important;
+  padding: 0.5rem !important;
+  flex-direction: column !important;
+  z-index: 9999 !important;
+  list-style: none !important;
+}
+
+.site-header .site-navigation li.menu-item-has-children:hover > ul.sub-menu,
+.site-header .site-navigation li.menu-item-has-children:focus-within > ul.sub-menu {
+  display: flex !important;
+}
+
+.site-header .site-navigation ul.sub-menu li {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  list-style: none !important;
+}
+
+.site-header .site-navigation ul.sub-menu li a {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+  padding: 0.6rem 0.75rem !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  color: #221419 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  min-height: auto !important;
+  transition: background 0.15s ease !important;
+}
+
+.site-header .site-navigation ul.sub-menu li a:hover {
+  background: #F8F3F4 !important;
+  color: var(--mpcbc-primary, #943759) !important;
+}
+
+.site-header .site-navigation ul.sub-menu li a .menu-item-description {
+  font-family: var(--font-meta) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #6B5560 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+
+.site-header .site-navigation > ul > li > a .menu-item-description,
+.site-header .site-navigation div > ul > li > a .menu-item-description {
+  font-family: var(--font-sans-zh);
+  font-size: 13px;
+  opacity: 0.75;
+  margin-left: 0.25rem;
+}
+
+/* Give CTA Button in Menu */
+body .site-header .site-navigation ul > li.button > a,
+body .site-header .site-navigation ul > li.menu-item-give > a,
+body .site-header .site-navigation ul > li > a[href*="#give"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4em !important;
+  height: 40px !important;
+  padding: 0 1.25em !important;
+  border-radius: 999px !important;
+  background: var(--mpcbc-primary, #943759) !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: background 0.2s ease !important;
+}
+
+body .site-header .site-navigation ul > li.button > a:hover,
+body .site-header .site-navigation ul > li.menu-item-give > a:hover,
+body .site-header .site-navigation ul > li > a[href*="#give"]:hover {
+  background: var(--mpcbc-primary-hover, #6F2841) !important;
+  color: #FFFFFF !important;
+}
+
+body .site-header .site-navigation ul > li.button > a .menu-item-description,
+body .site-header .site-navigation ul > li.menu-item-give > a .menu-item-description,
+body .site-header .site-navigation ul > li > a[href*="#give"] .menu-item-description {
+  color: #FFFFFF !important;
+  opacity: 0.9 !important;
+}
+
+/* -------------------------------------------------------------
+ * 4. Pulsing Live Badge
+ * ------------------------------------------------------------- */
+@keyframes mpPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.mp-pulse,
+.live-badge-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background-color: var(--mpcbc-accent, #C2410C);
+  animation: mpPulse 1.8s ease-in-out infinite;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* -------------------------------------------------------------
+ * 5. Announcement Slider (.mp-slider)
+ * ------------------------------------------------------------- */
+.mp-slider {
+  position: relative;
+  width: 100%;
+}
+
+.mp-slider .mp-slide {
+  display: none;
+}
+
+.mp-slider .mp-slide.is-active {
+  display: block;
+}
+
+.mp-slider-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mp-slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mp-slider-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  background: var(--mpcbc-border, #E3D3D8);
+  transition: background 0.2s ease;
+}
+
+.mp-slider-dot.is-active {
+  background: var(--mpcbc-primary, #943759);
+}
+
+.mp-slider-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--mpcbc-border, #E3D3D8);
+  background: #FFFFFF;
+  color: var(--mpcbc-text, #221419);
+  font-family: var(--font-meta);
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.mp-slider-btn:hover {
+  background: var(--mpcbc-card, #F8F3F4);
+}
+
+/* Inside Elementor Editor: show all slides stacked */
+body.elementor-editor-active .mp-slider .mp-slide {
+  display: block !important;
+  margin-bottom: 2rem;
+  border: 2px dashed #943759;
+  border-radius: 16px;
+}
+
+body.elementor-editor-active .mp-slider-nav {
+  display: none !important;
+}
+
+/* -------------------------------------------------------------
+ * 6. Elementor Tabs Widget Styling (Connect & Prayer card)
+ * ------------------------------------------------------------- */
+.connect-tabs .elementor-tabs-wrapper {
+  display: flex !important;
+  gap: 0.4rem !important;
+  padding: 0.3rem !important;
+  background: var(--mpcbc-card, #F8F3F4) !important;
+  border: 1px solid var(--mpcbc-border, #E3D3D8) !important;
+  border-radius: 999px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.connect-tabs .elementor-tab-title {
+  flex: 1 !important;
+  height: 40px !important;
+  padding: 0 1em !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--mpcbc-muted, #6B5560) !important;
+  background: transparent !important;
+  transition: background 0.2s ease, color 0.2s ease !important;
+}
+
+.connect-tabs .elementor-tab-title.elementor-active {
+  background: var(--mpcbc-primary, #943759) !important;
+  color: #FFFFFF !important;
+}
+
+.connect-tabs .elementor-tab-content {
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Fluent Form clean styling inside card */
+.fluentform .ff-el-form-control {
+  border-radius: 10px !important;
+  border: 1px solid var(--mpcbc-border, #E3D3D8) !important;
+  height: 46px !important;
+  font-family: inherit !important;
+  font-size: 15px !important;
+}
+
+.fluentform textarea.ff-el-form-control {
+  height: auto !important;
+}
+
+.fluentform .ff-btn-submit {
+  border-radius: 999px !important;
+  height: 48px !important;
+  padding: 0 1.6em !important;
+  background: var(--mpcbc-primary, #943759) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  border: none !important;
+}
+
+.fluentform .ff-btn-submit:hover {
+  background: var(--mpcbc-primary-hover, #6F2841) !important;
+}
+
+/* -------------------------------------------------------------
+ * 7. Typography helpers
+ * ------------------------------------------------------------- */
+.nanum-script {
+  font-family: var(--font-script) !important;
+  font-size: 24px !important;
+  line-height: 1.3 !important;
+  color: var(--mpcbc-primary, #943759) !important;
+}
+
+.zh-serif {
+  font-family: var(--font-serif-zh) !important;
+}
+
+/* -------------------------------------------------------------
+ * 8. Responsive Adjustments
+ * ------------------------------------------------------------- */
+
+/* Pause/Play button on background videos (video-toggle.js) */
+body button.mpcbc-video-toggle {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(27, 16, 20, 0.35);
+  color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
+}
+body button.mpcbc-video-toggle:hover,
+body button.mpcbc-video-toggle:focus-visible {
+  background: rgba(27, 16, 20, 0.55);
+  color: #fff;
+  opacity: 1;
+}
+body button.mpcbc-video-toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+/* Pause icon: two bars */
+body button.mpcbc-video-toggle::before {
+  content: "";
+  box-sizing: border-box;
+  width: 10px;
+  height: 12px;
+  border-left: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+}
+/* Play icon: triangle */
+body button.mpcbc-video-toggle.is-paused::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent currentColor;
+}
+@media (max-width: 767px) {
+  body button.mpcbc-video-toggle { right: 16px; bottom: 16px; }
+}
+
+/* -------------------------------------------------------------
+ * Fix 3: Footer contrast & logo
+ * ------------------------------------------------------------- */
+.elementor-element-45972a45 a,
+.elementor-21 a[href^="tel:"],
+.elementor-21 a[href^="mailto:"],
+.elementor-element-eb2faec4 a[href^="tel:"],
+.elementor-element-eb2faec4 a[href^="mailto:"],
+footer a[href^="tel:"],
+footer a[href^="mailto:"] {
+  color: var(--e-global-color-custom_5, #FFFFFF) !important;
+  text-decoration: none;
+}
+.elementor-element-45972a45 a:hover,
+.elementor-21 a[href^="tel:"]:hover,
+.elementor-21 a[href^="mailto:"]:hover,
+.elementor-element-eb2faec4 a[href^="tel:"]:hover,
+.elementor-element-eb2faec4 a[href^="mailto:"]:hover,
+footer a[href^="tel:"]:hover,
+footer a[href^="mailto:"]:hover {
+  text-decoration: underline !important;
+}
+
+.elementor-21 .ff-el-input-title,
+.elementor-element-eb2faec4 .ff-el-input-title,
+footer .ff-el-input-title,
+footer .fluentform .ff-el-input-title {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.elementor-element-a0b24ddf,
+.elementor-21 .elementor-widget-image,
+.elementor-element-eb2faec4 .elementor-widget-image,
+footer .elementor-widget-image,
+footer .elementor-widget-image .elementor-image {
+  text-align: left !important;
+}
+
+/* -------------------------------------------------------------
+ * Fix 5: Event rows column alignment (Desktop & Tablet >= 768px)
+ * ------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .elementor-element-e0514744,
+  .elementor-element-37c4677b,
+  .elementor-element-3aa92e48,
+  .elementor-element-dd935d02,
+  .elementor-element-e747a3d5 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: baseline !important;
+    gap: 24px !important;
+  }
+  .elementor-element-e0514744 > :nth-child(1),
+  .elementor-element-37c4677b > :nth-child(1),
+  .elementor-element-3aa92e48 > :nth-child(1),
+  .elementor-element-dd935d02 > :nth-child(1),
+  .elementor-element-e747a3d5 > :nth-child(1) {
+    flex: 0 0 140px !important;
+    width: 140px !important;
+    max-width: 140px !important;
+  }
+  .elementor-element-e0514744 > :nth-child(2),
+  .elementor-element-37c4677b > :nth-child(2),
+  .elementor-element-3aa92e48 > :nth-child(2),
+  .elementor-element-dd935d02 > :nth-child(2),
+  .elementor-element-e747a3d5 > :nth-child(2) {
+    flex: 1 1 auto !important;
+  }
+  .elementor-element-e0514744 > :nth-child(3),
+  .elementor-element-37c4677b > :nth-child(3),
+  .elementor-element-3aa92e48 > :nth-child(3),
+  .elementor-element-dd935d02 > :nth-child(3),
+  .elementor-element-e747a3d5 > :nth-child(3) {
+    flex: 0 0 auto !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+  .elementor-element-e0514744 > :nth-child(3) p,
+  .elementor-element-37c4677b > :nth-child(3) p,
+  .elementor-element-3aa92e48 > :nth-child(3) p,
+  .elementor-element-dd935d02 > :nth-child(3) p,
+  .elementor-element-e747a3d5 > :nth-child(3) p {
+    text-align: right !important;
+  }
+}
+
+/* -------------------------------------------------------------
+ * Fix 6: Announcement slider header (Desktop & Tablet >= 768px)
+ * ------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .elementor-element-b52e3e4d,
+  .elementor-element-b52e3e4d p {
+    white-space: nowrap !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+  .elementor-element-aa8b6384,
+  .mp-slider-nav-mount {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+}
+
+/* -------------------------------------------------------------
+ * Fix 8: Shorter mobile layout (<= 767px)
+ * ------------------------------------------------------------- */
+@media (max-width: 767px) {
+  /* Pastors: row layout with 112px photo on left */
+  .elementor-element-7f6d37ba,
+  .elementor-element-4d947b24,
+  .elementor-element-c6ec7e7f {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+  .elementor-element-213f4e26,
+  .elementor-element-8f452a35,
+  .elementor-element-70a07c7a {
+    flex: 0 0 112px !important;
+    width: 112px !important;
+    max-width: 112px !important;
+  }
+  .elementor-element-213f4e26 img,
+  .elementor-element-8f452a35 img,
+  .elementor-element-70a07c7a img {
+    width: 112px !important;
+    height: 140px !important;
+    aspect-ratio: 4 / 5 !important;
+    object-fit: cover !important;
+    border-radius: 14px !important;
+  }
+  /* Pastor text info container beside photo */
+  .elementor-element-7f6d37ba > :nth-child(2),
+  .elementor-element-4d947b24 > :nth-child(2),
+  .elementor-element-c6ec7e7f > :nth-child(2) {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  /* Children: craft and nursery photos side by side */
+  .elementor-element-9dc65104 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .elementor-element-725d348e,
+  .elementor-element-dd886840 {
+    width: calc(50% - 6px) !important;
+    flex: 0 0 calc(50% - 6px) !important;
+    max-width: calc(50% - 6px) !important;
+  }
+  .elementor-element-725d348e img,
+  .elementor-element-dd886840 img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* This Sunday: hide Cantonese and Mandarin video thumbnails */
+  .elementor-element-db82c894,
+  .elementor-element-612a6f7c {
+    display: none !important;
+  }
+}
+
+/* -------------------------------------------------------------
+ * Fix 9: Elementor footer is full-bleed; Hello caps .site-footer at 1140px
+ * ------------------------------------------------------------- */
+body #colophon.site-footer {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+

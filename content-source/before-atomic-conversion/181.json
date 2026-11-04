@@ -1,0 +1,2465 @@
+{
+    "id": 181,
+    "title": "Beliefs",
+    "data": [
+        {
+            "id": "be00053",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "56",
+                    "bottom": "48",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "32",
+                    "bottom": "56",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "36",
+                    "right": "20",
+                    "bottom": "36",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "be00052",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be0004f",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "OUR CHURCH / What we believe",
+                                "header_size": "div",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=primary",
+                                    "typography_typography": "globals/typography?id=about_en_label"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be00050",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "The faith behind<br>our life together.",
+                                "header_size": "h1",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=about_en_hero"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be00051",
+                            "elType": "widget",
+                            "settings": {
+                                "editor": "<p>Explore what we believe, grounded in Scripture and centred on Jesus.</p>",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=ink_soft",
+                                    "typography_typography": "globals/typography?id=about_en_intro"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "be00055",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "56",
+                    "bottom": "20",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=white"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "32",
+                    "bottom": "20",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "18",
+                    "right": "20",
+                    "bottom": "18",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "be00054",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be0004e",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "flex_wrap": "wrap",
+                                "flex_gap_mobile": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "be0004a",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Our story",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                        },
+                                        "link": {
+                                            "url": "http://mpcbc.local/about/#story"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be0004b",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Our mission",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                        },
+                                        "link": {
+                                            "url": "http://mpcbc.local/about/#mission"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be0004c",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Our pastoral team",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                        },
+                                        "link": {
+                                            "url": "http://mpcbc.local/about/#pastors"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be0004d",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "What we believe",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=text",
+                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                        },
+                                        "link": {
+                                            "url": "#beliefs"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "be0005a",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "72",
+                    "right": "56",
+                    "bottom": "72",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "32",
+                    "bottom": "56",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "40",
+                    "right": "20",
+                    "bottom": "40",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "_element_id": "beliefs"
+            },
+            "elements": [
+                {
+                    "id": "be00059",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be00058",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 12
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "css_classes": "mpcbc-topic-index",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 100
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "be00056",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "OUR STATEMENT OF FAITH",
+                                        "header_size": "div",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=primary",
+                                            "typography_typography": "globals/typography?id=about_en_label"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "be00057",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Eight foundations.<br>One shared faith.",
+                                        "header_size": "h2",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=text",
+                                            "typography_typography": "globals/typography?id=about_en_card"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "be00041",
+                            "elType": "widget",
+                            "widgetType": "nested-tabs",
+                            "settings": {
+                                "_css_classes": "mpcbc-topic-reader",
+                                "tabs": [
+                                    {
+                                        "_id": "be00042",
+                                        "tab_title": "01 · God"
+                                    },
+                                    {
+                                        "_id": "be00043",
+                                        "tab_title": "02 · Jesus Christ"
+                                    },
+                                    {
+                                        "_id": "be00044",
+                                        "tab_title": "03 · The Holy Spirit"
+                                    },
+                                    {
+                                        "_id": "be00045",
+                                        "tab_title": "04 · The Bible"
+                                    },
+                                    {
+                                        "_id": "be00046",
+                                        "tab_title": "05 · Humanity"
+                                    },
+                                    {
+                                        "_id": "be00047",
+                                        "tab_title": "06 · Salvation"
+                                    },
+                                    {
+                                        "_id": "be00048",
+                                        "tab_title": "07 · Eternal Security"
+                                    },
+                                    {
+                                        "_id": "be00049",
+                                        "tab_title": "08 · Eternity"
+                                    }
+                                ],
+                                "tabs_direction": "inline-start",
+                                "tabs_direction_tablet": "inline-start",
+                                "tabs_direction_mobile": "block-start",
+                                "tabs_width": {
+                                    "unit": "px",
+                                    "size": 248
+                                },
+                                "tabs_width_tablet": {
+                                    "unit": "px",
+                                    "size": 210
+                                },
+                                "tabs_title_spacing": {
+                                    "unit": "px",
+                                    "size": 64
+                                },
+                                "tabs_title_spacing_tablet": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "tabs_title_spacing_mobile": {
+                                    "unit": "px",
+                                    "size": 24
+                                },
+                                "tabs_title_space_between": {
+                                    "unit": "px",
+                                    "size": 4
+                                },
+                                "tabs_title_border_radius": {
+                                    "unit": "px",
+                                    "top": "8",
+                                    "right": "8",
+                                    "bottom": "8",
+                                    "left": "8",
+                                    "isLinked": false
+                                },
+                                "title_alignment": "start",
+                                "tabs_justify_vertical": "start",
+                                "breakpoint_selector": "none",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "14",
+                                    "right": "16",
+                                    "bottom": "14",
+                                    "left": "16",
+                                    "isLinked": false
+                                },
+                                "tabs_title_background_color_background": "classic",
+                                "tabs_title_background_color_active_background": "classic",
+                                "tabs_title_background_color_hover_background": "classic",
+                                "content_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "content_border_border": "none",
+                                "__globals__": {
+                                    "title_typography_typography": "globals/typography?id=about_en_nav",
+                                    "title_text_color": "globals/colors?id=ink_soft",
+                                    "title_text_color_active": "globals/colors?id=primary",
+                                    "title_text_color_hover": "globals/colors?id=primary",
+                                    "tabs_title_background_color_color": "globals/colors?id=paper",
+                                    "tabs_title_background_color_active_color": "globals/colors?id=mist",
+                                    "tabs_title_background_color_hover_color": "globals/colors?id=mist"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "be00008",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be00003",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "01",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00004",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "God",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00005",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00038",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>God is the Creator and Ruler of the universe. He exists eternally as three persons: the Father, the Son and the Holy Spirit. These three are equal and are one God.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0003a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0003b",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Genesis 1:1,26,27, 3:22, Psalms 90:2; Matthew 28:19; 1 Peter 1:2; 2 Corinthians 13:14</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be00007",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00001",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-0"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        },
+                                                        "_css_classes": "reader-unavailable"
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be00006",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "1 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be00002",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-2"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00010",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be0000b",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "02",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0000c",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Jesus Christ",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0000d",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0003d",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Jesus Christ is the Son of God and is equal with the Father. Jesus lived a sinless life on earth and offered Himself as the perfect sacrifice, dying on the cross for all humanity. He rose from the dead after three days, demonstrating His power over sin and death. He ascended to heavenly glory and will return to earth as King of kings and Lord of lords.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0003f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00040",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Matthew 1:22-23; Isaiah 9:6; John 1:1-5, 14:10-30; Hebrews 4:14,15; 1 Corinthians 15:3-4; Romans 1:3-4; Acts 1:9-11; 1 Timothy 6:14; Titus 2:13</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be0000f",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00009",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-1"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be0000e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "2 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be0000a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-3"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00018",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be00013",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "03",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00014",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "The Holy Spirit",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00015",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00042",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>The Holy Spirit is equal with the Father and the Son. He is present in the world to help people know Christ, and He lives in every Christian from the moment of salvation. He gives believers power for daily living, understanding of spiritual truth and guidance for the way ahead. He gives spiritual gifts to every believer. As Christians, we seek daily to live under the Holy Spirit’s direction.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00044",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00045",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>2 Corinthians 3:17; John 16:7-13, 14:16-17; Acts 1:8; 1 Corinthians 2:12; 3:16 Ephesians 1:13,5:18; Galatians 5:25</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be00017",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00011",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-2"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be00016",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "3 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be00012",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-4"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00020",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be0001b",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "04",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0001c",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "The Bible",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0001d",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00047",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>The Bible is God’s Word to us, written by people under the supernatural guidance of the Holy Spirit. It is the highest authority for Christian faith and life.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00049",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0004a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>2 Timothy 3:16,1:13; 2 Peter 1:20-21; Psalms 119:105, 160, 12:6; Proverbs 30:5</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be0001f",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00019",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-3"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be0001e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "4 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be0001a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-5"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00028",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be00023",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "05",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00024",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Humanity",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00025",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0004c",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Human beings were created in God’s spiritual image, reflecting His character. Humanity is the pinnacle of God’s creation. Although every person has the potential for good, our sinful attitudes separate us from God and bring many problems into our lives.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0004e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0004f",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Genesis 1:27; Psalms 8:3-6; Isaiah 53:6a; Romans 3:23; Isaiah 59:1-2</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be00027",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00021",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-4"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be00026",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "5 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be00022",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-6"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00030",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be0002b",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "06",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0002c",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Salvation",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0002d",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00051",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Salvation is God’s free gift, which we must receive. We can never atone for our sins through good works or self-improvement. Only through Jesus Christ and God’s forgiveness can we be delivered from the penalty of sin. We are saved when we turn in faith to Jesus from a self-centred life lived in our own strength. Eternal life begins when we receive the life of Jesus Christ by faith.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00053",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00054",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Romans 6:23,5:1; Ephesians 2:8-9; John 14:6;1:12; Titus 3:5; Galatians 3:26</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be0002f",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00029",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-5"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be0002e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "6 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be0002a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-7"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00038",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be00033",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "07",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00034",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Eternal Security",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be00035",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc00056",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>Because God gives us eternal life through Jesus Christ, true believers have eternal assurance of salvation. Salvation comes through God’s power and grace, not through a Christian’s own efforts. His preserving power and grace give us this lasting assurance. Believers also have a responsibility to continue trusting God and living in His care.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc00058",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc00059",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>John 10:29; 2 Timothy 1:12; Hebrews 7:25, 10:10,14; 1 Peter 1:3-5; Hebrews 6:4-8; Hebrews 10:26-27; John 15:6</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be00037",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00031",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-6"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be00036",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "7 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be00032",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-8"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "be00040",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 12
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "be0003b",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "08",
+                                                "header_size": "div",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary",
+                                                    "typography_typography": "globals/typography?id=about_en_label"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0003c",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Eternity",
+                                                "header_size": "h2",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=text",
+                                                    "typography_typography": "globals/typography?id=about_en_section"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "be0003d",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "28",
+                                                    "right": "0",
+                                                    "bottom": "28",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "bc0005b",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>People were created to exist forever. We will either be eternally separated from God because of sin, or live eternally with Him through forgiveness and salvation. Eternal separation from God is hell; eternal life is being with God forever.</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                },
+                                                {
+                                                    "id": "bc0005d",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Scripture references",
+                                                        "header_size": "h3",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=primary",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "bc0005e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "editor": "<p>John 3:16, 2:25, 5:11-13; Romans 6:23; Revelation 20:15; Matthew 1:8; Matthew 2:44,46</p>",
+                                                        "__globals__": {
+                                                            "text_color": "globals/colors?id=text",
+                                                            "typography_typography": "globals/typography?id=about_en_body"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "text-editor"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "be0003f",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "flex_direction": "row",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 20
+                                                },
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": "12",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "flex_justify_content": "space-between",
+                                                "flex_align_items": "center",
+                                                "border_border": "solid",
+                                                "border_width": {
+                                                    "unit": "px",
+                                                    "top": "1",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "__globals__": {
+                                                    "border_color": "globals/colors?id=line"
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "be00039",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "← Previous",
+                                                        "link": {
+                                                            "url": "#belief-topic-7"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                },
+                                                {
+                                                    "id": "be0003e",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "8 / 8",
+                                                        "header_size": "div",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft",
+                                                            "typography_typography": "globals/typography?id=about_en_label"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "be0003a",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "text": "Next →",
+                                                        "link": {
+                                                            "url": "#belief-topic-9"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "12",
+                                                            "right": "0",
+                                                            "bottom": "12",
+                                                            "left": "0",
+                                                            "isLinked": false
+                                                        },
+                                                        "__globals__": {
+                                                            "button_text_color": "globals/colors?id=primary",
+                                                            "background_color": "globals/colors?id=paper",
+                                                            "typography_typography": "globals/typography?id=about_en_nav"
+                                                        },
+                                                        "_css_classes": "reader-unavailable"
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "button"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ]
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
+            "id": "be0005f",
+            "elType": "container",
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "72",
+                    "right": "56",
+                    "bottom": "72",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals/colors?id=mist"
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "32",
+                    "bottom": "56",
+                    "left": "32",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "40",
+                    "right": "20",
+                    "bottom": "40",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "be0005e",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "boxed",
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 20
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1120
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "be0005b",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "MORE ABOUT OUR CHURCH",
+                                "header_size": "div",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=primary",
+                                    "typography_typography": "globals/typography?id=about_en_label"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be0005c",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "Get to know the people<br>behind our shared faith.",
+                                "header_size": "h2",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text",
+                                    "typography_typography": "globals/typography?id=about_en_section"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        },
+                        {
+                            "id": "be0005d",
+                            "elType": "widget",
+                            "settings": {
+                                "text": "Our story and team ↗",
+                                "link": {
+                                    "url": "http://mpcbc.local/about/#story"
+                                },
+                                "text_padding": {
+                                    "unit": "px",
+                                    "top": "12",
+                                    "right": "0",
+                                    "bottom": "12",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "__globals__": {
+                                    "button_text_color": "globals/colors?id=primary",
+                                    "background_color": "globals/colors?id=paper",
+                                    "typography_typography": "globals/typography?id=about_en_nav"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "button"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ],
+    "settings": {
+        "hide_title": "yes"
+    }
+}

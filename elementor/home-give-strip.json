@@ -1,0 +1,355 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Give",
+    "type": "container",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "give_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "_element_id": "give",
+                "background_background": "classic",
+                "background_color": "#F6F7F5",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": 0,
+                    "right": 56,
+                    "bottom": 112,
+                    "left": 56,
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": 0,
+                    "right": 32,
+                    "bottom": 80,
+                    "left": 32,
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": 0,
+                    "right": 16,
+                    "bottom": 44,
+                    "left": 16,
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "give_strip_inner",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_width": {
+                            "unit": "px",
+                            "top": 1,
+                            "right": 1,
+                            "bottom": 1,
+                            "left": 1,
+                            "isLinked": true
+                        },
+                        "border_color": "#D9E2E1",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": 24,
+                            "right": 24,
+                            "bottom": 24,
+                            "left": 24,
+                            "isLinked": true
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": 16,
+                            "right": 40,
+                            "bottom": 16,
+                            "left": 16,
+                            "isLinked": false
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": 16,
+                            "right": 16,
+                            "bottom": 24,
+                            "left": 16,
+                            "isLinked": true
+                        },
+                        "flex_direction": "row",
+                        "flex_direction_tablet": "row",
+                        "flex_direction_mobile": "column",
+                        "flex_align_items": "center",
+                        "flex_justify_content": "space-between",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "give_photo",
+                            "elType": "widget",
+                            "settings": {
+                                "image": {
+                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/photo-give.png",
+                                    "id": 134
+                                },
+                                "image_size": "full",
+                                "width": {
+                                    "unit": "px",
+                                    "size": 300
+                                },
+                                "width_tablet": {
+                                    "unit": "px",
+                                    "size": 200
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "height_mobile": {
+                                    "unit": "px",
+                                    "size": 120
+                                },
+                                "object_fit_mobile": "cover",
+                                "image_border_radius": {
+                                    "unit": "px",
+                                    "top": 16,
+                                    "right": 16,
+                                    "bottom": 16,
+                                    "left": 16,
+                                    "isLinked": true
+                                },
+                                "height": {
+                                    "unit": "px",
+                                    "size": 200
+                                },
+                                "height_tablet": {
+                                    "unit": "px",
+                                    "size": 200
+                                },
+                                "object_fit": "cover",
+                                "object_fit_tablet": "cover",
+                                "_flex_size": "none",
+                                "_element_width_mobile": "inherit",
+                                "_flex_size_mobile": "grow"
+                            },
+                            "elements": [],
+                            "widgetType": "image"
+                        },
+                        {
+                            "id": "give_text_col",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 4
+                                },
+                                "flex_grow": 1
+                            },
+                            "elements": [
+                                {
+                                    "id": "give_heading",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Give",
+                                        "header_size": "h2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 56
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 44
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 32
+                                        },
+                                        "typography_font_weight": "700",
+                                        "title_color": "#13232A"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "give_heading_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">奉獻</span>",
+                                        "header_size": "span",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "typography_font_weight": "500",
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 19
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 14
+                                        },
+                                        "title_color": "#4F6168",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=ink_soft"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "give_verse",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "“[Short Bible verse about giving]” [Reference]",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400",
+                                        "title_color": "#4F6168",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=ink_soft"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "give_verse_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">「[經文]」[出處]</span>",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 15
+                                        },
+                                        "typography_font_weight": "500",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "title_color": "#4F6168",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=ink_soft"
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "give_actions_col",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_align_items": "flex-start",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 10
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "give_btn_online",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "text": "Give online",
+                                        "link": {
+                                            "url": "#"
+                                        },
+                                        "background_color": "#F28C38",
+                                        "__globals__": {
+                                            "background_color": "globals/colors?id=accent",
+                                            "button_text_color": "globals/colors?id=on_persimmon",
+                                            "button_background_hover_color": "globals/colors?id=persimmon_hover",
+                                            "hover_color": "globals/colors?id=on_persimmon"
+                                        },
+                                        "border_radius": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 12,
+                                            "bottom": 12,
+                                            "left": 12,
+                                            "isLinked": true
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 14,
+                                            "right": 28,
+                                            "bottom": 14,
+                                            "left": 28,
+                                            "isLinked": false
+                                        },
+                                        "button_text_color": "#2B1404",
+                                        "button_background_hover_color": "#E07A26",
+                                        "hover_color": "#2B1404"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "button"
+                                },
+                                {
+                                    "id": "give_link_other",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Other ways to give",
+                                        "header_size": "p",
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 15
+                                        },
+                                        "typography_font_weight": "600",
+                                        "typography_line_height": {
+                                            "unit": "px",
+                                            "size": 44
+                                        },
+                                        "title_color": "#13232A",
+                                        "__globals__": {
+                                            "title_color": "globals/colors?id=text"
+                                        },
+                                        "link": {
+                                            "url": "#",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        },
+                                        "typography_text_decoration": "underline"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

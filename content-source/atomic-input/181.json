@@ -1,0 +1,764 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"be00053 6\"><e-flexbox configuration-id=\"be00052 5\"><e-flexbox configuration-id=\"Boxed inner 4\"><e-paragraph configuration-id=\"be0004f 1\"></e-paragraph><e-heading configuration-id=\"be00050 2\"></e-heading><e-paragraph configuration-id=\"be00051 3\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be00055 14\"><e-flexbox configuration-id=\"be00054 13\"><e-flexbox configuration-id=\"Boxed inner 12\"><e-flexbox configuration-id=\"be0004e 11\"><e-paragraph configuration-id=\"be0004a 7\"></e-paragraph><e-paragraph configuration-id=\"be0004b 8\"></e-paragraph><e-paragraph configuration-id=\"be0004c 9\"></e-paragraph><e-paragraph configuration-id=\"be0004d 10\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be0005a 135\"><e-flexbox configuration-id=\"be00059 134\"><e-flexbox configuration-id=\"Boxed inner 133\"><e-flexbox configuration-id=\"be00058 17\"><e-paragraph configuration-id=\"be00056 15\"></e-paragraph><e-heading configuration-id=\"be00057 16\"></e-heading></e-flexbox><e-tabs configuration-id=\"be00041 132\"><e-tabs-menu configuration-id=\"Tabs menu 34\"><e-tab configuration-id=\"Tab 1 19\"><e-paragraph configuration-id=\"Tab label 18\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 2 21\"><e-paragraph configuration-id=\"Tab label 20\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 3 23\"><e-paragraph configuration-id=\"Tab label 22\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 4 25\"><e-paragraph configuration-id=\"Tab label 24\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 5 27\"><e-paragraph configuration-id=\"Tab label 26\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 6 29\"><e-paragraph configuration-id=\"Tab label 28\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 7 31\"><e-paragraph configuration-id=\"Tab label 30\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 8 33\"><e-paragraph configuration-id=\"Tab label 32\"></e-paragraph></e-tab></e-tabs-menu><e-tabs-content-area configuration-id=\"Tabs panels 131\"><e-tab-content configuration-id=\"Tab panel 1 46\"><e-flexbox configuration-id=\"be00008 45\"><e-paragraph configuration-id=\"be00003 35\"></e-paragraph><e-heading configuration-id=\"be00004 36\"></e-heading><e-flexbox configuration-id=\"be00005 40\"><e-paragraph configuration-id=\"bc00038 37\"></e-paragraph><e-heading configuration-id=\"bc0003a 38\"></e-heading><e-paragraph configuration-id=\"bc0003b 39\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00007 44\"><e-button configuration-id=\"be00001 41\"></e-button><e-paragraph configuration-id=\"be00006 42\"></e-paragraph><e-button configuration-id=\"be00002 43\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 2 58\"><e-flexbox configuration-id=\"be00010 57\"><e-paragraph configuration-id=\"be0000b 47\"></e-paragraph><e-heading configuration-id=\"be0000c 48\"></e-heading><e-flexbox configuration-id=\"be0000d 52\"><e-paragraph configuration-id=\"bc0003d 49\"></e-paragraph><e-heading configuration-id=\"bc0003f 50\"></e-heading><e-paragraph configuration-id=\"bc00040 51\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0000f 56\"><e-button configuration-id=\"be00009 53\"></e-button><e-paragraph configuration-id=\"be0000e 54\"></e-paragraph><e-button configuration-id=\"be0000a 55\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 3 70\"><e-flexbox configuration-id=\"be00018 69\"><e-paragraph configuration-id=\"be00013 59\"></e-paragraph><e-heading configuration-id=\"be00014 60\"></e-heading><e-flexbox configuration-id=\"be00015 64\"><e-paragraph configuration-id=\"bc00042 61\"></e-paragraph><e-heading configuration-id=\"bc00044 62\"></e-heading><e-paragraph configuration-id=\"bc00045 63\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00017 68\"><e-button configuration-id=\"be00011 65\"></e-button><e-paragraph configuration-id=\"be00016 66\"></e-paragraph><e-button configuration-id=\"be00012 67\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 4 82\"><e-flexbox configuration-id=\"be00020 81\"><e-paragraph configuration-id=\"be0001b 71\"></e-paragraph><e-heading configuration-id=\"be0001c 72\"></e-heading><e-flexbox configuration-id=\"be0001d 76\"><e-paragraph configuration-id=\"bc00047 73\"></e-paragraph><e-heading configuration-id=\"bc00049 74\"></e-heading><e-paragraph configuration-id=\"bc0004a 75\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0001f 80\"><e-button configuration-id=\"be00019 77\"></e-button><e-paragraph configuration-id=\"be0001e 78\"></e-paragraph><e-button configuration-id=\"be0001a 79\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 5 94\"><e-flexbox configuration-id=\"be00028 93\"><e-paragraph configuration-id=\"be00023 83\"></e-paragraph><e-heading configuration-id=\"be00024 84\"></e-heading><e-flexbox configuration-id=\"be00025 88\"><e-paragraph configuration-id=\"bc0004c 85\"></e-paragraph><e-heading configuration-id=\"bc0004e 86\"></e-heading><e-paragraph configuration-id=\"bc0004f 87\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00027 92\"><e-button configuration-id=\"be00021 89\"></e-button><e-paragraph configuration-id=\"be00026 90\"></e-paragraph><e-button configuration-id=\"be00022 91\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 6 106\"><e-flexbox configuration-id=\"be00030 105\"><e-paragraph configuration-id=\"be0002b 95\"></e-paragraph><e-heading configuration-id=\"be0002c 96\"></e-heading><e-flexbox configuration-id=\"be0002d 100\"><e-paragraph configuration-id=\"bc00051 97\"></e-paragraph><e-heading configuration-id=\"bc00053 98\"></e-heading><e-paragraph configuration-id=\"bc00054 99\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0002f 104\"><e-button configuration-id=\"be00029 101\"></e-button><e-paragraph configuration-id=\"be0002e 102\"></e-paragraph><e-button configuration-id=\"be0002a 103\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 7 118\"><e-flexbox configuration-id=\"be00038 117\"><e-paragraph configuration-id=\"be00033 107\"></e-paragraph><e-heading configuration-id=\"be00034 108\"></e-heading><e-flexbox configuration-id=\"be00035 112\"><e-paragraph configuration-id=\"bc00056 109\"></e-paragraph><e-heading configuration-id=\"bc00058 110\"></e-heading><e-paragraph configuration-id=\"bc00059 111\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be00037 116\"><e-button configuration-id=\"be00031 113\"></e-button><e-paragraph configuration-id=\"be00036 114\"></e-paragraph><e-button configuration-id=\"be00032 115\"></e-button></e-flexbox></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 8 130\"><e-flexbox configuration-id=\"be00040 129\"><e-paragraph configuration-id=\"be0003b 119\"></e-paragraph><e-heading configuration-id=\"be0003c 120\"></e-heading><e-flexbox configuration-id=\"be0003d 124\"><e-paragraph configuration-id=\"bc0005b 121\"></e-paragraph><e-heading configuration-id=\"bc0005d 122\"></e-heading><e-paragraph configuration-id=\"bc0005e 123\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"be0003f 128\"><e-button configuration-id=\"be00039 125\"></e-button><e-paragraph configuration-id=\"be0003e 126\"></e-paragraph><e-button configuration-id=\"be0003a 127\"></e-button></e-flexbox></e-flexbox></e-tab-content></e-tabs-content-area></e-tabs></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"be0005f 141\"><e-flexbox configuration-id=\"be0005e 140\"><e-flexbox configuration-id=\"Boxed inner 139\"><e-paragraph configuration-id=\"be0005b 136\"></e-paragraph><e-heading configuration-id=\"be0005c 137\"></e-heading><e-button configuration-id=\"be0005d 138\"></e-button></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "be0004f 1": {
+      "_cssid": "mpcbc-be0004f",
+      "paragraph": "OUR CHURCH / What we believe",
+      "tag": "p"
+    },
+    "be00050 2": {
+      "_cssid": "mpcbc-be00050",
+      "title": "The faith behind<br>our life together.",
+      "tag": "h1"
+    },
+    "be00051 3": {
+      "_cssid": "mpcbc-be00051",
+      "paragraph": "Explore what we believe, grounded in Scripture and centred on Jesus.",
+      "tag": "p"
+    },
+    "Boxed inner 4": {},
+    "be00052 5": {
+      "_cssid": "mpcbc-be00052"
+    },
+    "be00053 6": {
+      "_cssid": "mpcbc-be00053"
+    },
+    "be0004a 7": {
+      "_cssid": "mpcbc-be0004a",
+      "paragraph": "Our story",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/about/#story",
+        "isTargetBlank": false
+      }
+    },
+    "be0004b 8": {
+      "_cssid": "mpcbc-be0004b",
+      "paragraph": "Our mission",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/about/#mission",
+        "isTargetBlank": false
+      }
+    },
+    "be0004c 9": {
+      "_cssid": "mpcbc-be0004c",
+      "paragraph": "Our pastoral team",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/about/#pastors",
+        "isTargetBlank": false
+      }
+    },
+    "be0004d 10": {
+      "_cssid": "mpcbc-be0004d",
+      "paragraph": "What we believe",
+      "tag": "p",
+      "link": {
+        "destination": "#beliefs",
+        "isTargetBlank": false
+      }
+    },
+    "be0004e 11": {
+      "_cssid": "mpcbc-be0004e"
+    },
+    "Boxed inner 12": {},
+    "be00054 13": {
+      "_cssid": "mpcbc-be00054"
+    },
+    "be00055 14": {
+      "_cssid": "mpcbc-be00055"
+    },
+    "be00056 15": {
+      "_cssid": "mpcbc-be00056",
+      "paragraph": "OUR STATEMENT OF FAITH",
+      "tag": "p"
+    },
+    "be00057 16": {
+      "_cssid": "mpcbc-be00057",
+      "title": "Eight foundations.<br>One shared faith.",
+      "tag": "h2"
+    },
+    "be00058 17": {
+      "_cssid": "mpcbc-topic-index"
+    },
+    "Tab label 18": {
+      "paragraph": "01 · God"
+    },
+    "Tab 1 19": {},
+    "Tab label 20": {
+      "paragraph": "02 · Jesus Christ"
+    },
+    "Tab 2 21": {},
+    "Tab label 22": {
+      "paragraph": "03 · The Holy Spirit"
+    },
+    "Tab 3 23": {},
+    "Tab label 24": {
+      "paragraph": "04 · The Bible"
+    },
+    "Tab 4 25": {},
+    "Tab label 26": {
+      "paragraph": "05 · Humanity"
+    },
+    "Tab 5 27": {},
+    "Tab label 28": {
+      "paragraph": "06 · Salvation"
+    },
+    "Tab 6 29": {},
+    "Tab label 30": {
+      "paragraph": "07 · Eternal Security"
+    },
+    "Tab 7 31": {},
+    "Tab label 32": {
+      "paragraph": "08 · Eternity"
+    },
+    "Tab 8 33": {},
+    "Tabs menu 34": {},
+    "be00003 35": {
+      "_cssid": "mpcbc-be00003",
+      "paragraph": "01",
+      "tag": "p"
+    },
+    "be00004 36": {
+      "_cssid": "mpcbc-be00004",
+      "title": "God",
+      "tag": "h2"
+    },
+    "bc00038 37": {
+      "_cssid": "mpcbc-bc00038",
+      "paragraph": "God is the Creator and Ruler of the universe. He exists eternally as three persons: the Father, the Son and the Holy Spirit. These three are equal and are one God.",
+      "tag": "p"
+    },
+    "bc0003a 38": {
+      "_cssid": "mpcbc-bc0003a",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0003b 39": {
+      "_cssid": "mpcbc-bc0003b",
+      "paragraph": "Genesis 1:1,26,27, 3:22, Psalms 90:2; Matthew 28:19; 1 Peter 1:2; 2 Corinthians 13:14",
+      "tag": "p"
+    },
+    "be00005 40": {
+      "_cssid": "mpcbc-be00005"
+    },
+    "be00001 41": {
+      "_cssid": "mpcbc-reader-unavailable-be00001",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-0",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00006 42": {
+      "_cssid": "mpcbc-be00006",
+      "paragraph": "1 / 8",
+      "tag": "p"
+    },
+    "be00002 43": {
+      "_cssid": "mpcbc-be00002",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00007 44": {
+      "_cssid": "mpcbc-be00007"
+    },
+    "be00008 45": {
+      "_cssid": "mpcbc-be00008"
+    },
+    "Tab panel 1 46": {},
+    "be0000b 47": {
+      "_cssid": "mpcbc-be0000b",
+      "paragraph": "02",
+      "tag": "p"
+    },
+    "be0000c 48": {
+      "_cssid": "mpcbc-be0000c",
+      "title": "Jesus Christ",
+      "tag": "h2"
+    },
+    "bc0003d 49": {
+      "_cssid": "mpcbc-bc0003d",
+      "paragraph": "Jesus Christ is the Son of God and is equal with the Father. Jesus lived a sinless life on earth and offered Himself as the perfect sacrifice, dying on the cross for all humanity. He rose from the dead after three days, demonstrating His power over sin and death. He ascended to heavenly glory and will return to earth as King of kings and Lord of lords.",
+      "tag": "p"
+    },
+    "bc0003f 50": {
+      "_cssid": "mpcbc-bc0003f",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00040 51": {
+      "_cssid": "mpcbc-bc00040",
+      "paragraph": "Matthew 1:22-23; Isaiah 9:6; John 1:1-5, 14:10-30; Hebrews 4:14,15; 1 Corinthians 15:3-4; Romans 1:3-4; Acts 1:9-11; 1 Timothy 6:14; Titus 2:13",
+      "tag": "p"
+    },
+    "be0000d 52": {
+      "_cssid": "mpcbc-be0000d"
+    },
+    "be00009 53": {
+      "_cssid": "mpcbc-be00009",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-1",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0000e 54": {
+      "_cssid": "mpcbc-be0000e",
+      "paragraph": "2 / 8",
+      "tag": "p"
+    },
+    "be0000a 55": {
+      "_cssid": "mpcbc-be0000a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0000f 56": {
+      "_cssid": "mpcbc-be0000f"
+    },
+    "be00010 57": {
+      "_cssid": "mpcbc-be00010"
+    },
+    "Tab panel 2 58": {},
+    "be00013 59": {
+      "_cssid": "mpcbc-be00013",
+      "paragraph": "03",
+      "tag": "p"
+    },
+    "be00014 60": {
+      "_cssid": "mpcbc-be00014",
+      "title": "The Holy Spirit",
+      "tag": "h2"
+    },
+    "bc00042 61": {
+      "_cssid": "mpcbc-bc00042",
+      "paragraph": "The Holy Spirit is equal with the Father and the Son. He is present in the world to help people know Christ, and He lives in every Christian from the moment of salvation. He gives believers power for daily living, understanding of spiritual truth and guidance for the way ahead. He gives spiritual gifts to every believer. As Christians, we seek daily to live under the Holy Spirit’s direction.",
+      "tag": "p"
+    },
+    "bc00044 62": {
+      "_cssid": "mpcbc-bc00044",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00045 63": {
+      "_cssid": "mpcbc-bc00045",
+      "paragraph": "2 Corinthians 3:17; John 16:7-13, 14:16-17; Acts 1:8; 1 Corinthians 2:12; 3:16 Ephesians 1:13,5:18; Galatians 5:25",
+      "tag": "p"
+    },
+    "be00015 64": {
+      "_cssid": "mpcbc-be00015"
+    },
+    "be00011 65": {
+      "_cssid": "mpcbc-be00011",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-2",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00016 66": {
+      "_cssid": "mpcbc-be00016",
+      "paragraph": "3 / 8",
+      "tag": "p"
+    },
+    "be00012 67": {
+      "_cssid": "mpcbc-be00012",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00017 68": {
+      "_cssid": "mpcbc-be00017"
+    },
+    "be00018 69": {
+      "_cssid": "mpcbc-be00018"
+    },
+    "Tab panel 3 70": {},
+    "be0001b 71": {
+      "_cssid": "mpcbc-be0001b",
+      "paragraph": "04",
+      "tag": "p"
+    },
+    "be0001c 72": {
+      "_cssid": "mpcbc-be0001c",
+      "title": "The Bible",
+      "tag": "h2"
+    },
+    "bc00047 73": {
+      "_cssid": "mpcbc-bc00047",
+      "paragraph": "The Bible is God’s Word to us, written by people under the supernatural guidance of the Holy Spirit. It is the highest authority for Christian faith and life.",
+      "tag": "p"
+    },
+    "bc00049 74": {
+      "_cssid": "mpcbc-bc00049",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0004a 75": {
+      "_cssid": "mpcbc-bc0004a",
+      "paragraph": "2 Timothy 3:16,1:13; 2 Peter 1:20-21; Psalms 119:105, 160, 12:6; Proverbs 30:5",
+      "tag": "p"
+    },
+    "be0001d 76": {
+      "_cssid": "mpcbc-be0001d"
+    },
+    "be00019 77": {
+      "_cssid": "mpcbc-be00019",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-3",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0001e 78": {
+      "_cssid": "mpcbc-be0001e",
+      "paragraph": "4 / 8",
+      "tag": "p"
+    },
+    "be0001a 79": {
+      "_cssid": "mpcbc-be0001a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0001f 80": {
+      "_cssid": "mpcbc-be0001f"
+    },
+    "be00020 81": {
+      "_cssid": "mpcbc-be00020"
+    },
+    "Tab panel 4 82": {},
+    "be00023 83": {
+      "_cssid": "mpcbc-be00023",
+      "paragraph": "05",
+      "tag": "p"
+    },
+    "be00024 84": {
+      "_cssid": "mpcbc-be00024",
+      "title": "Humanity",
+      "tag": "h2"
+    },
+    "bc0004c 85": {
+      "_cssid": "mpcbc-bc0004c",
+      "paragraph": "Human beings were created in God’s spiritual image, reflecting His character. Humanity is the pinnacle of God’s creation. Although every person has the potential for good, our sinful attitudes separate us from God and bring many problems into our lives.",
+      "tag": "p"
+    },
+    "bc0004e 86": {
+      "_cssid": "mpcbc-bc0004e",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0004f 87": {
+      "_cssid": "mpcbc-bc0004f",
+      "paragraph": "Genesis 1:27; Psalms 8:3-6; Isaiah 53:6a; Romans 3:23; Isaiah 59:1-2",
+      "tag": "p"
+    },
+    "be00025 88": {
+      "_cssid": "mpcbc-be00025"
+    },
+    "be00021 89": {
+      "_cssid": "mpcbc-be00021",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-4",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00026 90": {
+      "_cssid": "mpcbc-be00026",
+      "paragraph": "5 / 8",
+      "tag": "p"
+    },
+    "be00022 91": {
+      "_cssid": "mpcbc-be00022",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00027 92": {
+      "_cssid": "mpcbc-be00027"
+    },
+    "be00028 93": {
+      "_cssid": "mpcbc-be00028"
+    },
+    "Tab panel 5 94": {},
+    "be0002b 95": {
+      "_cssid": "mpcbc-be0002b",
+      "paragraph": "06",
+      "tag": "p"
+    },
+    "be0002c 96": {
+      "_cssid": "mpcbc-be0002c",
+      "title": "Salvation",
+      "tag": "h2"
+    },
+    "bc00051 97": {
+      "_cssid": "mpcbc-bc00051",
+      "paragraph": "Salvation is God’s free gift, which we must receive. We can never atone for our sins through good works or self-improvement. Only through Jesus Christ and God’s forgiveness can we be delivered from the penalty of sin. We are saved when we turn in faith to Jesus from a self-centred life lived in our own strength. Eternal life begins when we receive the life of Jesus Christ by faith.",
+      "tag": "p"
+    },
+    "bc00053 98": {
+      "_cssid": "mpcbc-bc00053",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00054 99": {
+      "_cssid": "mpcbc-bc00054",
+      "paragraph": "Romans 6:23,5:1; Ephesians 2:8-9; John 14:6;1:12; Titus 3:5; Galatians 3:26",
+      "tag": "p"
+    },
+    "be0002d 100": {
+      "_cssid": "mpcbc-be0002d"
+    },
+    "be00029 101": {
+      "_cssid": "mpcbc-be00029",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-5",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0002e 102": {
+      "_cssid": "mpcbc-be0002e",
+      "paragraph": "6 / 8",
+      "tag": "p"
+    },
+    "be0002a 103": {
+      "_cssid": "mpcbc-be0002a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0002f 104": {
+      "_cssid": "mpcbc-be0002f"
+    },
+    "be00030 105": {
+      "_cssid": "mpcbc-be00030"
+    },
+    "Tab panel 6 106": {},
+    "be00033 107": {
+      "_cssid": "mpcbc-be00033",
+      "paragraph": "07",
+      "tag": "p"
+    },
+    "be00034 108": {
+      "_cssid": "mpcbc-be00034",
+      "title": "Eternal Security",
+      "tag": "h2"
+    },
+    "bc00056 109": {
+      "_cssid": "mpcbc-bc00056",
+      "paragraph": "Because God gives us eternal life through Jesus Christ, true believers have eternal assurance of salvation. Salvation comes through God’s power and grace, not through a Christian’s own efforts. His preserving power and grace give us this lasting assurance. Believers also have a responsibility to continue trusting God and living in His care.",
+      "tag": "p"
+    },
+    "bc00058 110": {
+      "_cssid": "mpcbc-bc00058",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc00059 111": {
+      "_cssid": "mpcbc-bc00059",
+      "paragraph": "John 10:29; 2 Timothy 1:12; Hebrews 7:25, 10:10,14; 1 Peter 1:3-5; Hebrews 6:4-8; Hebrews 10:26-27; John 15:6",
+      "tag": "p"
+    },
+    "be00035 112": {
+      "_cssid": "mpcbc-be00035"
+    },
+    "be00031 113": {
+      "_cssid": "mpcbc-be00031",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-6",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00036 114": {
+      "_cssid": "mpcbc-be00036",
+      "paragraph": "7 / 8",
+      "tag": "p"
+    },
+    "be00032 115": {
+      "_cssid": "mpcbc-be00032",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-8",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be00037 116": {
+      "_cssid": "mpcbc-be00037"
+    },
+    "be00038 117": {
+      "_cssid": "mpcbc-be00038"
+    },
+    "Tab panel 7 118": {},
+    "be0003b 119": {
+      "_cssid": "mpcbc-be0003b",
+      "paragraph": "08",
+      "tag": "p"
+    },
+    "be0003c 120": {
+      "_cssid": "mpcbc-be0003c",
+      "title": "Eternity",
+      "tag": "h2"
+    },
+    "bc0005b 121": {
+      "_cssid": "mpcbc-bc0005b",
+      "paragraph": "People were created to exist forever. We will either be eternally separated from God because of sin, or live eternally with Him through forgiveness and salvation. Eternal separation from God is hell; eternal life is being with God forever.",
+      "tag": "p"
+    },
+    "bc0005d 122": {
+      "_cssid": "mpcbc-bc0005d",
+      "title": "Scripture references",
+      "tag": "h3"
+    },
+    "bc0005e 123": {
+      "_cssid": "mpcbc-bc0005e",
+      "paragraph": "John 3:16, 2:25, 5:11-13; Romans 6:23; Revelation 20:15; Matthew 1:8; Matthew 2:44,46",
+      "tag": "p"
+    },
+    "be0003d 124": {
+      "_cssid": "mpcbc-be0003d"
+    },
+    "be00039 125": {
+      "_cssid": "mpcbc-be00039",
+      "text": "← Previous",
+      "link": {
+        "destination": "#belief-topic-7",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0003e 126": {
+      "_cssid": "mpcbc-be0003e",
+      "paragraph": "8 / 8",
+      "tag": "p"
+    },
+    "be0003a 127": {
+      "_cssid": "mpcbc-reader-unavailable-be0003a",
+      "text": "Next →",
+      "link": {
+        "destination": "#belief-topic-9",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "be0003f 128": {
+      "_cssid": "mpcbc-be0003f"
+    },
+    "be00040 129": {
+      "_cssid": "mpcbc-be00040"
+    },
+    "Tab panel 8 130": {},
+    "Tabs panels 131": {},
+    "be00041 132": {
+      "_cssid": "mpcbc-topic-reader",
+      "default-active-tab": 0
+    },
+    "Boxed inner 133": {},
+    "be00059 134": {
+      "_cssid": "mpcbc-be00059"
+    },
+    "be0005a 135": {
+      "_cssid": "beliefs"
+    },
+    "be0005b 136": {
+      "_cssid": "mpcbc-be0005b",
+      "paragraph": "MORE ABOUT OUR CHURCH",
+      "tag": "p"
+    },
+    "be0005c 137": {
+      "_cssid": "mpcbc-be0005c",
+      "title": "Get to know the people<br>behind our shared faith.",
+      "tag": "h2"
+    },
+    "be0005d 138": {
+      "_cssid": "mpcbc-be0005d",
+      "text": "Our story and team ↗",
+      "link": {
+        "destination": "http://mpcbc.local/about/#story",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "Boxed inner 139": {},
+    "be0005e 140": {
+      "_cssid": "mpcbc-be0005e"
+    },
+    "be0005f 141": {
+      "_cssid": "mpcbc-be0005f"
+    }
+  },
+  "style": {
+    "be0004f 1": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00050 2": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:64px;font-weight:700;line-height:1.12em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:52px;}@media (--mobile){font-size:40px;}",
+    "be00051 3": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:21px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:20px;}@media (--mobile){font-size:19px;}",
+    "Boxed inner 4": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00052 5": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be00053 6": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:64px 56px 48px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:36px 20px 36px 20px;}",
+    "be0004a 7": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0004b 8": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0004c 9": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0004d 10": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0004e 11": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0px 0px 0px 0px;gap:32px;flex-wrap:wrap;@media (--mobile){gap:20px;}",
+    "Boxed inner 12": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00054 13": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be00055 14": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:20px 56px 20px 56px;gap:20px;background-color:var(--mpcbc-color-262da8014);@media (--tablet){padding:20px 32px 20px 32px;}@media (--mobile){padding:18px 20px 18px 20px;}",
+    "be00056 15": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00057 16": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:26px;font-weight:600;line-height:1.35em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:24px;}@media (--mobile){font-size:22px;}",
+    "be00058 17": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab label 18": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 1 19": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 20": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 2 21": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 22": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 3 23": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 24": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 4 25": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 26": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 5 27": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 28": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 6 29": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 30": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 7 31": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 32": "font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:inherit;margin:0;",
+    "Tab 8 33": "text-align:start;width:100%;padding:14px 16px 14px 16px;border-width:0;border-radius:8px 8px 8px 8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tabs menu 34": "display:flex;flex-direction:column;flex-wrap:nowrap;width:248px;flex-shrink:0;gap:4px;padding:0;@media (--mobile){width:100%;flex-direction:row;flex-wrap:wrap;}",
+    "be00003 35": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00004 36": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00038 37": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003a 38": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0003b 39": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00005 40": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00001 41": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00006 42": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00002 43": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00007 44": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00008 45": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 1 46": "width:100%;padding:0;",
+    "be0000b 47": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0000c 48": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0003d 49": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0003f 50": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00040 51": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0000d 52": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00009 53": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0000e 54": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0000a 55": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0000f 56": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00010 57": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 2 58": "width:100%;padding:0;",
+    "be00013 59": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00014 60": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00042 61": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00044 62": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00045 63": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00015 64": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00011 65": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00016 66": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00012 67": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00017 68": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00018 69": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 3 70": "width:100%;padding:0;",
+    "be0001b 71": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0001c 72": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00047 73": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00049 74": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004a 75": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0001d 76": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00019 77": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0001e 78": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0001a 79": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0001f 80": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00020 81": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 4 82": "width:100%;padding:0;",
+    "be00023 83": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00024 84": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0004c 85": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0004e 86": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0004f 87": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00025 88": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00021 89": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00026 90": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00022 91": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00027 92": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00028 93": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 5 94": "width:100%;padding:0;",
+    "be0002b 95": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0002c 96": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00051 97": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00053 98": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00054 99": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0002d 100": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00029 101": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0002e 102": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0002a 103": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0002f 104": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00030 105": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 6 106": "width:100%;padding:0;",
+    "be00033 107": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00034 108": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc00056 109": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc00058 110": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc00059 111": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be00035 112": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00031 113": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00036 114": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be00032 115": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be00037 116": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00038 117": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 7 118": "width:100%;padding:0;",
+    "be0003b 119": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0003c 120": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "bc0005b 121": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "bc0005d 122": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "bc0005e 123": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:18px;font-weight:400;line-height:1.8em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:18px;}@media (--mobile){font-size:18px;}",
+    "be0003d 124": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:28px 0px 28px 0px;gap:20px;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00039 125": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0003e 126": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-4a261092f);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0003a 127": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "be0003f 128": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:12px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-76b1f0d6b);",
+    "be00040 129": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:12px;",
+    "Tab panel 8 130": "width:100%;padding:0;",
+    "Tabs panels 131": "min-width:0;width:100%;padding:0;flex-grow:1;",
+    "be00041 132": "display:flex;align-items:stretch;flex-direction:row;width:100%;gap:64px;padding:0;@media (--tablet){gap:32px;}@media (--mobile){flex-direction:column;gap:24px;}",
+    "Boxed inner 133": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be00059 134": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be0005a 135": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 72px 56px;gap:20px;background-color:var(--mpcbc-color-2d543f96b);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:40px 20px 40px 20px;}",
+    "be0005b 136": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-0071814e4);font-size:14px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-14b48ba19);@media (--tablet){font-size:14px;}@media (--mobile){font-size:14px;}",
+    "be0005c 137": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:44px;font-weight:700;line-height:1.2em;color:var(--mpcbc-color-6c2314b57);@media (--tablet){font-size:36px;}@media (--mobile){font-size:30px;}",
+    "be0005d 138": "min-width:0;margin:0;max-width:100%;padding:12px 0px 12px 0px;font-family:var(--mpcbc-font-0071814e4);font-size:16px;font-weight:600;line-height:1.5em;color:var(--mpcbc-color-14b48ba19);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;@media (--tablet){font-size:16px;}@media (--mobile){font-size:16px;}",
+    "Boxed inner 139": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1120px;margin-left:auto;margin-right:auto;",
+    "be0005e 140": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0px 0px 0px 0px;gap:20px;",
+    "be0005f 141": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:72px 56px 72px 56px;gap:20px;background-color:var(--mpcbc-color-8ab1c66cf);@media (--tablet){padding:56px 32px 56px 32px;}@media (--mobile){padding:40px 20px 40px 20px;}"
+  }
+}

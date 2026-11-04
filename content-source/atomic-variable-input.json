@@ -1,0 +1,284 @@
+[
+  {
+    "action": "create",
+    "type": "global-font-variable",
+    "label": "mpcbc-font-529ca1d09",
+    "value": "Noto Sans TC"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-6c2314b57",
+    "value": "#13232A"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-8ab1c66cf",
+    "value": "#E3EBEA"
+  },
+  {
+    "action": "create",
+    "type": "global-font-variable",
+    "label": "mpcbc-font-0071814e4",
+    "value": "Geist"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-14b48ba19",
+    "value": "#155E75"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-2d543f96b",
+    "value": "#F6F7F5"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-76b1f0d6b",
+    "value": "#D9E2E1"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-262da8014",
+    "value": "#FFFFFF"
+  },
+  {
+    "action": "create",
+    "type": "global-font-variable",
+    "label": "mpcbc-font-c48f08c2b",
+    "value": "Noto Sans SC"
+  },
+  {
+    "action": "create",
+    "type": "global-font-variable",
+    "label": "mpcbc-font-635da6514",
+    "value": "Bricolage Grotesque"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-4a261092f",
+    "value": "#4F6168"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-21e91e8d2",
+    "value": "#0F2A33"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-89d17a384",
+    "value": "#24434D"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-e30164937",
+    "value": "#2C4A45"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-f86885b8a",
+    "value": "#1E3A44"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-686f37c40",
+    "value": "#33424A"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-54922f2e9",
+    "value": "#ffffff"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-af363454f",
+    "value": "rgba(255,255,255,0.3)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-719d34b27",
+    "value": "rgba(10,31,38,0.12)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-486c07071",
+    "value": "rgba(10,31,38,0.97)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-f52c72c09",
+    "value": "#B8231E"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-66bb13529",
+    "value": "#0E4A5C"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-060cbc425",
+    "value": "#BFCDCC"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-ad065af56",
+    "value": "#EAF2F3"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-3d5e1fb3d",
+    "value": "rgba(255,255,255,0.75)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-51b24b692",
+    "value": "rgba(255,255,255,0.88)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-5c68d45b7",
+    "value": "rgba(15,42,51,0.88)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-d2abe1e14",
+    "value": "#2B1404"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-ebbfd2997",
+    "value": "rgba(255,255,255,0.65)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-30594db85",
+    "value": "#F28C38"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-8126134ba",
+    "value": "#E07A26"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-95d6436df",
+    "value": "#FCE3CC"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-b18f30ff2",
+    "value": "rgba(255,255,255,0.85)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-615b42f5c",
+    "value": "rgba(255,255,255,0.14)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-98d20b0f3",
+    "value": "rgba(255,255,255,0.55)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-661aec25c",
+    "value": "#D92D27"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-c6e48f28a",
+    "value": "rgba(255,255,255,0.7)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-7b82aa25b",
+    "value": "#16140F"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-cf8562be1",
+    "value": "rgba(18,17,14,0.42)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-6acb658b6",
+    "value": "rgba(255,255,255,0.2)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-77d8fab8f",
+    "value": "rgba(18,17,14,0.72)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-70755dafe",
+    "value": "rgba(18,17,14,0.25)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-fbe4cdc76",
+    "value": "#E3DACB"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-2d5d7ee8e",
+    "value": "rgba(255,255,255,0.8)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-f2c7aadfd",
+    "value": "rgba(255,255,255,0.6)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-760d5a356",
+    "value": "rgba(255,255,255,0.15)"
+  },
+  {
+    "action": "create",
+    "type": "global-color-variable",
+    "label": "mpcbc-color-c36e560d8",
+    "value": "#0A1F26"
+  }
+]

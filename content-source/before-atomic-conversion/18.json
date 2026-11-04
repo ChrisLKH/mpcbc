@@ -1,0 +1,280 @@
+{
+    "id": 18,
+    "title": "Prayer",
+    "data": [
+        {
+            "id": "prayer_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "104",
+                    "right": "56",
+                    "bottom": "104",
+                    "left": "56",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "56",
+                    "right": "20",
+                    "bottom": "56",
+                    "left": "20",
+                    "isLinked": false
+                },
+                "flex_direction": "row",
+                "flex_direction_tablet": "column",
+                "flex_direction_mobile": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 80
+                },
+                "flex_justify_content": "space-between"
+            },
+            "elements": [
+                {
+                    "id": "prayer_col_info",
+                    "elType": "container",
+                    "settings": {
+                        "width": {
+                            "unit": "%",
+                            "size": 46
+                        },
+                        "width_tablet": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "width_mobile": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 32
+                        },
+                        "content_width": "full"
+                    },
+                    "elements": [
+                        {
+                            "id": "prayer_heading",
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "How can we pray for you?",
+                                "header_size": "h1",
+                                "title_color": "#16140F",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Bricolage Grotesque",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 96
+                                },
+                                "typography_font_size_mobile": {
+                                    "unit": "px",
+                                    "size": 48
+                                },
+                                "typography_font_weight": "700",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 0.97999999999999998
+                                },
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=text"
+                                }
+                            },
+                            "isInner": false,
+                            "elements": []
+                        },
+                        {
+                            "id": "prayer_lead",
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p>Our pastors read every request and pray for you by name this week.</p>",
+                                "text_color": "#5C564D",
+                                "__globals__": {
+                                    "text_color": "globals/colors?id=ink_soft"
+                                },
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 22
+                                },
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.55
+                                }
+                            },
+                            "isInner": false,
+                            "elements": []
+                        },
+                        {
+                            "id": "prayer_promises_container",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": 1,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0,
+                                    "isLinked": false
+                                },
+                                "border_color": "#E3DACB",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": 28,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0,
+                                    "isLinked": false
+                                },
+                                "flex_direction": "column"
+                            },
+                            "elements": [
+                                {
+                                    "id": "prayer_bullets",
+                                    "elType": "widget",
+                                    "widgetType": "icon-list",
+                                    "settings": {
+                                        "icon_list": [
+                                            {
+                                                "text": "Read only by [Pastor names] — or the prayer team, if you choose.",
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                }
+                                            },
+                                            {
+                                                "text": "Never posted or shared without your permission.",
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                }
+                                            },
+                                            {
+                                                "text": "You don’t need to give your name.",
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                }
+                                            }
+                                        ],
+                                        "space_between": {
+                                            "unit": "px",
+                                            "size": 14
+                                        },
+                                        "text_color": "#5C564D",
+                                        "__globals__": {
+                                            "text_color": "globals/colors?id=ink_soft"
+                                        },
+                                        "typography_typography": "custom",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_line_height": {
+                                            "unit": "em",
+                                            "size": 1.5
+                                        }
+                                    },
+                                    "isInner": false,
+                                    "elements": []
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "prayer_col_form_card",
+                    "elType": "container",
+                    "settings": {
+                        "width": {
+                            "unit": "%",
+                            "size": 50
+                        },
+                        "width_tablet": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "width_mobile": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "background_background": "classic",
+                        "background_color": "#ffffff",
+                        "border_border": "solid",
+                        "border_width": {
+                            "unit": "px",
+                            "top": 1,
+                            "right": 1,
+                            "bottom": 1,
+                            "left": 1,
+                            "isLinked": true
+                        },
+                        "border_color": "#E3DACB",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": 24,
+                            "right": 24,
+                            "bottom": 24,
+                            "left": 24,
+                            "isLinked": true
+                        },
+                        "box_shadow_box_shadow_type": "yes",
+                        "box_shadow_box_shadow": {
+                            "horizontal": 0,
+                            "vertical": 30,
+                            "blur": 60,
+                            "spread": 0,
+                            "color": "rgba(22,20,15,0.08)"
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "44",
+                            "right": "44",
+                            "bottom": "44",
+                            "left": "44",
+                            "isLinked": true
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": "24",
+                            "right": "20",
+                            "bottom": "24",
+                            "left": "20",
+                            "isLinked": true
+                        },
+                        "content_width": "full"
+                    },
+                    "elements": [
+                        {
+                            "id": "prayer_form_embed",
+                            "elType": "widget",
+                            "widgetType": "shortcode",
+                            "settings": {
+                                "shortcode": "[fluentform id=\"3\"]"
+                            },
+                            "isInner": false,
+                            "elements": []
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ],
+    "settings": []
+}

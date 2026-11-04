@@ -1,0 +1,30 @@
+TASTESKILL · INSPECT   about-5.html
+
+MEASURED (first viewport listed)
+  hero headline   "About our church"  3 words · 2 line(s) · 88px (6.1vw) · Hanken Grotesk 400 · tracking -0.045em · leading 0.95
+  @768px          2 line(s) · 57.6px
+  @390px          2 line(s) · 40px
+  typefaces       Hanken Grotesk 94%, Noto Sans TC 6%
+  sizes in use    15 / 19 / 26 / 29 / 32 / 48 / 88 px   body 19px / 1.5
+  colour          page #ffffff · sections #e8e8e3 #ffffff #181715 #ffd21a · button #181715
+  page            8.6 screens · 1115 words · 5 images · hero media 44% img
+  headings        9 · longest 3 line(s) · median 3 words
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  1 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  .taste-skill/inspect/about-5/desktop-fold.jpg
+                  .taste-skill/inspect/about-5/desktop-page-01.jpg
+                  .taste-skill/inspect/about-5/desktop-page-02.jpg
+                  .taste-skill/inspect/about-5/desktop-page-03.jpg
+  tablet 768px    .taste-skill/inspect/about-5/tablet-fold.jpg
+                  .taste-skill/inspect/about-5/tablet-page-01.jpg
+                  .taste-skill/inspect/about-5/tablet-page-02.jpg
+  mobile 390px    .taste-skill/inspect/about-5/mobile-fold.jpg
+                  .taste-skill/inspect/about-5/mobile-page-01.jpg
+                  .taste-skill/inspect/about-5/mobile-page-02.jpg
+
+report: .taste-skill/inspect/about-5/report.json
+RESULT: 0 FAIL, 1 WARN — measurements pass. Passing the meter is the floor, not the grade: score the screenshots with references/critique.md.

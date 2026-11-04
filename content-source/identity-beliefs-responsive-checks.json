@@ -1,0 +1,154 @@
+[
+  {
+    "path": "/?lang=en",
+    "details": 0,
+    "h1": "Monterey Park\nChinese Baptist Church",
+    "lang": "en-US",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "path": "/?lang=en",
+    "details": 0,
+    "h1": "Monterey Park\nChinese Baptist Church",
+    "lang": "en-US",
+    "overflow": false,
+    "width": 1280
+  },
+  {
+    "path": "/?lang=en",
+    "details": 0,
+    "h1": "Monterey Park\nChinese Baptist Church",
+    "lang": "en-US",
+    "overflow": false,
+    "width": 1110
+  },
+  {
+    "path": "/?lang=en",
+    "details": 0,
+    "h1": "Monterey Park\nChinese Baptist Church",
+    "lang": "en-US",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/?lang=en",
+    "details": 0,
+    "h1": "Monterey Park\nChinese Baptist Church",
+    "lang": "en-US",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/?lang=en",
+    "details": 0,
+    "h1": "Monterey Park\nChinese Baptist Church",
+    "lang": "en-US",
+    "overflow": false,
+    "width": 360
+  },
+  {
+    "path": "/beliefs/?lang=en",
+    "details": 8,
+    "h1": "What we\nbelieve.",
+    "lang": "en",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "path": "/beliefs/?lang=en",
+    "details": 8,
+    "h1": "What we\nbelieve.",
+    "lang": "en",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/beliefs/?lang=en",
+    "details": 8,
+    "h1": "What we\nbelieve.",
+    "lang": "en",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/beliefs/?lang=en",
+    "details": 8,
+    "h1": "What we\nbelieve.",
+    "lang": "en",
+    "overflow": false,
+    "width": 360
+  },
+  {
+    "path": "/zh-hant/beliefs/?lang=zh-hant",
+    "details": 8,
+    "h1": "我們的\n信仰告白。",
+    "lang": "zh-Hant",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "path": "/zh-hant/beliefs/?lang=zh-hant",
+    "details": 8,
+    "h1": "我們的\n信仰告白。",
+    "lang": "zh-Hant",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/zh-hans/beliefs/?lang=zh-hans",
+    "details": 8,
+    "h1": "我们的\n信仰告白。",
+    "lang": "zh-Hans",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "path": "/zh-hans/beliefs/?lang=zh-hans",
+    "details": 8,
+    "h1": "我们的\n信仰告白。",
+    "lang": "zh-Hans",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/about/?lang=en",
+    "details": 2,
+    "h1": "Rooted in faith.\nGrowing together.",
+    "lang": "en",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "path": "/about/?lang=en",
+    "details": 2,
+    "h1": "Rooted in faith.\nGrowing together.",
+    "lang": "en",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/zh-hant/about/?lang=zh-hant",
+    "details": 2,
+    "h1": "扎根信仰，\n一同成長。",
+    "lang": "zh-Hant",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/zh-hans/about/?lang=zh-hans",
+    "details": 2,
+    "h1": "扎根信仰，\n一同成长。",
+    "lang": "zh-Hans",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "path": "/zh-hans/about/?lang=zh-hans",
+    "details": 2,
+    "h1": "扎根信仰，\n一同成长。",
+    "lang": "zh-Hans",
+    "overflow": false,
+    "width": 390
+  }
+]

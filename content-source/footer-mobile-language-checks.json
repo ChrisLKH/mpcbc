@@ -1,0 +1,41 @@
+[
+  {
+    "footerColumnWidth": 297,
+    "footerGap": "10px",
+    "mobileSelectorVisible": true,
+    "overflow": false,
+    "width": 360
+  },
+  {
+    "footerColumnWidth": 327,
+    "footerGap": "10px",
+    "mobileSelectorVisible": true,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "footerColumnWidth": 316.9375,
+    "footerGap": "10px",
+    "mobileSelectorVisible": true,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "footerGap": "10px",
+    "mobileSelectorVisible": false,
+    "overflow": false,
+    "width": 1110
+  },
+  {
+    "footerGap": "10px",
+    "mobileSelectorVisible": false,
+    "overflow": false,
+    "width": 1280
+  },
+  {
+    "footerGap": "10px",
+    "mobileSelectorVisible": false,
+    "overflow": false,
+    "width": 1440
+  }
+]

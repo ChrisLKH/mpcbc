@@ -1,0 +1,59 @@
+{
+    "pages": [
+        {
+            "id": 181,
+            "locale": "en",
+            "native_panels": 8,
+            "doctrine_and_references_preserved": true
+        },
+        {
+            "id": 224,
+            "locale": "zh-hant",
+            "native_panels": 8,
+            "doctrine_and_references_preserved": true
+        },
+        {
+            "id": 227,
+            "locale": "zh-hans",
+            "native_panels": 8,
+            "doctrine_and_references_preserved": true
+        }
+    ],
+    "about_menu": [
+        [
+            "About",
+            "關於我們",
+            "\/about\/",
+            0,
+            14
+        ],
+        [
+            "Our story",
+            "教會歷史",
+            "\/about\/#story",
+            123,
+            15
+        ],
+        [
+            "Our mission",
+            "使命宣言",
+            "\/about\/#mission",
+            123,
+            16
+        ],
+        [
+            "Our pastoral team",
+            "教牧團隊",
+            "\/about\/#pastors",
+            123,
+            17
+        ],
+        [
+            "What we believe",
+            "信仰告白",
+            "\/beliefs\/",
+            123,
+            18
+        ]
+    ]
+}

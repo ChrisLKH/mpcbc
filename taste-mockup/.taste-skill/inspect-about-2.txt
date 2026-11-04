@@ -1,0 +1,29 @@
+TASTESKILL · INSPECT   about-2.html
+
+MEASURED (first viewport listed)
+  hero headline   "About our church"  3 words · 2 line(s) · 135.4px (9.4vw) · Hanken Grotesk 500 · tracking -0.055em · leading 0.86
+  @768px          2 line(s) · 115.2px
+  @390px          2 line(s) · 58.5px
+  typefaces       Hanken Grotesk 85%, Noto Sans TC 15%
+  sizes in use    15 / 18 / 19 / 26 / 34 / 48 / 88 / 135 px   body 19px / 1.5
+  colour          page #ffffff · sections #e8e8e3 #181715 #ffd21a · button #181715
+  page            7.4 screens · 491 words · 11 images · hero media 21% img
+  headings        13 · longest 6 line(s) · median 5 words
+
+WARN — fix, or be able to defend
+  [statement-length] @1440px  1 large-set statement(s) run past 3 lines at 1440px: "Rev. Caleb Cheung, Ph.D. (張健庭牧師) is from…" → 6 lines at 34px
+      → A statement set large is about 30 words. Cut it, or set the rest as ordinary body text.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  .taste-skill/inspect/about-2/desktop-fold.jpg
+                  .taste-skill/inspect/about-2/desktop-page-01.jpg
+                  .taste-skill/inspect/about-2/desktop-page-02.jpg
+  tablet 768px    .taste-skill/inspect/about-2/tablet-fold.jpg
+                  .taste-skill/inspect/about-2/tablet-page-01.jpg
+                  .taste-skill/inspect/about-2/tablet-page-02.jpg
+  mobile 390px    .taste-skill/inspect/about-2/mobile-fold.jpg
+                  .taste-skill/inspect/about-2/mobile-page-01.jpg
+                  .taste-skill/inspect/about-2/mobile-page-02.jpg
+
+report: .taste-skill/inspect/about-2/report.json
+RESULT: 0 FAIL, 1 WARN — measurements pass. Passing the meter is the floor, not the grade: score the screenshots with references/critique.md.

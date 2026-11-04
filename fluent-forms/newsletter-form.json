@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Stay in the loop (Weekly Email)",
+        "status": "published",
+        "appearance_settings": [],
+        "form_fields": {
+            "fields": [
+                {
+                    "element": "input_email",
+                    "attributes": {
+                        "name": "email",
+                        "id": "c-email",
+                        "type": "email",
+                        "placeholder": "you@example.com",
+                        "class": ""
+                    },
+                    "settings": {
+                        "container_class": "field-wrap-email",
+                        "label": "Get the weekly email",
+                        "label_placement": "top",
+                        "validation_rules": {
+                            "required": {
+                                "value": true,
+                                "message": "Please enter your email."
+                            },
+                            "email": {
+                                "value": true,
+                                "message": "Please enter a valid email."
+                            }
+                        }
+                    },
+                    "editor_options": {
+                        "title": "Email Field"
+                    }
+                }
+            ],
+            "submitButton": {
+                "element": "button",
+                "attributes": {
+                    "type": "submit",
+                    "class": "ff-btn-submit btn-o"
+                },
+                "settings": {
+                    "container_class": "",
+                    "background_color": "transparent",
+                    "color": "#16140F",
+                    "button_ui": {
+                        "type": "default",
+                        "text": "Subscribe"
+                    }
+                },
+                "editor_options": {
+                    "title": "Submit Button"
+                }
+            }
+        }
+    }
+]

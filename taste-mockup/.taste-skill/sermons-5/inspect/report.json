@@ -1,0 +1,807 @@
+{
+ "url": "sermons-5.html",
+ "at": "2026-11-03T09:21:28.325Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    1,
+    0.49,
+    0.93,
+    0.66,
+    0.77,
+    0.71
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 3,
+    "transitions": 13,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5340,
+     "screens": 5.9,
+     "words": 725,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 12,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg",
+      "maxresdefault.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "S E R M O N S 講 道",
+     "words": 9,
+     "chars": 17,
+     "lines": 1,
+     "size": 43.2,
+     "vw": 3,
+     "font": "Hanken Grotesk",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.71,
+     "top": 645,
+     "mixedFonts": [
+      "Hanken Grotesk",
+      "Noto Sans TC"
+     ],
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "S E R M O N S 講 道",
+     "words": 9,
+     "lines": 1,
+     "size": 43.2,
+     "font": "Hanken Grotesk"
+    },
+    "headings": [
+     {
+      "text": "S E R M O N S 講 道",
+      "words": 9,
+      "chars": 17,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 645,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Three congregations, one archive since 2021.",
+      "words": 6,
+      "chars": 44,
+      "lines": 1,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 712,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "This Sunday",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 8,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 1030,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Latest sermons",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 8,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 1149,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "各堂最新講道",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 8,
+      "font": "Noto Sans TC",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 1269,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Sermon series 講道系列",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2035,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "希伯來書",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 2136,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "重塑生命",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 2233,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "使徒信經",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 2346,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "傳道書系列",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 2443,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "約翰福音",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 2540,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "生命中九個重要的問題",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 2637,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "活出生命特質",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 2885,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "禱告四十天",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 2998,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Every sermon 所有講道",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 3345,
+      "mixedFonts": [
+       "Hanken Grotesk",
+       "Noto Sans TC"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 11,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 3
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Noto Sans TC",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      28,
+      35,
+      43,
+      58,
+      78,
+      115
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 15,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.5
+     },
+     "measureChars": 76,
+     "max": {
+      "size": 115.2,
+      "vw": 8,
+      "font": "Hanken Grotesk",
+      "text": "This Sunday"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e8e8e3",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.1,
+      "l": 0.9
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#181715",
+       "top": 68,
+       "hsl": {
+        "h": 40,
+        "s": 0.07,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#181715",
+       "share": 0.33
+      },
+      {
+       "color": "#b4b3ab",
+       "share": 0.26
+      },
+      {
+       "color": "#e8e8e3",
+       "share": 0.18
+      },
+      {
+       "color": "#5c5b55",
+       "share": 0.18
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#181715",
+      "hsl": {
+       "h": 40,
+       "s": 0.07,
+       "l": 0.09
+      },
+      "fg": "#181715"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 72,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Search 搜尋"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 12,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.32
+     },
+     {
+      "type": "img",
+      "ratio": 0.32
+     },
+     {
+      "type": "img",
+      "ratio": 0.32
+     }
+    ],
+    "nav": {
+     "links": 11,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "hanken grotesk",
+     "noto sans tc"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5340,
+    "margins": {
+     "left": 32,
+     "right": 44
+    },
+    "sections": [
+     {
+      "sel": "section#top.o5-hero",
+      "tag": "section",
+      "top": 68,
+      "height": 832,
+      "words": 15,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 288,
+      "right": 288,
+      "textLeft": 338,
+      "textRight": 338,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#latest.o5-show",
+      "tag": "section",
+      "top": 900,
+      "height": 1005,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "This Sunday",
+       "size": 115,
+       "tag": "p"
+      },
+      "left": 32,
+      "right": 191,
+      "textLeft": 32,
+      "textRight": 191,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#series.o5-series",
+      "tag": "section",
+      "top": 1905,
+      "height": 1311,
+      "words": 123,
+      "media": 1,
+      "middle": 31,
+      "heading": {
+       "text": "希伯來書",
+       "size": 78,
+       "tag": "span"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 502,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#archive.o5-list",
+      "tag": "section",
+      "top": 3215,
+      "height": 1713,
+      "words": 186,
+      "media": 0,
+      "middle": 16,
+      "heading": {
+       "text": "Every sermon",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 44,
+      "textLeft": 32,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 4928,
+      "height": 412,
+      "words": 71,
+      "media": 0,
+      "middle": 117,
+      "heading": {
+       "text": "Visit",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "S E R M O N S 講 道",
+      "size": 43,
+      "top": 645,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 4
+     },
+     {
+      "x": 228,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 240,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "3 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (15, 16, 17, 18, 20, 22, 28, 35, 43, 58, 78, 115).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "WARN",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-5\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-5\\inspect\\desktop-page-01.jpg",
+    "C:\\Projects\\mpcbc\\taste-mockup\\.taste-skill\\sermons-5\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

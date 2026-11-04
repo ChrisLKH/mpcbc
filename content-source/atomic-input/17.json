@@ -1,0 +1,144 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"welcome_root 21\"><e-flexbox configuration-id=\"welcome_top_bar 2\"><e-image configuration-id=\"welcome_logo 1\"></e-image></e-flexbox><e-flexbox configuration-id=\"welcome_center_hero 10\"><e-paragraph configuration-id=\"welcome_fancy_text 3\"></e-paragraph><e-heading configuration-id=\"welcome_title 4\"></e-heading><e-paragraph configuration-id=\"welcome_sub_title 5\"></e-paragraph><e-flexbox configuration-id=\"welcome_lang_buttons 9\"><e-button configuration-id=\"btn_lang_en 6\"></e-button><e-button configuration-id=\"btn_lang_tc 7\"></e-button><e-button configuration-id=\"btn_lang_sc 8\"></e-button></e-flexbox></e-flexbox><e-flexbox configuration-id=\"welcome_schedule_strip 20\"><e-flexbox configuration-id=\"welcome_strip_times_row 18\"><e-paragraph configuration-id=\"welcome_time_sundays 11\"></e-paragraph><e-paragraph configuration-id=\"welcome_time_canto 12\"></e-paragraph><e-button configuration-id=\"welcome_time_live_pill 13\"></e-button><e-paragraph configuration-id=\"welcome_time_en 14\"></e-paragraph><e-paragraph configuration-id=\"welcome_time_mando 15\"></e-paragraph><e-paragraph configuration-id=\"welcome_time_kids 16\"></e-paragraph><e-paragraph configuration-id=\"welcome_time_addr 17\"></e-paragraph></e-flexbox><e-button configuration-id=\"welcome_strip_btn 19\"></e-button></e-flexbox></e-flexbox>",
+  "element_config": {
+    "welcome_logo 1": {
+      "_cssid": "mpcbc-welcome_logo",
+      "image": {
+        "src": {
+          "id": 78
+        },
+        "size": "full"
+      }
+    },
+    "welcome_top_bar 2": {
+      "_cssid": "mpcbc-welcome_top_bar"
+    },
+    "welcome_fancy_text 3": {
+      "_cssid": "mpcbc-welcome_fancy_text",
+      "paragraph": "Welcome · 歡迎你 · 欢迎你"
+    },
+    "welcome_title 4": {
+      "_cssid": "mpcbc-welcome_title",
+      "title": "MPCBC",
+      "tag": "h1"
+    },
+    "welcome_sub_title 5": {
+      "_cssid": "mpcbc-welcome_sub_title",
+      "paragraph": "蒙特利公園華人浸信會",
+      "tag": "p"
+    },
+    "btn_lang_en 6": {
+      "_cssid": "mpcbc-btn_lang_en",
+      "text": "English",
+      "link": {
+        "destination": "http://mpcbc.local/",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "btn_lang_tc 7": {
+      "_cssid": "mpcbc-btn_lang_tc",
+      "text": "繁體中文",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hant/",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "btn_lang_sc 8": {
+      "_cssid": "mpcbc-btn_lang_sc",
+      "text": "简体中文",
+      "link": {
+        "destination": "http://mpcbc.local/zh-hans/",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "welcome_lang_buttons 9": {
+      "_cssid": "mpcbc-welcome_lang_buttons"
+    },
+    "welcome_center_hero 10": {
+      "_cssid": "mpcbc-welcome_center_hero"
+    },
+    "welcome_time_sundays 11": {
+      "_cssid": "mpcbc-welcome_time_sundays",
+      "paragraph": "<strong>Sundays</strong> <span lang=\"zh-Hant\">主日</span>",
+      "tag": "p"
+    },
+    "welcome_time_canto 12": {
+      "_cssid": "mpcbc-welcome_time_canto",
+      "paragraph": "<span lang=\"zh-Hant\">粵語</span> <strong>9:30</strong>",
+      "tag": "p"
+    },
+    "welcome_time_live_pill 13": {
+      "_cssid": "mpcbc-welcome_time_live_pill",
+      "text": "Live",
+      "link": {
+        "destination": "http://mpcbc.local/watch/",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "welcome_time_en 14": {
+      "_cssid": "mpcbc-welcome_time_en",
+      "paragraph": "English <strong>11:00</strong>",
+      "tag": "p"
+    },
+    "welcome_time_mando 15": {
+      "_cssid": "mpcbc-welcome_time_mando",
+      "paragraph": "<span lang=\"zh-Hant\">國語</span> <strong>11:30</strong>",
+      "tag": "p"
+    },
+    "welcome_time_kids 16": {
+      "_cssid": "mpcbc-welcome_time_kids",
+      "paragraph": "Kids <span lang=\"zh-Hant\">兒童</span> <strong>11:00</strong>",
+      "tag": "p"
+    },
+    "welcome_time_addr 17": {
+      "_cssid": "mpcbc-welcome_time_addr",
+      "paragraph": "[Street address]",
+      "tag": "p"
+    },
+    "welcome_strip_times_row 18": {
+      "_cssid": "mpcbc-welcome_strip_times_row"
+    },
+    "welcome_strip_btn 19": {
+      "_cssid": "mpcbc-welcome_strip_btn",
+      "text": "Watch live 觀看直播 →",
+      "link": {
+        "destination": "http://mpcbc.local/watch/",
+        "isTargetBlank": false
+      },
+      "tag": "a"
+    },
+    "welcome_schedule_strip 20": {
+      "_cssid": "mpcbc-welcome_schedule_strip"
+    },
+    "welcome_root 21": {
+      "_cssid": "mpcbc-welcome_root"
+    }
+  },
+  "style": {
+    "welcome_logo 1": "min-width:0;margin:0;max-width:100%;width:140px;height:auto;object-fit:cover;",
+    "welcome_top_bar 2": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0;gap:20px;align-items:center;justify-content:space-between;",
+    "welcome_fancy_text 3": "min-width:0;margin:0;max-width:100%;",
+    "welcome_title 4": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-635da6514);font-size:112px;font-weight:700;line-height:0.95em;color:var(--mpcbc-color-54922f2e9);",
+    "welcome_sub_title 5": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:44px;line-height:1.4em;color:var(--mpcbc-color-b18f30ff2);",
+    "btn_lang_en 6": "min-width:0;margin:0;max-width:100%;padding:14px 28px 14px 24px;border-width:1px 1px 1px 1px;border-radius:999px 999px 999px 999px;font-size:20px;color:var(--mpcbc-color-54922f2e9);background-color:var(--mpcbc-color-615b42f5c);border-style:none;border-color:var(--mpcbc-color-98d20b0f3);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;font-family:var(--mpcbc-font-0071814e4);",
+    "btn_lang_tc 7": "min-width:0;margin:0;max-width:100%;padding:14px 28px 14px 24px;border-width:1px 1px 1px 1px;border-radius:999px 999px 999px 999px;font-family:var(--mpcbc-font-529ca1d09);font-size:20px;color:var(--mpcbc-color-54922f2e9);background-color:var(--mpcbc-color-615b42f5c);border-style:none;border-color:var(--mpcbc-color-98d20b0f3);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;",
+    "btn_lang_sc 8": "min-width:0;margin:0;max-width:100%;padding:14px 28px 14px 24px;border-width:1px 1px 1px 1px;border-radius:999px 999px 999px 999px;font-family:var(--mpcbc-font-c48f08c2b);font-size:20px;color:var(--mpcbc-color-54922f2e9);background-color:var(--mpcbc-color-615b42f5c);border-style:none;border-color:var(--mpcbc-color-98d20b0f3);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;width:auto;",
+    "welcome_lang_buttons 9": "min-width:0;margin:16px 0px 0px 0px;display:flex;flex-direction:row;width:100%;padding:0;gap:14px;flex-wrap:wrap;",
+    "welcome_center_hero 10": "min-width:0;margin:40px auto 40px 0px;display:flex;flex-direction:column;width:100%;padding:0;gap:28px;",
+    "welcome_time_sundays 11": "min-width:0;margin:0;max-width:100%;font-size:15px;color:var(--mpcbc-color-54922f2e9);",
+    "welcome_time_canto 12": "min-width:0;margin:0;max-width:100%;font-size:15px;color:var(--mpcbc-color-54922f2e9);",
+    "welcome_time_live_pill 13": "min-width:0;margin:0;max-width:100%;padding:2px 8px 2px 8px;border-radius:999px 999px 999px 999px;font-size:11px;font-weight:700;color:var(--mpcbc-color-54922f2e9);background-color:var(--mpcbc-color-661aec25c);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;font-family:var(--mpcbc-font-0071814e4);",
+    "welcome_time_en 14": "min-width:0;margin:0;max-width:100%;font-size:15px;color:var(--mpcbc-color-54922f2e9);",
+    "welcome_time_mando 15": "min-width:0;margin:0;max-width:100%;font-size:15px;color:var(--mpcbc-color-54922f2e9);",
+    "welcome_time_kids 16": "min-width:0;margin:0;max-width:100%;font-size:15px;color:var(--mpcbc-color-30594db85);",
+    "welcome_time_addr 17": "min-width:0;margin:0;max-width:100%;font-size:13px;color:var(--mpcbc-color-c6e48f28a);",
+    "welcome_strip_times_row 18": "min-width:0;margin:0;display:flex;flex-direction:row;width:75%;padding:0;gap:14px;align-items:center;flex-wrap:wrap;@media (--tablet){width:100%;}@media (--mobile){width:100%;}",
+    "welcome_strip_btn 19": "min-width:0;margin:0;max-width:100%;padding:12px 20px 12px 20px;border-radius:999px 999px 999px 999px;font-size:15px;font-weight:700;color:var(--mpcbc-color-7b82aa25b);background-color:var(--mpcbc-color-2d543f96b);display:inline-flex;justify-content:flex-start;align-items:center;align-self:flex-start;text-decoration:none;border-style:none;width:auto;font-family:var(--mpcbc-font-0071814e4);",
+    "welcome_schedule_strip 20": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:8px 10px 8px 24px;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-width:1px 1px 1px 1px;border-radius:999px 999px 999px 999px;background-color:var(--mpcbc-color-cf8562be1);border-style:solid;border-color:var(--mpcbc-color-6acb658b6);@media (--mobile){flex-direction:column;}",
+    "welcome_root 21": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:32px 56px 28px 56px;gap:20px;min-height:100vh;justify-content:space-between;background-color:var(--mpcbc-color-21e91e8d2);background-image:linear-gradient(90deg, var(--mpcbc-color-77d8fab8f) 0%, var(--mpcbc-color-70755dafe) 100%);@media (--mobile){padding:24px 20px 24px 20px;}"
+  }
+}

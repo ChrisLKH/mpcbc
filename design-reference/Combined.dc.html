@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Design 2 — Combined home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Geist:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FAF7F2;color:#16140F;font-family:'Geist','Noto Sans TC',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#0E6B5C}a:hover{color:#0A5247}
+h1,h2,h3,p{margin:0}
+:lang(zh-Hant){font-family:'Noto Sans TC',system-ui,sans-serif}
+.disp{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;letter-spacing:-0.035em;line-height:.98}
+.zhd{font-family:'Noto Sans TC',system-ui,sans-serif;font-weight:900;letter-spacing:.01em;line-height:1.2}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:12px;font-weight:600;font-size:17px;text-decoration:none;box-sizing:border-box;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-p{background:var(--accent,#0E6B5C);color:#fff}.btn-p:hover{background:var(--accent-deep,#0A5247);color:#fff}
+.btn-w{border-color:rgba(255,255,255,.85);color:#fff;background:transparent}.btn-w:hover{background:rgba(255,255,255,.12);color:#fff}
+.btn-o{border-color:#16140F;color:#16140F;background:transparent}.btn-o:hover{background:#16140F;color:#FAF7F2}
+.btn-light{background:#FAF7F2;color:#16140F}.btn-light:hover{background:#fff;color:#16140F}
+.tl{font-weight:600;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px}
+.ph{position:relative;overflow:hidden;background-color:#2B2620;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:4px 4px;color:rgba(255,255,255,.8);font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.03em;box-sizing:border-box}
+.navl{color:#fff;text-decoration:none;font-size:16px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+.navl:hover{color:#F4B942}
+.demo a{color:rgba(255,255,255,.78);text-decoration:none;font-size:14px;min-height:36px;padding:0 12px;border-radius:8px;display:inline-flex;align-items:center}
+.demo a:hover{background:rgba(255,255,255,.1);color:#fff}
+.demo a.on{background:#fff;color:#12110E}
+.live{display:inline-flex;align-items:center;gap:8px;background:#D92D27;color:#fff;font-weight:700;font-size:14px;padding:0 12px;min-height:30px;border-radius:999px}
+.live i{width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.6s ease-in-out infinite}
+.pill{display:inline-flex;align-items:center;background:#fff;color:#16140F;font-weight:600;font-size:14px;padding:0 12px;min-height:30px;border-radius:999px}
+@keyframes pulse{50%{opacity:.35}}
+@keyframes fade{0%{opacity:0}5%{opacity:1}25%{opacity:1}30%{opacity:0}100%{opacity:0}}
+@keyframes kb{0%{transform:scale(1)}100%{transform:scale(1.1)}}
+.shot{position:absolute;inset:0;opacity:0;animation:fade 20s linear infinite,kb 20s linear infinite;display:flex;align-items:flex-start;justify-content:flex-end;padding:96px 48px;box-sizing:border-box}
+.door{position:relative;display:block;overflow:hidden;border-radius:20px;text-decoration:none;color:#fff}
+.door .img{position:absolute;inset:0;transition:transform .8s ease}
+.door:hover .img{transform:scale(1.04)}
+.door:hover{color:#fff}
+@media (prefers-reduced-motion: reduce){.shot{animation:none!important}.shot-1{opacity:1}.live i{animation:none}.door .img{transition:none}}
+.stk{flex-direction:column;justify-content:center;line-height:1.15;text-align:center}
+.stk small{display:block;font-family:'Noto Sans TC',system-ui,sans-serif;font-size:13px;font-weight:500;opacity:.72;margin-top:3px;letter-spacing:.02em}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #FAF7F2; --accent: {{accent}}; --accent-deep: {{accentDeep}}; --sun: {{sun}}">
+
+<nav class="demo" aria-label="Demo designs" style="height: 56px; flex-shrink: 0; background: #12110E; display: flex; align-items: center; gap: 4px; padding: 0 20px">
+<span style="color: #F4B942; font-weight: 600; font-size: 14px; margin-right: 8px">Design 1 · Separate languages</span>
+<a href="Welcome.dc.html">Welcome</a>
+<a href="EnHome.dc.html">English home</a>
+<a href="ZhHome.dc.html">中文主頁</a>
+<a href="EnVisit.dc.html">Visit</a>
+<a href="EnSermons.dc.html">Messages</a>
+<a href="ZhSermons.dc.html">講道</a>
+<a href="Prayer.dc.html">Prayer</a>
+<span style="width: 1px; height: 24px; background: rgba(255,255,255,.2); margin: 0 10px"></span>
+<span style="color: #F4B942; font-weight: 600; font-size: 14px; margin-right: 8px">Design 2 · Combined</span>
+<a class="on" href="Combined.dc.html" aria-current="page">Home</a>
+<a href="Sermons.dc.html">Sermons</a>
+<span style="margin-left: auto; color: rgba(255,255,255,.55); font-size: 13px">Desktop demo · placeholder content</span>
+</nav>
+
+<section aria-label="Welcome" style="height: 860px; flex-shrink: 0; position: relative; overflow: hidden; background: #12110E">
+<div aria-hidden="true" style="position: absolute; inset: 0">
+<sc-for list="{{shots}}" as="s" hint-placeholder-count="4">
+<div class="ph shot {{s.cls}}" style="background-color: {{s.bg}}; animation-delay: {{s.delay}}; animation-play-state: {{s.ps}}">looping video · shot {{s.n}} of 4 · {{s.label}}</div>
+</sc-for>
+</div>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,17,14,.55) 0%, rgba(18,17,14,0) 22%, rgba(18,17,14,0) 40%, rgba(18,17,14,.84) 100%)"></div>
+
+<header style="position: absolute; top: 0; left: 0; right: 0; height: 96px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px">
+<span style="height: 44px; padding: 0 16px; border: 1.5px dashed rgba(255,255,255,.7); border-radius: 8px; display: inline-flex; align-items: center; color: #fff; font-family: ui-monospace, Menlo, monospace; font-size: 12px">[Church logo]</span>
+<div style="display: flex; align-items: center; gap: 32px">
+<a class="navl stk" href="EnVisit.dc.html">Visit<small lang="zh-Hant">初次來訪</small></a>
+<a class="navl stk" href="#">Sundays<small lang="zh-Hant">主日崇拜</small></a>
+<a class="navl stk" href="#kids">Kids &amp; Youth<small lang="zh-Hant">兒童及青少年</small></a>
+<a class="navl stk" href="Sermons.dc.html">Watch<small lang="zh-Hant">線上崇拜</small></a>
+<a class="navl stk" href="#">About<small lang="zh-Hant">關於我們</small></a>
+<a class="navl stk" href="#">Give<small lang="zh-Hant">奉獻</small></a>
+<a class="navl" href="#" lang="zh-Hant" style="border: 1.5px solid rgba(255,255,255,.6); border-radius: 8px; padding: 0 12px">中文</a>
+<a class="btn btn-p" href="EnVisit.dc.html" style="min-height: 56px; font-size: 16px; flex-direction: column; gap: 0; line-height: 1.15">Plan your visit<small lang="zh-Hant" style="font-family: 'Noto Sans TC', sans-serif; font-size: 13px; font-weight: 500; opacity: .85; margin-top: 3px">計劃來訪</small></a>
+</div>
+</header>
+
+<div style="position: absolute; left: 56px; right: 56px; bottom: 112px; display: flex; flex-direction: column; gap: 22px">
+<h1 class="disp" style="font-size: 132px; color: #ffffff; max-width: 11ch">You’re welcome here.</h1>
+<p style="font-size: 23px; line-height: 1.5; color: rgba(255,255,255,.9); max-width: 44ch">A friendly church in Monterey Park, with services in English, Cantonese and Mandarin.</p>
+<p lang="zh-Hant" style="font-size: 20px; color: rgba(255,255,255,.85)">歡迎你，我們有粵語及國語崇拜。</p>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 4px">
+<div style="display: flex; gap: 14px"><a class="btn btn-p" href="EnVisit.dc.html">Plan your visit</a><a class="btn btn-w" href="#">Watch live</a></div>
+<button type="button" onClick="{{toggle}}" aria-label="{{pauseLabel}}" style="min-height: 44px; padding: 0 16px; border-radius: 8px; border: 1.5px solid rgba(255,255,255,.5); background: transparent; color: #fff; font: inherit; font-size: 15px; cursor: pointer">{{pauseText}}</button>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="times-c" style="flex-shrink: 0; position: relative; z-index: 2; margin-top: -56px; padding: 0 56px">
+<div style="background: #FAF7F2; border-radius: 20px; box-shadow: 0 20px 50px rgba(18,17,14,.25); padding: 22px 28px; display: grid; grid-template-columns: 210px repeat(4, minmax(0, 1fr)) 170px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 4px; padding-right: 16px"><h2 id="times-c" class="disp" style="font-size: 28px; line-height: 1.1">Sunday worship <span lang="zh-Hant" class="zhd" style="font-size: 18px; color: #5C564D">主日崇拜</span></h2><span style="font-size: 14px; color: #5C564D">[Street address], Monterey Park</span></div>
+<div style="border-left: 1px solid #E3DACB; padding: 6px 22px; display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; color: #5C564D">Cantonese <span lang="zh-Hant">粵語</span></span><span style="color: #16140F; display: flex; align-items: baseline; gap: 6px"><span class="disp" style="font-size: 44px; line-height: 1">9:30</span><span style="font-size: 15px; font-weight: 600">AM</span></span><span style="font-size: 14px; color: #5C564D; min-height: 26px; display: flex; align-items: center"><a class="live" href="#" style="text-decoration: none; min-height: 26px; font-size: 13px"><i></i>Live now · Watch</a></span></div>
+<div style="border-left: 1px solid #E3DACB; padding: 6px 22px; display: flex; flex-direction: column; gap: 4px; background: #F4EEE3; border-radius: 12px;"><span style="font-size: 15px; font-weight: 700; color: #16140F">English</span><span style="color: var(--accent, #0E6B5C); display: flex; align-items: baseline; gap: 6px"><span class="disp" style="font-size: 44px; line-height: 1">11:00</span><span style="font-size: 15px; font-weight: 600">AM</span></span><span style="font-size: 14px; color: #5C564D; min-height: 26px; display: flex; align-items: center">Starts in 1 hr</span></div>
+<div style="border-left: 1px solid #E3DACB; padding: 6px 22px; display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; color: #5C564D">Mandarin <span lang="zh-Hant">國語</span></span><span style="color: #16140F; display: flex; align-items: baseline; gap: 6px"><span class="disp" style="font-size: 44px; line-height: 1">11:30</span><span style="font-size: 15px; font-weight: 600">AM</span></span><span style="font-size: 14px; color: #5C564D; min-height: 26px; display: flex; align-items: center">Starts in 2 hr</span></div>
+<div style="border-left: 1px solid #E3DACB; padding: 6px 22px; display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; color: #16140F">Kids’ worship</span><span style="color: #16140F; display: flex; align-items: baseline; gap: 6px"><span class="disp" style="font-size: 44px; line-height: 1">11:00</span><span style="font-size: 15px; font-weight: 600">AM</span></span><span style="font-size: 14px; color: #5C564D; min-height: 26px; display: flex; align-items: center">Classes in English</span></div>
+<div style="border-left: 1px solid #E3DACB; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 15px"><a class="tl" href="#" style="align-self: flex-start">Directions</a><a class="tl" href="#" style="align-self: flex-start">Add to calendar</a></div>
+</div>
+</section>
+
+<section style="flex-shrink: 0; padding: 128px 56px 136px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 40px">
+<h2 class="disp" style="font-size: 88px">Find your place</h2>
+<p style="font-size: 20px; line-height: 1.5; color: #5C564D; max-width: 32ch">Three services on one Sunday morning, and a place for your kids.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px">
+<a class="door" href="#" style="height: 560px">
+<div class="img ph" style="background-color: #3A2E24; padding: 20px">photo · English service</div>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,17,14,0) 40%, rgba(18,17,14,.88) 100%)"></div>
+<div style="position: absolute; left: 28px; right: 28px; bottom: 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 class="disp" style="font-size: 40px">English</h3>
+<span style="font-size: 16px; font-weight: 600">In English</span>
+<p style="font-size: 16px; line-height: 1.5; color: rgba(255,255,255,.9)">Honest teaching, good music, lunch after.</p>
+<span style="font-weight: 600; font-size: 16px">See Sundays →</span>
+</div>
+</a>
+<a class="door" href="#" style="height: 560px">
+<div class="img ph" style="background-color: #3B3226; padding: 20px">photo · Cantonese service, tea after</div>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,17,14,0) 40%, rgba(18,17,14,.88) 100%)"></div>
+<div style="position: absolute; left: 28px; right: 28px; bottom: 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 class="zhd" lang="zh-Hant" style="font-size: 40px">粵語崇拜</h3>
+<span style="font-size: 16px; font-weight: 600">In Cantonese</span>
+<p lang="zh-Hant" style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.9)">崇拜後一起飲茶傾偈。</p>
+<span style="font-weight: 600; font-size: 16px">Learn more →</span>
+</div>
+</a>
+<a class="door" href="#" style="height: 560px">
+<div class="img ph" style="background-color: #2A2F36; padding: 20px">photo · Mandarin service, small group</div>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,17,14,0) 40%, rgba(18,17,14,.88) 100%)"></div>
+<div style="position: absolute; left: 28px; right: 28px; bottom: 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 class="zhd" lang="zh-Hant" style="font-size: 40px">國語崇拜</h3>
+<span style="font-size: 16px; font-weight: 600">In Mandarin</span>
+<p lang="zh-Hant" style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.9)">新朋友很多，歡迎你。</p>
+<span style="font-weight: 600; font-size: 16px">Learn more →</span>
+</div>
+</a>
+<a class="door" href="#kids" style="height: 560px">
+<div class="img ph" style="background-color: #4A3A20; padding: 20px">photo · kids’ craft table (consent-cleared)</div>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,17,14,0) 40%, rgba(18,17,14,.88) 100%)"></div>
+<div style="position: absolute; left: 28px; right: 28px; bottom: 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 class="disp" style="font-size: 40px">Kids &amp; Youth</h3>
+<span style="font-size: 16px; font-weight: 600">Ages 0–18</span>
+<p style="font-size: 16px; line-height: 1.5; color: rgba(255,255,255,.9)">Safe, fun classes while you’re in the service.</p>
+<span style="font-weight: 600; font-size: 16px">See Kids →</span>
+</div>
+</a>
+</div>
+</section>
+
+
+
+<section lang="zh-Hant" aria-label="中文訪客" style="flex-shrink: 0; background: var(--accent, #0E6B5C); color: #ffffff; padding: 72px 56px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 48px">
+<div style="display: flex; align-items: baseline; gap: 36px">
+<h2 class="zhd" style="font-size: 64px">中文？</h2>
+<p style="font-size: 22px; line-height: 1.7; color: rgba(255,255,255,.92)">我們有中文資訊：崇拜時間、地址、兒童安排。</p>
+</div>
+<a class="btn btn-light" href="#" style="flex-shrink: 0; font-size: 18px">中文資訊 →</a>
+</div>
+</section>
+
+<section id="kids" style="flex-shrink: 0; background: var(--sun, #F4B942); padding: 128px 56px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 72px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<h2 class="disp" style="font-size: 92px">Your kids will want to come back.</h2>
+<p style="font-size: 21px; line-height: 1.55; max-width: 36ch">Safe, fun classes for every age while you’re in the service.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px">
+<div style="background: #FAF7F2; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 700; font-size: 19px">Nursery</span><span style="font-size: 15px; color: #5C564D">Ages 0–3 · all morning</span></div>
+<div style="background: #FAF7F2; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 700; font-size: 19px">Kids</span><span style="font-size: 15px; color: #5C564D">Ages 4–11 · [time]</span></div>
+<div style="background: #FAF7F2; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 700; font-size: 19px">Youth</span><span style="font-size: 15px; color: #5C564D">Ages 12–18 · Fridays [7:30 PM]</span></div>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; font-size: 17px">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#16140F" stroke-width="2.2" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M4 10.5l4 4 8-9"></path></svg>Secure check-in with matching tags</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#16140F" stroke-width="2.2" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M4 10.5l4 4 8-9"></path></svg>Background-checked volunteers</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#16140F" stroke-width="2.2" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M4 10.5l4 4 8-9"></path></svg>Classes taught in English</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#16140F" stroke-width="2.2" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M4 10.5l4 4 8-9"></path></svg>Chinese-speaking helpers for parents</li>
+</ul>
+<p lang="zh-Hant" style="font-size: 18px; line-height: 1.7; font-weight: 500; background: rgba(250,247,242,.6); border-radius: 12px; padding: 12px 18px; align-self: flex-start">課堂以英語進行，登記處有中文同工協助家長。</p>
+<div><a class="btn btn-o" href="#">See Kids &amp; Youth</a></div>
+</div>
+<div style="position: relative; height: 660px">
+<div class="ph" style="position: absolute; left: 0; top: 40px; width: 380px; height: 460px; border-radius: 20px; transform: rotate(-3deg); padding: 18px; box-shadow: 0 24px 48px rgba(22,20,15,.25)">photo · Sunday school craft</div>
+<div class="ph" style="position: absolute; right: 0; top: 0; width: 300px; height: 360px; border-radius: 20px; transform: rotate(2.5deg); background-color: #3A2E24; padding: 18px; box-shadow: 0 24px 48px rgba(22,20,15,.25)">photo · VBS game</div>
+<div class="ph" style="position: absolute; right: 40px; bottom: 0; width: 320px; height: 240px; border-radius: 20px; transform: rotate(-1.5deg); background-color: #2E3A33; padding: 18px; box-shadow: 0 24px 48px rgba(22,20,15,.25)">photo · parent at check-in desk</div>
+</div>
+</section>
+
+<section style="flex-shrink: 0; padding: 136px 56px; display: grid; grid-template-columns: 440px minmax(0, 1fr); gap: 80px; align-items: center">
+<div class="ph" style="height: 540px; border-radius: 20px; padding: 18px">pastor portrait</div>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p class="disp" style="font-size: 56px; line-height: 1.08; font-weight: 600">“Whoever you are and wherever you’re from, there’s a place for you here. Come and see.”</p>
+<span style="font-size: 18px; color: #5C564D">[Pastor name], Senior Pastor</span>
+</div>
+<div style="background: #EDE6DA; border-radius: 20px; padding: 32px 36px; display: flex; align-items: center; justify-content: space-between; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h3 style="font-size: 26px; font-weight: 700">How can we pray for you?</h3>
+<p style="font-size: 17px; line-height: 1.5; color: #5C564D">Our pastors read every request and keep it private.</p>
+</div>
+<div style="display: flex; align-items: center; gap: 20px; flex-shrink: 0">
+<a class="btn btn-o" href="Prayer.dc.html">Prayer request</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<section style="flex-shrink: 0; background: #EDE6DA; padding: 128px 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<h2 class="disp" style="font-size: 64px">Coming up</h2>
+<div style="display: flex; flex-direction: column">
+<a href="#" style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 24px; align-items: center; padding: 22px 0; border-top: 1px solid #D6CCBC; text-decoration: none; color: #16140F"><span style="display: flex; flex-direction: column; align-items: center; background: #FAF7F2; border-radius: 14px; padding: 10px 0"><span style="font-size: 14px; font-weight: 600; color: #5C564D">[MON]</span><span class="disp" style="font-size: 36px">[00]</span></span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 21px; font-weight: 600">[Event title]</span><span style="font-size: 16px; color: #5C564D">[Time] · [Place]</span></span></a>
+<a href="#" style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 24px; align-items: center; padding: 22px 0; border-top: 1px solid #D6CCBC; text-decoration: none; color: #16140F"><span style="display: flex; flex-direction: column; align-items: center; background: #FAF7F2; border-radius: 14px; padding: 10px 0"><span style="font-size: 14px; font-weight: 600; color: #5C564D">[MON]</span><span class="disp" style="font-size: 36px">[00]</span></span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 21px; font-weight: 600">[Event title]</span><span style="font-size: 16px; color: #5C564D">[Time] · [Place]</span></span></a>
+<a href="#" style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 24px; align-items: center; padding: 22px 0; border-top: 1px solid #D6CCBC; border-bottom: 1px solid #D6CCBC; text-decoration: none; color: #16140F"><span style="display: flex; flex-direction: column; align-items: center; background: #FAF7F2; border-radius: 14px; padding: 10px 0"><span style="font-size: 14px; font-weight: 600; color: #5C564D">[MON]</span><span class="disp" style="font-size: 36px">[00]</span></span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 21px; font-weight: 600">[Event title]</span><span style="font-size: 16px; color: #5C564D">[Time] · [Place]</span></span></a>
+</div>
+<div><a class="tl" href="#">See all events</a></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 32px">
+<h2 class="disp" style="font-size: 64px">Latest messages</h2>
+<div style="display: flex; flex-direction: column">
+<a href="#" style="display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 24px; align-items: center; padding: 18px 0; border-top: 1px solid #D6CCBC; text-decoration: none; color: #16140F"><span class="ph" style="height: 84px; border-radius: 12px; background-color: #12110E; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 28 28" aria-hidden="true"><path d="M9 6l14 8-14 8z" fill="#FAF7F2"></path></svg></span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 20px; font-weight: 600">[Sermon title]</span><span style="font-size: 16px; color: #5C564D">English · [Speaker]</span></span></a>
+<a href="#" style="display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 24px; align-items: center; padding: 18px 0; border-top: 1px solid #D6CCBC; text-decoration: none; color: #16140F"><span class="ph" style="height: 84px; border-radius: 12px; background-color: #12110E; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 28 28" aria-hidden="true"><path d="M9 6l14 8-14 8z" fill="#FAF7F2"></path></svg></span><span style="display: flex; flex-direction: column; gap: 4px"><span lang="zh-Hant" style="font-size: 20px; font-weight: 700">[講道題目]</span><span style="font-size: 16px; color: #5C564D">Cantonese · [Speaker]</span></span></a>
+<a href="#" style="display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 24px; align-items: center; padding: 18px 0; border-top: 1px solid #D6CCBC; border-bottom: 1px solid #D6CCBC; text-decoration: none; color: #16140F"><span class="ph" style="height: 84px; border-radius: 12px; background-color: #12110E; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 28 28" aria-hidden="true"><path d="M9 6l14 8-14 8z" fill="#FAF7F2"></path></svg></span><span style="display: flex; flex-direction: column; gap: 4px"><span lang="zh-Hant" style="font-size: 20px; font-weight: 700">[講道題目]</span><span style="font-size: 16px; color: #5C564D">Mandarin · [Speaker]</span></span></a>
+</div>
+<div><a class="tl" href="Sermons.dc.html">All messages</a></div>
+</div>
+</section>
+
+<section style="flex-shrink: 0; padding: 112px 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<h2 class="disp" style="font-size: 64px">Stay in the loop</h2>
+<div style="display: flex; gap: 28px; font-size: 18px; align-items: center"><a class="tl" href="#">Instagram @[handle]</a><a class="tl" href="#">YouTube</a><a class="tl" href="#">WeChat <span lang="zh-Hant">微信群</span></a></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<label for="c-email" style="font-weight: 600; font-size: 17px">Get the weekly email</label>
+<div style="display: flex; gap: 12px"><input id="c-email" type="email" placeholder="you@example.com" style="flex-grow: 1; min-height: 56px; border-radius: 12px; border: 1.5px solid #CFC5B4; background: #fff; padding: 0 16px; font: inherit; font-size: 17px"><button class="btn btn-o" type="button">Subscribe</button></div>
+</div>
+</section>
+
+<footer style="flex-grow: 1; background: #12110E; color: #ffffff; padding: 88px 56px 56px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; font-size: 16px; line-height: 1.7">
+<div style="display: flex; flex-direction: column; gap: 14px"><span style="height: 44px; padding: 0 16px; border: 1.5px dashed rgba(255,255,255,.6); border-radius: 8px; display: inline-flex; align-items: center; align-self: flex-start; font-family: ui-monospace, Menlo, monospace; font-size: 12px">[Church logo]</span><p style="color: rgba(255,255,255,.8)">Monterey Park Chinese Baptist Church<br>[Street address], Monterey Park, CA</p><a class="tl" href="#" style="color: #ffffff; align-self: flex-start">Directions</a></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 700">Sundays</span><span style="color: rgba(255,255,255,.8)">Cantonese <span lang="zh-Hant">粵語</span> 9:30 AM</span><span style="color: rgba(255,255,255,.8)">English 11:00 AM</span><span style="color: rgba(255,255,255,.8)">Mandarin <span lang="zh-Hant">國語</span> 11:30 AM</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 700">Explore</span><a href="EnVisit.dc.html" style="color: rgba(255,255,255,.8); text-decoration: none">Visit</a><a href="#" style="color: rgba(255,255,255,.8); text-decoration: none">Kids &amp; Youth</a><a href="#" style="color: rgba(255,255,255,.8); text-decoration: none">Watch</a><a href="#" style="color: rgba(255,255,255,.8); text-decoration: none">Give</a><a href="Prayer.dc.html" style="color: rgba(255,255,255,.8); text-decoration: none">Prayer request</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700">Contact</span><span style="color: rgba(255,255,255,.8)">[Phone]</span><span style="color: rgba(255,255,255,.8)">[Email]</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255,255,255,.15); padding-top: 24px; display: flex; justify-content: space-between; font-size: 14px; color: rgba(255,255,255,.6)"><span>Since 1976 · Monterey Park, California</span><a href="#" lang="zh-Hant" style="color: rgba(255,255,255,.8)">中文資訊</a></div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"palette":{"editor":"enum","options":["Evergreen & Sun","Plum & Apricot"],"default":"Evergreen & Sun","section":"Colour"},"$preview":{"width":1440,"height":6450}}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) this.setState({ paused: true });
+  }
+  renderVals() {
+    var st = this.state || {};
+    var p = !!st.paused;
+    var plum = (this.props.palette ?? 'Evergreen & Sun') === 'Plum & Apricot';
+    var shots = [
+      { label: 'greeters at the front door, handshake', bg: '#3A2E24' },
+      { label: 'worship, wide, slowed to 70%', bg: '#2A2F36' },
+      { label: 'tea and lunch after the service', bg: '#3B3226' },
+      { label: 'kids running into class (from behind)', bg: '#2E3A33' }
+    ];
+    return {
+      accent: plum ? '#7A2E5E' : '#0E6B5C',
+      accentDeep: plum ? '#5E2248' : '#0A5247',
+      sun: plum ? '#F2A65A' : '#F4B942',
+      shots: shots.map(function (s, i) { return { label: s.label, bg: s.bg, n: i + 1, cls: 'shot-' + (i + 1), delay: (i * 5) + 's', ps: p ? 'paused' : 'running' }; }),
+      toggle: () => this.setState({ paused: !p }),
+      pauseLabel: p ? 'Play background video' : 'Pause background video',
+      pauseText: p ? 'Play video' : 'Pause video'
+    };
+  }
+}
+</script>
+</body>
+</html>

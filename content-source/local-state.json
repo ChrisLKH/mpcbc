@@ -1,0 +1,1630 @@
+{
+    "url": "http://mpcbc.local",
+    "front_page": 21,
+    "elementor_version": "4.3.4",
+    "atomic_active": true,
+    "mcp_exposed": false,
+    "pages": [
+        {
+            "id": 109,
+            "title": "Spike Tabs",
+            "slug": "spike-tabs",
+            "status": "publish",
+            "widgets": {
+                "container": 5,
+                "nested-tabs": 1,
+                "heading": 4
+            },
+            "copy": [
+                {
+                    "id": "head_tab_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Kids Panel Content"
+                },
+                {
+                    "id": "head_tab_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Youth Panel Content"
+                },
+                {
+                    "id": "head_tab_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Fellowships Panel Content"
+                },
+                {
+                    "id": "head_tab_4",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Care Panel Content"
+                }
+            ]
+        },
+        {
+            "id": 60,
+            "title": "Visit 初次來訪",
+            "slug": "visit",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "visit_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Visit"
+                },
+                {
+                    "id": "visit_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "初次來訪"
+                },
+                {
+                    "id": "visit_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "visit_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 61,
+            "title": "Sundays 主日崇拜",
+            "slug": "sundays",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "sundays_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sundays"
+                },
+                {
+                    "id": "sundays_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "主日崇拜"
+                },
+                {
+                    "id": "sundays_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "sundays_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 62,
+            "title": "Kids & Youth 兒童及青少年",
+            "slug": "kids",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "kids_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Kids & Youth"
+                },
+                {
+                    "id": "kids_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "兒童及青少年"
+                },
+                {
+                    "id": "kids_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "kids_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 63,
+            "title": "Watch 線上崇拜",
+            "slug": "watch",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "watch_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Watch"
+                },
+                {
+                    "id": "watch_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "線上崇拜"
+                },
+                {
+                    "id": "watch_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "watch_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 64,
+            "title": "About 關於我們",
+            "slug": "about",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "about_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "About"
+                },
+                {
+                    "id": "about_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "關於我們"
+                },
+                {
+                    "id": "about_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "about_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "title": "Give 奉獻",
+            "slug": "give",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "give_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Give"
+                },
+                {
+                    "id": "give_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "奉獻"
+                },
+                {
+                    "id": "give_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "give_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 66,
+            "title": "中文",
+            "slug": "zh",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "zh_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Chinese Ministry"
+                },
+                {
+                    "id": "zh_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "中文 · 華人浸信會"
+                },
+                {
+                    "id": "zh_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[This section is currently being prepared as part of the MPCBC website update.]"
+                },
+                {
+                    "id": "zh_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "title": "Home",
+            "slug": "home",
+            "status": "publish",
+            "widgets": {
+                "container": 109,
+                "heading": 126,
+                "text-editor": 3,
+                "image": 14,
+                "button": 22,
+                "shortcode": 3,
+                "nested-tabs": 2,
+                "icon-list": 2
+            },
+            "copy": [
+                {
+                    "id": "hero_heading",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "You’re welcome here."
+                },
+                {
+                    "id": "hero_subtext_en",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "A church family in Alhambra, with services in English, Cantonese and Mandarin."
+                },
+                {
+                    "id": "hero_subtext_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "歡迎你，我們有英語、粵語及國語崇拜。"
+                },
+                {
+                    "id": "hero_link_plan",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "First time here? Plan your visit"
+                },
+                {
+                    "id": "hero_link_plan_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "初次來訪"
+                },
+                {
+                    "id": "times_header_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sunday worship"
+                },
+                {
+                    "id": "times_header_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "主日崇拜"
+                },
+                {
+                    "id": "times_header_addr",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "302 W. Commonwealth Ave., Alhambra"
+                },
+                {
+                    "id": "times_canto_label",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Cantonese"
+                },
+                {
+                    "id": "times_canto_label_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "粵語"
+                },
+                {
+                    "id": "times_canto_time",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "11:00"
+                },
+                {
+                    "id": "times_canto_time_ampm",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "AM"
+                },
+                {
+                    "id": "times_canto_pill",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "Watch worship"
+                },
+                {
+                    "id": "times_en_label",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "English"
+                },
+                {
+                    "id": "times_en_time",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "11:00"
+                },
+                {
+                    "id": "times_en_time_ampm",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "AM"
+                },
+                {
+                    "id": "times_en_note",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Fellowship Hall"
+                },
+                {
+                    "id": "times_mandarin_label",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Mandarin"
+                },
+                {
+                    "id": "times_mandarin_label_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "國語"
+                },
+                {
+                    "id": "times_mandarin_time",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "9:00"
+                },
+                {
+                    "id": "times_mandarin_time_ampm",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "AM"
+                },
+                {
+                    "id": "times_mandarin_note",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sanctuary"
+                },
+                {
+                    "id": "times_kids_label",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Kids"
+                },
+                {
+                    "id": "times_kids_label_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "兒童"
+                },
+                {
+                    "id": "times_kids_time",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "11:00"
+                },
+                {
+                    "id": "times_kids_time_ampm",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "AM"
+                },
+                {
+                    "id": "times_kids_note",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Children’s worship"
+                },
+                {
+                    "id": "times_link_directions",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Directions"
+                },
+                {
+                    "id": "times_link_calendar",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Add to calendar"
+                },
+                {
+                    "id": "watch_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "This Sunday"
+                },
+                {
+                    "id": "watch_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "本主日"
+                },
+                {
+                    "id": "watch_lede",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Worship in Cantonese, English or Mandarin. Explore messages from each congregation."
+                },
+                {
+                    "id": "watch_canto_h3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "粵語主日崇拜"
+                },
+                {
+                    "id": "watch_canto_kick",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Cantonese · 11:00 AM"
+                },
+                {
+                    "id": "watch_canto_desc",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sunday worship in Cantonese in the Sanctuary."
+                },
+                {
+                    "id": "watch_canto_btn_watch",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Watch worship"
+                },
+                {
+                    "id": "watch_canto_btn_arch",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Archive 存檔"
+                },
+                {
+                    "id": "watch_en_h3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "English Worship"
+                },
+                {
+                    "id": "watch_en_kick",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "English · 11:00 AM"
+                },
+                {
+                    "id": "watch_en_desc",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Connect Ministry meets in the Fellowship Hall for English worship."
+                },
+                {
+                    "id": "watch_en_btn_remind",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Watch messages"
+                },
+                {
+                    "id": "watch_en_btn_arch",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Archive"
+                },
+                {
+                    "id": "watch_mand_h3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "國語主日崇拜"
+                },
+                {
+                    "id": "watch_mand_kick",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Mandarin · 9:00 AM"
+                },
+                {
+                    "id": "watch_mand_desc",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sunday worship in Mandarin in the Sanctuary."
+                },
+                {
+                    "id": "watch_mand_btn_remind",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Watch worship"
+                },
+                {
+                    "id": "watch_mand_btn_arch",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Archive 存檔"
+                },
+                {
+                    "id": "watch_foot_text",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Explore the church’s sermon archives by congregation."
+                },
+                {
+                    "id": "watch_foot_all_sermons",
+                    "type": "button",
+                    "key": "text",
+                    "text": "All sermons"
+                },
+                {
+                    "id": "watch_foot_yt",
+                    "type": "button",
+                    "key": "text",
+                    "text": "English YouTube"
+                },
+                {
+                    "id": "news_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Newsletter"
+                },
+                {
+                    "id": "news_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "通訊"
+                },
+                {
+                    "id": "news_lede",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Stories, reflections and ministry updates from our church family."
+                },
+                {
+                    "id": "news_issue_kicker",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Newsletter · July 2026"
+                },
+                {
+                    "id": "news_main_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Faith, testimony and mission"
+                },
+                {
+                    "id": "news_main_desc",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "The July issue shares personal testimonies, reflections on trusting God and mission experiences in Mongolia and Hong Kong."
+                },
+                {
+                    "id": "news_main_desc_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "2026年7月會刊：信仰見證、信靠神與宣教分享。"
+                },
+                {
+                    "id": "news_btn_read",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Read the newsletter"
+                },
+                {
+                    "id": "news_btn_pdf",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Open PDF"
+                },
+                {
+                    "id": "news_side_h3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Explore more"
+                },
+                {
+                    "id": "news_side_h3_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "更多內容"
+                },
+                {
+                    "id": "news_side_t_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "January 2026 newsletter"
+                },
+                {
+                    "id": "news_side_d_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Devotionals, church reflections and mission updates from Paris."
+                },
+                {
+                    "id": "news_side_t_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Read the Bible in a year"
+                },
+                {
+                    "id": "news_side_d_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Learn about the Reformation Reading Plan and YouVersion Bible App."
+                },
+                {
+                    "id": "news_side_t_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Fellowship and Bible study"
+                },
+                {
+                    "id": "news_side_d_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Explore opportunities to study, pray and grow together."
+                },
+                {
+                    "id": "news_side_form",
+                    "type": "shortcode",
+                    "key": "shortcode",
+                    "text": "[fluentform id=\"4\"]"
+                },
+                {
+                    "id": "pastors_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Meet our pastors"
+                },
+                {
+                    "id": "pastors_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "認識我們的牧師"
+                },
+                {
+                    "id": "pastors_lede",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Meet our church’s pastoral team. [Current congregation assignments to be confirmed.]"
+                },
+                {
+                    "id": "pastor_kicker_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Pastor · Cantonese"
+                },
+                {
+                    "id": "pastor_name_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Rev. Caleb Cheung, Ph.D."
+                },
+                {
+                    "id": "pastor_name_zh_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "張健庭牧師"
+                },
+                {
+                    "id": "pastor_bio_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Senior pastor; studied at Fuller Theological Seminary and Claremont Graduate University."
+                },
+                {
+                    "id": "pastor_kicker_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Pastor · English"
+                },
+                {
+                    "id": "pastor_name_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Rev. Edward Lu"
+                },
+                {
+                    "id": "pastor_name_zh_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[牧師姓名]"
+                },
+                {
+                    "id": "pastor_bio_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Lead pastor of Connect Ministry, the church’s English-language ministry."
+                },
+                {
+                    "id": "pastor_kicker_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Pastor · Mandarin"
+                },
+                {
+                    "id": "pastor_name_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Pastor name]"
+                },
+                {
+                    "id": "pastor_name_zh_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[牧師姓名]"
+                },
+                {
+                    "id": "pastor_bio_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[One line about this pastor.]"
+                },
+                {
+                    "id": "community_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Community"
+                },
+                {
+                    "id": "community_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "團契"
+                },
+                {
+                    "id": "community_lede",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "A place for every age, in every language."
+                },
+                {
+                    "id": "comm_panel_h3_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Kids"
+                },
+                {
+                    "id": "comm_panel_h3_zh_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "兒童"
+                },
+                {
+                    "id": "comm_panel_desc_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Children’s worship is held on Sundays at 11:00 AM."
+                },
+                {
+                    "id": "comm_btn_1_0",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Nursery (0–3)"
+                },
+                {
+                    "id": "comm_btn_1_1",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Sunday school (4–11)"
+                },
+                {
+                    "id": "comm_link_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "More about kids"
+                },
+                {
+                    "id": "comm_panel_h3_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Youth and students"
+                },
+                {
+                    "id": "comm_panel_h3_zh_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "青少年"
+                },
+                {
+                    "id": "comm_panel_desc_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Youth Sunday School meets Sundays, 10:00–10:45 AM, in the education annex."
+                },
+                {
+                    "id": "comm_btn_2_0",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Youth Sunday School"
+                },
+                {
+                    "id": "comm_btn_2_1",
+                    "type": "button",
+                    "key": "text",
+                    "text": "College / Career Fellowship"
+                },
+                {
+                    "id": "comm_panel_h3_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Fellowships"
+                },
+                {
+                    "id": "comm_panel_h3_zh_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "團契"
+                },
+                {
+                    "id": "comm_panel_desc_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Study the Bible, pray and grow together. College / Career Fellowship meets Mondays, 6:30–9:00 PM, in West Covina."
+                },
+                {
+                    "id": "comm_btn_3_0",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Cantonese 粵語"
+                },
+                {
+                    "id": "comm_btn_3_1",
+                    "type": "button",
+                    "key": "text",
+                    "text": "English"
+                },
+                {
+                    "id": "comm_btn_3_2",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Mandarin 國語"
+                },
+                {
+                    "id": "comm_panel_h3_4",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Care"
+                },
+                {
+                    "id": "comm_panel_h3_zh_4",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "關懷"
+                },
+                {
+                    "id": "comm_panel_desc_4",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[How the church cares for people when life is hard.]"
+                },
+                {
+                    "id": "comm_btn_4_0",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Prayer request"
+                },
+                {
+                    "id": "comm_btn_4_1",
+                    "type": "button",
+                    "key": "text",
+                    "text": "[Counseling]"
+                },
+                {
+                    "id": "comm_btn_4_2",
+                    "type": "button",
+                    "key": "text",
+                    "text": "[Visitation]"
+                },
+                {
+                    "id": "kids_heading",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Your kids will want to come back."
+                },
+                {
+                    "id": "kids_lede",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Safe, fun classes for every age while you’re in the service."
+                },
+                {
+                    "id": "tile_nursery_name",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Nursery"
+                },
+                {
+                    "id": "tile_nursery_detail",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Ages 0–3 · all morning"
+                },
+                {
+                    "id": "tile_kids_name",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Kids"
+                },
+                {
+                    "id": "tile_kids_detail",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Ages 4–11 · [time]"
+                },
+                {
+                    "id": "tile_youth_name",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Youth"
+                },
+                {
+                    "id": "tile_youth_detail",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sunday school · Sundays 10:00–10:45 AM"
+                },
+                {
+                    "id": "kids_zh_note_txt",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "課堂以英語進行，登記處有中文同工協助家長。"
+                },
+                {
+                    "id": "kids_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "See Kids & Youth"
+                },
+                {
+                    "id": "events_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Coming up"
+                },
+                {
+                    "id": "events_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "近期活動"
+                },
+                {
+                    "id": "event_mon_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[MON]"
+                },
+                {
+                    "id": "event_day_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[00]"
+                },
+                {
+                    "id": "event_title_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Event title]"
+                },
+                {
+                    "id": "event_meta_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Time] · [Place]"
+                },
+                {
+                    "id": "event_mon_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[MON]"
+                },
+                {
+                    "id": "event_day_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[00]"
+                },
+                {
+                    "id": "event_title_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Event title]"
+                },
+                {
+                    "id": "event_meta_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Time] · [Place]"
+                },
+                {
+                    "id": "event_mon_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[MON]"
+                },
+                {
+                    "id": "event_day_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[00]"
+                },
+                {
+                    "id": "event_title_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Event title]"
+                },
+                {
+                    "id": "event_meta_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Time] · [Place]"
+                },
+                {
+                    "id": "events_link_all",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "See all events"
+                },
+                {
+                    "id": "sermons_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Recent sermons"
+                },
+                {
+                    "id": "sermons_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "最近講道"
+                },
+                {
+                    "id": "sermon_title_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Sermon title]"
+                },
+                {
+                    "id": "sermon_meta_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "English · [Speaker]"
+                },
+                {
+                    "id": "sermon_title_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[講道題目]"
+                },
+                {
+                    "id": "sermon_meta_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Cantonese · [Speaker]"
+                },
+                {
+                    "id": "sermon_title_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[講道題目]"
+                },
+                {
+                    "id": "sermon_meta_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Mandarin · [Speaker]"
+                },
+                {
+                    "id": "sermons_link_all",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "All sermons"
+                },
+                {
+                    "id": "connect_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "We’d love to hear from you."
+                },
+                {
+                    "id": "connect_title_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "與我們聯絡"
+                },
+                {
+                    "id": "connect_lede",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Tell us you’re coming and someone will look out for you. Or send a prayer request. A pastor reads every one and keeps it private."
+                },
+                {
+                    "id": "form_say_hello",
+                    "type": "shortcode",
+                    "key": "shortcode",
+                    "text": "[fluentform id=\"5\"]"
+                },
+                {
+                    "id": "form_prayer_req",
+                    "type": "shortcode",
+                    "key": "shortcode",
+                    "text": "[fluentform id=\"3\"]"
+                },
+                {
+                    "id": "give_heading",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Give"
+                },
+                {
+                    "id": "give_heading_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "奉獻"
+                },
+                {
+                    "id": "give_verse",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Make checks payable to MPCBC and mail to the church address."
+                },
+                {
+                    "id": "give_verse_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "奉獻支票抬頭請寫 MPCBC，郵寄至教會地址。"
+                },
+                {
+                    "id": "give_btn_online",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Ways to give"
+                },
+                {
+                    "id": "give_link_other",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Giving information"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Welcome",
+            "slug": "welcome",
+            "status": "publish",
+            "widgets": {
+                "container": 6,
+                "image": 1,
+                "eael-fancy-text": 1,
+                "heading": 1,
+                "text-editor": 7,
+                "button": 5
+            },
+            "copy": [
+                {
+                    "id": "welcome_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "MPCBC"
+                },
+                {
+                    "id": "welcome_sub_title",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "蒙特利公園華人浸信會"
+                },
+                {
+                    "id": "btn_lang_en",
+                    "type": "button",
+                    "key": "text",
+                    "text": "English"
+                },
+                {
+                    "id": "btn_lang_tc",
+                    "type": "button",
+                    "key": "text",
+                    "text": "繁體中文"
+                },
+                {
+                    "id": "btn_lang_sc",
+                    "type": "button",
+                    "key": "text",
+                    "text": "简体中文"
+                },
+                {
+                    "id": "welcome_time_sundays",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "Sundays 主日"
+                },
+                {
+                    "id": "welcome_time_canto",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "粵語 9:30"
+                },
+                {
+                    "id": "welcome_time_live_pill",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Live"
+                },
+                {
+                    "id": "welcome_time_en",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "English 11:00"
+                },
+                {
+                    "id": "welcome_time_mando",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "國語 11:30"
+                },
+                {
+                    "id": "welcome_time_kids",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "Kids 兒童 11:00"
+                },
+                {
+                    "id": "welcome_time_addr",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "[Street address]"
+                },
+                {
+                    "id": "welcome_strip_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Watch live 觀看直播 →"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "title": "Prayer",
+            "slug": "prayer",
+            "status": "publish",
+            "widgets": {
+                "container": 4,
+                "heading": 1,
+                "text-editor": 1,
+                "icon-list": 1,
+                "shortcode": 1
+            },
+            "copy": [
+                {
+                    "id": "prayer_heading",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "How can we pray for you?"
+                },
+                {
+                    "id": "prayer_lead",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "Our pastors read every request and pray for you by name this week."
+                },
+                {
+                    "id": "prayer_form_embed",
+                    "type": "shortcode",
+                    "key": "shortcode",
+                    "text": "[fluentform id=\"3\"]"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "title": "Coming soon",
+            "slug": "coming-soon",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "text-editor": 2,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "coming_soon_title",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Coming soon"
+                },
+                {
+                    "id": "coming_soon_zh",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "即將推出 · 敬請期待"
+                },
+                {
+                    "id": "coming_soon_desc",
+                    "type": "text-editor",
+                    "key": "editor",
+                    "text": "This section is currently being prepared as part of the MPCBC website update."
+                },
+                {
+                    "id": "coming_soon_btn",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Back to Home →"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "title": "MPCBC – Footer",
+            "slug": "mpcbc-footer",
+            "status": "publish",
+            "widgets": {
+                "container": 7,
+                "heading": 25
+            },
+            "copy": [
+                {
+                    "id": "mpcbc_foot_logo",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "[Church logo]"
+                },
+                {
+                    "id": "mpcbc_foot_address",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Monterey Park Chinese Baptist Church"
+                },
+                {
+                    "id": "mpcbc_foot_address_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "慕道園華人浸信會"
+                },
+                {
+                    "id": "mpcbc_foot_address_street",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "302 W. Commonwealth Ave., Alhambra, CA 91801"
+                },
+                {
+                    "id": "mpcbc_foot_directions",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Directions"
+                },
+                {
+                    "id": "mpcbc_foot_sundays_h",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sundays 主日"
+                },
+                {
+                    "id": "mpcbc_foot_sundays_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Cantonese 粵語 11:00 AM"
+                },
+                {
+                    "id": "mpcbc_foot_sundays_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "English 11:00 AM"
+                },
+                {
+                    "id": "mpcbc_foot_sundays_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Mandarin 國語 9:00 AM"
+                },
+                {
+                    "id": "mpcbc_foot_explore_h",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Explore"
+                },
+                {
+                    "id": "mpcbc_foot_explore_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Plan your visit"
+                },
+                {
+                    "id": "mpcbc_foot_explore_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Watch live"
+                },
+                {
+                    "id": "mpcbc_foot_explore_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Sermons"
+                },
+                {
+                    "id": "mpcbc_foot_explore_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Newsletter"
+                },
+                {
+                    "id": "mpcbc_foot_explore_4",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Kids &amp; Youth"
+                },
+                {
+                    "id": "mpcbc_foot_explore_5",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Prayer request"
+                },
+                {
+                    "id": "mpcbc_foot_contact_h",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Contact"
+                },
+                {
+                    "id": "mpcbc_foot_contact_0",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "(626) 289-1284"
+                },
+                {
+                    "id": "mpcbc_foot_contact_1",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "info@mpcbc.net"
+                },
+                {
+                    "id": "mpcbc_foot_contact_2",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Office hours: [Days, times]"
+                },
+                {
+                    "id": "mpcbc_foot_contact_3",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Instagram @mpcbconnect"
+                },
+                {
+                    "id": "mpcbc_foot_contact_4",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "English YouTube"
+                },
+                {
+                    "id": "mpcbc_foot_contact_5",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "WeChat 微信群"
+                },
+                {
+                    "id": "mpcbc_foot_since",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Founded in 1977 · Alhambra, California"
+                },
+                {
+                    "id": "mpcbc_foot_zh",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "中文"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Test Hand Build",
+            "slug": "test-hand-build",
+            "status": "publish",
+            "widgets": {
+                "container": 1,
+                "heading": 1,
+                "button": 1
+            },
+            "copy": [
+                {
+                    "id": "test_heading",
+                    "type": "heading",
+                    "key": "title",
+                    "text": "Hand-built Heading"
+                },
+                {
+                    "id": "test_button",
+                    "type": "button",
+                    "key": "text",
+                    "text": "Hand-built Button"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Default Kit",
+            "slug": "default-kit",
+            "status": "publish",
+            "widgets": [],
+            "copy": []
+        },
+        {
+            "id": 3,
+            "title": "Privacy Policy",
+            "slug": "privacy-policy",
+            "status": "draft",
+            "widgets": [],
+            "copy": []
+        },
+        {
+            "id": 2,
+            "title": "Sample Page",
+            "slug": "sample-page",
+            "status": "publish",
+            "widgets": [],
+            "copy": []
+        }
+    ]
+}

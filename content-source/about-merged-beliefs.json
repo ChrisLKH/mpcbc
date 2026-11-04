@@ -1,0 +1,10 @@
+{
+  "builder": "scripts/merge-beliefs-about.mjs",
+  "apply": "scripts/apply-about-merged-beliefs.php",
+  "decision": "Full native Topic reader merged into About#beliefs in all three locales. Old Beliefs URLs redirect.",
+  "locales": [
+    "en",
+    "zh-hant",
+    "zh-hans"
+  ]
+}

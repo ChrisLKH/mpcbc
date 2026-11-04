@@ -1,0 +1,785 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Meet Our Pastors",
+    "type": "container",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "pastors_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "_element_id": "pastors",
+                "background_background": "classic",
+                "background_color": "#F6F7F5",
+                "__globals__": {
+                    "background_color": "globals/colors?id=paper"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": 112,
+                    "right": 56,
+                    "bottom": 112,
+                    "left": 56,
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": 80,
+                    "right": 32,
+                    "bottom": 80,
+                    "left": 32,
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": 44,
+                    "right": 16,
+                    "bottom": 44,
+                    "left": 16,
+                    "isLinked": false
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 48
+                }
+            },
+            "elements": [
+                {
+                    "id": "pastors_head",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_direction_tablet": "column",
+                        "flex_direction_mobile": "column",
+                        "flex_justify_content": "space-between",
+                        "flex_align_items": "flex-start",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "pastors_head_group",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 4
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "pastors_title",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Meet our pastors",
+                                        "header_size": "h2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 72
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 56
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 40
+                                        },
+                                        "typography_font_weight": "700",
+                                        "typography_letter_spacing": {
+                                            "unit": "em",
+                                            "size": -0.035
+                                        },
+                                        "title_color": "#13232A"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "pastors_title_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">認識我們的牧師</span>",
+                                        "header_size": "span",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 22
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 17
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#4F6168"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "pastors_lede",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "One pastor for each congregation. Any of them is happy to meet you.",
+                                "header_size": "p",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18
+                                },
+                                "typography_font_weight": "400",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.5
+                                },
+                                "title_color": "#4F6168",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=ink_soft"
+                                },
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "px",
+                                    "size": 440
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "pastors_cards_row",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_direction_tablet": "column",
+                        "flex_direction_mobile": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        },
+                        "flex_gap_mobile": {
+                            "unit": "px",
+                            "size": 16
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "pastor_card_0",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 31.5
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_direction_tablet": "row",
+                                "flex_direction_mobile": "row",
+                                "flex_wrap_tablet": "nowrap",
+                                "flex_wrap_mobile": "nowrap",
+                                "flex_align_items_tablet": "flex-start",
+                                "flex_align_items_mobile": "flex-start",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "pastor_img_wrap_0",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_tablet": {
+                                            "unit": "px",
+                                            "size": 160
+                                        },
+                                        "width_mobile": {
+                                            "unit": "px",
+                                            "size": 112
+                                        },
+                                        "flex_shrink": 0
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "pastor_img_0",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/pastor-portrait.png",
+                                                    "id": 80
+                                                },
+                                                "image_size": "full",
+                                                "image_border_radius": {
+                                                    "unit": "px",
+                                                    "top": 20,
+                                                    "right": 20,
+                                                    "bottom": 20,
+                                                    "left": 20,
+                                                    "isLinked": true
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "image"
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "pastor_info_0",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 72
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 62
+                                        },
+                                        "flex_grow": 1,
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 4
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "pastor_kicker_0",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Pastor · Cantonese",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#155E75",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_name_0",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[Pastor name]",
+                                                "header_size": "h3",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Bricolage Grotesque",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 26
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#13232A"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_name_zh_0",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "<span lang=\"zh-Hant\">[牧師姓名]</span>",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Noto Sans TC",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_weight": "500",
+                                                "typography_font_size_tablet": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_size_mobile": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_bio_0",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[One line about this pastor.]",
+                                                "header_size": "p",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 15
+                                                },
+                                                "typography_font_weight": "400",
+                                                "typography_line_height": {
+                                                    "unit": "em",
+                                                    "size": 1.5
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "pastor_card_1",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 31.5
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_direction_tablet": "row",
+                                "flex_direction_mobile": "row",
+                                "flex_wrap_tablet": "nowrap",
+                                "flex_wrap_mobile": "nowrap",
+                                "flex_align_items_tablet": "flex-start",
+                                "flex_align_items_mobile": "flex-start",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "pastor_img_wrap_1",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_tablet": {
+                                            "unit": "px",
+                                            "size": 160
+                                        },
+                                        "width_mobile": {
+                                            "unit": "px",
+                                            "size": 112
+                                        },
+                                        "flex_shrink": 0
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "pastor_img_1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/pastor-portrait.png",
+                                                    "id": 80
+                                                },
+                                                "image_size": "full",
+                                                "image_border_radius": {
+                                                    "unit": "px",
+                                                    "top": 20,
+                                                    "right": 20,
+                                                    "bottom": 20,
+                                                    "left": 20,
+                                                    "isLinked": true
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "image"
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "pastor_info_1",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 72
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 62
+                                        },
+                                        "flex_grow": 1,
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 4
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "pastor_kicker_1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Pastor · English",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#155E75",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_name_1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[Pastor name]",
+                                                "header_size": "h3",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Bricolage Grotesque",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 26
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#13232A"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_name_zh_1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "<span lang=\"zh-Hant\">[牧師姓名]</span>",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Noto Sans TC",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_weight": "500",
+                                                "typography_font_size_tablet": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_size_mobile": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_bio_1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[One line about this pastor.]",
+                                                "header_size": "p",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 15
+                                                },
+                                                "typography_font_weight": "400",
+                                                "typography_line_height": {
+                                                    "unit": "em",
+                                                    "size": 1.5
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "pastor_card_2",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 31.5
+                                },
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "flex_direction": "column",
+                                "flex_direction_tablet": "row",
+                                "flex_direction_mobile": "row",
+                                "flex_wrap_tablet": "nowrap",
+                                "flex_wrap_mobile": "nowrap",
+                                "flex_align_items_tablet": "flex-start",
+                                "flex_align_items_mobile": "flex-start",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 16
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "pastor_img_wrap_2",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_tablet": {
+                                            "unit": "px",
+                                            "size": 160
+                                        },
+                                        "width_mobile": {
+                                            "unit": "px",
+                                            "size": 112
+                                        },
+                                        "flex_shrink": 0
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "pastor_img_2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/pastor-portrait.png",
+                                                    "id": 80
+                                                },
+                                                "image_size": "full",
+                                                "image_border_radius": {
+                                                    "unit": "px",
+                                                    "top": 20,
+                                                    "right": 20,
+                                                    "bottom": 20,
+                                                    "left": 20,
+                                                    "isLinked": true
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "image"
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "pastor_info_2",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100
+                                        },
+                                        "width_tablet": {
+                                            "unit": "%",
+                                            "size": 72
+                                        },
+                                        "width_mobile": {
+                                            "unit": "%",
+                                            "size": 62
+                                        },
+                                        "flex_grow": 1,
+                                        "flex_direction": "column",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 4
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "pastor_kicker_2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "Pastor · Mandarin",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 14
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#155E75",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=primary"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_name_2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[Pastor name]",
+                                                "header_size": "h3",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Bricolage Grotesque",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 26
+                                                },
+                                                "typography_font_weight": "700",
+                                                "title_color": "#13232A"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_name_zh_2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "<span lang=\"zh-Hant\">[牧師姓名]</span>",
+                                                "header_size": "span",
+                                                "typography_typography": "custom",
+                                                "typography_font_family": "Noto Sans TC",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_weight": "500",
+                                                "typography_font_size_tablet": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "typography_font_size_mobile": {
+                                                    "unit": "px",
+                                                    "size": 16
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        },
+                                        {
+                                            "id": "pastor_bio_2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "title": "[One line about this pastor.]",
+                                                "header_size": "p",
+                                                "typography_typography": "custom",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 15
+                                                },
+                                                "typography_font_weight": "400",
+                                                "typography_line_height": {
+                                                    "unit": "em",
+                                                    "size": 1.5
+                                                },
+                                                "title_color": "#4F6168",
+                                                "__globals__": {
+                                                    "title_color": "globals/colors?id=ink_soft"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "heading"
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

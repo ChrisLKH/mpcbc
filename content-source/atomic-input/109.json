@@ -1,0 +1,94 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"spike_root_container 25\"><e-flexbox configuration-id=\"Boxed inner 24\"><e-tabs configuration-id=\"spike_nested_tabs 23\"><e-tabs-menu configuration-id=\"Tabs menu 9\"><e-tab configuration-id=\"Tab 1 2\"><e-paragraph configuration-id=\"Tab label 1\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 2 4\"><e-paragraph configuration-id=\"Tab label 3\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 3 6\"><e-paragraph configuration-id=\"Tab label 5\"></e-paragraph></e-tab><e-tab configuration-id=\"Tab 4 8\"><e-paragraph configuration-id=\"Tab label 7\"></e-paragraph></e-tab></e-tabs-menu><e-tabs-content-area configuration-id=\"Tabs panels 22\"><e-tab-content configuration-id=\"Tab panel 1 12\"><e-flexbox configuration-id=\"con_tab_1 11\"><e-paragraph configuration-id=\"head_tab_1 10\"></e-paragraph></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 2 15\"><e-flexbox configuration-id=\"con_tab_2 14\"><e-paragraph configuration-id=\"head_tab_2 13\"></e-paragraph></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 3 18\"><e-flexbox configuration-id=\"con_tab_3 17\"><e-paragraph configuration-id=\"head_tab_3 16\"></e-paragraph></e-flexbox></e-tab-content><e-tab-content configuration-id=\"Tab panel 4 21\"><e-flexbox configuration-id=\"con_tab_4 20\"><e-paragraph configuration-id=\"head_tab_4 19\"></e-paragraph></e-flexbox></e-tab-content></e-tabs-content-area></e-tabs></e-flexbox></e-flexbox>",
+  "element_config": {
+    "Tab label 1": {
+      "paragraph": "Kids <span class=\"zh\" lang=\"zh-Hant\">兒童</span>"
+    },
+    "Tab 1 2": {},
+    "Tab label 3": {
+      "paragraph": "Youth and students <span class=\"zh\" lang=\"zh-Hant\">青少年</span>"
+    },
+    "Tab 2 4": {},
+    "Tab label 5": {
+      "paragraph": "Fellowships <span class=\"zh\" lang=\"zh-Hant\">團契</span>"
+    },
+    "Tab 3 6": {},
+    "Tab label 7": {
+      "paragraph": "Care <span class=\"zh\" lang=\"zh-Hant\">關懷</span>"
+    },
+    "Tab 4 8": {},
+    "Tabs menu 9": {},
+    "head_tab_1 10": {
+      "_cssid": "mpcbc-head_tab_1",
+      "paragraph": "Kids Panel Content",
+      "tag": "p"
+    },
+    "con_tab_1 11": {
+      "_cssid": "mpcbc-con_tab_1"
+    },
+    "Tab panel 1 12": {},
+    "head_tab_2 13": {
+      "_cssid": "mpcbc-head_tab_2",
+      "paragraph": "Youth Panel Content",
+      "tag": "p"
+    },
+    "con_tab_2 14": {
+      "_cssid": "mpcbc-con_tab_2"
+    },
+    "Tab panel 2 15": {},
+    "head_tab_3 16": {
+      "_cssid": "mpcbc-head_tab_3",
+      "paragraph": "Fellowships Panel Content",
+      "tag": "p"
+    },
+    "con_tab_3 17": {
+      "_cssid": "mpcbc-con_tab_3"
+    },
+    "Tab panel 3 18": {},
+    "head_tab_4 19": {
+      "_cssid": "mpcbc-head_tab_4",
+      "paragraph": "Care Panel Content",
+      "tag": "p"
+    },
+    "con_tab_4 20": {
+      "_cssid": "mpcbc-con_tab_4"
+    },
+    "Tab panel 4 21": {},
+    "Tabs panels 22": {},
+    "spike_nested_tabs 23": {
+      "_cssid": "mpcbc-spike_nested_tabs",
+      "default-active-tab": 0
+    },
+    "Boxed inner 24": {},
+    "spike_root_container 25": {
+      "_cssid": "mpcbc-spike_root_container"
+    }
+  },
+  "style": {
+    "Tab label 1": "color:inherit;margin:0;",
+    "Tab 1 2": "text-align:start;width:100%;padding:14px 16px;border-width:0;border-radius:8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 3": "color:inherit;margin:0;",
+    "Tab 2 4": "text-align:start;width:100%;padding:14px 16px;border-width:0;border-radius:8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 5": "color:inherit;margin:0;",
+    "Tab 3 6": "text-align:start;width:100%;padding:14px 16px;border-width:0;border-radius:8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tab label 7": "color:inherit;margin:0;",
+    "Tab 4 8": "text-align:start;width:100%;padding:14px 16px;border-width:0;border-radius:8px;background-color:var(--mpcbc-color-2d543f96b);color:var(--mpcbc-color-4a261092f);&:active{background-color:var(--mpcbc-color-8ab1c66cf);color:var(--mpcbc-color-14b48ba19);}",
+    "Tabs menu 9": "display:flex;flex-direction:column;flex-wrap:nowrap;width:320px;flex-shrink:0;gap:8px;padding:0;@media (--mobile){width:100%;flex-direction:row;flex-wrap:wrap;}",
+    "head_tab_1 10": "min-width:0;margin:0;max-width:100%;",
+    "con_tab_1 11": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;min-height:440px;background-color:var(--mpcbc-color-89d17a384);",
+    "Tab panel 1 12": "width:100%;padding:0;",
+    "head_tab_2 13": "min-width:0;margin:0;max-width:100%;",
+    "con_tab_2 14": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;min-height:440px;background-color:var(--mpcbc-color-e30164937);",
+    "Tab panel 2 15": "width:100%;padding:0;",
+    "head_tab_3 16": "min-width:0;margin:0;max-width:100%;",
+    "con_tab_3 17": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;min-height:440px;background-color:var(--mpcbc-color-f86885b8a);",
+    "Tab panel 3 18": "width:100%;padding:0;",
+    "head_tab_4 19": "min-width:0;margin:0;max-width:100%;",
+    "con_tab_4 20": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;min-height:440px;background-color:var(--mpcbc-color-686f37c40);",
+    "Tab panel 4 21": "width:100%;padding:0;",
+    "Tabs panels 22": "min-width:0;width:100%;padding:0;flex-grow:1;",
+    "spike_nested_tabs 23": "display:flex;align-items:stretch;flex-direction:row;width:100%;gap:32px;padding:0;@media (--tablet){gap:32px;}@media (--mobile){flex-direction:column;gap:24px;}",
+    "Boxed inner 24": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:0;gap:20px;max-width:1328px;margin-left:auto;margin-right:auto;",
+    "spike_root_container 25": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:64px 32px 64px 32px;gap:20px;background-color:var(--mpcbc-color-8ab1c66cf);"
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "status": "ok",
+    "results": [
+        {
+            "index": 0,
+            "action": "update",
+            "status": "ok",
+            "element_id": "ad70750"
+        },
+        {
+            "index": 1,
+            "action": "update",
+            "status": "ok",
+            "element_id": "34c45b87"
+        },
+        {
+            "index": 2,
+            "action": "update",
+            "status": "ok",
+            "element_id": "58ccb026"
+        },
+        {
+            "index": 3,
+            "action": "update",
+            "status": "ok",
+            "element_id": "665ce0f9"
+        },
+        {
+            "index": 4,
+            "action": "update",
+            "status": "ok",
+            "element_id": "6e9ec7a2"
+        },
+        {
+            "index": 5,
+            "action": "update",
+            "status": "ok",
+            "element_id": "3f034932"
+        },
+        {
+            "index": 6,
+            "action": "update",
+            "status": "ok",
+            "element_id": "32735893"
+        },
+        {
+            "index": 7,
+            "action": "update",
+            "status": "ok",
+            "element_id": "6f932659"
+        },
+        {
+            "index": 8,
+            "action": "update",
+            "status": "ok",
+            "element_id": "37263357"
+        },
+        {
+            "index": 9,
+            "action": "update",
+            "status": "ok",
+            "element_id": "36a8ff01"
+        }
+    ],
+    "post_id": 21,
+    "version": "2026-10-20 11:17:35",
+    "edit_url": "http:\/\/mpcbc.local\/wp-admin\/post.php?post=21&action=elementor"
+}

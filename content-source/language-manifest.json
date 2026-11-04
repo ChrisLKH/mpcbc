@@ -1,0 +1,79 @@
+[
+  {
+    "locale": "en",
+    "topic": "about",
+    "path": "/about/",
+    "file": "en-about.json",
+    "title": "About"
+  },
+  {
+    "locale": "zh-hant",
+    "topic": "about",
+    "path": "/zh-hant/about/",
+    "file": "zh-hant-about.json",
+    "title": "關於我們"
+  },
+  {
+    "locale": "zh-hans",
+    "topic": "about",
+    "path": "/zh-hans/about/",
+    "file": "zh-hans-about.json",
+    "title": "关于我们"
+  },
+  {
+    "locale": "en",
+    "topic": "beliefs",
+    "path": "/beliefs/",
+    "file": "en-beliefs.json",
+    "title": "Beliefs"
+  },
+  {
+    "locale": "zh-hant",
+    "topic": "beliefs",
+    "path": "/zh-hant/beliefs/",
+    "file": "zh-hant-beliefs.json",
+    "title": "信仰告白"
+  },
+  {
+    "locale": "zh-hans",
+    "topic": "beliefs",
+    "path": "/zh-hans/beliefs/",
+    "file": "zh-hans-beliefs.json",
+    "title": "信仰告白"
+  },
+  {
+    "locale": "en",
+    "topic": "give",
+    "path": "/give/",
+    "file": "en-give.json",
+    "title": "Give"
+  },
+  {
+    "locale": "zh-hant",
+    "topic": "give",
+    "path": "/zh-hant/give/",
+    "file": "zh-hant-give.json",
+    "title": "奉獻"
+  },
+  {
+    "locale": "zh-hans",
+    "topic": "give",
+    "path": "/zh-hans/give/",
+    "file": "zh-hans-give.json",
+    "title": "奉献"
+  },
+  {
+    "locale": "zh-hant",
+    "topic": "index",
+    "path": "/zh-hant/",
+    "file": "zh-hant-index.json",
+    "title": "繁體中文"
+  },
+  {
+    "locale": "zh-hans",
+    "topic": "index",
+    "path": "/zh-hans/",
+    "file": "zh-hans-index.json",
+    "title": "简体中文"
+  }
+]

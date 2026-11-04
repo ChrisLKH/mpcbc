@@ -1,0 +1,582 @@
+[
+  {
+    "id": 17,
+    "count": 18,
+    "description": "",
+    "link": "https://mpcbc.net/category/cantonese-sermons/",
+    "name": "Cantonese Sermons",
+    "slug": "cantonese-sermons",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Cantonese Sermons Archives - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/category/cantonese-sermons/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Cantonese Sermons Archives - 慕道園華人浸信會\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/category/cantonese-sermons/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://mpcbc.net/category/cantonese-sermons/\",\"url\":\"https://mpcbc.net/category/cantonese-sermons/\",\"name\":\"Cantonese Sermons Archives - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"breadcrumb\":{\"@id\":\"https://mpcbc.net/category/cantonese-sermons/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/category/cantonese-sermons/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Cantonese Sermons\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Cantonese Sermons Archives - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/category/cantonese-sermons/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Cantonese Sermons Archives - 慕道園華人浸信會",
+      "og_url": "https://mpcbc.net/category/cantonese-sermons/",
+      "og_site_name": "慕道園華人浸信會",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://mpcbc.net/category/cantonese-sermons/",
+            "url": "https://mpcbc.net/category/cantonese-sermons/",
+            "name": "Cantonese Sermons Archives - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/category/cantonese-sermons/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/category/cantonese-sermons/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Cantonese Sermons"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories/17",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/posts?categories=17"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "count": 5,
+    "description": "",
+    "link": "https://mpcbc.net/category/mandarin-sermons/",
+    "name": "Mandarin Sermons",
+    "slug": "mandarin-sermons",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Mandarin Sermons Archives - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/category/mandarin-sermons/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Mandarin Sermons Archives - 慕道園華人浸信會\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/category/mandarin-sermons/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://mpcbc.net/category/mandarin-sermons/\",\"url\":\"https://mpcbc.net/category/mandarin-sermons/\",\"name\":\"Mandarin Sermons Archives - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"breadcrumb\":{\"@id\":\"https://mpcbc.net/category/mandarin-sermons/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/category/mandarin-sermons/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Mandarin Sermons\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Mandarin Sermons Archives - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/category/mandarin-sermons/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Mandarin Sermons Archives - 慕道園華人浸信會",
+      "og_url": "https://mpcbc.net/category/mandarin-sermons/",
+      "og_site_name": "慕道園華人浸信會",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://mpcbc.net/category/mandarin-sermons/",
+            "url": "https://mpcbc.net/category/mandarin-sermons/",
+            "name": "Mandarin Sermons Archives - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/category/mandarin-sermons/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/category/mandarin-sermons/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Mandarin Sermons"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories/22",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/posts?categories=22"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "count": 0,
+    "description": "",
+    "link": "https://mpcbc.net/category/miscellaneous/",
+    "name": "Miscellaneous",
+    "slug": "miscellaneous",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Miscellaneous Archives - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/category/miscellaneous/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Miscellaneous Archives - 慕道園華人浸信會\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/category/miscellaneous/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://mpcbc.net/category/miscellaneous/\",\"url\":\"https://mpcbc.net/category/miscellaneous/\",\"name\":\"Miscellaneous Archives - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"breadcrumb\":{\"@id\":\"https://mpcbc.net/category/miscellaneous/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/category/miscellaneous/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Miscellaneous\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Miscellaneous Archives - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/category/miscellaneous/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Miscellaneous Archives - 慕道園華人浸信會",
+      "og_url": "https://mpcbc.net/category/miscellaneous/",
+      "og_site_name": "慕道園華人浸信會",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://mpcbc.net/category/miscellaneous/",
+            "url": "https://mpcbc.net/category/miscellaneous/",
+            "name": "Miscellaneous Archives - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/category/miscellaneous/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/category/miscellaneous/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Miscellaneous"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories/19",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/posts?categories=19"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 0,
+    "description": "",
+    "link": "https://mpcbc.net/category/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Uncategorized Archives - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/category/uncategorized/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Uncategorized Archives - 慕道園華人浸信會\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/category/uncategorized/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://mpcbc.net/category/uncategorized/\",\"url\":\"https://mpcbc.net/category/uncategorized/\",\"name\":\"Uncategorized Archives - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"breadcrumb\":{\"@id\":\"https://mpcbc.net/category/uncategorized/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/category/uncategorized/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Uncategorized\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Uncategorized Archives - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/category/uncategorized/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Uncategorized Archives - 慕道園華人浸信會",
+      "og_url": "https://mpcbc.net/category/uncategorized/",
+      "og_site_name": "慕道園華人浸信會",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://mpcbc.net/category/uncategorized/",
+            "url": "https://mpcbc.net/category/uncategorized/",
+            "name": "Uncategorized Archives - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/category/uncategorized/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/category/uncategorized/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Uncategorized"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "topic": "home",
+        "id": 511,
+        "url": "http://mpcbc.local/zh-hans/home/",
+        "mcp_readable": true,
+        "editable_independently": true
+    },
+    {
+        "topic": "footer",
+        "id": 513,
+        "url": "http://mpcbc.local/?elementor_library=mpcbc-footer-zh-hans",
+        "mcp_readable": true,
+        "editable_independently": true
+    }
+]

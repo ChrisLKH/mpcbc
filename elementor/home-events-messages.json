@@ -1,0 +1,1434 @@
+{
+    "version": "0.4",
+    "title": "MPCBC – Sermons & Events",
+    "type": "container",
+    "page_settings": [],
+    "content": [
+        {
+            "id": "events_messages_root",
+            "elType": "container",
+            "settings": {
+                "content_width": "boxed",
+                "boxed_width": {
+                    "unit": "px",
+                    "size": 1328
+                },
+                "_element_id": "sermons",
+                "background_background": "classic",
+                "background_color": "#E3EBEA",
+                "__globals__": {
+                    "background_color": "globals/colors?id=mist"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": 112,
+                    "right": 56,
+                    "bottom": 112,
+                    "left": 56,
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": 80,
+                    "right": 32,
+                    "bottom": 80,
+                    "left": 32,
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": 44,
+                    "right": 16,
+                    "bottom": 44,
+                    "left": 16,
+                    "isLinked": false
+                },
+                "flex_direction": "row",
+                "flex_direction_tablet": "column",
+                "flex_direction_mobile": "column",
+                "flex_gap": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "flex_gap_tablet": {
+                    "unit": "px",
+                    "size": 48
+                },
+                "flex_gap_mobile": {
+                    "unit": "px",
+                    "size": 48
+                }
+            },
+            "elements": [
+                {
+                    "id": "events_col_left",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "width": {
+                            "unit": "%",
+                            "size": 48
+                        },
+                        "width_tablet": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "width_mobile": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "events_heading_group",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 4
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "events_title",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Coming up",
+                                        "header_size": "h2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 56
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 44
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 32
+                                        },
+                                        "typography_font_weight": "700",
+                                        "title_color": "#13232A"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "events_title_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">近期活動</span>",
+                                        "header_size": "span",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 19
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 15
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#4F6168"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "events_rows",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0,
+                                    "isLinked": false
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 0
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "event_row_1",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 0,
+                                            "bottom": 16,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "flex_align_items": "center",
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 1,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_color": "#BFCDCC",
+                                        "__globals__": {
+                                            "border_color": "globals/colors?id=line_strong"
+                                        },
+                                        "flex_direction_mobile": "row",
+                                        "flex_wrap_mobile": "nowrap"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "event_chip_1",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 8,
+                                                    "right": 0,
+                                                    "bottom": 8,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 0
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 88
+                                                },
+                                                "flex_align_items": "center",
+                                                "background_background": "classic",
+                                                "background_color": "#FFFFFF",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": 14,
+                                                    "right": 14,
+                                                    "bottom": 14,
+                                                    "left": 14,
+                                                    "isLinked": true
+                                                },
+                                                "_flex_size": "none",
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": 88
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "event_mon_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[MON]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 13
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "event_day_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[00]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 30
+                                                        },
+                                                        "typography_font_weight": "700",
+                                                        "typography_font_family": "Bricolage Grotesque",
+                                                        "typography_line_height": {
+                                                            "unit": "em",
+                                                            "size": 1.05
+                                                        },
+                                                        "typography_letter_spacing": {
+                                                            "unit": "em",
+                                                            "size": -0.035
+                                                        },
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "event_text_1",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 2
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "event_title_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Event title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 19
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "event_meta_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Time] · [Place]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 15
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "event_row_2",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 0,
+                                            "bottom": 16,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "flex_align_items": "center",
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 1,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_color": "#BFCDCC",
+                                        "__globals__": {
+                                            "border_color": "globals/colors?id=line_strong"
+                                        },
+                                        "flex_direction_mobile": "row",
+                                        "flex_wrap_mobile": "nowrap"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "event_chip_2",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 8,
+                                                    "right": 0,
+                                                    "bottom": 8,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 0
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 88
+                                                },
+                                                "flex_align_items": "center",
+                                                "background_background": "classic",
+                                                "background_color": "#FFFFFF",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": 14,
+                                                    "right": 14,
+                                                    "bottom": 14,
+                                                    "left": 14,
+                                                    "isLinked": true
+                                                },
+                                                "_flex_size": "none",
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": 88
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "event_mon_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[MON]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 13
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "event_day_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[00]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 30
+                                                        },
+                                                        "typography_font_weight": "700",
+                                                        "typography_font_family": "Bricolage Grotesque",
+                                                        "typography_line_height": {
+                                                            "unit": "em",
+                                                            "size": 1.05
+                                                        },
+                                                        "typography_letter_spacing": {
+                                                            "unit": "em",
+                                                            "size": -0.035
+                                                        },
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "event_text_2",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 2
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "event_title_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Event title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 19
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "event_meta_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Time] · [Place]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 15
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "event_row_3",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 0,
+                                            "bottom": 16,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "flex_align_items": "center",
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 1,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_color": "#BFCDCC",
+                                        "__globals__": {
+                                            "border_color": "globals/colors?id=line_strong"
+                                        },
+                                        "flex_direction_mobile": "row",
+                                        "flex_wrap_mobile": "nowrap"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "event_chip_3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 8,
+                                                    "right": 0,
+                                                    "bottom": 8,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 0
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 88
+                                                },
+                                                "flex_align_items": "center",
+                                                "background_background": "classic",
+                                                "background_color": "#FFFFFF",
+                                                "__globals__": {
+                                                    "background_color": "globals/colors?id=white"
+                                                },
+                                                "border_radius": {
+                                                    "unit": "px",
+                                                    "top": 14,
+                                                    "right": 14,
+                                                    "bottom": 14,
+                                                    "left": 14,
+                                                    "isLinked": true
+                                                },
+                                                "_flex_size": "none",
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": 88
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "event_mon_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[MON]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 13
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "event_day_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[00]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 30
+                                                        },
+                                                        "typography_font_weight": "700",
+                                                        "typography_font_family": "Bricolage Grotesque",
+                                                        "typography_line_height": {
+                                                            "unit": "em",
+                                                            "size": 1.05
+                                                        },
+                                                        "typography_letter_spacing": {
+                                                            "unit": "em",
+                                                            "size": -0.035
+                                                        },
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        },
+                                        {
+                                            "id": "event_text_3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 2
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "event_title_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Event title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 19
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "event_meta_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Time] · [Place]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 15
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "events_link_all",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "See all events",
+                                "header_size": "p",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                },
+                                "typography_font_weight": "600",
+                                "typography_line_height": {
+                                    "unit": "px",
+                                    "size": 44
+                                },
+                                "title_color": "#155E75",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=primary"
+                                },
+                                "link": {
+                                    "url": "#",
+                                    "is_external": "",
+                                    "nofollow": "",
+                                    "custom_attributes": ""
+                                },
+                                "typography_text_decoration": "underline"
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        }
+                    ],
+                    "isInner": false
+                },
+                {
+                    "id": "sermons_col_right",
+                    "elType": "container",
+                    "settings": {
+                        "content_width": "full",
+                        "width": {
+                            "unit": "%",
+                            "size": 48
+                        },
+                        "width_tablet": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "width_mobile": {
+                            "unit": "%",
+                            "size": 100
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                            "unit": "px",
+                            "size": 24
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "sermons_heading_group",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 4
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "sermons_title",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "Recent sermons",
+                                        "header_size": "h2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Bricolage Grotesque",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 56
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 44
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 32
+                                        },
+                                        "typography_font_weight": "700",
+                                        "title_color": "#13232A"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                },
+                                {
+                                    "id": "sermons_title_zh",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "title": "<span lang=\"zh-Hant\">最近講道</span>",
+                                        "header_size": "span",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Noto Sans TC",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 19
+                                        },
+                                        "typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 15
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#4F6168"
+                                    },
+                                    "elements": [],
+                                    "widgetType": "heading"
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "sermon_rows",
+                            "elType": "container",
+                            "settings": {
+                                "content_width": "full",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "left": 0,
+                                    "isLinked": false
+                                },
+                                "flex_direction": "column",
+                                "flex_gap": {
+                                    "unit": "px",
+                                    "size": 0
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "sermon_row_1",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 0,
+                                            "bottom": 16,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "flex_align_items": "center",
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 1,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_color": "#BFCDCC",
+                                        "__globals__": {
+                                            "border_color": "globals/colors?id=line_strong"
+                                        },
+                                        "flex_direction_mobile": "row",
+                                        "flex_wrap_mobile": "nowrap"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "sermon_thumb_1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/sermon-english.png",
+                                                    "id": ""
+                                                },
+                                                "image_size": "full",
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 132
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": 96
+                                                },
+                                                "image_border_radius": {
+                                                    "unit": "px",
+                                                    "top": 12,
+                                                    "right": 12,
+                                                    "bottom": 12,
+                                                    "left": 12,
+                                                    "isLinked": true
+                                                },
+                                                "_flex_size": "none"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "image"
+                                        },
+                                        {
+                                            "id": "sermon_text_1",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 2
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "sermon_title_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[Sermon title]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 17
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "sermon_meta_1",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "English · [Speaker]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "sermon_row_2",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 0,
+                                            "bottom": 16,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "flex_align_items": "center",
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 1,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_color": "#BFCDCC",
+                                        "__globals__": {
+                                            "border_color": "globals/colors?id=line_strong"
+                                        },
+                                        "flex_direction_mobile": "row",
+                                        "flex_wrap_mobile": "nowrap"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "sermon_thumb_2",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/sermon-cantonese.png",
+                                                    "id": ""
+                                                },
+                                                "image_size": "full",
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 132
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": 96
+                                                },
+                                                "image_border_radius": {
+                                                    "unit": "px",
+                                                    "top": 12,
+                                                    "right": 12,
+                                                    "bottom": 12,
+                                                    "left": 12,
+                                                    "isLinked": true
+                                                },
+                                                "_flex_size": "none"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "image"
+                                        },
+                                        {
+                                            "id": "sermon_text_2",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 2
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "sermon_title_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[講道題目]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 17
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "sermon_meta_2",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Cantonese · [Speaker]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                },
+                                {
+                                    "id": "sermon_row_3",
+                                    "elType": "container",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": 16,
+                                            "right": 0,
+                                            "bottom": 16,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "flex_direction": "row",
+                                        "flex_gap": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "flex_align_items": "center",
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": 12,
+                                            "right": 0,
+                                            "bottom": 12,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": 0,
+                                            "right": 0,
+                                            "bottom": 1,
+                                            "left": 0,
+                                            "isLinked": false
+                                        },
+                                        "border_color": "#BFCDCC",
+                                        "__globals__": {
+                                            "border_color": "globals/colors?id=line_strong"
+                                        },
+                                        "flex_direction_mobile": "row",
+                                        "flex_wrap_mobile": "nowrap"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "sermon_thumb_3",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "http://mpcbc.local/wp-content/uploads/2026/10/sermon-mandarin.png",
+                                                    "id": ""
+                                                },
+                                                "image_size": "full",
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 132
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": 96
+                                                },
+                                                "image_border_radius": {
+                                                    "unit": "px",
+                                                    "top": 12,
+                                                    "right": 12,
+                                                    "bottom": 12,
+                                                    "left": 12,
+                                                    "isLinked": true
+                                                },
+                                                "_flex_size": "none"
+                                            },
+                                            "elements": [],
+                                            "widgetType": "image"
+                                        },
+                                        {
+                                            "id": "sermon_text_3",
+                                            "elType": "container",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "padding": {
+                                                    "unit": "px",
+                                                    "top": 0,
+                                                    "right": 0,
+                                                    "bottom": 0,
+                                                    "left": 0,
+                                                    "isLinked": false
+                                                },
+                                                "flex_direction": "column",
+                                                "flex_gap": {
+                                                    "unit": "px",
+                                                    "size": 2
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "sermon_title_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "[講道題目]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 17
+                                                        },
+                                                        "typography_font_weight": "600",
+                                                        "title_color": "#13232A",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=text"
+                                                        },
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                },
+                                                {
+                                                    "id": "sermon_meta_3",
+                                                    "elType": "widget",
+                                                    "settings": {
+                                                        "title": "Mandarin · [Speaker]",
+                                                        "header_size": "p",
+                                                        "typography_typography": "custom",
+                                                        "typography_font_size": {
+                                                            "unit": "px",
+                                                            "size": 14
+                                                        },
+                                                        "typography_font_weight": "400",
+                                                        "title_color": "#4F6168",
+                                                        "__globals__": {
+                                                            "title_color": "globals/colors?id=ink_soft"
+                                                        }
+                                                    },
+                                                    "elements": [],
+                                                    "widgetType": "heading"
+                                                }
+                                            ],
+                                            "isInner": false
+                                        }
+                                    ],
+                                    "isInner": false
+                                }
+                            ],
+                            "isInner": false
+                        },
+                        {
+                            "id": "sermons_link_all",
+                            "elType": "widget",
+                            "settings": {
+                                "title": "All sermons",
+                                "header_size": "p",
+                                "typography_typography": "custom",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16
+                                },
+                                "typography_font_weight": "600",
+                                "typography_line_height": {
+                                    "unit": "px",
+                                    "size": 44
+                                },
+                                "title_color": "#155E75",
+                                "__globals__": {
+                                    "title_color": "globals/colors?id=primary"
+                                },
+                                "link": {
+                                    "url": "#",
+                                    "is_external": "",
+                                    "nofollow": "",
+                                    "custom_attributes": ""
+                                },
+                                "typography_text_decoration": "underline"
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        }
+    ]
+}

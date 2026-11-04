@@ -1,0 +1,1270 @@
+[
+  {
+    "id": 1271,
+    "date": "2021-01-15T08:15:13",
+    "date_gmt": "2021-01-15T08:15:13",
+    "guid": {
+      "rendered": "http://mpcbc.net/?page_id=1271"
+    },
+    "modified": "2021-02-05T00:40:59",
+    "modified_gmt": "2021-02-05T08:40:59",
+    "slug": "contact",
+    "status": "publish",
+    "type": "page",
+    "link": "https://mpcbc.net/contact/",
+    "title": {
+      "rendered": "聯繫我們"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-page\" data-elementor-id=\"1271\" class=\"elementor elementor-1271\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-232e11da envato-kit-141-top-0 elementor-section-stretched elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle\" data-id=\"232e11da\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-wider\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3193a015\" data-id=\"3193a015\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-6c37b9a1 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"6c37b9a1\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">聯繫我們</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-754cccad elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider\" data-id=\"754cccad\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-7befecb0 elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"7befecb0\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:250}\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>我們邀請您與我們同行，學習神的話語，聖經，並通過他的兒子耶穌基督體驗與神的個人關係。</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-34ce0b3e elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"34ce0b3e\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4426f71f elementor-invisible\" data-id=\"4426f71f\" data-element_type=\"column\" data-settings=\"{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:150}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-448443a1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"448443a1\" data-element_type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fas fa-map-marker-alt\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">302 W. Commonwealth Ave., Alhambra, CA 91801</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"tel:6262891284\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fas fa-phone\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">(626) 289-1284</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"mailto:info@mpcbc.net\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-envelope-open\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">info@mpcbc.net</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-663082d9 elementor-invisible\" data-id=\"663082d9\" data-element_type=\"column\" data-settings=\"{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-1a89fecf elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"1a89fecf\" data-element_type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw/featured\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fab fa-youtube\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">慕道園華人浸信會MPCBC</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.youtube.com/channel/UCeS2Pr_5FcFKae0ce8oDHIw\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fab fa-youtube\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Pastor Caleb屬靈加油站</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fab fa-youtube\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">English MPCBC</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.facebook.com/MPCBC-English-Ministry-744603922340603\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"fab fa-facebook-f\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">MPCBC English Ministry</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<div class=\"elementor-element elementor-element-47f2659 elementor-widget elementor-widget-google_maps\" data-id=\"47f2659\" data-element_type=\"widget\" data-widget_type=\"google_maps.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-custom-embed\">\n\t\t\t<iframe loading=\"lazy\"\n\t\t\t\t\tsrc=\"https://maps.google.com/maps?q=302%20W.%20Commonwealth%20Ave.%2C%20Alhambra%2C%20CA%2091801&#038;t=m&#038;z=14&#038;output=embed&#038;iwloc=near\"\n\t\t\t\t\ttitle=\"302 W. Commonwealth Ave., Alhambra, CA 91801\"\n\t\t\t\t\taria-label=\"302 W. Commonwealth Ave., Alhambra, CA 91801\"\n\t\t\t></iframe>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-24793610 envato-kit-141-newsletter-inline elementor-invisible\" data-id=\"24793610\" data-element_type=\"column\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;pulse&quot;,&quot;animation_delay&quot;:200}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-6132d73 elementor-widget elementor-widget-heading\" data-id=\"6132d73\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Send us a Message</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-2b6c1b4e elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"2b6c1b4e\" data-element_type=\"widget\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-c95dd8a elementor-widget elementor-widget-wpforms\" data-id=\"c95dd8a\" data-element_type=\"widget\" data-widget_type=\"wpforms.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<div class=\"wpforms-container \" id=\"wpforms-879\"><form id=\"wpforms-form-879\" class=\"wpforms-validate wpforms-form\" data-formid=\"879\" method=\"post\" enctype=\"multipart/form-data\" action=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1\" data-token=\"e032d95e69cdb5cdcdfcef2db3ec54a0\" data-token-time=\"1792466166\"><noscript class=\"wpforms-error-noscript\">Please enable JavaScript in your browser to complete this form.</noscript><div class=\"wpforms-field-container\"><div id=\"wpforms-879-field_0-container\" class=\"wpforms-field wpforms-field-name wpforms-one-half wpforms-first\" data-field-id=\"0\"><label class=\"wpforms-field-label\" for=\"wpforms-879-field_0\">Your Name <span class=\"wpforms-required-label\">*</span></label><input type=\"text\" id=\"wpforms-879-field_0\" class=\"wpforms-field-large wpforms-field-required\" name=\"wpforms[fields][0]\" required></div><div id=\"wpforms-879-field_1-container\" class=\"wpforms-field wpforms-field-email wpforms-one-half\" data-field-id=\"1\"><label class=\"wpforms-field-label\" for=\"wpforms-879-field_1\">Your Email <span class=\"wpforms-required-label\">*</span></label><input type=\"email\" id=\"wpforms-879-field_1\" class=\"wpforms-field-large wpforms-field-required\" name=\"wpforms[fields][1]\" spellcheck=\"false\" required></div><div id=\"wpforms-879-field_3-container\" class=\"wpforms-field wpforms-field-text\" data-field-id=\"3\"><label class=\"wpforms-field-label\" for=\"wpforms-879-field_3\">Subject</label><input type=\"text\" id=\"wpforms-879-field_3\" class=\"wpforms-field-large\" name=\"wpforms[fields][3]\" ></div><div id=\"wpforms-879-field_2-container\" class=\"wpforms-field wpforms-field-textarea\" data-field-id=\"2\"><label class=\"wpforms-field-label\" for=\"wpforms-879-field_2\">Your Message <span class=\"wpforms-required-label\">*</span></label><textarea id=\"wpforms-879-field_2\" class=\"wpforms-field-medium wpforms-field-required\" name=\"wpforms[fields][2]\" required></textarea></div></div><!-- .wpforms-field-container --><div class=\"wpforms-field wpforms-field-hp\"><label for=\"wpforms-879-field-hp\" class=\"wpforms-field-label\">Website</label><input type=\"text\" name=\"wpforms[hp]\" id=\"wpforms-879-field-hp\" class=\"wpforms-field-medium\"></div><div class=\"wpforms-recaptcha-container wpforms-is-recaptcha wpforms-is-recaptcha-type-v2\" ><div class=\"g-recaptcha\" data-sitekey=\"6Lc8ybAZAAAAAB9jbETh0S0iE79-ZDSi6rNw5Rlp\"></div><input type=\"text\" name=\"g-recaptcha-hidden\" class=\"wpforms-recaptcha-hidden\" style=\"position:absolute!important;clip:rect(0,0,0,0)!important;height:1px!important;width:1px!important;border:0!important;overflow:hidden!important;padding:0!important;margin:0!important;\" data-rule-recaptcha=\"1\"></div><div class=\"wpforms-submit-container\" ><input type=\"hidden\" name=\"wpforms[id]\" value=\"879\"><input type=\"hidden\" name=\"page_title\" value=\"\"><input type=\"hidden\" name=\"page_url\" value=\"https://mpcbc.net/wp-json/wp/v2/pages?per_page=100&#038;page=1\"><input type=\"hidden\" name=\"url_referer\" value=\"\"><button type=\"submit\" name=\"wpforms[submit]\" id=\"wpforms-submit-879\" class=\"wpforms-submit\" data-alt-text=\"Sending...\" data-submit-text=\"Submit\" aria-live=\"assertive\" value=\"wpforms-submit\">Submit</button></div></form></div>  <!-- .wpforms-container -->\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>聯繫我們 我們邀請您與我們同行，學習神的話語，聖經，並通過他的兒子耶穌基督體驗與神的個人關係。 302 W. Commonwealth Ave., Alhambra, CA 91801 (626) 289-1284 info@mpcbc.net 慕道園華人浸信會MPCBC Pastor Caleb屬靈加油站 English MPCBC MPCBC English Ministry Send us a Message</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "elementor_header_footer",
+    "meta": {
+      "ocean_post_layout": "",
+      "ocean_both_sidebars_style": "",
+      "ocean_both_sidebars_content_width": 0,
+      "ocean_both_sidebars_sidebars_width": 0,
+      "ocean_sidebar": "0",
+      "ocean_second_sidebar": "0",
+      "ocean_disable_margins": "enable",
+      "ocean_add_body_class": "",
+      "ocean_shortcode_before_top_bar": "",
+      "ocean_shortcode_after_top_bar": "",
+      "ocean_shortcode_before_header": "",
+      "ocean_shortcode_after_header": "",
+      "ocean_has_shortcode": "",
+      "ocean_shortcode_after_title": "",
+      "ocean_shortcode_before_footer_widgets": "",
+      "ocean_shortcode_after_footer_widgets": "",
+      "ocean_shortcode_before_footer_bottom": "",
+      "ocean_shortcode_after_footer_bottom": "",
+      "ocean_display_top_bar": "default",
+      "ocean_display_header": "default",
+      "ocean_header_style": "",
+      "ocean_center_header_left_menu": "0",
+      "ocean_custom_header_template": "0",
+      "ocean_custom_logo": 0,
+      "ocean_custom_retina_logo": 0,
+      "ocean_custom_logo_max_width": 0,
+      "ocean_custom_logo_tablet_max_width": 0,
+      "ocean_custom_logo_mobile_max_width": 0,
+      "ocean_custom_logo_max_height": 0,
+      "ocean_custom_logo_tablet_max_height": 0,
+      "ocean_custom_logo_mobile_max_height": 0,
+      "ocean_header_custom_menu": "0",
+      "ocean_menu_typo_font_family": "0",
+      "ocean_menu_typo_font_subset": "",
+      "ocean_menu_typo_font_size": 0,
+      "ocean_menu_typo_font_size_tablet": 0,
+      "ocean_menu_typo_font_size_mobile": 0,
+      "ocean_menu_typo_font_size_unit": "px",
+      "ocean_menu_typo_font_weight": "",
+      "ocean_menu_typo_font_weight_tablet": "",
+      "ocean_menu_typo_font_weight_mobile": "",
+      "ocean_menu_typo_transform": "",
+      "ocean_menu_typo_transform_tablet": "",
+      "ocean_menu_typo_transform_mobile": "",
+      "ocean_menu_typo_line_height": 0,
+      "ocean_menu_typo_line_height_tablet": 0,
+      "ocean_menu_typo_line_height_mobile": 0,
+      "ocean_menu_typo_line_height_unit": "",
+      "ocean_menu_typo_spacing": 0,
+      "ocean_menu_typo_spacing_tablet": 0,
+      "ocean_menu_typo_spacing_mobile": 0,
+      "ocean_menu_typo_spacing_unit": "",
+      "ocean_menu_link_color": "",
+      "ocean_menu_link_color_hover": "",
+      "ocean_menu_link_color_active": "",
+      "ocean_menu_link_background": "",
+      "ocean_menu_link_hover_background": "",
+      "ocean_menu_link_active_background": "",
+      "ocean_menu_social_links_bg": "",
+      "ocean_menu_social_hover_links_bg": "",
+      "ocean_menu_social_links_color": "",
+      "ocean_menu_social_hover_links_color": "",
+      "ocean_disable_title": "default",
+      "ocean_disable_heading": "default",
+      "ocean_post_title": "",
+      "ocean_post_subheading": "",
+      "ocean_post_title_style": "",
+      "ocean_post_title_background_color": "",
+      "ocean_post_title_background": 0,
+      "ocean_post_title_bg_image_position": "",
+      "ocean_post_title_bg_image_attachment": "",
+      "ocean_post_title_bg_image_repeat": "",
+      "ocean_post_title_bg_image_size": "",
+      "ocean_post_title_height": 0,
+      "ocean_post_title_bg_overlay": 0.5,
+      "ocean_post_title_bg_overlay_color": "",
+      "ocean_disable_breadcrumbs": "default",
+      "ocean_breadcrumbs_color": "",
+      "ocean_breadcrumbs_separator_color": "",
+      "ocean_breadcrumbs_links_color": "",
+      "ocean_breadcrumbs_links_hover_color": "",
+      "ocean_display_footer_widgets": "default",
+      "ocean_display_footer_bottom": "default",
+      "ocean_custom_footer_template": "0",
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-1271",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry",
+      "entry"
+    ],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>聯繫我們 - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/contact/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"聯繫我們 - 慕道園華人浸信會\" />\n<meta property=\"og:description\" content=\"聯繫我們 我們邀請您與我們同行，學習神的話語，聖經，並通過他的兒子耶穌基督體驗與神的個人關係。 302 W. Commonwealth Ave., Alhambra, CA 91801 (626) 289-1284 info@mpcbc.net 慕道園華人浸信會MPCBC Pastor Caleb屬靈加油站 English MPCBC MPCBC English Ministry Send us a Message\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/contact/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta property=\"article:modified_time\" content=\"2021-02-05T08:40:59+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://mpcbc.net/contact/\",\"url\":\"https://mpcbc.net/contact/\",\"name\":\"聯繫我們 - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"datePublished\":\"2021-01-15T08:15:13+00:00\",\"dateModified\":\"2021-02-05T08:40:59+00:00\",\"breadcrumb\":{\"@id\":\"https://mpcbc.net/contact/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://mpcbc.net/contact/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/contact/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"聯繫我們\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "聯繫我們 - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/contact/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "聯繫我們 - 慕道園華人浸信會",
+      "og_description": "聯繫我們 我們邀請您與我們同行，學習神的話語，聖經，並通過他的兒子耶穌基督體驗與神的個人關係。 302 W. Commonwealth Ave., Alhambra, CA 91801 (626) 289-1284 info@mpcbc.net 慕道園華人浸信會MPCBC Pastor Caleb屬靈加油站 English MPCBC MPCBC English Ministry Send us a Message",
+      "og_url": "https://mpcbc.net/contact/",
+      "og_site_name": "慕道園華人浸信會",
+      "article_modified_time": "2021-02-05T08:40:59+00:00",
+      "twitter_card": "summary_large_image",
+      "twitter_misc": {
+        "Est. reading time": "1 minute"
+      },
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://mpcbc.net/contact/",
+            "url": "https://mpcbc.net/contact/",
+            "name": "聯繫我們 - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "datePublished": "2021-01-15T08:15:13+00:00",
+            "dateModified": "2021-02-05T08:40:59+00:00",
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/contact/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://mpcbc.net/contact/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/contact/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "聯繫我們"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1271",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/comments?post=1271"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 20,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1271/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1791,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1271/revisions/1791"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/media?parent=1271"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1034,
+    "date": "2020-07-10T18:50:42",
+    "date_gmt": "2020-07-10T18:50:42",
+    "guid": {
+      "rendered": "http://mpcbc.net/?page_id=1034"
+    },
+    "modified": "2025-04-22T16:53:42",
+    "modified_gmt": "2025-04-23T00:53:42",
+    "slug": "about-us",
+    "status": "publish",
+    "type": "page",
+    "link": "https://mpcbc.net/about-us/",
+    "title": {
+      "rendered": "教會介紹"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-page\" data-elementor-id=\"1034\" class=\"elementor elementor-1034\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-1ac4799b elementor-section-content-middle elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle\" data-id=\"1ac4799b\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;opacity-tilt&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t<div class=\"elementor-shape elementor-shape-bottom\" aria-hidden=\"true\" data-negative=\"false\">\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 2600 131.1\" preserveAspectRatio=\"none\">\n\t<path class=\"elementor-shape-fill\" d=\"M0 0L2600 0 2600 69.1 0 0z\"/>\n\t<path class=\"elementor-shape-fill\" style=\"opacity:0.5\" d=\"M0 0L2600 0 2600 69.1 0 69.1z\"/>\n\t<path class=\"elementor-shape-fill\" style=\"opacity:0.25\" d=\"M2600 0L0 0 0 130.1 2600 69.1z\"/>\n</svg>\t\t</div>\n\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-409162e6\" data-id=\"409162e6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-1fd51e2 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"1fd51e2\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">教會介紹</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-7724f408 elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider\" data-id=\"7724f408\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-75c0eb6e elementor-widget elementor-widget-text-editor\" data-id=\"75c0eb6e\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-53385903 elementor-widget elementor-widget-heading\" data-id=\"53385903\" data-element_type=\"widget\" data-widget_type=\"heading.default\"><div class=\"elementor-widget-container\"><p class=\"elementor-heading-title elementor-size-default\">教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。</p></div></div>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-2c32e60d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"2c32e60d\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-wide\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7fbcec22\" data-id=\"7fbcec22\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-501b7f3e elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"501b7f3e\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-large\">使命宣言</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-410a8c9 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"410a8c9\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-24a18093 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"24a18093\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;pyramids&quot;,&quot;shape_divider_bottom&quot;:&quot;pyramids&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t<div class=\"elementor-shape elementor-shape-top\" aria-hidden=\"true\" data-negative=\"false\">\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 100\" preserveAspectRatio=\"none\">\n\t<path class=\"elementor-shape-fill\" d=\"M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9\"/>\n</svg>\t\t</div>\n\t\t\t\t<div class=\"elementor-shape elementor-shape-bottom\" aria-hidden=\"true\" data-negative=\"false\">\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 100\" preserveAspectRatio=\"none\">\n\t<path class=\"elementor-shape-fill\" d=\"M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9\"/>\n</svg>\t\t</div>\n\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-34bae5e4\" data-id=\"34bae5e4\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-77bfa2a9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"77bfa2a9\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1f7dcda8\" data-id=\"1f7dcda8\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-5a875c58 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"5a875c58\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeInDown&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">教牧團隊</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-62dd314d\" data-id=\"62dd314d\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap\">\n\t\t\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-6d7a6a09 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"6d7a6a09\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4dd8da19\" data-id=\"4dd8da19\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-64c018b3 elementor-widget elementor-widget-image\" data-id=\"64c018b3\" data-element_type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://mpcbc.net/wp-content/uploads/2021/01/Pastor-Caleb.jpg\" data-elementor-open-lightbox=\"no\">\n\t\t\t\t\t\t\t<img decoding=\"async\" src=\"https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg\" title=\"Pastor-Caleb\" alt=\"Pastor-Caleb\" class=\"elementor-animation-float\" loading=\"lazy\" />\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6d6a656 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"6d6a656\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h4 class=\"elementor-heading-title elementor-size-large\">張健庭博士</h4>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-84edc3d elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"84edc3d\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>主任牧師及粵語堂牧師</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-dcdf370 elementor-align-center elementor-widget elementor-widget-button\" data-id=\"dcdf370\" data-element_type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"mailto:calebcheung@mpcbc.net\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t<span class=\"elementor-button-icon\">\n\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-envelope\"></i>\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">聯絡</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-362f1658\" data-id=\"362f1658\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-4d92c782 elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"4d92c782\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>張健庭牧師來自香港，多年前蒙召在福樂神學院(Fuller Theological Seminary)念神學，繼在克箂蒙研究大學(Claremont Graduate University) 進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<div class=\"elementor-element elementor-element-d2b8361 elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"d2b8361\" data-element_type=\"widget\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-606a4e3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"606a4e3\" data-element_type=\"widget\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-9c8e53d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"9c8e53d\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-33e8c1f\" data-id=\"33e8c1f\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-b85b042 elementor-widget elementor-widget-image\" data-id=\"b85b042\" data-element_type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://mpcbc.net/wp-content/uploads/2021/01/Pastor-Eric-1.jpg\" data-elementor-open-lightbox=\"no\">\n\t\t\t\t\t\t\t<img decoding=\"async\" src=\"https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Eric-1-p1am6c3axv2sd4zknnrm7m7il6z2q21nq3fzbjujso.jpg\" title=\"Pastor-Eric (1)\" alt=\"Pastor-Eric (1)\" class=\"elementor-animation-float\" loading=\"lazy\" />\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-60a190d elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"60a190d\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h4 class=\"elementor-heading-title elementor-size-large\">張易安牧師</h4>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-06c86af elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"06c86af\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>英語堂</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-426314b elementor-align-center elementor-widget elementor-widget-button\" data-id=\"426314b\" data-element_type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"mailto:info@mpcbc.net\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t<span class=\"elementor-button-icon\">\n\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-envelope\"></i>\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">聯絡</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-b931a88\" data-id=\"b931a88\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-6c0debe elementor-invisible elementor-widget elementor-widget-text-editor\" data-id=\"6c0debe\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>張易安牧師來自美國本地，生於基督徒家庭，青年時期獻身宣教事工，曾去中國大陸宣教，能講流利的普通話。</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-7e605658 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"7e605658\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-15532356\" data-id=\"15532356\" data-element_type=\"column\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-4f692e62 elementor-widget elementor-widget-spacer\" data-id=\"4f692e62\" data-element_type=\"widget\" data-widget_type=\"spacer.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-spacer\">\n\t\t\t<div class=\"elementor-spacer-inner\"></div>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1f048079\" data-id=\"1f048079\" data-element_type=\"column\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-62918c58 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"62918c58\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-289dea2c\" data-id=\"289dea2c\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-7937c239 elementor-widget elementor-widget-heading\" data-id=\"7937c239\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">我們的信仰告白</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-49dd0612 elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"49dd0612\" data-element_type=\"widget\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<div class=\"elementor-element elementor-element-5422bbc2 elementor-widget elementor-widget-spacer\" data-id=\"5422bbc2\" data-element_type=\"widget\" data-widget_type=\"spacer.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-spacer\">\n\t\t\t<div class=\"elementor-spacer-inner\"></div>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-f60667f elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"f60667f\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b489601\" data-id=\"b489601\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-9a704bb envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"9a704bb\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">神</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c1f601d\" data-id=\"c1f601d\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-16a2d09 elementor-widget elementor-widget-text-editor\" data-id=\"16a2d09\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。</p><blockquote><p>創1:1,26,27, 3:22, 詩90:2; 太28:19; 彼前1:2; 林後13:14</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-f4052a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"f4052a7\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5f37413\" data-id=\"5f37413\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-0383f75 envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"0383f75\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">耶穌基督</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c7764f3\" data-id=\"c7764f3\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-d47d862 elementor-widget elementor-widget-text-editor\" data-id=\"d47d862\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。</p><blockquote><p>太1:22-23; 賽9:6; 約1:1-5, 14:10-30; 來4:14,15; 林前15:3-4; 羅1:3-4; 徒1:9-11; 提前6:14; 多2:13</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-77aa907 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"77aa907\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-be25d52\" data-id=\"be25d52\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-b370e0f envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"b370e0f\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">聖靈</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-962d613\" data-id=\"962d613\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-088efe5 elementor-widget elementor-widget-text-editor\" data-id=\"088efe5\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。</p><blockquote><p>林後3:17; 約16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-2a9fd876 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"2a9fd876\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3c29aa29\" data-id=\"3c29aa29\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-3d4b375e envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"3d4b375e\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">聖經</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6543474\" data-id=\"6543474\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-33bf3cf6 elementor-widget elementor-widget-text-editor\" data-id=\"33bf3cf6\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。</p><blockquote><p>提後3:16,1:13; 彼後1:20-21; 詩119:105, 160, 12:6; 箴30:5</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-73b64a3 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"73b64a3\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-49df50b\" data-id=\"49df50b\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-9ce04f4 envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"9ce04f4\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">人類</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8b4846b\" data-id=\"8b4846b\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-110cb00 elementor-widget elementor-widget-text-editor\" data-id=\"110cb00\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>人類是照神屬靈的形象所造，本有神的屬性。人是神創造的極致。雖然人本有善的潛能，我們每個人卻都因著罪的態度與神隔絕，而使得生命陷入種種問題。</p><blockquote><p>創1:27; 詩8:3-6; 賽53:6a; 羅3:23; 賽59:1-2</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-ede5afe elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"ede5afe\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-063b31f\" data-id=\"063b31f\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-5782cd7 envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"5782cd7\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">救恩</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5f535e1\" data-id=\"5f535e1\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-4601d69 elementor-widget elementor-widget-text-editor\" data-id=\"4601d69\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>救恩是神給我們白白的禮物，但需要我們去接受。我們永遠無法靠著善行與自我改善來贖我們的罪。惟有靠著耶穌基督，蒙神赦免，才能從罪的刑罰得贖。當我們從以自我為中心、靠自己的生命，憑信心轉向耶穌時，我們便得救。永遠的生命開始於我們憑信心接受耶穌基督的生命那一刻。</p><blockquote><p>羅6:23,5:1; 弗2:8-9; 約14:6;1:12; 多3:5; 加3:26</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-64b7cc6 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"64b7cc6\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a7ef671\" data-id=\"a7ef671\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-3f0525f envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"3f0525f\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">永遠的保障</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0bc55f2\" data-id=\"0bc55f2\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-460ddae elementor-widget elementor-widget-text-editor\" data-id=\"460ddae\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>由於神通過耶穌基督賜給我們永遠的生命，真信徒有永遠的得救保障。救贖是藉著神的權能與恩典，不是憑基督徒自己的努力。神保守的權能與恩典使我們有這永遠的保障。但信徒也有責任不斷信靠神，活在神的保守之中。</p><blockquote><p><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">約</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">10:29; </span><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">提後</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">1:12; </span><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">來</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">7:25, 10:10,14; </span><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">彼前</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">1:3-5; </span><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">來</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">6:4-8; </span><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">來</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">10:26-27; </span><span lang=\"ZH-TW\" style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F2; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: CIDFont+F2; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">約</span><span style=\"font-size: 12.0pt; line-height: 107%; font-family: CIDFont+F1; mso-fareast-font-family: CIDFont+F2; mso-bidi-font-family: CIDFont+F1; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA;\">15:6</span></p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-d10db2e elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"d10db2e\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cd1044e\" data-id=\"cd1044e\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-8399e53 envato-kit-138-bracket elementor-widget elementor-widget-heading\" data-id=\"8399e53\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h3 class=\"elementor-heading-title elementor-size-default\">永恆</h3>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-48ff740\" data-id=\"48ff740\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-4bff910 elementor-widget elementor-widget-text-editor\" data-id=\"4bff910\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>人被創造要存到永遠。我們或要因著罪與神永遠隔離，或是因著赦免與救恩與神永遠同在。與神永遠隔離便是地獄，與神永遠同在便是永遠的生命。</p><blockquote><p>約3:16, 2:25, 5:11-13; 羅6:23; 啟20:15; 太1:8; 太2:44,46</p></blockquote>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-36c5b709\" data-id=\"36c5b709\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-137e84b7 elementor-widget elementor-widget-spacer\" data-id=\"137e84b7\" data-element_type=\"widget\" data-widget_type=\"spacer.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-spacer\">\n\t\t\t<div class=\"elementor-spacer-inner\"></div>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>教會介紹 教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。 使命宣言 認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。 教牧團隊 張健庭博士 主任牧師及粵語堂牧師 聯絡 張健庭牧師來自香港，多年前蒙召在福樂神學院(Fuller Theological Seminary)念神學，繼在克箂蒙研究大學(Claremont Graduate University) 進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。 張易安牧師 英語堂 聯絡 張易安牧師來自美國本地，生於基督徒家庭，青年時期獻身宣教事工，曾去中國大陸宣教，能講流利的普通話。 我們的信仰告白 神 神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。 創1:1,26,27, 3:22, 詩90:2; 太28:19; 彼前1:2; 林後13:14 耶穌基督 耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。 太1:22-23; 賽9:6; 約1:1-5, 14:10-30; 來4:14,15; 林前15:3-4; 羅1:3-4; 徒1:9-11; 提前6:14; 多2:13 聖靈 聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。 林後3:17; 約16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25 聖經 聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。 提後3:16,1:13; 彼後1:20-21; 詩119:105, [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "elementor_header_footer",
+    "meta": {
+      "ocean_post_layout": "",
+      "ocean_both_sidebars_style": "",
+      "ocean_both_sidebars_content_width": 0,
+      "ocean_both_sidebars_sidebars_width": 0,
+      "ocean_sidebar": "0",
+      "ocean_second_sidebar": "0",
+      "ocean_disable_margins": "enable",
+      "ocean_add_body_class": "",
+      "ocean_shortcode_before_top_bar": "",
+      "ocean_shortcode_after_top_bar": "",
+      "ocean_shortcode_before_header": "",
+      "ocean_shortcode_after_header": "",
+      "ocean_has_shortcode": "",
+      "ocean_shortcode_after_title": "",
+      "ocean_shortcode_before_footer_widgets": "",
+      "ocean_shortcode_after_footer_widgets": "",
+      "ocean_shortcode_before_footer_bottom": "",
+      "ocean_shortcode_after_footer_bottom": "",
+      "ocean_display_top_bar": "default",
+      "ocean_display_header": "default",
+      "ocean_header_style": "",
+      "ocean_center_header_left_menu": "0",
+      "ocean_custom_header_template": "0",
+      "ocean_custom_logo": 0,
+      "ocean_custom_retina_logo": 0,
+      "ocean_custom_logo_max_width": 0,
+      "ocean_custom_logo_tablet_max_width": 0,
+      "ocean_custom_logo_mobile_max_width": 0,
+      "ocean_custom_logo_max_height": 0,
+      "ocean_custom_logo_tablet_max_height": 0,
+      "ocean_custom_logo_mobile_max_height": 0,
+      "ocean_header_custom_menu": "0",
+      "ocean_menu_typo_font_family": "0",
+      "ocean_menu_typo_font_subset": "",
+      "ocean_menu_typo_font_size": 0,
+      "ocean_menu_typo_font_size_tablet": 0,
+      "ocean_menu_typo_font_size_mobile": 0,
+      "ocean_menu_typo_font_size_unit": "px",
+      "ocean_menu_typo_font_weight": "",
+      "ocean_menu_typo_font_weight_tablet": "",
+      "ocean_menu_typo_font_weight_mobile": "",
+      "ocean_menu_typo_transform": "",
+      "ocean_menu_typo_transform_tablet": "",
+      "ocean_menu_typo_transform_mobile": "",
+      "ocean_menu_typo_line_height": 0,
+      "ocean_menu_typo_line_height_tablet": 0,
+      "ocean_menu_typo_line_height_mobile": 0,
+      "ocean_menu_typo_line_height_unit": "",
+      "ocean_menu_typo_spacing": 0,
+      "ocean_menu_typo_spacing_tablet": 0,
+      "ocean_menu_typo_spacing_mobile": 0,
+      "ocean_menu_typo_spacing_unit": "",
+      "ocean_menu_link_color": "",
+      "ocean_menu_link_color_hover": "",
+      "ocean_menu_link_color_active": "",
+      "ocean_menu_link_background": "",
+      "ocean_menu_link_hover_background": "",
+      "ocean_menu_link_active_background": "",
+      "ocean_menu_social_links_bg": "",
+      "ocean_menu_social_hover_links_bg": "",
+      "ocean_menu_social_links_color": "",
+      "ocean_menu_social_hover_links_color": "",
+      "ocean_disable_title": "default",
+      "ocean_disable_heading": "default",
+      "ocean_post_title": "",
+      "ocean_post_subheading": "",
+      "ocean_post_title_style": "",
+      "ocean_post_title_background_color": "",
+      "ocean_post_title_background": 0,
+      "ocean_post_title_bg_image_position": "",
+      "ocean_post_title_bg_image_attachment": "",
+      "ocean_post_title_bg_image_repeat": "",
+      "ocean_post_title_bg_image_size": "",
+      "ocean_post_title_height": 0,
+      "ocean_post_title_bg_overlay": 0.5,
+      "ocean_post_title_bg_overlay_color": "",
+      "ocean_disable_breadcrumbs": "default",
+      "ocean_breadcrumbs_color": "",
+      "ocean_breadcrumbs_separator_color": "",
+      "ocean_breadcrumbs_links_color": "",
+      "ocean_breadcrumbs_links_hover_color": "",
+      "ocean_display_footer_widgets": "default",
+      "ocean_display_footer_bottom": "default",
+      "ocean_custom_footer_template": "0",
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-1034",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry",
+      "entry"
+    ],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>教會介紹 - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/about-us/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"教會介紹 - 慕道園華人浸信會\" />\n<meta property=\"og:description\" content=\"教會介紹 教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。 使命宣言 認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。 教牧團隊 張健庭博士 主任牧師及粵語堂牧師 聯絡 張健庭牧師來自香港，多年前蒙召在福樂神學院(Fuller Theological Seminary)念神學，繼在克箂蒙研究大學(Claremont Graduate University) 進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。 張易安牧師 英語堂 聯絡 張易安牧師來自美國本地，生於基督徒家庭，青年時期獻身宣教事工，曾去中國大陸宣教，能講流利的普通話。 我們的信仰告白 神 神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。 創1:1,26,27, 3:22, 詩90:2; 太28:19; 彼前1:2; 林後13:14 耶穌基督 耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。 太1:22-23; 賽9:6; 約1:1-5, 14:10-30; 來4:14,15; 林前15:3-4; 羅1:3-4; 徒1:9-11; 提前6:14; 多2:13 聖靈 聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。 林後3:17; 約16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25 聖經 聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。 提後3:16,1:13; 彼後1:20-21; 詩119:105, [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/about-us/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta property=\"article:modified_time\" content=\"2025-04-23T00:53:42+00:00\" />\n<meta property=\"og:image\" content=\"https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://mpcbc.net/about-us/\",\"url\":\"https://mpcbc.net/about-us/\",\"name\":\"教會介紹 - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://mpcbc.net/about-us/#primaryimage\"},\"image\":{\"@id\":\"https://mpcbc.net/about-us/#primaryimage\"},\"thumbnailUrl\":\"https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg\",\"datePublished\":\"2020-07-10T18:50:42+00:00\",\"dateModified\":\"2025-04-23T00:53:42+00:00\",\"breadcrumb\":{\"@id\":\"https://mpcbc.net/about-us/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://mpcbc.net/about-us/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/about-us/#primaryimage\",\"url\":\"https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/about-us/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"教會介紹\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "教會介紹 - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/about-us/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "教會介紹 - 慕道園華人浸信會",
+      "og_description": "教會介紹 教會成立於 1977年。教會剛開始是使用粵語崇拜。但從八十年代起，教會看到講國語的新移民人數在洛杉磯迅速增長，考慮到新移民對基督福音的需要。於是，教會決定開展國語事工，為新移民群體預備一個屬靈的家，於1988年開始了國語崇拜。之後，在1991年教會又增設了英語的崇拜，直到如今，教會一直保持有三種語言的崇拜。 使命宣言 認識神為基礎，榮耀神是目標。我們藉著敬拜﹑團契﹑門徒訓練﹑事奉﹑傳福音來認識和榮耀神。 教牧團隊 張健庭博士 主任牧師及粵語堂牧師 聯絡 張健庭牧師來自香港，多年前蒙召在福樂神學院(Fuller Theological Seminary)念神學，繼在克箂蒙研究大學(Claremont Graduate University) 進修博士課程專修神學及宗教哲學，後留在本教會事奉與牧養，現任本教會主任牧師。 張易安牧師 英語堂 聯絡 張易安牧師來自美國本地，生於基督徒家庭，青年時期獻身宣教事工，曾去中國大陸宣教，能講流利的普通話。 我們的信仰告白 神 神是宇宙的創造者與主宰，祂以三位一体永遠存在:聖父、聖子、聖靈。三位同等為一神。 創1:1,26,27, 3:22, 詩90:2; 太28:19; 彼前1:2; 林後13:14 耶穌基督 耶穌基督是神的兒子，與父同等。耶穌曾在地上無罪活過人生，並將自己獻上成為最完美的祭，為所有的人類死在十字架上。三天後從死裡復活，彰顯祂勝過罪與死的權能。祂升到天上的榮耀，有一天要回到地上來作萬王之王、萬主之主。 太1:22-23; 賽9:6; 約1:1-5, 14:10-30; 來4:14,15; 林前15:3-4; 羅1:3-4; 徒1:9-11; 提前6:14; 多2:13 聖靈 聖靈與聖父聖子同等。祂臨在世上為要幫助人認識基督。並且在人得救那一刻，祂便住在每一個基督徒裡面。祂供應每個基督徒每天生活的能力，對於屬靈真理的理解力，以及前行的引導。祂賞賜屬靈恩賜給每個得救的信徒。作為基督徒，我們每天尋求過一個聖靈管理的生活。 林後3:17; 約16:7-13, 14:16-17; 徒1:8; 林前2:12; 3:16 弗1:13,5:18; 加5:25 聖經 聖經是神給我們的話，是藉著聖靈超然的引導，由人寫成。是基督徒信仰與生活的最高準則。 提後3:16,1:13; 彼後1:20-21; 詩119:105, [&hellip;]",
+      "og_url": "https://mpcbc.net/about-us/",
+      "og_site_name": "慕道園華人浸信會",
+      "article_modified_time": "2025-04-23T00:53:42+00:00",
+      "og_image": [
+        {
+          "url": "https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg",
+          "type": "",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": {
+        "Est. reading time": "1 minute"
+      },
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://mpcbc.net/about-us/",
+            "url": "https://mpcbc.net/about-us/",
+            "name": "教會介紹 - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://mpcbc.net/about-us/#primaryimage"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/about-us/#primaryimage"
+            },
+            "thumbnailUrl": "https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg",
+            "datePublished": "2020-07-10T18:50:42+00:00",
+            "dateModified": "2025-04-23T00:53:42+00:00",
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/about-us/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://mpcbc.net/about-us/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://mpcbc.net/about-us/#primaryimage",
+            "url": "https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg",
+            "contentUrl": "https://mpcbc.net/wp-content/uploads/elementor/thumbs/Pastor-Caleb-p1am5mpntc41no0frusouam2jsg5y88wmltvd2w6go.jpg"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/about-us/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "教會介紹"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1034",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/comments?post=1034"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 90,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1034/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 3557,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1034/revisions/3557"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/media?parent=1034"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1018,
+    "date": "2020-07-09T19:54:48",
+    "date_gmt": "2020-07-09T19:54:48",
+    "guid": {
+      "rendered": "http://mpcbc.net/?page_id=1018"
+    },
+    "modified": "2024-01-08T16:22:08",
+    "modified_gmt": "2024-01-09T00:22:08",
+    "slug": "donation",
+    "status": "publish",
+    "type": "page",
+    "link": "https://mpcbc.net/donation/",
+    "title": {
+      "rendered": "奉獻"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-page\" data-elementor-id=\"1018\" class=\"elementor elementor-1018\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-492075f4 elementor-section-height-full elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle\" data-id=\"492075f4\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5d4d53a6\" data-id=\"5d4d53a6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-16c4eca0 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"16c4eca0\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeInDown&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">奉獻</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-1ce6f6ed elementor-hidden-phone elementor-widget elementor-widget-text-editor\" data-id=\"1ce6f6ed\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻:</p><ul><li>支票抬頭請寫 MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801</li><li>匯款到教會的 PayPal 帳戶:</li></ul>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b0e6f69 elementor-widget elementor-widget-html\" data-id=\"b0e6f69\" data-element_type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<form action=\"https://www.paypal.com/donate\" method=\"post\" target=\"_top\">\r\n<input type=\"hidden\" name=\"hosted_button_id\" value=\"PQJTK3MEFJ9M2\" />\r\n<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />\r\n<img decoding=\"async\" alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\" />\r\n</form>\r\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-4aac6a8 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"4aac6a8\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ca4a59a\" data-id=\"ca4a59a\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap\">\n\t\t\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>奉獻 奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻: 支票抬頭請寫 MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801 匯款到教會的 PayPal 帳戶:</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "elementor_header_footer",
+    "meta": {
+      "ocean_post_layout": "",
+      "ocean_both_sidebars_style": "",
+      "ocean_both_sidebars_content_width": 0,
+      "ocean_both_sidebars_sidebars_width": 0,
+      "ocean_sidebar": "0",
+      "ocean_second_sidebar": "0",
+      "ocean_disable_margins": "enable",
+      "ocean_add_body_class": "",
+      "ocean_shortcode_before_top_bar": "",
+      "ocean_shortcode_after_top_bar": "",
+      "ocean_shortcode_before_header": "",
+      "ocean_shortcode_after_header": "",
+      "ocean_has_shortcode": "",
+      "ocean_shortcode_after_title": "",
+      "ocean_shortcode_before_footer_widgets": "",
+      "ocean_shortcode_after_footer_widgets": "",
+      "ocean_shortcode_before_footer_bottom": "",
+      "ocean_shortcode_after_footer_bottom": "",
+      "ocean_display_top_bar": "default",
+      "ocean_display_header": "default",
+      "ocean_header_style": "",
+      "ocean_center_header_left_menu": "0",
+      "ocean_custom_header_template": "0",
+      "ocean_custom_logo": 0,
+      "ocean_custom_retina_logo": 0,
+      "ocean_custom_logo_max_width": 0,
+      "ocean_custom_logo_tablet_max_width": 0,
+      "ocean_custom_logo_mobile_max_width": 0,
+      "ocean_custom_logo_max_height": 0,
+      "ocean_custom_logo_tablet_max_height": 0,
+      "ocean_custom_logo_mobile_max_height": 0,
+      "ocean_header_custom_menu": "0",
+      "ocean_menu_typo_font_family": "0",
+      "ocean_menu_typo_font_subset": "",
+      "ocean_menu_typo_font_size": 0,
+      "ocean_menu_typo_font_size_tablet": 0,
+      "ocean_menu_typo_font_size_mobile": 0,
+      "ocean_menu_typo_font_size_unit": "px",
+      "ocean_menu_typo_font_weight": "",
+      "ocean_menu_typo_font_weight_tablet": "",
+      "ocean_menu_typo_font_weight_mobile": "",
+      "ocean_menu_typo_transform": "",
+      "ocean_menu_typo_transform_tablet": "",
+      "ocean_menu_typo_transform_mobile": "",
+      "ocean_menu_typo_line_height": 0,
+      "ocean_menu_typo_line_height_tablet": 0,
+      "ocean_menu_typo_line_height_mobile": 0,
+      "ocean_menu_typo_line_height_unit": "",
+      "ocean_menu_typo_spacing": 0,
+      "ocean_menu_typo_spacing_tablet": 0,
+      "ocean_menu_typo_spacing_mobile": 0,
+      "ocean_menu_typo_spacing_unit": "",
+      "ocean_menu_link_color": "",
+      "ocean_menu_link_color_hover": "",
+      "ocean_menu_link_color_active": "",
+      "ocean_menu_link_background": "",
+      "ocean_menu_link_hover_background": "",
+      "ocean_menu_link_active_background": "",
+      "ocean_menu_social_links_bg": "",
+      "ocean_menu_social_hover_links_bg": "",
+      "ocean_menu_social_links_color": "",
+      "ocean_menu_social_hover_links_color": "",
+      "ocean_disable_title": "default",
+      "ocean_disable_heading": "default",
+      "ocean_post_title": "",
+      "ocean_post_subheading": "",
+      "ocean_post_title_style": "",
+      "ocean_post_title_background_color": "",
+      "ocean_post_title_background": 0,
+      "ocean_post_title_bg_image_position": "",
+      "ocean_post_title_bg_image_attachment": "",
+      "ocean_post_title_bg_image_repeat": "",
+      "ocean_post_title_bg_image_size": "",
+      "ocean_post_title_height": 0,
+      "ocean_post_title_bg_overlay": 0.5,
+      "ocean_post_title_bg_overlay_color": "",
+      "ocean_disable_breadcrumbs": "default",
+      "ocean_breadcrumbs_color": "",
+      "ocean_breadcrumbs_separator_color": "",
+      "ocean_breadcrumbs_links_color": "",
+      "ocean_breadcrumbs_links_hover_color": "",
+      "ocean_display_footer_widgets": "default",
+      "ocean_display_footer_bottom": "default",
+      "ocean_custom_footer_template": "0",
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-1018",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry",
+      "entry"
+    ],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>奉獻 - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/donation/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"奉獻 - 慕道園華人浸信會\" />\n<meta property=\"og:description\" content=\"奉獻 奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻: 支票抬頭請寫 MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801 匯款到教會的 PayPal 帳戶:\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/donation/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta property=\"article:modified_time\" content=\"2024-01-09T00:22:08+00:00\" />\n<meta property=\"og:image\" content=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://mpcbc.net/donation/\",\"url\":\"https://mpcbc.net/donation/\",\"name\":\"奉獻 - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://mpcbc.net/donation/#primaryimage\"},\"image\":{\"@id\":\"https://mpcbc.net/donation/#primaryimage\"},\"thumbnailUrl\":\"https://www.paypal.com/en_US/i/scr/pixel.gif\",\"datePublished\":\"2020-07-09T19:54:48+00:00\",\"dateModified\":\"2024-01-09T00:22:08+00:00\",\"breadcrumb\":{\"@id\":\"https://mpcbc.net/donation/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://mpcbc.net/donation/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/donation/#primaryimage\",\"url\":\"https://www.paypal.com/en_US/i/scr/pixel.gif\",\"contentUrl\":\"https://www.paypal.com/en_US/i/scr/pixel.gif\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/donation/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"奉獻\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "奉獻 - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/donation/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "奉獻 - 慕道園華人浸信會",
+      "og_description": "奉獻 奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻: 支票抬頭請寫 MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801 匯款到教會的 PayPal 帳戶:",
+      "og_url": "https://mpcbc.net/donation/",
+      "og_site_name": "慕道園華人浸信會",
+      "article_modified_time": "2024-01-09T00:22:08+00:00",
+      "og_image": [
+        {
+          "url": "https://www.paypal.com/en_US/i/scr/pixel.gif",
+          "type": "",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": {
+        "Est. reading time": "1 minute"
+      },
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://mpcbc.net/donation/",
+            "url": "https://mpcbc.net/donation/",
+            "name": "奉獻 - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://mpcbc.net/donation/#primaryimage"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/donation/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.paypal.com/en_US/i/scr/pixel.gif",
+            "datePublished": "2020-07-09T19:54:48+00:00",
+            "dateModified": "2024-01-09T00:22:08+00:00",
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/donation/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://mpcbc.net/donation/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://mpcbc.net/donation/#primaryimage",
+            "url": "https://www.paypal.com/en_US/i/scr/pixel.gif",
+            "contentUrl": "https://www.paypal.com/en_US/i/scr/pixel.gif"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/donation/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "奉獻"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1018",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/comments?post=1018"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 51,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1018/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 3080,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/1018/revisions/3080"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/media?parent=1018"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 171,
+    "date": "2016-10-30T12:40:41",
+    "date_gmt": "2016-10-30T12:40:41",
+    "guid": {
+      "rendered": "https://oceanwp.org/travel/?page_id=171"
+    },
+    "modified": "2026-10-16T09:37:34",
+    "modified_gmt": "2026-10-16T17:37:34",
+    "slug": "home",
+    "status": "publish",
+    "type": "page",
+    "link": "https://mpcbc.net/",
+    "title": {
+      "rendered": "Home"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-page\" data-elementor-id=\"171\" class=\"elementor elementor-171\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-3845498c elementor-section-height-min-height elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-items-middle\" data-id=\"3845498c\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\\/\\/mpcbc.net\\/wp-content\\/uploads\\/2021\\/02\\/Main3.mp4&quot;,&quot;shape_divider_bottom&quot;:&quot;wave-brush&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-background-video-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<video class=\"elementor-background-video-hosted\" autoplay muted playsinline loop></video>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t<div class=\"elementor-shape elementor-shape-bottom\" aria-hidden=\"true\" data-negative=\"false\">\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 283.5 27.8\" preserveAspectRatio=\"none\">\n\t<path class=\"elementor-shape-fill\" d=\"M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7\ts-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7\tc-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3\tc-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6\tc0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7\tC239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5\tc0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1\tc-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7\tc0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6\tC8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8\tc0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2\tC74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3\tC97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1\tz M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1\tc-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3\tC267.7,18.8,269.7,18,269.6,18z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2\tS227.6,9.9,227.4,9.8z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4\tC206.4,12.9,204.6,13.5,204.5,13.4z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6\tS201,10.7,201,10.6z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3\tC152.6,27.5,154.6,26.8,154.5,26.7z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6\tc-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0\tC76.9,11.5,75.3,12.5,75.5,12.6z\"/>\n\t<path class=\"elementor-shape-fill\" d=\"M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4\tC19.9,13.7,15.7,13.3,15.6,13.2z\"/>\n</svg>\t\t</div>\n\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-281b6314\" data-id=\"281b6314\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap\">\n\t\t\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-40e2945 elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle\" data-id=\"40e2945\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e2a2603\" data-id=\"7e2a2603\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-8b68cb4 elementor-widget elementor-widget-heading\" data-id=\"8b68cb4\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">崇拜直播</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-a5738f1 elementor-section-full_width elementor-section-height-default elementor-section-height-default\" data-id=\"a5738f1\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4bac61b\" data-id=\"4bac61b\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-011fe04 elementor-widget elementor-widget-video\" data-id=\"011fe04\" data-element_type=\"widget\" data-settings=\"{&quot;youtube_url&quot;:&quot;https:\\/\\/youtu.be\\/hW2i_TUTBmM&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}\" data-widget_type=\"video.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-wrapper elementor-open-inline\">\n\t\t\t<div class=\"elementor-video\"></div>\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4574be5 elementor-hidden-phone elementor-widget elementor-widget-heading\" data-id=\"4574be5\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">粵語堂主日崇拜</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-c7409f0 elementor-hidden-phone elementor-widget elementor-widget-text-editor\" data-id=\"c7409f0\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>10/18/2026</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5f89dba\" data-id=\"5f89dba\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-083fd30 elementor-widget elementor-widget-video\" data-id=\"083fd30\" data-element_type=\"widget\" data-settings=\"{&quot;youtube_url&quot;:&quot;https:\\/\\/youtu.be\\/3pwe24j9G2c&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}\" data-widget_type=\"video.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-wrapper elementor-open-inline\">\n\t\t\t<div class=\"elementor-video\"></div>\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-81dbd21 elementor-hidden-phone elementor-widget elementor-widget-heading\" data-id=\"81dbd21\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">国语堂主日崇拜</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-8f34c45 elementor-hidden-phone elementor-widget elementor-widget-text-editor\" data-id=\"8f34c45\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>10/18/2026</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-17553263 envato-kit-141-newsletter-inline elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"17553263\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-wide\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ada1834 elementor-invisible\" data-id=\"ada1834\" data-element_type=\"column\" data-settings=\"{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:100}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-1e9cb7d2 elementor-view-default elementor-widget elementor-widget-icon\" data-id=\"1e9cb7d2\" data-element_type=\"widget\" data-widget_type=\"icon.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-icon-wrapper\">\n\t\t\t<div class=\"elementor-icon\">\n\t\t\t\t\t\t\t<i class=\"fa fa-envelope-open-o\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-14bb9903 elementor-invisible\" data-id=\"14bb9903\" data-element_type=\"column\" data-settings=\"{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-300ce428 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"300ce428\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">會刊 2026</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-38972235 elementor-invisible\" data-id=\"38972235\" data-element_type=\"column\" data-settings=\"{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:300}\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-deb8ccc elementor-align-center elementor-widget elementor-widget-button\" data-id=\"deb8ccc\" data-element_type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"https://mpcbc.net/wp-content/uploads/2026/07/MPCBC-Jul-2026-Newsletter-FINAL-V3.pdf\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">下載閱讀</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-6ff2809f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"6ff2809f\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6b1b451 elementor-hidden-phone\" data-id=\"6b1b451\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-60c5b6a0 elementor-widget elementor-widget-image\" data-id=\"60c5b6a0\" data-element_type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img fetchpriority=\"high\" decoding=\"async\" width=\"3456\" height=\"4320\" src=\"https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg\" class=\"attachment-full size-full wp-image-1101\" alt=\"\" srcset=\"https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg 3456w, https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-240x300.jpg 240w, https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-819x1024.jpg 819w, https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-768x960.jpg 768w, https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-1229x1536.jpg 1229w, https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-1638x2048.jpg 1638w\" sizes=\"(max-width: 3456px) 100vw, 3456px\" />\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-66afdff5\" data-id=\"66afdff5\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-2d013203 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"2d013203\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">奉獻</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-5cb99f16 elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider\" data-id=\"5cb99f16\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-3c1b5ca6 elementor-widget elementor-widget-text-editor\" data-id=\"3c1b5ca6\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<ul><li>奉獻支票抬頭請寫<strong>MPCBC</strong>，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801 </li><li>透過教會PayPal戶口: <strong>donations@mpcbc.net</strong> </li><li>在本網站的網上奉獻均可</li></ul>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-393aa168 elementor-widget elementor-widget-button\" data-id=\"393aa168\" data-element_type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-md elementor-animation-shrink\" href=\"https://mpcbc.net/donation/\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t<span class=\"elementor-button-icon\">\n\t\t\t\t<i aria-hidden=\"true\" class=\"fas fa-arrow-circle-right\"></i>\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">奉獻</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-4796c133 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"4796c133\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-16fc2fd6\" data-id=\"16fc2fd6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-1a6b6eb elementor-widget elementor-widget-google_maps\" data-id=\"1a6b6eb\" data-element_type=\"widget\" data-widget_type=\"google_maps.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-custom-embed\">\n\t\t\t<iframe loading=\"lazy\"\n\t\t\t\t\tsrc=\"https://maps.google.com/maps?q=302%20W.%20Commonwealth%20Ave.%2C%20Alhambra%2C%20CA%2091801&#038;t=m&#038;z=13&#038;output=embed&#038;iwloc=near\"\n\t\t\t\t\ttitle=\"302 W. Commonwealth Ave., Alhambra, CA 91801\"\n\t\t\t\t\taria-label=\"302 W. Commonwealth Ave., Alhambra, CA 91801\"\n\t\t\t></iframe>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-13a5930f\" data-id=\"13a5930f\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-7ada3d28 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"7ada3d28\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-46012b51\" data-id=\"46012b51\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-55ba50e8 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"55ba50e8\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h5 class=\"elementor-heading-title elementor-size-medium\">粵語崇拜</h5>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6c1be1a0 elementor-widget elementor-widget-text-editor\" data-id=\"6c1be1a0\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>星期日11:00AM</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5ce09b3\" data-id=\"5ce09b3\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-2aa9981b elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"2aa9981b\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h5 class=\"elementor-heading-title elementor-size-medium\">英語崇拜</h5>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-5614d47d elementor-widget elementor-widget-text-editor\" data-id=\"5614d47d\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>星期日11:00AM</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-6147a415 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"6147a415\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-311e732e\" data-id=\"311e732e\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-36512d20 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"36512d20\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h5 class=\"elementor-heading-title elementor-size-medium\">國語崇拜</h5>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-29a7cfa7 elementor-widget elementor-widget-text-editor\" data-id=\"29a7cfa7\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>星期日09:00AM</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4ce15d6\" data-id=\"4ce15d6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-52e6c14 elementor-invisible elementor-widget elementor-widget-heading\" data-id=\"52e6c14\" data-element_type=\"widget\" data-settings=\"{&quot;_animation&quot;:&quot;fadeIn&quot;}\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h5 class=\"elementor-heading-title elementor-size-medium\">兒童崇拜</h5>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-288d846 elementor-widget elementor-widget-text-editor\" data-id=\"288d846\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>星期日11:00AM</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-ce2312d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"ce2312d\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t\t<div class=\"elementor-background-overlay\"></div>\n\t\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e2efed0\" data-id=\"e2efed0\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-0b76604 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"0b76604\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-eb84680\" data-id=\"eb84680\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-525a2f6 elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel\" data-id=\"525a2f6\" data-element_type=\"widget\" data-settings=\"{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;slides_to_show_tablet&quot;:&quot;1&quot;,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}\" data-widget_type=\"image-carousel.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-image-carousel-wrapper swiper\" role=\"region\" aria-roledescription=\"carousel\" aria-label=\"Image Carousel\" dir=\"ltr\">\n\t\t\t<div class=\"elementor-image-carousel swiper-wrapper\" aria-live=\"off\">\n\t\t\t\t\t\t\t\t<div class=\"swiper-slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 2\"><figure class=\"swiper-slide-inner\"><img decoding=\"async\" class=\"swiper-slide-image\" src=\"http://mpcbc.net/wp-content/uploads/2020/07/slider2.jpg\" alt=\"\" /></figure></div><div class=\"swiper-slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 of 2\"><figure class=\"swiper-slide-inner\"><img decoding=\"async\" class=\"swiper-slide-image\" src=\"http://mpcbc.net/wp-content/uploads/2020/07/slider3.jpg\" alt=\"\" /></figure></div>\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"elementor-swiper-button elementor-swiper-button-prev\" role=\"button\" tabindex=\"0\">\n\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"eicon-chevron-left\"></i>\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"elementor-swiper-button elementor-swiper-button-next\" role=\"button\" tabindex=\"0\">\n\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"eicon-chevron-right\"></i>\t\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a890fe2 elementor-widget elementor-widget-heading\" data-id=\"a890fe2\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Furniture expert.</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6180433 elementor-widget elementor-widget-text-editor\" data-id=\"6180433\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>The best in town</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fbc0fa6\" data-id=\"fbc0fa6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-601d68b elementor-widget elementor-widget-heading\" data-id=\"601d68b\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">兒童事工</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-113ec16 elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"113ec16\" data-element_type=\"widget\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-aa302fb elementor-widget elementor-widget-text-editor\" data-id=\"aa302fb\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>「教養孩童，使他走當行的道， 就是到老他也不偏離。」箴言 22:6</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-17604da elementor-widget elementor-widget-text-editor\" data-id=\"17604da\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>我們相信帶領小孩從小認識神,建立正確的價值觀,在教會中成長,是他們建康發展的重要元素</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-0acc5b6 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"0acc5b6\" data-element_type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-check-circle\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Tumeric pop-up raw denim try-hard man braid vice</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-check-circle\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Post-ironic locavore viral, enamel pin bicycle rights deep.</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-times-circle\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\"> Chicharrones four loko narwhal, semiotics wha</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-16fc536 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"16fc536\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-extended\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-89a3172\" data-id=\"89a3172\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-ba52623 elementor-widget elementor-widget-heading\" data-id=\"ba52623\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">團契</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-f0d6dcc elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"f0d6dcc\" data-element_type=\"widget\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-cc1af10 elementor-widget elementor-widget-text-editor\" data-id=\"cc1af10\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>「我們將所看見、所聽見的傳給你們，使你們與我們相交。我們乃是與父並他兒子耶穌基督相交的。」約翰一書 1:3</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-606d407 elementor-widget elementor-widget-text-editor\" data-id=\"606d407\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>我們相信神造我們不但是為了與祂相交,也是與其他人彼此相交。在教會中的群體生活是豐盛生命的重要元素。我們藉著小組活動與其他基督徒作更深入的交流。</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4afeeae elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"4afeeae\" data-element_type=\"widget\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-check-circle\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Post-ironic locavore viral, enamel pin bicycle rights deep.</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-times-circle\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\"> Chicharrones four loko narwhal, semiotics wha</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"far fa-check-circle\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">Tumeric pop-up raw denim try-hard man braid vice</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ae1f965\" data-id=\"ae1f965\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-f7a2522 elementor-widget elementor-widget-video\" data-id=\"f7a2522\" data-element_type=\"widget\" data-settings=\"{&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\\/\\/mpcbc.net\\/wp-content\\/uploads\\/2020\\/07\\/slider4.jpg&quot;,&quot;id&quot;:&quot;935&quot;,&quot;size&quot;:&quot;&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;youtube_url&quot;:&quot;https:\\/\\/www.youtube.com\\/watch?v=ZGn8kSV9gAA&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}\" data-widget_type=\"video.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-wrapper elementor-open-lightbox\">\n\t\t\t\t\t\t\t<div class=\"elementor-custom-embed-image-overlay\" data-elementor-open-lightbox=\"yes\" data-elementor-lightbox=\"{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\\/\\/www.youtube.com\\/embed\\/ZGn8kSV9gAA?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;cc_load_policy=0&quot;,&quot;autoplay&quot;:&quot;&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-f7a2522&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}\" data-e-action-hash=\"#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1pHbjhrU1Y5Z0FBP2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJmNjX2xvYWRfcG9saWN5PTAiLCJhdXRvcGxheSI6IiIsIm1vZGFsT3B0aW9ucyI6eyJpZCI6ImVsZW1lbnRvci1saWdodGJveC1mN2EyNTIyIiwiZW50cmFuY2VBbmltYXRpb24iOiIiLCJlbnRyYW5jZUFuaW1hdGlvbl90YWJsZXQiOiIiLCJlbnRyYW5jZUFuaW1hdGlvbl9tb2JpbGUiOiIiLCJ2aWRlb0FzcGVjdFJhdGlvIjoiMTY5In19\">\n\t\t\t\t\t\t\t\t\t\t\t<img decoding=\"async\" src=\"http://mpcbc.net/wp-content/uploads/2020/07/slider4.jpg\" title=\"\" alt=\"\" loading=\"lazy\" />\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"elementor-custom-embed-play\" role=\"button\" aria-label=\"Play Video\" tabindex=\"0\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"eicon-play\"></i>\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-b44895d elementor-widget elementor-widget-heading\" data-id=\"b44895d\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Affordable Price.</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6ab5dc5 elementor-widget elementor-widget-text-editor\" data-id=\"6ab5dc5\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>The best quality</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>崇拜直播 粵語堂主日崇拜 10/18/2026 https://youtu.be/3pwe24j9G2c 国语堂主日崇拜 10/18/2026 會刊 2026 下載閱讀 奉獻 奉獻支票抬頭請寫MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801  透過教會PayPal戶口: donations@mpcbc.net  在本網站的網上奉獻均可 奉獻 粵語崇拜 星期日11:00AM 英語崇拜 星期日11:00AM 國語崇拜 星期日09:00AM 兒童崇拜 星期日11:00AM Furniture expert. The best in town 兒童事工 「教養孩童，使他走當行的道， 就是到老他也不偏離。」箴言 22:6 我們相信帶領小孩從小認識神,建立正確的價值觀,在教會中成長,是他們建康發展的重要元素 Tumeric pop-up raw denim try-hard man braid vice Post-ironic locavore viral, enamel pin bicycle rights [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "ocean_post_layout": "full-screen",
+      "ocean_both_sidebars_style": "",
+      "ocean_both_sidebars_content_width": 0,
+      "ocean_both_sidebars_sidebars_width": 0,
+      "ocean_sidebar": "0",
+      "ocean_second_sidebar": "0",
+      "ocean_disable_margins": "on",
+      "ocean_add_body_class": "",
+      "ocean_shortcode_before_top_bar": "",
+      "ocean_shortcode_after_top_bar": "",
+      "ocean_shortcode_before_header": "",
+      "ocean_shortcode_after_header": "",
+      "ocean_has_shortcode": "",
+      "ocean_shortcode_after_title": "",
+      "ocean_shortcode_before_footer_widgets": "",
+      "ocean_shortcode_after_footer_widgets": "",
+      "ocean_shortcode_before_footer_bottom": "",
+      "ocean_shortcode_after_footer_bottom": "",
+      "ocean_display_top_bar": "default",
+      "ocean_display_header": "default",
+      "ocean_header_style": "",
+      "ocean_center_header_left_menu": "0",
+      "ocean_custom_header_template": "0",
+      "ocean_custom_logo": 0,
+      "ocean_custom_retina_logo": 0,
+      "ocean_custom_logo_max_width": 0,
+      "ocean_custom_logo_tablet_max_width": 0,
+      "ocean_custom_logo_mobile_max_width": 0,
+      "ocean_custom_logo_max_height": 0,
+      "ocean_custom_logo_tablet_max_height": 0,
+      "ocean_custom_logo_mobile_max_height": 0,
+      "ocean_header_custom_menu": "0",
+      "ocean_menu_typo_font_family": "0",
+      "ocean_menu_typo_font_subset": "",
+      "ocean_menu_typo_font_size": 0,
+      "ocean_menu_typo_font_size_tablet": 0,
+      "ocean_menu_typo_font_size_mobile": 0,
+      "ocean_menu_typo_font_size_unit": "px",
+      "ocean_menu_typo_font_weight": "",
+      "ocean_menu_typo_font_weight_tablet": "",
+      "ocean_menu_typo_font_weight_mobile": "",
+      "ocean_menu_typo_transform": "",
+      "ocean_menu_typo_transform_tablet": "",
+      "ocean_menu_typo_transform_mobile": "",
+      "ocean_menu_typo_line_height": 0,
+      "ocean_menu_typo_line_height_tablet": 0,
+      "ocean_menu_typo_line_height_mobile": 0,
+      "ocean_menu_typo_line_height_unit": "",
+      "ocean_menu_typo_spacing": 0,
+      "ocean_menu_typo_spacing_tablet": 0,
+      "ocean_menu_typo_spacing_mobile": 0,
+      "ocean_menu_typo_spacing_unit": "",
+      "ocean_menu_link_color": "",
+      "ocean_menu_link_color_hover": "",
+      "ocean_menu_link_color_active": "",
+      "ocean_menu_link_background": "",
+      "ocean_menu_link_hover_background": "",
+      "ocean_menu_link_active_background": "",
+      "ocean_menu_social_links_bg": "",
+      "ocean_menu_social_hover_links_bg": "",
+      "ocean_menu_social_links_color": "",
+      "ocean_menu_social_hover_links_color": "",
+      "ocean_disable_title": "on",
+      "ocean_disable_heading": "default",
+      "ocean_post_title": "",
+      "ocean_post_subheading": "",
+      "ocean_post_title_style": "",
+      "ocean_post_title_background_color": "",
+      "ocean_post_title_background": 0,
+      "ocean_post_title_bg_image_position": "",
+      "ocean_post_title_bg_image_attachment": "",
+      "ocean_post_title_bg_image_repeat": "",
+      "ocean_post_title_bg_image_size": "",
+      "ocean_post_title_height": 0,
+      "ocean_post_title_bg_overlay": 0.5,
+      "ocean_post_title_bg_overlay_color": "",
+      "ocean_disable_breadcrumbs": "default",
+      "ocean_breadcrumbs_color": "",
+      "ocean_breadcrumbs_separator_color": "",
+      "ocean_breadcrumbs_links_color": "",
+      "ocean_breadcrumbs_links_hover_color": "",
+      "ocean_display_footer_widgets": "default",
+      "ocean_display_footer_bottom": "default",
+      "ocean_custom_footer_template": "0",
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-171",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry",
+      "entry"
+    ],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Home - 慕道園華人浸信會</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://mpcbc.net/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Home - 慕道園華人浸信會\" />\n<meta property=\"og:description\" content=\"崇拜直播 粵語堂主日崇拜 10/18/2026 https://youtu.be/3pwe24j9G2c 国语堂主日崇拜 10/18/2026 會刊 2026 下載閱讀 奉獻 奉獻支票抬頭請寫MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801  透過教會PayPal戶口: donations@mpcbc.net  在本網站的網上奉獻均可 奉獻 粵語崇拜 星期日11:00AM 英語崇拜 星期日11:00AM 國語崇拜 星期日09:00AM 兒童崇拜 星期日11:00AM Furniture expert. The best in town 兒童事工 「教養孩童，使他走當行的道， 就是到老他也不偏離。」箴言 22:6 我們相信帶領小孩從小認識神,建立正確的價值觀,在教會中成長,是他們建康發展的重要元素 Tumeric pop-up raw denim try-hard man braid vice Post-ironic locavore viral, enamel pin bicycle rights [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://mpcbc.net/\" />\n<meta property=\"og:site_name\" content=\"慕道園華人浸信會\" />\n<meta property=\"article:modified_time\" content=\"2026-10-16T17:37:34+00:00\" />\n<meta property=\"og:image\" content=\"https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-819x1024.jpg\" />\n\t<meta property=\"og:image:width\" content=\"819\" />\n\t<meta property=\"og:image:height\" content=\"1024\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://mpcbc.net/\",\"url\":\"https://mpcbc.net/\",\"name\":\"Home - 慕道園華人浸信會\",\"isPartOf\":{\"@id\":\"https://mpcbc.net/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://mpcbc.net/#primaryimage\"},\"image\":{\"@id\":\"https://mpcbc.net/#primaryimage\"},\"thumbnailUrl\":\"https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg\",\"datePublished\":\"2016-10-30T12:40:41+00:00\",\"dateModified\":\"2026-10-16T17:37:34+00:00\",\"breadcrumb\":{\"@id\":\"https://mpcbc.net/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://mpcbc.net/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#primaryimage\",\"url\":\"https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg\",\"width\":3456,\"height\":4320},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://mpcbc.net/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mpcbc.net/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Home\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://mpcbc.net/#website\",\"url\":\"https://mpcbc.net/\",\"name\":\"慕道園華人浸信會\",\"description\":\"MPCBC\",\"publisher\":{\"@id\":\"https://mpcbc.net/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://mpcbc.net/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://mpcbc.net/#organization\",\"name\":\"慕道園華人浸信會\",\"url\":\"https://mpcbc.net/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://mpcbc.net/#/schema/logo/image/\",\"url\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"contentUrl\":\"https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png\",\"width\":512,\"height\":512,\"caption\":\"慕道園華人浸信會\"},\"image\":{\"@id\":\"https://mpcbc.net/#/schema/logo/image/\"},\"sameAs\":[\"https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Home - 慕道園華人浸信會",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://mpcbc.net/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Home - 慕道園華人浸信會",
+      "og_description": "崇拜直播 粵語堂主日崇拜 10/18/2026 https://youtu.be/3pwe24j9G2c 国语堂主日崇拜 10/18/2026 會刊 2026 下載閱讀 奉獻 奉獻支票抬頭請寫MPCBC，郵寄教會地址：302 W. Commonwealth Ave., Alhambra, CA 91801  透過教會PayPal戶口: donations@mpcbc.net  在本網站的網上奉獻均可 奉獻 粵語崇拜 星期日11:00AM 英語崇拜 星期日11:00AM 國語崇拜 星期日09:00AM 兒童崇拜 星期日11:00AM Furniture expert. The best in town 兒童事工 「教養孩童，使他走當行的道， 就是到老他也不偏離。」箴言 22:6 我們相信帶領小孩從小認識神,建立正確的價值觀,在教會中成長,是他們建康發展的重要元素 Tumeric pop-up raw denim try-hard man braid vice Post-ironic locavore viral, enamel pin bicycle rights [&hellip;]",
+      "og_url": "https://mpcbc.net/",
+      "og_site_name": "慕道園華人浸信會",
+      "article_modified_time": "2026-10-16T17:37:34+00:00",
+      "og_image": [
+        {
+          "width": 819,
+          "height": 1024,
+          "url": "https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash-819x1024.jpg",
+          "type": "image/jpeg"
+        }
+      ],
+      "twitter_card": "summary_large_image",
+      "twitter_misc": {
+        "Est. reading time": "2 minutes"
+      },
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://mpcbc.net/",
+            "url": "https://mpcbc.net/",
+            "name": "Home - 慕道園華人浸信會",
+            "isPartOf": {
+              "@id": "https://mpcbc.net/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://mpcbc.net/#primaryimage"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#primaryimage"
+            },
+            "thumbnailUrl": "https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg",
+            "datePublished": "2016-10-30T12:40:41+00:00",
+            "dateModified": "2026-10-16T17:37:34+00:00",
+            "breadcrumb": {
+              "@id": "https://mpcbc.net/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://mpcbc.net/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://mpcbc.net/#primaryimage",
+            "url": "https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg",
+            "contentUrl": "https://mpcbc.net/wp-content/uploads/2021/01/diego-ph-SZYreZsJ-fE-unsplash.jpg",
+            "width": 3456,
+            "height": 4320
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://mpcbc.net/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mpcbc.net/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Home"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mpcbc.net/#website",
+            "url": "https://mpcbc.net/",
+            "name": "慕道園華人浸信會",
+            "description": "MPCBC",
+            "publisher": {
+              "@id": "https://mpcbc.net/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mpcbc.net/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mpcbc.net/#organization",
+            "name": "慕道園華人浸信會",
+            "url": "https://mpcbc.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://mpcbc.net/#/schema/logo/image/",
+              "url": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "contentUrl": "https://mpcbc.net/wp-content/uploads/2020/07/cropped-Final-01.png",
+              "width": 512,
+              "height": 512,
+              "caption": "慕道園華人浸信會"
+            },
+            "image": {
+              "@id": "https://mpcbc.net/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.youtube.com/channel/UCnxu_A53vGhcNohchKzZ7hw"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/171",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://mpcbc.net/wp-json/wp/v2/comments?post=171"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1995,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/171/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 4021,
+          "href": "https://mpcbc.net/wp-json/wp/v2/pages/171/revisions/4021"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://mpcbc.net/wp-json/wp/v2/media?parent=171"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

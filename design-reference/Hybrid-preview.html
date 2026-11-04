@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPCBC hybrid preview</title>
+<!-- Design preview only: Design A's type and cards, Design B's one-line header and member sections. All facts are placeholders. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Geist:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Harbor and persimmon. Persimmon is for Kids and Give only, never near Live red. */
+  --paper:#F6F7F5; --stone:#E3EBEA; --ink:#13232A; --ink-soft:#4F6168; --night:#0F2A33;
+  --primary:#155E75; --primary-deep:#0E4A5C; --accent:#F28C38; --accent-soft:#FCE3CC; --on-accent:#2B1404; --live:#D92D27;
+  --line:#D9E2E1; --line-strong:#BFCDCC; --card-tint:#EAF2F3;
+  --gutter:56px; --max:1328px;
+  --disp:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Geist','Noto Sans TC',system-ui,sans-serif;
+  --zh:'Noto Sans TC',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+a{color:var(--primary)}
+a:hover{color:var(--primary-deep)}
+:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:6px}
+[id]{scroll-margin-top:88px}
+img,video{display:block;max-width:100%}
+
+/* ---------- Type ---------- */
+.disp{font-family:var(--disp);font-weight:700;letter-spacing:-0.035em;line-height:.98}
+/* The language rule: Chinese is always a quieter second line, same sans family. */
+.zh{display:block;font-family:var(--zh);font-weight:500;letter-spacing:.02em;color:var(--ink-soft);font-size:max(14px,.42em);line-height:1.4;margin-top:.45em}
+.zh-inline{font-family:var(--zh);font-weight:500;color:var(--ink-soft)}
+.lede{font-size:19px;color:var(--ink-soft);max-width:42ch}
+.wrap{max-width:calc(var(--max) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter)}
+.sec{padding:128px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:48px}
+.sec-head h2{font-size:72px}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 26px;border-radius:12px;border:1.5px solid transparent;font:600 16px/1.2 var(--body);text-decoration:none;cursor:pointer;white-space:nowrap}
+.btn-p{background:var(--primary);color:#fff}
+.btn-p:hover{background:var(--primary-deep);color:#fff}
+.btn-o{border-color:var(--line-strong);color:var(--ink);background:transparent}
+.btn-o:hover{background:var(--stone);color:var(--ink)}
+.btn-w{border-color:rgba(255,255,255,.8);color:#fff;background:transparent}
+.btn-w:hover{background:rgba(255,255,255,.14);color:#fff}
+.btn-l{background:#fff;color:var(--ink)}
+.btn-l:hover{background:#fff;color:var(--ink)}
+.btn-sm{min-height:44px;padding:0 18px;font-size:15px}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+/* Text links: underline drawn with text-decoration so the tap area can be 44px tall */
+.tl{font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px;display:inline-flex;align-items:center;min-height:44px}
+
+/* Placeholder image */
+.ph{position:relative;overflow:hidden;background-color:#1E3A44;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:4px 4px;color:rgba(255,255,255,.75);font:12px/1.4 ui-monospace,Menlo,monospace;padding:16px}
+
+/* ---------- Header (Design B's one-line, fading) ---------- */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:50;height:80px;border-bottom:1px solid rgba(255,255,255,.2);transition:background .25s,border-color .25s,color .25s;color:#fff}
+.site-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.is-scrolled .site-header,.menu-open .site-header{background:rgba(246,247,245,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-color:var(--line);color:var(--ink)}
+.logo{height:44px;padding:0 14px;border:1.5px dashed currentColor;border-radius:8px;display:inline-flex;align-items:center;font:12px ui-monospace,Menlo,monospace;color:inherit;text-decoration:none;opacity:.85;flex-shrink:0}
+.nav{display:flex;align-items:center;gap:20px}
+.nav ul{display:flex;align-items:center;gap:18px}
+.nav ul a{color:inherit;text-decoration:none;font-weight:500;font-size:16px;min-height:44px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.nav ul a span{font-family:var(--zh);font-size:14px;opacity:.8}
+.nav ul a:hover{color:var(--accent)}
+.is-scrolled .nav ul a:hover{color:var(--primary)}
+/* Sundays dropdown: Plan your visit lives here, not in the header button */
+.nav .has-sub{position:relative}
+.nav .has-sub > a svg{width:14px;height:14px;opacity:.7}
+.nav .sub{display:none;position:absolute;top:100%;left:-12px;min-width:260px;flex-direction:column;align-items:stretch;gap:0;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:0 16px 40px rgba(15,42,51,.16)}
+.nav .has-sub:hover .sub,.nav .has-sub:focus-within .sub{display:flex}
+.nav .sub a{display:flex;justify-content:space-between;gap:16px;padding:0 12px;border-radius:10px;color:var(--ink)}
+.nav .sub a:hover{background:var(--stone);color:var(--primary)}
+.lang{color:inherit;text-decoration:none;font-family:var(--zh);font-weight:500;border:1.5px solid currentColor;border-radius:8px;padding:0 12px;min-height:40px;display:inline-flex;align-items:center;opacity:.9;white-space:nowrap}
+.lang:hover{color:inherit;opacity:1}
+.menu-btn{display:none;width:48px;height:48px;border:0;background:transparent;color:inherit;cursor:pointer;padding:12px}
+.menu-btn svg{width:24px;height:24px}
+
+/* ---------- Hero ---------- */
+/* Hero leaves room so the whole Sunday worship card is on the first screen */
+.hero{position:relative;min-height:max(560px,calc(100svh - 110px));background:var(--night);color:#fff;display:flex;align-items:flex-end;overflow:hidden}
+.hero video,.hero .hero-shade{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .hero-shade{background:linear-gradient(180deg,rgba(15,42,51,.5) 0%,rgba(15,42,51,0) 22%,rgba(15,42,51,.1) 45%,rgba(15,42,51,.88) 100%)}
+.hero-inner{position:relative;width:100%;padding-top:128px;padding-bottom:128px}
+.hero h1{font-size:clamp(44px,6vw,88px)}
+.hero .hero-en{font-size:20px;max-width:52ch;margin-top:16px;color:rgba(255,255,255,.92)}
+.hero .hero-zh{font-family:var(--zh);font-size:17px;margin-top:4px;color:rgba(255,255,255,.8)}
+.video-toggle{position:absolute;right:var(--gutter);bottom:128px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(15,42,51,.4);color:#fff;cursor:pointer;display:grid;place-items:center;opacity:.7}
+.video-toggle:hover,.video-toggle:focus-visible{opacity:1}
+/* ---------- Sunday worship card: overlaps the bottom of the hero ---------- */
+.times{position:relative;z-index:2;margin-top:-64px}
+.times-card{background:#fff;border-radius:24px;box-shadow:0 24px 60px rgba(15,42,51,.22);padding:24px 28px;display:grid;grid-template-columns:1.25fr repeat(4,minmax(0,1fr)) auto;align-items:center}
+.times-card h2{font-size:28px;line-height:1.05}
+.times-card .addr{font-size:14px;color:var(--ink-soft);margin-top:6px}
+.times-links{border-left:1px solid var(--line);padding-left:22px;display:flex;flex-direction:column;font-size:15px}
+.first-time{margin-top:24px}
+.first-time .tl{color:#fff}
+.first-time .zh-inline{color:rgba(255,255,255,.75);margin-left:6px}
+.slot{border-left:1px solid var(--line);padding:4px 22px;display:flex;flex-direction:column;gap:2px}
+.slot .who{font-size:15px;font-weight:700;color:var(--ink-soft)}
+.slot .when{display:flex;align-items:baseline;gap:6px}
+.slot .when b{font:700 44px/1 var(--disp);letter-spacing:-0.035em}
+.slot .when small{font-size:15px;font-weight:600}
+.slot .note{font-size:14px;color:var(--ink-soft);min-height:28px;display:flex;align-items:center}
+.slot.is-live{background:var(--card-tint);border-radius:14px;border-left-color:transparent}
+/* The pill looks 28px tall; ::after stretches its tap area to 44px */
+.live{position:relative;white-space:nowrap;display:inline-flex;align-items:center;gap:7px;background:var(--live);color:#fff;font-weight:700;font-size:13px;padding:0 12px;min-height:28px;border-radius:999px;text-decoration:none}
+.live:hover{color:#fff;background:#B8231E}
+.live i{width:7px;height:7px;border-radius:50%;background:#fff;animation:pulse 1.6s ease-in-out infinite}
+.live::after{content:"";position:absolute;inset:-8px 0}
+@keyframes pulse{50%{opacity:.3}}
+
+
+/* ---------- This Sunday (Design B's layout) ---------- */
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.stream{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:16px 16px 20px;display:flex;flex-direction:column;gap:12px}
+.stream.is-live{border:2px solid var(--primary);background:var(--card-tint)}
+.stream .ph{aspect-ratio:16/9;border-radius:14px;background-color:var(--night);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center}
+.stream .ph .live{position:absolute;top:12px;left:12px}
+.stream h3{font:700 22px/1.3 var(--disp);letter-spacing:-0.02em;margin-top:4px}
+.stream h3[lang]{font-family:var(--zh);font-weight:700;letter-spacing:.02em}
+.stream .kick{font-size:14px;font-weight:700;color:var(--primary)}
+.stream.is-live .kick{color:#B8231E}
+.stream p{font-size:15px;color:var(--ink-soft)}
+.stream .btn-row{margin-top:auto;padding-top:6px}
+.watch-foot{margin-top:32px;padding-top:24px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.watch-foot p{color:var(--ink-soft);font-size:15px;max-width:60ch}
+
+/* ---------- Newsletter (Design B's announcement card) ---------- */
+.band-stone{background:var(--stone)}
+.news{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:24px}
+.feature{background:#fff;border-radius:24px;padding:40px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:32px}
+.feature .issue{font-size:14px;font-weight:600;color:var(--ink-soft)}
+.feature h3{font-size:48px;margin-top:12px}
+.feature p{color:var(--ink-soft);margin-top:16px;max-width:46ch}
+.feature .btn-row{margin-top:28px}
+.feature .ph{border-radius:14px;min-height:280px;background-color:#24434D}
+.side{background:#fff;border-radius:24px;padding:32px;display:flex;flex-direction:column}
+.side h3{font:700 22px/1.2 var(--disp);letter-spacing:-0.02em}
+.side ul{margin-top:8px}
+.side li{border-top:1px solid var(--line);padding:16px 0}
+.side li:first-child{border-top:0}
+.side li a{color:var(--ink);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;min-height:44px}
+.side li a:hover{color:var(--primary)}
+.side li p{font-size:15px;color:var(--ink-soft)}
+.signup{margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+.signup label{font-weight:600;font-size:15px;display:block;margin-bottom:8px}
+.signup .row{display:flex;gap:10px}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid var(--line-strong);border-radius:12px;padding:0 14px;min-height:52px;width:100%}
+textarea{padding:12px 14px;min-height:112px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--primary);outline-offset:1px;border-radius:12px}
+.signup .btn{min-height:52px}
+
+/* ---------- Pastors ---------- */
+.pastor .ph{aspect-ratio:1/1;border-radius:20px;background-color:#24434D}
+.pastor .role{font-size:14px;font-weight:700;color:var(--primary);margin-top:18px}
+.pastor h3{font:700 26px/1.2 var(--disp);letter-spacing:-0.02em;margin-top:6px}
+.pastor h3 .zh{font-size:16px;margin-top:2px}
+.pastor p{color:var(--ink-soft);font-size:15px;margin-top:10px}
+
+/* ---------- Community: vertical tabs with one big photo panel ---------- */
+.ministries{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:stretch}
+.mtabs{display:flex;flex-direction:column;gap:8px}
+.mtabs button{display:block;width:100%;text-align:left;font:700 28px/1.1 var(--disp);letter-spacing:-0.02em;color:var(--ink);background:transparent;border:0;border-radius:16px;padding:18px 20px;cursor:pointer}
+.mtabs button .zh{font-size:15px;margin-top:4px}
+.mtabs button:hover{background:rgba(255,255,255,.7)}
+.mtabs button[aria-selected="true"]{background:var(--primary);color:#fff}
+.mtabs button[aria-selected="true"] .zh{color:rgba(255,255,255,.75)}
+.mpanel{position:relative;border-radius:24px;overflow:hidden;min-height:440px;display:flex;align-items:flex-end;color:#fff;padding:40px}
+.mpanel .ph{position:absolute;inset:0;padding:20px}
+.mpanel::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,42,51,0) 30%,rgba(15,42,51,.88) 100%)}
+.mpanel .body{position:relative;z-index:2;max-width:52ch}
+.mpanel h3{font-size:56px}
+.mpanel h3 .zh{color:rgba(255,255,255,.75)}
+.mpanel p{color:rgba(255,255,255,.88);margin-top:12px}
+.mpanel .btn-row{margin-top:20px;align-items:center}
+.mpanel .tl{color:#fff}
+
+/* ---------- Kids: soft persimmon, with full persimmon only on the button and ticks ---------- */
+.kids{background:var(--accent-soft);border-radius:24px;padding:72px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:center}
+.kids h2{font-size:72px}
+.kids .lede{color:var(--ink);margin-top:20px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:32px}
+.tiles div{background:#fff;border-radius:16px;padding:18px 20px}
+.tiles b{display:block;font-size:18px}
+.tiles span{font-size:14px;color:var(--ink-soft)}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;margin-top:24px;font-size:16px}
+.checks li{display:flex;gap:10px;align-items:flex-start}
+.checks svg{flex-shrink:0;margin-top:4px;color:#C2600F}
+.kids .zh-note{font-family:var(--zh);font-weight:500;background:rgba(255,255,255,.65);border-radius:12px;padding:12px 16px;margin-top:20px;display:inline-block}
+.kids .btn-row{margin-top:28px}
+.btn-a{background:var(--accent);color:var(--on-accent)}
+.btn-a:hover{background:#E07A26;color:var(--on-accent)}
+/* Original Design A stack: three photos overlap at slight angles; flat row on phones */
+.collage{position:relative;aspect-ratio:564/660}
+.collage .ph{position:absolute;border-radius:20px;box-shadow:0 24px 48px rgba(15,42,51,.25)}
+.collage .ph:nth-child(1){left:0;top:6%;width:67%;aspect-ratio:380/460;transform:rotate(-3deg);background-color:#24434D}
+.collage .ph:nth-child(2){right:0;top:0;width:53%;aspect-ratio:300/360;transform:rotate(2.5deg);background-color:#1E3A44}
+.collage .ph:nth-child(3){right:7%;bottom:0;width:57%;aspect-ratio:320/240;transform:rotate(-1.5deg);background-color:#2C4A45}
+
+/* ---------- Events + sermons ---------- */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px}
+.two h2{font-size:56px;margin-bottom:28px}
+.rows a{display:grid;grid-template-columns:88px minmax(0,1fr);gap:24px;align-items:center;padding:18px 0;border-top:1px solid var(--line-strong);color:var(--ink);text-decoration:none}
+.rows a:last-child{border-bottom:1px solid var(--line-strong)}
+.rows a:hover .t{color:var(--primary)}
+.chip{display:flex;flex-direction:column;align-items:center;background:#fff;border-radius:14px;padding:8px 0}
+.chip small{font-size:13px;font-weight:600;color:var(--ink-soft)}
+.chip b{font:700 34px/1.05 var(--disp);letter-spacing:-0.035em}
+.rows.sermons a{grid-template-columns:132px minmax(0,1fr)}
+.rows.sermons .ph{height:76px;border-radius:12px;background-color:var(--night);display:grid;place-items:center;padding:0}
+.rows .t{font-size:19px;font-weight:600}
+.rows .m{font-size:15px;color:var(--ink-soft)}
+.two .tl{display:inline-block;margin-top:24px}
+
+/* ---------- Connect + prayer ---------- */
+.connect{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:80px;align-items:start}
+.connect h2{font-size:72px}
+.connect .lede{margin-top:24px}
+.formcard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:12px 32px 32px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:0 -8px 24px}
+.tabs button{font:600 16px var(--body);color:var(--ink-soft);background:none;border:0;border-bottom:3px solid transparent;padding:16px 12px 13px;min-height:48px;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--primary)}
+.tabs button .zh-inline{font-size:14px}
+.field{margin-bottom:18px}
+.field label,.field legend{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.field .opt{font-weight:400;color:var(--ink-soft)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin-bottom:22px}
+.check input{width:20px;min-height:20px;height:20px;margin-top:2px;accent-color:var(--primary)}
+[role="tabpanel"][hidden]{display:none}
+
+/* ---------- Give ---------- */
+/* Quiet strip with a photo and verse (B+D): one tap to give */
+.give-strip{display:grid;grid-template-columns:300px minmax(0,1fr) auto;gap:40px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px 40px 16px 16px}
+.give-strip .ph{height:200px;border-radius:16px;background-color:#24434D}
+.give-strip h2{font-size:56px}
+.give-strip .verse{margin-top:14px;color:var(--ink-soft);max-width:52ch}
+.give-strip .verse span{display:block;font-family:var(--zh);font-size:15px;margin-top:2px}
+.give-strip .acts{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+
+/* ---------- Footer ---------- */
+.site-footer{background:#0A1F26;color:#fff;padding:88px 0 48px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;font-size:16px}
+.foot h3{font-size:16px;font-weight:700;margin-bottom:12px}
+.foot p,.foot li{color:rgba(255,255,255,.8);line-height:1.8}
+.foot a{color:rgba(255,255,255,.8);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.foot a:hover{color:#fff;text-decoration:underline}
+.foot .logo{margin-bottom:16px;color:#fff}
+.foot-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;gap:16px;font-size:14px;color:rgba(255,255,255,.6)}
+
+/* ---------- Responsive ---------- */
+/* Times card goes to two rows below 1280px */
+@media (max-width:1279px){
+  .times-card{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .live .lw{display:none}
+  .times-card > div:first-child{grid-column:1/-1;padding-bottom:16px;margin-bottom:12px;border-bottom:1px solid var(--line)}
+  .times-card .slot:nth-child(2){border-left:0}
+  .times-links{grid-column:1/-1;border-left:0;padding:8px 0 0;flex-direction:row;gap:24px}
+  .feature{grid-template-columns:1fr}
+  .feature .ph{min-height:200px}
+}
+/* The bilingual menu needs about 1,105px, so it collapses below 1110px */
+@media (max-width:1109px){
+  .nav ul,.nav .lang{display:none}
+  .menu-btn{display:inline-grid;place-items:center}
+  /* backdrop-filter would make the header the containing block of the fixed menu panel */
+  .menu-open .site-header{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--paper)}
+  .menu-open .nav ul{display:flex;position:fixed;top:80px;left:0;right:0;bottom:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);padding:8px var(--gutter) 32px;overflow:auto}
+  .menu-open .nav ul a{display:flex;min-height:56px;font-size:20px;border-bottom:1px solid var(--line);justify-content:space-between}
+  .menu-open .nav ul a span{font-size:15px}
+  .menu-open .nav .lang{display:inline-flex}
+  .menu-open .nav .sub{display:flex;position:static;min-width:0;background:none;border:0;box-shadow:none;border-radius:0;padding:0 0 8px 16px}
+  .menu-open .nav .sub a{font-size:17px;min-height:48px;border-radius:0;padding:0}
+  .menu-open .nav .has-sub > a svg{display:none}
+}
+@media (max-width:1024px){
+  :root{--gutter:32px}
+  .sec{padding:88px 0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:16px}
+  .sec-head h2,.connect h2,.kids h2{font-size:56px}
+  .two h2,.give-strip h2{font-size:44px}
+  .cards3{grid-template-columns:1fr;max-width:640px}
+  .ministries{grid-template-columns:1fr}
+  .mtabs{flex-direction:row;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .mtabs button{font-size:20px;padding:14px 16px;background:rgba(255,255,255,.6)}
+  .mpanel{min-height:380px;padding:32px}
+  .mpanel h3{font-size:44px}
+  .news,.connect,.two{grid-template-columns:1fr;gap:48px}
+  .kids{grid-template-columns:1fr;padding:48px}
+  .give-strip{grid-template-columns:200px minmax(0,1fr);padding:16px 32px 16px 16px;gap:28px}
+  .give-strip .ph{height:100%;min-height:180px}
+  .give-strip .acts{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center;gap:20px}
+  .site-footer{padding:72px 0 40px}
+  .foot{grid-template-columns:1fr 1fr}
+  .site-header{height:72px}
+  .hero{min-height:max(520px,calc(100svh - 290px))}
+}
+/* Tablet only: one column of cards is too tall, so cards and pastors become rows */
+@media (min-width:768px) and (max-width:1024px){
+  .cards3{max-width:none}
+  .stream{display:grid;grid-template-columns:280px minmax(0,1fr);column-gap:24px;align-content:start}
+  .stream .ph{grid-row:1/6;align-self:start}
+  .pastor{display:grid;grid-template-columns:160px minmax(0,1fr);gap:24px;align-items:start}
+  .pastor .role{margin-top:0}
+  .collage{max-width:440px}
+  .menu-open .nav ul{top:72px}
+}
+@media (max-width:767px){
+  :root{--gutter:16px}
+  body{font-size:16px}
+  .sec{padding:64px 0}
+  .btn{min-height:48px;padding:0 20px}
+  .hero{min-height:max(360px,calc(100svh - 440px))}
+  /* The card right below already lists the three languages */
+  .hero .hero-en,.hero .hero-zh{display:none}
+  .hero-inner{padding-top:104px;padding-bottom:104px}
+  .hero .hero-en{font-size:19px}
+  .video-toggle{bottom:104px;right:16px}
+  .times{margin-top:-48px}
+  .times-card{grid-template-columns:1fr 1fr;padding:20px;row-gap:16px}
+  .times-card .slot{border-left:0;padding:8px 10px}
+  .slot .when b{font-size:36px}
+  .sec-head h2,.connect h2,.kids h2{font-size:40px}
+  .two h2,.give-strip h2{font-size:32px}
+  .feature{padding:24px}
+  .feature h3{font-size:34px}
+  .side{padding:24px}
+  .signup .row{flex-direction:column}
+  .pastor{display:grid;grid-template-columns:112px minmax(0,1fr);gap:16px;align-items:start}
+  .pastor .role{margin-top:0}
+  .kids{padding:28px 20px;border-radius:24px}
+  .tiles,.checks{grid-template-columns:1fr}
+  .collage{aspect-ratio:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  /* :nth-child(n) matches the specificity of the per-photo desktop rules */
+  .collage .ph:nth-child(n){position:static;transform:none;width:auto;aspect-ratio:auto;height:120px;box-shadow:none;padding:10px;font-size:11px}
+  .rows.sermons a{grid-template-columns:96px minmax(0,1fr)}
+  .formcard{padding:8px 20px 24px}
+  .give-strip{grid-template-columns:1fr;padding:12px 12px 24px;gap:20px}
+  .give-strip .ph{height:120px;min-height:0}
+  .give-strip > div:not(.ph){padding:0 8px}
+  .give-strip .acts{grid-column:auto;padding:0 8px}
+  .site-footer{padding:56px 0 32px}
+  .foot{gap:32px 24px}
+  .foot > div:nth-child(-n+2){grid-column:1/-1}
+  .feature .ph{min-height:160px}
+  .mtabs{grid-template-columns:1fr 1fr;gap:6px}
+  .mtabs button{font-size:18px;padding:12px 14px}
+  .mtabs button .zh{font-size:14px;margin-top:2px}
+  .mpanel{min-height:440px;padding:24px}
+  .mpanel h3{font-size:32px}
+  .sec-head{margin-bottom:32px}
+  /* Only the live service keeps its thumbnail on phones */
+  .stream:not(.is-live) .ph{display:none}
+  .foot-bottom{flex-direction:column}
+  .watch-foot{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .live i{animation:none}
+  .site-header{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top">[Church logo]</a>
+    <nav class="nav" aria-label="Main">
+      <ul id="menu">
+        <li class="has-sub"><a href="#top">Sundays <span lang="zh-Hant">主日</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+          <ul class="sub">
+            <li><a href="#top">Service times and directions <span lang="zh-Hant">崇拜時間</span></a></li>
+            <li><a href="#">Plan your visit <span lang="zh-Hant">初次來訪</span></a></li>
+            <li><a href="#">Cantonese congregation <span lang="zh-Hant">粵語堂</span></a></li>
+            <li><a href="#">English congregation <span lang="zh-Hant">英語堂</span></a></li>
+            <li><a href="#">Mandarin congregation <span lang="zh-Hant">國語堂</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#sermons">Sermons <span lang="zh-Hant">講道</span></a></li>
+        <li><a href="#news">Newsletter <span lang="zh-Hant">通訊</span></a></li>
+        <li class="has-sub"><a href="#community">Community <span lang="zh-Hant">團契</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+          <ul class="sub">
+            <li><a href="#kids">Kids and youth <span lang="zh-Hant">兒童及青少年</span></a></li>
+            <li><a href="#">Fellowships and groups <span lang="zh-Hant">團契小組</span></a></li>
+            <li><a href="#">Next steps <span lang="zh-Hant">信仰成長</span></a></li>
+            <li><a href="#connect">Care and prayer <span lang="zh-Hant">關懷代禱</span></a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="#pastors">About <span lang="zh-Hant">關於我們</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+          <ul class="sub">
+            <li><a href="#">Our story <span lang="zh-Hant">教會歷史</span></a></li>
+            <li><a href="#">Beliefs <span lang="zh-Hant">信仰</span></a></li>
+            <li><a href="#pastors">Pastors and staff <span lang="zh-Hant">教牧同工</span></a></li>
+            <li><a href="#">Campus map <span lang="zh-Hant">教會地圖</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#give">Give <span lang="zh-Hant">奉獻</span></a></li>
+      </ul>
+      <a class="lang" href="#" lang="zh-Hant">中文</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top" aria-label="Welcome">
+  <video autoplay muted loop playsinline poster="../../hero-video/out/hero-poster.jpg">
+    <source src="../../hero-video/out/hero-720.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-inner">
+    <h1 class="disp">You’re welcome here.</h1>
+    <p class="hero-en">A friendly church in Monterey Park, with services in English, Cantonese and Mandarin.</p>
+    <p class="hero-zh" lang="zh-Hant">歡迎你，我們有英語、粵語及國語崇拜。</p>
+    <p class="first-time"><a class="tl" href="#">First time here? Plan your visit</a><span class="zh-inline" lang="zh-Hant">初次來訪</span></p>
+  </div>
+  <button class="video-toggle" type="button" aria-label="Pause background video">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12"/><rect x="8.5" y="1" width="3.5" height="12"/></svg>
+  </button>
+</section>
+
+<section class="times" aria-labelledby="times-h">
+  <div class="wrap">
+    <div class="times-card">
+      <div>
+        <h2 id="times-h" class="disp">Sunday worship <span class="zh">主日崇拜</span></h2>
+        <p class="addr">[Street address], Monterey Park</p>
+      </div>
+      <div class="slot is-live">
+        <span class="who">Cantonese <span class="zh-inline">粵語</span></span>
+        <span class="when"><b>9:30</b><small>AM</small></span>
+        <span class="note"><a class="live" href="#watch"><i></i>Live now<span class="lw"> · Watch</span></a></span>
+      </div>
+      <div class="slot">
+        <span class="who">English</span>
+        <span class="when"><b>11:00</b><small>AM</small></span>
+        <span class="note">Starts in 1 hr</span>
+      </div>
+      <div class="slot">
+        <span class="who">Mandarin <span class="zh-inline">國語</span></span>
+        <span class="when"><b>11:30</b><small>AM</small></span>
+        <span class="note">Starts in 2 hr</span>
+      </div>
+      <div class="slot">
+        <span class="who">Kids <span class="zh-inline">兒童</span></span>
+        <span class="when"><b>11:00</b><small>AM</small></span>
+        <span class="note">Classes in English</span>
+      </div>
+      <div class="times-links">
+        <a class="tl" href="#">Directions</a>
+        <a class="tl" href="#">Add to calendar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="watch" aria-labelledby="watch-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="watch-h" class="disp">This Sunday <span class="zh">本主日</span></h2>
+      <p class="lede">Each congregation streams on its own channel. Every service goes into the sermon archive afterwards.</p>
+    </div>
+    <div class="cards3">
+      <article class="stream is-live">
+        <div class="ph"><a class="live" href="#"><i></i>Live now</a>youtube · live now<br><span lang="zh-Hant">粵語頻道</span></div>
+        <h3 lang="zh-Hant">粵語主日崇拜</h3>
+        <span class="kick">Cantonese · 9:30 AM</span>
+        <p>[One line about the Cantonese congregation.]</p>
+        <div class="btn-row"><a class="btn btn-p btn-sm" href="#">Watch now</a><a class="btn btn-o btn-sm" href="#">Archive <span class="zh-inline">存檔</span></a></div>
+      </article>
+      <article class="stream">
+        <div class="ph">youtube · scheduled<br>English channel</div>
+        <h3>English Worship</h3>
+        <span class="kick">English · 11:00 AM</span>
+        <p>[One line about the English congregation.]</p>
+        <div class="btn-row"><a class="btn btn-o btn-sm" href="#">Set a reminder</a><a class="btn btn-o btn-sm" href="#">Archive</a></div>
+      </article>
+      <article class="stream">
+        <div class="ph">youtube · scheduled<br><span lang="zh-Hant">國語頻道</span></div>
+        <h3 lang="zh-Hant">國語主日崇拜</h3>
+        <span class="kick">Mandarin · 11:30 AM</span>
+        <p>[One line about the Mandarin congregation.]</p>
+        <div class="btn-row"><a class="btn btn-o btn-sm" href="#">Set a reminder</a><a class="btn btn-o btn-sm" href="#">Archive <span class="zh-inline">存檔</span></a></div>
+      </article>
+    </div>
+    <div class="watch-foot">
+      <p>Missed a service? Every sermon is posted to the archive, sorted by congregation.</p>
+      <div class="btn-row"><a class="btn btn-o btn-sm" href="#sermons">All sermons</a><a class="btn btn-o btn-sm" href="#">Our YouTube channels</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band-stone" id="news" aria-labelledby="news-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="news-h" class="disp">Newsletter <span class="zh">通訊</span></h2>
+      <p class="lede">The weekly newsletter, in all three languages.</p>
+    </div>
+    <div class="news">
+      <article class="feature">
+        <div>
+          <span class="issue">Newsletter · [Date]</span>
+          <h3 class="disp">[Main announcement title]</h3>
+          <p>[Two or three sentences about this week’s main announcement: what it is, when it starts and who it’s for.]</p>
+          <p lang="zh-Hant" style="margin-top:8px">[中文摘要]</p>
+          <div class="btn-row"><a class="btn btn-p" href="#">Read the newsletter</a><a class="btn btn-o" href="#">Download PDF</a></div>
+        </div>
+        <div class="ph">photo · announcement</div>
+      </article>
+      <aside class="side" aria-labelledby="also-h">
+        <h3 id="also-h">Also this week <span class="zh">本週其他消息</span></h3>
+        <ul>
+          <li><a href="#">[Announcement title]</a><p>[One line of detail]</p></li>
+          <li><a href="#">[Announcement title]</a><p>[One line of detail]</p></li>
+          <li><a href="#">[Announcement title]</a><p>[One line of detail]</p></li>
+        </ul>
+        <form class="signup" onsubmit="return false">
+          <label for="news-email">Get the newsletter by email</label>
+          <div class="row"><input id="news-email" type="email" placeholder="you@example.com" autocomplete="email"><button class="btn btn-o" type="submit">Subscribe</button></div>
+        </form>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pastors" aria-labelledby="pastors-h">
+  <div class="wrap">
+    <div class="pastors">
+      <div class="sec-head">
+        <h2 id="pastors-h" class="disp">Meet our pastors <span class="zh">認識我們的牧師</span></h2>
+        <p class="lede">One pastor for each congregation. Any of them is happy to meet you.</p>
+      </div>
+      <div class="cards3">
+        <article class="pastor"><div class="ph">pastor portrait</div><div><span class="role">Pastor · Cantonese</span><h3>[Pastor name] <span class="zh">[牧師姓名]</span></h3><p>[One line about this pastor.]</p></div></article>
+        <article class="pastor"><div class="ph">pastor portrait</div><div><span class="role">Pastor · English</span><h3>[Pastor name] <span class="zh">[牧師姓名]</span></h3><p>[One line about this pastor.]</p></div></article>
+        <article class="pastor"><div class="ph">pastor portrait</div><div><span class="role">Pastor · Mandarin</span><h3>[Pastor name] <span class="zh">[牧師姓名]</span></h3><p>[One line about this pastor.]</p></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band-stone" id="community" aria-labelledby="community-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="community-h" class="disp">Community <span class="zh">團契</span></h2>
+      <p class="lede">A place for every age, in every language.</p>
+    </div>
+    <div class="ministries">
+      <div class="mtabs" role="tablist" aria-label="Groups by age" aria-orientation="vertical">
+        <button type="button" role="tab" id="mt-kids" aria-selected="true" aria-controls="mp-kids">Kids <span class="zh" lang="zh-Hant">兒童</span></button>
+        <button type="button" role="tab" id="mt-youth" aria-selected="false" aria-controls="mp-youth" tabindex="-1">Youth and students <span class="zh" lang="zh-Hant">青少年</span></button>
+        <button type="button" role="tab" id="mt-fellow" aria-selected="false" aria-controls="mp-fellow" tabindex="-1">Fellowships <span class="zh" lang="zh-Hant">團契</span></button>
+        <button type="button" role="tab" id="mt-care" aria-selected="false" aria-controls="mp-care" tabindex="-1">Care <span class="zh" lang="zh-Hant">關懷</span></button>
+      </div>
+      <div class="mpanel" id="mp-kids" role="tabpanel" aria-labelledby="mt-kids">
+        <div class="ph" style="background-color:#24434D">photo · kids at Sunday school</div>
+        <div class="body">
+          <h3 class="disp">Kids <span class="zh" lang="zh-Hant">兒童</span></h3>
+          <p>[One line about kids’ ministry: safe check-in, trained volunteers, classes in English.]</p>
+          <div class="btn-row"><a class="btn btn-l btn-sm" href="#">Nursery (0–3)</a><a class="btn btn-l btn-sm" href="#">Sunday school (4–11)</a><a class="tl" href="#kids">More about kids</a></div>
+        </div>
+      </div>
+      <div class="mpanel" id="mp-youth" role="tabpanel" aria-labelledby="mt-youth" hidden>
+        <div class="ph" style="background-color:#2C4A45">photo · youth group</div>
+        <div class="body">
+          <h3 class="disp">Youth and students <span class="zh" lang="zh-Hant">青少年</span></h3>
+          <p>[When and where youth and students meet.]</p>
+          <div class="btn-row"><a class="btn btn-l btn-sm" href="#">Youth fellowship</a><a class="btn btn-l btn-sm" href="#">[College / young adults]</a></div>
+        </div>
+      </div>
+      <div class="mpanel" id="mp-fellow" role="tabpanel" aria-labelledby="mt-fellow" hidden>
+        <div class="ph" style="background-color:#1E3A44">photo · fellowship meal</div>
+        <div class="body">
+          <h3 class="disp">Fellowships <span class="zh" lang="zh-Hant">團契</span></h3>
+          <p>[Fellowships and small groups in each language.]</p>
+          <div class="btn-row"><a class="btn btn-l btn-sm" href="#">Cantonese <span class="zh-inline">粵語</span></a><a class="btn btn-l btn-sm" href="#">English</a><a class="btn btn-l btn-sm" href="#">Mandarin <span class="zh-inline">國語</span></a></div>
+        </div>
+      </div>
+      <div class="mpanel" id="mp-care" role="tabpanel" aria-labelledby="mt-care" hidden>
+        <div class="ph" style="background-color:#33424A">photo · two people talking</div>
+        <div class="body">
+          <h3 class="disp">Care <span class="zh" lang="zh-Hant">關懷</span></h3>
+          <p>[How the church cares for people when life is hard.]</p>
+          <div class="btn-row"><a class="btn btn-l btn-sm" href="#connect">Prayer request</a><a class="btn btn-l btn-sm" href="#">[Counseling]</a><a class="btn btn-l btn-sm" href="#">[Visitation]</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kids" aria-labelledby="kids-h">
+  <div class="wrap">
+    <div class="kids">
+      <div>
+        <h2 id="kids-h" class="disp">Your kids will want to come back.</h2>
+        <p class="lede">Safe, fun classes for every age while you’re in the service.</p>
+        <div class="tiles">
+          <div><b>Nursery</b><span>Ages 0–3 · all morning</span></div>
+          <div><b>Kids</b><span>Ages 4–11 · [time]</span></div>
+          <div><b>Youth</b><span>Ages 12–18 · [day, time]</span></div>
+        </div>
+        <ul class="checks">
+          <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Secure check-in with matching tags</li>
+          <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Background-checked volunteers</li>
+          <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Classes taught in English</li>
+          <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Chinese-speaking helpers for parents</li>
+        </ul>
+        <p class="zh-note" lang="zh-Hant">課堂以英語進行，登記處有中文同工協助家長。</p>
+        <div class="btn-row"><a class="btn btn-a" href="#">See Kids &amp; Youth</a></div>
+      </div>
+      <div class="collage" aria-hidden="true">
+        <div class="ph">photo · Sunday school craft</div>
+        <div class="ph">photo · VBS game</div>
+        <div class="ph">photo · parent at check-in desk</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band-stone" aria-label="Events and sermons">
+  <div class="wrap two">
+    <div>
+      <h2 class="disp">Coming up <span class="zh">近期活動</span></h2>
+      <div class="rows">
+        <a href="#"><span class="chip"><small>[MON]</small><b>[00]</b></span><span><span class="t">[Event title]</span><br><span class="m">[Time] · [Place]</span></span></a>
+        <a href="#"><span class="chip"><small>[MON]</small><b>[00]</b></span><span><span class="t">[Event title]</span><br><span class="m">[Time] · [Place]</span></span></a>
+        <a href="#"><span class="chip"><small>[MON]</small><b>[00]</b></span><span><span class="t">[Event title]</span><br><span class="m">[Time] · [Place]</span></span></a>
+      </div>
+      <a class="tl" href="#">See all events</a>
+    </div>
+    <div id="sermons">
+      <h2 class="disp">Recent sermons <span class="zh">最近講道</span></h2>
+      <div class="rows sermons">
+        <a href="#"><span class="ph"><svg width="20" height="20" viewBox="0 0 20 20" fill="#FAF7F2" aria-hidden="true"><path d="M6 4l11 6-11 6z"/></svg></span><span><span class="t">[Sermon title]</span><br><span class="m">English · [Speaker]</span></span></a>
+        <a href="#"><span class="ph"><svg width="20" height="20" viewBox="0 0 20 20" fill="#FAF7F2" aria-hidden="true"><path d="M6 4l11 6-11 6z"/></svg></span><span><span class="t" lang="zh-Hant">[講道題目]</span><br><span class="m">Cantonese · [Speaker]</span></span></a>
+        <a href="#"><span class="ph"><svg width="20" height="20" viewBox="0 0 20 20" fill="#FAF7F2" aria-hidden="true"><path d="M6 4l11 6-11 6z"/></svg></span><span><span class="t" lang="zh-Hant">[講道題目]</span><br><span class="m">Mandarin · [Speaker]</span></span></a>
+      </div>
+      <a class="tl" href="#">All sermons</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="connect" aria-labelledby="connect-h">
+  <div class="wrap connect">
+    <div>
+      <h2 id="connect-h" class="disp">We’d love to hear from you. <span class="zh">與我們聯絡</span></h2>
+      <p class="lede">Tell us you’re coming and someone will look out for you. Or send a prayer request. A pastor reads every one and keeps it private.</p>
+    </div>
+    <div class="formcard">
+      <div class="tabs" role="tablist" aria-label="Choose a form">
+        <button type="button" role="tab" id="tab-hello" aria-selected="true" aria-controls="panel-hello">Say hello <span class="zh-inline">聯絡卡</span></button>
+        <button type="button" role="tab" id="tab-pray" aria-selected="false" aria-controls="panel-pray" tabindex="-1">Prayer request <span class="zh-inline">代禱</span></button>
+      </div>
+      <form id="panel-hello" role="tabpanel" aria-labelledby="tab-hello" onsubmit="return false">
+        <div class="field"><label for="f-name">Your name <span class="zh-inline">姓名</span></label><input id="f-name" autocomplete="name"></div>
+        <div class="field"><label for="f-contact">Email or phone <span class="zh-inline">電郵或電話</span></label><input id="f-contact" autocomplete="email"></div>
+        <div class="field"><label for="f-service">Which service will you visit? <span class="zh-inline">參加哪一堂？</span></label>
+          <select id="f-service"><option>Choose a service</option><option>Cantonese 粵語 · 9:30</option><option>English · 11:00</option><option>Mandarin 國語 · 11:30</option><option>Not sure yet</option></select></div>
+        <div class="field"><label for="f-note">Anything we should know? <span class="opt">Optional</span></label><textarea id="f-note"></textarea></div>
+        <button class="btn btn-p" type="submit">Send</button>
+      </form>
+      <form id="panel-pray" role="tabpanel" aria-labelledby="tab-pray" hidden onsubmit="return false">
+        <div class="field"><label for="p-req">How can we pray for you? <span class="zh-inline">代禱事項</span></label><textarea id="p-req"></textarea></div>
+        <div class="field"><label for="p-name">Your name <span class="opt">Optional</span></label><input id="p-name" autocomplete="name"></div>
+        <label class="check"><input type="checkbox"> Only the pastors may read this <span class="zh-inline">只限牧者閱讀</span></label>
+        <button class="btn btn-p" type="submit">Send prayer request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="give" aria-labelledby="give-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="give-strip">
+      <div class="ph" role="img" aria-label="[Photo description]">photo · congregation or mission trip</div>
+      <div>
+        <h2 id="give-h" class="disp">Give <span class="zh">奉獻</span></h2>
+        <p class="verse">“[Short Bible verse about giving]” [Reference]<span lang="zh-Hant">「[經文]」[出處]</span></p>
+      </div>
+      <div class="acts">
+        <a class="btn btn-a" href="#">Give online</a>
+        <a class="tl" href="#">Other ways to give</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <span class="logo">[Church logo]</span>
+        <p>Monterey Park Chinese Baptist Church<br><span lang="zh-Hant">[教會中文名稱]</span><br>[Street address], Monterey Park, CA</p>
+        <p><a class="tl" href="#" style="color:#fff">Directions</a></p>
+      </div>
+      <div>
+        <h3>Sundays <span class="zh-inline" style="color:rgba(255,255,255,.6)">主日</span></h3>
+        <ul><li>Cantonese <span lang="zh-Hant">粵語</span> 9:30 AM</li><li>English 11:00 AM</li><li>Mandarin <span lang="zh-Hant">國語</span> 11:30 AM</li></ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul><li><a href="#">Plan your visit</a></li><li><a href="#watch">Watch live</a></li><li><a href="#sermons">Sermons</a></li><li><a href="#news">Newsletter</a></li><li><a href="#kids">Kids &amp; Youth</a></li><li><a href="#connect">Prayer request</a></li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul><li>[Phone]</li><li>[Email]</li><li>Office hours: [Days, times]</li><li>Instagram @[handle]</li><li>YouTube</li><li>WeChat <span lang="zh-Hant">微信群</span></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>Since 1976 · Monterey Park, California</span><a href="#" lang="zh-Hant" style="color:rgba(255,255,255,.8)">中文</a></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Header turns frosted Paper after 40px (same rule as both designs' nav.js).
+  var onScroll = function () { document.body.classList.toggle('is-scrolled', window.scrollY >= 40); };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Mobile menu
+  var mb = document.querySelector('.menu-btn');
+  mb.addEventListener('click', function () {
+    var open = document.body.classList.toggle('menu-open');
+    mb.setAttribute('aria-expanded', open); mb.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  function closeMenu() { document.body.classList.remove('menu-open'); mb.setAttribute('aria-expanded', false); mb.setAttribute('aria-label', 'Open menu'); }
+  document.querySelectorAll('#menu a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && document.body.classList.contains('menu-open')) { closeMenu(); mb.focus(); }
+  });
+
+  // Video pause (WCAG 2.2.2); reduced-motion visitors start paused.
+  var v = document.querySelector('.hero video'), vt = document.querySelector('.video-toggle');
+  var pauseIcon = vt.innerHTML, playIcon = '<svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M3 1l10 6-10 6z"/></svg>';
+  function sync() { vt.innerHTML = v.paused ? playIcon : pauseIcon; vt.setAttribute('aria-label', v.paused ? 'Play background video' : 'Pause background video'); }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+  vt.addEventListener('click', function () { v.paused ? v.play() : v.pause(); });
+  v.addEventListener('play', sync); v.addEventListener('pause', sync); sync();
+
+  // Tabs (form card and Community): each tablist works on its own
+  document.querySelectorAll('[role="tablist"]').forEach(function (list) {
+    var tabs = list.querySelectorAll('[role="tab"]');
+    function select(t) {
+      tabs.forEach(function (x) {
+        var on = x === t;
+        x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+        document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+      });
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        var step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+        if (!step) return;
+        e.preventDefault();
+        var n = tabs[(i + step + tabs.length) % tabs.length]; select(n); n.focus();
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

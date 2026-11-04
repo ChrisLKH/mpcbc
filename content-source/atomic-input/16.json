@@ -1,0 +1,237 @@
+{
+  "xml_structure": "<e-flexbox configuration-id=\"mpcbc_footer_root 34\"><e-flexbox configuration-id=\"mpcbc_footer_grid 29\"><e-flexbox configuration-id=\"Boxed inner 28\"><e-flexbox configuration-id=\"mpcbc_footer_col1 6\"><e-heading configuration-id=\"mpcbc_foot_logo 1\"></e-heading><e-paragraph configuration-id=\"mpcbc_foot_address 2\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_address_zh 3\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_address_street 4\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_directions 5\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"mpcbc_footer_col2 11\"><e-heading configuration-id=\"mpcbc_foot_sundays_h 7\"></e-heading><e-paragraph configuration-id=\"mpcbc_foot_sundays_0 8\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_sundays_1 9\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_sundays_2 10\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"mpcbc_footer_col3 19\"><e-heading configuration-id=\"mpcbc_foot_explore_h 12\"></e-heading><e-paragraph configuration-id=\"mpcbc_foot_explore_0 13\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_explore_1 14\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_explore_2 15\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_explore_3 16\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_explore_4 17\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_explore_5 18\"></e-paragraph></e-flexbox><e-flexbox configuration-id=\"mpcbc_footer_col4 27\"><e-heading configuration-id=\"mpcbc_foot_contact_h 20\"></e-heading><e-paragraph configuration-id=\"mpcbc_foot_contact_0 21\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_contact_1 22\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_contact_2 23\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_contact_3 24\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_contact_4 25\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_contact_5 26\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox><e-flexbox configuration-id=\"mpcbc_footer_bottom_bar 33\"><e-flexbox configuration-id=\"Boxed inner 32\"><e-paragraph configuration-id=\"mpcbc_foot_since 30\"></e-paragraph><e-paragraph configuration-id=\"mpcbc_foot_zh 31\"></e-paragraph></e-flexbox></e-flexbox></e-flexbox>",
+  "element_config": {
+    "mpcbc_foot_logo 1": {
+      "_cssid": "mpcbc-mpcbc_foot_logo",
+      "title": "[Church logo]",
+      "tag": "h4"
+    },
+    "mpcbc_foot_address 2": {
+      "_cssid": "mpcbc-mpcbc_foot_address",
+      "paragraph": "Monterey Park Chinese Baptist Church",
+      "tag": "p"
+    },
+    "mpcbc_foot_address_zh 3": {
+      "_cssid": "mpcbc-mpcbc_foot_address_zh",
+      "paragraph": "慕道園華人浸信會",
+      "tag": "p"
+    },
+    "mpcbc_foot_address_street 4": {
+      "_cssid": "mpcbc-mpcbc_foot_address_street",
+      "paragraph": "302 W. Commonwealth Ave., Alhambra, CA 91801",
+      "tag": "p"
+    },
+    "mpcbc_foot_directions 5": {
+      "_cssid": "mpcbc-mpcbc_foot_directions",
+      "paragraph": "Directions",
+      "tag": "p",
+      "link": {
+        "destination": "https://www.google.com/maps/search/?api=1&query=302+W.+Commonwealth+Ave.+Alhambra+CA+91801",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_footer_col1 6": {
+      "_cssid": "mpcbc-mpcbc_footer_col1"
+    },
+    "mpcbc_foot_sundays_h 7": {
+      "_cssid": "mpcbc-mpcbc_foot_sundays_h",
+      "title": "Sundays 主日",
+      "tag": "h3"
+    },
+    "mpcbc_foot_sundays_0 8": {
+      "_cssid": "mpcbc-mpcbc_foot_sundays_0",
+      "paragraph": "Cantonese 粵語 11:00 AM",
+      "tag": "p"
+    },
+    "mpcbc_foot_sundays_1 9": {
+      "_cssid": "mpcbc-mpcbc_foot_sundays_1",
+      "paragraph": "English 11:00 AM",
+      "tag": "p"
+    },
+    "mpcbc_foot_sundays_2 10": {
+      "_cssid": "mpcbc-mpcbc_foot_sundays_2",
+      "paragraph": "Mandarin 國語 9:00 AM",
+      "tag": "p"
+    },
+    "mpcbc_footer_col2 11": {
+      "_cssid": "mpcbc-mpcbc_footer_col2"
+    },
+    "mpcbc_foot_explore_h 12": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_h",
+      "title": "Explore",
+      "tag": "h3"
+    },
+    "mpcbc_foot_explore_0 13": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_0",
+      "paragraph": "Plan your visit",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/visit/",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_explore_1 14": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_1",
+      "paragraph": "Watch live",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/#watch",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_explore_2 15": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_2",
+      "paragraph": "Sermons",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/#watch",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_explore_3 16": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_3",
+      "paragraph": "Newsletter",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/#news",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_explore_4 17": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_4",
+      "paragraph": "Kids &amp; Youth",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/#kids",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_explore_5 18": {
+      "_cssid": "mpcbc-mpcbc_foot_explore_5",
+      "paragraph": "Prayer request",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/#connect",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_footer_col3 19": {
+      "_cssid": "mpcbc-mpcbc_footer_col3"
+    },
+    "mpcbc_foot_contact_h 20": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_h",
+      "title": "Contact",
+      "tag": "h3"
+    },
+    "mpcbc_foot_contact_0 21": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_0",
+      "paragraph": "(626) 289-1284",
+      "tag": "p",
+      "link": {
+        "destination": "tel:+16262891284",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_contact_1 22": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_1",
+      "paragraph": "info@mpcbc.net",
+      "tag": "p",
+      "link": {
+        "destination": "mailto:info@mpcbc.net",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_contact_2 23": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_2",
+      "paragraph": "Office hours: [Days, times]",
+      "tag": "p"
+    },
+    "mpcbc_foot_contact_3 24": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_3",
+      "paragraph": "Instagram @mpcbconnect",
+      "tag": "p",
+      "link": {
+        "destination": "https://www.instagram.com/mpcbconnect/",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_contact_4 25": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_4",
+      "paragraph": "English YouTube",
+      "tag": "p",
+      "link": {
+        "destination": "https://www.youtube.com/channel/UCJx8Xl0QqiNkZwwfLXaASHQ",
+        "isTargetBlank": false
+      }
+    },
+    "mpcbc_foot_contact_5 26": {
+      "_cssid": "mpcbc-mpcbc_foot_contact_5",
+      "paragraph": "WeChat 微信群",
+      "tag": "p"
+    },
+    "mpcbc_footer_col4 27": {
+      "_cssid": "mpcbc-mpcbc_footer_col4"
+    },
+    "Boxed inner 28": {},
+    "mpcbc_footer_grid 29": {
+      "_cssid": "mpcbc-mpcbc_footer_grid"
+    },
+    "mpcbc_foot_since 30": {
+      "_cssid": "mpcbc-mpcbc_foot_since",
+      "paragraph": "Founded in 1977 · Alhambra, California",
+      "tag": "p"
+    },
+    "mpcbc_foot_zh 31": {
+      "_cssid": "mpcbc-mpcbc_foot_zh",
+      "paragraph": "<span lang=\"zh-Hant\">中文</span>",
+      "tag": "p",
+      "link": {
+        "destination": "http://mpcbc.local/zh/",
+        "isTargetBlank": false
+      }
+    },
+    "Boxed inner 32": {},
+    "mpcbc_footer_bottom_bar 33": {
+      "_cssid": "mpcbc-mpcbc_footer_bottom_bar"
+    },
+    "mpcbc_footer_root 34": {
+      "_cssid": "mpcbc-mpcbc_footer_root"
+    }
+  },
+  "style": {
+    "mpcbc_foot_logo 1": "min-width:0;margin:0;max-width:100%;font-size:18px;font-weight:700;color:var(--mpcbc-color-c6e48f28a);",
+    "mpcbc_foot_address 2": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_address_zh 3": "min-width:0;margin:0;max-width:100%;font-family:var(--mpcbc-font-529ca1d09);font-size:15px;font-weight:500;line-height:1.8em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_address_street 4": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_directions 5": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:600;line-height:1.6em;color:var(--mpcbc-color-262da8014);",
+    "mpcbc_footer_col1 6": "min-width:0;margin:0;display:flex;flex-direction:column;width:30%;padding:0;gap:4px;@media (--tablet){width:46%;}@media (--mobile){width:100%;}",
+    "mpcbc_foot_sundays_h 7": "min-width:0;margin:0px 0px 12px 0px;max-width:100%;font-size:16px;font-weight:700;color:var(--mpcbc-color-54922f2e9);",
+    "mpcbc_foot_sundays_0 8": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_sundays_1 9": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_sundays_2 10": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_footer_col2 11": "min-width:0;margin:0;display:flex;flex-direction:column;width:20%;padding:0;gap:0px;@media (--tablet){width:46%;}@media (--mobile){width:100%;}",
+    "mpcbc_foot_explore_h 12": "min-width:0;margin:0px 0px 12px 0px;max-width:100%;font-size:16px;font-weight:700;color:var(--mpcbc-color-54922f2e9);",
+    "mpcbc_foot_explore_0 13": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_explore_1 14": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_explore_2 15": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_explore_3 16": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_explore_4 17": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_explore_5 18": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_footer_col3 19": "min-width:0;margin:0;display:flex;flex-direction:column;width:18%;padding:0;gap:0px;@media (--tablet){width:46%;}@media (--mobile){width:46%;}",
+    "mpcbc_foot_contact_h 20": "min-width:0;margin:0px 0px 12px 0px;max-width:100%;font-size:16px;font-weight:700;color:var(--mpcbc-color-54922f2e9);",
+    "mpcbc_foot_contact_0 21": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_contact_1 22": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_contact_2 23": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_contact_3 24": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_contact_4 25": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_foot_contact_5 26": "min-width:0;margin:0;max-width:100%;font-size:16px;font-weight:400;line-height:1.6em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "mpcbc_footer_col4 27": "min-width:0;margin:0;display:flex;flex-direction:column;width:22%;padding:0;gap:0px;@media (--tablet){width:46%;}@media (--mobile){width:46%;}",
+    "Boxed inner 28": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0;gap:48px;justify-content:space-between;flex-wrap:nowrap;@media (--tablet){flex-direction:row;flex-wrap:wrap;gap:32px;}@media (--mobile){flex-direction:row;flex-wrap:wrap;gap:24px;}max-width:1328px;margin-left:auto;margin-right:auto;",
+    "mpcbc_footer_grid 29": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0;gap:48px;justify-content:space-between;flex-wrap:nowrap;@media (--tablet){flex-direction:row;flex-wrap:wrap;gap:32px;}@media (--mobile){flex-direction:row;flex-wrap:wrap;gap:24px;}",
+    "mpcbc_foot_since 30": "min-width:0;margin:0;max-width:100%;font-size:14px;font-weight:400;line-height:1.4em;color:var(--mpcbc-color-f2c7aadfd);",
+    "mpcbc_foot_zh 31": "min-width:0;margin:0;max-width:100%;font-size:14px;font-weight:400;line-height:1.4em;color:var(--mpcbc-color-2d5d7ee8e);",
+    "Boxed inner 32": "min-width:0;margin:0;display:flex;flex-direction:row;width:100%;padding:0;gap:20px;align-items:center;justify-content:space-between;max-width:1328px;margin-left:auto;margin-right:auto;",
+    "mpcbc_footer_bottom_bar 33": "min-width:0;margin:56px 0px 0px 0px;display:flex;flex-direction:row;width:100%;padding:24px 0px 0px 0px;gap:20px;align-items:center;justify-content:space-between;border-width:1px 0px 0px 0px;border-style:solid;border-color:var(--mpcbc-color-760d5a356);",
+    "mpcbc_footer_root 34": "min-width:0;margin:0;display:flex;flex-direction:column;width:100%;padding:88px 56px 48px 56px;gap:0px;background-color:var(--mpcbc-color-c36e560d8);@media (--tablet){padding:72px 32px 40px 32px;}@media (--mobile){padding:56px 16px 32px 16px;}"
+  }
+}
