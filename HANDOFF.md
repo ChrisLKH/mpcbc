@@ -62,8 +62,8 @@ match the design.
 
 ## Hard rules
 
-- Work only inside ``. Do not touch the archived Astro site
-  (`archive/astro-site/`), Design B (`archive/wordpress-design-b/`) or `.env`. **Never push to `main`**.
+- Work only on the site at the repo root. Do not touch the archived Astro site
+  (`archive/astro-site/`), Design B (`archive/wordpress-design-b/`) or `.env`.
 - Every visible word and image must be editable in Elementor (or Appearance ›
   Menus for the menu). Nothing hard-coded in PHP/CSS/JS.
 - Only Elementor free widgets + the plugins listed below. No Elementor Pro,
@@ -475,7 +475,7 @@ Side padding 16 / 32 / 56px; content max width 1328px. No sideways scroll at
    without code.
 6. Duplicator package of the finished site.
 
-## Deliverables (in ``)
+## Deliverables (in the repo root)
 
 - `hello-mpcbc/` and `hello-mpcbc.zip`
 - `elementor/*.json` (if you used the import route), `fluent-forms/connect-form.json`

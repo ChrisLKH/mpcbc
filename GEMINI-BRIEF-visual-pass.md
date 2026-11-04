@@ -9,7 +9,7 @@ approved state). Where this brief and those files disagree, stop and ask.
 
 ## Hard rules
 
-- Work only in `` and the `mpcbc.local` site. Never touch
+- Work only on the site at the repo root and the `mpcbc.local` site. Never touch
   `archive/wordpress-design-b/`, `archive/`, or `.env`. Do not commit or push.
 - Elementor **free** only. No HTML widgets, no custom CSS, no new plugins,
   no PHP/CSS in the child theme for content.
