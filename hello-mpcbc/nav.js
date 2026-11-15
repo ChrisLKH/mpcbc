@@ -28,8 +28,7 @@
     });
     select.addEventListener('change', function () {
       var link = links.find(function (candidate) { return candidate.dataset.mpcbcLocale === select.value; });
-      if (window.mpcbcLanguageNavigation) window.mpcbcLanguageNavigation.switchTo(select.value);
-      else if (link) link.click();
+      if (link) window.location.href = link.href;
     });
     inner.insertBefore(select, toggle);
     header.classList.add('mpcbc-mobile-language-ready');

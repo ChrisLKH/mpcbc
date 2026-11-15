@@ -26,8 +26,8 @@ is needed: no second Simplified element, no ID. To add one, duplicate an existin
 Example of a kept override: the Home mission line (借着, where conversion gives 藉著).
 
 The editor canvas shows the main text only; the Chinese fields show on the website.
-All Traditional text on the page, including menu descriptions, is converted for 简体中文 in the
-browser (bundled OpenCC 1.4.2).
+All Traditional text on the page, including menu descriptions, is converted for 简体中文 on the
+server (OpenCC 1.4.2 dictionaries in the MPCBC Translations plugin).
 
 The old Simplified Home (511), the old Simplified footer (513, draft) and the 繁體/简体 Give
 pages (233, 236) are legacy redirects or archives, not editing destinations. The state before

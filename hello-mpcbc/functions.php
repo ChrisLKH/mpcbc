@@ -55,31 +55,6 @@ function hello_mpcbc_scripts() {
         true
     );
 
-    // A small routing layer keeps language choices across shared and translated pages.
-    $language_pages = get_posts( array( 'post_type' => 'page', 'post_status' => 'publish',
-        'numberposts' => -1, 'meta_key' => '_mpcbc_translation_group' ) );
-    $routes = array();
-    foreach ( $language_pages as $page ) {
-        $topic = get_post_meta( $page->ID, '_mpcbc_translation_group', true );
-        $locale = get_post_meta( $page->ID, '_mpcbc_locale', true );
-        if ( in_array( $locale, array( 'en', 'zh-hant', 'zh-hans' ), true ) ) {
-            $routes[ $topic ][ $locale ] = get_permalink( $page );
-        }
-    }
-    $routes['index']['en'] = home_url( '/' );
-    $routes['home']['en'] = home_url( '/' );
-    $routes['home']['zh-hant'] = home_url( '/' );
-    $routes['home']['zh-hans'] = home_url( '/' );
-    // Traditional text on the page and menu is converted in the browser when 简体中文 is chosen.
-    wp_enqueue_script( 'hello-mpcbc-language', get_stylesheet_directory_uri() . '/language-navigation.js',
-        array(), filemtime( get_stylesheet_directory() . '/language-navigation.js' ), false );
-    wp_localize_script( 'hello-mpcbc-language', 'mpcbcLanguages', array(
-        'home' => home_url( '/' ), 'routes' => $routes,
-        'converter' => get_stylesheet_directory_uri() . '/vendor/opencc-js/t2cn.js?ver=1.4.2',
-        'locale' => get_post_meta( get_queried_object_id(), '_mpcbc_locale', true ),
-        'topic' => get_post_meta( get_queried_object_id(), '_mpcbc_translation_group', true ),
-    ) );
-
 }
 add_action( 'wp_enqueue_scripts', 'hello_mpcbc_scripts', 20 );
 
@@ -125,7 +100,7 @@ add_action( 'wp_enqueue_scripts', 'hello_mpcbc_footer_atomic_styles', 5 );
  */
 function hello_mpcbc_nav_menu_description( $item_output, $item, $depth, $args ) {
     if ( ! empty( $item->description ) ) {
-        $desc_html = '<small class="menu-item-description" lang="zh-Hant">' . esc_html( $item->description ) . '</small>';
+        $desc_html = '<small class="menu-item-description" lang="' . ( function_exists( 'mpcbc_lang' ) && 'zh-hans' === mpcbc_lang() ? 'zh-Hans' : 'zh-Hant' ) . '">' . esc_html( $item->description ) . '</small>';
         // Insert right before the closing </a> tag
         $item_output = preg_replace( '/(<\/a>)/i', $desc_html . '$1', $item_output );
     }
@@ -133,24 +108,12 @@ function hello_mpcbc_nav_menu_description( $item_output, $item, $depth, $args ) 
 }
 add_filter( 'walker_nav_menu_start_el', 'hello_mpcbc_nav_menu_description', 10, 4 );
 
-/** Use each translated page's language metadata for the document and alternates. */
-function hello_mpcbc_page_language( $attributes ) {
-    $locale = get_post_meta( get_queried_object_id(), '_mpcbc_locale', true );
-    $tags = array( 'en' => 'en', 'zh-hant' => 'zh-Hant', 'zh-hans' => 'zh-Hans' );
-    return isset( $tags[ $locale ] )
-        ? preg_replace( '/\blang="[^"]*"/', 'lang="' . $tags[ $locale ] . '"', $attributes )
-        : $attributes;
-}
-add_filter( 'language_attributes', 'hello_mpcbc_page_language' );
-
 /** Preserve retired page links through editable destination metadata. */
 function hello_mpcbc_merged_page_redirect() {
     if ( ! is_page() || is_preview() || isset( $_GET['elementor-preview'] ) ) return;
     $target = absint( get_post_meta( get_queried_object_id(), '_mpcbc_redirect_page', true ) );
     if ( ! $target || $target === get_queried_object_id() ) return;
-    $url = get_permalink( $target );
-    $locale = isset( $_GET['lang'] ) ? sanitize_text_field( wp_unslash( $_GET['lang'] ) ) : get_post_meta( get_queried_object_id(), '_mpcbc_redirect_locale', true );
-    if ( in_array( $locale, array( 'en', 'zh-hant', 'zh-hans' ), true ) ) $url = add_query_arg( 'lang', $locale, $url );
+    $url = get_permalink( $target ); // keeps the /zh-hant/ or /zh-hans/ prefix (mpcbc-translations)
     $anchor = get_post_meta( get_queried_object_id(), '_mpcbc_redirect_anchor', true );
     if ( $anchor ) $url .= '#' . sanitize_title( $anchor );
     wp_safe_redirect( $url, 301 );
@@ -158,51 +121,3 @@ function hello_mpcbc_merged_page_redirect() {
 }
 add_action( 'template_redirect', 'hello_mpcbc_merged_page_redirect' );
 
-function hello_mpcbc_language_alternates() {
-    $group = get_post_meta( get_queried_object_id(), '_mpcbc_translation_group', true );
-    if ( ! is_page() || ! $group ) { return; }
-    $pages = get_posts( array( 'post_type' => 'page', 'post_status' => 'publish', 'numberposts' => -1,
-        'meta_key' => '_mpcbc_translation_group', 'meta_value' => $group ) );
-    $tags = array( 'en' => 'en', 'zh-hant' => 'zh-Hant', 'zh-hans' => 'zh-Hans' );
-    foreach ( $pages as $page ) {
-        $locale = get_post_meta( $page->ID, '_mpcbc_locale', true );
-        if ( isset( $tags[ $locale ] ) ) {
-            printf( '<link rel="alternate" hreflang="%s" href="%s">' . "\n", esc_attr( $tags[ $locale ] ), esc_url( get_permalink( $page ) ) );
-        }
-    }
-}
-add_action( 'wp_head', 'hello_mpcbc_language_alternates' );
-
-/** Keep the shared header language switch on the current translated topic. */
-function hello_mpcbc_language_menu_links( $items ) {
-    $group = get_post_meta( get_queried_object_id(), '_mpcbc_translation_group', true );
-    $pages = $group ? get_posts( array( 'post_type' => 'page', 'post_status' => 'publish', 'numberposts' => -1,
-        'meta_key' => '_mpcbc_translation_group', 'meta_value' => $group ) ) : array();
-    $urls = array( 'en' => home_url( '/' ), 'zh-hant' => home_url( '/zh-hant/' ), 'zh-hans' => home_url( '/zh-hans/' ) );
-    foreach ( $pages as $page ) { $urls[ get_post_meta( $page->ID, '_mpcbc_locale', true ) ] = get_permalink( $page ); }
-    // A topic with one page (e.g. Give) holds all three languages itself.
-    if ( 1 === count( $pages ) ) { $urls = array_fill_keys( array( 'en', 'zh-hant', 'zh-hans' ), get_permalink( $pages[0] ) ); }
-    if ( 'index' === $group ) { $urls['en'] = home_url( '/' ); }
-    if ( 'home' === $group || is_front_page() ) {
-        $urls['en'] = home_url( '/' );
-        $urls['zh-hant'] = home_url( '/' );
-        $urls['zh-hans'] = home_url( '/' );
-    }
-    $locales = array( 'English' => 'en', '繁體中文' => 'zh-hant', '简体中文' => 'zh-hans' );
-    // The language menu is the parent of 繁體中文 / 简体中文; Worship's "English" congregation item is not a language link.
-    $parents = array();
-    foreach ( $items as $item ) {
-        if ( in_array( $item->title, array( '繁體中文', '简体中文' ), true ) ) $parents[] = (int) $item->menu_item_parent;
-    }
-    foreach ( $items as $item ) {
-        if ( in_array( (int) $item->menu_item_parent, $parents, true ) && isset( $locales[ $item->title ], $urls[ $locales[ $item->title ] ] ) ) {
-            $item->url = $urls[ $locales[ $item->title ] ];
-            $item->classes[] = 'mpcbc-locale-' . $locales[ $item->title ];
-        }
-    }
-    foreach ( $items as $item ) {
-        if ( in_array( (int) $item->ID, $parents, true ) ) { $item->classes[] = 'mpcbc-language-menu'; }
-    }
-    return $items;
-}
-add_filter( 'wp_nav_menu_objects', 'hello_mpcbc_language_menu_links' );

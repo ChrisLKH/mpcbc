@@ -269,9 +269,10 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 function mpcbc_sermons_style() { wp_enqueue_style( 'mpcbc-sermons', plugins_url( 'mpcbc-sermons.css', __FILE__ ), array(), '0.2.0' ); }
 
-/** English + Chinese label; same markup as the mpcbc-translations plugin, so 简体 shows $hans. */
+/** English + Chinese label; on 简体 pages (mpcbc-translations) the hand-written $hans is kept as is. */
 function mpcbc_sermons_t( $en, $hant, $hans ) {
-	return sprintf( '<span>%s</span> <span class="mpcbc-i18n" data-hans><span data-main lang="zh-Hant">%s</span><span data-zh-hans lang="zh-Hans">%s</span></span>', esc_html( $en ), esc_html( $hant ), esc_html( $hans ) );
+	$zh = function_exists( 'mpcbc_lang' ) && 'zh-hans' === mpcbc_lang() ? mpcbc_keep( esc_html( $hans ) ) : esc_html( $hant );
+	return sprintf( '<span>%s</span> <span>%s</span>', esc_html( $en ), $zh );
 }
 
 function mpcbc_sermons_thumb( $vid ) { return 'https://i.ytimg.com/vi/' . rawurlencode( $vid ) . '/hqdefault.jpg'; }

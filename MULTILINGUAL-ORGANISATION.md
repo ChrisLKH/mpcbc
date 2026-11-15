@@ -17,19 +17,21 @@ Current implementation is V4 Atomic. All language-page and footer content is in 
 
 | Topic | English | Traditional | Simplified |
 |---|---|---|---|
-| Shared bilingual Home | `/` | `/?lang=zh-hant` | `/?lang=zh-hans` |
-| About | `/about/` | `/zh-hant/about/` | `/zh-hans/about/` |
-| Beliefs section | `/about/#beliefs` | `/zh-hant/about/#beliefs` | `/zh-hans/about/#beliefs` |
-| Give (one page) | `/give/` | `/give/?lang=zh-hant` | `/give/?lang=zh-hans` |
-| Content index | Home `/` | `/zh-hant/` | `/zh-hans/` |
+Since 15 Nov 2026 every page has three addresses: `/about/`, `/zh-hant/about/`, `/zh-hans/about/`. All three serve the **same** WordPress page; the MPCBC Translations plugin reads the prefix and the server sends only that language's text (`lang`, hreflang + `x-default`, canonical included). Links saved as full addresses get the prefix added in the page output. `?lang=` and the browser-stored choice are gone.
+
+| Topic | English | Traditional | Simplified |
+|---|---|---|---|
+| Home | `/` | `/zh-hant/` | `/zh-hans/` |
+| About (Chinese fields not filled yet; old copies 215/218 unreachable) | `/about/` | `/zh-hant/about/` | `/zh-hans/about/` |
+| Give | `/give/` | `/zh-hant/give/` | `/zh-hans/give/` |
 
 The existing `/zh/` is a Chinese topic directory. The header is the single language switcher and preserves the current topic/anchor. On mobile its native select sits outside the hamburger; its choices derive from the existing WordPress language menu, with the duplicate hidden inside the panel. New visitors default to English; an explicit selection persists. Welcome retains its language-entry buttons. All About children lead to anchors within the same language-specific About page. The old Beliefs URLs remain 301 redirects to About#beliefs.
 
-Current Home editing model: **Home (21) is the single master** for all three choices: `/`, `/?lang=zh-hant` and `/?lang=zh-hans`. Its shared English/facts/layout appear once; each Chinese line is one native Atomic element written in Traditional. All three choices switch in place. The shared footer is **MPCBC – Footer (16)** on every page, with the same model. Since 3 Nov 2026 the **MPCBC Translations** plugin adds 繁體中文 / 简体中文 fields to every Heading, Paragraph and Button; the old paired `mpcbc-copy-zh-*` IDs are gone. See `HOME-FOOTER-EDITING.md`.
+Current Home editing model: **Home (21) is the single master** for all three choices: `/`, `/zh-hant/` and `/zh-hans/`. Its shared English/facts/layout appear once; each Chinese line is one native Atomic element written in Traditional. All three choices switch in place. The shared footer is **MPCBC – Footer (16)** on every page, with the same model. Since 3 Nov 2026 the **MPCBC Translations** plugin adds 繁體中文 / 简体中文 fields to every Heading, Paragraph and Button; the old paired `mpcbc-copy-zh-*` IDs are gone. See `HOME-FOOTER-EDITING.md`.
 
 The previous independent Simplified Home (511) is now a published legacy redirect to `/?lang=zh-hans`; the old footer (513) is a draft archive. Their source wording was preserved before consolidation. Do not edit those as current content. Shared Fluent Forms keep their existing bilingual fields, edited in Fluent Forms.
 
-All Traditional page, footer and menu text is converted to Simplified in the browser using bundled OpenCC 1.4.2, loaded when Simplified is selected; a 简体中文 field on an element overrides the conversion. In Appearance › Menus › Primary Menu, edit the Traditional Chinese **Description** and English **Navigation Label**. Simplified menu display is generated; language-option names remain in their native scripts. Keep the bundled runtime and license files in migration backups.
+On `/zh-hans/` pages the server converts all Traditional page, footer and menu text to Simplified (OpenCC 1.4.2 dictionaries in `plugins/mpcbc-translations/t2s-data.php`, built by `scripts/build-t2s-data.mjs`, checked by `scripts/check-t2s.mjs`); a 简体中文 field on an element overrides the conversion. In Appearance › Menus › Primary Menu, edit the Traditional Chinese **Description** and English **Navigation Label**. Simplified menu display is generated; language-option names remain in their native scripts. Keep the bundled runtime and license files in migration backups.
 
 Primary menu groups visitor tasks: Sundays contains service times, Sunday worship and directions; Sermons contains the three original-language archives; Church life contains children/youth, groups, care/prayer, Bible reading and newsletter. About holds story, mission, team and beliefs anchors. Give and the single reading-language switcher remain top-level. Congregation service details stay under Sundays; sermon archive entries are explicitly labelled “sermons” to distinguish recorded teaching from service attendance. Reading language never changes a recording's spoken language.
 
@@ -64,7 +66,7 @@ For production, select a WordPress multilingual solution only after reviewing vo
 
 ## Editing and regeneration
 
-The selected reading language now persists in browser storage. Header, body and footer links route to the selected About, Beliefs, Give or index counterpart, including links opened in a new tab. Internal shared-page URLs carry `?lang=zh-hant` or `?lang=zh-hans` so Home anchors and untranslated pages retain that choice; external links, downloads, mail and telephone links remain unchanged. Selecting English clears the language parameter. Shared bilingual content is still bilingual: routing does not generate missing translations. The header label reflects the active reading language, with no duplicate page tabs.
+The reading language is the address prefix. Internal links keep it; external links, downloads, mail and telephone links remain unchanged. Shared bilingual content is still bilingual: routing does not generate missing translations. The header label reflects the active reading language, with no duplicate page tabs.
 
 The approved anchored About layout keeps `#story`, `#mission`, `#pastors` and `#beliefs`. Full supplied history/biography are in Atomic Accordions and the full statement of faith in Atomic Tabs. The current WordPress exports are authoritative. The earlier anchored About and language-variant scripts are historical V3 builders and must not overwrite these Atomic pages.
 
