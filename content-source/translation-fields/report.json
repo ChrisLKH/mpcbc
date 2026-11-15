@@ -1,0 +1,66 @@
+{
+  "16": {
+    "merged": 6,
+    "overrides": []
+  },
+  "21": {
+    "merged": 44,
+    "overrides": [
+      {
+        "key": "taste-mission",
+        "auto": "认识神为基础，荣耀神是目标。我们藉著敬拜﹑团契﹑门徒训练﹑事奉﹑传福音来认识和荣耀神。",
+        "kept": "认识神为基础，荣耀神是目标。我们借着敬拜﹑团契﹑门徒训练﹑事奉﹑传福音来认识和荣耀神。"
+      }
+    ]
+  },
+  "65": {
+    "fields": [
+      {
+        "en": "Give",
+        "hant": "奉獻",
+        "hans": null
+      },
+      {
+        "en": "Giving is a Christian’s privilege, responsibility and a channel of blessing. God is pleased when believers give willingly. You can give in the following ways.",
+        "hant": "奉獻是基督徒的權利ˎ義務和蒙福的管道, 信徒樂意的奉獻，必為神所悅納。大家可以透過以下的途徑進行奉獻:",
+        "hans": null
+      },
+      {
+        "en": "Give online",
+        "hant": "網上奉獻",
+        "hans": null
+      },
+      {
+        "en": "Give through the church’s PayPal donation page.",
+        "hant": "透過教會的 PayPal 奉獻頁面進行奉獻。",
+        "hans": null
+      },
+      {
+        "en": "Give with PayPal",
+        "hant": "透過 PayPal 奉獻",
+        "hans": null
+      },
+      {
+        "en": "Give by cheque",
+        "hant": "支票奉獻",
+        "hans": null
+      },
+      {
+        "en": "Make your cheque payable to MPCBC and mail it to the church address below.",
+        "hant": "支票抬頭請寫 MPCBC，郵寄教會地址：",
+        "hans": null
+      },
+      {
+        "en": "302 W. Commonwealth Ave.<br>Alhambra, CA 91801",
+        "hant": null,
+        "hans": null
+      },
+      {
+        "en": "Contact us",
+        "hant": "聯絡我們",
+        "hans": null
+      }
+    ],
+    "linksDiffer": []
+  }
+}

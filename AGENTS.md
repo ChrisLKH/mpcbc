@@ -20,7 +20,7 @@ root is the site: local site `mpcbc.local`, child theme `hello-mpcbc`, plugin
 - Elementor **free** only: native containers and widgets, no HTML layouts or
   inline styles inside widgets, colours and fonts from Global Colours / Fonts.
 - Plugins: Elementor, Essential Addons for Elementor (Fancy Text only), Fluent
-  Forms, Duplicator (deleted after migration), and our own `mpcbc-sermons`. Ask before adding any other.
+  Forms, Duplicator (deleted after migration), and our own `mpcbc-sermons` and `mpcbc-translations`. Ask before adding any other.
 - Child theme stays tiny: fonts, header CSS, menu description line, `footer.php`
   rendering the Elementor footer template. No page content in the theme.
 - Unknown facts stay as `[bracketed placeholders]`. Invent nothing.

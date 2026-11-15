@@ -70,12 +70,12 @@ function hello_mpcbc_scripts() {
     $routes['home']['en'] = home_url( '/' );
     $routes['home']['zh-hant'] = home_url( '/' );
     $routes['home']['zh-hans'] = home_url( '/' );
-    // Script conversion is limited to editable menu text; page wording is independent.
+    // Traditional text on the page and menu is converted in the browser when 简体中文 is chosen.
     wp_enqueue_script( 'hello-mpcbc-language', get_stylesheet_directory_uri() . '/language-navigation.js',
         array(), filemtime( get_stylesheet_directory() . '/language-navigation.js' ), false );
     wp_localize_script( 'hello-mpcbc-language', 'mpcbcLanguages', array(
         'home' => home_url( '/' ), 'routes' => $routes,
-        'menuConverter' => get_stylesheet_directory_uri() . '/vendor/opencc-js/t2cn.js?ver=1.4.2',
+        'converter' => get_stylesheet_directory_uri() . '/vendor/opencc-js/t2cn.js?ver=1.4.2',
         'locale' => get_post_meta( get_queried_object_id(), '_mpcbc_locale', true ),
         'topic' => get_post_meta( get_queried_object_id(), '_mpcbc_translation_group', true ),
     ) );
@@ -180,6 +180,8 @@ function hello_mpcbc_language_menu_links( $items ) {
         'meta_key' => '_mpcbc_translation_group', 'meta_value' => $group ) ) : array();
     $urls = array( 'en' => home_url( '/' ), 'zh-hant' => home_url( '/zh-hant/' ), 'zh-hans' => home_url( '/zh-hans/' ) );
     foreach ( $pages as $page ) { $urls[ get_post_meta( $page->ID, '_mpcbc_locale', true ) ] = get_permalink( $page ); }
+    // A topic with one page (e.g. Give) holds all three languages itself.
+    if ( 1 === count( $pages ) ) { $urls = array_fill_keys( array( 'en', 'zh-hant', 'zh-hans' ), get_permalink( $pages[0] ) ); }
     if ( 'index' === $group ) { $urls['en'] = home_url( '/' ); }
     if ( 'home' === $group || is_front_page() ) {
         $urls['en'] = home_url( '/' );
@@ -187,12 +189,15 @@ function hello_mpcbc_language_menu_links( $items ) {
         $urls['zh-hans'] = home_url( '/' );
     }
     $locales = array( 'English' => 'en', '繁體中文' => 'zh-hant', '简体中文' => 'zh-hans' );
+    // The language menu is the parent of 繁體中文 / 简体中文; Worship's "English" congregation item is not a language link.
     $parents = array();
     foreach ( $items as $item ) {
-        if ( ! empty( $item->menu_item_parent ) && isset( $locales[ $item->title ], $urls[ $locales[ $item->title ] ] ) ) {
+        if ( in_array( $item->title, array( '繁體中文', '简体中文' ), true ) ) $parents[] = (int) $item->menu_item_parent;
+    }
+    foreach ( $items as $item ) {
+        if ( in_array( (int) $item->menu_item_parent, $parents, true ) && isset( $locales[ $item->title ], $urls[ $locales[ $item->title ] ] ) ) {
             $item->url = $urls[ $locales[ $item->title ] ];
             $item->classes[] = 'mpcbc-locale-' . $locales[ $item->title ];
-            $parents[] = (int) $item->menu_item_parent;
         }
     }
     foreach ( $items as $item ) {

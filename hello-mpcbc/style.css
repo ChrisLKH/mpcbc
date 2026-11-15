@@ -43,14 +43,6 @@ body {
   margin: 0;
 }
 
-/* Language visibility only; all wording remains in native editable Atomic text.
- * Editors see both versions and can locate them by their Structure titles. */
-[id^="mpcbc-copy-zh-hans-"] { display: none !important; }
-html[data-mpcbc-reading-language="zh-hans"] [id^="mpcbc-copy-zh-hant-"] { display: none !important; }
-html[data-mpcbc-reading-language="zh-hans"] [id^="mpcbc-copy-zh-hans-"] { display: revert !important; }
-body.elementor-editor-active [id^="mpcbc-copy-zh-hant-"],
-body.elementor-editor-active [id^="mpcbc-copy-zh-hans-"] { display: revert !important; }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   letter-spacing: -0.035em;

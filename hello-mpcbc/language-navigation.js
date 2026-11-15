@@ -81,46 +81,60 @@
       link.setAttribute('aria-label', choices[locale]);
     });
   }
-  // Only menu descriptions are converted. Page wording stays independently editable.
-  var traditionalMenu = new WeakMap();
+  // Chinese is written in Traditional; 简体 converts it here. Hand-written Simplified ([data-zh-hans]) is left alone.
   var converterPromise;
-  function menuConverter() {
+  function converter() {
     if (!converterPromise) converterPromise = new Promise(function(resolve) {
       function ready() { resolve(window.OpenCC ? window.OpenCC.Converter({ from: 'hk', to: 'cn' }) : null); }
       if (window.OpenCC) { ready(); return; }
       var script = document.createElement('script');
-      script.src = config.menuConverter; script.async = true;
+      script.src = config.converter; script.async = true;
       script.onload = ready; script.onerror = function() { resolve(null); };
       document.head.appendChild(script);
     });
     return converterPromise;
   }
+  if (locale === 'zh-hans') converter();
+  var han = /[㐀-鿿]/;
+  var skip = 'script, style, textarea, option, [data-zh-hans], .mpcbc-language-menu, .mpcbc-mobile-language';
+  var traditional = new Map(); // text node -> { original, simplified }
+  function chineseTextNodes() {
+    var nodes = [];
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      var node = walker.currentNode;
+      if ((traditional.has(node) || han.test(node.nodeValue)) && !node.parentElement.closest(skip)) nodes.push(node);
+    }
+    return nodes;
+  }
+  function markLanguage(nodes, tag) {
+    // Font choice follows lang; skip mixed English/Chinese elements so their Latin font stays.
+    nodes.forEach(function(node) {
+      var parent = node.parentElement;
+      if (/^zh/.test(parent.getAttribute('lang') || '') || !/[A-Za-z]/.test(parent.textContent)) parent.setAttribute('lang', tag);
+    });
+  }
   function localizeChineseDisplay() {
     if (document.body.classList.contains('elementor-editor-active') || here.searchParams.has('elementor-preview')) return;
-    var descriptions = Array.from(document.querySelectorAll('.site-header .menu-item-description'));
-    descriptions.forEach(function(description) {
-      if (!traditionalMenu.has(description)) traditionalMenu.set(description, description.textContent);
-      if (locale !== 'zh-hans') {
-        description.textContent = traditionalMenu.get(description);
-        description.setAttribute('lang', 'zh-Hant');
-      }
-    });
-    if (locale !== 'zh-hans') return;
-    menuConverter().then(function(simplify) {
+    var nodes = chineseTextNodes();
+    if (locale !== 'zh-hans') {
+      traditional.forEach(function(text, node) { if (node.nodeValue === text.simplified) node.nodeValue = text.original; });
+      traditional.clear();
+      markLanguage(nodes, 'zh-Hant');
+      return;
+    }
+    converter().then(function(simplify) {
       if (!simplify || locale !== 'zh-hans') return;
-      descriptions.forEach(function(description) {
-        description.textContent = simplify(traditionalMenu.get(description));
-        description.setAttribute('lang', 'zh-Hans');
+      nodes.forEach(function(node) {
+        var original = traditional.has(node) ? traditional.get(node).original : node.nodeValue;
+        node.nodeValue = simplify(original);
+        traditional.set(node, { original: original, simplified: node.nodeValue });
       });
+      markLanguage(nodes, 'zh-Hans');
     });
   }
   function initializeLanguage() {
     localizeLinks(); localizeChineseDisplay();
-    ['zh-hant', 'zh-hans'].forEach(function(language) {
-      document.querySelectorAll('[id^="mpcbc-copy-' + language + '-"]').forEach(function(element) {
-        element.setAttribute('lang', language === 'zh-hans' ? 'zh-Hans' : 'zh-Hant');
-      });
-    });
   }
   function switchTo(language) {
     if (!valid(language)) return;
