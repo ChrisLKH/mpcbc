@@ -10,30 +10,35 @@ Text Domain: hello-mpcbc
 */
 
 /* -------------------------------------------------------------
- * 1. CSS Variables & Harbor Palette Integration
+ * 1. CSS Variables (DESIGN-v10 palette; values come from Site Settings › Global Colours)
  * ------------------------------------------------------------- */
 :root {
-  --mpcbc-primary: var(--e-global-color-primary, #181715);
-  --mpcbc-primary-hover: #2E2D2A;
-  --mpcbc-secondary: var(--e-global-color-secondary, #181715);
-  --mpcbc-text: var(--e-global-color-text, #181715);
-  --mpcbc-accent: var(--e-global-color-accent, #FFD21A);
-  --mpcbc-paper: #E8E8E3;
+  --mpcbc-primary: var(--e-global-color-primary, #1F3F66);
+  --mpcbc-primary-hover: var(--e-global-color-harbor_deep, #162E4C);
+  --mpcbc-secondary: var(--e-global-color-secondary, #121A26);
+  --mpcbc-text: var(--e-global-color-text, #1D2430);
+  --mpcbc-accent: var(--e-global-color-accent, #1F3F66);
+  --mpcbc-paper: var(--e-global-color-paper, #FBF8F5);
   --mpcbc-header: #FFFFFF;
-  --mpcbc-mist: #DCDCD6;
-  --mpcbc-ink-soft: #5C5B55;
-  --mpcbc-live: #D92D27;
-  --mpcbc-live-text: #B8231E;
+  --mpcbc-mist: var(--e-global-color-mist, #F4EEEA);
+  --mpcbc-ink-soft: var(--e-global-color-ink_soft, #5B6472);
+  --mpcbc-live: var(--e-global-color-live, #C42B35);
+  --mpcbc-live-text: var(--e-global-color-live, #C42B35);
   --mpcbc-card-tint: #FFFFFF;
-  --mpcbc-line: #C4C4BC;
-  --mpcbc-line-strong: #B4B3AB;
-  --mpcbc-footer: #181715;
+  --mpcbc-line: var(--e-global-color-line, #E7DFD9);
+  --mpcbc-line-strong: var(--e-global-color-line, #E7DFD9);
+  --mpcbc-footer: var(--e-global-color-footer, #121A26);
+  --mpcbc-gold: var(--e-global-color-gold, #D4A43A);
+  --mpcbc-night-text: var(--e-global-color-night_text, #C9D2DE);
 
-  --font-heading: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  /* Latin in Hanken Grotesk, Chinese in Noto (TC; SC on 简 pages), one family as in DESIGN-v10 */
+  --font-heading: 'Hanken Grotesk', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
   --font-body: 'Hanken Grotesk', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
-  --font-chinese: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
-  --font-chinese-hans: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --font-chinese: 'Hanken Grotesk', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+  --font-chinese-hans: 'Hanken Grotesk', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
 }
+:root:lang(zh-Hant), :root:lang(zh-Hans) { --font-heading: var(--font-chinese); }
+:root:lang(zh-Hans) { --font-heading: var(--font-chinese-hans); --font-body: var(--font-chinese-hans); }
 
 body {
   font-family: var(--font-body);
@@ -76,12 +81,13 @@ header.site-header {
 
 .site-header .header-inner {
   width: 100%;
-  max-width: 100%;
+  max-width: calc(1280px + 2.5rem); /* DESIGN-v10: header content 1280px, 1.25rem gutters */
+  margin-inline: auto;
   height: 80px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 56px;
+  padding: 0 1.25rem;
   box-sizing: border-box;
 }
 
@@ -124,7 +130,7 @@ header.site-header {
 .site-header .site-navigation ul {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -162,31 +168,68 @@ header.site-header {
   min-height: 44px;
   padding: 0 4px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   box-sizing: border-box;
 }
 
-.menu-item-description {
-  display: inline-block;
-  font-family: var(--font-chinese);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--mpcbc-ink-soft);
-  opacity: 0.8;
-  letter-spacing: 0.01em;
-  transition: color 0.25s ease;
-}
-
-/* Give: the menu's one action, a flat yellow pill */
-.site-header .site-navigation ul > li.mpcbc-menu-give > a {
-  padding: 0 18px;
+/* Actions on the right: language switcher, Watch Live (outline + red dot), Give (accent). CSS order keeps the
+   menu editable as one list while the switcher sits first. */
+.site-header .site-navigation ul.menu > li.mpcbc-language-menu { order: 1; margin-left: 8px; }
+.site-header .site-navigation ul.menu > li.mpcbc-menu-watch { order: 2; }
+.site-header .site-navigation ul.menu > li.mpcbc-menu-give { order: 3; margin-left: -12px; }
+.site-header .site-navigation ul > li.mpcbc-menu-watch > a,
+.site-header .site-navigation ul > li.mpcbc-menu-give > a,
+.mpcbc-mobile-give {
+  height: 44px;
+  padding: 0 18px !important;
+  border: 1px solid transparent;
   border-radius: 999px;
-  background: var(--e-global-color-accent, #FFD21A);
-  color: var(--e-global-color-primary, #181715);
+  white-space: nowrap;
 }
-.site-header .site-navigation ul > li.mpcbc-menu-give > a:hover { color: var(--e-global-color-primary, #181715); filter: brightness(0.95); }
-.site-header .site-navigation ul > li.mpcbc-menu-give .menu-item-description { color: inherit; opacity: 1; }
+.site-header .site-navigation ul > li.mpcbc-menu-watch > a { border-color: currentColor; gap: 8px; }
+.site-header .site-navigation ul > li.mpcbc-menu-watch > a::before {
+  content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--mpcbc-live);
+}
+.site-header .site-navigation ul > li.mpcbc-menu-give > a,
+.mpcbc-mobile-give { background: var(--mpcbc-primary); color: #FFFFFF !important; }
+.site-header .site-navigation ul > li.mpcbc-menu-give > a:hover,
+.mpcbc-mobile-give:hover { color: #FFFFFF !important; background: var(--mpcbc-primary-hover); }
+
+/* EN / 繁 / 简: the switcher's own links shown as one segmented pill (its parent link is not shown) */
+.site-header .site-navigation ul.menu > li.mpcbc-language-menu > a { display: none !important; }
+.site-header .site-navigation ul.menu > li.mpcbc-language-menu > .sub-menu,
+.mpcbc-lang-group {
+  display: flex !important;
+  flex-direction: row !important; /* the dropdown hover rule would stack it */
+  position: static !important;
+  min-width: 0 !important;
+  gap: 0 !important;
+  padding: 3px !important;
+  border: 1px solid var(--mpcbc-line) !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.site-header .site-navigation ul.menu > li.mpcbc-language-menu > .sub-menu > li { width: auto !important; }
+.site-header .site-navigation ul.menu > li.mpcbc-language-menu > .sub-menu a,
+.mpcbc-lang-group a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px !important;
+  min-height: 36px !important;
+  padding: 0 8px !important;
+  border-radius: 999px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: inherit !important;
+  text-decoration: none;
+}
+.site-header .site-navigation ul.menu > li.mpcbc-language-menu > .sub-menu a[aria-current="true"],
+.mpcbc-lang-group a[aria-current="true"] { background: var(--mpcbc-text) !important; color: #FFFFFF !important; }
+.mpcbc-mobile-actions { display: none; }
 
 /* Small chevron after parents with children */
 .site-header .site-navigation ul.menu > li.menu-item-has-children > a::after,
@@ -253,13 +296,6 @@ header.site-header {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.site-header .site-navigation ul.menu .sub-menu li a .menu-item-description,
-.site-header .site-navigation ul .sub-menu li a .menu-item-description {
-  font-size: 13px;
-  color: var(--mpcbc-ink-soft);
-  opacity: 0.85;
-}
-
 .site-header .site-navigation ul.menu .sub-menu li a:hover,
 .site-header .site-navigation ul.menu .sub-menu li a:focus,
 .site-header .site-navigation ul .sub-menu li a:hover,
@@ -268,32 +304,58 @@ header.site-header {
   color: var(--mpcbc-primary);
 }
 
-.site-header .site-navigation ul.menu .sub-menu li a:hover .menu-item-description,
-.site-header .site-navigation ul.menu .sub-menu li a:focus .menu-item-description,
-.site-header .site-navigation ul .sub-menu li a:hover .menu-item-description,
-.site-header .site-navigation ul .sub-menu li a:focus .menu-item-description {
-  color: var(--mpcbc-primary);
+/* Worship & Ministries: a full-width panel of three columns (English / Cantonese / Mandarin).
+   The column headings are labels (span), their children always show. */
+.site-header .site-navigation ul.menu > li.mpcbc-mega { position: static; }
+.site-header .site-navigation ul.menu > li.mpcbc-mega > .sub-menu {
+  left: 0 !important;
+  right: 0 !important;
+  top: 100%;
+  min-width: 0;
+  padding: 32px max(1.25rem, calc((100% - 1280px) / 2)) 36px;
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid var(--mpcbc-line);
+  box-shadow: 0 16px 32px rgba(29, 36, 48, 0.08);
 }
-
-/* 中文 language switch pill in header: min-height 40px */
-.site-header .site-navigation > ul.menu > li.mpcbc-language-menu > a,
-.site-header .site-navigation > ul.menu > li.lang-switch > a,
-.site-header .site-navigation > ul > li.mpcbc-language-menu > a,
-.site-header .site-navigation > ul > li.lang-switch > a {
-  border: 1.5px solid var(--mpcbc-line-strong);
-  border-radius: 8px;
-  padding: 0 12px !important;
-  min-height: 40px !important;
-  height: 40px !important;
-  align-self: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+/* an invisible bridge over the gap between the link and the panel, so the panel stays open on the way down */
+.site-header .site-navigation ul.menu > li.mpcbc-mega > .sub-menu::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 24px; }
+.site-header .site-navigation ul.menu > li.mpcbc-mega:hover > .sub-menu,
+.site-header .site-navigation ul.menu > li.mpcbc-mega:focus-within > .sub-menu {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  align-items: start; /* the header's lists centre their items; columns must not move when one is hovered */
 }
+.site-header .site-navigation ul.menu > li.mpcbc-mega .sub-menu .sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* one spacing, hovered or not (the dropdown hover rule would set 2px, the header list 22px) */
+  position: static;
+  min-width: 0;
+  margin-top: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.mpcbc-menu-label-text {
+  display: block;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--mpcbc-line);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mpcbc-ink-soft);
+}
+.site-header .site-navigation ul.menu > li.mpcbc-mega > .sub-menu > li { display: block; border: 0 !important; }
+.site-header .site-navigation ul.menu > li.mpcbc-mega > .sub-menu { width: auto !important; max-width: none !important; }
+.site-header .site-navigation ul.menu > li.mpcbc-mega .sub-menu .sub-menu li { border: 0 !important; }
+.site-header .site-navigation ul.menu > li.mpcbc-mega .sub-menu .sub-menu a { font-size: 17px; height: 44px !important; padding: 0 !important; border: 0 !important; }
+.site-header .site-navigation ul.menu > li.mpcbc-mega .sub-menu .sub-menu a:hover { background: none; text-decoration: underline; }
 
 /* Hamburger toggle styling */
-.mpcbc-mobile-language { display: none; }
 .site-header .site-navigation-toggle {
   background-color: transparent !important;
   border: none !important;
@@ -318,12 +380,13 @@ body.home header.site-header {
   transition: background 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-/* At top of Home: transparent, white text, white logo border & hamburger */
-body.home:not(.is-scrolled) .site-header {
-  background: linear-gradient(180deg,
-    color-mix(in srgb, var(--mpcbc-secondary) 65%, transparent),
-    color-mix(in srgb, var(--mpcbc-secondary) 45%, transparent)) !important;
-}
+/* At top of Home: transparent over the hero (its overlay keeps the text readable), white text */
+body.home:not(.is-scrolled) .site-header { border-bottom-color: rgba(255, 255, 255, 0.18) !important; }
+body.home:not(.is-scrolled) .site-header .site-navigation ul.menu > li.mpcbc-language-menu > .sub-menu,
+body.home:not(.is-scrolled) .site-header:not(:has(.site-navigation-toggle[aria-expanded="true"])) .mpcbc-lang-group { border-color: rgba(255, 255, 255, 0.45) !important; color: #FFFFFF; }
+body.home:not(.is-scrolled) .site-header .site-navigation ul.menu > li.mpcbc-language-menu > .sub-menu a[aria-current="true"],
+body.home:not(.is-scrolled) .site-header:not(:has(.site-navigation-toggle[aria-expanded="true"])) .mpcbc-lang-group a[aria-current="true"] { background: #FFFFFF !important; color: var(--mpcbc-text) !important; }
+body.home:not(.is-scrolled) .site-header .site-navigation ul.menu > li.mpcbc-menu-watch > a { border-color: rgba(255, 255, 255, 0.75); }
 
 body.home:not(.is-scrolled) .site-header .site-branding .site-title a {
   border-color: rgba(255, 255, 255, 0.7) !important;
@@ -336,18 +399,8 @@ body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li > a {
 }
 
 body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li > a:hover {
-  color: var(--mpcbc-accent);
-}
-
-body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li > a > .menu-item-description {
-  color: #ffffff !important;
-  opacity: 0.8 !important;
-}
-
-body.home:not(.is-scrolled) .site-header .site-navigation > ul.menu > li.mpcbc-language-menu > a,
-body.home:not(.is-scrolled) .site-header .site-navigation > ul > li.mpcbc-language-menu > a {
-  border-color: rgba(255, 255, 255, 0.4) !important;
-  color: #ffffff !important;
+  color: #ffffff;
+  opacity: 0.72;
 }
 
 body.home:not(.is-scrolled) .site-header .site-navigation-toggle {
@@ -369,23 +422,12 @@ body.home.is-scrolled .site-header .site-branding .site-title a {
   color: var(--mpcbc-ink-soft) !important;
 }
 
-body.home.is-scrolled .site-header .site-navigation > ul.menu > li > a {
+body.home.is-scrolled .site-header .site-navigation > ul.menu > li:not(.mpcbc-menu-give) > a {
   color: var(--mpcbc-text) !important;
 }
 
 body.home.is-scrolled .site-header .site-navigation > ul.menu > li > a:hover {
   color: var(--mpcbc-primary) !important;
-}
-
-body.home.is-scrolled .site-header .site-navigation > ul.menu > li > a > .menu-item-description {
-  color: var(--mpcbc-ink-soft) !important;
-  opacity: 0.85 !important;
-}
-
-body.home.is-scrolled .site-header .site-navigation > ul.menu > li.mpcbc-language-menu > a,
-body.home.is-scrolled .site-header .site-navigation > ul > li.mpcbc-language-menu > a {
-  border-color: var(--mpcbc-line-strong) !important;
-  color: var(--mpcbc-text) !important;
 }
 
 body.home.is-scrolled .site-header .site-navigation-toggle,
@@ -411,32 +453,36 @@ body:not(.home) .site-header .site-navigation-toggle {
 }
 
 @media (max-width: 1109px) {
-  .site-header .mpcbc-mobile-language {
-    display: block;
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 148px;
-    min-height: 44px;
+  /* Language switcher and Give stay in the bar (copies made by nav.js); the panel drops them */
+  .site-header .mpcbc-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin: 0 8px 0 auto;
-    padding: 0 10px;
-    border: 1px solid var(--mpcbc-line-strong);
-    border-radius: 8px;
-    background-color: var(--mpcbc-paper);
     color: var(--mpcbc-text);
-    font: 500 14px var(--font-body);
   }
-  .site-header .mpcbc-mobile-language:focus-visible {
-    outline: 2px solid var(--mpcbc-primary);
-    outline-offset: 3px;
-  }
-  .site-header.mpcbc-mobile-language-ready .site-navigation-dropdown .mpcbc-language-menu {
+  .mpcbc-mobile-give { display: inline-flex; align-items: center; font-size: 15px; font-weight: 500; text-decoration: none; }
+  .site-header.mpcbc-mobile-language-ready .site-navigation-dropdown .mpcbc-language-menu,
+  .site-header.mpcbc-mobile-language-ready .site-navigation-dropdown .mpcbc-menu-give {
     display: none;
   }
-  body.home:not(.is-scrolled) .site-header:not(:has(.site-navigation-toggle[aria-expanded="true"])) .mpcbc-mobile-language {
-    background-color: var(--mpcbc-secondary);
-    color: var(--mpcbc-paper);
-    border-color: var(--mpcbc-line-strong);
+  /* Watch Live: an outline button at the end of the panel */
+  .site-header .site-navigation-dropdown ul.menu > li.mpcbc-menu-watch > a {
+    justify-content: center !important;
+    gap: 8px;
+    margin-top: 20px;
+    min-height: 52px !important;
+    border: 1px solid var(--mpcbc-text) !important;
+    border-radius: 999px;
   }
+  .site-header .site-navigation-dropdown ul.menu > li.mpcbc-menu-watch > a::before {
+    content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--mpcbc-live);
+  }
+  /* Worship: one accordion (Hello toggles .elementor-active); the congregations are dividers */
+  .site-header .site-navigation-dropdown ul.menu > li.mpcbc-mega:not(.elementor-active) > .sub-menu { display: none !important; }
+  .site-header .site-navigation-dropdown .mpcbc-menu-label-text { margin-top: 14px; padding-bottom: 6px; }
+  .site-header .site-navigation-dropdown ul.menu li ul.sub-menu ul.sub-menu { padding-left: 14px; }
+  body.home:not(.is-scrolled) .site-header:not(:has(.site-navigation-toggle[aria-expanded="true"])) .mpcbc-mobile-actions { color: #FFFFFF; }
   .site-header,
   header.site-header,
   body.home .site-header,
@@ -529,15 +575,6 @@ body:not(.home) .site-header .site-navigation-toggle {
     color: var(--mpcbc-text) !important;
   }
 
-  body .site-header .site-navigation-dropdown .menu-item-description,
-  body.home:not(.is-scrolled) .site-header .site-navigation-dropdown .menu-item-description {
-    font-family: var(--font-chinese);
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--mpcbc-ink-soft) !important;
-    opacity: 1 !important;
-  }
-
   /* Children are already open, indented 16px, 17px text, 48px rows */
   .site-header .site-navigation-dropdown ul.menu li ul.sub-menu {
     display: block;
@@ -568,15 +605,16 @@ body:not(.home) .site-header .site-navigation-toggle {
     text-decoration: none;
     color: var(--mpcbc-text) !important;
   }
-  .site-header .site-navigation-dropdown ul.menu li ul.sub-menu li a .menu-item-description {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 767px) {
   .site-header .header-inner {
     padding: 0 16px !important;
+    gap: 6px;
   }
+  .site-header .mpcbc-mobile-actions { gap: 6px; margin-right: 2px; }
+  .mpcbc-lang-group a { min-width: 32px; padding: 0 4px !important; }
+  .mpcbc-mobile-give { padding: 0 14px !important; }
   .site-header .site-navigation-dropdown ul.menu {
     padding: 8px 16px 32px;
   }
@@ -695,36 +733,83 @@ body .elementor-element-hero_container button.mpcbc-video-toggle {
 }
 
 /* -------------------------------------------------------------
- * 7. Footer Styles (Step 12: 44px tap targets, clean link styling)
+ * 8. Home (DESIGN-v10): only what Elementor Free cannot do. Keyed on the CSS IDs set in the Elementor page.
  * ------------------------------------------------------------- */
-.elementor-element[class*="elementor-element-mpcbc_foot"] a,
-#mpcbc_footer_root a,
-.site-footer a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  transition: color 0.15s ease;
+/* Hero: the Chinese church name is spaced wider; on 繁/简 pages the English line under it is smaller and uppercase,
+   and each Sunday time reads "國語 9:00" (congregation first) */
+:root:lang(zh-Hant) #mpcbc-hero-name, :root:lang(zh-Hans) #mpcbc-hero-name { letter-spacing: 0.18em; line-height: 1.25; }
+:root:lang(zh-Hant) #mpcbc-hero-alt, :root:lang(zh-Hans) #mpcbc-hero-alt { font-size: clamp(1.2rem, 1.02rem + 0.72vw, 1.56rem); letter-spacing: 0.08em; text-transform: uppercase; }
+:root:lang(zh-Hant) [id^="mpcbc-hero-time-"], :root:lang(zh-Hans) [id^="mpcbc-hero-time-"] { flex-direction: row-reverse; }
+
+/* Online Services: card order follows the page language (EN: English, Cantonese, Mandarin) */
+:root:lang(zh-Hant) #mpcbc-svc-cantonese, :root:lang(zh-Hans) #mpcbc-svc-mandarin { order: 1; }
+:root:lang(zh-Hant) #mpcbc-svc-mandarin, :root:lang(zh-Hans) #mpcbc-svc-cantonese { order: 2; }
+:root:lang(zh-Hant) #mpcbc-svc-english, :root:lang(zh-Hans) #mpcbc-svc-english { order: 3; }
+
+/* MPCBC KIDS: wavy top and bottom edges; white-framed photos tilted in Elementor, lifted on hover */
+#kids::before, #kids::after {
+  content: ""; position: absolute; left: 0; width: 100%; height: clamp(28px, 4vw, 56px); pointer-events: none;
+  background: no-repeat center / 100% 100%;
+}
+#kids::before { top: -1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V22C1290 58 1130 62 960 40C790 18 650 6 480 22C320 38 160 58 0 34Z' fill='%23FFFFFF'/%3E%3C/svg%3E"); }
+#kids::after { bottom: -1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 64H1440V30C1280 6 1110 2 940 22C770 42 620 56 460 40C300 24 150 8 0 26Z' fill='%23FBF8F5'/%3E%3C/svg%3E"); }
+/* the same band on interior pages (English: kids during the service; Kids: Mission & Vision, Gallery), between white sections */
+[id^="mpcbc-kids-band"]::before, [id^="mpcbc-kids-band"]::after {
+  content: ""; position: absolute; left: 0; width: 100%; height: clamp(28px, 4vw, 56px); pointer-events: none; background: no-repeat center / 100% 100%;
+}
+[id^="mpcbc-kids-band"]::before { top: -1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V22C1290 58 1130 62 960 40C790 18 650 6 480 22C320 38 160 58 0 34Z' fill='%23FFFFFF'/%3E%3C/svg%3E"); }
+[id^="mpcbc-kids-band"]::after { bottom: -1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 64H1440V30C1280 6 1110 2 940 22C770 42 620 56 460 40C300 24 150 8 0 26Z' fill='%23FFFFFF'/%3E%3C/svg%3E"); }
+
+/* About › Our story: the facts a reader scans for are highlighted. Editors bold (years) or italicise (phrases) in the
+   English text; the 繁 slot is plain text, so Chinese shows without highlights. */
+[id^="mpcbc-story"] strong, [id^="mpcbc-story"] em { font-weight: inherit; font-style: normal; padding: 0 0.12em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+[id^="mpcbc-story"] strong { background: var(--e-global-color-persimmon_soft, #FFF1C2); }
+[id^="mpcbc-story"] em { background: var(--mpcbc-line); }
+
+[id^="mpcbc-kids-photo-"] { box-shadow: 0 2px 4px rgba(29, 36, 48, 0.08), 0 12px 32px rgba(29, 36, 48, 0.12); transition: translate 0.25s ease; }
+[id^="mpcbc-kids-photo-"]:hover { translate: 0 -6px; }
+#mpcbc-kids-verse { box-shadow: 0 2px 4px rgba(29, 36, 48, 0.08), 0 12px 32px rgba(29, 36, 48, 0.12); }
+
+/* Kids page: the hero's "spiritual family" carries a yellow underline (the workbook capitalises it) */
+#mpcbc-kids-family-hero { background: linear-gradient(transparent 58%, var(--e-global-color-persimmon_soft, #FFF1C2) 58%); }
+/* Chinese: no word gaps around the highlight, the H1 breaks only at its space, a smaller VBS date */
+:root:lang(zh-Hant) #mpcbc-kids-family-hero, :root:lang(zh-Hans) #mpcbc-kids-family-hero { margin: 0; }
+:root:lang(zh-Hant) #mpcbc-kids-h1, :root:lang(zh-Hans) #mpcbc-kids-h1 { word-break: keep-all; }
+:root:lang(zh-Hant) #mpcbc-kids-vbs-date, :root:lang(zh-Hans) #mpcbc-kids-vbs-date { font-size: clamp(2.4rem, 1.6rem + 3vw, 4rem); }
+/* Kids hero: a soft sky-blue blob behind the frames (the same hand-made curves as the yellow wave bands) */
+#mpcbc-kids-collage::before { content: ""; position: absolute; z-index: 0; width: auto; height: auto; /* Elementor sizes this overlay; let the insets decide */
+  inset: 3% -8% 0% -3%; background: var(--mpcbc-kids-sky, #D3E5F6); border-radius: 46% 54% 42% 58% / 58% 46% 54% 42%; rotate: -3deg; }
+@media (max-width: 960px) { #mpcbc-kids-collage::before { inset: 2% -14px 0 -8px; } }
+[id^="mpcbc-kids-sticker-"] { box-shadow: 0 6px 18px rgba(29, 36, 48, 0.12); }
+/* Kids hero clip: the video fills its frame (Elementor's pause button stays in the corner) */
+#mpcbc-kids-clip video { width: 100%; height: 100%; object-fit: cover; }
+/* Kids gallery: one big photo beside a 3 x 2 grid, all aligned, each frame with a small tilt; phones: big on top, then two columns */
+#mpcbc-scrap { grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+#mpcbc-scrap img { aspect-ratio: 4 / 3; }
+#mpcbc-kids-photo-scrap-1 { grid-row: 1 / 3; rotate: -1deg; }
+#mpcbc-kids-photo-scrap-1 img { flex: 1; min-height: 0; aspect-ratio: auto; }
+#mpcbc-scrap > :nth-child(even) { rotate: 1.5deg; } #mpcbc-scrap > :nth-child(odd):not(:first-child) { rotate: -1.5deg; }
+@media (max-width: 767px) {
+  #mpcbc-scrap { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  #mpcbc-kids-photo-scrap-1 { grid-row: auto; grid-column: 1 / -1; }
+  #mpcbc-kids-photo-scrap-1 img { aspect-ratio: 4 / 3; }
 }
 
-.elementor-element[class*="elementor-element-mpcbc_foot"] a:hover,
-#mpcbc_footer_root a:hover,
-.elementor-element[class*="elementor-element-mpcbc_foot"] a:focus,
-#mpcbc_footer_root a:focus,
-.site-footer a:hover,
-.site-footer a:focus {
-  color: #ffffff;
-  text-decoration: underline;
-}
+/* Our pastors: bios show four lines until "Read more" (nav.js) */
+[id^="mpcbc-bio-"] { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+[id^="mpcbc-bio-"].is-open { display: block; }
 
-.elementor-element[class*="elementor-element-mpcbc_foot"] ul,
-#mpcbc_footer_root ul,
-.site-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Give: airmail envelope border, round postmark (hidden under 600px) and the stamp's perforated frame */
+#mpcbc-envelope, #mpcbc-envelope-slim { background: repeating-linear-gradient(-45deg, var(--mpcbc-primary) 0 14px, #FFFFFF 14px 24px, var(--mpcbc-gold) 24px 38px, #FFFFFF 38px 48px); }
+#mpcbc-postmark {
+  display: grid; place-items: center; flex: 0 0 auto; width: 96px; height: 96px; border: 3px dotted #7A8596; border-radius: 999px;
+  text-align: center; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; line-height: 1.35; color: var(--mpcbc-ink-soft); rotate: -12deg;
 }
+#mpcbc-stamp, #mpcbc-stamp-slim { flex: 0 0 auto; padding: 5px; background: #FFFFFF; outline: 2px dashed #BCC5D1; outline-offset: -1px; box-shadow: 0 2px 6px rgba(29, 36, 48, 0.14); rotate: 3deg; }
+/* the slim envelope (interior pages) carries a smaller stamp in its top-right corner */
+#mpcbc-stamp-slim { position: absolute; right: 20px; top: -6px; padding: 4px; z-index: 1; }
+@media (max-width: 599px) { #mpcbc-stamp-slim { top: 12px; right: 14px; } }
+@media (max-width: 599px) { #mpcbc-postmark { display: none; } }
 
 /* Respect user motion preferences */
 .mpcbc-topic-select { display: none; }

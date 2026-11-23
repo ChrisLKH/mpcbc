@@ -1,0 +1,2451 @@
+{
+    "_elementor_global_variables": {
+        "data": {
+            "e-gv-2635213": {
+                "type": "global-font-variable",
+                "label": "mpcbc-font-529ca1d09",
+                "value": {
+                    "$$type": "string",
+                    "value": "Noto Sans TC"
+                },
+                "order": 1,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-adeb2fb": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-306ab1982",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 64,
+                        "unit": "px"
+                    }
+                },
+                "order": 2,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-f916fce": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-224a9d1d2",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 48,
+                        "unit": "px"
+                    }
+                },
+                "order": 3,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-9e123de": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-7e3ea77c2",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 36,
+                        "unit": "px"
+                    }
+                },
+                "order": 4,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-c70cdc4": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-6c2314b57",
+                "value": {
+                    "$$type": "color",
+                    "value": "#181715"
+                },
+                "order": 5,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-d32df5b": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-d69f92af9",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 18,
+                        "unit": "px"
+                    }
+                },
+                "order": 6,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-824ebc4": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-8ab1c66cf",
+                "value": {
+                    "$$type": "color",
+                    "value": "#DCDCD6"
+                },
+                "order": 7,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-f7d4c7a": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-98465e2b3",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 40,
+                        "unit": "px"
+                    }
+                },
+                "order": 8,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-41421ac": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-941e632fe",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 34,
+                        "unit": "px"
+                    }
+                },
+                "order": 9,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-8f1ff11": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-c7c6a7b0e",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 28,
+                        "unit": "px"
+                    }
+                },
+                "order": 10,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-f5301be": {
+                "type": "global-font-variable",
+                "label": "mpcbc-font-0071814e4",
+                "value": {
+                    "$$type": "string",
+                    "value": "Hanken Grotesk"
+                },
+                "order": 11,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-822012e": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-cf3c032cd",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 16,
+                        "unit": "px"
+                    }
+                },
+                "order": 12,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-1771cc2": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-14b48ba19",
+                "value": {
+                    "$$type": "color",
+                    "value": "#181715"
+                },
+                "order": 13,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-f7cfe2a": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-2d543f96b",
+                "value": {
+                    "$$type": "color",
+                    "value": "#E8E8E3"
+                },
+                "order": 14,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-3cc97d2": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-76b1f0d6b",
+                "value": {
+                    "$$type": "color",
+                    "value": "#C4C4BC"
+                },
+                "order": 15,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-1984c94": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-262da8014",
+                "value": {
+                    "$$type": "color",
+                    "value": "#FFFFFF"
+                },
+                "order": 16,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-99d935c": {
+                "type": "global-font-variable",
+                "label": "mpcbc-font-c48f08c2b",
+                "value": {
+                    "$$type": "string",
+                    "value": "Noto Sans SC"
+                },
+                "order": 17,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-d649b5e": {
+                "type": "global-font-variable",
+                "label": "mpcbc-font-635da6514",
+                "value": {
+                    "$$type": "string",
+                    "value": "Hanken Grotesk"
+                },
+                "order": 18,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-6c98750": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-ba698890e",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 72,
+                        "unit": "px"
+                    }
+                },
+                "order": 19,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-6f6f49c": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-4d3604fc3",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 32,
+                        "unit": "px"
+                    }
+                },
+                "order": 20,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-61df029": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-f4f9f2f45",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 14,
+                        "unit": "px"
+                    }
+                },
+                "order": 21,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-1bd3f3e": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-3c54bf036",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 52,
+                        "unit": "px"
+                    }
+                },
+                "order": 22,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-b5ac582": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-07d16b949",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 21,
+                        "unit": "px"
+                    }
+                },
+                "order": 23,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-1535e7b": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-865b4c0b4",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 20,
+                        "unit": "px"
+                    }
+                },
+                "order": 24,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-d836d46": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-9eea7bca2",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 19,
+                        "unit": "px"
+                    }
+                },
+                "order": 25,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-7317e11": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-4a261092f",
+                "value": {
+                    "$$type": "color",
+                    "value": "#5C5B55"
+                },
+                "order": 26,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-f83b8fb": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-6e90187b2",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 26,
+                        "unit": "px"
+                    }
+                },
+                "order": 27,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-547e815": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-33f60d473",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 24,
+                        "unit": "px"
+                    }
+                },
+                "order": 28,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-85c0e87": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-14cdf5964",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 22,
+                        "unit": "px"
+                    }
+                },
+                "order": 29,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-8cd7687": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-c6b690ada",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 44,
+                        "unit": "px"
+                    }
+                },
+                "order": 30,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-aaa9e5a": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-ad97dd7b0",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 30,
+                        "unit": "px"
+                    }
+                },
+                "order": 31,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-5a81035": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-21e91e8d2",
+                "value": {
+                    "$$type": "color",
+                    "value": "#181715"
+                },
+                "order": 32,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-55a0d95": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-89d17a384",
+                "value": {
+                    "$$type": "color",
+                    "value": "#2E2D2A"
+                },
+                "order": 33,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-48e97d9": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-e30164937",
+                "value": {
+                    "$$type": "color",
+                    "value": "#33322E"
+                },
+                "order": 34,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-43b7e33": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-f86885b8a",
+                "value": {
+                    "$$type": "color",
+                    "value": "#262522"
+                },
+                "order": 35,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-c89d4ba": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-686f37c40",
+                "value": {
+                    "$$type": "color",
+                    "value": "#3A3934"
+                },
+                "order": 36,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-d98b04b": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-54922f2e9",
+                "value": {
+                    "$$type": "color",
+                    "value": "#ffffff"
+                },
+                "order": 37,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-436185d": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-af363454f",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.3)"
+                },
+                "order": 38,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-6b30939": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-719d34b27",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(24,23,21,0.12)"
+                },
+                "order": 39,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-36ad3ec": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-aabbe7421",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 10,
+                        "unit": "px"
+                    }
+                },
+                "order": 40,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-588b9f7": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-486c07071",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(24,23,21,0.97)"
+                },
+                "order": 41,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-d7d9c0f": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-00759cb07",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 56,
+                        "unit": "px"
+                    }
+                },
+                "order": 42,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-239219d": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-38c45c6e4",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 17,
+                        "unit": "px"
+                    }
+                },
+                "order": 43,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-1a6ea38": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-f52c72c09",
+                "value": {
+                    "$$type": "color",
+                    "value": "#B8231E"
+                },
+                "order": 44,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-4c22119": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-9a9cf7f9c",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 15,
+                        "unit": "px"
+                    }
+                },
+                "order": 45,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-8cf32a6": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-66bb13529",
+                "value": {
+                    "$$type": "color",
+                    "value": "#2E2D2A"
+                },
+                "order": 46,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-468ea41": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-060cbc425",
+                "value": {
+                    "$$type": "color",
+                    "value": "#B4B3AB"
+                },
+                "order": 47,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-05d5c52": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-ad065af56",
+                "value": {
+                    "$$type": "color",
+                    "value": "#FFFFFF"
+                },
+                "order": 48,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-fe52081": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-3d5e1fb3d",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.75)"
+                },
+                "order": 49,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-803b57a": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-51b24b692",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.88)"
+                },
+                "order": 50,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-63e4e5d": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-5c68d45b7",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(24,23,21,0.88)"
+                },
+                "order": 51,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-96b5dde": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-d2abe1e14",
+                "value": {
+                    "$$type": "color",
+                    "value": "#181715"
+                },
+                "order": 52,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-688bedb": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-ebbfd2997",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.65)"
+                },
+                "order": 53,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-0c168a6": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-30594db85",
+                "value": {
+                    "$$type": "color",
+                    "value": "#FFD21A"
+                },
+                "order": 54,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-f8f865d": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-8126134ba",
+                "value": {
+                    "$$type": "color",
+                    "value": "#F2C200"
+                },
+                "order": 55,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-428b859": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-95d6436df",
+                "value": {
+                    "$$type": "color",
+                    "value": "#FFF4BF"
+                },
+                "order": 56,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-9ee8e4a": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-b8c9f0a67",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 13,
+                        "unit": "px"
+                    }
+                },
+                "order": 57,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-6cec0c5": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-53d7ee4c7",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 112,
+                        "unit": "px"
+                    }
+                },
+                "order": 58,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-2dedca6": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-b18f30ff2",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.85)"
+                },
+                "order": 59,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-56ef666": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-615b42f5c",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.14)"
+                },
+                "order": 60,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-b25e5d0": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-98d20b0f3",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.55)"
+                },
+                "order": 61,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-b1b112b": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-b2342e3f0",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 11,
+                        "unit": "px"
+                    }
+                },
+                "order": 62,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-468b90b": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-661aec25c",
+                "value": {
+                    "$$type": "color",
+                    "value": "#D92D27"
+                },
+                "order": 63,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-20c72a3": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-c6e48f28a",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.7)"
+                },
+                "order": 64,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-f7f3384": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-7b82aa25b",
+                "value": {
+                    "$$type": "color",
+                    "value": "#181715"
+                },
+                "order": 65,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-f911c08": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-cf8562be1",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(18,17,14,0.42)"
+                },
+                "order": 66,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-753dc0b": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-6acb658b6",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.2)"
+                },
+                "order": 67,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-b6fea0c": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-77d8fab8f",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(18,17,14,0.72)"
+                },
+                "order": 68,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-11121dc": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-70755dafe",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(18,17,14,0.25)"
+                },
+                "order": 69,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-4d90942": {
+                "type": "global-size-variable",
+                "label": "mpcbc-size-b0b526cc2",
+                "value": {
+                    "$$type": "size",
+                    "value": {
+                        "size": 96,
+                        "unit": "px"
+                    }
+                },
+                "order": 70,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08",
+                "deleted_at": "2026-10-20 11:05:39"
+            },
+            "e-gv-3a42021": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-fbe4cdc76",
+                "value": {
+                    "$$type": "color",
+                    "value": "#DCDCD6"
+                },
+                "order": 71,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-4932553": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-2d5d7ee8e",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.8)"
+                },
+                "order": 72,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-955e0d8": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-f2c7aadfd",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.6)"
+                },
+                "order": 73,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-46fe72d": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-760d5a356",
+                "value": {
+                    "$$type": "color",
+                    "value": "rgba(255,255,255,0.15)"
+                },
+                "order": 74,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-20 10:49:08"
+            },
+            "e-gv-32ae709": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-c36e560d8",
+                "value": {
+                    "$$type": "color",
+                    "value": "#181715"
+                },
+                "order": 75,
+                "created_at": "2026-10-20 10:49:08",
+                "updated_at": "2026-10-28 03:26:43"
+            },
+            "e-gv-kidsfld": {
+                "type": "global-color-variable",
+                "label": "mpcbc-color-kids-field",
+                "value": {
+                    "$$type": "color",
+                    "value": "#FFE680"
+                },
+                "order": 76,
+                "created_at": "2026-10-28 03:34:13",
+                "updated_at": "2026-10-28 03:34:13"
+            }
+        },
+        "watermark": 5,
+        "version": 2
+    },
+    "_elementor_page_settings": {
+        "system_colors": [
+            {
+                "_id": "primary",
+                "title": "Harbor",
+                "color": "#181715"
+            },
+            {
+                "_id": "secondary",
+                "title": "Deep sea",
+                "color": "#181715"
+            },
+            {
+                "_id": "text",
+                "title": "Ink",
+                "color": "#181715"
+            },
+            {
+                "_id": "accent",
+                "title": "Persimmon",
+                "color": "#FFD21A"
+            }
+        ],
+        "custom_colors": [
+            {
+                "_id": "paper",
+                "title": "Paper",
+                "color": "#E8E8E3"
+            },
+            {
+                "_id": "mist",
+                "title": "Mist",
+                "color": "#DCDCD6"
+            },
+            {
+                "_id": "stone",
+                "title": "Stone (legacy)",
+                "color": "#DCDCD6"
+            },
+            {
+                "_id": "ink_soft",
+                "title": "Ink soft",
+                "color": "#5C5B55"
+            },
+            {
+                "_id": "harbor_deep",
+                "title": "Harbor deep",
+                "color": "#2E2D2A"
+            },
+            {
+                "_id": "persimmon_soft",
+                "title": "Persimmon soft",
+                "color": "#FFF4BF"
+            },
+            {
+                "_id": "on_persimmon",
+                "title": "On persimmon",
+                "color": "#181715"
+            },
+            {
+                "_id": "persimmon_hover",
+                "title": "Persimmon hover",
+                "color": "#F2C200"
+            },
+            {
+                "_id": "tick",
+                "title": "Tick",
+                "color": "#181715"
+            },
+            {
+                "_id": "live",
+                "title": "Live",
+                "color": "#D92D27"
+            },
+            {
+                "_id": "live_text",
+                "title": "Live text",
+                "color": "#B8231E"
+            },
+            {
+                "_id": "card_tint",
+                "title": "Card tint",
+                "color": "#FFFFFF"
+            },
+            {
+                "_id": "line",
+                "title": "Line",
+                "color": "#C4C4BC"
+            },
+            {
+                "_id": "line_strong",
+                "title": "Line strong",
+                "color": "#B4B3AB"
+            },
+            {
+                "_id": "footer",
+                "title": "Footer",
+                "color": "#181715"
+            },
+            {
+                "_id": "white",
+                "title": "White",
+                "color": "#FFFFFF"
+            },
+            {
+                "_id": "hero_video_top",
+                "title": "Hero / video top",
+                "color": "rgba(24,23,21,0.12)"
+            },
+            {
+                "_id": "hero_video_bottom",
+                "title": "Hero / video bottom",
+                "color": "rgba(24,23,21,0.97)"
+            },
+            {
+                "_id": "hero_rail_line",
+                "title": "Hero / service dividers",
+                "color": "rgba(255,255,255,0.3)"
+            }
+        ],
+        "site_name": "MPCBC",
+        "__globals__": {
+            "link_normal_color": "globals/colors?id=primary",
+            "link_hover_color": "globals/colors?id=primary",
+            "button_background_color": "globals/colors?id=primary"
+        },
+        "colors_enable_styleguide_preview": "",
+        "typography_enable_styleguide_preview": "",
+        "system_typography": [
+            {
+                "_id": "primary",
+                "title": "Primary",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_weight": "500"
+            },
+            {
+                "_id": "secondary",
+                "title": "Secondary",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_weight": "400"
+            },
+            {
+                "_id": "text",
+                "title": "Text",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_weight": "400"
+            },
+            {
+                "_id": "accent",
+                "title": "Accent",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_weight": "500"
+            }
+        ],
+        "custom_typography": [
+            {
+                "_id": "interior_h1",
+                "title": "Interior / page title",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 72
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 48
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.0800000000000001
+                }
+            },
+            {
+                "_id": "interior_h2",
+                "title": "Interior / section title",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 48
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 32
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.1499999999999999
+                }
+            },
+            {
+                "_id": "interior_card",
+                "title": "Interior / card title",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "interior_subtitle",
+                "title": "Interior / Chinese heading",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "interior_body",
+                "title": "Interior / English body",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.8
+                }
+            },
+            {
+                "_id": "interior_refs",
+                "title": "Interior / small heading",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "interior_button",
+                "title": "Interior / button",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_zh_h1",
+                "title": "Interior / zh / h1",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 48
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 36
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_zh_h2",
+                "title": "Interior / zh / h2",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 34
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_zh_card",
+                "title": "Interior / zh / card",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_zh",
+                "title": "Interior / zh / body",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.8999999999999999
+                }
+            },
+            {
+                "_id": "interior_hans_h1",
+                "title": "Interior / hans / h1",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 48
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 36
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_hans_h2",
+                "title": "Interior / hans / h2",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 34
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_hans_card",
+                "title": "Interior / hans / card",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "interior_hans",
+                "title": "Interior / hans / body",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.8999999999999999
+                }
+            },
+            {
+                "_id": "about_en_hero",
+                "title": "About / en / hero",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 52
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.1200000000000001
+                }
+            },
+            {
+                "_id": "about_en_section",
+                "title": "About / en / section",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 44
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 36
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2
+                }
+            },
+            {
+                "_id": "about_en_mission",
+                "title": "About / en / mission",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 34
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "about_en_card",
+                "title": "About / en / card",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "about_en_body",
+                "title": "About / en / body",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.8
+                }
+            },
+            {
+                "_id": "about_en_intro",
+                "title": "About / en / intro",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 21
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 19
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6000000000000001
+                }
+            },
+            {
+                "_id": "about_en_label",
+                "title": "About / en / label",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6000000000000001
+                }
+            },
+            {
+                "_id": "about_en_nav",
+                "title": "About / en / nav",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "about_en_year",
+                "title": "About / en / year",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 32
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2
+                }
+            },
+            {
+                "_id": "about_tc_hero",
+                "title": "About / tc / hero",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 52
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.1200000000000001
+                }
+            },
+            {
+                "_id": "about_tc_section",
+                "title": "About / tc / section",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 44
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 36
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2
+                }
+            },
+            {
+                "_id": "about_tc_mission",
+                "title": "About / tc / mission",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 34
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "about_tc_card",
+                "title": "About / tc / card",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "about_tc_body",
+                "title": "About / tc / body",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.8
+                }
+            },
+            {
+                "_id": "about_tc_intro",
+                "title": "About / tc / intro",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 21
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 19
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6000000000000001
+                }
+            },
+            {
+                "_id": "about_tc_label",
+                "title": "About / tc / label",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6000000000000001
+                }
+            },
+            {
+                "_id": "about_tc_nav",
+                "title": "About / tc / nav",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "about_tc_year",
+                "title": "About / tc / year",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 32
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2
+                }
+            },
+            {
+                "_id": "about_sc_hero",
+                "title": "About / sc / hero",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 52
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 40
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.1200000000000001
+                }
+            },
+            {
+                "_id": "about_sc_section",
+                "title": "About / sc / section",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 44
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 36
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2
+                }
+            },
+            {
+                "_id": "about_sc_mission",
+                "title": "About / sc / mission",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 34
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "about_sc_card",
+                "title": "About / sc / card",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 24
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3500000000000001
+                }
+            },
+            {
+                "_id": "about_sc_body",
+                "title": "About / sc / body",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.8
+                }
+            },
+            {
+                "_id": "about_sc_intro",
+                "title": "About / sc / intro",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 21
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 19
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6000000000000001
+                }
+            },
+            {
+                "_id": "about_sc_label",
+                "title": "About / sc / label",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6000000000000001
+                }
+            },
+            {
+                "_id": "about_sc_nav",
+                "title": "About / sc / nav",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "about_sc_year",
+                "title": "About / sc / year",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans SC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 32
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 30
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2
+                }
+            },
+            {
+                "_id": "rail_title",
+                "title": "Hero rail / title",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 52
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 32
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.1000000000000001
+                }
+            },
+            {
+                "_id": "rail_church_zh",
+                "title": "Hero rail / church_zh",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 28
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 26
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "rail_intro",
+                "title": "Hero rail / intro",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 22
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 20
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "rail_label",
+                "title": "Hero rail / label",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.3999999999999999
+                }
+            },
+            {
+                "_id": "rail_kicker",
+                "title": "Hero rail / kicker",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "rail_zh",
+                "title": "Hero rail / zh",
+                "typography_typography": "custom",
+                "typography_font_family": "Noto Sans TC",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 16
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            },
+            {
+                "_id": "rail_time",
+                "title": "Hero rail / time",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 36
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 34
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 32
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.1000000000000001
+                }
+            },
+            {
+                "_id": "rail_small",
+                "title": "Hero rail / small",
+                "typography_typography": "custom",
+                "typography_font_family": "Hanken Grotesk",
+                "typography_font_size": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.5
+                }
+            }
+        ],
+        "default_generic_fonts": "Sans-serif",
+        "button_background_color": "#181715",
+        "button_background_color_b": "#f2295b",
+        "button_background_video_link": "",
+        "button_background_video_start": "",
+        "button_background_video_end": "",
+        "button_background_play_once": "",
+        "button_background_play_on_mobile": "",
+        "button_background_privacy_mode": "",
+        "button_background_slideshow_gallery": [],
+        "button_background_slideshow_loop": "yes",
+        "button_background_slideshow_slide_duration": 5000,
+        "button_background_slideshow_slide_transition": "fade",
+        "button_background_slideshow_transition_duration": 500,
+        "button_background_slideshow_lazyload": "",
+        "button_background_slideshow_ken_burns": "",
+        "button_background_slideshow_ken_burns_zoom_direction": "in",
+        "button_hover_background_color": "",
+        "button_hover_background_color_b": "#f2295b",
+        "button_hover_background_video_link": "",
+        "button_hover_background_video_start": "",
+        "button_hover_background_video_end": "",
+        "button_hover_background_play_once": "",
+        "button_hover_background_play_on_mobile": "",
+        "button_hover_background_privacy_mode": "",
+        "button_hover_background_slideshow_gallery": [],
+        "button_hover_background_slideshow_loop": "yes",
+        "button_hover_background_slideshow_slide_duration": 5000,
+        "button_hover_background_slideshow_slide_transition": "fade",
+        "button_hover_background_slideshow_transition_duration": 500,
+        "button_hover_background_slideshow_lazyload": "",
+        "button_hover_background_slideshow_ken_burns": "",
+        "button_hover_background_slideshow_ken_burns_zoom_direction": "in",
+        "site_description": "",
+        "site_logo": {
+            "url": "",
+            "id": false,
+            "size": ""
+        },
+        "site_favicon": {
+            "url": "",
+            "id": "0",
+            "size": ""
+        },
+        "body_background_background": "",
+        "body_background_color": "",
+        "body_background_color_b": "#f2295b",
+        "body_background_image": {
+            "url": "",
+            "id": "",
+            "size": ""
+        },
+        "body_background_video_link": "",
+        "body_background_video_start": "",
+        "body_background_video_end": "",
+        "body_background_play_once": "",
+        "body_background_play_on_mobile": "",
+        "body_background_privacy_mode": "",
+        "body_background_slideshow_gallery": [],
+        "body_background_slideshow_loop": "yes",
+        "body_background_slideshow_slide_duration": 5000,
+        "body_background_slideshow_slide_transition": "fade",
+        "body_background_slideshow_transition_duration": 500,
+        "body_background_slideshow_lazyload": "",
+        "body_background_slideshow_ken_burns": "",
+        "body_background_slideshow_ken_burns_zoom_direction": "in",
+        "mobile_browser_background": "",
+        "stretched_section_container": "",
+        "default_page_template": "default",
+        "active_breakpoints": [
+            "viewport_mobile",
+            "viewport_tablet"
+        ],
+        "viewport_mobile": "",
+        "viewport_mobile_extra": "",
+        "viewport_tablet": "",
+        "viewport_tablet_extra": "",
+        "viewport_laptop": "",
+        "viewport_widescreen": "",
+        "viewport_md": 768,
+        "viewport_lg": 1025,
+        "global_image_lightbox": "yes",
+        "lightbox_enable_counter": "yes",
+        "lightbox_enable_fullscreen": "yes",
+        "lightbox_enable_zoom": "yes",
+        "lightbox_enable_share": "yes",
+        "lightbox_title_src": "title",
+        "lightbox_description_src": "description",
+        "hello_header_logo_display": "yes",
+        "hello_header_tagline_display": "yes",
+        "hello_header_menu_display": "yes",
+        "hello_header_layout": "default",
+        "hello_header_width": "boxed",
+        "hello_header_background_color": "",
+        "hello_header_background_color_b": "#f2295b",
+        "hello_header_background_image": {
+            "url": "",
+            "id": "",
+            "size": ""
+        },
+        "hello_header_background_video_link": "",
+        "hello_header_background_video_start": "",
+        "hello_header_background_video_end": "",
+        "hello_header_background_play_once": "",
+        "hello_header_background_play_on_mobile": "",
+        "hello_header_background_privacy_mode": "",
+        "hello_header_background_slideshow_gallery": [],
+        "hello_header_background_slideshow_loop": "yes",
+        "hello_header_background_slideshow_slide_duration": 5000,
+        "hello_header_background_slideshow_slide_transition": "fade",
+        "hello_header_background_slideshow_transition_duration": 500,
+        "hello_header_background_slideshow_lazyload": "",
+        "hello_header_background_slideshow_ken_burns": "",
+        "hello_header_background_slideshow_ken_burns_zoom_direction": "in",
+        "hello_header_logo_type": "title",
+        "hello_header_menu": 3,
+        "hello_header_menu_layout": "horizontal",
+        "hello_header_menu_dropdown": "tablet",
+        "hello_footer_logo_display": "yes",
+        "hello_footer_tagline_display": "yes",
+        "hello_footer_menu_display": "yes",
+        "hello_footer_copyright_display": "yes",
+        "hello_footer_layout": "default",
+        "hello_footer_width": "boxed",
+        "hello_footer_background_color": "",
+        "hello_footer_background_color_b": "#f2295b",
+        "hello_footer_background_image": {
+            "url": "",
+            "id": "",
+            "size": ""
+        },
+        "hello_footer_background_video_link": "",
+        "hello_footer_background_video_start": "",
+        "hello_footer_background_video_end": "",
+        "hello_footer_background_play_once": "",
+        "hello_footer_background_play_on_mobile": "",
+        "hello_footer_background_privacy_mode": "",
+        "hello_footer_background_slideshow_gallery": [],
+        "hello_footer_background_slideshow_loop": "yes",
+        "hello_footer_background_slideshow_slide_duration": 5000,
+        "hello_footer_background_slideshow_slide_transition": "fade",
+        "hello_footer_background_slideshow_transition_duration": 500,
+        "hello_footer_background_slideshow_lazyload": "",
+        "hello_footer_background_slideshow_ken_burns": "",
+        "hello_footer_background_slideshow_ken_burns_zoom_direction": "in",
+        "hello_footer_logo_type": "logo",
+        "hello_footer_menu": 0,
+        "hello_footer_copyright_text": "All rights reserved",
+        "button_border_radius": {
+            "unit": "px",
+            "top": "12",
+            "right": "12",
+            "bottom": "12",
+            "left": "12",
+            "isLinked": true
+        },
+        "button_text_color": "#ffffff",
+        "button_typography_typography": "custom",
+        "button_typography_font_family": "Hanken Grotesk",
+        "button_typography_font_size": {
+            "unit": "px",
+            "size": 16
+        },
+        "button_typography_line_height": {
+            "unit": "px",
+            "size": 22
+        },
+        "button_typography_font_weight": "600",
+        "button_padding": {
+            "unit": "px",
+            "top": "17",
+            "right": "28",
+            "bottom": "17",
+            "left": "28",
+            "isLinked": false
+        },
+        "button_padding_mobile": {
+            "unit": "px",
+            "top": "13",
+            "right": "24",
+            "bottom": "13",
+            "left": "24",
+            "isLinked": false
+        }
+    }
+}

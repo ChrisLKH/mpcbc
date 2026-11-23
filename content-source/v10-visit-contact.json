@@ -1,0 +1,650 @@
+{
+ "id": "419d62ed",
+ "elType": "e-flexbox",
+ "settings": {
+  "classes": {
+   "$$type": "classes",
+   "value": [
+    "e-ed66033d-c862"
+   ]
+  },
+  "_cssid": {
+   "$$type": "string",
+   "value": "contact"
+  }
+ },
+ "elements": [
+  {
+   "id": "02c7d557",
+   "elType": "e-flexbox",
+   "settings": {
+    "classes": {
+     "$$type": "classes",
+     "value": [
+      "e-1b002f70-a1f4"
+     ]
+    }
+   },
+   "elements": [
+    {
+     "id": "52a38dbc",
+     "elType": "e-flexbox",
+     "settings": {
+      "classes": {
+       "$$type": "classes",
+       "value": [
+        "e-eaa70e52-5855"
+       ]
+      }
+     },
+     "elements": [
+      {
+       "id": "2b06087c",
+       "elType": "widget",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-77b34007-acb9"
+         ]
+        },
+        "tag": {
+         "$$type": "string",
+         "value": "h2"
+        },
+        "title": {
+         "$$type": "escaped-html",
+         "value": "Get in touch"
+        },
+        "mpcbc_zh_hant": {
+         "$$type": "string",
+         "value": "聯絡我們"
+        }
+       },
+       "elements": [],
+       "styles": {
+        "e-77b34007-acb9": {
+         "id": "e-77b34007-acb9",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "margin": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "min-width": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "font-size": {
+             "$$type": "size",
+             "value": {
+              "size": "clamp(2.25rem, 1.5rem + 2.6vw, 3.6rem)",
+              "unit": "custom"
+             }
+            },
+            "font-weight": {
+             "$$type": "string",
+             "value": "500"
+            },
+            "letter-spacing": {
+             "$$type": "size",
+             "value": {
+              "size": -0.02,
+              "unit": "em"
+             }
+            },
+            "line-height": {
+             "$$type": "size",
+             "value": {
+              "size": 1.08,
+              "unit": "em"
+             }
+            },
+            "color": {
+             "$$type": "global-color-variable",
+             "value": "e-gv-c70cdc4"
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "Get in touch"
+       },
+       "version": "0.0",
+       "widgetType": "e-heading"
+      },
+      {
+       "id": "46e8c9ad",
+       "elType": "widget",
+       "settings": {
+        "classes": {
+         "$$type": "classes",
+         "value": [
+          "e-c2bd9f52-5774"
+         ]
+        },
+        "paragraph": {
+         "$$type": "escaped-html",
+         "value": "聯絡我們"
+        },
+        "tag": {
+         "$$type": "string",
+         "value": "p"
+        },
+        "mpcbc_zh_hant": {
+         "$$type": "string",
+         "value": "Get in touch"
+        }
+       },
+       "elements": [],
+       "styles": {
+        "e-c2bd9f52-5774": {
+         "id": "e-c2bd9f52-5774",
+         "label": "local",
+         "type": "class",
+         "variants": [
+          {
+           "meta": {
+            "breakpoint": "desktop",
+            "state": null
+           },
+           "props": {
+            "margin": {
+             "$$type": "dimensions",
+             "value": {
+              "block-start": {
+               "$$type": "size",
+               "value": {
+                "size": 8,
+                "unit": "px"
+               }
+              },
+              "inline-end": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              },
+              "block-end": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              },
+              "inline-start": {
+               "$$type": "size",
+               "value": {
+                "size": 0,
+                "unit": "px"
+               }
+              }
+             }
+            },
+            "min-width": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "font-size": {
+             "$$type": "size",
+             "value": {
+              "size": "clamp(18px, 1rem + 0.4vw, 22px)",
+              "unit": "custom"
+             }
+            },
+            "font-weight": {
+             "$$type": "string",
+             "value": "500"
+            },
+            "line-height": {
+             "$$type": "size",
+             "value": {
+              "size": 1.4,
+              "unit": "em"
+             }
+            },
+            "color": {
+             "$$type": "global-color-variable",
+             "value": "e-gv-7317e11"
+            }
+           },
+           "custom_css": null
+          }
+         ]
+        }
+       },
+       "editor_settings": {
+        "title": "聯絡我們"
+       },
+       "version": "0.0",
+       "widgetType": "e-paragraph"
+      }
+     ],
+     "styles": {
+      "e-eaa70e52-5855": {
+       "id": "e-eaa70e52-5855",
+       "label": "local",
+       "type": "class",
+       "variants": [
+        {
+         "meta": {
+          "breakpoint": "desktop",
+          "state": null
+         },
+         "props": {
+          "display": {
+           "$$type": "string",
+           "value": "flex"
+          },
+          "flex-direction": {
+           "$$type": "string",
+           "value": "column"
+          },
+          "width": {
+           "$$type": "size",
+           "value": {
+            "size": "",
+            "unit": "auto"
+           }
+          },
+          "padding": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "px"
+           }
+          },
+          "min-width": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "px"
+           }
+          },
+          "gap": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "px"
+           }
+          }
+         },
+         "custom_css": null
+        }
+       ]
+      }
+     },
+     "editor_settings": {
+      "title": "heading Get in touch"
+     },
+     "version": "0.0",
+     "isInner": false
+    },
+    {
+     "id": "9470bfd9",
+     "elType": "widget",
+     "settings": {
+      "classes": {
+       "$$type": "classes",
+       "value": [
+        "e-e1182365-3838"
+       ]
+      },
+      "paragraph": {
+       "$$type": "escaped-html",
+       "value": "Want to be baptized, become a member, or need prayer? Talk to a pastor after the service or send us a message."
+      },
+      "tag": {
+       "$$type": "string",
+       "value": "p"
+      },
+      "mpcbc_zh_hant": {
+       "$$type": "string",
+       "value": "想受浸、成為會友，或需要代禱？歡迎在崇拜後與牧師交談，或給我們留言。"
+      }
+     },
+     "elements": [],
+     "styles": {
+      "e-e1182365-3838": {
+       "id": "e-e1182365-3838",
+       "label": "local",
+       "type": "class",
+       "variants": [
+        {
+         "meta": {
+          "breakpoint": "desktop",
+          "state": null
+         },
+         "props": {
+          "margin": {
+           "$$type": "dimensions",
+           "value": {
+            "block-start": {
+             "$$type": "size",
+             "value": {
+              "size": 20,
+              "unit": "px"
+             }
+            },
+            "inline-end": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            },
+            "block-end": {
+             "$$type": "size",
+             "value": {
+              "size": 28,
+              "unit": "px"
+             }
+            },
+            "inline-start": {
+             "$$type": "size",
+             "value": {
+              "size": 0,
+              "unit": "px"
+             }
+            }
+           }
+          },
+          "min-width": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "px"
+           }
+          },
+          "font-size": {
+           "$$type": "size",
+           "value": {
+            "size": 17,
+            "unit": "px"
+           }
+          },
+          "font-weight": {
+           "$$type": "string",
+           "value": "400"
+          },
+          "line-height": {
+           "$$type": "size",
+           "value": {
+            "size": 1.55,
+            "unit": "em"
+           }
+          },
+          "max-width": {
+           "$$type": "size",
+           "value": {
+            "size": 40,
+            "unit": "em"
+           }
+          },
+          "color": {
+           "$$type": "global-color-variable",
+           "value": "e-gv-c70cdc4"
+          }
+         },
+         "custom_css": null
+        }
+       ]
+      }
+     },
+     "editor_settings": {
+      "title": "Want to be baptized, become a member, or need pr"
+     },
+     "version": "0.0",
+     "widgetType": "e-paragraph"
+    }
+   ],
+   "styles": {
+    "e-1b002f70-a1f4": {
+     "id": "e-1b002f70-a1f4",
+     "label": "local",
+     "type": "class",
+     "variants": [
+      {
+       "meta": {
+        "breakpoint": "desktop",
+        "state": null
+       },
+       "props": {
+        "display": {
+         "$$type": "string",
+         "value": "flex"
+        },
+        "flex-direction": {
+         "$$type": "string",
+         "value": "column"
+        },
+        "width": {
+         "$$type": "size",
+         "value": {
+          "size": 100,
+          "unit": "%"
+         }
+        },
+        "padding": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "min-width": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "max-width": {
+         "$$type": "size",
+         "value": {
+          "size": 720,
+          "unit": "px"
+         }
+        },
+        "margin": {
+         "$$type": "dimensions",
+         "value": {
+          "block-start": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "px"
+           }
+          },
+          "inline-end": {
+           "$$type": "size",
+           "value": {
+            "size": "",
+            "unit": "auto"
+           }
+          },
+          "block-end": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "px"
+           }
+          },
+          "inline-start": {
+           "$$type": "size",
+           "value": {
+            "size": "",
+            "unit": "auto"
+           }
+          }
+         }
+        }
+       },
+       "custom_css": null
+      }
+     ]
+    }
+   },
+   "editor_settings": {
+    "title": "content width"
+   },
+   "version": "0.0",
+   "isInner": false
+  }
+ ],
+ "styles": {
+  "e-ed66033d-c862": {
+   "id": "e-ed66033d-c862",
+   "label": "local",
+   "type": "class",
+   "variants": [
+    {
+     "meta": {
+      "breakpoint": "desktop",
+      "state": null
+     },
+     "props": {
+      "display": {
+       "$$type": "string",
+       "value": "flex"
+      },
+      "flex-direction": {
+       "$$type": "string",
+       "value": "column"
+      },
+      "width": {
+       "$$type": "size",
+       "value": {
+        "size": 100,
+        "unit": "%"
+       }
+      },
+      "padding": {
+       "$$type": "dimensions",
+       "value": {
+        "block-start": {
+         "$$type": "size",
+         "value": {
+          "size": "clamp(64px, 9vw, 104px)",
+          "unit": "custom"
+         }
+        },
+        "inline-end": {
+         "$$type": "size",
+         "value": {
+          "size": 20,
+          "unit": "px"
+         }
+        },
+        "block-end": {
+         "$$type": "size",
+         "value": {
+          "size": "clamp(64px, 9vw, 104px)",
+          "unit": "custom"
+         }
+        },
+        "inline-start": {
+         "$$type": "size",
+         "value": {
+          "size": 20,
+          "unit": "px"
+         }
+        }
+       }
+      },
+      "min-width": {
+       "$$type": "size",
+       "value": {
+        "size": 0,
+        "unit": "px"
+       }
+      },
+      "scroll-margin-top": {
+       "$$type": "size",
+       "value": {
+        "size": 76,
+        "unit": "px"
+       }
+      },
+      "background": {
+       "$$type": "background",
+       "value": {
+        "color": {
+         "$$type": "global-color-variable",
+         "value": "e-gv-1984c94"
+        }
+       }
+      },
+      "border-width": {
+       "$$type": "border-width-v2",
+       "value": {
+        "block-start": {
+         "$$type": "size",
+         "value": {
+          "size": 1,
+          "unit": "px"
+         }
+        },
+        "inline-end": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "block-end": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        },
+        "inline-start": {
+         "$$type": "size",
+         "value": {
+          "size": 0,
+          "unit": "px"
+         }
+        }
+       }
+      },
+      "border-style": {
+       "$$type": "string",
+       "value": "solid"
+      },
+      "border-color": {
+       "$$type": "global-color-variable",
+       "value": "e-gv-3cc97d2"
+      }
+     },
+     "custom_css": null
+    }
+   ]
+  }
+ },
+ "editor_settings": {
+  "title": "Get in touch (form)"
+ },
+ "version": "0.0",
+ "isInner": false
+}

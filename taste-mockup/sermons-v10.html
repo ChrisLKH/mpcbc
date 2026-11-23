@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sermons &amp; Livestream | Monterey Park Chinese Baptist Church</title>
+<meta name="description" content="Connect Ministry is our English-speaking congregation in Alhambra. Join us Sundays at 11:00 AM.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v10-interior.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="bar">
+    <a class="mark" href="index.html" aria-label="Monterey Park Chinese Baptist Church, home"><b>MPCBC</b><span lang="zh-Hant">慕道園華人浸信會</span></a>
+    <nav class="nav" aria-label="Main"><a href="about-v10.html">About Us</a><a href="visit-v10.html">Plan a Visit</a><a href="english-v10.html" aria-current="page">Worship &amp; Ministries</a><a href="kids-v10.html">MPCBC KIDS</a><a href="news-v10.html">News &amp; Events</a></nav>
+    <div class="actions">
+      <div class="lang" role="group" aria-label="Language"><a href="#" aria-current="true" aria-label="English">EN</a><a href="#" lang="zh-Hant" aria-label="繁體中文">繁</a><a href="#" lang="zh-Hans" aria-label="简体中文">简</a></div>
+      <a class="btn btn-line watch" href="sermons-v10.html"><span class="dot" aria-hidden="true"></span>Watch Live</a>
+      <a class="btn btn-ac" href="give-v10.html">Give</a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap backbar"><a class="link" href="english-v10.html">← Back to the congregation</a><a class="btn btn-line" href="english-v10.html#groups" style="min-height: 44px">Fellowship &amp; Ministries →</a></div>
+  <section class="band b-night">
+    <div class="wrap">
+      <div class="head-row" data-rise><div><p class="label">English Congregation</p><h1 class="h1" style="margin-top: 8px">Sermons &amp; Livestream</h1><p class="zh" lang="zh-Hant">講道及直播</p></div></div>
+      <article class="card svc" data-rise>
+        <button class="player" type="button"><img src="https://i.ytimg.com/vi/JMt-wR3pSfs/hqdefault.jpg" alt=""><span class="badge">Latest service</span><span class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#1D2430"/></svg></span></button>
+        <div><p class="label">11:00 AM · Fellowship Hall</p><h3>English Worship</h3><p style="margin-top: 6px">[Title, date and speaker of the latest sermon, from YouTube]</p></div>
+      </article>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <div class="head-row" data-rise><div><h2 class="h2">Past sermons</h2><p class="zh" lang="zh-Hant">講道重溫</p></div></div>
+      <div class="grid3" data-rise>
+        <a class="card ecard" href="#"><div class="pic wide"><img src="https://i.ytimg.com/vi/_zoNuJdu0tc/hqdefault.jpg" alt=""></div><div class="body"><p class="label">November 8, 2026 · Rev. Edward Lu</p><h3>Who Will Take The First Step?</h3></div></a>
+        <a class="card ecard" href="#"><div class="pic wide"><img src="https://i.ytimg.com/vi/KikczBWW7Mc/hqdefault.jpg" alt=""></div><div class="body"><p class="label">November 1, 2026 · Rev. Edward Lu</p><h3>Who Has Been Paying Attention?</h3></div></a>
+        <a class="card ecard" href="#"><div class="pic wide"><img src="https://i.ytimg.com/vi/JMt-wR3pSfs/hqdefault.jpg" alt=""></div><div class="body"><p class="label">November 13, 2026 · Rev. Dr. Caleb Cheung</p><h3>Gluttony and Self-Control</h3></div></a>
+      </div>
+    </div>
+  </section>
+  <section class="band b-surface b-close">
+    <div class="wrap backbar" style="border: 0; padding: 0" data-rise><a class="link" href="english-v10.html">← Back to the congregation</a><a class="btn btn-ac" href="english-v10.html#groups">Fellowship &amp; Ministries →</a></div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div><b>Monterey Park Chinese Baptist Church</b><span lang="zh-Hant">慕道園華人浸信會</span><p style="margin-top: 12px">302 W. Commonwealth Ave.<br>Alhambra, CA 91801</p></div>
+      <div><b>Sunday</b>Mandarin · 9:00 AM<br>Cantonese · 11:00 AM<br>English · 11:00 AM</div>
+      <div><b>Contact</b><a href="tel:+16262891284">(626) 289-1284</a><br><a href="mailto:info@mpcbc.net">info@mpcbc.net</a><br>Office hours: [TBD]</div>
+    </div>
+    <div class="legal"><span>© MPCBC · Founded 1977</span></div>
+  </div>
+</footer>
+<script>
+const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+document.querySelectorAll('[data-rise]').forEach((el) => io.observe(el));
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('video[autoplay]').forEach((v) => { v.removeAttribute('autoplay'); v.pause(); }); // reduced motion: show the poster
+</script>
+</body>
+</html>

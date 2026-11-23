@@ -1,0 +1,823 @@
+{
+    "post": {
+        "ID": 62,
+        "post_author": "1",
+        "post_date": "2026-10-09 07:09:30",
+        "post_date_gmt": "2026-10-09 07:09:30",
+        "post_content": "<h1 data-interaction-id=\"7b6480ed\" id=\"mpcbc-kids_title\">Kids &amp; Youth</h1>\n\t\t\t\t\t<p data-interaction-id=\"3312fd3e\" id=\"mpcbc-kids_zh\">兒童及青少年</p>\n\t\t\t\t\t<p data-interaction-id=\"6e212f27\" id=\"mpcbc-kids_desc\">[This section is currently being prepared as part of the MPCBC website update.]</p>\n\t\t\t\t\t<a href=\"http://mpcbc.local/\" target=\"_self\" data-interaction-id=\"1325e05c\" id=\"mpcbc-kids_btn\">\n\tBack to Home →\n</a>",
+        "post_title": "Kids & Youth 兒童及青少年",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "kids",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2026-10-20 11:11:33",
+        "post_modified_gmt": "2026-10-20 11:11:33",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "http://mpcbc.local/kids/",
+        "menu_order": 0,
+        "post_type": "page",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+    },
+    "meta": {
+        "_elementor_data": [
+            {
+                "id": "34586678",
+                "elType": "e-flexbox",
+                "settings": {
+                    "classes": {
+                        "$$type": "classes",
+                        "value": [
+                            "e-7d4396a0-4006"
+                        ]
+                    },
+                    "_cssid": {
+                        "$$type": "string",
+                        "value": "mpcbc-kids_root"
+                    }
+                },
+                "elements": [
+                    {
+                        "id": "46dfbde6",
+                        "elType": "e-flexbox",
+                        "settings": {
+                            "classes": {
+                                "$$type": "classes",
+                                "value": [
+                                    "e-10ef81c8-ac8d"
+                                ]
+                            }
+                        },
+                        "elements": [
+                            {
+                                "id": "7b6480ed",
+                                "elType": "widget",
+                                "settings": {
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-1b1dd02b-7d20"
+                                        ]
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "h1"
+                                    },
+                                    "title": {
+                                        "$$type": "escaped-html",
+                                        "value": "Kids &amp; Youth"
+                                    },
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-kids_title"
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "e-heading",
+                                "styles": {
+                                    "e-1b1dd02b-7d20": {
+                                        "id": "e-1b1dd02b-7d20",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "mobile",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 44,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            },
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-d649b5e"
+                                                    },
+                                                    "font-weight": {
+                                                        "$$type": "string",
+                                                        "value": "700"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 64,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-c70cdc4"
+                                                    },
+                                                    "text-align": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                },
+                                "editor_settings": {
+                                    "title": "kids_title 1"
+                                },
+                                "version": "0.0"
+                            },
+                            {
+                                "id": "3312fd3e",
+                                "elType": "widget",
+                                "settings": {
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-3eaa98a0-f185"
+                                        ]
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "兒童及青少年"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-kids_zh"
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-3eaa98a0-f185": {
+                                        "id": "e-3eaa98a0-f185",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-2635213"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 28,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-7317e11"
+                                                    },
+                                                    "line-height": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 1.5,
+                                                            "unit": "em"
+                                                        }
+                                                    },
+                                                    "text-align": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                },
+                                "editor_settings": {
+                                    "title": "kids_zh 2"
+                                },
+                                "version": "0.0"
+                            },
+                            {
+                                "id": "6e212f27",
+                                "elType": "widget",
+                                "settings": {
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-4c70f4f6-eab4"
+                                        ]
+                                    },
+                                    "paragraph": {
+                                        "$$type": "escaped-html",
+                                        "value": "[This section is currently being prepared as part of the MPCBC website update.]"
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "p"
+                                    },
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-kids_desc"
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "e-paragraph",
+                                "styles": {
+                                    "e-4c70f4f6-eab4": {
+                                        "id": "e-4c70f4f6-eab4",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 18,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-7317e11"
+                                                    },
+                                                    "line-height": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 1.6000000000000001,
+                                                            "unit": "em"
+                                                        }
+                                                    },
+                                                    "text-align": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                },
+                                "editor_settings": {
+                                    "title": "kids_desc 3"
+                                },
+                                "version": "0.0"
+                            },
+                            {
+                                "id": "1325e05c",
+                                "elType": "widget",
+                                "settings": {
+                                    "classes": {
+                                        "$$type": "classes",
+                                        "value": [
+                                            "e-4dabf442-af9c"
+                                        ]
+                                    },
+                                    "text": {
+                                        "$$type": "escaped-html",
+                                        "value": "Back to Home →"
+                                    },
+                                    "link": {
+                                        "$$type": "link",
+                                        "value": {
+                                            "destination": {
+                                                "$$type": "url",
+                                                "value": "http://mpcbc.local/"
+                                            },
+                                            "isTargetBlank": {
+                                                "$$type": "boolean",
+                                                "value": false
+                                            }
+                                        }
+                                    },
+                                    "tag": {
+                                        "$$type": "string",
+                                        "value": "a"
+                                    },
+                                    "_cssid": {
+                                        "$$type": "string",
+                                        "value": "mpcbc-kids_btn"
+                                    }
+                                },
+                                "elements": [],
+                                "widgetType": "e-button",
+                                "styles": {
+                                    "e-4dabf442-af9c": {
+                                        "id": "e-4dabf442-af9c",
+                                        "label": "local",
+                                        "type": "class",
+                                        "variants": [
+                                            {
+                                                "meta": {
+                                                    "breakpoint": "desktop",
+                                                    "state": null
+                                                },
+                                                "props": {
+                                                    "width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": "",
+                                                            "unit": "auto"
+                                                        }
+                                                    },
+                                                    "min-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "max-width": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 100,
+                                                            "unit": "%"
+                                                        }
+                                                    },
+                                                    "font-family": {
+                                                        "$$type": "global-font-variable",
+                                                        "value": "e-gv-f5301be"
+                                                    },
+                                                    "font-weight": {
+                                                        "$$type": "string",
+                                                        "value": "600"
+                                                    },
+                                                    "font-size": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 16,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "color": {
+                                                        "$$type": "global-color-variable",
+                                                        "value": "e-gv-d98b04b"
+                                                    },
+                                                    "text-decoration": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "padding": {
+                                                        "$$type": "dimensions",
+                                                        "value": {
+                                                            "block-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 12,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 24,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "block-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 12,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "inline-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 24,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "border-radius": {
+                                                        "$$type": "border-radius-v2",
+                                                        "value": {
+                                                            "start-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 12,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "start-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 12,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-end": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 12,
+                                                                    "unit": "px"
+                                                                }
+                                                            },
+                                                            "end-start": {
+                                                                "$$type": "size",
+                                                                "value": {
+                                                                    "size": 12,
+                                                                    "unit": "px"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "border-style": {
+                                                        "$$type": "string",
+                                                        "value": "none"
+                                                    },
+                                                    "background": {
+                                                        "$$type": "background",
+                                                        "value": {
+                                                            "color": {
+                                                                "$$type": "global-color-variable",
+                                                                "value": "e-gv-1771cc2"
+                                                            }
+                                                        }
+                                                    },
+                                                    "display": {
+                                                        "$$type": "string",
+                                                        "value": "inline-flex"
+                                                    },
+                                                    "justify-content": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    },
+                                                    "align-items": {
+                                                        "$$type": "string",
+                                                        "value": "center"
+                                                    },
+                                                    "align-self": {
+                                                        "$$type": "string",
+                                                        "value": "flex-start"
+                                                    }
+                                                },
+                                                "custom_css": null
+                                            }
+                                        ]
+                                    }
+                                },
+                                "editor_settings": {
+                                    "title": "kids_btn 4"
+                                },
+                                "version": "0.0"
+                            }
+                        ],
+                        "isInner": false,
+                        "styles": {
+                            "e-10ef81c8-ac8d": {
+                                "id": "e-10ef81c8-ac8d",
+                                "label": "local",
+                                "type": "class",
+                                "variants": [
+                                    {
+                                        "meta": {
+                                            "breakpoint": "desktop",
+                                            "state": null
+                                        },
+                                        "props": {
+                                            "width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 100,
+                                                    "unit": "%"
+                                                }
+                                            },
+                                            "min-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "max-width": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 900,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "padding": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 0,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "margin": {
+                                                "$$type": "dimensions",
+                                                "value": {
+                                                    "block-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "inline-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": "",
+                                                            "unit": "auto"
+                                                        }
+                                                    },
+                                                    "block-end": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": 0,
+                                                            "unit": "px"
+                                                        }
+                                                    },
+                                                    "inline-start": {
+                                                        "$$type": "size",
+                                                        "value": {
+                                                            "size": "",
+                                                            "unit": "auto"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "display": {
+                                                "$$type": "string",
+                                                "value": "flex"
+                                            },
+                                            "flex-direction": {
+                                                "$$type": "string",
+                                                "value": "column"
+                                            },
+                                            "gap": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 24,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "justify-content": {
+                                                "$$type": "string",
+                                                "value": "center"
+                                            },
+                                            "align-items": {
+                                                "$$type": "string",
+                                                "value": "center"
+                                            }
+                                        },
+                                        "custom_css": null
+                                    }
+                                ]
+                            }
+                        },
+                        "editor_settings": {
+                            "title": "Boxed inner 5"
+                        },
+                        "version": "0.0"
+                    }
+                ],
+                "isInner": false,
+                "styles": {
+                    "e-7d4396a0-4006": {
+                        "id": "e-7d4396a0-4006",
+                        "label": "local",
+                        "type": "class",
+                        "variants": [
+                            {
+                                "meta": {
+                                    "breakpoint": "mobile",
+                                    "state": null
+                                },
+                                "props": {
+                                    "padding": {
+                                        "$$type": "dimensions",
+                                        "value": {
+                                            "block-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 64,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 20,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "block-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 64,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 20,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "custom_css": null
+                            },
+                            {
+                                "meta": {
+                                    "breakpoint": "desktop",
+                                    "state": null
+                                },
+                                "props": {
+                                    "width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 100,
+                                            "unit": "%"
+                                        }
+                                    },
+                                    "min-width": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "min-height": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 60,
+                                            "unit": "vh"
+                                        }
+                                    },
+                                    "padding": {
+                                        "$$type": "dimensions",
+                                        "value": {
+                                            "block-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 120,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 32,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "block-end": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 120,
+                                                    "unit": "px"
+                                                }
+                                            },
+                                            "inline-start": {
+                                                "$$type": "size",
+                                                "value": {
+                                                    "size": 32,
+                                                    "unit": "px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "margin": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 0,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "display": {
+                                        "$$type": "string",
+                                        "value": "flex"
+                                    },
+                                    "flex-direction": {
+                                        "$$type": "string",
+                                        "value": "column"
+                                    },
+                                    "gap": {
+                                        "$$type": "size",
+                                        "value": {
+                                            "size": 24,
+                                            "unit": "px"
+                                        }
+                                    },
+                                    "justify-content": {
+                                        "$$type": "string",
+                                        "value": "center"
+                                    },
+                                    "align-items": {
+                                        "$$type": "string",
+                                        "value": "center"
+                                    }
+                                },
+                                "custom_css": null
+                            }
+                        ]
+                    }
+                },
+                "editor_settings": {
+                    "title": "kids_root 6"
+                },
+                "version": "0.0"
+            }
+        ],
+        "_elementor_page_settings": [],
+        "_wp_page_template": "elementor_header_footer"
+    }
+}

@@ -24,7 +24,7 @@ function hello_mpcbc_scripts() {
     // Google Fonts: Hanken Grotesk, Noto Sans TC, Noto Sans SC
     wp_enqueue_style(
         'hello-mpcbc-fonts',
-        'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+SC:wght@500;700;900&display=swap',
+        'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap',
         array(),
         null
     );
@@ -89,24 +89,17 @@ function hello_mpcbc_footer_atomic_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'hello_mpcbc_footer_atomic_styles', 5 );
 
-/**
- * Display each menu item's Description field as a small second line in the navigation.
- *
- * @param string   $item_output The menu item's starting HTML output.
- * @param WP_Post  $item        Menu item data object.
- * @param int      $depth       Depth of menu item.
- * @param stdClass $args        An object of wp_nav_menu() arguments.
- * @return string Modified menu item output.
- */
-function hello_mpcbc_nav_menu_description( $item_output, $item, $depth, $args ) {
-    if ( ! empty( $item->description ) ) {
-        $desc_html = '<small class="menu-item-description" lang="' . ( function_exists( 'mpcbc_lang' ) && 'zh-hans' === mpcbc_lang() ? 'zh-Hans' : 'zh-Hant' ) . '">' . esc_html( $item->description ) . '</small>';
-        // Insert right before the closing </a> tag
-        $item_output = preg_replace( '/(<\/a>)/i', $desc_html . '$1', $item_output );
-    }
-    return $item_output;
-}
-add_filter( 'walker_nav_menu_start_el', 'hello_mpcbc_nav_menu_description', 10, 4 );
+/** Menu labels: the English title on English pages, the Description (繁體) on 繁/简 pages (简 is converted with the page). */
+add_filter( 'nav_menu_item_title', function ( $title, $item ) {
+    $zh = trim( (string) $item->description );
+    return function_exists( 'mpcbc_lang' ) && 'en' !== mpcbc_lang() && '' !== $zh ? esc_html( $zh ) : $title;
+}, 10, 2 );
+
+/** Worship panel column headings (class mpcbc-menu-label) are labels, not links. */
+add_filter( 'walker_nav_menu_start_el', function ( $output, $item ) {
+    if ( ! in_array( 'mpcbc-menu-label', (array) $item->classes, true ) ) return $output;
+    return preg_replace( array( '#<a\b[^>]*>#', '#</a>#' ), array( '<span class="mpcbc-menu-label-text">', '</span>' ), $output, 1 );
+}, 10, 2 );
 
 /** Preserve retired page links through editable destination metadata. */
 function hello_mpcbc_merged_page_redirect() {

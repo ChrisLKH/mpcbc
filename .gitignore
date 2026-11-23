@@ -32,3 +32,5 @@ skills-lock.json
 taste-mockup/.taste-skill/inspect/
 # Headless-browser profiles left by screenshot tools (caches, cookies)
 .chrome-*/
+
+.taste-skill/

@@ -22,6 +22,7 @@ $images = @(
     @{ Name = "photo-community-care.png"; Width = 800; Height = 500; Bg = "#24434D"; Text = "photo · care and prayer" },
     @{ Name = "photo-newsletter.png"; Width = 600; Height = 400; Bg = "#1E3A44"; Text = "photo · newsletter feature" },
     @{ Name = "photo-give.png"; Width = 600; Height = 400; Bg = "#24434D"; Text = "photo · giving" },
+    @{ Name = "photo-event.png"; Width = 900; Height = 600; Bg = "#1F3F66"; Text = "[Event flyer or photo]" },
     @{ Name = "church-logo.png"; Width = 280; Height = 88; Bg = "#0A1F26"; Text = "[Church logo]" },
     @{ Name = "sermon-english.png"; Width = 320; Height = 180; Bg = "#0F2A33"; Text = "Play > English Sermon" },
     @{ Name = "sermon-cantonese.png"; Width = 320; Height = 180; Bg = "#0F2A33"; Text = "Play > Cantonese Sermon" },

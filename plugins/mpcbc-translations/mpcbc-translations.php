@@ -73,6 +73,26 @@ add_action( 'wp_head', function () {
 	printf( '<link rel="alternate" hreflang="x-default" href="%s">' . "\n", esc_url( mpcbc_url( 'en', $path ) ) );
 }, 1 );
 
+/* ---------- SEO title and description per language ---------- */
+
+// Page custom fields: mpcbc_seo_title / mpcbc_seo_description (English) and *_zh (繁體; 简 is converted with the page).
+function mpcbc_seo( $key ) {
+	if ( ! is_singular() ) return '';
+	$id = get_queried_object_id();
+	$zh = 'en' !== MPCBC_LANG ? trim( (string) get_post_meta( $id, $key . '_zh', true ) ) : '';
+	return '' !== $zh ? $zh : trim( (string) get_post_meta( $id, $key, true ) );
+}
+add_filter( 'pre_get_document_title', function ( $title ) {
+	$seo = mpcbc_seo( 'mpcbc_seo_title' );
+	return '' !== $seo ? $seo : $title;
+}, 20 );
+add_action( 'wp_head', function () {
+	$title = mpcbc_seo( 'mpcbc_seo_title' );
+	$desc  = mpcbc_seo( 'mpcbc_seo_description' );
+	if ( '' !== $desc ) printf( '<meta name="description" content="%1$s">' . "\n" . '<meta property="og:description" content="%1$s">' . "\n", esc_attr( $desc ) );
+	if ( '' !== $title ) printf( '<meta property="og:title" content="%s">' . "\n", esc_attr( $title ) );
+}, 2 );
+
 /* ---------- 繁 → 简 ---------- */
 
 require_once __DIR__ . '/t2s.php';
@@ -157,6 +177,7 @@ add_filter( 'elementor/widget/render_content', function ( $html, $widget ) {
 /* ---------- Language switcher (the menu item whose children are English / 繁體中文 / 简体中文) ---------- */
 
 const MPCBC_LANGUAGE_LABELS = array( 'English' => 'en', '繁體中文' => 'zh-hant', '简体中文' => 'zh-hans' );
+const MPCBC_LANGUAGE_SHORT = array( 'en' => 'EN', 'zh-hant' => '繁', 'zh-hans' => '简' ); // shown in the switcher; the full name is the aria-label
 
 add_filter( 'wp_nav_menu_objects', function ( $items ) {
 	$parents = array();
@@ -173,7 +194,8 @@ add_filter( 'wp_nav_menu_objects', function ( $items ) {
 			$lang = MPCBC_LANGUAGE_LABELS[ $item->title ];
 			$item->url = mpcbc_url( $lang );
 			$item->classes[] = 'mpcbc-locale-' . $lang;
-			$item->title = mpcbc_keep( esc_html( $item->title ) );
+			$item->attr_title = $item->title;
+			$item->title = mpcbc_keep( esc_html( MPCBC_LANGUAGE_SHORT[ $lang ] ) );
 		}
 	}
 	return $items;
@@ -183,6 +205,8 @@ add_filter( 'nav_menu_link_attributes', function ( $atts, $item ) {
 	foreach ( MPCBC_LANGS as $lang => $tag ) {
 		if ( ! in_array( 'mpcbc-locale-' . $lang, (array) $item->classes, true ) ) continue;
 		$atts['data-mpcbc-locale'] = $lang;
+		$atts['aria-label'] = $item->attr_title; // full language name; the visible label is EN / 繁 / 简
+		unset( $atts['title'] );
 		$atts['hreflang'] = $tag;
 		$atts['lang'] = $tag;
 		// WordPress marks the "/" English link as the current page on Home; only the current language is current.

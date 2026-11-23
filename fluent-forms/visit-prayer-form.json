@@ -1,0 +1,301 @@
+{
+    "id": 6,
+    "title": "Plan a visit & prayer (v10)",
+    "form_fields": {
+        "fields": [
+            {
+                "element": "input_text",
+                "attributes": {
+                    "name": "names",
+                    "type": "text",
+                    "value": "",
+                    "placeholder": "",
+                    "class": ""
+                },
+                "settings": {
+                    "container_class": "",
+                    "label": "Name 姓名",
+                    "label_placement": "top",
+                    "admin_field_label": "",
+                    "help_message": "",
+                    "conditional_logics": [],
+                    "validation_rules": {
+                        "required": {
+                            "value": true,
+                            "message": "This field is required. 此欄必填。"
+                        }
+                    }
+                },
+                "editor_options": {
+                    "title": "Simple Text",
+                    "template": "inputText"
+                }
+            },
+            {
+                "element": "input_text",
+                "attributes": {
+                    "name": "email_or_phone",
+                    "type": "text",
+                    "value": "",
+                    "placeholder": "",
+                    "class": ""
+                },
+                "settings": {
+                    "container_class": "",
+                    "label": "Email or phone 電郵或電話",
+                    "label_placement": "top",
+                    "admin_field_label": "",
+                    "help_message": "",
+                    "conditional_logics": [],
+                    "validation_rules": {
+                        "required": {
+                            "value": true,
+                            "message": "This field is required. 此欄必填。"
+                        }
+                    }
+                },
+                "editor_options": {
+                    "title": "Simple Text",
+                    "template": "inputText"
+                }
+            },
+            {
+                "element": "input_radio",
+                "attributes": {
+                    "type": "radio",
+                    "name": "preferred_language",
+                    "value": ""
+                },
+                "settings": {
+                    "dynamic_default_value": "",
+                    "container_class": "",
+                    "label": "Preferred language 慣用語言",
+                    "admin_field_label": "",
+                    "label_placement": "top",
+                    "display_type": "inline",
+                    "help_message": "",
+                    "advanced_options": [
+                        {
+                            "label": "English",
+                            "value": "english",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "粵語 Cantonese",
+                            "value": "cantonese",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "國語 Mandarin",
+                            "value": "mandarin",
+                            "calc_value": "",
+                            "image": ""
+                        }
+                    ],
+                    "randomize_options": "no",
+                    "enable_other_option": "no",
+                    "conditional_logics": [],
+                    "layout_class": "",
+                    "validation_rules": {
+                        "required": {
+                            "value": false,
+                            "message": "Please choose one. 請選擇一項。"
+                        }
+                    }
+                },
+                "editor_options": {
+                    "title": "Radio Field",
+                    "element": "input-radio",
+                    "template": "inputCheckable"
+                }
+            },
+            {
+                "element": "input_radio",
+                "attributes": {
+                    "type": "radio",
+                    "name": "preferred_reply",
+                    "value": ""
+                },
+                "settings": {
+                    "dynamic_default_value": "",
+                    "container_class": "",
+                    "label": "Preferred reply 希望的回覆方式",
+                    "admin_field_label": "",
+                    "label_placement": "top",
+                    "display_type": "inline",
+                    "help_message": "",
+                    "advanced_options": [
+                        {
+                            "label": "Email 電郵",
+                            "value": "email",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "Phone 電話",
+                            "value": "phone",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "Text 短訊",
+                            "value": "text",
+                            "calc_value": "",
+                            "image": ""
+                        }
+                    ],
+                    "randomize_options": "no",
+                    "enable_other_option": "no",
+                    "conditional_logics": [],
+                    "layout_class": "",
+                    "validation_rules": {
+                        "required": {
+                            "value": false,
+                            "message": "Please choose one. 請選擇一項。"
+                        }
+                    }
+                },
+                "editor_options": {
+                    "title": "Radio Field",
+                    "element": "input-radio",
+                    "template": "inputCheckable"
+                }
+            },
+            {
+                "element": "input_radio",
+                "attributes": {
+                    "type": "radio",
+                    "name": "reason",
+                    "value": ""
+                },
+                "settings": {
+                    "dynamic_default_value": "{get.reason}",
+                    "container_class": "",
+                    "label": "Reason 事由",
+                    "admin_field_label": "",
+                    "label_placement": "top",
+                    "display_type": "inline",
+                    "help_message": "",
+                    "advanced_options": [
+                        {
+                            "label": "Plan a visit 計劃來訪",
+                            "value": "visit",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "Prayer request 代禱",
+                            "value": "prayer",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "Baptism or membership 浸禮或入會",
+                            "value": "baptism",
+                            "calc_value": "",
+                            "image": ""
+                        },
+                        {
+                            "label": "Question 查詢",
+                            "value": "question",
+                            "calc_value": "",
+                            "image": ""
+                        }
+                    ],
+                    "randomize_options": "no",
+                    "enable_other_option": "no",
+                    "conditional_logics": [],
+                    "layout_class": "",
+                    "validation_rules": {
+                        "required": {
+                            "value": true,
+                            "message": "Please choose one. 請選擇一項。"
+                        }
+                    }
+                },
+                "editor_options": {
+                    "title": "Radio Field",
+                    "element": "input-radio",
+                    "template": "inputCheckable"
+                }
+            },
+            {
+                "element": "textarea",
+                "attributes": {
+                    "name": "message",
+                    "value": "",
+                    "rows": 5,
+                    "cols": 2,
+                    "placeholder": "",
+                    "class": ""
+                },
+                "settings": {
+                    "container_class": "",
+                    "label": "Message 訊息",
+                    "label_placement": "top",
+                    "admin_field_label": "",
+                    "help_message": "",
+                    "conditional_logics": [],
+                    "validation_rules": {
+                        "required": {
+                            "value": false,
+                            "message": ""
+                        }
+                    }
+                },
+                "editor_options": {
+                    "title": "Text Area",
+                    "template": "inputTextarea"
+                }
+            },
+            {
+                "element": "custom_html",
+                "attributes": [],
+                "settings": {
+                    "html_codes": "<p>We only use your details to reply to you. 我們只會用您的資料回覆您。</p>",
+                    "conditional_logics": [],
+                    "container_class": ""
+                },
+                "editor_options": {
+                    "title": "Custom HTML",
+                    "template": "customHTML"
+                }
+            }
+        ],
+        "submitButton": {
+            "element": "button",
+            "attributes": {
+                "type": "submit",
+                "class": "ff-btn-submit btn-p"
+            },
+            "settings": {
+                "container_class": "",
+                "button_ui": {
+                    "type": "default",
+                    "text": "Send 送出"
+                },
+                "button_style": "",
+                "button_size": "md",
+                "normal_styles": {
+                    "backgroundColor": "var(--e-global-color-primary)",
+                    "color": "#ffffff",
+                    "borderRadius": "999",
+                    "minHeight": "52px",
+                    "padding": "0 28px",
+                    "fontWeight": "500",
+                    "fontSize": "16px",
+                    "border": "0"
+                },
+                "hover_styles": {
+                    "backgroundColor": "var(--e-global-color-harbor_deep)",
+                    "color": "#ffffff"
+                }
+            },
+            "editor_options": {
+                "title": "Submit Button"
+            }
+        }
+    }
+}

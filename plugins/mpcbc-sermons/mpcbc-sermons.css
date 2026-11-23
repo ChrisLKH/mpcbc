@@ -4,32 +4,39 @@
 	color: var(--e-global-color-primary, #181715);
 }
 .mpcbc-slip { display: block; }
-.mpcbc-slip__thumb, .mpcbc-sermons__thumb { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--e-global-color-primary, #181715); }
+.mpcbc-slip__thumb, .mpcbc-sermons__thumb { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--e-global-color-secondary, #121A26); }
+.mpcbc-slip__thumb, .mpcbc-slip__player { border-radius: 10px; }
 .mpcbc-slip__thumb img, .mpcbc-sermons__thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mpcbc-slip__thumb img { opacity: .88; }
 .mpcbc-slip__player { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
-/* the pill sits on the thumbnail's bottom-left corner, as in the slip design */
-.mpcbc-slip__pill {
-	position: absolute; inset-inline-start: 12px; inset-block-end: 12px;
-	display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; box-sizing: border-box;
-	border-radius: 999px; background: var(--e-global-color-accent, #ffd21a); color: var(--e-global-color-primary, #181715);
-	font-weight: 600;
+/* round white play button in the middle; the YouTube player only loads on click (mpcbc-sermons.js) */
+.mpcbc-slip__play {
+	position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; border-radius: 999px; background: rgba(255,255,255,.94);
+	transform: translate(-50%, -50%); transition: transform .15s ease;
 }
-.mpcbc-slip__thumb:hover .mpcbc-slip__pill, .mpcbc-slip__thumb:focus-visible .mpcbc-slip__pill { background: var(--e-global-color-persimmon_hover, #f2c200); }
-.mpcbc-slip__pill.is-live { background: var(--mpcbc-live, #D92D27); color: #fff; }
-.mpcbc-slip__thumb:hover .mpcbc-slip__pill.is-live { background: var(--mpcbc-live-text, #B8231E); }
-.mpcbc-slip__pill.is-next { background: var(--e-global-color-primary, #181715); color: #fff; }
-.mpcbc-slip__dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; }
+.mpcbc-slip__play::after { content: ""; position: absolute; left: 27px; top: 22px; border-style: solid; border-width: 12px 0 12px 19px; border-color: transparent transparent transparent var(--e-global-color-text, #1D2430); }
+.mpcbc-slip__thumb:hover .mpcbc-slip__play, .mpcbc-slip__thumb:focus-visible .mpcbc-slip__play { transform: translate(-50%, -50%) scale(1.06); }
+/* status badge, top-left: "Latest service" (white) or "Live now" (live red) */
+.mpcbc-slip__pill {
+	position: absolute; inset-inline-start: 12px; inset-block-start: 12px;
+	display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px;
+	border-radius: 999px; background: rgba(255,255,255,.94); color: var(--e-global-color-text, #1D2430);
+	font-size: 13px; font-weight: 600; line-height: 1.3;
+}
+.mpcbc-slip__pill.is-live { background: var(--e-global-color-live, #C42B35); color: #fff; }
+.mpcbc-slip__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--e-global-color-ink_soft, #5B6472); }
+.mpcbc-slip__pill.is-live .mpcbc-slip__dot { background: #fff; }
 .mpcbc-slip__status { margin: 0; }
 
 .mpcbc-sermons__form { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: end; margin-bottom: 24px; }
 .mpcbc-sermons__form label { display: block; width: 100%; font-weight: 600; }
 @media (min-width: 700px) { .mpcbc-sermons__form label { width: auto; } }
 .mpcbc-sermons__form input, .mpcbc-sermons__form select, .mpcbc-sermons__form button { min-height: 44px; box-sizing: border-box; font: inherit; }
-.mpcbc-sermons__form button { padding: 0 20px; border: 0; border-radius: 999px; background: var(--e-global-color-accent, #ffd21a); color: var(--e-global-color-primary, #181715); font-weight: 600; cursor: pointer; }
+.mpcbc-sermons__form button { padding: 0 20px; border: 0; border-radius: 999px; background: var(--e-global-color-accent, #1F3F66); color: #fff; font-weight: 600; cursor: pointer; }
 .mpcbc-sermons__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; list-style: none; margin: 0; padding: 0; }
 .mpcbc-sermons__card h3 { margin: 12px 0 4px; font-size: 1.1em; }
 .mpcbc-sermons__card h3 a { color: inherit; }
 .mpcbc-sermons__card p { margin: 0; font-size: .9em; color: var(--e-global-color-ink_soft, #5c5b55); }
 .mpcbc-sermons__pager { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 6px; }
 .mpcbc-sermons__pager .page-numbers { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 8px; box-sizing: border-box; color: inherit; text-decoration: none; }
-.mpcbc-sermons__pager .current { background: var(--e-global-color-accent, #ffd21a); border-radius: 999px; font-weight: 600; }
+.mpcbc-sermons__pager .current { background: var(--e-global-color-accent, #1F3F66); color: #fff; border-radius: 999px; font-weight: 600; }

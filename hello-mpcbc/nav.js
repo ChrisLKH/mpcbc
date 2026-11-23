@@ -6,35 +6,52 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // One mobile reading-language control outside Hello's hamburger panel.
-  // Labels and destinations stay editable in the existing WordPress menu.
+  // Phones: the EN/繁/简 switcher and Give stay outside Hello's hamburger panel (copies of the menu's own links,
+  // so labels and destinations stay editable in Appearance › Menus). Shown by CSS at ≤1109px only.
   function initMobileLanguage() {
     var header = document.querySelector('.site-header');
     var inner = header && header.querySelector('.header-inner');
-    var item = header && header.querySelector('.site-navigation .mpcbc-language-menu');
+    var nav = header && header.querySelector('.site-navigation');
     var toggle = header && header.querySelector('.site-navigation-toggle-holder');
-    if (!inner || !item || !toggle || header.querySelector('.mpcbc-mobile-language')) return;
-    var links = Array.from(item.querySelectorAll('.sub-menu a[data-mpcbc-locale]'));
-    if (!links.length) return;
-    var select = document.createElement('select');
-    select.className = 'mpcbc-mobile-language';
-    select.setAttribute('aria-label', 'Language / 語言');
-    links.forEach(function (link) {
-      var option = document.createElement('option');
-      option.value = link.dataset.mpcbcLocale;
-      option.textContent = link.textContent.trim();
-      option.selected = link.getAttribute('aria-current') === 'true';
-      select.appendChild(option);
-    });
-    select.addEventListener('change', function () {
-      var link = links.find(function (candidate) { return candidate.dataset.mpcbcLocale === select.value; });
-      if (link) window.location.href = link.href;
-    });
-    inner.insertBefore(select, toggle);
+    if (!inner || !nav || !toggle || header.querySelector('.mpcbc-mobile-actions')) return;
+    var actions = document.createElement('div');
+    actions.className = 'mpcbc-mobile-actions';
+    var langs = nav.querySelector('.mpcbc-language-menu > .sub-menu');
+    if (langs) {
+      var group = document.createElement('div');
+      group.className = 'mpcbc-lang-group';
+      group.setAttribute('role', 'group');
+      group.setAttribute('aria-label', 'Language / 語言');
+      langs.querySelectorAll('a[data-mpcbc-locale]').forEach(function (a) { group.appendChild(a.cloneNode(true)); });
+      actions.appendChild(group);
+    }
+    var give = nav.querySelector('.mpcbc-menu-give > a');
+    if (give) { var g = give.cloneNode(true); g.className = 'mpcbc-mobile-give'; actions.appendChild(g); }
+    inner.insertBefore(actions, toggle);
     header.classList.add('mpcbc-mobile-language-ready');
+    // The Worship parent is "#": Hello opens its accordion on click; do not jump to the top.
+    header.querySelectorAll('.mpcbc-mega > a').forEach(function (a) {
+      a.setAttribute('role', 'button');
+      a.addEventListener('click', function (e) { e.preventDefault(); });
+    });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initMobileLanguage);
   else initMobileLanguage();
+
+  // Our pastors (Home): "Read more" opens a bio clamped to four lines (style.css); hidden when the bio already fits.
+  // Measured after load so the web fonts have settled the line count.
+  window.addEventListener('load', function () {
+    document.querySelectorAll('[id^="mpcbc-more-"]').forEach(function (button) {
+      var bio = document.getElementById(button.id.replace('more', 'bio'));
+      if (!bio || bio.scrollHeight <= bio.clientHeight + 1) { button.style.display = 'none'; return; }
+      button.addEventListener('click', function () {
+        bio.classList.add('is-open');
+        button.style.display = 'none';
+        bio.setAttribute('tabindex', '-1');
+        bio.focus({ preventScroll: true });
+      });
+    });
+  });
 
   // Progressive enhancement of native Elementor topic tabs. All labels and
   // articles come from editable widgets, including the adjacent-topic links.

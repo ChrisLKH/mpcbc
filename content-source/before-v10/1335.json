@@ -1,0 +1,33 @@
+{
+    "post": {
+        "ID": 1335,
+        "post_author": "1",
+        "post_date": "2026-11-19 21:24:05",
+        "post_date_gmt": "2026-11-20 05:24:05",
+        "post_content": "",
+        "post_title": "English Congregation",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "english",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2026-11-19 21:24:05",
+        "post_modified_gmt": "2026-11-20 05:24:05",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "http://mpcbc.local/english/",
+        "menu_order": 0,
+        "post_type": "page",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+    },
+    "meta": {
+        "_elementor_data": null,
+        "_elementor_page_settings": "",
+        "_wp_page_template": ""
+    }
+}

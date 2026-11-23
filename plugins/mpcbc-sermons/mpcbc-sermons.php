@@ -267,12 +267,18 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 /* ---------- Shortcodes ---------- */
 
-function mpcbc_sermons_style() { wp_enqueue_style( 'mpcbc-sermons', plugins_url( 'mpcbc-sermons.css', __FILE__ ), array(), '0.2.0' ); }
+function mpcbc_sermons_style() { wp_enqueue_style( 'mpcbc-sermons', plugins_url( 'mpcbc-sermons.css', __FILE__ ), array(), '0.3.0' ); }
 
 /** English + Chinese label; on 简体 pages (mpcbc-translations) the hand-written $hans is kept as is. */
 function mpcbc_sermons_t( $en, $hant, $hans ) {
 	$zh = function_exists( 'mpcbc_lang' ) && 'zh-hans' === mpcbc_lang() ? mpcbc_keep( esc_html( $hans ) ) : esc_html( $hant );
 	return sprintf( '<span>%s</span> <span>%s</span>', esc_html( $en ), $zh );
+}
+
+/** The current page language only (Home cards); 简 is hand-written, so it is kept from the page conversion. */
+function mpcbc_sermons_l( $en, $hant, $hans ) {
+	$lang = function_exists( 'mpcbc_lang' ) ? mpcbc_lang() : 'en';
+	return 'en' === $lang ? esc_html( $en ) : ( 'zh-hans' === $lang ? mpcbc_keep( esc_html( $hans ) ) : esc_html( $hant ) );
 }
 
 function mpcbc_sermons_thumb( $vid ) { return 'https://i.ytimg.com/vi/' . rawurlencode( $vid ) . '/hqdefault.jpg'; }
@@ -282,9 +288,9 @@ add_shortcode( 'mpcbc_live', function ( $atts ) {
 	$a = shortcode_atts( array( 'ministry' => 'mandarin', 'part' => 'media' ), $atts );
 	if ( ! isset( MPCBC_SERMONS_MINISTRIES[ $a['ministry'] ] ) ) return '';
 	mpcbc_sermons_style();
-	// A live or scheduled stream beats the latest sermon.
+	// A live stream beats the latest sermon (DESIGN-v10: "Live now" during the service, otherwise "Latest service").
 	$stream = mpcbc_sermons_live_for( $a['ministry'] );
-	$when   = $stream ? wp_date( 'D g:i A', $stream['start'] ) : ''; // "Sun 9:00 AM"; the pill table below builds every state
+	if ( $stream && 'live' !== $stream['kind'] ) $stream = null;
 	if ( $stream ) {
 		$vid   = $stream['vid'];
 		$title = $stream['title'];
@@ -303,16 +309,15 @@ add_shortcode( 'mpcbc_live', function ( $atts ) {
 		$line    = esc_html( $title . ', ' . get_the_date( 'M j, Y', $post ) . ( $speaker ? ', ' . $speaker[0] : '' ) );
 		return '<p class="mpcbc-slip__status">' . mpcbc_sermons_t( 'Latest', '最新', '最新' ) . ': ' . $line . '</p>';
 	}
-	$pill = array(
-		'live'     => array( 'is-live', '<span class="mpcbc-slip__dot" aria-hidden="true"></span>' . mpcbc_sermons_t( 'Live now', '直播中', '直播中' ) ),
-		'upcoming' => array( 'is-next', mpcbc_sermons_t( 'Next · ' . $when, '下一場', '下一场' ) ),
-		'latest'   => array( '', '<span aria-hidden="true">▶</span> ' . mpcbc_sermons_t( 'Play', '播放', '播放' ) ),
-	)[ $kind ];
-	wp_enqueue_script( 'mpcbc-sermons', plugins_url( 'mpcbc-sermons.js', __FILE__ ), array(), '0.2.0', array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	$pill = 'live' === $kind
+		? array( 'is-live', mpcbc_sermons_l( 'Live now', '直播中', '直播中' ) )
+		: array( '', mpcbc_sermons_l( 'Latest service', '最近崇拜', '最近崇拜' ) );
+	wp_enqueue_script( 'mpcbc-sermons', plugins_url( 'mpcbc-sermons.js', __FILE__ ), array(), '0.3.0', array( 'in_footer' => true, 'strategy' => 'defer' ) );
 	// Click-to-play: a link to YouTube that the script swaps for the embedded player (no script: opens YouTube).
 	return '<div class="mpcbc-slip"><a class="mpcbc-slip__thumb" href="' . esc_url( mpcbc_sermons_url( $vid ) ) . '" target="_blank" rel="noopener" data-mpcbc-play="' . esc_attr( $vid ) . '" data-title="' . esc_attr( $title ) . '">'
 		. '<img src="' . esc_url( mpcbc_sermons_thumb( $vid ) ) . '" alt="' . esc_attr( $title ) . '" loading="lazy">'
-		. '<span class="mpcbc-slip__pill ' . $pill[0] . '">' . $pill[1] . '</span></a></div>';
+		. '<span class="mpcbc-slip__play" aria-hidden="true"></span>'
+		. '<span class="mpcbc-slip__pill ' . $pill[0] . '"><span class="mpcbc-slip__dot" aria-hidden="true"></span>' . $pill[1] . '</span></a></div>';
 } );
 
 /** Term IDs whose name or any alias contains the query (so "caleb" finds all three spellings' sermons). */
